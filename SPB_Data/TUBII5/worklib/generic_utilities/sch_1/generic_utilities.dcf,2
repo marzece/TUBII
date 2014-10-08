@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 29 )
+			( logicalViewRevNum 30 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -463,14 +463,10 @@
 			( design "generic_utilities"
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):async_delay_in"
-				( alias ( signalRef "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_in") )
 				( attribute "PHYS_NET_NAME" "ASYNC_DELAY_IN"
 					( Origin gPackager )
 				)
 				( objectStatus "async_delay_in" )
-			)
-			( signal "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_in"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):async_delay_out"
 				( alias ( signalRef "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_delay_out") )
@@ -522,6 +518,8 @@
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):page1_i1@tubii_lib.generic_pulse(sch_1):async_pulse_in"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_delay_in"
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):page1_i1@tubii_lib.generic_pulse(sch_1):async_pulse_out"
 				( objectFlag fObjectAlias )
@@ -4411,7 +4409,7 @@
 	( BaseCopy "generic_delays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 6 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -4421,13 +4419,10 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "generic_delays"
-			)
-			( signal "@tubii_lib.generic_delays(sch_1):async_in"
-				( objectStatus "async_in" )
 			)
 			( signal "@tubii_lib.generic_delays(sch_1):clk"
 				( objectStatus "clk" )
@@ -4458,6 +4453,9 @@
 			)
 			( signal "@tubii_lib.generic_delays(sch_1):async_delay_out"
 				( objectStatus "async_delay_out" )
+			)
+			( signal "@tubii_lib.generic_delays(sch_1):async_delay_in"
+				( objectStatus "async_delay_in" )
 			)
 			( gate "@tubii_lib.generic_delays(sch_1):page1_i44"
 				( attribute "CDS_LIB" "ecl"

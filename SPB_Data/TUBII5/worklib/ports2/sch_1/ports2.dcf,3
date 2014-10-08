@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 7 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -726,15 +726,7 @@
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_f07_i200_a"
 			)
-			( signal "@tubii_lib.ports2(sch_1):bursttrig"
-				( alias ( signalRef "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):burst_trig") )
-				( objectStatus "bursttrig" )
-			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):burst_trig"
-				( attribute "PHYS_NET_NAME" "BURST_TRIG"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ports2(sch_1):combo_trig"
@@ -1103,6 +1095,17 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.ports2(sch_1):burst_trig"
+				( alias ( signalRef "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):burst_trig") )
+				( alias ( signalRef "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):page1_i137@tubii_lib.led_pulse(sch_1):pulse_in") )
+				( attribute "PHYS_NET_NAME" "BURST_TRIG"
+					( Origin gPackager )
+				)
+				( objectStatus "burst_trig" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):page1_i137@tubii_lib.led_pulse(sch_1):pulse_in"
 				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.ports2(sch_1):page1_i1"

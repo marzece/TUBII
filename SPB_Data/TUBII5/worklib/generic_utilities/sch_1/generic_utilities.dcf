@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 31 )
+			( logicalViewRevNum 32 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,9 @@
 				)
 				( objectStatus "async_delay_in" )
 			)
+			( signal "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_delay_in"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.generic_utilities(sch_1):async_delay_out"
 				( alias ( signalRef "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_delay_out") )
 				( attribute "PHYS_NET_NAME" "ASYNC_DELAY_OUT"
@@ -518,9 +521,6 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):page1_i1@tubii_lib.generic_pulse(sch_1):async_pulse_in"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.generic_utilities(sch_1):page1_i2@tubii_lib.generic_delays(sch_1):async_delay_in"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.generic_utilities(sch_1):page1_i1@tubii_lib.generic_pulse(sch_1):async_pulse_out"
@@ -902,7 +902,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2150,875)"
+				( attribute "XY" "(1925,875)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -4080,6 +4080,76 @@
 					( objectStatus "page1_i8.1" )
 				)
 			)
+			( gate "@tubii_lib.generic_utilities(sch_1):page1_i3@tubii_lib.pulse_inverter(sch_1):page1_i6"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1925,750)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.generic_utilities(sch_1):page1_i3@tubii_lib.pulse_inverter(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3950,700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+			)
 			( pin "@tubii_lib.generic_utilities(sch_1):page1_i1:semisync_pulse"
 			)
 			( pin "@tubii_lib.generic_utilities(sch_1):page1_i1:sync_pulse"
@@ -4421,7 +4491,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "generic_delays"
@@ -4593,7 +4663,7 @@
 	( BaseCopy "pulse_inverter"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 4 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -4603,7 +4673,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "pulse_inverter"
@@ -4612,7 +4682,15 @@
 				( objectStatus "unnamed_1_resl_i2_a" )
 			)
 			( signal "@tubii_lib.pulse_inverter(sch_1):gnd"
+				( alias ( signalRef "@tubii_lib.pulse_inverter(sch_1):page1_gnd") )
+				( attribute "PHYS_NET_NAME" "GND"
+					( Origin gPackager )
+				)
 				( objectStatus "gnd" )
+			)
+			( signal "@tubii_lib.pulse_inverter(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
 			)
 			( signal "@tubii_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i4_in"
 				( objectStatus "unnamed_1_ad8009_i4_in" )
@@ -4636,7 +4714,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2150,875)"
+				( attribute "XY" "(1925,875)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
@@ -4840,6 +4918,64 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I5" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.pulse_inverter(sch_1):page1_i6"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1925,750)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I6" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.pulse_inverter(sch_1):page1_i7"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3950,700)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
 				( pin "a"
 				)
 			)

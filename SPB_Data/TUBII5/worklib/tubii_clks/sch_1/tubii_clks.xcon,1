@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T17:21:10</modificationTime>
+    <modificationTime>2014-10-03T17:22:08</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>55</instanceid>
-        <netid>56</netid>
+        <netid>58</netid>
         <insttermid>174</insttermid>
       </lastids>
       <cells>
@@ -331,18 +331,6 @@
       </cells>
       <nets>
         <net>
-          <id>N3</id>
-          <name>clock200h</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N4</id>
-          <name>clock200l</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N6</id>
           <name>page1_gnd</name>
         </net>
@@ -413,6 +401,18 @@
         <net>
           <id>N56</id>
           <name>tub_clock_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N57</id>
+          <name>clock200_outh</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N58</id>
+          <name>clock200_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -754,7 +754,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N3" />
+                <connection pinmsb="0" pinlsb="0" net="N57" />
               </connections>
             </pin>
             <pin>
@@ -763,7 +763,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
+                <connection pinmsb="0" pinlsb="0" net="N58" />
               </connections>
             </pin>
           </pins>
@@ -1666,13 +1666,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200h">
+          <netScope ref="clock200_outh">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200l">
+          <netScope ref="clock200_outl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1729,8 +1729,8 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="bckp_clk"></net>
-              <net ref="clock200h"></net>
-              <net ref="clock200l"></net>
+              <net ref="clock200_outh"></net>
+              <net ref="clock200_outl"></net>
               <net ref="default_clk"></net>
               <net ref="default_select"></net>
               <net ref="fox200mhz"></net>

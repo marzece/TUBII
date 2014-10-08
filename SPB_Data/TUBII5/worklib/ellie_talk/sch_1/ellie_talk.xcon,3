@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-01T15:32:49</modificationTime>
+    <modificationTime>2014-10-03T15:58:17</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ellie_talk" view="sch_1">
       <lastids>
         <instanceid>20</instanceid>
-        <netid>15</netid>
+        <netid>16</netid>
         <insttermid>43</insttermid>
       </lastids>
       <cells>
@@ -167,12 +167,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N2</id>
-          <name>pulse_in</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N4</id>
           <name>unnamed_1_10e116_i9_a</name>
         </net>
@@ -211,6 +205,12 @@
         <net>
           <id>N15</id>
           <name>delay_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N16</id>
+          <name>pulse_out</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -258,7 +258,7 @@
               <id>M2</id>
               <termid>T7</termid>
               <connections>
-                <connection net="N2" />
+                <connection net="N16" />
               </connections>
             </pin>
             <pin>
@@ -307,7 +307,7 @@
               <id>M6</id>
               <termid>T7</termid>
               <connections>
-                <connection net="N1" />
+                <connection net="N15" />
               </connections>
             </pin>
             <pin>
@@ -606,7 +606,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
+                <connection pinmsb="0" pinlsb="0" net="N1" />
               </connections>
             </pin>
           </pins>
@@ -879,7 +879,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N2" />
+                <connection pinmsb="0" pinlsb="0" net="N16" />
               </connections>
             </pin>
           </pins>
@@ -996,7 +996,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N1" />
+                <connection pinmsb="0" pinlsb="0" net="N15" />
               </connections>
             </pin>
           </pins>
@@ -1030,7 +1030,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="pulse_in">
+          <netScope ref="pulse_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1054,7 +1054,7 @@
             <nets>
               <net ref="delay_in"></net>
               <net ref="delay_out"></net>
-              <net ref="pulse_in"></net>
+              <net ref="pulse_out"></net>
               <net ref="unnamed_1_10e116_i9_a"></net>
               <net ref="unnamed_1_10e116_i9_b"></net>
               <net ref="unnamed_1_10e116_i9_y"></net>

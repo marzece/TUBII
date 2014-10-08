@@ -5,16 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-09-26T11:23:22</modificationTime>
+    <modificationTime>2014-09-26T11:25:04</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="latchexttrig" view="sch_1">
       <external_errors>true</external_errors>
       <lastids>
-        <instanceid>109</instanceid>
-        <netid>116</netid>
-        <insttermid>232</insttermid>
+        <instanceid>110</instanceid>
+        <netid>117</netid>
+        <insttermid>234</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -368,6 +368,30 @@
           </terms>
         </cell>
         <cell>
+          <id>S15</id>
+          <library>capacitors</library>
+          <name>csmd0805</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T55</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T56</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+        <cell>
           <id>S16</id>
           <library>ttl</library>
           <name>f07</name>
@@ -678,6 +702,10 @@
         <net>
           <id>N116</id>
           <name>unnamed_1_f07_i200_a</name>
+        </net>
+        <net>
+          <id>N117</id>
+          <name>unnamed_1_10e116_i125_b</name>
         </net>
         <net>
           <id>N3</id>
@@ -2421,12 +2449,14 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N117" />
               </connections>
             </pin>
             <pin>
               <id>M108</id>
               <termid>T12</termid>
               <connections>
+                <connection net="N117" />
               </connections>
             </pin>
             <pin>
@@ -3873,6 +3903,45 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I110</id>
+          <cellid>S15</cellid>
+          <name>page1_i207</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M233</id>
+              <termid>T55</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M234</id>
+              <termid>T56</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N117" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -3920,6 +3989,7 @@
               <net ref="unnamed_1_10e116_i117_y"></net>
               <net ref="unnamed_1_10e116_i117_y_1"></net>
               <net ref="unnamed_1_10e116_i125_a"></net>
+              <net ref="unnamed_1_10e116_i125_b"></net>
               <net ref="unnamed_1_10e116_i125_y"></net>
               <net ref="unnamed_1_10e116_i125_y_1"></net>
               <net ref="unnamed_1_10e116_i133_a"></net>
@@ -4046,6 +4116,7 @@
               <instance ref="i198"></instance>
               <instance ref="i199"></instance>
               <instance ref="i200"></instance>
+              <instance ref="i207"></instance>
             </instances>
           </page>
         </pages>

@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T16:26:52</modificationTime>
+    <modificationTime>2014-10-03T17:22:10</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>5</instanceid>
-        <netid>33</netid>
-        <insttermid>51</insttermid>
+        <netid>39</netid>
+        <insttermid>62</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -43,6 +42,16 @@
             <term>
               <id>T8</id>
               <name>fox200mhz</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T91</id>
+              <name>clock200_outh</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T92</id>
+              <name>clock200_outl</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -332,6 +341,20 @@
               <termid>T8</termid>
               <connections>
                 <connection net="N12" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M61</id>
+              <termid>T91</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M62</id>
+              <termid>T92</termid>
+              <connections>
+                <connection net="N25" />
               </connections>
             </pin>
           </pins>

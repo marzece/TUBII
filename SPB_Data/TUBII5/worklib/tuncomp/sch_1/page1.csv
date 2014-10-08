@@ -2,25 +2,25 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"VCC5\G";
-2"VCC5\G";
-3"DATA_RDY\I";
-4"UN$1$AD7243$I94$VOUT";
-5"GND\G";
-6"12V";
-7"-12V";
-8"UN$1$AD7243$I94$SYNC";
-9"CLK\I";
-10"DATA\I";
-11"UN$1$AD7243$I94$REFIN";
-12"GND\G";
-13"LOCKOUT\I";
-14"UN$1$100EL05$I21$IN2$1";
-15"BIT8L";
-16"GND\g";
-17"GND\g";
-18"GND\g";
-19"GND\g";
+1"GND\g";
+2"GND\g";
+3"GND\g";
+4"GND\g";
+5"VCC5\G";
+6"VCC5\G";
+7"DATA_RDY\I";
+8"UN$1$AD7243$I94$VOUT";
+9"GND\G";
+10"12V";
+11"-12V";
+12"UN$1$AD7243$I94$SYNC";
+13"CLK\I";
+14"DATA\I";
+15"UN$1$AD7243$I94$REFIN";
+16"GND\G";
+17"LOCKOUT\I";
+18"UN$1$100EL05$I21$IN2$1";
+19"BIT8L";
 20"LE\I";
 21"ANPULSEIN\I";
 22"UN$1$10H125$I36$Y";
@@ -214,7 +214,7 @@ PACK_TYPE"PLCC"
 SECTION"1"
 CDS_LIB"ecl";
 "Y <SIZE-1..0>* \B"42;
-"Y <SIZE-1..0>"14;
+"Y <SIZE-1..0>"18;
 "V"39;
 "B <SIZE-1..0>* \B"39;
 "A <SIZE-1..0>"41;
@@ -252,22 +252,22 @@ TOL"5%";
 "B<0>"
 $PN"2"39;
 "A<0>"
-$PN"1"16;
+$PN"1"1;
 %"GND"
 "1","(-900,3800)","0","misc","I16";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"16;
+"G\NAC"1;
 %"CSMD0805"
 "1","(-725,2175)","0","capacitors","I17";
 ;
 VOLTAGE"50V"
 PACKTYPE"0805"
 VALUE"0.1UF"
-$LOCATION"C51"
 PART_NAME"CSMD0805"
+$LOCATION"C51"
 CDS_SEC"1"
 $SEC"1"
 CDS_LOCATION"C51"
@@ -288,14 +288,14 @@ TOL"5%";
 "B<0>"
 $PN"2"36;
 "A<0>"
-$PN"1"17;
+$PN"1"2;
 %"GND"
 "1","(-900,2050)","0","misc","I18";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"17;
+"G\NAC"2;
 %"RSMD0805"
 "1","(-1200,2650)","1","resistors","I19";
 ;
@@ -362,7 +362,7 @@ CDS_LOCATION"U127"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 "IN1* \B"
-$PN"2"13;
+$PN"2"17;
 "IN1"
 $PN"1"78;
 "OUT* \B"
@@ -372,7 +372,7 @@ $PN"7"58;
 "IN2* \B"
 $PN"4"42;
 "IN2"
-$PN"3"14;
+$PN"3"18;
 %"RSMD0805"
 "1","(-150,3750)","1","resistors","I25";
 ;
@@ -400,7 +400,7 @@ POWER"0.1";
 "A<0>"
 $PN"1"76;
 "B<0>"
-$PN"2"14;
+$PN"2"18;
 %"RSMD0805"
 "1","(-200,3750)","1","resistors","I26";
 ;
@@ -441,7 +441,7 @@ CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 "IN1* \B"
 $PN"2"42;
 "IN1"
-$PN"1"14;
+$PN"1"18;
 "OUT* \B"
 $PN"6"0;
 "OUT"
@@ -589,8 +589,8 @@ $PN"2"34;
 %"RSMD0805"
 "1","(1350,3200)","1","resistors","I50";
 ;
-VALUE"50"
 $LOCATION"R327"
+VALUE"50"
 CDS_SEC"1"
 $SEC"1"
 CDS_LOCATION"R327"
@@ -876,7 +876,7 @@ CDS_SEC"3"
 $SEC"3"
 CDS_LOCATION"U117"
 CDS_LIB"ecl";
-"Y* \B"15;
+"Y* \B"19;
 "Q"43;
 "D"
 $PN"5"25;
@@ -911,7 +911,7 @@ $PN"4"38;
 "Y <SIZE-1..0>"
 $PN"2"37;
 "B <SIZE-1..0>"
-$PN"5"15;
+$PN"5"19;
 %"RSMD0805"
 "1","(-1375,3550)","1","resistors","I73";
 ;
@@ -939,7 +939,7 @@ CDS_LIB"resistors";
 "A<0>"
 $PN"1"72;
 "B<0>"
-$PN"2"15;
+$PN"2"19;
 %"RSMD0805"
 "1","(-1325,3550)","1","resistors","I74";
 ;
@@ -1080,21 +1080,21 @@ TOL_ON_OFF"ON";
 "B<0>"
 $PN"2"45;
 "A<0>"
-$PN"1"18;
+$PN"1"3;
 %"GND"
 "1","(0,875)","0","misc","I88";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"18;
+"G\NAC"3;
 %"GND"
 "1","(-500,650)","0","misc","I89";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"19;
+"G\NAC"4;
 %"CSMD0805"
 "1","(-775,700)","2","capacitors","I90";
 ;
@@ -1123,7 +1123,7 @@ TOL"5%";
 "B<0>"
 $PN"2"46;
 "A<0>"
-$PN"1"19;
+$PN"1"4;
 %"RSMD0805"
 "1","(-1425,1525)","1","resistors","I92";
 ;
@@ -1183,33 +1183,33 @@ $PN"2"44;
 %"AD7243"
 "1","(-2525,2775)","0","misc","I94";
 ;
-CDS_LMAN_SYM_OUTLINE"-300,425,300,-550"
-PART_NAME"AD7243"
-TITLE"AD7243"
+CDS_LIB"misc"
 ABBREV"AD7243"
-CDS_LIB"misc";
-"AGND"12;
-"REFIN"11;
-"REFOUT"11;
-"DGND"12;
-"ROFS"11;
-"SDIN"10;
-"SCLK"9;
-"SYNC* \B"8;
-"VSS"7;
-"VDD"6;
-"DCEN"5;
-"VOUT"4;
+TITLE"AD7243"
+PART_NAME"AD7243"
+CDS_LMAN_SYM_OUTLINE"-300,425,300,-550";
+"AGND"16;
+"REFIN"15;
+"REFOUT"15;
+"DGND"16;
+"ROFS"15;
+"SDIN"14;
+"SCLK"13;
+"SYNC* \B"12;
+"VSS"11;
+"VDD"10;
+"DCEN"9;
+"VOUT"8;
 "SDO"0;
-"LDAC* \B"3;
-"CLR* \B"2;
-"BNCP"1;
+"LDAC* \B"7;
+"CLR* \B"6;
+"BNCP"5;
 %"F06"
 "1","(-3600,2775)","0","ttl","I95";
 MAX_DELAY"10000";
 CDS_LIB"ttl";
 "A <SIZE-1..0>"20;
-"Y <SIZE-1..0>* \B"8;
+"Y <SIZE-1..0>* \B"12;
 %"AD96685"
 "1","(-1500,3175)","0","misc","I98";
 ;
@@ -1222,7 +1222,7 @@ CDS_LIB"misc";
 "INP"21;
 "QP"40;
 "QN \B"38;
-"INN"4;
+"INN"8;
 "LTCH"48;
 %"10H131"
 "1","(1700,1925)","0","ecl","I99";
