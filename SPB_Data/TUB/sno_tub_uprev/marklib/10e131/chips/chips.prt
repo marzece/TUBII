@@ -1,0 +1,39 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU JAN 10 08:34:28 1991  ';
+primitive '10E131','10E131_PLCC';
+  pin
+    'S':
+      INPUT_LOAD='(0.0005,0.45)';
+      PIN_NUMBER='(3,28,28,3)';
+    'R':
+      INPUT_LOAD='(0.0005,0.30)';
+      PIN_NUMBER='(25,22,9,6)';
+    'Q'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(19,17,14,12)';
+    'D'<0>:
+      INPUT_LOAD='(0.0005,0.15)';
+      PIN_NUMBER='(27,24,7,4)';
+    'EN':
+      INPUT_LOAD='(0.0005,0.30)';
+      PIN_NUMBER='(26,23,8,5)';
+    'CLK':
+      INPUT_LOAD='(0.0005,0.35)';
+      PIN_NUMBER='(2,2,2,2)';
+    '-Q'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(20,18,15,13)';
+  end_pin;
+  body
+    POWER_PINS='(GND:11,21;GND:16;VEE:1)';
+    NC_PINS='(10)';
+    FAMILY='ECL10E';
+    PART_NAME='10E131';
+    JEDEC_TYPE='PLCC28';
+    CLASS='IC';
+    TECH='10E';  
+  end_body;
+end_primitive;
+END.

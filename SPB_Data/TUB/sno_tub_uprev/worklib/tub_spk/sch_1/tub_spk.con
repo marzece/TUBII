@@ -1,0 +1,277 @@
+(
+  (version 16.6)
+  (tool
+    (creator "csnetlister")
+    (last "csnetlister")
+  )
+  (library "tub_lib")
+  (design "tub_spk"
+    (lastIds
+      (lastInstanceId 17)
+      (lastNetId 11)
+      (lastInstTermId 28)
+    )
+    (cells
+      ("S2" "testpoint_l" "snolib" "sym_1"
+        (terms
+          ("T3" "a" -1 -1 3)
+        )
+      )
+      ("S3" "res_l" "snolib" "sym_1"
+        (params
+          ("size" "1")
+        )
+        (terms
+          ("T4" "a<SIZE-1..0>" -1 -1 3)
+          ("T5" "b<SIZE-1..0>" -1 -1 3)
+        )
+      )
+      ("S4" "cap_l" "snolib" "sym_1"
+        (params
+          ("size" "1")
+        )
+        (terms
+          ("T6" "a<SIZE-1..0>" -1 -1 3)
+          ("T7" "b<SIZE-1..0>" -1 -1 3)
+        )
+      )
+      ("S5" "f06" "ttl" "sym_1"
+        (params
+          ("size" "1")
+        )
+        (terms
+          ("T8" "a<SIZE-1..0>" -1 -1 1)
+          ("T9" "y*<SIZE-1..0>" -1 -1 2)
+        )
+      )
+    )
+
+    (nets
+      ("N2" "page1_gnd" -1 -1 0 )
+      ("N3" "selected signal" -1 -1 0 )
+      ("N4" "unnamed_1_capl_22p_a" -1 -1 0 )
+      ("N5" "unnamed_1_capl_22p_b" -1 -1 0 )
+      ("N6" "unnamed_1_capl_4p_a" -1 -1 0 )
+      ("N7" "unnamed_1_f06_10p_a" -1 -1 0 )
+      ("N8" "unnamed_1_resl_21p_b" -1 -1 0 )
+      ("N9" "unnamed_1_resl_3p_a" -1 -1 0 )
+      ("N11" "page1_vcc" -1 -1 0 )
+      ("N1" "gnd" -1 -1 2 )
+      ("N10" "vcc" -1 -1 2 )
+    )
+
+    (alias
+      ("N2" -1 -1 "N1" -1 -1)
+      ("N11" -1 -1 "N10" -1 -1)
+    )
+
+    (instances
+      ("I1" "page1_1p" "S2"
+        (pins
+          ("M1" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N10" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_2p" "S2"
+        (pins
+          ("M2" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N9" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_3p" "S3"
+        (pins
+          ("M3" "T4" 0 0
+            (conn
+              ("0" 0 0 "N9" -1 -1)
+            )
+          )
+          ("M4" "T5" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_4p" "S4"
+        (pins
+          ("M5" "T6" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
+            )
+          )
+          ("M6" "T7" 0 0
+          )
+        )
+      )
+      ("I5" "page1_5p" "S5"
+        (pins
+          ("M7" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M8" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_6p" "S5"
+        (pins
+          ("M9" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M10" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_7p" "S5"
+        (pins
+          ("M11" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M12" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I8" "page1_8p" "S5"
+        (pins
+          ("M13" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M14" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I9" "page1_9p" "S5"
+        (pins
+          ("M15" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M16" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I10" "page1_10p" "S5"
+        (pins
+          ("M17" "T8" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M18" "T9" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I11" "page1_12p" "S2"
+        (pins
+          ("M19" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I12" "page1_13p" "S2"
+        (pins
+          ("M20" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I13" "page1_16p" "S2"
+        (pins
+          ("M21" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+      ("I14" "page1_20p" "S2"
+        (pins
+          ("M22" "T3" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+        )
+      )
+      ("I15" "page1_21p" "S3"
+        (pins
+          ("M23" "T4" 0 0
+            (conn
+              ("0" 0 0 "N10" -1 -1)
+            )
+          )
+          ("M24" "T5" 0 0
+            (conn
+              ("0" 0 0 "N8" -1 -1)
+            )
+          )
+        )
+      )
+      ("I16" "page1_22p" "S4"
+        (pins
+          ("M25" "T6" 0 0
+            (conn
+              ("0" 0 0 "N4" -1 -1)
+            )
+          )
+          ("M26" "T7" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+        )
+      )
+      ("I17" "page1_23p" "S3"
+        (pins
+          ("M27" "T4" 0 0
+            (conn
+              ("0" 0 0 "N5" -1 -1)
+            )
+          )
+          ("M28" "T5" 0 0
+            (conn
+              ("0" 0 0 "N10" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

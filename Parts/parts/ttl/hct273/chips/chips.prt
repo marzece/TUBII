@@ -1,0 +1,30 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'HCT273','HCT273_SOIC';
+  pin
+    'CLK':
+      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D':
+      PIN_NUMBER='(3,4,7,8,13,14,17,18)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'Q':
+      PIN_NUMBER='(2,5,6,9,12,15,16,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-CLR':
+      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='HCT374';
+    ALT_SYMBOLS='(ssop20)';
+    BODY_NAME='HCT273';
+    JEDEC_TYPE='soic20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VCC:20)';
+    POWER_PINS='(GND:10)';
+  end_body;
+end_primitive;
+
+END.

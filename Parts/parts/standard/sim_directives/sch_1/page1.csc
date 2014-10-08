@@ -1,0 +1,15 @@
+FILE_TYPE = CONNECTIVITY;
+{GED release: 7.0a:28feb84}
+%"DRAWING"
+"1","(2100,1400)","0","standard.lib","";
+;
+TERMINAL"TRUE"
+ABBREV"SMDIR"
+TITLE"SIM_DIRECTIVES"
+LAST_MODIFIED"Thu Mar 29 17:59:53 1984";
+%"DEFINE"
+"1","(900,1400)","0","standard.lib","";
+;
+X_STEP"SIZE"
+X_FIRST"0";
+END.

@@ -1,0 +1,36 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'AD96687';
+  pin
+    'Q':
+      PIN_NUMBER='(1,16)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(2,15)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'LTCHEN':
+      PIN_NUMBER='(4,13)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-LTCHEN':
+      PIN_NUMBER='(5,12)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'IN':
+      PIN_NUMBER='(7,10)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-IN':
+      PIN_NUMBER='(8,9)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='AD96687';
+    BODY_NAME='AD96687';
+    JEDEC_TYPE='soic16';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(GND:3,14)';
+    POWER_PINS='(VCC:11)';
+    POWER_PINS='(VS:6)';
+  end_body;
+end_primitive;
+
+END.

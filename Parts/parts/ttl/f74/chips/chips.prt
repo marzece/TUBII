@@ -1,0 +1,35 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'F74','F74_SOIC';
+  pin
+    'D':
+      PIN_NUMBER='(2,12)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'CP':
+      PIN_NUMBER='(3,11)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'CL':
+      PIN_NUMBER='(1,13)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'PR':
+      PIN_NUMBER='(4,10)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'Q':
+      PIN_NUMBER='(5,9)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(6,8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='F74';
+    BODY_NAME='F74';
+    JEDEC_TYPE='soic14';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(GND:7)';
+    POWER_PINS='(VCC:14)';
+  end_body;
+end_primitive;
+
+END.

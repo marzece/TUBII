@@ -1,0 +1,15 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'LED_L';
+    DEFAULT_MODEL=LED;
+    UPPER_CASE=TRUE;
+    MODEL 'LED';
+        PROPERTY
+            PORT_ORDER = '(A,K)';
+        END_PROPERTY;
+        PIN_MAP
+            'A'='(A)';
+            'B'='(K)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

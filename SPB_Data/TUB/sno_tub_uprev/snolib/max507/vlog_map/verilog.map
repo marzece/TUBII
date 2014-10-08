@@ -1,0 +1,34 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'MAX507';
+    DEFAULT_MODEL=SNODAC;
+    UPPER_CASE=TRUE;
+    MODEL 'SNODAC';
+        PIN_MAP
+            'VOUT'='(outreg)';
+            '-CLR'='(DUMMY1)';
+            '-LDAC'='(DUMMY2)';
+            '-CS'='(DUMMY3)';
+            '-WR'='(digitize)';
+            'RFB'='(DUMMY5)';
+            'REFOUT'='(DUMMY6)';
+            'VSS'='(DUMMY7)';
+            'ROFS'='(done)';
+            'DGND'='(DUMMY9)';
+            'VDD'='(DUMMY10)';
+            'AGND'='(DUMMY11)';
+            'D0'='(DUMMY12)';
+            'D1'='(DUMMY13)';
+            'D2'='(DUMMY14)';
+            'D3'='(DUMMY15)';
+            'D4'='(DUMMY16)';
+            'D5'='(DUMMY17)';
+            'D6'='(DUMMY18)';
+            'D7'='(DUMMY19)';
+            'D8'='(DUMMY20)';
+            'D9'='(DUMMY21)';
+            'D10'='(DUMMY22)';
+            'D11'='(DUMMY23)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

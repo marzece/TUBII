@@ -1,0 +1,25 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON TUE MAY  9 13:06:50 1995  ';
+primitive 'AD781';
+  pin
+    'IN':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+    'OUT':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'S_H':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    JEDEC_TYPE='N-8';
+    POWER_PINS='(VCC:1)';
+    POWER_PINS='(COMMON:3)';
+    POWER_PINS='(NC:4,6)';
+    POWER_PINS='(VEE:5)';
+  end_body;
+end_primitive;
+END.

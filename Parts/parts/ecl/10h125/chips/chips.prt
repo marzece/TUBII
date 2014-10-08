@@ -1,0 +1,64 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '10H125','10H125_DIP';
+  pin
+    'Y'<0>:
+      PIN_NUMBER='(17,15,7,5)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+    'V':
+      PIN_NUMBER='(2,2,2,2)';
+      OUTPUT_LOAD='(*,*)';
+    '-B'<0>:
+      PIN_NUMBER='(18,13,8,3)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'A'<0>:
+      PIN_NUMBER='(19,14,9,4)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='10H125';
+    BODY_NAME='10H125';
+    FAMILY='ECL10KH';
+    SECTION='1';
+    TECH='10KH';
+    JEDEC_TYPE='plcc20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    POWER_PINS='(VCC:12)';
+    POWER_PINS='(VEE:10)';
+    POWER_PINS='(GND:20)';
+    NC_PINS='(1,6,11,16)';
+  end_body;
+end_primitive;
+
+primitive '10H125_PLCC';
+  pin
+    'Y'<0>:
+      PIN_NUMBER='(17,15,7,5)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+    'V':
+      PIN_NUMBER='(2,2,2,2)';
+      OUTPUT_LOAD='(*,*)';
+    'A'<0>:
+      PIN_NUMBER='(19,14,9,4)';
+      INPUT_LOAD='(0.001,0.145)';
+    '-B'<0>:
+      PIN_NUMBER='(18,13,8,3)';
+      INPUT_LOAD='(0.001,0.145)';
+  end_pin;
+  body
+    BODY_NAME='10H125';
+    FAMILY='ECL10KH';
+    SECTION='1';
+    PART_NAME='10H125';
+    TECH='10KH';
+    JEDEC_TYPE='PLCC20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    POWER_PINS='(VCC:12)';
+    POWER_PINS='(VEE:10)';
+    POWER_PINS='(GND:20)';
+    NC_PINS='(16,11,6,1)';
+  end_body;
+end_primitive;
+
+END.

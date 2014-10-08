@@ -1,0 +1,255 @@
+# 
+# ===============================================================================
+#                               Allegro PCB Router                               
+# Copyright 1990-2006 Cadence Design Systems, Inc.  All Rights Reserved.
+# ===============================================================================
+# 
+# Software licensed for sale by Cadence Design Systems, Inc.
+# Current time = Tue Aug 23 15:30:59 2011
+# 
+# Allegro PCB Router v16-3-85 made 2009/11/03 at 11:55:32
+# Running on: gdog-mac, OS Version: WindowsNT 5.1.2600, Architecture: Intel Pentium II, III, or 4
+# Licensing: The program will not obey any unlicensed rules
+# No graphics will be displayed.
+# Design Name G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Batch File Name: pasde.do
+# Did File Name: G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical/specctra.did
+# Current time = Tue Aug 23 15:31:00 2011
+# PCB G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical
+# Master Unit set up as: MIL 1000
+# PCB Limits xlo=775.0000 ylo= 70.0000 xhi=32125.0000 yhi=21115.0000
+# Total 7 Images Consolidated.
+# Via VIA z=1, 2 xlo=-12.0000 ylo=-12.0000 xhi= 12.0000 yhi= 12.0000
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# <<WARNING:>> Net VTT is defined as a signal net and contains 366 pins.
+# This is more pins than most signal nets contain.
+# Please verify whether net VTT should be a signal net or a power net.
+# Note that a signal net will be routed as starburst or daisy chain.
+# <<WARNING:>> The * character appears in a net name.
+# * has been disabled as a wildcard character for nets.
+# You can use the wildcard command to change the wildcard character.
+# <<WARNING:>> Net VEE is defined as a signal net and contains 117 pins.
+# This is more pins than most signal nets contain.
+# Please verify whether net VEE should be a signal net or a power net.
+# Note that a signal net will be routed as starburst or daisy chain.
+# <<WARNING:>> Net GND is defined as a signal net and contains 573 pins.
+# This is more pins than most signal nets contain.
+# Please verify whether net GND should be a signal net or a power net.
+# Note that a signal net will be routed as starburst or daisy chain.
+# Wires Processed 1, Vias Processed 0
+# Layers Processed: Signal Layers 2
+# Components Placed 836, Images Processed 34, Padstacks Processed 16
+# Nets Processed 982, Net Terminals 3470
+# PCB Area=521550000.000  EIC=316  Area/EIC=1650474.684  SMDs=585
+# Total Pin Count: 4431
+# Signal Connections Created 2487
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Nets 982 Connections 2488 Unroutes 2487
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.04
+# Manhattan Length 9860243.3800 Horizontal 2769396.7410 Vertical 7090846.6390
+# Routed Length 6574.8988 Horizontal 4350.0000 Vertical 2253.0400
+# Ratio Actual / Manhattan   0.0007
+# Unconnected Length 9858343.3800 Horizontal 2853185.1500 Vertical 7005158.2300
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:02
+# Loading Do File pasde.do ...
+# Loading Do File G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim_rules.do ...
+# Colormap Written to File _notify.std
+# Enter command <# Loading Do File C:/DOCUME~1/GABRIE~1/LOCALS~1/Temp/#Taaaaab00996.tmp ...
+# All Components Unselected.
+# All Nets Unselected.
+set route_diagonal 0
+grid wire 0.010000 (direction x) (offset 0.000000)
+grid wire 0.010000 (direction y) (offset 0.000000)
+grid via 0.010000 (direction x) (offset 0.000000)
+grid via 0.010000 (direction y) (offset 0.000000)
+protect all wires
+# All Wires Protected.
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+# Wires on layer TOP were Unprotected.
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+# Wires on layer BOTTOM were Unprotected.
+cost via -1
+# System default cost will be used.
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+# All Selected Wires Unprotected.
+route 25 1
+# Current time = Tue Aug 23 15:31:07 2011
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Nets 982 Connections 2488 Unroutes 2487
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.04
+# Manhattan Length 9860243.3800 Horizontal 2769396.7410 Vertical 7090846.6390
+# Routed Length 6574.8988 Horizontal 4350.0000 Vertical 2253.0400
+# Ratio Actual / Manhattan   0.0007
+# Unconnected Length 9858343.3800 Horizontal 2853185.1500 Vertical 7005158.2300
+# Start Route Pass 1 of 25
+# Routing 33 wires.
+# Total Conflicts: 9 (Cross: 9, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 2455
+# Attempts 33 Successes 33 Failures 0 Vias 6
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 1 of 25
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 2 of 25
+# Routing 14 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 2455
+# Attempts 14 Successes 14 Failures 0 Vias 7
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 25
+# Start Route Pass 3 of 25
+# Routing 0 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 2455
+# Attempts 0 Successes 0 Failures 0 Vias 7
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 3 of 25
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:01
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     9|     0|   0| 2455|    6|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 2455|    7|    0|   0|100|  0:00:00|  0:00:00|
+# Route    |  3|     0|     0|   0| 2455|    7|    0|   0|  0|  0:00:00|  0:00:00|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:00
+# 
+# Wiring Statistics ----------------- G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Nets 982 Connections 2488 Unroutes 2455
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 11, at vias 2 Total Vias 7
+# Percent Connected    1.33
+# Manhattan Length 9860243.3800 Horizontal 2769396.7410 Vertical 7090846.6390
+# Routed Length 30356.2700 Horizontal 17424.0100 Vertical 12932.2600
+# Ratio Actual / Manhattan   0.0031
+# Unconnected Length 9830613.3800 Horizontal 2836775.1500 Vertical 6993838.2300
+clean 2
+# Current time = Tue Aug 23 15:31:08 2011
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Nets 982 Connections 2488 Unroutes 2455
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 11, at vias 2 Total Vias 7
+# Percent Connected    1.33
+# Manhattan Length 9860243.3800 Horizontal 2769396.7410 Vertical 7090846.6390
+# Routed Length 30356.2700 Horizontal 17424.0100 Vertical 12932.2600
+# Ratio Actual / Manhattan   0.0031
+# Unconnected Length 9830613.3800 Horizontal 2836775.1500 Vertical 6993838.2300
+# Start Clean Pass 1 of 2
+# Routing 50 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 2455
+# Attempts 43 Successes 43 Failures 0 Vias 3
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# End Pass 1 of 2
+# Start Clean Pass 2 of 2
+# Routing 53 wires.
+# 1 bend points have been removed.
+# 0 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 2455
+# Attempts 48 Successes 48 Failures 0 Vias 2
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# End Pass 2 of 2
+# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# ROUTING HISTORY ================================================================
+#     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
+#   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
+#----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
+# Route    |  1|     9|     0|   0| 2455|    6|    0|   0|  0|  0:00:00|  0:00:00|
+# Route    |  2|     0|     0|   0| 2455|    7|    0|   0|100|  0:00:00|  0:00:00|
+# Route    |  3|     0|     0|   0| 2455|    7|    0|   0|  0|  0:00:00|  0:00:00|
+# Clean    |  4|     0|     0|   0| 2455|    3|    0|   0|   |  0:00:01|  0:00:01|
+# Clean    |  5|     0|     0|   0| 2455|    2|    0|   0|   |  0:00:00|  0:00:01|
+# Conflicts between polygon wires and fixed objects:   0
+# Stub Violations:   0
+# Net Order Violations:   0
+# Diffpair Uncoupled Length Violations:   0
+# Diffpair Phase Tolerance  Violations:   0
+# Total layerset violations:   0
+# Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
+# Overall Routing Time: 0:00:01
+# 
+# Wiring Statistics ----------------- G:/My Dropbox/SNO+/TUBii/SPB_Data/TUBII1/worklib/tubii/physical\TUBiiPrelim.dsn
+# Nets 982 Connections 2488 Unroutes 2455
+# Signal Layers 2 Power Layers 0
+# Wire Junctions 15, at vias 2 Total Vias 2
+# Percent Connected    1.33
+# Manhattan Length 9857925.9700 Horizontal 2767984.3680 Vertical 7089941.6020
+# Routed Length 30136.6300 Horizontal 17674.0000 Vertical 12462.6300
+# Ratio Actual / Manhattan   0.0031
+# Unconnected Length 9829108.3400 Horizontal 2838906.3100 Vertical 6990202.0300
+write routes (changed_only) (reset_changed) C:/DOCUME~1/GABRIE~1/LOCALS~1/Temp/#Taaaaac00996.tmp
+# Routing Written to File C:/DOCUME~1/GABRIE~1/LOCALS~1/Temp/#Taaaaac00996.tmp
+quit

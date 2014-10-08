@@ -1,0 +1,19 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10H125';
+    DEFAULT_MODEL=ECL25;
+    UPPER_CASE=TRUE;
+    MODEL 'ECL25';
+        PROPERTY
+            PORT_ORDER = '(AIN,AINN,AOUT)';
+            COMPONENT='MC10H125';
+            RANGE;
+            MEMORYFILE;
+        END_PROPERTY;
+        PIN_MAP
+            'Y'<0>='(AOUT)';
+            'A'<0>='(AIN)';
+            '-B'<0>='(AINN)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

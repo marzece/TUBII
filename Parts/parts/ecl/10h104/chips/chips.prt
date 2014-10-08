@@ -1,0 +1,53 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU JAN 10 14:52:02 1991  ';
+primitive '74LS08','74LS08_DIP';
+  pin
+    'Y'<0>:
+      OUTPUT_LOAD='(8.0,-0.4)';
+      PIN_NUMBER='(11,8,6,3)';
+    'B'<0>:
+      INPUT_LOAD='(-0.4,0.02)';
+      PIN_NUMBER='(13,10,5,2)';
+      PIN_GROUP='1';
+    'A'<0>:
+      INPUT_LOAD='(-0.4,0.02)';
+      PIN_NUMBER='(12,9,4,1)';
+      PIN_GROUP='1';
+  end_pin;
+  body
+    POWER_PINS='(VCC:14;GND:7)';
+    FAMILY='LSTTL';
+    PART_NAME='74LS08';
+    BODY_NAME='LS08';
+    DEFAULT_SIGNAL_MODEL='SN74LS08N  TI';     
+    JEDEC_TYPE='DIP14_3';
+    CLASS='IC';
+    TECH='74LS';  
+  end_body;
+end_primitive;
+primitive '74LS08_SOIC';
+  pin
+    'Y'<0>:
+      OUTPUT_LOAD='(8.0,-0.4)';
+      PIN_NUMBER='(11,8,6,3)';
+    'B'<0>:
+      INPUT_LOAD='(-0.4,0.02)';
+      PIN_NUMBER='(13,10,5,2)';
+      PIN_GROUP='1';
+    'A'<0>:
+      INPUT_LOAD='(-0.4,0.02)';
+      PIN_NUMBER='(12,9,4,1)';
+      PIN_GROUP='1';
+  end_pin;
+  body
+    POWER_PINS='(VCC:14;GND:7)';
+    FAMILY='LSTTL';
+    PART_NAME='74LS08';
+    BODY_NAME='LS08';
+    DEFAULT_SIGNAL_MODEL='SN74LS08D  TI';     
+    JEDEC_TYPE='SOIC14';
+    CLASS='IC';
+    TECH='74LS';  
+  end_body;
+end_primitive;
+END.

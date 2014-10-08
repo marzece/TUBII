@@ -1,0 +1,796 @@
+( ConstraintFile "caen_mux"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 9 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "ABBREV" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKTYPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POWER" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SECTION" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PULSE_WIDTH" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_DELAY" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VBE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VCE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "caen_mux"
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):sel(0)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(0)") )
+				( objectStatus "sel<0>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_sel(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_sel<0>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):sel(1)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(1)") )
+				( objectStatus "sel<1>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_sel(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_sel<1>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(7)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(7)") )
+				( objectStatus "data<7>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(9)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<9>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(6)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(6)") )
+				( objectStatus "data<6>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(8)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<8>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):output"
+				( objectStatus "output" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(0)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(0)") )
+				( objectStatus "data<0>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<0>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(1)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(1)") )
+				( objectStatus "data<1>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<1>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(7)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<7>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(6)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<6>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<5>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<4>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<3>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_sel(3)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_sel<3>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<2>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_sel(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_sel<2>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(15)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(15)") )
+				( objectStatus "data<15>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):sel(3)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(3)") )
+				( objectStatus "sel<3>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(14)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(14)") )
+				( objectStatus "data<14>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):sel(2)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(2)") )
+				( objectStatus "sel<2>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(13)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(13)") )
+				( objectStatus "data<13>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(15)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<15>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(12)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(12)") )
+				( objectStatus "data<12>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(14)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<14>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(11)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(11)") )
+				( objectStatus "data<11>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(13)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<13>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(10)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(10)") )
+				( objectStatus "data<10>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(12)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<12>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(9)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(9)") )
+				( objectStatus "data<9>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(11)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<11>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(8)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(8)") )
+				( objectStatus "data<8>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):page1_data(10)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_data<10>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(5)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(5)") )
+				( objectStatus "data<5>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(4)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(4)") )
+				( objectStatus "data<4>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(3)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(3)") )
+				( objectStatus "data<3>" )
+			)
+			( signal "@tubii_lib.caen_mux(sch_1):data(2)"
+				( alias ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(2)") )
+				( objectStatus "data<2>" )
+			)
+			( gate "@tubii_lib.caen_mux(sch_1):page1_i1"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,125,-300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(900,3600)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "ADG1208"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "ADG1208"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I1" )
+				( pin "a(0)"
+				)
+				( pin "a(1)"
+				)
+				( pin "a(2)"
+				)
+				( pin "d"
+				)
+				( pin "en"
+				)
+			)
+			( gate "@tubii_lib.caen_mux(sch_1):page1_i2"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,125,-300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(900,2900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "ADG1208"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "ADG1208"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I2" )
+				( pin "a(0)"
+				)
+				( pin "a(1)"
+				)
+				( pin "a(2)"
+				)
+				( pin "d"
+				)
+				( pin "en"
+				)
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s1"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s2"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s3"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s4"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s5"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s6"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s7"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i1:s8"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s1"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s2"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s3"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s4"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s5"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s6"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s7"
+			)
+			( pin "@tubii_lib.caen_mux(sch_1):page1_i2:s8"
+			)
+			( bus "@tubii_lib.caen_mux(sch_1):sel"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.caen_mux(sch_1):page1_sel") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):sel(0)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):sel(1)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):sel(2)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):sel(3)") )
+				( objectStatus "SEL" )
+			)
+			( bus "@tubii_lib.caen_mux(sch_1):page1_sel"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(0)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(1)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(2)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_sel(3)") )
+				( objectStatus "PAGE1_SEL" )
+			)
+			( bus "@tubii_lib.caen_mux(sch_1):data"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.caen_mux(sch_1):page1_data") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(0)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(1)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(2)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(3)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(4)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(5)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(6)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(7)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(8)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(9)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(10)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(11)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(12)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(13)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(14)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):data(15)") )
+				( objectStatus "DATA" )
+			)
+			( bus "@tubii_lib.caen_mux(sch_1):page1_data"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(0)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(1)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(2)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(3)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(4)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(5)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(6)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(7)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(8)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(9)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(10)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(11)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(12)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(13)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(14)") )
+				( member ( signalRef "@tubii_lib.caen_mux(sch_1):page1_data(15)") )
+				( objectStatus "PAGE1_DATA" )
+			)
+		)
+	)
+)

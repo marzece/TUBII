@@ -1,0 +1,41 @@
+Digikey
+onsemi
+mouser?
+arrow electronics?
+
+Part ID: AAxxxx
+AA = manufacturer
+xxxx = part #
+
+ECL: doc TND039 on digikey
+
+EVERY ECL line (specifically, ECL device output) needs 50ohm to -2V pulldown
+BOTH of the pair
+
+	VIL		VIH	(Vcc / Vee)
+
+ECL: 			-0.8	-	-1.7	(0 / -5.2)
+
+TTL: 			+0	-	+5	(+5.0)
+
+LVDS:			+1.0	-	+1.4	()
+
+NIM:			-0	-	-1	()
+
+LVPECL:			+1.6	-	+2.4	(+3.3)
+
+Voltages:
+VTT ECL termination 50w to -2V
+VEE ECL supply -5.2V
+VIH ECL IN HIGH -0.8V
+VIL ECL IN LOW -1.7V
+VBB ref V i.e. midway VIL->VIH (use for single-ended ECL)
+VCC TTL supply +5V
+
+LV TTL 0-2.5
+CMOS 0-3.3
+LV CMOS 0-2.5 && 0-1.8
+
+NIM
+16mA through 50 ohms
+=> -0.8V

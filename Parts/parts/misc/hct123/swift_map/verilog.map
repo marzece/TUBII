@@ -1,0 +1,23 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '74HCT123';
+    DEFAULT_MODEL=TTL123;
+    UPPER_CASE=TRUE;
+    MODEL 'TTL123';
+        PROPERTY
+            PORT_ORDER = '(A,B,C,CLR,Q,QN,RC)';
+            COMPONENT='74HCT123','CD74HCT123';
+            RANGE;
+            MEMORYFILE;
+        END_PROPERTY;
+        PIN_MAP
+            'Q'='(Q)';
+            'CLOCK'='(B)';
+            'C/R'='(RC)';
+            'C'='(C)';
+            '-Q'='(QN)';
+            '-CLOCK'='(A)';
+            '-CL'='(CLR)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

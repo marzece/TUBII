@@ -1,0 +1,26 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'F08','F08_SOIC';
+  pin
+    'A':
+      PIN_NUMBER='(1,4,13,10)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'B':
+      PIN_NUMBER='(2,5,12,9)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'O':
+      PIN_NUMBER='(3,6,11,8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='F08';
+    BODY_NAME='F08';
+    JEDEC_TYPE='soic14';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VCC:14)';
+    POWER_PINS='(GND:7)';
+  end_body;
+end_primitive;
+
+END.

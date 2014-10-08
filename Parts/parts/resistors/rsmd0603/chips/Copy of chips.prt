@@ -1,0 +1,33 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'RESISTOR';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+    PART_NAME='RESISTOR';
+    COMP_TYPE='RES';
+    PATH='2P';
+    DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+    PRIM_TYPE='CHIPS_PRT';
+    PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+    VER='1';
+    XY='(1350,1350)';
+    DIR='ELEMENT.LIB';
+    ROT='0';
+    PINCOUNT='2';
+    SIZE='1';
+    BODY_NAME='RSMD0805';
+    JEDEC_TYPE='c0805';
+    PHYS_DES_PREFIX='R';
+    CLASS='DISCRETE';
+  end_body;
+end_primitive;
+
+END.

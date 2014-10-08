@@ -1,0 +1,4253 @@
+( ConstraintFile "tub_disc"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 2 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "ABBREV" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POWER" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_DELAY" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SECTION" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VBE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VCE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "tub_disc"
+			)
+			( signal "@tub_lib.tub_disc(sch_1):ecl_in"
+				( objectStatus "ecl_in" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):ecl_out"
+				( objectStatus "ecl_out" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):gnd"
+				( alias ( signalRef "@tub_lib.tub_disc(sch_1):page1_gnd") )
+				( objectStatus "gnd" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):\lockout*\"
+				( objectStatus "lockout*" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):neg_in"
+				( objectStatus "neg_in" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):nim_in"
+				( objectStatus "nim_in" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):nim_out"
+				( objectStatus "nim_out" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):pos_in"
+				( objectStatus "pos_in" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):trig_out"
+				( objectStatus "trig_out" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_233p_a"
+				( objectStatus "unnamed_1_10e101_233p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_233p_c"
+				( objectStatus "unnamed_1_10e101_233p_c" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_233p_y"
+				( objectStatus "unnamed_1_10e101_233p_y" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_234p_a"
+				( objectStatus "unnamed_1_10e101_234p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_234p_c"
+				( objectStatus "unnamed_1_10e101_234p_c" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e101_234p_y"
+				( objectStatus "unnamed_1_10e101_234p_y" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e131_199p_q"
+				( objectStatus "unnamed_1_10e131_199p_q" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10e131_199p_r"
+				( objectStatus "unnamed_1_10e131_199p_r" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_10h125_212p_a"
+				( objectStatus "unnamed_1_10h125_212p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_141p_inn"
+				( objectStatus "unnamed_1_ad96685_141p_inn" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_141p_inp"
+				( objectStatus "unnamed_1_ad96685_141p_inp" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_141p_vn"
+				( objectStatus "unnamed_1_ad96685_141p_vn" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_141p_vp"
+				( objectStatus "unnamed_1_ad96685_141p_vp" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_163p_inn"
+				( objectStatus "unnamed_1_ad96685_163p_inn" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_163p_inp"
+				( objectStatus "unnamed_1_ad96685_163p_inp" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_163p_vn"
+				( objectStatus "unnamed_1_ad96685_163p_vn" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_ad96685_163p_vp"
+				( objectStatus "unnamed_1_ad96685_163p_vp" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_capl_174p_a"
+				( objectStatus "unnamed_1_capl_174p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_capl_195p_a"
+				( objectStatus "unnamed_1_capl_195p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_capl_207p_a"
+				( objectStatus "unnamed_1_capl_207p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_mc10198_236p_rext"
+				( objectStatus "unnamed_1_mc10198_236p_rext" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_mc10198_237p_epos"
+				( objectStatus "unnamed_1_mc10198_237p_epos" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_mc10198_237p_rext"
+				( objectStatus "unnamed_1_mc10198_237p_rext" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_mmbth81lt1_252p_c"
+				( objectStatus "unnamed_1_mmbth81lt1_252p_c" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_mrf5943_249p_e"
+				( objectStatus "unnamed_1_mrf5943_249p_e" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_resl_166p_a"
+				( objectStatus "unnamed_1_resl_166p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_resl_168p_a"
+				( objectStatus "unnamed_1_resl_168p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):unnamed_1_resl_217p_a"
+				( objectStatus "unnamed_1_resl_217p_a" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):vcc"
+				( alias ( signalRef "@tub_lib.tub_disc(sch_1):page1_vcc") )
+				( objectStatus "vcc" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):page1_vcc"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_vcc" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):vee"
+				( objectStatus "vee" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):vih"
+				( objectStatus "vih" )
+			)
+			( signal "@tub_lib.tub_disc(sch_1):vtt"
+				( objectStatus "vtt" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_138p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R26"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R26"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "10"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5650,5100)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_138P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_139p"
+				( attribute "ABBREV" "RSS"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "jrklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "PT1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "PT1"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6100,4800)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_139P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_140p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R48"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R48"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "10"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5650,4300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_140P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_141p"
+				( attribute "ABBREV" "AD96685"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "jrklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U20"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U20"
+					( Origin gPackager )
+				)
+				( attribute "NAME" "AD96685"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5350,4650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_141P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_150p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R18"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R18"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-800,4900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_150P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_155p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R47"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R47"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6350,4700)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_155P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_156p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R49"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R49"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6250,3300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_156P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_161p"
+				( attribute "ABBREV" "RSS"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "jrklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "PT2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "PT2"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6100,3600)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_161P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_162p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R50"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R50"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "10"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5650,3150)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_162P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_163p"
+				( attribute "ABBREV" "AD96685"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "jrklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U21"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U21"
+					( Origin gPackager )
+				)
+				( attribute "NAME" "AD96685"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5350,3450)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_163P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_165p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R41"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R41"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "100"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5750,3400)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_165P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_166p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R33"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R33"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1 K"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5750,3500)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_166P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_167p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R27"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R27"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "10"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5650,3900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_167P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_168p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R32"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R32"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1 K"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5750,4700)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_168P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_169p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R40"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R40"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "100"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5750,4600)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_169P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_173p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R4"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R4"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "33"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2850,4050)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_173P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_174p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C1"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "39 PF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2700,4050)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_174P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_189p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R2"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2750,6450)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_189P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_194p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R5"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R5"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "33"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2350,6000)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_194P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_195p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C2"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "39 PF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2200,6000)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_195P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_196p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R12"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R12"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "500"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2900,5700)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_196P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_197p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C13"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C13"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "10 P"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3150,5600)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_197P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_199p"
+				( attribute "ABBREV" "10E131"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U10"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U10"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3150,6400)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_199P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_202p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP27"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP27"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-400,5150)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_202P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_207p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C25"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C25"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-350,6750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_207P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_208p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R10"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R10"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1650,4900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_208P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_209p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R11"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R11"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1550,4900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_209P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_212p"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U17"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U17"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-850,5900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_212P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_216p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R16"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R16"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1 M"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-50,7000)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_216P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_217p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R17"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R17"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "200"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(300,6200)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_217P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_219p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R1"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3300,4350)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_219P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_220p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R14"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R14"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4550,4150)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_220P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_221p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R15"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R15"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4650,4150)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_221P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_224p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C40"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C40"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5450,5200)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_224P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_225p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C41"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C41"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5450,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_225P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_227p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C53"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C53"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5200,4050)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_227P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_230p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C54"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C54"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5450,2800)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_230P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_231p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP77"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP77"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "3"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(200,5900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_231P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_232p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP78"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP78"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "3"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(300,5900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_232P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_233p"
+				( attribute "ABBREV" "10E101"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U9"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U9"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4200,4500)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_233P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_234p"
+				( attribute "ABBREV" "10E101"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U9"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U9"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1300,5200)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_234P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_236p"
+				( attribute "ABBREV" "MC10198"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U1"
+					( Origin gPackager )
+				)
+				( attribute "PART_NAME" "MC10198"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2850,4700)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_236P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_237p"
+				( attribute "ABBREV" "MC10198"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U2"
+					( Origin gPackager )
+				)
+				( attribute "PART_NAME" "MC10198"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2350,6650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_237P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_238p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "JP2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "JP2"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1850,5450)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_238P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_239p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "JP1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "JP1"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "3"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1850,5550)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_239P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_241p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C31"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C31"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "3"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-900,5550)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_241P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_242p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP38"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP38"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(350,4300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_242P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_243p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP41"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP41"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1000,4300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_243P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_245p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R24"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R24"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-350,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_245P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_246p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R20"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R20"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1700,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_246P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_247p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP28"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP28"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-700,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_247P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_248p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP37"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP37"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2050,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_248P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_249p"
+				( attribute "ABBREV" "MRF5943"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "awb_lib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "Q3"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "IC_VBE" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC_VCE" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "Q3"
+					( Origin gPackager )
+				)
+				( attribute "NAME" "MRF5943"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "RCA" "DEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "STATE" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "TEMP" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-50,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_249P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_250p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R23"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R23"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "300"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(0,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_250P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_251p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R22"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R22"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "300"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1350,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_251P" )
+			)
+			( gate "@tub_lib.tub_disc(sch_1):page1_252p"
+				( attribute "ABBREV" "MMBTH81LT1"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "jrklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "Q2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "IC_VBE" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC_VCE" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "Q2"
+					( Origin gPackager )
+				)
+				( attribute "NAME" "MMBTH81LT1"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "RCA" "DEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "STATE" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "TEMP" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1400,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_252P" )
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_138p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_138p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_139p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_139p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_139p:c(0)"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_140p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_140p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:grnd1"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:grnd2"
+				( attribute "PN" "16"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:inn"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:inp"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:ltch"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:qn"
+				( attribute "PN" "12"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:qp"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:vn"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_141p:vp"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_150p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_150p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_155p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_155p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_156p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_156p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_161p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_161p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_161p:c(0)"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_162p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_162p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:grnd1"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:grnd2"
+				( attribute "PN" "16"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:inn"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:inp"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:ltch"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:qn"
+				( attribute "PN" "12"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:qp"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:vn"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_163p:vp"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_165p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_165p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_166p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_166p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_167p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_167p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_168p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_168p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_169p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_169p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_173p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_173p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_174p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_174p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_189p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_189p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_194p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_194p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_195p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_195p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_196p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_196p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_197p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_197p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:clk"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:d(0)"
+				( attribute "PN" "27"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:en"
+				( attribute "PN" "26"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:q(0)"
+				( attribute "PN" "19"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:\q*\(0)"
+				( attribute "PN" "20"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:r"
+				( attribute "PN" "25"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_199p:s"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_202p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_207p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_207p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_208p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_208p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_209p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_209p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_212p:a(0)"
+				( attribute "PN" "19"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_212p:\b*\(0)"
+				( attribute "PN" "18"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_212p:v"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_212p:y(0)"
+				( attribute "PN" "17"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_216p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_216p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_217p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_217p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_219p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_219p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_220p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_220p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_221p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_221p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_224p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_224p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_225p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_225p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_227p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_227p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_230p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_230p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_231p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_232p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:a(0)"
+				( attribute "PN" "25"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:b(0)"
+				( attribute "PN" "24"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:c(0)"
+				( attribute "PN" "23"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:d(0)"
+				( attribute "PN" "22"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:y(0)"
+				( attribute "PN" "19"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_233p:\y*\(0)"
+				( attribute "PN" "20"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:b(0)"
+				( attribute "PN" "28"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:c(0)"
+				( attribute "PN" "27"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:d(0)"
+				( attribute "PN" "26"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:y(0)"
+				( attribute "PN" "17"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_234p:\y*\(0)"
+				( attribute "PN" "18"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:cext"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:\eneg*\"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:\epos*\"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:epwc"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:hstrig"
+				( attribute "PN" "15"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:q"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:\q*\"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:rext"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_236p:trig"
+				( attribute "PN" "13"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:cext"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:\eneg*\"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:\epos*\"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:epwc"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:hstrig"
+				( attribute "PN" "15"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:q"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:\q*\"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:rext"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_237p:trig"
+				( attribute "PN" "13"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_238p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_239p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_241p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_241p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_242p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_243p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_245p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_245p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_246p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_246p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_247p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_248p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_249p:b"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_249p:c"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_249p:e"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_250p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_250p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_251p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_251p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_252p:b"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_252p:c"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_disc(sch_1):page1_252p:e"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+		)
+	)
+)

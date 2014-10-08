@@ -1,0 +1,24 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10H125';
+    DEFAULT_MODEL=MC10H125;
+    UPPER_CASE=TRUE;
+    MODEL 'MC10H125';
+        PROPERTY
+            VBBAIN;
+            VBBAIN_;
+            VBBBIN;
+            VBBBIN_;
+            VBBCIN;
+            VBBCIN_;
+            VBBDIN;
+            VBBDIN_;
+        END_PROPERTY;
+        PIN_MAP
+            'Y'<0>='(DOUT,COUT,BOUT,AOUT)';
+            'V'='(VBB,VBB,VBB,VBB)';
+            'A'<0>='(DIN,CIN,BIN,AIN)';
+            '-B'<0>='(DIN_,CIN_,BIN_,AIN_)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

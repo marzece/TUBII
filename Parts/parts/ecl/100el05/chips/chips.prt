@@ -1,0 +1,35 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '100EL05';
+  pin
+    '-IN1':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'IN1':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'OUT':
+      PIN_NUMBER='(7)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-OUT':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-IN2':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'IN2':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='100EL05';
+    BODY_NAME='100EL05';
+    JEDEC_TYPE='soic8';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VEE:5)';
+    POWER_PINS='(GND:8)';
+  end_body;
+end_primitive;
+
+END.

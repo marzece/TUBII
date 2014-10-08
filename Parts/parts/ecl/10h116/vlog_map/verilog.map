@@ -1,0 +1,23 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10H116';
+    DEFAULT_MODEL=MC10H116;
+    UPPER_CASE=TRUE;
+    MODEL 'MC10H116';
+        PROPERTY
+            VBBDA;
+            VBBDA_;
+            VBBDB;
+            VBBDB_;
+            VBBDC;
+            VBBDC_;
+        END_PROPERTY;
+        PIN_MAP
+            'Y'<0>='(QC,QB,QA)';
+            'V'='(VBB,VBB,VBB)';
+            'A'<0>='(DC,DB,DA)';
+            '-Y'<0>='(QC_,QB_,QA_)';
+            '-B'<0>='(DC_,DB_,DA_)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

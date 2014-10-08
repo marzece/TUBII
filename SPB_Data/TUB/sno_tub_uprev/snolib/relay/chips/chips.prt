@@ -1,0 +1,28 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON MON OCT 24 15:24:26 1994  ';
+primitive 'RELAY';
+  pin
+    'S2':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'S1':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'VIN':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+    'VOUT':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+  end_pin;
+  body
+    JEDEC_TYPE='RELAY';
+    CLASS='DISCRETE';
+    PHYS_DES_PREFIX='S';
+  end_body;
+end_primitive;
+END.

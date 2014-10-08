@@ -1,0 +1,23 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '74HCT123';
+    DEFAULT_MODEL=SIG74HCT123;
+    UPPER_CASE=TRUE;
+    MODEL 'SIG74HCT123';
+        PROPERTY
+            tmin_retrig1;
+            pulse_width1;
+            tmin_retrig2;
+            pulse_width2;
+        END_PROPERTY;
+        PIN_MAP
+            'Q'='(_2Q,_1Q)';
+            'CLOCK'='(_2B,_1B)';
+            'C/R'='(_2REXT_CEXT,_1REXT_CEXT)';
+            'C'='(_2CEXT,_1CEXT)';
+            '-Q'='(_2Q_,_1Q_)';
+            '-CLOCK'='(_2A_,_1A_)';
+            '-CL'='(_2RD_,_1RD_)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

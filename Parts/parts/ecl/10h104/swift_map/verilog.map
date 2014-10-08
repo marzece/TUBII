@@ -1,0 +1,18 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '74LS08';
+    DEFAULT_MODEL=TTL08;
+    UPPER_CASE=TRUE;
+    MODEL 'TTL08';
+        PROPERTY
+            PORT_ORDER = '(I1,I2,O1)';
+            COMPONENT='SN74LS08';
+            RANGE;
+        END_PROPERTY;
+        PIN_MAP
+            'Y'<0>='(O1)';
+            'B'<0>='(I2)';
+            'A'<0>='(I1)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

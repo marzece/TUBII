@@ -1,0 +1,38 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON TUE JUL  2 11:57:37 1996  ';
+primitive '10H603';
+  pin
+    'Q'<0>:
+      FAMILY='STTL';
+      TECH='74S';
+      PIN_NUMBER='(19,20,22,25,26,27,1,3,4)';
+      OUTPUT_LOAD='(48.0,-15.00)';
+      OUTPUT_TYPE='(TS,TS)';
+      INPUT_LOAD='(-0.05,0.05)';
+    'MR':
+      PIN_NUMBER='(5*9)';
+      INPUT_LOAD='(0.0005,0.145)';
+    'LEN':
+      PIN_NUMBER='(6*9)';
+      INPUT_LOAD='(0.0005,0.145)';
+    '-OEECL':
+      PIN_NUMBER='(7*9)';
+      INPUT_LOAD='(0.0005,0.145)';
+    'D'<0>:
+      PIN_NUMBER='(18,17,15,14,13,12,11,10,9)';
+      INPUT_LOAD='(0.0005,0.145)';
+  end_pin;
+  body
+    JEDEC_TYPE='PLCC28';
+    POWER_PINS='(GND:2)';
+    POWER_PINS='(VEE:8)';
+    POWER_PINS='(GND:16)';
+    POWER_PINS='(GND:21)';
+    POWER_PINS='(GND:24)';
+    POWER_PINS='(VCC:23)';
+    POWER_PINS='(VCC:28)';
+    FAMILY='ECL10KH';
+    TECH='10KH';
+  end_body;
+end_primitive;
+END.

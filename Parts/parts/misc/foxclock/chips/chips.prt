@@ -1,0 +1,34 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'FOXCLOCK';
+  pin
+    'NC':
+      PIN_NUMBER='(2)';
+      PINUSE='NC';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-OUT':
+      PIN_NUMBER='(5)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'ED':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='FOXCLOCK';
+    BODY_NAME='FOXCLOCK';
+    JEDEC_TYPE='sip6';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VP3_3:6)';
+    POWER_PINS='(GND:3)';
+  end_body;
+end_primitive;
+
+END.

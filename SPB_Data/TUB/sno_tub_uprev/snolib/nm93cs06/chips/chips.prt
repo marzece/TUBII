@@ -1,0 +1,39 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON TUE JUL 18 13:33:44 1995  ';
+primitive 'NM93CS06','NM93CS06_SOIC';
+  pin
+    'CS':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'SK':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'DI':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'DO':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'GND':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+    'PE':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'PRE':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'VCC':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+  end_pin;
+  body
+      CLASS='IC';
+      JEDEC_TYPE='SOIC8';
+  end_body;
+end_primitive;
+END.

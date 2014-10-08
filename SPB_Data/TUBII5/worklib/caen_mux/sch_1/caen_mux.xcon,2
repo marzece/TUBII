@@ -1,0 +1,262 @@
+<schema xmlns="http://www.cadence.com/spb/csschema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cadence.com/spb/csschema CSSchema002.xsd">
+  <header>
+    <schemaVersion>16.6</schemaVersion>
+    <creatorTool>conceptHDL</creatorTool>
+    <modifierTool>conceptHDL</modifierTool>
+    <modificationTime>2014-08-20T15:07:03</modificationTime>
+    <savedLibrary>tubii_lib</savedLibrary>
+  </header>
+  <designs>
+    <design schemaType="nameBased" name="caen_mux" view="sch_1">
+      <lastids>
+        <instanceid>26</instanceid>
+        <netid>32</netid>
+        <insttermid>48</insttermid>
+      </lastids>
+      <cells>
+        <cell>
+          <id>S1</id>
+          <library>misc</library>
+          <name>adg1208</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T17</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>2</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T18</id>
+              <name>d</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T19</id>
+              <name>en</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T29</id>
+              <name>s</name>
+              <direction>inout</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+      </cells>
+      <nets>
+        <net>
+          <id>N20</id>
+          <name>sel</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+          <msb>3</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N21</id>
+          <name>page1_sel</name>
+          <msb>3</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>output</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N23</id>
+          <name>data</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+          <msb>15</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N24</id>
+          <name>page1_data</name>
+          <msb>15</msb>
+          <lsb>0</lsb>
+        </net>
+      </nets>
+      <aliases>
+        <alias net1="N21" lsb1="0" msb1="3" net2="N20" lsb2="0" msb2="3" />
+        <alias net1="N24" lsb1="0" msb1="15" net2="N23" lsb2="0" msb2="15" />
+      </aliases>
+      <differentialnets>
+      </differentialnets>
+      <differentialbusnets>
+      </differentialbusnets>
+      <netgroups>
+      </netgroups>
+      <netinterfaces>
+      </netinterfaces>
+      <instances>
+        <instance>
+          <id>I25</id>
+          <cellid>S1</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M25</id>
+              <termid>T17</termid>
+              <msb>2</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="2" pinlsb="0" net="N20" netmsb="0" netlsb="2" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M26</id>
+              <termid>T18</termid>
+              <connections>
+                <connection net="N22" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M27</id>
+              <termid>T19</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M47</id>
+              <termid>T29</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="7" pinlsb="0" net="N23" netmsb="8" netlsb="15" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I26</id>
+          <cellid>S1</cellid>
+          <name>page1_i2</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M36</id>
+              <termid>T17</termid>
+              <msb>2</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="2" pinlsb="0" net="N20" netmsb="0" netlsb="2" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M37</id>
+              <termid>T18</termid>
+              <connections>
+                <connection net="N22" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M38</id>
+              <termid>T19</termid>
+              <connections>
+                <connection net="N20" netmsb="3" netlsb="3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M48</id>
+              <termid>T29</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="7" pinlsb="0" net="N23" netmsb="0" netlsb="7" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+      </instances>
+      <templateresolutions>
+      </templateresolutions>
+      <templateinstances>
+      </templateinstances>
+      <extensions>
+        <extension name="schematic_extension">
+        <schematicExtension>
+        <netScopes>
+          <netScope ref="data">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="output">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sel">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+        </netScopes>
+        <pages>
+          <page number="1">
+            <physicalPageNumber>1</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+              <net ref="data">
+                <msb>15</msb>
+                <lsb>0</lsb>
+              </net>
+              <net ref="output"></net>
+              <net ref="sel">
+                <msb>3</msb>
+                <lsb>0</lsb>
+              </net>
+            </nets>
+            <instances>
+              <instance ref="i1"></instance>
+              <instance ref="i2"></instance>
+            </instances>
+          </page>
+        </pages>
+      </schematicExtension>
+        </extension>
+      </extensions>
+    </design>
+  </designs>
+</schema>

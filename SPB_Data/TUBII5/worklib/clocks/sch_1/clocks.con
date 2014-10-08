@@ -1,0 +1,217 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "clocks"
+    (lastIds
+      (lastInstanceId 7)
+      (lastNetId 43)
+      (lastInstTermId 83)
+    )
+    (cells
+      ("S2" "tubii_clks" "tubii_lib" "sym_1"
+        (terms
+          ("T5" "bckp_clk" -1 -1 2)
+          ("T6" "default_clk" -1 -1 2)
+          ("T7" "default_select" -1 -1 1)
+          ("T8" "fox200mhz" -1 -1 2)
+          ("T91" "clock200_outh" -1 -1 2)
+          ("T92" "clock200_outl" -1 -1 2)
+        )
+      )
+      ("S3" "tubii_time" "tubii_lib" "sym_1"
+        (terms
+          ("T18" "bckp_clk" -1 -1 1)
+          ("T19" "clk100_outh" -1 -1 2)
+          ("T20" "clk100_outl" -1 -1 2)
+          ("T21" "data" -1 -1 1)
+          ("T22" "data_rdy" -1 -1 1)
+          ("T23" "default_clk" -1 -1 1)
+          ("T24" "le" -1 -1 1)
+          ("T25" "missedclock" -1 -1 2)
+          ("T26" "sr_clk" -1 -1 1)
+        )
+      )
+      ("S4" "10h125" "ecl" "sym_1"
+        (params
+          ("size" "1")
+        )
+        (terms
+          ("T57" "a<SIZE-1..0>" -1 -1 1)
+          ("T58" "b*<SIZE-1..0>" -1 -1 1)
+          ("T59" "v" -1 -1 2)
+          ("T60" "y<SIZE-1..0>" -1 -1 2)
+        )
+      )
+      ("S5" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T61" "a" 0 0 1)
+          ("T62" "b" 0 0 2)
+        )
+      )
+    )
+
+    (nets
+      ("N7" "clk100_outh" -1 -1 1 3)
+      ("N8" "clk100_outl" -1 -1 1 3)
+      ("N9" "data" -1 -1 1 3)
+      ("N10" "data_rdy" -1 -1 1 3)
+      ("N11" "default_select" -1 -1 1 3)
+      ("N12" "fox200mhz" -1 -1 1 3)
+      ("N13" "le" -1 -1 1 3)
+      ("N14" "missedclock" -1 -1 1 3)
+      ("N15" "sr_clk" -1 -1 1 3)
+      ("N24" "clock200_outh" -1 -1 1 3)
+      ("N25" "clock200_outl" -1 -1 1 3)
+      ("N26" "clock100" -1 -1 1 3)
+      ("N33" "tub_clk_in" -1 -1 1 3)
+      ("N42" "unnamed_1_tubiiclks_i1_bckpclk" -1 -1 0 )
+      ("N43" "unnamed_1_tubiiclks_i1_defaultclk" -1 -1 0 )
+      ("gnd" "gnd" -1 -1 2  inherited)
+      ("vp3_3" "vp3_3" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2 )
+      ("vcc" "vcc" -1 -1 2  inherited)
+      ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
+      ("vih" "vih" -1 -1 2  inherited)
+    )
+
+    (instances
+      ("I2" "page1_i2" "S3"
+        (pins
+          ("M14" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "N42" -1 -1)
+            )
+          )
+          ("M15" "T19" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+          ("M16" "T20" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+          ("M17" "T21" -1 -1
+            (conn
+              ("0" -1 -1 "N9" -1 -1)
+            )
+          )
+          ("M18" "T22" -1 -1
+            (conn
+              ("0" -1 -1 "N10" -1 -1)
+            )
+          )
+          ("M19" "T23" -1 -1
+            (conn
+              ("0" -1 -1 "N43" -1 -1)
+            )
+          )
+          ("M20" "T24" -1 -1
+            (conn
+              ("0" -1 -1 "N13" -1 -1)
+            )
+          )
+          ("M21" "T25" -1 -1
+            (conn
+              ("0" -1 -1 "N14" -1 -1)
+            )
+          )
+          ("M22" "T26" -1 -1
+            (conn
+              ("0" -1 -1 "N15" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S4"
+        (pins
+          ("M35" "T57" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M36" "T58" 0 0
+            (conn
+              ("0" 0 0 "N8" -1 -1)
+            )
+          )
+          ("M37" "T59" -1 -1
+          )
+          ("M38" "T60" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_i4" "S5"
+        (pins
+          ("M39" "T61" 0 0
+            (conn
+              ("0" 0 0 "N8" -1 -1)
+            )
+          )
+          ("M40" "T62" 0 0
+            (conn
+              ("0" 0 0 "vtt" -1 -1)
+            )
+          )
+        )
+      )
+      ("I5" "page1_i5" "S5"
+        (pins
+          ("M41" "T61" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M42" "T62" 0 0
+            (conn
+              ("0" 0 0 "vtt" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_i1" "S2"
+        (pins
+          ("M78" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N42" -1 -1)
+            )
+          )
+          ("M79" "T6" -1 -1
+            (conn
+              ("0" -1 -1 "N43" -1 -1)
+            )
+          )
+          ("M80" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N11" -1 -1)
+            )
+          )
+          ("M81" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N12" -1 -1)
+            )
+          )
+          ("M82" "T91" -1 -1
+            (conn
+              ("0" -1 -1 "N24" -1 -1)
+            )
+          )
+          ("M83" "T92" -1 -1
+            (conn
+              ("0" -1 -1 "N25" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

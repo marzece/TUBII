@@ -1,0 +1,26 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '74F07_SOIC';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'Y':
+      PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
+  end_pin;
+  body
+    PART_NAME='74F07_SOIC';
+    FAMILY='FAST';
+    BODY_NAME='F07';
+    MAX_DELAY='10000';
+    TECH='74F';
+    JEDEC_TYPE='SOIC14';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    POWER_PINS='(VCC:14)';
+    POWER_PINS='(GND:7)';
+  end_body;
+end_primitive;
+
+END.

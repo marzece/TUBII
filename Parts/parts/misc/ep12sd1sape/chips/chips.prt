@@ -1,0 +1,24 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'EP12SD1SAPE';
+  pin
+    'COMM':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'OPEN':
+      PIN_NUMBER='(3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'CLOSED':
+      PIN_NUMBER='(1)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='EP12SD1SAPE';
+    BODY_NAME='EP12SD1SAPE';
+    JEDEC_TYPE='dip6_3';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    NC_PINS='(4,5,6)';
+  end_body;
+end_primitive;
+
+END.

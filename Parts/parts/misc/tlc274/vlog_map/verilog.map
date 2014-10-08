@@ -1,0 +1,15 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'TLC274';
+    DEFAULT_MODEL=SNOOPAMP;
+    UPPER_CASE=TRUE;
+    MODEL 'SNOOPAMP';
+        PIN_MAP
+            'NIN'='(in_neg)';
+            'NVSS'='(negSupply)';
+            'OUT'='(out)';
+            'PIN'='(in_pos)';
+            'PVSS'='(posSupply)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

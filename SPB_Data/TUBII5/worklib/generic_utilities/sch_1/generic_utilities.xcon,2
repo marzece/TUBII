@@ -1,0 +1,616 @@
+<schema xmlns="http://www.cadence.com/spb/csschema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cadence.com/spb/csschema CSSchema002.xsd">
+  <header>
+    <schemaVersion>16.6</schemaVersion>
+    <creatorTool>conceptHDL</creatorTool>
+    <modifierTool>conceptHDL</modifierTool>
+    <modificationTime>2014-10-03T16:59:33</modificationTime>
+    <savedLibrary>tubii_lib</savedLibrary>
+  </header>
+  <designs>
+    <design schemaType="nameBased" name="generic_utilities" view="sch_1">
+      <lastids>
+        <instanceid>12</instanceid>
+        <netid>54</netid>
+        <insttermid>145</insttermid>
+      </lastids>
+      <cells>
+        <cell>
+          <id>S2</id>
+          <library>tubii_lib</library>
+          <name>generic_pulse</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T35</id>
+              <name>clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T36</id>
+              <name>data</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T37</id>
+              <name>le_async_pulse</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T81</id>
+              <name>async_pulse_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T99</id>
+              <name>async_pulse_out</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S3</id>
+          <library>tubii_lib</library>
+          <name>generic_delays</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T22</id>
+              <name>async_in</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T24</id>
+              <name>clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T25</id>
+              <name>data</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T26</id>
+              <name>le</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T165</id>
+              <name>async_delay_out</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S4</id>
+          <library>tubii_lib</library>
+          <name>pulse_inverter</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+          </terms>
+        </cell>
+        <cell>
+          <id>S11</id>
+          <library>tubii_lib</library>
+          <name>ribbondelay</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+          </terms>
+        </cell>
+        <cell>
+          <id>S12</id>
+          <library>tubii_lib</library>
+          <name>pulse_scaler</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T129</id>
+              <name>allow_cnt</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T130</id>
+              <name>clr_cnt</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T131</id>
+              <name>latch_display</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T132</id>
+              <name>leading_zeroes</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T133</id>
+              <name>pulse</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T134</id>
+              <name>test</name>
+              <direction>input</direction>
+            </term>
+          </terms>
+        </cell>
+      </cells>
+      <nets>
+        <net>
+          <id>N1</id>
+          <name>async_delay_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N2</id>
+          <name>async_delay_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N3</id>
+          <name>clk</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>data</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N5</id>
+          <name>le_async_delay</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N18</id>
+          <name>async_pulse_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N26</id>
+          <name>le_async_pulse</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N39</id>
+          <name>async_pulse_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N44</id>
+          <name>allow_count</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N46</id>
+          <name>display_zeroes</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N47</id>
+          <name>latch_display</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N48</id>
+          <name>pulse</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N49</id>
+          <name>test_display</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N50</id>
+          <name>clr_cnt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>gnd</id>
+          <name>gnd</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc</id>
+          <name>vcc</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc5</id>
+          <name>vcc5</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vtt</id>
+          <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+      </nets>
+      <aliases>
+      </aliases>
+      <differentialnets>
+      </differentialnets>
+      <differentialbusnets>
+      </differentialbusnets>
+      <netgroups>
+      </netgroups>
+      <netinterfaces>
+      </netinterfaces>
+      <instances>
+        <instance>
+          <id>I1</id>
+          <cellid>S2</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M20</id>
+              <termid>T35</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M21</id>
+              <termid>T36</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M22</id>
+              <termid>T37</termid>
+              <connections>
+                <connection net="N26" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M98</id>
+              <termid>T81</termid>
+              <connections>
+                <connection net="N18" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M117</id>
+              <termid>T99</termid>
+              <connections>
+                <connection net="N39" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I2</id>
+          <cellid>S3</cellid>
+          <name>page1_i2</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M9</id>
+              <termid>T22</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M11</id>
+              <termid>T24</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M12</id>
+              <termid>T25</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M13</id>
+              <termid>T26</termid>
+              <connections>
+                <connection net="N5" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M145</id>
+              <termid>T165</termid>
+              <connections>
+                <connection net="N2" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I3</id>
+          <cellid>S4</cellid>
+          <name>page1_i3</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I11</id>
+          <cellid>S11</cellid>
+          <name>page1_i12</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I12</id>
+          <cellid>S12</cellid>
+          <name>page1_i13</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M129</id>
+              <termid>T129</termid>
+              <connections>
+                <connection net="N44" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M130</id>
+              <termid>T130</termid>
+              <connections>
+                <connection net="N50" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M131</id>
+              <termid>T131</termid>
+              <connections>
+                <connection net="N47" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M132</id>
+              <termid>T132</termid>
+              <connections>
+                <connection net="N46" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M133</id>
+              <termid>T133</termid>
+              <connections>
+                <connection net="N48" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M134</id>
+              <termid>T134</termid>
+              <connections>
+                <connection net="N49" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+      </instances>
+      <templateresolutions>
+      </templateresolutions>
+      <templateinstances>
+      </templateinstances>
+      <extensions>
+        <extension name="schematic_extension">
+        <schematicExtension>
+        <netScopes>
+          <netScope ref="allow_count">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="async_delay_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="async_delay_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="async_pulse_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="async_pulse_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clr_cnt">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="data">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="display_zeroes">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="latch_display">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="le_async_delay">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="le_async_pulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="pulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="test_display">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+        </netScopes>
+        <pages>
+          <page number="1">
+            <physicalPageNumber>1</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+              <net ref="allow_count"></net>
+              <net ref="async_delay_in"></net>
+              <net ref="async_delay_out"></net>
+              <net ref="async_pulse_in"></net>
+              <net ref="async_pulse_out"></net>
+              <net ref="clk"></net>
+              <net ref="clr_cnt"></net>
+              <net ref="data"></net>
+              <net ref="display_zeroes"></net>
+              <net ref="latch_display"></net>
+              <net ref="le_async_delay"></net>
+              <net ref="le_async_pulse"></net>
+              <net ref="pulse"></net>
+              <net ref="test_display"></net>
+            </nets>
+            <instances>
+              <instance ref="i1"></instance>
+              <instance ref="i2"></instance>
+              <instance ref="i3"></instance>
+              <instance ref="i12"></instance>
+              <instance ref="i13"></instance>
+            </instances>
+          </page>
+        </pages>
+      </schematicExtension>
+        </extension>
+      </extensions>
+    </design>
+  </designs>
+</schema>

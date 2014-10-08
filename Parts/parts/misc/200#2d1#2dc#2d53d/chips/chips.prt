@@ -1,0 +1,33 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '200-1-C-53D';
+  pin
+    'O':
+      PIN_NUMBER='(1)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'C':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'CI':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'IN':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='200-1-C-53D';
+    BODY_NAME='200-1-C-53D';
+    JEDEC_TYPE='dip8_3';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='CO';
+    POWER_PINS='(CO:3)';
+  end_body;
+end_primitive;
+
+END.

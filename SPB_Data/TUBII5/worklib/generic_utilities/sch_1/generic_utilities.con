@@ -1,0 +1,170 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "generic_utilities"
+    (lastIds
+      (lastInstanceId 12)
+      (lastNetId 54)
+      (lastInstTermId 147)
+    )
+    (cells
+      ("S2" "generic_pulse" "tubii_lib" "sym_1"
+        (terms
+          ("T35" "clk" -1 -1 1)
+          ("T36" "data" -1 -1 1)
+          ("T37" "le_async_pulse" -1 -1 1)
+          ("T81" "async_pulse_in" -1 -1 1)
+          ("T99" "async_pulse_out" -1 -1 2)
+        )
+      )
+      ("S3" "generic_delays" "tubii_lib" "sym_1"
+        (terms
+          ("T24" "clk" -1 -1 1)
+          ("T25" "data" -1 -1 1)
+          ("T26" "le" -1 -1 1)
+          ("T165" "async_delay_out" -1 -1 2)
+          ("T167" "async_delay_in" -1 -1 1)
+        )
+      )
+      ("S4" "pulse_inverter" "tubii_lib" "sym_1"
+      )
+      ("S11" "ribbondelay" "tubii_lib" "sym_1"
+      )
+      ("S12" "pulse_scaler" "tubii_lib" "sym_1"
+        (terms
+          ("T129" "allow_cnt" -1 -1 1)
+          ("T130" "clr_cnt" -1 -1 1)
+          ("T131" "latch_display" -1 -1 1)
+          ("T132" "leading_zeroes" -1 -1 1)
+          ("T133" "pulse" -1 -1 1)
+          ("T134" "test" -1 -1 1)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "async_delay_in" -1 -1 1 3)
+      ("N2" "async_delay_out" -1 -1 1 3)
+      ("N3" "clk" -1 -1 1 3)
+      ("N4" "data" -1 -1 1 3)
+      ("N5" "le_async_delay" -1 -1 1 3)
+      ("N18" "async_pulse_in" -1 -1 1 3)
+      ("N26" "le_async_pulse" -1 -1 1 3)
+      ("N39" "async_pulse_out" -1 -1 1 3)
+      ("N44" "allow_count" -1 -1 1 3)
+      ("N46" "display_zeroes" -1 -1 1 3)
+      ("N47" "latch_display" -1 -1 1 3)
+      ("N48" "pulse" -1 -1 1 3)
+      ("N49" "test_display" -1 -1 1 3)
+      ("N50" "clr_cnt" -1 -1 1 3)
+      ("gnd" "gnd" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
+      ("vcc5" "vcc5" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2  inherited)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+        (pins
+          ("M20" "T35" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+          ("M21" "T36" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+          ("M22" "T37" -1 -1
+            (conn
+              ("0" -1 -1 "N26" -1 -1)
+            )
+          )
+          ("M98" "T81" -1 -1
+            (conn
+              ("0" -1 -1 "N18" -1 -1)
+            )
+          )
+          ("M117" "T99" -1 -1
+            (conn
+              ("0" -1 -1 "N39" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_i2" "S3"
+        (pins
+          ("M11" "T24" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+          ("M12" "T25" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+          ("M13" "T26" -1 -1
+            (conn
+              ("0" -1 -1 "N5" -1 -1)
+            )
+          )
+          ("M145" "T165" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M147" "T167" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S4"
+      )
+      ("I11" "page1_i12" "S11"
+      )
+      ("I12" "page1_i13" "S12"
+        (pins
+          ("M129" "T129" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+          ("M130" "T130" -1 -1
+            (conn
+              ("0" -1 -1 "N50" -1 -1)
+            )
+          )
+          ("M131" "T131" -1 -1
+            (conn
+              ("0" -1 -1 "N47" -1 -1)
+            )
+          )
+          ("M132" "T132" -1 -1
+            (conn
+              ("0" -1 -1 "N46" -1 -1)
+            )
+          )
+          ("M133" "T133" -1 -1
+            (conn
+              ("0" -1 -1 "N48" -1 -1)
+            )
+          )
+          ("M134" "T134" -1 -1
+            (conn
+              ("0" -1 -1 "N49" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

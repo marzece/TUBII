@@ -1,0 +1,45 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU JAN 10 22:13:52 1991  ';
+primitive '74F06','74F06_DIP';
+  pin
+    'A'<0>:
+      INPUT_LOAD='(-0.6,0.02)';
+      PIN_NUMBER='(13,11,9,5,3,1)';
+    '-Y'<0>:
+      OUTPUT_LOAD='(64.0,*)';
+      OUTPUT_TYPE='(OC,AND)';
+      PIN_NUMBER='(12,10,8,6,4,2)';
+  end_pin;
+  body
+    POWER_PINS='(VCC:14;GND:7)';
+    FAMILY='FAST';
+    PART_NAME='74F06';
+    BODY_NAME='F06';
+    MAX_DELAY='10000';
+    JEDEC_TYPE='DIP14_3';
+    CLASS='IC';
+    TECH='74F';  
+  end_body;
+end_primitive;
+primitive '74F06_SOIC';
+  pin
+    'A'<0>:
+      INPUT_LOAD='(-0.6,0.02)';
+      PIN_NUMBER='(13,11,9,5,3,1)';
+    '-Y'<0>:
+      OUTPUT_LOAD='(64.0,*)';
+      OUTPUT_TYPE='(OC,AND)';
+      PIN_NUMBER='(12,10,8,6,4,2)';
+  end_pin;
+  body
+    POWER_PINS='(VCC:14;GND:7)';
+    FAMILY='FAST';
+    PART_NAME='74F06';
+    BODY_NAME='F06';
+    MAX_DELAY='10000';
+    JEDEC_TYPE='SOIC14';
+    CLASS='IC';
+    TECH='74F';  
+  end_body;
+end_primitive;
+END.

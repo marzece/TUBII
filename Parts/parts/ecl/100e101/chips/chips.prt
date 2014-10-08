@@ -1,0 +1,35 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '100E101';
+  pin
+    'Q':
+      PIN_NUMBER='(12,14,17,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(13,15,18,20)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'D0':
+      PIN_NUMBER='(10,6,2,25)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D1':
+      PIN_NUMBER='(9,5,28,24)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D2':
+      PIN_NUMBER='(8,4,27,23)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D3':
+      PIN_NUMBER='(7,3,26,22)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='100E101';
+    BODY_NAME='100E101';
+    JEDEC_TYPE='plcc28';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(GND:11,16,21)';
+    POWER_PINS='(VEE:1)';
+  end_body;
+end_primitive;
+
+END.

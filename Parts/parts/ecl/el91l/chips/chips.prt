@@ -1,0 +1,36 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'EL91L';
+  pin
+    'VBB':
+      PIN_NUMBER='(4,4,4)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'VBB2':
+      PIN_NUMBER='(7,7,7)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'IN':
+      PIN_NUMBER='(2,5,8)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-IN':
+      PIN_NUMBER='(3,6,9)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'OUT':
+      PIN_NUMBER='(19,16,13)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-OUT':
+      PIN_NUMBER='(18,15,12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='EL91L';
+    BODY_NAME='EL91L';
+    JEDEC_TYPE='soic20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(GND:14,17)';
+    POWER_PINS='(VP3_3:1,11,20)';
+    POWER_PINS='(VEE:10)';
+  end_body;
+end_primitive;
+
+END.

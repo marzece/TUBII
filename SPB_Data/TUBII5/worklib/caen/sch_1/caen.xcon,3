@@ -1,0 +1,529 @@
+<schema xmlns="http://www.cadence.com/spb/csschema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cadence.com/spb/csschema CSSchema002.xsd">
+  <header>
+    <schemaVersion>16.6</schemaVersion>
+    <creatorTool>conceptHDL</creatorTool>
+    <modifierTool>conceptHDL</modifierTool>
+    <modificationTime>2014-10-08T11:24:05</modificationTime>
+    <savedLibrary>tubii_lib</savedLibrary>
+  </header>
+  <designs>
+    <design schemaType="nameBased" name="caen" view="sch_1">
+      <lastids>
+        <instanceid>3</instanceid>
+        <netid>74</netid>
+        <insttermid>84</insttermid>
+      </lastids>
+      <cells>
+        <cell>
+          <id>S2</id>
+          <library>tubii_lib</library>
+          <name>caen_chat</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T61</id>
+              <name>sync24h_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T62</id>
+              <name>sync24l_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T63</id>
+              <name>synch_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T64</id>
+              <name>syncl_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T101</id>
+              <name>sync24h_lvds</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T103</id>
+              <name>synch_lvds</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T104</id>
+              <name>syncl_lvds</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S3</id>
+          <library>tubii_lib</library>
+          <name>caen_coms</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T24</id>
+              <name>clk</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T25</id>
+              <name>data</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T26</id>
+              <name>data_rdy</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T27</id>
+              <name>le</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T150</id>
+              <name>caen_out</name>
+              <direction>inout</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+      </cells>
+      <nets>
+        <net>
+          <id>N1</id>
+          <name>clk</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N2</id>
+          <name>data</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N3</id>
+          <name>data_rdy</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>le</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N27</id>
+          <name>gtrigh_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N28</id>
+          <name>gtrigl_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N29</id>
+          <name>sync24h_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N30</id>
+          <name>sync24l_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N31</id>
+          <name>synch_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N32</id>
+          <name>syncl_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N34</id>
+          <name>synch_lvds</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N35</id>
+          <name>syncl_lvds</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N73</id>
+          <name>sync24h_lvds</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N74</id>
+          <name>sync24l_lvds</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>gnd</id>
+          <name>gnd</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>gtrigh</id>
+          <name>gtrigh</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>gtrigl</id>
+          <name>gtrigl</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vee</id>
+          <name>vee</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vp3_3</id>
+          <name>vp3_3</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vtt</id>
+          <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>gtrig_ttl</id>
+          <name>gtrig_ttl</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc5</id>
+          <name>vcc5</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>gnd_power</id>
+          <name>gnd_power</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vref2m</id>
+          <name>vref2m</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc15</id>
+          <name>vcc15</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc15m</id>
+          <name>vcc15m</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vcc5m</id>
+          <name>vcc5m</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+      </nets>
+      <aliases>
+      </aliases>
+      <differentialnets>
+      </differentialnets>
+      <differentialbusnets>
+      </differentialbusnets>
+      <netgroups>
+      </netgroups>
+      <netinterfaces>
+      </netinterfaces>
+      <instances>
+        <instance>
+          <id>I1</id>
+          <cellid>S2</cellid>
+          <name>page1_i1</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M29</id>
+              <termid>T61</termid>
+              <connections>
+                <connection net="N29" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M30</id>
+              <termid>T62</termid>
+              <connections>
+                <connection net="N30" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M31</id>
+              <termid>T63</termid>
+              <connections>
+                <connection net="N31" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M32</id>
+              <termid>T64</termid>
+              <connections>
+                <connection net="N32" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M56</id>
+              <termid>T101</termid>
+              <connections>
+                <connection net="N73" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M58</id>
+              <termid>T103</termid>
+              <connections>
+                <connection net="N34" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M59</id>
+              <termid>T104</termid>
+              <connections>
+                <connection net="N35" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I3</id>
+          <cellid>S3</cellid>
+          <name>page1_i3</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M79</id>
+              <termid>T24</termid>
+              <connections>
+                <connection net="N1" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M80</id>
+              <termid>T25</termid>
+              <connections>
+                <connection net="N2" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M81</id>
+              <termid>T26</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M82</id>
+              <termid>T27</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M84</id>
+              <termid>T150</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+      </instances>
+      <templateresolutions>
+      </templateresolutions>
+      <templateinstances>
+      </templateinstances>
+      <extensions>
+        <extension name="schematic_extension">
+        <schematicExtension>
+        <netScopes>
+          <netScope ref="clk">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="data">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="data_rdy">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gtrigh_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gtrigl_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="le">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24h_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24h_lvds">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24l_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24l_lvds">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="synch_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="synch_lvds">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="syncl_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="syncl_lvds">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+        </netScopes>
+        <pages>
+          <page number="1">
+            <physicalPageNumber>1</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+              <net ref="clk"></net>
+              <net ref="data"></net>
+              <net ref="data_rdy"></net>
+              <net ref="gtrigh_ecl"></net>
+              <net ref="gtrigl_ecl"></net>
+              <net ref="le"></net>
+              <net ref="sync24h_ecl"></net>
+              <net ref="sync24h_lvds"></net>
+              <net ref="sync24l_ecl"></net>
+              <net ref="sync24l_lvds"></net>
+              <net ref="synch_ecl"></net>
+              <net ref="synch_lvds"></net>
+              <net ref="syncl_ecl"></net>
+              <net ref="syncl_lvds"></net>
+            </nets>
+            <instances>
+              <instance ref="i1"></instance>
+              <instance ref="i3"></instance>
+            </instances>
+          </page>
+        </pages>
+      </schematicExtension>
+        </extension>
+      </extensions>
+    </design>
+  </designs>
+</schema>

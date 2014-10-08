@@ -1,0 +1,48 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'AD7249';
+  pin
+    'REFIN':
+      PIN_NUMBER='(2,2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'SCLK':
+      PIN_NUMBER='(11,11)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-LDAC':
+      PIN_NUMBER='(10,10)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-SYNC':
+      PIN_NUMBER='(12,12)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'SDIN':
+      PIN_NUMBER='(9,9)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'BBARC':
+      PIN_NUMBER='(7,7)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-CLR':
+      PIN_NUMBER='(6,6)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'VOUT':
+      PIN_NUMBER='(14,4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'ROFS':
+      PIN_NUMBER='(16,3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'REFOUT':
+      PIN_NUMBER='(1,1)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='AD7249';
+    BODY_NAME='AD7249';
+    JEDEC_TYPE='soic16w';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VDD:13)';
+    POWER_PINS='(GND:5,8)';
+    POWER_PINS='(VSS:15)';
+  end_body;
+end_primitive;
+
+END.

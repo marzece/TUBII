@@ -1,0 +1,52 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'ADCMP566';
+  pin
+    'IN':
+      PIN_NUMBER='(3,6)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-IN':
+      PIN_NUMBER='(2,7)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'LE':
+      PIN_NUMBER='(30,11)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-LE':
+      PIN_NUMBER='(31,10)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'NC':
+      PIN_NUMBER='(12,18)';
+      PINUSE='NC';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'Q':
+      PIN_NUMBER='(26,15)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(27,14)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'NC2':
+      PIN_NUMBER='(23,29)';
+      PINUSE='NC';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+    PART_NAME='ADCMP566';
+    BODY_NAME='ADCMP566';
+    JEDEC_TYPE='LFCSP';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(GND:1,8,9,13,16,25,28,32)';
+    POWER_PINS='(VCC:4,5,20,21)';
+    POWER_PINS='(VEE:17,19,22,24)';
+  end_body;
+end_primitive;
+
+END.

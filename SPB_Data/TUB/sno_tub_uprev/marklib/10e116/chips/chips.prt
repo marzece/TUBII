@@ -1,0 +1,32 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU JAN 10 08:34:28 1991  ';
+primitive '10E116','10E116_PLCC';
+  pin
+    'Y'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(20,17,14,11,8)';
+    'REF':
+      OUTPUT_LOAD='(*,*)';
+      PIN_NUMBER='(2,2,2,2,2)';
+    'A'<0>:
+      INPUT_LOAD='(0.0005,0.20)';
+      PIN_NUMBER='(23,25,27,5,3)';
+    '-Y'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(21,18,15,12,9)';
+    '-B'<0>:
+      INPUT_LOAD='(0.0005,0.20)';
+      PIN_NUMBER='(24,26,28,6,4)';
+  end_pin;
+  body
+    FAMILY='ECL10E';
+    PART_NAME='10E116';
+    POWER_PINS='(GND:7,10,13,19,22;GND:16;VEE:1)';
+    JEDEC_TYPE='PLCC28';
+    CLASS='IC';
+    TECH='10E';  
+  end_body;
+end_primitive;
+END.

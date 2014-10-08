@@ -1,0 +1,1108 @@
+( ConstraintFile "ecal_control"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 7 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "CDS_LMAN_SYM_OUTLINE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "ABBREV" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKTYPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POWER" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SECTION" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "COLOR" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PULSE_WIDTH" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_DELAY" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIELECTRIC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NAME" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "RCA" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "STATE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VBE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC_VCE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "ecal_control"
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):ecal_active"
+				( objectStatus "ecal_active" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):vcc"
+				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):ext_ped_in"
+				( objectStatus "ext_ped_in" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_a"
+				( objectStatus "unnamed_1_10e101_i7_a" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_d"
+				( objectStatus "unnamed_1_10e101_i7_d" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h104_i5_a"
+				( objectStatus "unnamed_1_10h104_i5_a" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h104_i6_a"
+				( objectStatus "unnamed_1_10h104_i6_a" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):vtt"
+				( objectStatus "vtt" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):gtrig"
+				( objectStatus "gtrig" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):ext_ped_out"
+				( objectStatus "ext_ped_out" )
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i4"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-50,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10H124"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10H124_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I4" )
+				( pin "c"
+				)
+				( pin "d"
+				)
+				( pin "q"
+				)
+				( pin "\y*\"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i5"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "SOIC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(475,3150)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74LS08"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74LS08_SOIC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I5" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+				( pin "y(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i6"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "SOIC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(425,2700)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74LS08"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74LS08_SOIC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I6" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+				( pin "y(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i7"
+				( attribute "ABBREV" "10E101"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1075,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E101"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E101_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+				( pin "c(0)"
+				)
+				( pin "d(0)"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i11"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(175,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I11" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i12"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(675,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I12" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i13"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(800,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I13" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i14"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-100,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I14" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i15"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(75,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I15" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i16"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-275,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I16" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+		)
+	)
+)

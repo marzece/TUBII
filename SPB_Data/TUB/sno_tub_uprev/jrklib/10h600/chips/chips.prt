@@ -1,0 +1,29 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON MON JUL  1 12:28:24 1996  ';
+primitive '10H600';
+  pin
+    'ENECL':
+      PIN_NUMBER='(4*9)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'ENTTL':
+      PIN_NUMBER='(2*9)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D'<0>:
+      PIN_NUMBER='(19,20,21,22,24,25,26,27,28)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'Q'<0>:
+      PIN_NUMBER='(18,17,14,12,11,10,8,6,5)';
+      OUTPUT_LOAD='(1.00,-1.00)';
+  end_pin;
+  body
+    POWER_PINS='(GND:1)';
+    POWER_PINS='(NC:3)';
+    POWER_PINS='(VCCT:23)';
+    POWER_PINS='(VCCE:16)';
+    POWER_PINS='(VCCO:15)';
+    POWER_PINS='(VCCO:13)';
+    POWER_PINS='(VEE:9)';
+    POWER_PINS='(VCCO:7)';
+  end_body;
+end_primitive;
+END.

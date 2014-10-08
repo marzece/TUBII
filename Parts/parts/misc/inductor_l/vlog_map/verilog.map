@@ -1,0 +1,15 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'INDUCTOR_L';
+    DEFAULT_MODEL=IND;
+    UPPER_CASE=TRUE;
+    MODEL 'IND';
+        PROPERTY
+            PORT_ORDER = '(A,B)';
+        END_PROPERTY;
+        PIN_MAP
+            'A'<0>='(A)';
+            'B'<0>='(B)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

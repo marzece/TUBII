@@ -1,0 +1,16 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10E101';
+    DEFAULT_MODEL=MC10E101;
+    UPPER_CASE=TRUE;
+    MODEL 'MC10E101';
+        PIN_MAP
+            'Y'<0>='(Q3,Q2,Q1,Q0)';
+            'D'<0>='(D3D,D2D,D1D,D0D)';
+            'C'<0>='(D3C,D2C,D1C,D0C)';
+            'B'<0>='(D3B,D2B,D1B,D0B)';
+            'A'<0>='(D3A,D2A,D1A,D0A)';
+            '-Y'<0>='(Q3_,Q2_,Q1_,Q0_)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

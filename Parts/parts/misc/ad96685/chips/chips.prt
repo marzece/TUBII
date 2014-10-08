@@ -1,0 +1,43 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'AD96685';
+  pin
+    'INP':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'QP':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+    'QN':
+      PIN_NUMBER='(12)';
+      PINUSE='UNSPEC';
+    'INN':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'LTCH':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+    PART_NAME='AD96685';
+    PATH='34P';
+    DRAWING='ICDEVICES.LOGIC.1.1';
+    VER='1';
+    XY='(950,2800)';
+    DIR='NEWIC.LIB';
+    ROT='0';
+    PINCOUNT='16';
+    SIZE='1';
+    BODY_NAME='AD96685';
+    JEDEC_TYPE='SOIC16';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GRND1';
+    POWER_PINS='(GRND1:1)';
+    POWER_PINS='(GRND2:16)';
+    POWER_PINS='(VP:2)';
+    POWER_PINS='(VN:8)';
+    NC_PINS='(5,7,9,10,13,14,15)';
+  end_body;
+end_primitive;
+
+END.

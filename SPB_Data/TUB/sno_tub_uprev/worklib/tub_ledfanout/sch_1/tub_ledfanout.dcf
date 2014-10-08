@@ -1,0 +1,1539 @@
+( ConstraintFile "tub_ledfanout"
+	( constraintHeader
+		( objectKey
+			( logical )
+		)
+		( version
+			( 16.6 )
+		)
+		( revisionNumber
+			( logicalViewRevNum 2 )
+			( physicalViewRevNum 0 )
+			( otherViewRevNum 0 )
+		)
+		( contents
+			( dictionaryExtensions )
+			( worksheetCustomizations )
+			( electricalConstraints )
+			( netClasses )
+			( properties )
+		)
+		( precision
+			( units mil )
+			( numberOfDecimalPlaces 2 )
+		)
+	)
+	( DictionaryExtensions
+		( Attribute
+			( Name "ABBREV" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "DIST" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_TEMP" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "NEGTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POSTOL" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "POWER" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "SLOPE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC1" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC2" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TOL_ON_OFF" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "CURRENT" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "IC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "KNEE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "TC" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "MAX_DELAY" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
+	)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "tub_ledfanout"
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):gnd"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_gnd") )
+				( objectStatus "gnd" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led1"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led1") )
+				( objectStatus "led1" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led1"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led1" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led2"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led2") )
+				( objectStatus "led2" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led2"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led2" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led3"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led3") )
+				( objectStatus "led3" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led3"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led3" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led4"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led4") )
+				( objectStatus "led4" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led4"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led4" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led5"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led5") )
+				( objectStatus "led5" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led5"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led5" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led6"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led6") )
+				( objectStatus "led6" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led6"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led6" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led7"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led7") )
+				( objectStatus "led7" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led7"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led7" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):led8"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_led8") )
+				( objectStatus "led8" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_led8"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_led8" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ped_ttl"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_ped_ttl") )
+				( objectStatus "ped_ttl" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_ped_ttl"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_ped_ttl" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):sclk"
+				( objectStatus "sclk" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):serial_data"
+				( objectStatus "serial_data" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):slatch"
+				( objectStatus "slatch" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(0)"
+				( objectStatus "ssp<0>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(1)"
+				( objectStatus "ssp<1>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(2)"
+				( objectStatus "ssp<2>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(3)"
+				( objectStatus "ssp<3>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(4)"
+				( objectStatus "ssp<4>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(5)"
+				( objectStatus "ssp<5>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(6)"
+				( objectStatus "ssp<6>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(7)"
+				( objectStatus "ssp<7>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(8)"
+				( objectStatus "ssp<8>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(9)"
+				( objectStatus "ssp<9>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(10)"
+				( objectStatus "ssp<10>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(11)"
+				( objectStatus "ssp<11>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(12)"
+				( objectStatus "ssp<12>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(13)"
+				( objectStatus "ssp<13>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(14)"
+				( objectStatus "ssp<14>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(15)"
+				( objectStatus "ssp<15>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(16)"
+				( objectStatus "ssp<16>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(17)"
+				( objectStatus "ssp<17>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(18)"
+				( objectStatus "ssp<18>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(19)"
+				( objectStatus "ssp<19>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(20)"
+				( objectStatus "ssp<20>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(21)"
+				( objectStatus "ssp<21>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(22)"
+				( objectStatus "ssp<22>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):ssp(23)"
+				( objectStatus "ssp<23>" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_capl_135p_a"
+				( objectStatus "unnamed_1_capl_135p_a" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_capl_136p_a"
+				( objectStatus "unnamed_1_capl_136p_a" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin10"
+				( objectStatus "unnamed_1_idsc10_19p_pin10" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin4"
+				( objectStatus "unnamed_1_idsc10_19p_pin4" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin5"
+				( objectStatus "unnamed_1_idsc10_19p_pin5" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin6"
+				( objectStatus "unnamed_1_idsc10_19p_pin6" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin7"
+				( objectStatus "unnamed_1_idsc10_19p_pin7" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):unnamed_1_idsc10_19p_pin9"
+				( objectStatus "unnamed_1_idsc10_19p_pin9" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):vcc"
+				( alias ( signalRef "@tub_lib.tub_ledfanout(sch_1):page1_vcc") )
+				( objectStatus "vcc" )
+			)
+			( signal "@tub_lib.tub_ledfanout(sch_1):page1_vcc"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_vcc" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_19p"
+				( attribute "ABBREV" "IDS_C10"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "J3"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "J3"
+					( Origin gPackager )
+				)
+				( attribute "PART_NAME" "IDS_C10"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5950,3750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_19P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_20p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP11"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP11"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6650,3750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_20P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_21p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP22"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP22"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5300,3750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_21P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_51p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP24"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP24"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,2800)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_51P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_52p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP20"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP20"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,2700)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_52P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_53p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP19"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP19"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,2600)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_53P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_54p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP15"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP15"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1750,2500)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_54P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_65p"
+				( attribute "ABBREV" "IDS_C10"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "J2"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "J2"
+					( Origin gPackager )
+				)
+				( attribute "PART_NAME" "IDS_C10"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1950,5300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_65P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_96p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP23"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP23"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5300,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_96P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_97p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP12"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP12"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-6650,3650)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_97P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_99p"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "TP21"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP21"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-5300,4050)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_99P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_103p"
+				( attribute "ABBREV" "IDS_C14"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "marklib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "J1"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "J1"
+					( Origin gPackager )
+				)
+				( attribute "PART_NAME" "IDS_C14"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-3050,2750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_103P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_132p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R3"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R3"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "5"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4900,3950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_132P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_133p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R13"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R13"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "5"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4900,3450)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_133P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_135p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C17"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C17"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4700,3300)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_135P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_136p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C5"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C5"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4700,4750)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_136P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_139p"
+				( attribute "ABBREV" "capacitor"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "C3"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "C3"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "CTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1 U"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "CMAX"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4700,3800)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_139P" )
+			)
+			( gate "@tub_lib.tub_ledfanout(sch_1):page1_140p"
+				( attribute "ABBREV" "res_l"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "snolib"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R7"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "R7"
+					( Origin gPackager )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "RTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "RMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPQ"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "5"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-4900,4900)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "PAGE1_140P" )
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin1"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin2"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin3"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin4"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin5"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin6"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin7"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin8"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin9"
+				( attribute "PN" "9"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_19p:pin10"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_20p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_21p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_51p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_52p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_53p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_54p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin1"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin2"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin3"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin4"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin5"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin6"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin7"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin8"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin9"
+				( attribute "PN" "9"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_65p:pin10"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_96p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_97p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_99p:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin1"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin2"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin3"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin4"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin5"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin6"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin7"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin8"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin9"
+				( attribute "PN" "9"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin10"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin11"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin12"
+				( attribute "PN" "12"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin13"
+				( attribute "PN" "13"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_103p:pin14"
+				( attribute "PN" "14"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_132p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_132p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_133p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_133p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_135p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_135p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_136p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_136p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_139p:a(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_139p:b(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_140p:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tub_lib.tub_ledfanout(sch_1):page1_140p:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( bus "@tub_lib.tub_ledfanout(sch_1):ssp"
+				( memberType ( signal ) )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(0)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(1)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(2)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(3)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(4)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(5)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(6)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(7)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(8)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(9)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(10)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(11)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(12)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(13)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(14)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(15)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(16)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(17)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(18)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(19)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(20)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(21)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(22)") )
+				( member ( signalRef "@tub_lib.tub_ledfanout(sch_1):ssp(23)") )
+				( objectStatus "SSP" )
+			)
+		)
+	)
+)

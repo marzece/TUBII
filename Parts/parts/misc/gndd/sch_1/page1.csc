@@ -1,0 +1,26 @@
+FILE_TYPE = CONNECTIVITY;
+{GED release: 10.0 sun4-B1 bullet Mon May 21 15:55:16 PDT 1990}
+0"NC";
+1"G<SIZE-1..0> \I";
+2"GNDD \G";
+3"UN$1$REPLICATE$3P$INPUT";
+%"REPLICATE"
+"1","(1550,2050)","2","standard.lib","3P";
+;
+BODY_TYPE"PLUMBING"
+SIZE"SIZE";
+"OUTPUT <SIZE-1..0> \NAC"1;
+"INPUT \NAC"3;
+%"DRAWING"
+"1","(1275,1750)","0","standard.lib","";
+;
+ABBREV"gndd"
+TITLE"GNDD"
+LAST_MODIFIED"Wed Feb 13 13:51:40 1991";
+%"SYNONYM"
+"1","(1850,2050)","0","standard.lib","4P";
+;
+NEEDS_NO_SIZE"TRUE";
+"A\NWC\NAC"2;
+"A\NWC\NAC"3;
+END.
