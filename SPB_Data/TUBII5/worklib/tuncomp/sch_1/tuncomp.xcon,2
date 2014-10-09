@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-08T14:07:37</modificationTime>
+    <modificationTime>2014-10-09T13:37:16</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tuncomp" view="sch_1">
       <lastids>
         <instanceid>90</instanceid>
-        <netid>96</netid>
-        <insttermid>363</insttermid>
+        <netid>98</netid>
+        <insttermid>367</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -606,14 +606,6 @@
           <name>unnamed_1_10h125_i36_y</name>
         </net>
         <net>
-          <id>N69</id>
-          <name>-12v</name>
-        </net>
-        <net>
-          <id>N70</id>
-          <name>12v</name>
-        </net>
-        <net>
           <id>N71</id>
           <name>clk</name>
           <scope>interface</scope>
@@ -734,6 +726,16 @@
         <net>
           <id>N80</id>
           <name>vcc5</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N97</id>
+          <name>vcc15</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N98</id>
+          <name>vcc15m</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -2432,7 +2434,7 @@
               <id>M267</id>
               <termid>T130</termid>
               <connections>
-                <connection net="N70" />
+                <connection net="N97" />
               </connections>
             </pin>
             <pin>
@@ -2446,7 +2448,7 @@
               <id>M269</id>
               <termid>T132</termid>
               <connections>
-                <connection net="N69" />
+                <connection net="N98" />
               </connections>
             </pin>
           </pins>
@@ -3439,6 +3441,16 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vcc15">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="vcc15m">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vcc5">
             <pageScope number="1">
               <scope>global</scope>
@@ -3460,8 +3472,6 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="-12v"></net>
-              <net ref="12v"></net>
               <net ref="anpulsein"></net>
               <net ref="bit8h"></net>
               <net ref="bit8l"></net>
@@ -3509,6 +3519,8 @@
               <net ref="unnamed_1_ad7243_i94_sync"></net>
               <net ref="unnamed_1_ad7243_i94_vout"></net>
               <net ref="vcc"></net>
+              <net ref="vcc15"></net>
+              <net ref="vcc15m"></net>
               <net ref="vcc5"></net>
               <net ref="vih"></net>
               <net ref="vtt"></net>
