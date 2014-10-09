@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-08T13:20:36</modificationTime>
+    <modificationTime>2014-10-09T10:31:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>162</instanceid>
-        <netid>954</netid>
-        <insttermid>5711</insttermid>
+        <netid>992</netid>
+        <insttermid>5829</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -160,46 +160,6 @@
             <term>
               <id>T2759</id>
               <name>gtrig</name>
-              <direction>input</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S50</id>
-          <library>tubii_lib</library>
-          <name>ellie</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T2316</id>
-              <name>smellie_delay_in</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T2317</id>
-              <name>smellie_delay_out</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T2319</id>
-              <name>tellie_delay_in</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T2320</id>
-              <name>tellie_delay_out</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T3131</id>
-              <name>smellie_pulse_out</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T3132</id>
-              <name>tellie_pulse_out</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -752,7 +712,7 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T3379</id>
+              <id>T3469</id>
               <name>caen_out</name>
               <direction>input</direction>
               <msb>7</msb>
@@ -867,32 +827,37 @@
             <term>
               <id>T3383</id>
               <name>smellie_delay_in</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3384</id>
               <name>smellie_delay_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3385</id>
               <name>smellie_pulse_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3386</id>
               <name>tellie_delay_in</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3387</id>
               <name>tellie_delay_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3388</id>
               <name>tellie_pulse_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T3389</id>
+              <name>burst_trig</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -964,18 +929,6 @@
         <net>
           <id>N472</id>
           <name>unnamed_1_microzedconnection_i56_tubiigtout</name>
-        </net>
-        <net>
-          <id>N585</id>
-          <name>unnamed_1_ellie_i98_smelliedelayin</name>
-        </net>
-        <net>
-          <id>N586</id>
-          <name>unnamed_1_ellie_i98_smelliedelayout</name>
-        </net>
-        <net>
-          <id>N588</id>
-          <name>unnamed_1_ellie_i98_telliedelayin</name>
         </net>
         <net>
           <id>N591</id>
@@ -1244,18 +1197,6 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N875</id>
-          <name>unnamed_1_ellie_i98_smelliepulseout</name>
-        </net>
-        <net>
-          <id>N876</id>
-          <name>unnamed_1_ellie_i98_telliedelayout</name>
-        </net>
-        <net>
-          <id>N877</id>
-          <name>unnamed_1_ellie_i98_telliepulseout</name>
-        </net>
-        <net>
           <id>N878</id>
           <name>unnamed_1_microzedconnection_i56_rawtrigsin</name>
           <msb>3</msb>
@@ -1284,6 +1225,30 @@
           <name>unnamed_1_caen_i101_scopeout</name>
           <msb>7</msb>
           <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N955</id>
+          <name>unnamed_1_microzedconnection_i56_smelliedelayin</name>
+        </net>
+        <net>
+          <id>N956</id>
+          <name>unnamed_1_microzedconnection_i56_smelliedelayout</name>
+        </net>
+        <net>
+          <id>N957</id>
+          <name>unnamed_1_microzedconnection_i56_smelliepulseout</name>
+        </net>
+        <net>
+          <id>N958</id>
+          <name>unnamed_1_microzedconnection_i56_telliedelayin</name>
+        </net>
+        <net>
+          <id>N959</id>
+          <name>unnamed_1_microzedconnection_i56_telliedelayout</name>
+        </net>
+        <net>
+          <id>N960</id>
+          <name>unnamed_1_microzedconnection_i56_telliepulseout</name>
         </net>
         <net>
           <id>N3</id>
@@ -1661,69 +1626,6 @@
               <termid>T2759</termid>
               <connections>
                 <connection net="N732" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I132</id>
-          <cellid>S50</cellid>
-          <name>page1_i98</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M4451</id>
-              <termid>T2316</termid>
-              <connections>
-                <connection net="N585" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M4452</id>
-              <termid>T2317</termid>
-              <connections>
-                <connection net="N586" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M4454</id>
-              <termid>T2319</termid>
-              <connections>
-                <connection net="N588" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M4455</id>
-              <termid>T2320</termid>
-              <connections>
-                <connection net="N876" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M5403</id>
-              <termid>T3131</termid>
-              <connections>
-                <connection net="N875" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M5404</id>
-              <termid>T3132</termid>
-              <connections>
-                <connection net="N877" />
               </connections>
             </pin>
           </pins>
@@ -2536,8 +2438,8 @@
               </connections>
             </pin>
             <pin>
-              <id>M5702</id>
-              <termid>T3379</termid>
+              <id>M5829</id>
+              <termid>T3469</termid>
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
@@ -2708,36 +2610,49 @@
               <id>M5706</id>
               <termid>T3383</termid>
               <connections>
+                <connection net="N955" />
               </connections>
             </pin>
             <pin>
               <id>M5707</id>
               <termid>T3384</termid>
               <connections>
+                <connection net="N956" />
               </connections>
             </pin>
             <pin>
               <id>M5708</id>
               <termid>T3385</termid>
               <connections>
+                <connection net="N957" />
               </connections>
             </pin>
             <pin>
               <id>M5709</id>
               <termid>T3386</termid>
               <connections>
+                <connection net="N958" />
               </connections>
             </pin>
             <pin>
               <id>M5710</id>
               <termid>T3387</termid>
               <connections>
+                <connection net="N959" />
               </connections>
             </pin>
             <pin>
               <id>M5711</id>
               <termid>T3388</termid>
               <connections>
+                <connection net="N960" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M5712</id>
+              <termid>T3389</termid>
+              <connections>
+                <connection net="N468" />
               </connections>
             </pin>
           </pins>
@@ -2868,12 +2783,6 @@
               <net ref="unnamed_1_comparators_i102_tunepulse"></net>
               <net ref="unnamed_1_ecalcontrol_i92_extpedin"></net>
               <net ref="unnamed_1_ecalcontrol_i92_extpedout"></net>
-              <net ref="unnamed_1_ellie_i98_smelliedelayin"></net>
-              <net ref="unnamed_1_ellie_i98_smelliedelayout"></net>
-              <net ref="unnamed_1_ellie_i98_smelliepulseout"></net>
-              <net ref="unnamed_1_ellie_i98_telliedelayin"></net>
-              <net ref="unnamed_1_ellie_i98_telliedelayout"></net>
-              <net ref="unnamed_1_ellie_i98_telliepulseout"></net>
               <net ref="unnamed_1_genericutilities_i103_asyncdelayin"></net>
               <net ref="unnamed_1_genericutilities_i103_asyncdelayout"></net>
               <net ref="unnamed_1_genericutilities_i103_asyncpulsein"></net>
@@ -2898,10 +2807,16 @@
                 <msb>3</msb>
                 <lsb>0</lsb>
               </net>
+              <net ref="unnamed_1_microzedconnection_i56_smelliedelayin"></net>
+              <net ref="unnamed_1_microzedconnection_i56_smelliedelayout"></net>
+              <net ref="unnamed_1_microzedconnection_i56_smelliepulseout"></net>
               <net ref="unnamed_1_microzedconnection_i56_spkr"></net>
               <net ref="unnamed_1_microzedconnection_i56_syncdelayin"></net>
               <net ref="unnamed_1_microzedconnection_i56_syncdelayout"></net>
               <net ref="unnamed_1_microzedconnection_i56_syncpulseout"></net>
+              <net ref="unnamed_1_microzedconnection_i56_telliedelayin"></net>
+              <net ref="unnamed_1_microzedconnection_i56_telliedelayout"></net>
+              <net ref="unnamed_1_microzedconnection_i56_telliepulseout"></net>
               <net ref="unnamed_1_microzedconnection_i56_tubiigtout"></net>
               <net ref="vcc"></net>
             </nets>
@@ -2911,7 +2826,6 @@
               <instance ref="i58"></instance>
               <instance ref="i65"></instance>
               <instance ref="i92"></instance>
-              <instance ref="i98"></instance>
               <instance ref="i99"></instance>
               <instance ref="i100"></instance>
               <instance ref="i101"></instance>
@@ -2921,6 +2835,14 @@
               <instance ref="i105"></instance>
               <instance ref="i106"></instance>
               <instance ref="i107"></instance>
+            </instances>
+          </page>
+          <page number="2">
+            <physicalPageNumber>2</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+            </nets>
+            <instances>
             </instances>
           </page>
         </pages>

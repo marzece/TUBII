@@ -8,8 +8,8 @@
   (design "tubii"
     (lastIds
       (lastInstanceId 162)
-      (lastNetId 976)
-      (lastInstTermId 5770)
+      (lastNetId 992)
+      (lastInstTermId 5832)
     )
     (cells
       ("S3" "powers" "tubii_lib" "sym_1"
@@ -157,7 +157,6 @@
           ("T2924" "tune_anpulse" -1 -1 1)
           ("T2926" "async_delay_in" -1 -1 1)
           ("T2927" "sync_delay_in" -1 -1 1)
-          ("T2928" "async_delay_out" -1 -1 1)
           ("T2929" "sync_delay_out" -1 -1 1)
           ("T2934" "fast_comp_outh" -1 -1 1)
           ("T2935" "fast_comp_outl" -1 -1 1)
@@ -166,7 +165,9 @@
           ("T3288" "mtcd_lo*" -1 -1 1)
           ("T3374" "tune_comp_outh" -1 -1 1)
           ("T3375" "async_pulse_out" -1 -1 1)
-          ("T3379" "caen_out" 7 0 1)
+          ("T3469" "caen_out" 7 0 1)
+          ("T3470" "scope_out" 7 0 1)
+          ("T3472" "async_delay_out" -1 -1 1)
         )
       )
       ("S57" "cntrl_register" "tubii_lib" "sym_1"
@@ -905,11 +906,6 @@
               ("0" -1 -1 "N822" -1 -1)
             )
           )
-          ("M5236" "T2928" -1 -1
-            (conn
-              ("0" -1 -1 "N814" -1 -1)
-            )
-          )
           ("M5237" "T2929" -1 -1
             (conn
               ("0" -1 -1 "N823" -1 -1)
@@ -950,9 +946,19 @@
               ("0" -1 -1 "N812" -1 -1)
             )
           )
-          ("M5702" "T3379" 7 0
+          ("M5829" "T3469" 7 0
             (conn
               ("0" 7 0 "N953" 7 0)
+            )
+          )
+          ("M5830" "T3470" 7 0
+            (conn
+              ("0" 7 0 "N954" 7 0)
+            )
+          )
+          ("M5832" "T3472" -1 -1
+            (conn
+              ("0" -1 -1 "N814" -1 -1)
             )
           )
         )

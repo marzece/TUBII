@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-08T14:22:05</modificationTime>
+    <modificationTime>2014-10-09T10:34:17</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>162</instanceid>
-        <netid>960</netid>
-        <insttermid>5712</insttermid>
+        <netid>992</netid>
+        <insttermid>5830</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -712,8 +712,15 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T3379</id>
+              <id>T3469</id>
               <name>caen_out</name>
+              <direction>input</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T3470</id>
+              <name>scope_out</name>
               <direction>input</direction>
               <msb>7</msb>
               <lsb>0</lsb>
@@ -827,32 +834,32 @@
             <term>
               <id>T3383</id>
               <name>smellie_delay_in</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3384</id>
               <name>smellie_delay_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3385</id>
               <name>smellie_pulse_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3386</id>
               <name>tellie_delay_in</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3387</id>
               <name>tellie_delay_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3388</id>
               <name>tellie_pulse_out</name>
-              <direction>unspec</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T3389</id>
@@ -2438,12 +2445,21 @@
               </connections>
             </pin>
             <pin>
-              <id>M5702</id>
-              <termid>T3379</termid>
+              <id>M5829</id>
+              <termid>T3469</termid>
               <msb>7</msb>
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="7" pinlsb="0" net="N953" netmsb="7" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M5830</id>
+              <termid>T3470</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="7" pinlsb="0" net="N954" netmsb="7" netlsb="0" />
               </connections>
             </pin>
           </pins>
@@ -2835,6 +2851,14 @@
               <instance ref="i105"></instance>
               <instance ref="i106"></instance>
               <instance ref="i107"></instance>
+            </instances>
+          </page>
+          <page number="2">
+            <physicalPageNumber>2</physicalPageNumber>
+            <errorStatus>false</errorStatus>
+            <nets>
+            </nets>
+            <instances>
             </instances>
           </page>
         </pages>

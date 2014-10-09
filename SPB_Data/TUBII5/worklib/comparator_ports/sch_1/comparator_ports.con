@@ -1,0 +1,113 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "comparator_ports"
+    (lastIds
+      (lastInstanceId 8)
+      (lastNetId 8)
+      (lastInstTermId 8)
+    )
+    (cells
+      ("S2" "testpoint_l" "misc" "sym_1"
+        (terms
+          ("T8" "a" -1 -1 3)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "fast_anpulse" -1 -1 1 3)
+      ("N2" "fast_comp_outh" -1 -1 1 3)
+      ("N3" "fast_comp_outl" -1 -1 1 3)
+      ("N5" "page1_gnd" -1 -1 0 )
+      ("N6" "tune_anpulse" -1 -1 1 3)
+      ("N7" "tune_comp_outh" -1 -1 1 3)
+      ("N8" "tune_comp_outl" -1 -1 1 3)
+      ("N4" "gnd" -1 -1 2 )
+    )
+
+    (alias
+      ("N5" -1 -1 "N4" -1 -1)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+        (pins
+          ("M1" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_i2" "S2"
+        (pins
+          ("M2" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S2"
+        (pins
+          ("M3" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_i4" "S2"
+        (pins
+          ("M4" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+      ("I5" "page1_i5" "S2"
+        (pins
+          ("M5" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i6" "S2"
+        (pins
+          ("M6" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_i9" "S2"
+        (pins
+          ("M7" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
+          )
+        )
+      )
+      ("I8" "page1_i10" "S2"
+        (pins
+          ("M8" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)
