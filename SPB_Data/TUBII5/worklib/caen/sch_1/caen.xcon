@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T18:25:26</modificationTime>
+    <modificationTime>2014-10-09T11:59:04</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>3</instanceid>
-        <netid>89</netid>
-        <insttermid>99</insttermid>
+        <netid>103</netid>
+        <insttermid>113</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -101,6 +102,14 @@
               <name>scope_out</name>
               <direction>inout</direction>
               <msb>7</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T198</id>
+              <name>an_pulse_in</name>
+              <direction>inout</direction>
+              <displayName></displayName>
+              <msb>11</msb>
               <lsb>0</lsb>
             </term>
           </terms>
@@ -205,6 +214,14 @@
           <scope>interface</scope>
           <direction>inout</direction>
           <msb>7</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N103</id>
+          <name>an_pulse_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+          <msb>11</msb>
           <lsb>0</lsb>
         </net>
         <net>
@@ -424,6 +441,15 @@
                 <connection pinmsb="7" pinlsb="0" net="N76" netmsb="7" netlsb="0" />
               </connections>
             </pin>
+            <pin>
+              <id>M113</id>
+              <termid>T198</termid>
+              <msb>11</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="11" pinlsb="0" net="N103" netmsb="11" netlsb="0" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -442,8 +468,13 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
+          <netScope ref="an_pulse_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="caen_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -546,6 +577,10 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="an_pulse_in">
+                <msb>11</msb>
+                <lsb>0</lsb>
+              </net>
               <net ref="caen_out">
                 <msb>7</msb>
                 <lsb>0</lsb>

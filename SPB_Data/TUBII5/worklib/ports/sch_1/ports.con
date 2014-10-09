@@ -8,8 +8,8 @@
   (design "ports"
     (lastIds
       (lastInstanceId 117)
-      (lastNetId 126)
-      (lastInstTermId 320)
+      (lastNetId 129)
+      (lastInstTermId 332)
     )
     (cells
       ("S2" "rsmd0805" "resistors" "sym_1"
@@ -46,6 +46,7 @@
           ("T222" "syncl_lvds" -1 -1 1)
           ("T223" "sync24l_lvds" -1 -1 1)
           ("T224" "synch_lvds" -1 -1 1)
+          ("T298" "caen_anpulse" 11 0 2)
         )
       )
       ("S18" "comparator_ports" "tubii_lib" "sym_1"
@@ -130,11 +131,12 @@
       ("N123" "page1_unnamed_1_8merge_i149_g" -1 -1 0 )
       ("N124" "page1_unnamed_1_8merge_i149_h" -1 -1 0 )
       ("N126" "async_delay_out" -1 -1 1 3)
+      ("N129" "caen_anpulse" 11 0 1 3)
       ("N1" "gnd" -1 -1 2 )
       ("N10" "vtt" -1 -1 2 )
+      ("N125" "vcc" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
       ("vp3_3" "vp3_3" -1 -1 2  inherited)
-      ("N125" "vcc" -1 -1 2  inherited)
     )
 
     (alias
@@ -429,6 +431,11 @@
           ("M298" "T224" -1 -1
             (conn
               ("0" -1 -1 "N12" -1 -1)
+            )
+          )
+          ("M332" "T298" 11 0
+            (conn
+              ("0" 11 0 "N129" 11 0)
             )
           )
         )

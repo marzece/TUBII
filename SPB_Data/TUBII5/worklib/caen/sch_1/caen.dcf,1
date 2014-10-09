@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 14 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -577,10 +577,10 @@
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):unnamed_1_10h116_i26_y_1"
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(0)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<0>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):unnamed_1_csmd0805_i20_a"
 			)
@@ -606,6 +606,12 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):vcc5") )
 				( objectStatus "vcc5" )
 			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(0)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<0>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.caen(sch_1):gnd_power"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):gnd_power") )
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):gnd_power") )
@@ -618,6 +624,11 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):gnd_power") )
 				( objectStatus "gnd_power" )
 			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(7)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(7)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<7>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):vref2m"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):vref2m") )
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):vref2m") )
@@ -629,6 +640,14 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):vref2m") )
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):vref2m") )
 				( objectStatus "vref2m" )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(5)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(5)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<5>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):gtrigh_ecl"
 				( objectStatus "gtrigh_ecl" )
@@ -653,10 +672,10 @@
 				( objectStatus "syncl_ecl" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(1)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<1>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):synch_lvds"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):synch_lvds") )
@@ -702,11 +721,48 @@
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):gnd_power"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):out_att"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):gnd_power"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):gnd_power"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(7)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<7>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(3)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(3)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<3>" )
+			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(1)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(1)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<1>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
@@ -721,10 +777,10 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(7)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<7>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):gnd_power"
 				( objectFlag fObjectAlias )
@@ -733,34 +789,70 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(6)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<6>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(6)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<6>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(5)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<5>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(5)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<5>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(4)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<4>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(4)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<4>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(3)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<3>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(2)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<2>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(1)"
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<1>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(3)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<3>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(2)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):\out\") )
 				( attribute "PHYS_NET_NAME" "CAEN_OUT<2>"
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):sync24l_lvds"
 				( objectStatus "sync24l_lvds" )
@@ -1088,11 +1180,21 @@
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b"
 			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(0)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(0)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<0>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i71_ctrl"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I71_CTRL"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(2)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(2)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<2>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i72_ctrl"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I72_CTRL"
@@ -1100,11 +1202,21 @@
 					( Origin gPackager )
 				)
 			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(4)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(4)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<4>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i73_ctrl"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I73_CTRL"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+			)
+			( signal "@tubii_lib.caen(sch_1):caen_out(6)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(6)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\out\") )
+				( objectStatus "caen_out<6>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):unnamed_1_coto2342_i12_ctrlin"
 			)
@@ -1230,29 +1342,25 @@
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b"
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i64_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I64_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(0)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(0)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<0>" )
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i67_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I67_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(1)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(1)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<1>" )
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i68_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I68_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(2)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(2)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<2>" )
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i69_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I69_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(3)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(3)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<3>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i70_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I70_IN"
@@ -1260,11 +1368,10 @@
 					( Origin gPackager )
 				)
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i70_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I70_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(4)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(4)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<4>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i71_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I71_IN"
@@ -1272,11 +1379,10 @@
 					( Origin gPackager )
 				)
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i71_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I71_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(5)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(5)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<5>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i72_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I72_IN"
@@ -1284,11 +1390,10 @@
 					( Origin gPackager )
 				)
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i72_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I72_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(6)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(6)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<6>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i73_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I73_IN"
@@ -1296,11 +1401,10 @@
 					( Origin gPackager )
 				)
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i73_outatt"
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I73_OUTATT"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
+			( signal "@tubii_lib.caen(sch_1):scope_out(7)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(7)") )
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):out_att") )
+				( objectStatus "scope_out<7>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i16_b"
 			)
@@ -17961,294 +18065,6 @@
 					( objectStatus "page1_i81.19" )
 				)
 			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i83"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,1450)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i83.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i84"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,4600)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i84.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i85"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,4150)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i85.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i86"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,3250)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i86.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i87"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,3700)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i87.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i88"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,2800)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i88.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i89"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,2350)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i89.1" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i90"
-				( attribute "ABBREV" "TP"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,1900)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i90.1" )
-				)
-			)
 			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):page1_i25"
 				( attribute "CDS_LIB" "misc"
 					( Status sBlockFlattened )
@@ -18410,8 +18226,10 @@
 			( bus "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out"
 				( memberType ( signal ) )
 				( attribute "BUS_NAME" "CAEN_OUT"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( objectFlag fObjectAlias )
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(0)") )
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(1)") )
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(2)") )
@@ -18420,6 +18238,48 @@
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(5)") )
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(6)") )
 				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out(7)") )
+			)
+			( bus "@tubii_lib.caen(sch_1):caen_out"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):caen_out") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(0)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(1)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(2)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(3)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(4)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(5)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(6)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):caen_out(7)") )
+				( objectStatus "CAEN_OUT" )
+			)
+			( bus "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out"
+				( memberType ( signal ) )
+				( attribute "BUS_NAME" "SCOPE_OUT"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(0)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(1)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(2)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(3)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(4)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(5)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(6)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out(7)") )
+			)
+			( bus "@tubii_lib.caen(sch_1):scope_out"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):scope_out") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(0)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(1)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(2)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(3)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(4)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(5)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(6)") )
+				( member ( signalRef "@tubii_lib.caen(sch_1):scope_out(7)") )
+				( objectStatus "SCOPE_OUT" )
 			)
 			( designInst "@tubii_lib.caen(sch_1):page1_i1"
 				( attribute "BLOCK" "TRUE"
@@ -21967,7 +21827,7 @@
 	( BaseCopy "caen_coms"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 11 )
+				( logicalViewRevNum 12 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -21992,6 +21852,13 @@
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(4)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<4>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<4>" )
+			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
 			)
@@ -22004,6 +21871,13 @@
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(5)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<5>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<5>" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
@@ -22018,6 +21892,13 @@
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(6)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<6>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<6>" )
+			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
 			)
@@ -22030,6 +21911,13 @@
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(7)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<7>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<7>" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
@@ -22353,6 +22241,13 @@
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):out_att"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(3)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<3>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<3>" )
+			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
 			)
@@ -22365,6 +22260,13 @@
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(2)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<2>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<2>" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
@@ -22379,6 +22281,13 @@
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(1)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<1>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<1>" )
+			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
 			)
@@ -22391,6 +22300,13 @@
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):ctrl"
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen_coms(sch_1):scope_out(0)"
+				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):out_att") )
+				( attribute "PHYS_NET_NAME" "SCOPE_OUT<0>"
+					( Origin gPackager )
+				)
+				( objectStatus "scope_out<0>" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\out\"
 				( objectFlag fObjectAlias )
@@ -22566,47 +22482,12 @@
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):out_att"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i64_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I64_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i64_outatt" )
-			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i67_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I67_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i67_outatt" )
-			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i68_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I68_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i68_outatt" )
-			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i69_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i69@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I69_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i69_outatt" )
-			)
 			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i70_in"
 				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\in\") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I70_IN"
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_caenbuffer_i70_in" )
-			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i70_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I70_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i70_outatt" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i71_in"
 				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\in\") )
@@ -22615,13 +22496,6 @@
 				)
 				( objectStatus "unnamed_1_caenbuffer_i71_in" )
 			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i71_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I71_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i71_outatt" )
-			)
 			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i72_in"
 				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I72_IN"
@@ -22629,26 +22503,12 @@
 				)
 				( objectStatus "unnamed_1_caenbuffer_i72_in" )
 			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i72_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I72_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i72_outatt" )
-			)
 			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i73_in"
 				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I73_IN"
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_caenbuffer_i73_in" )
-			)
-			( signal "@tubii_lib.caen_coms(sch_1):unnamed_1_caenbuffer_i73_outatt"
-				( alias ( signalRef "@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):out_att") )
-				( attribute "PHYS_NET_NAME" "UNNAMED_1_CAENBUFFER_I73_OUTATT"
-					( Origin gPackager )
-				)
-				( objectStatus "unnamed_1_caenbuffer_i73_outatt" )
 			)
 			( signal "@tubii_lib.caen_coms(sch_1):page1_i67@tubii_lib.caen_buffer(sch_1):vcc15m"
 			)
@@ -35144,238 +35004,6 @@
 				( pin "q"
 				)
 			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i83"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,1450)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I83" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i84"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,4600)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I84" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i85"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,4150)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I85" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i86"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2675,3250)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I86" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i87"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,3700)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I87" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i88"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,2800)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I88" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i89"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,2350)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I89" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.caen_coms(sch_1):page1_i90"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2650,1900)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I90" )
-				( pin "a"
-				)
-			)
 			( gate "@tubii_lib.caen_coms(sch_1):page1_i64@tubii_lib.caen_buffer(sch_1):page1_i25"
 				( attribute "CDS_LIB" "misc"
 					( Status sBlockFlattened )
@@ -35540,6 +35168,21 @@
 				( member ( signalRef "@tubii_lib.caen_coms(sch_1):caen_out(6)") )
 				( member ( signalRef "@tubii_lib.caen_coms(sch_1):caen_out(7)") )
 				( objectStatus "CAEN_OUT" )
+			)
+			( bus "@tubii_lib.caen_coms(sch_1):scope_out"
+				( memberType ( signal ) )
+				( attribute "BUS_NAME" "SCOPE_OUT"
+					( Origin gPackager )
+				)
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(0)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(1)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(2)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(3)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(4)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(5)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(6)") )
+				( member ( signalRef "@tubii_lib.caen_coms(sch_1):scope_out(7)") )
+				( objectStatus "SCOPE_OUT" )
 			)
 			( designInst "@tubii_lib.caen_coms(sch_1):page1_i64"
 				( attribute "BLOCK" "TRUE"

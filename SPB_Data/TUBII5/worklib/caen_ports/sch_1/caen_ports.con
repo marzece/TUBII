@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "caen_ports"
     (lastIds
-      (lastInstanceId 22)
-      (lastNetId 56)
-      (lastInstTermId 64)
+      (lastInstanceId 34)
+      (lastNetId 86)
+      (lastInstTermId 76)
     )
     (cells
       ("S2" "lvds_driver_ds10" "misc" "sym_1"
@@ -72,6 +72,36 @@
       ("N54" "unnamed_1_idsc10_i3_pin2" -1 -1 0 )
       ("N55" "unnamed_1_idsc10_i3_pin6" -1 -1 0 )
       ("N56" "unnamed_1_idsc10_i3_pin7" -1 -1 0 )
+      ("N57" "caen_anpulse" 11 0 1 3)
+      ("N58" "page1_caen_anpulse" 11 0 0 )
+      ("N59" "unnamed_1_8merge_i22_a" -1 -1 0 )
+      ("N60" "page1_unnamed_1_8merge_i22_a" -1 -1 0 )
+      ("N61" "unnamed_1_8merge_i22_b" -1 -1 0 )
+      ("N62" "page1_unnamed_1_8merge_i22_b" -1 -1 0 )
+      ("N63" "unnamed_1_8merge_i22_c" -1 -1 0 )
+      ("N64" "page1_unnamed_1_8merge_i22_c" -1 -1 0 )
+      ("N65" "unnamed_1_8merge_i22_d" -1 -1 0 )
+      ("N66" "page1_unnamed_1_8merge_i22_d" -1 -1 0 )
+      ("N67" "unnamed_1_8merge_i22_e" -1 -1 0 )
+      ("N68" "page1_unnamed_1_8merge_i22_e" -1 -1 0 )
+      ("N69" "unnamed_1_8merge_i22_f" -1 -1 0 )
+      ("N70" "page1_unnamed_1_8merge_i22_f" -1 -1 0 )
+      ("N71" "unnamed_1_8merge_i22_g" -1 -1 0 )
+      ("N72" "page1_unnamed_1_8merge_i22_g" -1 -1 0 )
+      ("N73" "unnamed_1_8merge_i22_h" -1 -1 0 )
+      ("N74" "page1_unnamed_1_8merge_i22_h" -1 -1 0 )
+      ("N75" "unnamed_1_2merge_i24_a" 7 0 0 )
+      ("N76" "page1_unnamed_1_2merge_i24_a" 7 0 0 )
+      ("N77" "unnamed_1_2merge_i24_b" 3 0 0 )
+      ("N78" "page1_unnamed_1_2merge_i24_b" 3 0 0 )
+      ("N79" "unnamed_1_4merge_i23_a" -1 -1 0 )
+      ("N80" "page1_unnamed_1_4merge_i23_a" -1 -1 0 )
+      ("N81" "unnamed_1_4merge_i23_b" -1 -1 0 )
+      ("N82" "page1_unnamed_1_4merge_i23_b" -1 -1 0 )
+      ("N83" "unnamed_1_4merge_i23_c" -1 -1 0 )
+      ("N84" "page1_unnamed_1_4merge_i23_c" -1 -1 0 )
+      ("N85" "unnamed_1_4merge_i23_d" -1 -1 0 )
+      ("N86" "page1_unnamed_1_4merge_i23_d" -1 -1 0 )
       ("N31" "gnd" -1 -1 2 )
     )
 
@@ -94,6 +124,35 @@
       ("N50" -1 -1 "N49" -1 -1)
       ("N52" -1 -1 "N30" 0 0)
       ("N52" -1 -1 "N51" -1 -1)
+      ("N58" 11 0 "N57" 11 0)
+      ("N60" -1 -1 "N59" -1 -1)
+      ("N62" -1 -1 "N61" -1 -1)
+      ("N64" -1 -1 "N63" -1 -1)
+      ("N66" -1 -1 "N65" -1 -1)
+      ("N68" -1 -1 "N67" -1 -1)
+      ("N70" -1 -1 "N69" -1 -1)
+      ("N72" -1 -1 "N71" -1 -1)
+      ("N74" -1 -1 "N73" -1 -1)
+      ("N76" 7 0 "N58" 11 4)
+      ("N76" 7 7 "N60" -1 -1)
+      ("N76" 6 6 "N62" -1 -1)
+      ("N76" 5 5 "N64" -1 -1)
+      ("N76" 4 4 "N66" -1 -1)
+      ("N76" 3 3 "N68" -1 -1)
+      ("N76" 2 2 "N70" -1 -1)
+      ("N76" 1 1 "N72" -1 -1)
+      ("N76" 0 0 "N74" -1 -1)
+      ("N76" 7 0 "N75" 7 0)
+      ("N78" 3 0 "N58" 3 0)
+      ("N78" 3 0 "N77" 3 0)
+      ("N80" -1 -1 "N78" 3 3)
+      ("N80" -1 -1 "N79" -1 -1)
+      ("N82" -1 -1 "N78" 2 2)
+      ("N82" -1 -1 "N81" -1 -1)
+      ("N84" -1 -1 "N78" 1 1)
+      ("N84" -1 -1 "N83" -1 -1)
+      ("N86" -1 -1 "N78" 0 0)
+      ("N86" -1 -1 "N85" -1 -1)
     )
 
     (instances
@@ -279,6 +338,114 @@
           ("M64" "T29" -1 -1
             (conn
               ("0" -1 -1 "N49" -1 -1)
+            )
+          )
+        )
+      )
+      ("I23" "page1_i14" "S4"
+        (pins
+          ("M65" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N59" -1 -1)
+            )
+          )
+        )
+      )
+      ("I24" "page1_i15" "S4"
+        (pins
+          ("M66" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N61" -1 -1)
+            )
+          )
+        )
+      )
+      ("I25" "page1_i16" "S4"
+        (pins
+          ("M67" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N63" -1 -1)
+            )
+          )
+        )
+      )
+      ("I26" "page1_i17" "S4"
+        (pins
+          ("M68" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N67" -1 -1)
+            )
+          )
+        )
+      )
+      ("I27" "page1_i18" "S4"
+        (pins
+          ("M69" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N69" -1 -1)
+            )
+          )
+        )
+      )
+      ("I28" "page1_i19" "S4"
+        (pins
+          ("M70" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N65" -1 -1)
+            )
+          )
+        )
+      )
+      ("I29" "page1_i20" "S4"
+        (pins
+          ("M71" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N73" -1 -1)
+            )
+          )
+        )
+      )
+      ("I30" "page1_i21" "S4"
+        (pins
+          ("M72" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N71" -1 -1)
+            )
+          )
+        )
+      )
+      ("I31" "page1_i25" "S4"
+        (pins
+          ("M73" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N79" -1 -1)
+            )
+          )
+        )
+      )
+      ("I32" "page1_i26" "S4"
+        (pins
+          ("M74" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N81" -1 -1)
+            )
+          )
+        )
+      )
+      ("I33" "page1_i27" "S4"
+        (pins
+          ("M75" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N83" -1 -1)
+            )
+          )
+        )
+      )
+      ("I34" "page1_i28" "S4"
+        (pins
+          ("M76" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N85" -1 -1)
             )
           )
         )
