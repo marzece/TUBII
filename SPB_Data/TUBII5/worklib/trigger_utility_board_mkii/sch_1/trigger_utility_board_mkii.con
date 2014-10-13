@@ -1,0 +1,815 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "trigger_utility_board_mkii"
+    (lastIds
+      (lastInstanceId 15)
+      (lastNetId 169)
+      (lastInstTermId 278)
+    )
+    (cells
+      ("S2" "base_mon" "tubii_lib" "sym_1"
+      )
+      ("S3" "cntrl_register" "tubii_lib" "sym_1"
+        (terms
+          ("T6" "clk" -1 -1 1)
+          ("T7" "data" -1 -1 1)
+          ("T8" "data_rdy" -1 -1 1)
+          ("T9" "default_clk_select" -1 -1 2)
+          ("T10" "display" 2 0 2)
+          ("T11" "ecal_setup" -1 -1 2)
+          ("T12" "le" -1 -1 1)
+          ("T13" "lo_select" -1 -1 2)
+        )
+      )
+      ("S4" "caen" "tubii_lib" "sym_1"
+        (terms
+          ("T27" "an_pulse_in" 11 0 2)
+          ("T28" "caen_out" 7 0 2)
+          ("T29" "clk" -1 -1 1)
+          ("T30" "data" -1 -1 1)
+          ("T31" "data_rdy" -1 -1 1)
+          ("T32" "gtrigh_ecl" -1 -1 2)
+          ("T33" "gtrigl_ecl" -1 -1 2)
+          ("T34" "le" -1 -1 1)
+          ("T35" "scope_out" 7 0 2)
+          ("T36" "sync24h_ecl" -1 -1 2)
+          ("T37" "sync24h_lvds" -1 -1 2)
+          ("T38" "sync24l_ecl" -1 -1 2)
+          ("T39" "sync24l_lvds" -1 -1 2)
+          ("T40" "synch_ecl" -1 -1 2)
+          ("T41" "synch_lvds" -1 -1 2)
+          ("T42" "syncl_ecl" -1 -1 2)
+          ("T43" "syncl_lvds" -1 -1 2)
+        )
+      )
+      ("S5" "gt_delays" "tubii_lib" "sym_1"
+        (terms
+          ("T60" "clk" -1 -1 1)
+          ("T61" "data" -1 -1 1)
+          ("T62" "dgth" -1 -1 2)
+          ("T63" "dgtl" -1 -1 2)
+          ("T64" "gtrigh" -1 -1 1)
+          ("T65" "gtrigl" -1 -1 1)
+          ("T66" "le_dgt" -1 -1 1)
+          ("T67" "lockout" -1 -1 2)
+          ("T68" "lockout*" -1 -1 2)
+          ("T69" "mtcd_lo*" -1 -1 2)
+          ("T70" "select_lo_src" -1 -1 1)
+        )
+      )
+      ("S6" "hct238" "ttl" "sym_1"
+        (terms
+          ("T71" "a0" -1 -1 1)
+          ("T72" "a1" -1 -1 1)
+          ("T73" "a2" -1 -1 1)
+          ("T74" "e1" -1 -1 2)
+          ("T75" "e2" -1 -1 2)
+          ("T76" "e3" -1 -1 2)
+          ("T77" "y0" -1 -1 2)
+          ("T78" "y1" -1 -1 2)
+          ("T79" "y2" -1 -1 2)
+          ("T80" "y3" -1 -1 2)
+          ("T81" "y4" -1 -1 2)
+          ("T82" "y5" -1 -1 2)
+          ("T83" "y6" -1 -1 2)
+          ("T84" "y7" -1 -1 2)
+        )
+      )
+      ("S7" "ecal_control" "tubii_lib" "sym_1"
+        (terms
+          ("T88" "ecal_active" -1 -1 1)
+          ("T89" "ext_ped_in" -1 -1 2)
+          ("T90" "ext_ped_out" -1 -1 2)
+          ("T91" "gtrig" -1 -1 1)
+        )
+      )
+      ("S8" "tubii_spkr" "tubii_lib" "sym_1"
+        (terms
+          ("T95" "spkr_signal" -1 -1 1)
+        )
+      )
+      ("S9" "microzedconnection" "tubii_lib" "sym_1"
+      )
+      ("S10" "generic_utilities" "tubii_lib" "sym_1"
+        (terms
+          ("T107" "allow_count" -1 -1 2)
+          ("T108" "async_delay_in" -1 -1 1)
+          ("T109" "async_delay_out" -1 -1 2)
+          ("T110" "async_pulse_in" -1 -1 1)
+          ("T111" "async_pulse_out" -1 -1 2)
+          ("T112" "clk" -1 -1 1)
+          ("T113" "clr_cnt" -1 -1 2)
+          ("T114" "data" -1 -1 1)
+          ("T115" "display_zeroes" -1 -1 2)
+          ("T116" "latch_display" -1 -1 2)
+          ("T117" "le_async_delay" -1 -1 1)
+          ("T118" "le_async_pulse" -1 -1 1)
+          ("T119" "pulse" -1 -1 2)
+          ("T120" "test_display" -1 -1 2)
+        )
+      )
+      ("S11" "clocks" "tubii_lib" "sym_1"
+        (terms
+          ("T127" "clk100_outh" -1 -1 2)
+          ("T128" "clk100_outl" -1 -1 2)
+          ("T129" "clock100" -1 -1 2)
+          ("T130" "clock200_outh" -1 -1 2)
+          ("T131" "clock200_outl" -1 -1 2)
+          ("T132" "data" -1 -1 1)
+          ("T133" "data_rdy" -1 -1 1)
+          ("T134" "default_select" -1 -1 2)
+          ("T135" "fox200mhz" -1 -1 2)
+          ("T136" "le" -1 -1 1)
+          ("T137" "missedclock" -1 -1 2)
+          ("T138" "sr_clk" -1 -1 1)
+          ("T139" "tub_clk_in" -1 -1 1)
+        )
+      )
+      ("S12" "comparators" "tubii_lib" "sym_1"
+        (terms
+          ("T150" "clk" -1 -1 1)
+          ("T151" "data" -1 -1 1)
+          ("T152" "data_rdy" -1 -1 1)
+          ("T153" "dgth" -1 -1 2)
+          ("T154" "dgtl" -1 -1 2)
+          ("T155" "fast_comp_outh" -1 -1 2)
+          ("T156" "fast_comp_outl" -1 -1 2)
+          ("T157" "fast_pulse" -1 -1 3)
+          ("T158" "le_tune" -1 -1 1)
+          ("T159" "lockout" -1 -1 2)
+          ("T160" "lockout*" -1 -1 2)
+          ("T161" "tune_comp_outh" -1 -1 2)
+          ("T162" "tune_comp_outl" -1 -1 2)
+          ("T163" "tune_pulse" -1 -1 3)
+        )
+      )
+      ("S13" "powers" "tubii_lib" "sym_1"
+        (terms
+          ("T172" "power" 3 1 1)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "exttrig" 15 0 1 3)
+      ("N4" "unnamed_1_3merge_i6_a" -1 -1 0 )
+      ("N5" "page1_unnamed_1_3merge_i6_a" -1 -1 0 )
+      ("N6" "unnamed_1_3merge_i6_b" -1 -1 0 )
+      ("N7" "page1_unnamed_1_3merge_i6_b" -1 -1 0 )
+      ("N8" "unnamed_1_3merge_i6_c" -1 -1 0 )
+      ("N9" "page1_unnamed_1_3merge_i6_c" -1 -1 0 )
+      ("N10" "unnamed_1_3merge_i6_y" 2 0 0 )
+      ("N11" "page1_unnamed_1_3merge_i6_y" 2 0 0 )
+      ("N12" "unnamed_1_3merge_i8_a" -1 -1 0 )
+      ("N13" "page1_unnamed_1_3merge_i8_a" -1 -1 0 )
+      ("N14" "unnamed_1_3merge_i8_b" -1 -1 0 )
+      ("N15" "page1_unnamed_1_3merge_i8_b" -1 -1 0 )
+      ("N16" "unnamed_1_3merge_i8_c" -1 -1 0 )
+      ("N17" "page1_unnamed_1_3merge_i8_c" -1 -1 0 )
+      ("N18" "unnamed_1_3merge_i8_y" 2 0 0 )
+      ("N19" "page1_unnamed_1_3merge_i8_y" 2 0 0 )
+      ("N22" "unnamed_1_caen_i3_clk" -1 -1 0 )
+      ("N23" "unnamed_1_caen_i3_data" -1 -1 0 )
+      ("N24" "unnamed_1_caen_i3_datardy" -1 -1 0 )
+      ("N27" "unnamed_1_caen_i3_le" -1 -1 0 )
+      ("N44" "unnamed_1_cntrlregister_i2_ecalsetup" -1 -1 0 )
+      ("N45" "unnamed_1_cntrlregister_i2_le" -1 -1 0 )
+      ("N46" "unnamed_1_cntrlregister_i2_loselect" -1 -1 0 )
+      ("N47" "unnamed_1_comparators_i13_datardy" -1 -1 0 )
+      ("N53" "unnamed_1_comparators_i13_letune" -1 -1 0 )
+      ("N61" "unnamed_1_genericutilities_i11_asyncdelayin" -1 -1 0 )
+      ("N63" "unnamed_1_genericutilities_i11_asyncpulsein" -1 -1 0 )
+      ("N65" "unnamed_1_genericutilities_i11_clrcnt" -1 -1 0 )
+      ("N66" "unnamed_1_genericutilities_i11_latchdisplay" -1 -1 0 )
+      ("N67" "unnamed_1_genericutilities_i11_leasyncdelay" -1 -1 0 )
+      ("N68" "unnamed_1_genericutilities_i11_leasyncpulse" -1 -1 0 )
+      ("N69" "unnamed_1_genericutilities_i11_pulse" -1 -1 0 )
+      ("N70" "unnamed_1_gtdelays_i4_ledgt" -1 -1 0 )
+      ("N73" "unnamed_1_microzedconnection_i10_spkr" -1 -1 0 )
+      ("N97" "rawtrigs" 3 0 0 )
+      ("N98" "tellie_pulse_out" -1 -1 1 3)
+      ("N99" "anpulsein" 11 0 1 3)
+      ("N100" "caen_out" 7 0 1 3)
+      ("N101" "dgth" -1 -1 1 3)
+      ("N102" "dgtl" -1 -1 1 3)
+      ("N103" "ext_ped_in" -1 -1 1 3)
+      ("N104" "ext_ped_out" -1 -1 1 3)
+      ("N105" "gtrigh_ecl" -1 -1 1 3)
+      ("N106" "gtrigl_ecl" -1 -1 1 3)
+      ("N107" "lockout" -1 -1 1 3)
+      ("N108" "lockout*" -1 -1 1 3)
+      ("N109" "mtcd_lo*" -1 -1 1 3)
+      ("N110" "scope_out" 7 0 0 )
+      ("N111" "sync24h_ecl" -1 -1 1 3)
+      ("N112" "sync24h_lvds" -1 -1 1 3)
+      ("N113" "sync24l_ecl" -1 -1 1 3)
+      ("N114" "sync24l_lvds" -1 -1 1 3)
+      ("N115" "synch_ecl" -1 -1 1 3)
+      ("N116" "synch_lvds" -1 -1 1 3)
+      ("N117" "syncl_ecl" -1 -1 1 3)
+      ("N118" "syncl_lvds" -1 -1 1 3)
+      ("N119" "async_delay_out" -1 -1 1 3)
+      ("N120" "burst_trig" -1 -1 1 3)
+      ("N121" "clock100_outh" -1 -1 1 3)
+      ("N122" "clock100_outl" -1 -1 1 3)
+      ("N123" "clock200_outh" -1 -1 1 3)
+      ("N124" "clock200_outl" -1 -1 1 3)
+      ("N125" "combo_trig" -1 -1 1 3)
+      ("N126" "prescale_trig" -1 -1 1 3)
+      ("N127" "tub_clk_in" -1 -1 1 3)
+      ("N128" "tubii_gt" -1 -1 1 3)
+      ("N147" "async_delay_in" -1 -1 1 3)
+      ("N148" "async_pulse_out" -1 -1 1 3)
+      ("N149" "fast_anpulse" -1 -1 1 3)
+      ("N150" "fast_comp_outh" -1 -1 1 3)
+      ("N151" "fast_comp_outl" -1 -1 1 3)
+      ("N152" "smellie_delay_in" -1 -1 1 3)
+      ("N153" "smellie_delay_out" -1 -1 1 3)
+      ("N154" "smellie_pulse_out" -1 -1 1 3)
+      ("N155" "sync_delay_in" -1 -1 1 3)
+      ("N156" "sync_delay_out" -1 -1 1 3)
+      ("N157" "sync_pulse_out" -1 -1 1 3)
+      ("N158" "tellie_delay_in" -1 -1 1 3)
+      ("N159" "tellie_delay_out" -1 -1 1 3)
+      ("N160" "tune_anpulse" -1 -1 1 3)
+      ("N161" "tune_comp_outh" -1 -1 1 3)
+      ("N162" "tune_comp_outl" -1 -1 1 3)
+      ("N163" "unnamed_1_clocks_i15_clock100" -1 -1 0 )
+      ("N164" "unnamed_1_clocks_i15_datardy" -1 -1 0 )
+      ("N165" "unnamed_1_clocks_i15_defaultselect" -1 -1 0 )
+      ("N166" "unnamed_1_clocks_i15_fox200mhz" -1 -1 0 )
+      ("N167" "unnamed_1_clocks_i15_le" -1 -1 0 )
+      ("N168" "unnamed_1_clocks_i15_missedclock" -1 -1 0 )
+      ("N169" "unnamed_1_cntrlregister_i2_datardy" -1 -1 0 )
+      ("N2" "gnd" -1 -1 2 )
+      ("N77" "vcc" -1 -1 2 )
+      ("gtrigh" "gtrigh" -1 -1 2  inherited)
+      ("gtrigl" "gtrigl" -1 -1 2  inherited)
+      ("vee" "vee" -1 -1 2  inherited)
+      ("vp3_3" "vp3_3" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2  inherited)
+      ("gtrig_ttl" "gtrig_ttl" -1 -1 2  inherited)
+      ("vcc5" "vcc5" -1 -1 2  inherited)
+      ("gnd_power" "gnd_power" -1 -1 2  inherited)
+      ("vref2m" "vref2m" -1 -1 2  inherited)
+      ("vcc15" "vcc15" -1 -1 2  inherited)
+      ("vcc15m" "vcc15m" -1 -1 2  inherited)
+      ("vcc5m" "vcc5m" -1 -1 2  inherited)
+      ("vcci0_34" "vcci0_34" -1 -1 2  inherited)
+      ("vcci0_35" "vcci0_35" -1 -1 2  inherited)
+      ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
+      ("vih" "vih" -1 -1 2  inherited)
+      ("vcc_in" "vcc_in" -1 -1 2  inherited)
+      ("vm6" "vm6" -1 -1 2  inherited)
+    )
+
+    (alias
+      ("N5" -1 -1 "N4" -1 -1)
+      ("N7" -1 -1 "N6" -1 -1)
+      ("N9" -1 -1 "N8" -1 -1)
+      ("N11" 2 2 "N5" -1 -1)
+      ("N11" 1 1 "N7" -1 -1)
+      ("N11" 0 0 "N9" -1 -1)
+      ("N11" 2 0 "N10" 2 0)
+      ("N13" -1 -1 "N12" -1 -1)
+      ("N15" -1 -1 "N14" -1 -1)
+      ("N17" -1 -1 "N16" -1 -1)
+      ("N19" 2 2 "N13" -1 -1)
+      ("N19" 1 1 "N15" -1 -1)
+      ("N19" 0 0 "N17" -1 -1)
+      ("N19" 2 0 "N18" 2 0)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+      )
+      ("I2" "page1_i2" "S3"
+        (pins
+          ("M2" "T6" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M3" "T7" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M4" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N169" -1 -1)
+            )
+          )
+          ("M5" "T9" -1 -1
+            (conn
+              ("0" -1 -1 "N165" -1 -1)
+            )
+          )
+          ("M6" "T10" 2 0
+            (conn
+              ("0" 2 0 "N18" 2 0)
+            )
+          )
+          ("M7" "T11" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+          ("M8" "T12" -1 -1
+            (conn
+              ("0" -1 -1 "N45" -1 -1)
+            )
+          )
+          ("M9" "T13" -1 -1
+            (conn
+              ("0" -1 -1 "N46" -1 -1)
+            )
+          )
+        )
+      )
+      ("I3" "page1_i3" "S4"
+        (pins
+          ("M23" "T27" 11 0
+            (conn
+              ("0" 11 0 "N99" 11 0)
+            )
+          )
+          ("M24" "T28" 7 0
+            (conn
+              ("0" 7 0 "N100" 7 0)
+            )
+          )
+          ("M25" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M26" "T30" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M27" "T31" -1 -1
+            (conn
+              ("0" -1 -1 "N24" -1 -1)
+            )
+          )
+          ("M28" "T32" -1 -1
+            (conn
+              ("0" -1 -1 "N105" -1 -1)
+            )
+          )
+          ("M29" "T33" -1 -1
+            (conn
+              ("0" -1 -1 "N106" -1 -1)
+            )
+          )
+          ("M30" "T34" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+          ("M31" "T35" 7 0
+            (conn
+              ("0" 7 0 "N110" 7 0)
+            )
+          )
+          ("M32" "T36" -1 -1
+            (conn
+              ("0" -1 -1 "N111" -1 -1)
+            )
+          )
+          ("M33" "T37" -1 -1
+            (conn
+              ("0" -1 -1 "N112" -1 -1)
+            )
+          )
+          ("M34" "T38" -1 -1
+            (conn
+              ("0" -1 -1 "N113" -1 -1)
+            )
+          )
+          ("M35" "T39" -1 -1
+            (conn
+              ("0" -1 -1 "N114" -1 -1)
+            )
+          )
+          ("M36" "T40" -1 -1
+            (conn
+              ("0" -1 -1 "N115" -1 -1)
+            )
+          )
+          ("M37" "T41" -1 -1
+            (conn
+              ("0" -1 -1 "N116" -1 -1)
+            )
+          )
+          ("M38" "T42" -1 -1
+            (conn
+              ("0" -1 -1 "N117" -1 -1)
+            )
+          )
+          ("M39" "T43" -1 -1
+            (conn
+              ("0" -1 -1 "N118" -1 -1)
+            )
+          )
+        )
+      )
+      ("I4" "page1_i4" "S5"
+        (pins
+          ("M44" "T60" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M45" "T61" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M46" "T62" -1 -1
+            (conn
+              ("0" -1 -1 "N101" -1 -1)
+            )
+          )
+          ("M47" "T63" -1 -1
+            (conn
+              ("0" -1 -1 "N102" -1 -1)
+            )
+          )
+          ("M48" "T64" -1 -1
+            (conn
+              ("0" -1 -1 "N105" -1 -1)
+            )
+          )
+          ("M49" "T65" -1 -1
+            (conn
+              ("0" -1 -1 "N106" -1 -1)
+            )
+          )
+          ("M50" "T66" -1 -1
+            (conn
+              ("0" -1 -1 "N70" -1 -1)
+            )
+          )
+          ("M51" "T67" -1 -1
+            (conn
+              ("0" -1 -1 "N107" -1 -1)
+            )
+          )
+          ("M52" "T68" -1 -1
+            (conn
+              ("0" -1 -1 "N108" -1 -1)
+            )
+          )
+          ("M53" "T69" -1 -1
+            (conn
+              ("0" -1 -1 "N109" -1 -1)
+            )
+          )
+          ("M54" "T70" -1 -1
+            (conn
+              ("0" -1 -1 "N46" -1 -1)
+            )
+          )
+        )
+      )
+      ("I5" "page1_i5" "S6"
+        (pins
+          ("M55" "T71" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+          ("M56" "T72" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
+          )
+          ("M57" "T73" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+          ("M58" "T74" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M59" "T75" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M60" "T76" -1 -1
+            (conn
+              ("0" -1 -1 "N77" -1 -1)
+            )
+          )
+          ("M61" "T77" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+          ("M62" "T78" -1 -1
+            (conn
+              ("0" -1 -1 "N70" -1 -1)
+            )
+          )
+          ("M63" "T79" -1 -1
+            (conn
+              ("0" -1 -1 "N45" -1 -1)
+            )
+          )
+          ("M64" "T80" -1 -1
+          )
+          ("M65" "T81" -1 -1
+            (conn
+              ("0" -1 -1 "N53" -1 -1)
+            )
+          )
+          ("M66" "T82" -1 -1
+            (conn
+              ("0" -1 -1 "N167" -1 -1)
+            )
+          )
+          ("M67" "T83" -1 -1
+            (conn
+              ("0" -1 -1 "N67" -1 -1)
+            )
+          )
+          ("M68" "T84" -1 -1
+            (conn
+              ("0" -1 -1 "N68" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i7" "S7"
+        (pins
+          ("M72" "T88" -1 -1
+            (conn
+              ("0" -1 -1 "N44" -1 -1)
+            )
+          )
+          ("M73" "T89" -1 -1
+            (conn
+              ("0" -1 -1 "N103" -1 -1)
+            )
+          )
+          ("M74" "T90" -1 -1
+            (conn
+              ("0" -1 -1 "N104" -1 -1)
+            )
+          )
+          ("M75" "T91" -1 -1
+            (conn
+              ("0" -1 -1 "N105" -1 -1)
+            )
+          )
+        )
+      )
+      ("I7" "page1_i9" "S8"
+        (pins
+          ("M79" "T95" -1 -1
+            (conn
+              ("0" -1 -1 "N73" -1 -1)
+            )
+          )
+        )
+      )
+      ("I8" "page1_i10" "S9"
+      )
+      ("I9" "page1_i11" "S10"
+        (pins
+          ("M88" "T107" -1 -1
+            (conn
+              ("0" -1 -1 "N12" -1 -1)
+            )
+          )
+          ("M89" "T108" -1 -1
+            (conn
+              ("0" -1 -1 "N61" -1 -1)
+            )
+          )
+          ("M90" "T109" -1 -1
+            (conn
+              ("0" -1 -1 "N119" -1 -1)
+            )
+          )
+          ("M91" "T110" -1 -1
+            (conn
+              ("0" -1 -1 "N63" -1 -1)
+            )
+          )
+          ("M92" "T111" -1 -1
+            (conn
+              ("0" -1 -1 "N148" -1 -1)
+            )
+          )
+          ("M93" "T112" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M94" "T113" -1 -1
+            (conn
+              ("0" -1 -1 "N65" -1 -1)
+            )
+          )
+          ("M95" "T114" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M96" "T115" -1 -1
+            (conn
+              ("0" -1 -1 "N16" -1 -1)
+            )
+          )
+          ("M97" "T116" -1 -1
+            (conn
+              ("0" -1 -1 "N66" -1 -1)
+            )
+          )
+          ("M98" "T117" -1 -1
+            (conn
+              ("0" -1 -1 "N67" -1 -1)
+            )
+          )
+          ("M99" "T118" -1 -1
+            (conn
+              ("0" -1 -1 "N68" -1 -1)
+            )
+          )
+          ("M100" "T119" -1 -1
+            (conn
+              ("0" -1 -1 "N69" -1 -1)
+            )
+          )
+          ("M101" "T120" -1 -1
+            (conn
+              ("0" -1 -1 "N14" -1 -1)
+            )
+          )
+        )
+      )
+      ("I11" "page1_i13" "S12"
+        (pins
+          ("M129" "T150" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M130" "T151" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M131" "T152" -1 -1
+            (conn
+              ("0" -1 -1 "N47" -1 -1)
+            )
+          )
+          ("M132" "T153" -1 -1
+            (conn
+              ("0" -1 -1 "N101" -1 -1)
+            )
+          )
+          ("M133" "T154" -1 -1
+            (conn
+              ("0" -1 -1 "N102" -1 -1)
+            )
+          )
+          ("M134" "T155" -1 -1
+            (conn
+              ("0" -1 -1 "N150" -1 -1)
+            )
+          )
+          ("M135" "T156" -1 -1
+            (conn
+              ("0" -1 -1 "N151" -1 -1)
+            )
+          )
+          ("M136" "T157" -1 -1
+            (conn
+              ("0" -1 -1 "N149" -1 -1)
+            )
+          )
+          ("M137" "T158" -1 -1
+            (conn
+              ("0" -1 -1 "N53" -1 -1)
+            )
+          )
+          ("M138" "T159" -1 -1
+            (conn
+              ("0" -1 -1 "N107" -1 -1)
+            )
+          )
+          ("M139" "T160" -1 -1
+            (conn
+              ("0" -1 -1 "N108" -1 -1)
+            )
+          )
+          ("M140" "T161" -1 -1
+            (conn
+              ("0" -1 -1 "N162" -1 -1)
+            )
+          )
+          ("M141" "T162" -1 -1
+            (conn
+              ("0" -1 -1 "N161" -1 -1)
+            )
+          )
+          ("M142" "T163" -1 -1
+            (conn
+              ("0" -1 -1 "N160" -1 -1)
+            )
+          )
+        )
+      )
+      ("I12" "page1_i14" "S13"
+        (pins
+          ("M151" "T172" 3 1
+          )
+        )
+      )
+      ("I15" "page1_i15" "S11"
+        (pins
+          ("M266" "T127" -1 -1
+            (conn
+              ("0" -1 -1 "N121" -1 -1)
+            )
+          )
+          ("M267" "T128" -1 -1
+            (conn
+              ("0" -1 -1 "N122" -1 -1)
+            )
+          )
+          ("M268" "T129" -1 -1
+            (conn
+              ("0" -1 -1 "N163" -1 -1)
+            )
+          )
+          ("M269" "T130" -1 -1
+            (conn
+              ("0" -1 -1 "N123" -1 -1)
+            )
+          )
+          ("M270" "T131" -1 -1
+            (conn
+              ("0" -1 -1 "N124" -1 -1)
+            )
+          )
+          ("M271" "T132" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M272" "T133" -1 -1
+            (conn
+              ("0" -1 -1 "N164" -1 -1)
+            )
+          )
+          ("M273" "T134" -1 -1
+            (conn
+              ("0" -1 -1 "N165" -1 -1)
+            )
+          )
+          ("M274" "T135" -1 -1
+            (conn
+              ("0" -1 -1 "N166" -1 -1)
+            )
+          )
+          ("M275" "T136" -1 -1
+            (conn
+              ("0" -1 -1 "N167" -1 -1)
+            )
+          )
+          ("M276" "T137" -1 -1
+            (conn
+              ("0" -1 -1 "N168" -1 -1)
+            )
+          )
+          ("M277" "T138" -1 -1
+            (conn
+              ("0" -1 -1 "N22" -1 -1)
+            )
+          )
+          ("M278" "T139" -1 -1
+            (conn
+              ("0" -1 -1 "N127" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)
