@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T17:53:49</modificationTime>
+    <modificationTime>2014-10-13T18:52:37</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="generic_pulse" view="sch_1">
       <lastids>
-        <instanceid>12</instanceid>
-        <netid>19</netid>
-        <insttermid>45</insttermid>
+        <instanceid>13</instanceid>
+        <netid>20</netid>
+        <insttermid>48</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -146,6 +146,21 @@
             <term>
               <id>T55</id>
               <name>q/p0</name>
+              <direction>input</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S7</id>
+          <library>tubii_lib</library>
+          <name>led_pulse</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T66</id>
+              <name>pulse_in</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -416,6 +431,34 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I13</id>
+          <cellid>S7</cellid>
+          <name>page1_i16</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M48</id>
+              <termid>T66</termid>
+              <connections>
+                <connection net="N15" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -492,6 +535,7 @@
               <instance ref="i13"></instance>
               <instance ref="i14"></instance>
               <instance ref="i15"></instance>
+              <instance ref="i16"></instance>
             </instances>
           </page>
         </pages>

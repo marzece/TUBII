@@ -8,8 +8,8 @@
   (design "trigger_utility_board_mkii"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 169)
-      (lastInstTermId 278)
+      (lastNetId 189)
+      (lastInstTermId 333)
     )
     (cells
       ("S2" "base_mon" "tubii_lib" "sym_1"
@@ -24,6 +24,8 @@
           ("T11" "ecal_setup" -1 -1 2)
           ("T12" "le" -1 -1 1)
           ("T13" "lo_select" -1 -1 2)
+          ("T291" "data_out" -1 -1 2)
+          ("T294" "read_enable" -1 -1 1)
         )
       )
       ("S4" "caen" "tubii_lib" "sym_1"
@@ -246,14 +248,12 @@
       ("N167" "unnamed_1_clocks_i15_le" -1 -1 0 )
       ("N168" "unnamed_1_clocks_i15_missedclock" -1 -1 0 )
       ("N169" "unnamed_1_cntrlregister_i2_datardy" -1 -1 0 )
+      ("N188" "unnamed_1_cntrlregister_i2_dataout" -1 -1 0 )
       ("N2" "gnd" -1 -1 2 )
       ("N77" "vcc" -1 -1 2 )
-      ("gtrigh" "gtrigh" -1 -1 2  inherited)
-      ("gtrigl" "gtrigl" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
       ("vp3_3" "vp3_3" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
-      ("gtrig_ttl" "gtrig_ttl" -1 -1 2  inherited)
       ("vcc5" "vcc5" -1 -1 2  inherited)
       ("gnd_power" "gnd_power" -1 -1 2  inherited)
       ("vref2m" "vref2m" -1 -1 2  inherited)
@@ -264,7 +264,6 @@
       ("vcci0_35" "vcci0_35" -1 -1 2  inherited)
       ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
       ("vih" "vih" -1 -1 2  inherited)
-      ("vcc_in" "vcc_in" -1 -1 2  inherited)
       ("vm6" "vm6" -1 -1 2  inherited)
     )
 
@@ -329,6 +328,13 @@
             (conn
               ("0" -1 -1 "N46" -1 -1)
             )
+          )
+          ("M330" "T291" -1 -1
+            (conn
+              ("0" -1 -1 "N188" -1 -1)
+            )
+          )
+          ("M333" "T294" -1 -1
           )
         )
       )

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-09T11:51:25</modificationTime>
+    <modificationTime>2014-10-09T11:55:12</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -14,7 +14,7 @@
       <lastids>
         <instanceid>117</instanceid>
         <netid>129</netid>
-        <insttermid>331</insttermid>
+        <insttermid>332</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -160,6 +160,13 @@
               <id>T224</id>
               <name>synch_lvds</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T298</id>
+              <name>caen_anpulse</name>
+              <direction>output</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
             </term>
           </terms>
         </cell>
@@ -1343,6 +1350,15 @@
                 <connection net="N12" />
               </connections>
             </pin>
+            <pin>
+              <id>M332</id>
+              <termid>T298</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="7" pinlsb="0" net="N129" netmsb="7" netlsb="0" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -1543,6 +1559,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="async_delay_in">
             <pageScope number="1">

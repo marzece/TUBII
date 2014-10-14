@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 9 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -500,12 +500,6 @@
 			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_coto2342_i12_no2"
 				( objectStatus "unnamed_1_coto2342_i12_no2" )
 			)
-			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_lm7171_i15_in"
-				( objectStatus "unnamed_1_lm7171_i15_in" )
-			)
-			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_lm7171_i15_in_1"
-				( objectStatus "unnamed_1_lm7171_i15_in_1" )
-			)
 			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i10_b"
 				( objectStatus "unnamed_1_resl_i10_b" )
 			)
@@ -520,6 +514,18 @@
 			)
 			( signal "@tubii_lib.caen_buffer(sch_1):vref2m"
 				( objectStatus "vref2m" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i16_b"
+				( objectStatus "unnamed_1_resl_i16_b" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):unnamed_1_resl_i1_b"
+				( objectStatus "unnamed_1_resl_i1_b" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):vcc15"
+				( objectStatus "vcc15" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):vcc15m"
+				( objectStatus "vcc15m" )
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "ABBREV" "res_l"
@@ -1268,43 +1274,6 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.caen_buffer(sch_1):page1_i15"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,125,75,-125"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2175,100)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LM7171"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LM7171"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I15" )
-				( pin "\in+\"
-				)
-				( pin "\in-\"
-				)
-				( pin "output"
-				)
-				( pin "\v+\"
-				)
-				( pin "\v-\"
-				)
-			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i16"
 				( attribute "ABBREV" "res_l"
 					( Origin gFrontEnd )
@@ -1433,43 +1402,6 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.caen_buffer(sch_1):page1_i19"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,125,75,-125"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2600,-775)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LM7171"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LM7171"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I19" )
-				( pin "\in+\"
-				)
-				( pin "\in-\"
-				)
-				( pin "output"
-				)
-				( pin "\v+\"
-				)
-				( pin "\v-\"
-				)
-			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i20"
 				( attribute "ABBREV" "res_l"
 					( Origin gFrontEnd )
@@ -1594,6 +1526,74 @@
 				( pin "\in\"
 				)
 				( pin "\out\"
+				)
+			)
+			( gate "@tubii_lib.caen_buffer(sch_1):page1_i25"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,75,25,-75"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,100)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "THS3001"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I25" )
+				( pin "\in+\"
+				)
+				( pin "\in-\"
+				)
+				( pin "\out\"
+				)
+				( pin "\vcc+\"
+				)
+				( pin "\vcc-\"
+				)
+			)
+			( gate "@tubii_lib.caen_buffer(sch_1):page1_i26"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,75,25,-75"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2600,-775)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "THS3001"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I26" )
+				( pin "\in+\"
+				)
+				( pin "\in-\"
+				)
+				( pin "\out\"
+				)
+				( pin "\vcc+\"
+				)
+				( pin "\vcc-\"
 				)
 			)
 		)

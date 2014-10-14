@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 8 )
+			( logicalViewRevNum 9 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -485,9 +485,6 @@
 			( signal "@tubii_lib.tubii_time(sch_1):mstreset_ecl"
 				( objectStatus "mstreset_ecl" )
 			)
-			( signal "@tubii_lib.tubii_time(sch_1):\pload_enable*\"
-				( objectStatus "pload_enable*" )
-			)
 			( signal "@tubii_lib.tubii_time(sch_1):ttl_reset"
 				( attribute "PHYS_NET_NAME" "TTL_RESET"
 					( Origin gPackager )
@@ -599,9 +596,6 @@
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i119_b"
 				( objectStatus "unnamed_1_10e116_i119_b" )
 			)
-			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i60_b"
-				( objectStatus "unnamed_1_10e116_i60_b" )
-			)
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i74_y"
 				( objectStatus "unnamed_1_10e116_i74_y" )
 			)
@@ -709,6 +703,12 @@
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_csmd0805_i148_b"
 				( objectStatus "unnamed_1_csmd0805_i148_b" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e016_i58_pe"
+				( objectStatus "unnamed_1_10e016_i58_pe" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10h124_i150_d"
+				( objectStatus "unnamed_1_10h124_i150_d" )
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i38"
 				( attribute "CDS_LIB" "ecl"
@@ -1465,73 +1465,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.tubii_time(sch_1):page1_i60"
-				( attribute "ABBREV" "10E116"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U100"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U100"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1950,1400)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I60" )
-				( pin "a(0)"
-					( attribute "PN" "23"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "24"
-						( Origin gPackager )
-					)
-				)
-				( pin "ref"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "20"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "21"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i61"
 				( attribute "CDS_LIB" "resistors"
 					( Origin gPackager )
@@ -1616,104 +1549,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I61" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_lib.tubii_time(sch_1):page1_i62"
-				( attribute "CDS_LIB" "capacitors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "C44"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "CURRENT" "CIMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "KNEE" "CBMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "LOCATION" "C44"
-					( Origin gPackager )
-				)
-				( attribute "MAX_TEMP" "CTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PART_NAME" "CSMD0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "SLOPE" "CSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0.1UF"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "50V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1700,1625)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "CSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I62" )
 				( pin "a(0)"
 					( attribute "PN" "1"
 						( Origin gPackager )
@@ -7979,6 +7814,82 @@
 				( pin "v"
 				)
 				( pin "y(0)"
+				)
+			)
+			( gate "@tubii_lib.tubii_time(sch_1):page1_i150"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-2275,1775)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10H124"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10H124"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I150" )
+				( pin "\y*\(0)"
+				)
+				( pin "c"
+				)
+				( pin "d"
+				)
+				( pin "q"
+				)
+			)
+			( gate "@tubii_lib.tubii_time(sch_1):page1_i151"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1950,1400)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10H124"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10H124"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I151" )
+				( pin "\y*\(0)"
+				)
+				( pin "c"
+				)
+				( pin "d"
+				)
+				( pin "q"
 				)
 			)
 			( pin "@tubii_lib.tubii_time(sch_1):page1_i57:a(0)"

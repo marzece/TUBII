@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-08-20T15:09:10</modificationTime>
+    <modificationTime>2014-09-05T14:50:20</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
       <lastids>
         <instanceid>38</instanceid>
-        <netid>37</netid>
+        <netid>39</netid>
         <insttermid>100</insttermid>
       </lastids>
       <cells>
@@ -204,10 +204,6 @@
           <name>unnamed_1_resl_i10_b</name>
         </net>
         <net>
-          <id>N35</id>
-          <name>vref5m</name>
-        </net>
-        <net>
           <id>N36</id>
           <name>out_att</name>
           <scope>interface</scope>
@@ -222,6 +218,21 @@
         <net>
           <id>N20</id>
           <name>gnd_power</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N35</id>
+          <name>vref5m</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N38</id>
+          <name>vcc5</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N39</id>
+          <name>vref2m</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -410,6 +421,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N20" />
               </connections>
             </pin>
             <pin>
@@ -648,6 +660,7 @@
               <id>M72</id>
               <termid>T7</termid>
               <connections>
+                <connection net="N38" />
               </connections>
             </pin>
             <pin>
@@ -777,12 +790,14 @@
               <id>M84</id>
               <termid>T17</termid>
               <connections>
+                <connection net="N38" />
               </connections>
             </pin>
             <pin>
               <id>M85</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N35" />
               </connections>
             </pin>
           </pins>
@@ -909,12 +924,14 @@
               <id>M93</id>
               <termid>T17</termid>
               <connections>
+                <connection net="N38" />
               </connections>
             </pin>
             <pin>
               <id>M94</id>
               <termid>T18</termid>
               <connections>
+                <connection net="N35" />
               </connections>
             </pin>
           </pins>
@@ -1016,6 +1033,7 @@
               <id>M99</id>
               <termid>T19</termid>
               <connections>
+                <connection net="N39" />
               </connections>
             </pin>
             <pin>
@@ -1073,6 +1091,21 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vcc5">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="vref2m">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="vref5m">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -1094,6 +1127,8 @@
               <net ref="unnamed_1_lm7171_i15_in"></net>
               <net ref="unnamed_1_lm7171_i15_in_1"></net>
               <net ref="unnamed_1_resl_i10_b"></net>
+              <net ref="vcc5"></net>
+              <net ref="vref2m"></net>
               <net ref="vref5m"></net>
             </nets>
             <instances>

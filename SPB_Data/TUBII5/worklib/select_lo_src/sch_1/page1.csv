@@ -3,22 +3,22 @@ FILE_TYPE = CONNECTIVITY;
 "PAGE_NUMBER" = 1;
 0"NC";
 1"GND\g";
-2"GND\g";
-3"VTT\G";
-4"SEL\I";
-5"MTCD_LO*\I";
-6"UN$1$10E116$I3$B";
-7"DDGT*\I";
-8"UN$1$10E116$I3$Y";
-9"UN$1$10H104$I18$A";
-10"UN$1$10H104$I17$A";
-11"UN$1$LED1206$I30$A";
-12"UN$1$10E116$I26$A";
-13"UN$1$10E116$I26$B";
-14"VCC5\G";
-15"LO*\I";
-16"LO\I";
-17"GND\g";
+2"UN$1$10H116$I32$B";
+3"MTCD_LO*\I";
+4"UN$1$10H104$I17$B";
+5"SEL\I";
+6"UN$1$10E116$I26$A";
+7"GND\g";
+8"GND\g";
+9"VTT\G";
+10"DDGT*\I";
+11"UN$1$10H104$I18$A";
+12"UN$1$10H104$I17$A";
+13"UN$1$LED1206$I30$A";
+14"UN$1$10E116$I26$B";
+15"VCC5\G";
+16"LO*\I";
+17"LO\I";
 %"RSMD0805"
 "1","(3100,2225)","1","resistors","I11";
 ;
@@ -40,8 +40,8 @@ TOL"1%"
 PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"3;
-"B<0>"8;
+"A<0>"9;
+"B<0>"4;
 %"RSMD0805"
 "1","(1950,2250)","1","resistors","I15";
 ;
@@ -63,8 +63,8 @@ TC1"RTMPL"
 TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
-"A<0>"3;
-"B<0>"7;
+"A<0>"9;
+"B<0>"10;
 %"RSMD0805"
 "1","(1825,2275)","1","resistors","I16";
 ;
@@ -86,32 +86,32 @@ TOL"1%"
 PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"3;
-"B<0>"5;
+"A<0>"9;
+"B<0>"3;
 %"10H104"
 "1","(3850,3250)","0","ecl","I17";
 ;
 CDS_LIB"ecl";
-"A <SIZE-1..0>"10;
-"Y <SIZE-1..0>"12;
-"B <SIZE-1..0>"8;
+"A <SIZE-1..0>"12;
+"Y <SIZE-1..0>"6;
+"B <SIZE-1..0>"4;
 %"10H104"
 "1","(3850,2925)","0","ecl","I18";
 ;
 CDS_LIB"ecl";
-"A <SIZE-1..0>"9;
-"Y <SIZE-1..0>"12;
-"B <SIZE-1..0>"7;
+"A <SIZE-1..0>"11;
+"Y <SIZE-1..0>"6;
+"B <SIZE-1..0>"10;
 %"10H124"
 "1","(2975,3850)","0","ecl","I19";
 ;
 SECTION"1"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-100,100,50,-100";
-"Y* \B"9;
-"Q"10;
-"D"4;
-"C"14;
+"Y* \B"11;
+"Q"12;
+"D"5;
+"C"15;
 %"RSMD0805"
 "1","(4125,2250)","1","resistors","I20";
 ;
@@ -133,8 +133,8 @@ TC1"RTMPL"
 TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
-"A<0>"3;
-"B<0>"12;
+"A<0>"9;
+"B<0>"6;
 %"RSMD0805"
 "1","(3550,2250)","1","resistors","I24";
 ;
@@ -156,8 +156,8 @@ TC1"RTMPL"
 TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
-"A<0>"3;
-"B<0>"9;
+"A<0>"9;
+"B<0>"11;
 %"RSMD0805"
 "1","(3675,2250)","1","resistors","I25";
 ;
@@ -179,19 +179,19 @@ TC1"RTMPL"
 TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
-"A<0>"3;
-"B<0>"10;
+"A<0>"9;
+"B<0>"12;
 %"10E116"
 "1","(4775,3050)","0","ecl","I26";
 SECTION"1";
 TITLE"10E116"
 ABBREV"10E116"
 CDS_LIB"ecl";
-"A <SIZE-1..0>"12;
-"B <SIZE-1..0>* \B"13;
-"REF"13;
-"Y <SIZE-1..0>"15;
-"Y <SIZE-1..0>* \B"16;
+"A <SIZE-1..0>"6;
+"B <SIZE-1..0>* \B"14;
+"REF"14;
+"Y <SIZE-1..0>"16;
+"Y <SIZE-1..0>* \B"17;
 %"CSMD0805"
 "1","(4500,2925)","0","capacitors","I27";
 ;
@@ -213,33 +213,22 @@ TOL"5%"
 PART_NAME"CSMD0805"
 PACKTYPE"0805"
 VOLTAGE"50V";
-"B<0>"13;
-"A<0>"1;
+"B<0>"14;
+"A<0>"7;
 %"GND"
 "1","(4400,2800)","0","misc","I28";
 ;
 CDS_LIB"misc"
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING";
-"G\NAC"1;
+"G\NAC"7;
 %"GND"
 "1","(2150,3400)","0","misc","I29";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"2;
-%"10E116"
-"1","(2725,3225)","0","ecl","I3";
-SECTION"1";
-TITLE"10E116"
-ABBREV"10E116"
-CDS_LIB"ecl";
-"A <SIZE-1..0>"5;
-"B <SIZE-1..0>* \B"6;
-"REF"6;
-"Y <SIZE-1..0>"8;
-"Y <SIZE-1..0>* \B"0;
+"G\NAC"8;
 %"LED_1206"
 "1","(2150,3525)","6","misc","I30";
 ;
@@ -252,8 +241,8 @@ ABBREV"LED"
 TITLE"LED"
 PACKTYPE"1206"
 VALUE"GREEN";
-"A"11;
-"B"2;
+"A"13;
+"B"8;
 %"RSMD0805"
 "1","(2150,3725)","1","resistors","I31";
 ;
@@ -275,36 +264,47 @@ MAX_TEMP"RTMAX"
 POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"11;
-"B<0>"4;
+"A<0>"13;
+"B<0>"5;
+%"10H116"
+"1","(2725,3225)","0","ecl","I32";
+;
+SECTION"1\PARAMETER"
+CDS_LIB"ecl"
+PACK_TYPE"PLCC";
+"Y <SIZE-1..0>* \B"0;
+"Y <SIZE-1..0>"4;
+"V"2;
+"B <SIZE-1..0>* \B"2;
+"A <SIZE-1..0>"3;
 %"CSMD0805"
-"1","(2225,3025)","0","capacitors","I7";
+"1","(2250,3175)","0","capacitors","I7";
 ;
-VALUE"0.1UF"
-TOL_ON_OFF"ON"
-CURRENT"CIMAX"
-TC"0"
-MAX_TEMP"CTMAX"
-KNEE"CBMAX"
-SLOPE"CSMAX"
-DIST"FLAT"
-IC"UNDEF"
-NEGTOL"10%"
-NEEDS_NO_SIZE"TRUE"
-POSTOL"10%"
-TOL"5%"
-PART_NAME"CSMD0805"
-PACKTYPE"0805"
-VOLTAGE"50V"
+CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
-CDS_LMAN_SYM_OUTLINE"-25,25,25,-25";
-"B<0>"6;
-"A<0>"17;
+VOLTAGE"50V"
+PACKTYPE"0805"
+PART_NAME"CSMD0805"
+TOL"5%"
+POSTOL"10%"
+NEEDS_NO_SIZE"TRUE"
+NEGTOL"10%"
+IC"UNDEF"
+DIST"FLAT"
+SLOPE"CSMAX"
+KNEE"CBMAX"
+MAX_TEMP"CTMAX"
+TC"0"
+CURRENT"CIMAX"
+TOL_ON_OFF"ON"
+VALUE"0.1UF";
+"B<0>"2;
+"A<0>"1;
 %"GND"
-"1","(2125,2975)","0","misc","I9";
+"1","(2125,3125)","0","misc","I9";
 ;
-HDL_POWER"GND"
+CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
-CDS_LIB"misc";
-"G\NAC"17;
+HDL_POWER"GND";
+"G\NAC"1;
 END.

@@ -2,19 +2,21 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\g";
-2"GND\g";
-3"GND\G";
-4"UN$1$AD8009$I4$IN";
-5"UN$1$AD8009$I4$OUTPUT";
-6"UN$1$RESL$I2$A";
+1"GND\G";
+2"VCC5M\G";
+3"UN$1$RESL$I2$A";
+4"UN$1$AD8009$I4$OUTPUT";
+5"GND\g";
+6"UN$1$AD8009$I4$IN";
+7"VCC\G";
+8"GND\g";
 %"TESTPOINT_L"
 "1","(1925,875)","2","misc","I1";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"6;
+"A\NAC \B"3;
 %"RES_L"
 "1","(2650,875)","0","resistors","I2";
 ;
@@ -33,8 +35,8 @@ TOL_ON_OFF"ON"
 SIZE"1B"
 $LOCATION"?"
 CDS_LIB"resistors";
-"A <SIZE-1..0>\NAC"6;
-"B <SIZE-1..0>\NAC"4;
+"A <SIZE-1..0>\NAC"3;
+"B <SIZE-1..0>\NAC"6;
 %"RES_L"
 "1","(3225,1100)","0","resistors","I3";
 ;
@@ -53,51 +55,51 @@ TOL_ON_OFF"ON"
 SIZE"1B"
 $LOCATION"?"
 CDS_LIB"resistors";
-"A <SIZE-1..0>\NAC"4;
-"B <SIZE-1..0>\NAC"5;
+"A <SIZE-1..0>\NAC"6;
+"B <SIZE-1..0>\NAC"4;
 %"AD8009"
 "1","(3200,800)","0","misc","I4";
 ;
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-175,125,75,-125";
-"V+"0;
-"V-"0;
-"OUTPUT"5;
-"IN+"3;
-"IN-"4;
+"V+"7;
+"V-"2;
+"OUTPUT"4;
+"IN+"1;
+"IN-"6;
 %"TESTPOINT_L"
 "1","(3950,800)","0","misc","I5";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"5;
+"A\NAC \B"4;
 %"TESTPOINT_L"
 "1","(1925,750)","2","misc","I6";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"1;
+"A\NAC \B"8;
 %"TESTPOINT_L"
 "1","(3950,700)","0","misc","I7";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"2;
+"A\NAC \B"5;
 %"GND"
 "1","(2075,650)","0","misc","I8";
 ;
 CDS_LIB"misc"
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING";
-"G\NAC"1;
+"G\NAC"8;
 %"GND"
 "1","(3825,625)","0","misc","I9";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"2;
+"G\NAC"5;
 END.

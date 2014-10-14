@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-09T11:12:00</modificationTime>
+    <modificationTime>2014-10-09T11:51:25</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>117</instanceid>
-        <netid>126</netid>
-        <insttermid>320</insttermid>
+        <netid>129</netid>
+        <insttermid>331</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -548,6 +549,14 @@
           <direction>inout</direction>
         </net>
         <net>
+          <id>N129</id>
+          <name>caen_anpulse</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+          <msb>7</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
           <id>N1</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -558,6 +567,12 @@
           <scope>global</scope>
         </net>
         <net>
+          <id>N125</id>
+          <name>vcc</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
           <id>vee</id>
           <name>vee</name>
           <scope>global</scope>
@@ -566,12 +581,6 @@
         <net>
           <id>vp3_3</id>
           <name>vp3_3</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>N125</id>
-          <name>vcc</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -1553,6 +1562,12 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="caen_anpulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="caen_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1740,6 +1755,10 @@
               <net ref="async_delay_in"></net>
               <net ref="async_delay_out"></net>
               <net ref="async_pulse_out"></net>
+              <net ref="caen_anpulse">
+                <msb>7</msb>
+                <lsb>0</lsb>
+              </net>
               <net ref="caen_out">
                 <msb>7</msb>
                 <lsb>0</lsb>

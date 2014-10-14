@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 18 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -509,20 +509,6 @@
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.caen(sch_1):gtrigh"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigh") )
-				( objectStatus "gtrigh" )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigh"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):gtrigl"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigl") )
-				( objectStatus "gtrigl" )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigl"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_lib.caen(sch_1):vee"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):vee") )
 				( objectStatus "vee" )
@@ -544,16 +530,11 @@
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):vtt"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.caen(sch_1):gtrig_ttl"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrig_ttl") )
-				( objectStatus "gtrig_ttl" )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrig_ttl"
+			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigh_ecl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigh_ecl"
-			)
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigl_ecl"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):sync24h_ecl"
 				( objectFlag fObjectAlias )
@@ -761,9 +742,11 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):gtrigh_ecl"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigh_ecl") )
 				( objectStatus "gtrigh_ecl" )
 			)
 			( signal "@tubii_lib.caen(sch_1):gtrigl_ecl"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):gtrigl_ecl") )
 				( objectStatus "gtrigl_ecl" )
 			)
 			( signal "@tubii_lib.caen(sch_1):sync24h_ecl"
@@ -1129,10 +1112,22 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\in\") )
 				( objectStatus "an_pulse_in<8>" )
 			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(8)"
+				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<8>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.caen(sch_1):an_pulse_in(9)"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(9)") )
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\in\") )
 				( objectStatus "an_pulse_in<9>" )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(9)"
+				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<9>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_prma1c05b_i14_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_PRMA1C05B_I14_IN"
@@ -1145,10 +1140,28 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\") )
 				( objectStatus "an_pulse_in<10>" )
 			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(10)"
+				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<10>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.caen(sch_1):an_pulse_in(11)"
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(11)") )
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\") )
 				( objectStatus "an_pulse_in<11>" )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(11)"
+				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<11>"
+					( Origin gPackager )
+				)
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):unnamed_1_prma1c05b_i9_in"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_PRMA1C05B_I9_IN"
@@ -1420,39 +1433,15 @@
 				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(0)") )
 				( objectStatus "an_pulse_in<0>" )
 			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(1)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(1)") )
-				( objectStatus "an_pulse_in<1>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(2)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(2)") )
-				( objectStatus "an_pulse_in<2>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(3)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(3)") )
-				( objectStatus "an_pulse_in<3>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(4)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(4)") )
-				( objectStatus "an_pulse_in<4>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(5)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(5)") )
-				( objectStatus "an_pulse_in<5>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(6)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(6)") )
-				( objectStatus "an_pulse_in<6>" )
-			)
-			( signal "@tubii_lib.caen(sch_1):an_pulse_in(7)"
-				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(7)") )
-				( objectStatus "an_pulse_in<7>" )
-			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(0)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<0>"
 					( Origin gPackager )
 				)
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(1)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(1)") )
+				( objectStatus "an_pulse_in<1>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(1)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<1>"
@@ -1460,11 +1449,19 @@
 				)
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(2)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(2)") )
+				( objectStatus "an_pulse_in<2>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(2)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<2>"
 					( Origin gPackager )
 				)
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(3)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(3)") )
+				( objectStatus "an_pulse_in<3>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(3)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<3>"
@@ -1472,11 +1469,19 @@
 				)
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(4)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(4)") )
+				( objectStatus "an_pulse_in<4>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(4)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<4>"
 					( Origin gPackager )
 				)
 				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(5)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(5)") )
+				( objectStatus "an_pulse_in<5>" )
 			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(5)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<5>"
@@ -1484,46 +1489,24 @@
 				)
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(6)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(6)") )
+				( objectStatus "an_pulse_in<6>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(6)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<6>"
 					( Origin gPackager )
 				)
 				( objectFlag fObjectAlias )
 			)
+			( signal "@tubii_lib.caen(sch_1):an_pulse_in(7)"
+				( alias ( signalRef "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(7)") )
+				( objectStatus "an_pulse_in<7>" )
+			)
 			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(7)"
 				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<7>"
 					( Origin gPackager )
 				)
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(8)"
-				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<8>"
-					( Origin gPackager )
-				)
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(9)"
-				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<9>"
-					( Origin gPackager )
-				)
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(10)"
-				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<10>"
-					( Origin gPackager )
-				)
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(11)"
-				( attribute "PHYS_NET_NAME" "AN_PULSE_IN<11>"
-					( Origin gPackager )
-				)
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\"
 				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):page1_i3"
@@ -5542,139 +5525,6 @@
 						( Origin gPackager )
 					)
 					( objectStatus "R61.2" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):page1_i71"
-				( attribute "ABBREV" "10E116"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "ecl"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U14"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U14"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "SECTION" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(700,3775)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10E116"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( pin "a(0)"
-					( attribute "PN" "23"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U14.23" )
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "24"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U14.24" )
-				)
-				( pin "ref"
-					( attribute "PN" "2"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U14.2" )
-				)
-				( pin "y(0)"
-					( attribute "PN" "20"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U14.20" )
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "21"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U14.21" )
-				)
-			)
-			( gate "@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):page1_i72"
-				( attribute "CDS_LIB" "ecl"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(700,4100)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H125"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H125"
-					( Origin gPackager )
-				)
-				( pin "a(0)"
-					( objectStatus "page1_i72.4" )
-				)
-				( pin "\b*\(0)"
-					( objectStatus "page1_i72.3" )
-				)
-				( pin "v"
-					( objectStatus "page1_i72.2" )
-				)
-				( pin "y(0)"
-					( objectStatus "page1_i72.5" )
 				)
 			)
 			( gate "@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i9"
@@ -18237,7 +18087,7 @@
 	( BaseCopy "caen_chat"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 7 )
+				( logicalViewRevNum 8 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -18247,7 +18097,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_chat"
@@ -18260,14 +18110,8 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_gnd" )
 			)
-			( signal "@tubii_lib.caen_chat(sch_1):gtrigh"
-				( objectStatus "gtrigh" )
-			)
 			( signal "@tubii_lib.caen_chat(sch_1):gtrigh_ecl"
 				( objectStatus "gtrigh_ecl" )
-			)
-			( signal "@tubii_lib.caen_chat(sch_1):gtrigl"
-				( objectStatus "gtrigl" )
 			)
 			( signal "@tubii_lib.caen_chat(sch_1):gtrigl_ecl"
 				( objectStatus "gtrigl_ecl" )
@@ -18337,9 +18181,6 @@
 			)
 			( signal "@tubii_lib.caen_chat(sch_1):vtt"
 				( objectStatus "vtt" )
-			)
-			( signal "@tubii_lib.caen_chat(sch_1):gtrig_ttl"
-				( objectStatus "gtrig_ttl" )
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i3"
 				( attribute "ABBREV" "MMBTH81LT1"
@@ -21419,108 +21260,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.caen_chat(sch_1):page1_i71"
-				( attribute "ABBREV" "10E116"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U14"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U14"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(700,3775)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I71" )
-				( pin "a(0)"
-					( attribute "PN" "23"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "24"
-						( Origin gPackager )
-					)
-				)
-				( pin "ref"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "20"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "21"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_lib.caen_chat(sch_1):page1_i72"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(700,4100)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H125"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H125"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I72" )
-				( pin "a(0)"
-				)
-				( pin "\b*\(0)"
-				)
-				( pin "v"
-				)
-				( pin "y(0)"
-				)
-			)
 		)
 	)
 	( EndBaseCopy )
@@ -21538,7 +21277,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_coms"

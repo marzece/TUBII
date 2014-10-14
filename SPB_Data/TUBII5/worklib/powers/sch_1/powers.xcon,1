@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-09T13:29:26</modificationTime>
+    <modificationTime>2014-10-14T17:51:09</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="powers" view="sch_1">
       <lastids>
         <instanceid>38</instanceid>
-        <netid>18</netid>
+        <netid>19</netid>
         <insttermid>71</insttermid>
       </lastids>
       <cells>
@@ -301,11 +301,6 @@
           <scope>global</scope>
         </net>
         <net>
-          <id>N10</id>
-          <name>vcc_in</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>N11</id>
           <name>vee</name>
           <scope>global</scope>
@@ -333,6 +328,11 @@
         <net>
           <id>N18</id>
           <name>vcc15m</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N19</id>
+          <name>vcc</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -419,7 +419,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
           </pins>
@@ -527,7 +527,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
             <pin>
@@ -566,7 +566,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
             <pin>
@@ -672,7 +672,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
             <pin>
@@ -709,7 +709,7 @@
               <id>M18</id>
               <termid>T14</termid>
               <connections>
-                <connection net="N10" />
+                <connection net="N19" />
               </connections>
             </pin>
           </pins>
@@ -977,7 +977,7 @@
               <id>M33</id>
               <termid>T23</termid>
               <connections>
-                <connection net="N10" />
+                <connection net="N19" />
               </connections>
             </pin>
             <pin>
@@ -1014,7 +1014,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N19" />
               </connections>
             </pin>
             <pin>
@@ -1654,6 +1654,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N16" />
               </connections>
             </pin>
           </pins>
@@ -1683,6 +1684,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N1" />
               </connections>
             </pin>
             <pin>
@@ -1691,6 +1693,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+                <connection pinmsb="0" pinlsb="0" net="N18" />
               </connections>
             </pin>
           </pins>
@@ -1762,17 +1765,17 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vcc">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vcc15">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
           </netScope>
           <netScope ref="vcc15m">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
-          <netScope ref="vcc_in">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -1813,9 +1816,9 @@
               <net ref="unnamed_1_7815sl_i39_input"></net>
               <net ref="unnamed_1_7915l_i41_input"></net>
               <net ref="unnamed_1_lm337tl_i22_ref"></net>
+              <net ref="vcc"></net>
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
-              <net ref="vcc_in"></net>
               <net ref="vee"></net>
               <net ref="vm6"></net>
               <net ref="vp3_3"></net>

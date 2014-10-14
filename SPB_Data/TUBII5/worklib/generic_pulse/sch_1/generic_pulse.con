@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "generic_pulse"
     (lastIds
-      (lastInstanceId 12)
-      (lastNetId 19)
-      (lastInstTermId 45)
+      (lastInstanceId 13)
+      (lastNetId 20)
+      (lastInstTermId 48)
     )
     (cells
       ("S3" "10h124" "ecl" "sym_1"
@@ -45,6 +45,11 @@
           ("T53" "ps" -1 -1 1)
           ("T54" "pwm" -1 -1 2)
           ("T55" "q/p0" -1 -1 1)
+        )
+      )
+      ("S7" "led_pulse" "tubii_lib" "sym_1"
+        (terms
+          ("T66" "pulse_in" -1 -1 1)
         )
       )
     )
@@ -148,6 +153,15 @@
           ("M44" "T54" -1 -1
           )
           ("M45" "T55" -1 -1
+          )
+        )
+      )
+      ("I13" "page1_i16" "S7"
+        (pins
+          ("M48" "T66" -1 -1
+            (conn
+              ("0" -1 -1 "N15" -1 -1)
+            )
           )
         )
       )

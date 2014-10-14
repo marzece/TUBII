@@ -8,8 +8,8 @@
   (design "caen"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 103)
-      (lastInstTermId 113)
+      (lastNetId 116)
+      (lastInstTermId 128)
     )
     (cells
       ("S2" "caen_chat" "tubii_lib" "sym_1"
@@ -21,6 +21,8 @@
           ("T101" "sync24h_lvds" -1 -1 2)
           ("T103" "synch_lvds" -1 -1 2)
           ("T104" "syncl_lvds" -1 -1 2)
+          ("T242" "gtrigh_ecl" -1 -1 1)
+          ("T243" "gtrigl_ecl" -1 -1 1)
         )
       )
       ("S3" "caen_coms" "tubii_lib" "sym_1"
@@ -55,12 +57,9 @@
       ("N76" "scope_out" 7 0 1 3)
       ("N103" "an_pulse_in" 11 0 1 3)
       ("gnd" "gnd" -1 -1 2  inherited)
-      ("gtrigh" "gtrigh" -1 -1 2  inherited)
-      ("gtrigl" "gtrigl" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
       ("vp3_3" "vp3_3" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
-      ("gtrig_ttl" "gtrig_ttl" -1 -1 2  inherited)
       ("vcc5" "vcc5" -1 -1 2  inherited)
       ("gnd_power" "gnd_power" -1 -1 2  inherited)
       ("vref2m" "vref2m" -1 -1 2  inherited)
@@ -105,6 +104,16 @@
           ("M59" "T104" -1 -1
             (conn
               ("0" -1 -1 "N35" -1 -1)
+            )
+          )
+          ("M127" "T242" -1 -1
+            (conn
+              ("0" -1 -1 "N27" -1 -1)
+            )
+          )
+          ("M128" "T243" -1 -1
+            (conn
+              ("0" -1 -1 "N28" -1 -1)
             )
           )
         )

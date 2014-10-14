@@ -49,14 +49,28 @@ primitive 'OPA2277';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+    'V+':
+      PIN_NUMBER='(8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V-':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
-    PART_NAME='OPA4277';
+    PART_NAME='OPA2277';
     BODY_NAME='OPA2277';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    POWER_PINS='(V+:8)';
-    POWER_PINS='(V-:4)';
   end_body;
 end_primitive;
 

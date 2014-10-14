@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-07T15:20:00</modificationTime>
+    <modificationTime>2014-10-07T15:56:22</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="select_lo_src" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>17</instanceid>
-        <netid>17</netid>
+        <netid>18</netid>
         <insttermid>42</insttermid>
       </lastids>
       <cells>
@@ -163,21 +164,6 @@
           </terms>
         </cell>
         <cell>
-          <id>S7</id>
-          <library>misc</library>
-          <name>testpoint_l</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T24</id>
-              <name>a</name>
-              <direction>inout</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
           <id>S8</id>
           <library>misc</library>
           <name>led_1206</name>
@@ -230,10 +216,6 @@
           <name>unnamed_1_10e116_i26_b</name>
         </net>
         <net>
-          <id>N9</id>
-          <name>unnamed_1_10e116_i3_a</name>
-        </net>
-        <net>
           <id>N10</id>
           <name>unnamed_1_10e116_i3_b</name>
         </net>
@@ -258,6 +240,12 @@
         <net>
           <id>N17</id>
           <name>unnamed_1_led1206_i30_a</name>
+        </net>
+        <net>
+          <id>N18</id>
+          <name>mtcd_lo*</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N2</id>
@@ -304,7 +292,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N18" />
               </connections>
             </pin>
             <pin>
@@ -493,7 +481,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N18" />
               </connections>
             </pin>
           </pins>
@@ -678,62 +666,6 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N7" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I10</id>
-          <cellid>S7</cellid>
-          <name>page1_i21</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M26</id>
-              <termid>T24</termid>
-              <connections>
-                <connection net="N9" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I11</id>
-          <cellid>S7</cellid>
-          <name>page1_i22</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M27</id>
-              <termid>T24</termid>
-              <connections>
-                <connection net="N2" />
               </connections>
             </pin>
           </pins>
@@ -1033,6 +965,12 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="mtcd_lo*">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sel">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1059,10 +997,10 @@
               <net ref="gnd"></net>
               <net ref="lo"></net>
               <net ref="lo*"></net>
+              <net ref="mtcd_lo*"></net>
               <net ref="sel"></net>
               <net ref="unnamed_1_10e116_i26_a"></net>
               <net ref="unnamed_1_10e116_i26_b"></net>
-              <net ref="unnamed_1_10e116_i3_a"></net>
               <net ref="unnamed_1_10e116_i3_b"></net>
               <net ref="unnamed_1_10e116_i3_y"></net>
               <net ref="unnamed_1_10h104_i17_a"></net>
@@ -1081,8 +1019,6 @@
               <instance ref="i18"></instance>
               <instance ref="i19"></instance>
               <instance ref="i20"></instance>
-              <instance ref="i21"></instance>
-              <instance ref="i22"></instance>
               <instance ref="i24"></instance>
               <instance ref="i25"></instance>
               <instance ref="i26"></instance>

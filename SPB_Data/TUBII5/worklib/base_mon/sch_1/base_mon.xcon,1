@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-09-08T14:24:16</modificationTime>
+    <modificationTime>2014-10-14T15:56:41</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="base_mon" view="sch_1">
       <lastids>
         <instanceid>5</instanceid>
-        <netid>20</netid>
-        <insttermid>50</insttermid>
+        <netid>22</netid>
+        <insttermid>56</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -144,6 +144,16 @@
               <name>out_d</name>
               <direction>inout</direction>
             </term>
+            <term>
+              <id>T31</id>
+              <name>v+</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T32</id>
+              <name>v-</name>
+              <direction>input</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -183,6 +193,16 @@
               <id>T28</id>
               <name>out_b</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T33</id>
+              <name>v+</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T34</id>
+              <name>v-</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -241,32 +261,26 @@
           <name>unnamed_1_idsc10_i2_pin2</name>
         </net>
         <net>
-          <id>N14</id>
-          <name>unnamed_1_idsc10_i2_pin3</name>
-        </net>
-        <net>
-          <id>N15</id>
-          <name>unnamed_1_idsc10_i2_pin4</name>
-        </net>
-        <net>
           <id>N16</id>
           <name>unnamed_1_idsc10_i2_pin5</name>
-        </net>
-        <net>
-          <id>N17</id>
-          <name>unnamed_1_idsc10_i2_pin6</name>
         </net>
         <net>
           <id>N18</id>
           <name>unnamed_1_idsc10_i2_pin7</name>
         </net>
         <net>
-          <id>N19</id>
-          <name>unnamed_1_idsc10_i2_pin8</name>
-        </net>
-        <net>
           <id>N20</id>
           <name>unnamed_1_idsc10_i2_pin9</name>
+        </net>
+        <net>
+          <id>N21</id>
+          <name>vcc</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>vcc5m</name>
+          <scope>global</scope>
         </net>
       </nets>
       <aliases>
@@ -400,14 +414,14 @@
               <id>M13</id>
               <termid>T3</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N3" />
               </connections>
             </pin>
             <pin>
               <id>M14</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N4" />
               </connections>
             </pin>
             <pin>
@@ -421,7 +435,7 @@
               <id>M16</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N17" />
+                <connection net="N6" />
               </connections>
             </pin>
             <pin>
@@ -435,7 +449,7 @@
               <id>M18</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N19" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
@@ -519,14 +533,12 @@
               <id>M27</id>
               <termid>T17</termid>
               <connections>
-                <connection net="N14" />
               </connections>
             </pin>
             <pin>
               <id>M28</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N15" />
               </connections>
             </pin>
             <pin>
@@ -547,14 +559,28 @@
               <id>M31</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N3" />
               </connections>
             </pin>
             <pin>
               <id>M32</id>
               <termid>T22</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M51</id>
+              <termid>T31</termid>
+              <connections>
+                <connection net="N21" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M53</id>
+              <termid>T32</termid>
+              <connections>
+                <connection net="N22" />
               </connections>
             </pin>
           </pins>
@@ -610,21 +636,18 @@
               <id>M37</id>
               <termid>T15</termid>
               <connections>
-                <connection net="N17" />
               </connections>
             </pin>
             <pin>
               <id>M38</id>
               <termid>T16</termid>
               <connections>
-                <connection net="N18" />
               </connections>
             </pin>
             <pin>
               <id>M39</id>
               <termid>T17</termid>
               <connections>
-                <connection net="N19" />
               </connections>
             </pin>
             <pin>
@@ -638,7 +661,7 @@
               <id>M41</id>
               <termid>T19</termid>
               <connections>
-                <connection net="N17" />
+                <connection net="N6" />
               </connections>
             </pin>
             <pin>
@@ -652,7 +675,7 @@
               <id>M43</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N19" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
@@ -660,6 +683,20 @@
               <termid>T22</termid>
               <connections>
                 <connection net="N20" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M52</id>
+              <termid>T31</termid>
+              <connections>
+                <connection net="N21" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M54</id>
+              <termid>T32</termid>
+              <connections>
+                <connection net="N22" />
               </connections>
             </pin>
           </pins>
@@ -725,6 +762,20 @@
                 <connection net="N16" />
               </connections>
             </pin>
+            <pin>
+              <id>M55</id>
+              <termid>T33</termid>
+              <connections>
+                <connection net="N21" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M56</id>
+              <termid>T34</termid>
+              <connections>
+                <connection net="N22" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -744,6 +795,16 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
+          <netScope ref="vcc">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="vcc5m">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -763,13 +824,11 @@
               <net ref="unnamed_1_idsc10_i2_pin1"></net>
               <net ref="unnamed_1_idsc10_i2_pin10"></net>
               <net ref="unnamed_1_idsc10_i2_pin2"></net>
-              <net ref="unnamed_1_idsc10_i2_pin3"></net>
-              <net ref="unnamed_1_idsc10_i2_pin4"></net>
               <net ref="unnamed_1_idsc10_i2_pin5"></net>
-              <net ref="unnamed_1_idsc10_i2_pin6"></net>
               <net ref="unnamed_1_idsc10_i2_pin7"></net>
-              <net ref="unnamed_1_idsc10_i2_pin8"></net>
               <net ref="unnamed_1_idsc10_i2_pin9"></net>
+              <net ref="vcc"></net>
+              <net ref="vcc5m"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-08T18:25:28</modificationTime>
+    <modificationTime>2014-10-13T18:47:19</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -144,79 +144,6 @@
             </term>
           </terms>
         </cell>
-        <cell>
-          <id>S10</id>
-          <library>ecl</library>
-          <name>10e116</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T40</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T41</id>
-              <name>b*&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T42</id>
-              <name>ref</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T43</id>
-              <name>y&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T44</id>
-              <name>y*&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S11</id>
-          <library>ecl</library>
-          <name>10h125</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T52</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T53</id>
-              <name>b*&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T54</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T55</id>
-              <name>y&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
       </cells>
       <nets>
         <net>
@@ -226,10 +153,14 @@
         <net>
           <id>N4</id>
           <name>gtrigh_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N6</id>
           <name>gtrigl_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N7</id>
@@ -329,16 +260,6 @@
           <scope>global</scope>
         </net>
         <net>
-          <id>N3</id>
-          <name>gtrigh</name>
-          <scope>global</scope>
-        </net>
-        <net>
-          <id>N5</id>
-          <name>gtrigl</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>N41</id>
           <name>vee</name>
           <scope>global</scope>
@@ -351,11 +272,6 @@
         <net>
           <id>N43</id>
           <name>vtt</name>
-          <scope>global</scope>
-        </net>
-        <net>
-          <id>N44</id>
-          <name>gtrig_ttl</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -1759,123 +1675,6 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
-        <instance>
-          <id>I56</id>
-          <cellid>S10</cellid>
-          <name>page1_i71</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M152</id>
-              <termid>T40</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M153</id>
-              <termid>T41</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M154</id>
-              <termid>T42</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M155</id>
-              <termid>T43</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N3" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M156</id>
-              <termid>T44</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N5" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I57</id>
-          <cellid>S11</cellid>
-          <name>page1_i72</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M157</id>
-              <termid>T52</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M158</id>
-              <termid>T53</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M159</id>
-              <termid>T54</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M160</id>
-              <termid>T55</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N44" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1884,25 +1683,23 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="gtrig_ttl">
+          <netScope ref="gtrigh_ecl">
             <pageScope number="1">
-              <scope>global</scope>
+              <scope>interface</scope>
+              <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="gtrigh">
+          <netScope ref="gtrigl_ecl">
             <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
-          <netScope ref="gtrigl">
-            <pageScope number="1">
-              <scope>global</scope>
+              <scope>interface</scope>
+              <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="sync24h_ecl">
@@ -1975,10 +1772,7 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
-              <net ref="gtrig_ttl"></net>
-              <net ref="gtrigh"></net>
               <net ref="gtrigh_ecl"></net>
-              <net ref="gtrigl"></net>
               <net ref="gtrigl_ecl"></net>
               <net ref="sync24h_ecl"></net>
               <net ref="sync24h_lvds"></net>
@@ -2038,8 +1832,6 @@
               <instance ref="i40"></instance>
               <instance ref="i41"></instance>
               <instance ref="i42"></instance>
-              <instance ref="i71"></instance>
-              <instance ref="i72"></instance>
             </instances>
           </page>
         </pages>

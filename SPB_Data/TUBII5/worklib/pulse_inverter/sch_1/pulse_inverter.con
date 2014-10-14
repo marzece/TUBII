@@ -8,7 +8,7 @@
   (design "pulse_inverter"
     (lastIds
       (lastInstanceId 7)
-      (lastNetId 5)
+      (lastNetId 7)
       (lastInstTermId 13)
     )
     (cells
@@ -43,6 +43,8 @@
       ("N4" "unnamed_1_ad8009_i4_output" -1 -1 0 )
       ("N5" "page1_gnd" -1 -1 0 )
       ("N2" "gnd" -1 -1 2 )
+      ("N6" "vcc" -1 -1 2 )
+      ("N7" "vcc5m" -1 -1 2 )
     )
 
     (alias
@@ -105,8 +107,14 @@
             )
           )
           ("M9" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
           )
           ("M10" "T9" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
           )
         )
       )

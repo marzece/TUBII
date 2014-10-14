@@ -1,8 +1,24 @@
 FILE_TYPE=LIBRARY_PARTS;
 primitive 'OPA4277';
   pin
-    '+IN_A':
-      PIN_NUMBER='(3)';
+    'OUT_A':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT_D':
+      PIN_NUMBER='(14)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT_C':
+      PIN_NUMBER='(8)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -11,22 +27,6 @@ primitive 'OPA4277';
       ALLOW_CONNECT='TRUE';
     '+IN_B':
       PIN_NUMBER='(5)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-    '+IN_C':
-      PIN_NUMBER='(10)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-    '+IN_D':
-      PIN_NUMBER='(12)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -49,6 +49,22 @@ primitive 'OPA4277';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+    '+IN_C':
+      PIN_NUMBER='(10)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    '+IN_D':
+      PIN_NUMBER='(12)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
     '-IN_C':
       PIN_NUMBER='(9)';
       PIN_TYPE='ANALOG';
@@ -65,14 +81,6 @@ primitive 'OPA4277';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
-    'OUT_A':
-      PIN_NUMBER='(1)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
     'OUT_B':
       PIN_NUMBER='(7)';
       PIN_TYPE='ANALOG';
@@ -81,17 +89,25 @@ primitive 'OPA4277';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
-    'OUT_C':
-      PIN_NUMBER='(8)';
+    '+IN_A':
+      PIN_NUMBER='(3)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
-    'OUT_D':
-      PIN_NUMBER='(14)';
-      PIN_TYPE='ANALOG';
+    'V+':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V-':
+      PIN_NUMBER='(11)';
+      PINUSE='POWER';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
       NO_ASSERT_CHECK='TRUE';
@@ -103,8 +119,6 @@ primitive 'OPA4277';
     BODY_NAME='OPA4277';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    POWER_PINS='(V+:4)';
-    POWER_PINS='(V-:11)';
   end_body;
 end_primitive;
 
