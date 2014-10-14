@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-14T18:37:08</modificationTime>
+    <modificationTime>2014-10-14T18:12:00</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="translators" view="sch_1">
       <lastids>
         <instanceid>42</instanceid>
-        <netid>32</netid>
-        <insttermid>91</insttermid>
+        <netid>29</netid>
+        <insttermid>86</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -40,14 +40,19 @@
           </parameters>
           <terms>
             <term>
+              <id>T5</id>
+              <name>ecl_out_bnc</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T6</id>
+              <name>ecl_out_smb</name>
+              <direction>output</direction>
+            </term>
+            <term>
               <id>T7</id>
               <name>ttl_in</name>
               <direction>input</direction>
-            </term>
-            <term>
-              <id>T62</id>
-              <name>ecl_out</name>
-              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -63,11 +68,6 @@
               <id>T14</id>
               <name>ttl_out</name>
               <direction>output</direction>
-            </term>
-            <term>
-              <id>T66</id>
-              <name>ecl_in</name>
-              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -129,14 +129,19 @@
           </parameters>
           <terms>
             <term>
+              <id>T25</id>
+              <name>ecl_in_bnc</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T26</id>
+              <name>ecl_in_smb</name>
+              <direction>input</direction>
+            </term>
+            <term>
               <id>T27</id>
               <name>lvds_out</name>
               <direction>output</direction>
-            </term>
-            <term>
-              <id>T63</id>
-              <name>ecl_in</name>
-              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -149,14 +154,19 @@
           </parameters>
           <terms>
             <term>
+              <id>T33</id>
+              <name>ecl_out_bnc</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T34</id>
+              <name>ecl_out_smb</name>
+              <direction>output</direction>
+            </term>
+            <term>
               <id>T35</id>
               <name>nim_in</name>
               <direction>input</direction>
-            </term>
-            <term>
-              <id>T64</id>
-              <name>ecl_out</name>
-              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -169,14 +179,19 @@
           </parameters>
           <terms>
             <term>
+              <id>T39</id>
+              <name>ecl_in_bnc</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T40</id>
+              <name>ecl_in_smb</name>
+              <direction>input</direction>
+            </term>
+            <term>
               <id>T41</id>
               <name>nim_out</name>
               <direction>output</direction>
-            </term>
-            <term>
-              <id>T65</id>
-              <name>ecl_in</name>
-              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -187,8 +202,24 @@
           <name>page1_gnd</name>
         </net>
         <net>
+          <id>N3</id>
+          <name>unnamed_1_ecl-lvds_i36_eclinbnc</name>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>unnamed_1_ecl-lvds_i36_eclinsmb</name>
+        </net>
+        <net>
           <id>N5</id>
           <name>unnamed_1_ecl-lvds_i36_lvdsout</name>
+        </net>
+        <net>
+          <id>N6</id>
+          <name>unnamed_1_ecl-nim_i39_eclinbnc</name>
+        </net>
+        <net>
+          <id>N7</id>
+          <name>unnamed_1_ecl-nim_i39_eclinsmb</name>
         </net>
         <net>
           <id>N8</id>
@@ -211,6 +242,14 @@
           <name>unnamed_1_lvds-ecl_i33_lvdslin</name>
         </net>
         <net>
+          <id>N15</id>
+          <name>unnamed_1_nim-ecl_i37_ecloutbnc</name>
+        </net>
+        <net>
+          <id>N16</id>
+          <name>unnamed_1_nim-ecl_i37_ecloutsmb</name>
+        </net>
+        <net>
           <id>N17</id>
           <name>unnamed_1_nim-ecl_i37_nimin</name>
         </net>
@@ -219,24 +258,16 @@
           <name>unnamed_1_testpointl_i1_a</name>
         </net>
         <net>
+          <id>N19</id>
+          <name>unnamed_1_testpointl_i4_a</name>
+        </net>
+        <net>
           <id>N20</id>
           <name>unnamed_1_testpointl_i9_a</name>
         </net>
         <net>
           <id>N29</id>
           <name>unnamed_1_ecl-ttl_i29_eclin</name>
-        </net>
-        <net>
-          <id>N30</id>
-          <name>unnamed_1_ecl-lvds_i36_eclin</name>
-        </net>
-        <net>
-          <id>N31</id>
-          <name>unnamed_1_ecl-nim_i39_eclin</name>
-        </net>
-        <net>
-          <id>N32</id>
-          <name>unnamed_1_nim-ecl_i37_eclout</name>
         </net>
         <net>
           <id>N1</id>
@@ -351,7 +382,7 @@
               <id>M3</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N18" />
+                <connection net="N19" />
               </connections>
             </pin>
           </pins>
@@ -404,17 +435,24 @@
           </powers>
           <pins>
             <pin>
+              <id>M7</id>
+              <termid>T5</termid>
+              <connections>
+                <connection net="N19" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M8</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N18" />
+              </connections>
+            </pin>
+            <pin>
               <id>M9</id>
               <termid>T7</termid>
               <connections>
                 <connection net="N20" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M87</id>
-              <termid>T62</termid>
-              <connections>
-                <connection net="N18" />
               </connections>
             </pin>
           </pins>
@@ -666,7 +704,7 @@
               <id>M18</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N32" />
+                <connection net="N15" />
               </connections>
             </pin>
           </pins>
@@ -722,7 +760,7 @@
               <id>M20</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N32" />
+                <connection net="N16" />
               </connections>
             </pin>
           </pins>
@@ -835,13 +873,6 @@
               <termid>T14</termid>
               <connections>
                 <connection net="N11" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M91</id>
-              <termid>T66</termid>
-              <connections>
-                <connection net="N29" />
               </connections>
             </pin>
           </pins>
@@ -1059,17 +1090,24 @@
           </powers>
           <pins>
             <pin>
+              <id>M43</id>
+              <termid>T25</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M44</id>
+              <termid>T26</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
               <id>M45</id>
               <termid>T27</termid>
               <connections>
                 <connection net="N5" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M88</id>
-              <termid>T63</termid>
-              <connections>
-                <connection net="N30" />
               </connections>
             </pin>
           </pins>
@@ -1094,17 +1132,24 @@
           </powers>
           <pins>
             <pin>
+              <id>M49</id>
+              <termid>T33</termid>
+              <connections>
+                <connection net="N15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M50</id>
+              <termid>T34</termid>
+              <connections>
+                <connection net="N16" />
+              </connections>
+            </pin>
+            <pin>
               <id>M51</id>
               <termid>T35</termid>
               <connections>
                 <connection net="N17" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M89</id>
-              <termid>T64</termid>
-              <connections>
-                <connection net="N32" />
               </connections>
             </pin>
           </pins>
@@ -1168,17 +1213,24 @@
           </powers>
           <pins>
             <pin>
+              <id>M57</id>
+              <termid>T39</termid>
+              <connections>
+                <connection net="N6" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M58</id>
+              <termid>T40</termid>
+              <connections>
+                <connection net="N7" />
+              </connections>
+            </pin>
+            <pin>
               <id>M59</id>
               <termid>T41</termid>
               <connections>
                 <connection net="N8" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M90</id>
-              <termid>T65</termid>
-              <connections>
-                <connection net="N31" />
               </connections>
             </pin>
           </pins>
@@ -1234,7 +1286,7 @@
               <id>M61</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N31" />
+                <connection net="N6" />
               </connections>
             </pin>
           </pins>
@@ -1318,7 +1370,7 @@
               <id>M64</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N30" />
+                <connection net="N4" />
               </connections>
             </pin>
           </pins>
@@ -1374,7 +1426,7 @@
               <id>M66</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N30" />
+                <connection net="N3" />
               </connections>
             </pin>
           </pins>
@@ -1486,7 +1538,7 @@
               <id>M70</id>
               <termid>T2</termid>
               <connections>
-                <connection net="N31" />
+                <connection net="N7" />
               </connections>
             </pin>
           </pins>
@@ -1548,18 +1600,22 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
-              <net ref="unnamed_1_ecl-lvds_i36_eclin"></net>
+              <net ref="unnamed_1_ecl-lvds_i36_eclinbnc"></net>
+              <net ref="unnamed_1_ecl-lvds_i36_eclinsmb"></net>
               <net ref="unnamed_1_ecl-lvds_i36_lvdsout"></net>
-              <net ref="unnamed_1_ecl-nim_i39_eclin"></net>
+              <net ref="unnamed_1_ecl-nim_i39_eclinbnc"></net>
+              <net ref="unnamed_1_ecl-nim_i39_eclinsmb"></net>
               <net ref="unnamed_1_ecl-nim_i39_nimout"></net>
               <net ref="unnamed_1_ecl-ttl_i29_eclin"></net>
               <net ref="unnamed_1_ecl-ttl_i29_ttlout"></net>
               <net ref="unnamed_1_lvds-ecl_i33_eclout"></net>
               <net ref="unnamed_1_lvds-ecl_i33_lvdshin"></net>
               <net ref="unnamed_1_lvds-ecl_i33_lvdslin"></net>
-              <net ref="unnamed_1_nim-ecl_i37_eclout"></net>
+              <net ref="unnamed_1_nim-ecl_i37_ecloutbnc"></net>
+              <net ref="unnamed_1_nim-ecl_i37_ecloutsmb"></net>
               <net ref="unnamed_1_nim-ecl_i37_nimin"></net>
               <net ref="unnamed_1_testpointl_i1_a"></net>
+              <net ref="unnamed_1_testpointl_i4_a"></net>
               <net ref="unnamed_1_testpointl_i9_a"></net>
             </nets>
             <instances>
