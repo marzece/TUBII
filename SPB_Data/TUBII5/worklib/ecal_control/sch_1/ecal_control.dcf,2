@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,16 +465,11 @@
 			( signal "@tubii_lib.ecal_control(sch_1):ecal_active"
 				( objectStatus "ecal_active" )
 			)
-			( signal "@tubii_lib.ecal_control(sch_1):gnd"
-				( alias ( signalRef "@tubii_lib.ecal_control(sch_1):page1_gnd") )
-				( objectStatus "gnd" )
-			)
-			( signal "@tubii_lib.ecal_control(sch_1):page1_gnd"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_gnd" )
-			)
 			( signal "@tubii_lib.ecal_control(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):ext_ped_in"
+				( objectStatus "ext_ped_in" )
 			)
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_a"
 				( objectStatus "unnamed_1_10e101_i7_a" )
@@ -482,17 +477,11 @@
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_d"
 				( objectStatus "unnamed_1_10e101_i7_d" )
 			)
-			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_y"
-				( objectStatus "unnamed_1_10e101_i7_y" )
-			)
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h104_i5_a"
 				( objectStatus "unnamed_1_10h104_i5_a" )
 			)
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h104_i6_a"
 				( objectStatus "unnamed_1_10h104_i6_a" )
-			)
-			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h104_i6_b"
-				( objectStatus "unnamed_1_10h104_i6_b" )
 			)
 			( signal "@tubii_lib.ecal_control(sch_1):vtt"
 				( objectStatus "vtt" )
@@ -500,63 +489,8 @@
 			( signal "@tubii_lib.ecal_control(sch_1):gtrig"
 				( objectStatus "gtrig" )
 			)
-			( gate "@tubii_lib.ecal_control(sch_1):page1_i1"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1475,2700)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I1" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.ecal_control(sch_1):page1_i2"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1475,2600)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I2" )
-				( pin "a"
-				)
+			( signal "@tubii_lib.ecal_control(sch_1):ext_ped_out"
+				( objectStatus "ext_ped_out" )
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i4"
 				( attribute "CDS_LIB" "ecl"
@@ -705,64 +639,6 @@
 				( pin "y(0)"
 				)
 				( pin "\y*\(0)"
-				)
-			)
-			( gate "@tubii_lib.ecal_control(sch_1):page1_i8"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1700,3050)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I8" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.ecal_control(sch_1):page1_i9"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1700,2950)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I9" )
-				( pin "a"
 				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i11"

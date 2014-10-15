@@ -5,12 +5,11 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-09T11:55:12</modificationTime>
+    <modificationTime>2014-10-09T12:00:27</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>117</instanceid>
         <netid>129</netid>
@@ -165,7 +164,8 @@
               <id>T298</id>
               <name>caen_anpulse</name>
               <direction>output</direction>
-              <msb>7</msb>
+              <displayName></displayName>
+              <msb>11</msb>
               <lsb>0</lsb>
             </term>
           </terms>
@@ -560,7 +560,7 @@
           <name>caen_anpulse</name>
           <scope>interface</scope>
           <direction>inout</direction>
-          <msb>7</msb>
+          <msb>11</msb>
           <lsb>0</lsb>
         </net>
         <net>
@@ -1353,10 +1353,10 @@
             <pin>
               <id>M332</id>
               <termid>T298</termid>
-              <msb>7</msb>
+              <msb>11</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N129" netmsb="7" netlsb="0" />
+                <connection pinmsb="11" pinlsb="0" net="N129" netmsb="11" netlsb="0" />
               </connections>
             </pin>
           </pins>
@@ -1773,7 +1773,7 @@
               <net ref="async_delay_out"></net>
               <net ref="async_pulse_out"></net>
               <net ref="caen_anpulse">
-                <msb>7</msb>
+                <msb>11</msb>
                 <lsb>0</lsb>
               </net>
               <net ref="caen_out">
