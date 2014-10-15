@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 4 )
+			( logicalViewRevNum 6 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -515,8 +515,6 @@
 			( signal "@tubii_lib.translators(sch_1):page1_i7@tubii_lib.\ttl-ecl\(sch_1):ecl_out"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.translators(sch_1):page1_i29@tubii_lib.\ecl-ttl\(sch_1):ecl_in_smb"
-			)
 			( signal "@tubii_lib.translators(sch_1):\unnamed_1_ecl-ttl_i29_ttlout\"
 				( alias ( signalRef "@tubii_lib.translators(sch_1):page1_i29@tubii_lib.\ecl-ttl\(sch_1):ttl_out") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_ECL-TTL_I29_TTLOUT"
@@ -581,6 +579,9 @@
 			)
 			( signal "@tubii_lib.translators(sch_1):page1_i36@tubii_lib.\ecl-lvds\(sch_1):unnamed_1_10e116_i46_y"
 			)
+			( signal "@tubii_lib.translators(sch_1):page1_i29@tubii_lib.\ecl-ttl\(sch_1):ecl_in"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.translators(sch_1):page1_i36@tubii_lib.\ecl-lvds\(sch_1):ecl_in"
 				( objectFlag fObjectAlias )
 			)
@@ -631,6 +632,7 @@
 			( signal "@tubii_lib.translators(sch_1):page1_i7@tubii_lib.\ttl-ecl\(sch_1):unnamed_1_10h124_i5_d"
 			)
 			( signal "@tubii_lib.translators(sch_1):\unnamed_1_ecl-ttl_i29_eclin\"
+				( alias ( signalRef "@tubii_lib.translators(sch_1):page1_i29@tubii_lib.\ecl-ttl\(sch_1):ecl_in") )
 				( objectStatus "unnamed_1_ecl-ttl_i29_eclin" )
 			)
 			( signal "@tubii_lib.translators(sch_1):page1_i29@tubii_lib.\ecl-ttl\(sch_1):unnamed_1_10e116_i26_b"
@@ -7288,6 +7290,76 @@
 				( pin "a"
 				)
 			)
+			( gate "@tubii_lib.translators(sch_1):page1_i59"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,125,175,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(925,3775)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MAX9376"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MAX9376"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I59" )
+				( pin "in1"
+				)
+				( pin "\in1*\"
+				)
+				( pin "out1"
+				)
+				( pin "\out1*\"
+				)
+			)
+			( gate "@tubii_lib.translators(sch_1):page1_i60"
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,125,175,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(925,3350)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MAX9376"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MAX9376"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I60" )
+				( pin "in2"
+				)
+				( pin "\in2*\"
+				)
+				( pin "out2"
+				)
+				( pin "\out2*\"
+				)
+			)
 			( pin "@tubii_lib.translators(sch_1):page1_i7@tubii_lib.\ttl-ecl\(sch_1):page1_i5:a(0)"
 				( attribute "PN" "5"
 					( Status sBlockFlattened )
@@ -7579,7 +7651,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ttl-ecl\"
@@ -8047,7 +8119,7 @@
 	( BaseCopy "\ecl-ttl\"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 6 )
+				( logicalViewRevNum 7 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -8057,7 +8129,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-ttl\"
@@ -8071,14 +8143,14 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_gnd" )
 			)
+			( signal "@tubii_lib.\ecl-ttl\(sch_1):ecl_in"
+				( objectStatus "ecl_in" )
+			)
 			( signal "@tubii_lib.\ecl-ttl\(sch_1):unnamed_1_10e116_i26_b"
 				( objectStatus "unnamed_1_10e116_i26_b" )
 			)
 			( signal "@tubii_lib.\ecl-ttl\(sch_1):vtt"
 				( objectStatus "vtt" )
-			)
-			( signal "@tubii_lib.\ecl-ttl\(sch_1):ecl_in_smb"
-				( objectStatus "ecl_in_smb" )
 			)
 			( signal "@tubii_lib.\ecl-ttl\(sch_1):ttl_out"
 				( objectStatus "ttl_out" )
@@ -9591,7 +9663,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-lvds\"
@@ -10978,7 +11050,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\nim-ecl\"
@@ -11601,7 +11673,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-nim\"
