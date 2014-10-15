@@ -2,25 +2,25 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"LE_DGT\I";
-2"UN$1$10H125$I9$Y";
-3"UN$1$DS102350$I5$LE";
-4"UN$1$DS102350$I5$Q";
-5"VCC\G";
-6"UN$1$10ELT24$I20$Q";
-7"UN$1$10ELT24$I20$D";
-8"GND\G";
-9"UN$1$10ELT24$I16$D";
-10"CLK\I";
-11"DELAY_VAL\I";
-12"CLK\I";
-13"GTRIGH\I";
-14"GTRIGL\I";
-15"VTT\G";
-16"DGTL\I";
-17"DDGT*\I";
-18"DGTH\I";
-19"GND\G";
+1"UN$1$DS1023200$I27$LE";
+2"UN$1$10ELT24$I16$D";
+3"GND\G";
+4"VCC\G";
+5"UN$1$10H125$I9$Y";
+6"UN$1$DS1023200$I27$Q";
+7"CLK\I";
+8"DELAY_VAL\I";
+9"DGTL\I";
+10"DGTH\I";
+11"LE_DGT\I";
+12"UN$1$10ELT24$I20$Q";
+13"UN$1$10ELT24$I20$D";
+14"GND\G";
+15"CLK\I";
+16"GTRIGH\I";
+17"GTRIGL\I";
+18"VTT\G";
+19"DDGT*\I";
 20"VCC\G";
 %"RSMD0603"
 "1","(-2800,2850)","1","resistors","I12";
@@ -43,8 +43,8 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0603"
 $LOCATION"?";
-"A<0>"15;
-"B<0>"13;
+"A<0>"18;
+"B<0>"16;
 %"RSMD0603"
 "1","(-2925,2850)","1","resistors","I13";
 ;
@@ -66,93 +66,93 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0603"
 $LOCATION"?";
-"A<0>"15;
-"B<0>"14;
+"A<0>"18;
+"B<0>"17;
 %"10ELT24"
 "1","(825,3050)","0","ecl","I16";
 ;
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
-"D"9;
-"Q"18;
-"Q* \B"16;
+"D"2;
+"Q"10;
+"Q* \B"9;
 %"DS1023500"
 "1","(150,2100)","0","ttl","I19";
 ;
 CDS_LIB"ttl"
 CDS_LMAN_SYM_OUTLINE"-175,250,175,-250";
-"IN"2;
+"IN"5;
 "Q/P0"0;
 "P4"0;
 "P3"0;
-"CLK/P1"12;
-"D/P2"4;
+"CLK/P1"15;
+"D/P2"6;
 "P7"0;
 "P6"0;
 "P5"0;
-"MS"8;
+"MS"14;
 "PS"20;
 "PWM"0;
-"OUT"7;
-"LE* \B"3;
+"OUT"13;
+"LE* \B"1;
 %"10ELT24"
 "1","(825,2100)","0","ecl","I20";
 ;
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
-"D"7;
-"Q"6;
-"Q* \B"17;
+"D"13;
+"Q"12;
+"Q* \B"19;
 %"F06"
 "1","(-400,3275)","0","ttl","I22";
 MAX_DELAY"10000";
 CDS_LIB"ttl";
-"A <SIZE-1..0>"1;
-"Y <SIZE-1..0>* \B"3;
+"A <SIZE-1..0>"11;
+"Y <SIZE-1..0>* \B"1;
 %"TESTPOINT_L"
 "1","(1350,2300)","0","misc","I24";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"6;
+"A\NAC \B"12;
 %"LED_PULSE"
 "1","(875,3600)","0","tubii_lib","I25";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"9;
+"PULSE_IN"2;
 %"LED_PULSE"
 "1","(1050,1500)","0","tubii_lib","I26";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"7;
-%"DS102350"
-"1","(125,3050)","0","ttl","I5";
+"PULSE_IN"13;
+%"DS1023200"
+"1","(125,3050)","0","ttl","I27";
 ;
 CDS_LIB"ttl"
-CDS_LMAN_SYM_OUTLINE"-175,250,175,-250";
-"D/P2"11;
-"CLK/P1"10;
-"Q/P0"4;
+CDS_LMAN_SYM_OUTLINE"-175,350,175,-250";
+"D/P2"8;
+"CLK/P1"7;
+"Q/P0"6;
 "P7"0;
 "P6"0;
 "P5"0;
 "P4"0;
 "P3"0;
-"IN"2;
-"PS"5;
-"MS"19;
-"OUT"9;
+"IN"5;
+"PS"4;
+"MS"3;
+"OUT"2;
 "PWM"0;
-"LE* \B"3;
+"LE* \B"1;
 %"10H125"
 "1","(-2600,3050)","0","ecl","I9";
 SECTION"1";
 CDS_LIB"ecl";
-"A <SIZE-1..0>"13;
-"B <SIZE-1..0>* \B"14;
+"A <SIZE-1..0>"16;
+"B <SIZE-1..0>* \B"17;
 "V"0;
-"Y <SIZE-1..0>"2;
+"Y <SIZE-1..0>"5;
 END.
