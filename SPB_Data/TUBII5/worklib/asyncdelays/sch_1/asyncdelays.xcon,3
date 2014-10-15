@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-09-26T14:58:55</modificationTime>
+    <modificationTime>2014-09-30T11:14:24</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>18</instanceid>
-        <netid>31</netid>
+        <netid>32</netid>
         <insttermid>63</insttermid>
       </lastids>
       <cells>
@@ -405,12 +405,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N4</id>
-          <name>le_ddgt</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N5</id>
           <name>le_dgt</name>
           <scope>interface</scope>
@@ -439,10 +433,6 @@
         <net>
           <id>N16</id>
           <name>unnamed_1_ds102350_i5_in</name>
-        </net>
-        <net>
-          <id>N19</id>
-          <name>unnamed_1_ds1023500_i19_le</name>
         </net>
         <net>
           <id>N20</id>
@@ -487,6 +477,10 @@
         <net>
           <id>N31</id>
           <name>unnamed_1_10elt24_i20_q</name>
+        </net>
+        <net>
+          <id>N32</id>
+          <name>unnamed_1_ds102350_i5_q</name>
         </net>
         <net>
           <id>N2</id>
@@ -615,6 +609,7 @@
               <id>M14</id>
               <termid>T21</termid>
               <connections>
+                <connection net="N32" />
               </connections>
             </pin>
           </pins>
@@ -970,7 +965,7 @@
               <id>M42</id>
               <termid>T44</termid>
               <connections>
-                <connection net="N1" />
+                <connection net="N32" />
               </connections>
             </pin>
             <pin>
@@ -984,7 +979,7 @@
               <id>M44</id>
               <termid>T46</termid>
               <connections>
-                <connection net="N19" />
+                <connection net="N20" />
               </connections>
             </pin>
             <pin>
@@ -1142,45 +1137,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I17</id>
-          <cellid>S10</cellid>
-          <name>page1_i23</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M61</id>
-              <termid>T65</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M62</id>
-              <termid>T66</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N19" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I18</id>
           <cellid>S11</cellid>
           <name>page1_i24</name>
@@ -1264,12 +1220,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="le_ddgt">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="le_dgt">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1300,7 +1250,6 @@
               <net ref="gnd"></net>
               <net ref="gtrigh"></net>
               <net ref="gtrigl"></net>
-              <net ref="le_ddgt"></net>
               <net ref="le_dgt"></net>
               <net ref="unnamed_1_10elt24_i16_d"></net>
               <net ref="unnamed_1_10elt24_i20_d"></net>
@@ -1308,9 +1257,9 @@
               <net ref="unnamed_1_10h125_i9_y"></net>
               <net ref="unnamed_1_capl_i15_a"></net>
               <net ref="unnamed_1_capl_i15_b"></net>
-              <net ref="unnamed_1_ds1023500_i19_le"></net>
               <net ref="unnamed_1_ds102350_i5_in"></net>
               <net ref="unnamed_1_ds102350_i5_le"></net>
+              <net ref="unnamed_1_ds102350_i5_q"></net>
               <net ref="vcc5"></net>
               <net ref="vtt"></net>
             </nets>
@@ -1326,7 +1275,6 @@
               <instance ref="i19"></instance>
               <instance ref="i20"></instance>
               <instance ref="i22"></instance>
-              <instance ref="i23"></instance>
               <instance ref="i24"></instance>
             </instances>
           </page>
