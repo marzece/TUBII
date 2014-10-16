@@ -5,12 +5,11 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-01T14:46:32</modificationTime>
+    <modificationTime>2014-10-08T14:18:13</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="lvds-ecl" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>14</instanceid>
         <netid>15</netid>
@@ -198,6 +197,8 @@
         <net>
           <id>N15</id>
           <name>lvdsl_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N1</id>
@@ -667,6 +668,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="ecl_out">
             <pageScope number="1">
@@ -680,6 +682,12 @@
             </pageScope>
           </netScope>
           <netScope ref="lvdsh_in">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="lvdsl_in">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>

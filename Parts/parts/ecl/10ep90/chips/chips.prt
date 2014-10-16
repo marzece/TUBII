@@ -1,0 +1,31 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '10EP90';
+  pin
+    'Q':
+      PIN_NUMBER='(19,16,13)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(18,15,12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'D':
+      PIN_NUMBER='(2,5,8)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-D':
+      PIN_NUMBER='(3,6,9)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='10EP91';
+    BODY_NAME='10EP90';
+    JEDEC_TYPE='tssop20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VCC:1,11,20)';
+    POWER_PINS='(VBB:4,7)';
+    POWER_PINS='(VEE:10)';
+    POWER_PINS='(GND:17,14)';
+  end_body;
+end_primitive;
+
+END.
