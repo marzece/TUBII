@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-13T18:41:31</modificationTime>
+    <modificationTime>2014-10-13T18:47:19</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -153,10 +153,14 @@
         <net>
           <id>N4</id>
           <name>gtrigh_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N6</id>
           <name>gtrigl_ecl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N7</id>
@@ -1679,10 +1683,23 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="gtrigh_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gtrigl_ecl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="sync24h_ecl">
