@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 9 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -1391,6 +1391,8 @@
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):unnamed_1_cntrlregister_i2_dataout"
 				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i2@tubii_lib.cntrl_register(sch_1):data_out") )
 				( objectStatus "unnamed_1_cntrlregister_i2_dataout" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i2@tubii_lib.cntrl_register(sch_1):read_enable"
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):vee"
 				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):vee") )
@@ -61539,7 +61541,7 @@
 	( BaseCopy "cntrl_register"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 6 )
+				( logicalViewRevNum 7 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -61670,6 +61672,9 @@
 			)
 			( signal "@tubii_lib.cntrl_register(sch_1):gnd"
 				( objectStatus "gnd" )
+			)
+			( signal "@tubii_lib.cntrl_register(sch_1):read_enable"
+				( objectStatus "read_enable" )
 			)
 			( gate "@tubii_lib.cntrl_register(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"

@@ -8,8 +8,8 @@
   (design "tubii"
     (lastIds
       (lastInstanceId 168)
-      (lastNetId 1579)
-      (lastInstTermId 6201)
+      (lastNetId 1740)
+      (lastInstTermId 6228)
     )
     (cells
       ("S56" "ports" "tubii_lib" "sym_1"
@@ -53,10 +53,7 @@
           ("T3116" "clock200_outh" -1 -1 2)
           ("T3117" "clock200_outl" -1 -1 2)
           ("T3121" "exttrig" 15 0 2)
-          ("T3127" "combo_trig" -1 -1 2)
-          ("T3128" "prescale_trig" -1 -1 2)
           ("T3129" "rawtrigs" 3 0 2)
-          ("T3130" "tubii_gt" -1 -1 2)
           ("T3207" "tub_clk_in" -1 -1 2)
           ("T3383" "smellie_delay_in" -1 -1 2)
           ("T3384" "smellie_delay_out" -1 -1 2)
@@ -64,7 +61,9 @@
           ("T3386" "tellie_delay_in" -1 -1 2)
           ("T3387" "tellie_delay_out" -1 -1 2)
           ("T3388" "tellie_pulse_out" -1 -1 2)
-          ("T3389" "burst_trig" -1 -1 2)
+          ("T3821" "tubii_rt" -1 -1 2)
+          ("T3822" "clock100_outh" -1 -1 2)
+          ("T3823" "clock100_outl" -1 -1 2)
         )
       )
       ("S60" "trigger_utility_board_mkii" "tubii_lib" "sym_1"
@@ -90,15 +89,11 @@
           ("T3680" "syncl_ecl" -1 -1 2)
           ("T3681" "syncl_lvds" -1 -1 2)
           ("T3702" "async_delay_out" -1 -1 2)
-          ("T3703" "burst_trig" -1 -1 1)
           ("T3704" "clock100_outh" -1 -1 1)
           ("T3705" "clock100_outl" -1 -1 1)
           ("T3706" "clock200_outh" -1 -1 1)
           ("T3707" "clock200_outl" -1 -1 1)
-          ("T3708" "combo_trig" -1 -1 1)
-          ("T3709" "prescale_trig" -1 -1 1)
           ("T3710" "tub_clk_in" -1 -1 1)
-          ("T3711" "tubii_gt" -1 -1 1)
           ("T3760" "async_delay_in" -1 -1 2)
           ("T3761" "async_pulse_out" -1 -1 2)
           ("T3762" "fast_anpulse" -1 -1 2)
@@ -120,63 +115,57 @@
     )
 
     (nets
-      ("N1531" "unnamed_3_ports2_i3_bursttrig" -1 -1 0 )
-      ("N1532" "unnamed_3_ports2_i3_clock100outh" -1 -1 0 )
-      ("N1533" "unnamed_3_ports2_i3_clock100outl" -1 -1 0 )
-      ("N1534" "unnamed_3_ports2_i3_clock200outh" -1 -1 0 )
-      ("N1535" "unnamed_3_ports2_i3_clock200outl" -1 -1 0 )
-      ("N1536" "unnamed_3_ports2_i3_combotrig" -1 -1 0 )
-      ("N1537" "unnamed_3_ports2_i3_exttrig" 15 0 0 )
-      ("N1538" "unnamed_3_ports2_i3_prescaletrig" -1 -1 0 )
-      ("N1539" "unnamed_3_ports2_i3_rawtrigs" 3 0 0 )
-      ("N1540" "unnamed_3_ports2_i3_smelliedelayin" -1 -1 0 )
-      ("N1541" "unnamed_3_ports2_i3_smelliedelayout" -1 -1 0 )
-      ("N1542" "unnamed_3_ports2_i3_smelliepulseout" -1 -1 0 )
-      ("N1543" "unnamed_3_ports2_i3_telliedelayin" -1 -1 0 )
-      ("N1544" "unnamed_3_ports2_i3_telliedelayout" -1 -1 0 )
-      ("N1545" "unnamed_3_ports2_i3_telliepulseout" -1 -1 0 )
-      ("N1546" "unnamed_3_ports2_i3_tubclkin" -1 -1 0 )
-      ("N1547" "unnamed_3_ports2_i3_tubiigt" -1 -1 0 )
-      ("N1548" "unnamed_3_ports_i2_asyncdelayin" -1 -1 0 )
-      ("N1549" "unnamed_3_ports_i2_asyncdelayout" -1 -1 0 )
-      ("N1550" "unnamed_3_ports_i2_asyncpulseout" -1 -1 0 )
-      ("N1551" "unnamed_3_ports_i2_caenanpulse" 11 0 0 )
-      ("N1552" "unnamed_3_ports_i2_caenout" 7 0 0 )
-      ("N1553" "unnamed_3_ports_i2_dgth" -1 -1 0 )
-      ("N1554" "unnamed_3_ports_i2_dgtl" -1 -1 0 )
-      ("N1555" "unnamed_3_ports_i2_extpedin" -1 -1 0 )
-      ("N1556" "unnamed_3_ports_i2_extpedout" -1 -1 0 )
-      ("N1557" "unnamed_3_ports_i2_fastanpulse" -1 -1 0 )
-      ("N1558" "unnamed_3_ports_i2_fastcompouth" -1 -1 0 )
-      ("N1559" "unnamed_3_ports_i2_fastcompoutl" -1 -1 0 )
-      ("N1560" "unnamed_3_ports_i2_gtrighecl" -1 -1 0 )
-      ("N1561" "unnamed_3_ports_i2_gtriglecl" -1 -1 0 )
-      ("N1562" "unnamed_3_ports_i2_lockout" -1 -1 0 )
-      ("N1563" "unnamed_3_ports_i2_lockout_1" -1 -1 0 )
-      ("N1564" "unnamed_3_ports_i2_mtcdlo" -1 -1 0 )
-      ("N1565" "unnamed_3_ports_i2_scopeout" 7 0 0 )
-      ("N1566" "unnamed_3_ports_i2_sync24hecl" -1 -1 0 )
-      ("N1567" "unnamed_3_ports_i2_sync24hlvds" -1 -1 0 )
-      ("N1568" "unnamed_3_ports_i2_sync24lecl" -1 -1 0 )
-      ("N1569" "unnamed_3_ports_i2_sync24llvds" -1 -1 0 )
-      ("N1570" "unnamed_3_ports_i2_syncdelayin" -1 -1 0 )
-      ("N1571" "unnamed_3_ports_i2_syncdelayout" -1 -1 0 )
-      ("N1572" "unnamed_3_ports_i2_synchecl" -1 -1 0 )
-      ("N1573" "unnamed_3_ports_i2_synchlvds" -1 -1 0 )
-      ("N1574" "unnamed_3_ports_i2_synclecl" -1 -1 0 )
-      ("N1575" "unnamed_3_ports_i2_syncllvds" -1 -1 0 )
-      ("N1576" "unnamed_3_ports_i2_syncpulseout" -1 -1 0 )
-      ("N1577" "unnamed_3_ports_i2_tuneanpulse" -1 -1 0 )
-      ("N1578" "unnamed_3_ports_i2_tunecompouth" -1 -1 0 )
-      ("N1579" "unnamed_3_ports_i2_tunecompoutl" -1 -1 0 )
+      ("N1695" "unnamed_2_ports2_i3_clock100outh" -1 -1 0 )
+      ("N1696" "unnamed_2_ports2_i3_clock100outl" -1 -1 0 )
+      ("N1697" "unnamed_2_ports2_i3_clock200outh" -1 -1 0 )
+      ("N1698" "unnamed_2_ports2_i3_clock200outl" -1 -1 0 )
+      ("N1699" "unnamed_2_ports2_i3_exttrig" 15 0 0 )
+      ("N1700" "unnamed_2_ports2_i3_rawtrigs" 3 0 0 )
+      ("N1701" "unnamed_2_ports2_i3_smelliedelayin" -1 -1 0 )
+      ("N1702" "unnamed_2_ports2_i3_smelliedelayout" -1 -1 0 )
+      ("N1703" "unnamed_2_ports2_i3_smelliepulseout" -1 -1 0 )
+      ("N1704" "unnamed_2_ports2_i3_telliedelayin" -1 -1 0 )
+      ("N1705" "unnamed_2_ports2_i3_telliedelayout" -1 -1 0 )
+      ("N1706" "unnamed_2_ports2_i3_telliepulseout" -1 -1 0 )
+      ("N1707" "unnamed_2_ports2_i3_tubclkin" -1 -1 0 )
+      ("N1708" "unnamed_2_ports2_i3_tubiirt" -1 -1 0 )
+      ("N1709" "unnamed_2_ports_i2_asyncdelayin" -1 -1 0 )
+      ("N1710" "unnamed_2_ports_i2_asyncdelayout" -1 -1 0 )
+      ("N1711" "unnamed_2_ports_i2_asyncpulseout" -1 -1 0 )
+      ("N1712" "unnamed_2_ports_i2_caenanpulse" 11 0 0 )
+      ("N1713" "unnamed_2_ports_i2_caenout" 7 0 0 )
+      ("N1714" "unnamed_2_ports_i2_dgth" -1 -1 0 )
+      ("N1715" "unnamed_2_ports_i2_dgtl" -1 -1 0 )
+      ("N1716" "unnamed_2_ports_i2_extpedin" -1 -1 0 )
+      ("N1717" "unnamed_2_ports_i2_extpedout" -1 -1 0 )
+      ("N1718" "unnamed_2_ports_i2_fastanpulse" -1 -1 0 )
+      ("N1719" "unnamed_2_ports_i2_fastcompouth" -1 -1 0 )
+      ("N1720" "unnamed_2_ports_i2_fastcompoutl" -1 -1 0 )
+      ("N1721" "unnamed_2_ports_i2_gtrighecl" -1 -1 0 )
+      ("N1722" "unnamed_2_ports_i2_gtriglecl" -1 -1 0 )
+      ("N1723" "unnamed_2_ports_i2_lockout" -1 -1 0 )
+      ("N1724" "unnamed_2_ports_i2_lockout_1" -1 -1 0 )
+      ("N1725" "unnamed_2_ports_i2_mtcdlo" -1 -1 0 )
+      ("N1726" "unnamed_2_ports_i2_scopeout" 7 0 0 )
+      ("N1727" "unnamed_2_ports_i2_sync24hecl" -1 -1 0 )
+      ("N1728" "unnamed_2_ports_i2_sync24hlvds" -1 -1 0 )
+      ("N1729" "unnamed_2_ports_i2_sync24lecl" -1 -1 0 )
+      ("N1730" "unnamed_2_ports_i2_sync24llvds" -1 -1 0 )
+      ("N1731" "unnamed_2_ports_i2_syncdelayin" -1 -1 0 )
+      ("N1732" "unnamed_2_ports_i2_syncdelayout" -1 -1 0 )
+      ("N1733" "unnamed_2_ports_i2_synchecl" -1 -1 0 )
+      ("N1734" "unnamed_2_ports_i2_synchlvds" -1 -1 0 )
+      ("N1735" "unnamed_2_ports_i2_synclecl" -1 -1 0 )
+      ("N1736" "unnamed_2_ports_i2_syncllvds" -1 -1 0 )
+      ("N1737" "unnamed_2_ports_i2_syncpulseout" -1 -1 0 )
+      ("N1738" "unnamed_2_ports_i2_tuneanpulse" -1 -1 0 )
+      ("N1739" "unnamed_2_ports_i2_tunecompouth" -1 -1 0 )
+      ("N1740" "unnamed_2_ports_i2_tunecompoutl" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vcc" "vcc" -1 -1 2  inherited)
-      ("gtrigh" "gtrigh" -1 -1 2  inherited)
-      ("gtrigl" "gtrigl" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
       ("vp3_3" "vp3_3" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
-      ("gtrig_ttl" "gtrig_ttl" -1 -1 2  inherited)
       ("vcc5" "vcc5" -1 -1 2  inherited)
       ("gnd_power" "gnd_power" -1 -1 2  inherited)
       ("vref2m" "vref2m" -1 -1 2  inherited)
@@ -187,8 +176,6 @@
       ("vcci0_35" "vcci0_35" -1 -1 2  inherited)
       ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
       ("vih" "vih" -1 -1 2  inherited)
-      ("vcc_in" "vcc_in" -1 -1 2  inherited)
-      ("vm6" "vm6" -1 -1 2  inherited)
     )
 
     (instances
@@ -196,232 +183,212 @@
         (pins
           ("M6073" "T3637" 15 0
             (conn
-              ("0" 15 0 "N1537" 15 0)
+              ("0" 15 0 "N1699" 15 0)
             )
           )
           ("M6074" "T3662" -1 -1
             (conn
-              ("0" -1 -1 "N1545" -1 -1)
+              ("0" -1 -1 "N1706" -1 -1)
             )
           )
           ("M6075" "T3664" 7 0
             (conn
-              ("0" 7 0 "N1552" 7 0)
+              ("0" 7 0 "N1713" 7 0)
             )
           )
           ("M6076" "T3665" -1 -1
             (conn
-              ("0" -1 -1 "N1553" -1 -1)
+              ("0" -1 -1 "N1714" -1 -1)
             )
           )
           ("M6077" "T3666" -1 -1
             (conn
-              ("0" -1 -1 "N1554" -1 -1)
+              ("0" -1 -1 "N1715" -1 -1)
             )
           )
           ("M6078" "T3667" -1 -1
             (conn
-              ("0" -1 -1 "N1555" -1 -1)
+              ("0" -1 -1 "N1716" -1 -1)
             )
           )
           ("M6079" "T3668" -1 -1
             (conn
-              ("0" -1 -1 "N1556" -1 -1)
+              ("0" -1 -1 "N1717" -1 -1)
             )
           )
           ("M6080" "T3669" -1 -1
             (conn
-              ("0" -1 -1 "N1560" -1 -1)
+              ("0" -1 -1 "N1721" -1 -1)
             )
           )
           ("M6081" "T3670" -1 -1
             (conn
-              ("0" -1 -1 "N1561" -1 -1)
+              ("0" -1 -1 "N1722" -1 -1)
             )
           )
           ("M6082" "T3671" -1 -1
             (conn
-              ("0" -1 -1 "N1563" -1 -1)
+              ("0" -1 -1 "N1724" -1 -1)
             )
           )
           ("M6083" "T3672" -1 -1
             (conn
-              ("0" -1 -1 "N1562" -1 -1)
+              ("0" -1 -1 "N1723" -1 -1)
             )
           )
           ("M6084" "T3673" -1 -1
             (conn
-              ("0" -1 -1 "N1564" -1 -1)
+              ("0" -1 -1 "N1725" -1 -1)
             )
           )
           ("M6085" "T3674" -1 -1
             (conn
-              ("0" -1 -1 "N1566" -1 -1)
+              ("0" -1 -1 "N1727" -1 -1)
             )
           )
           ("M6086" "T3675" -1 -1
             (conn
-              ("0" -1 -1 "N1567" -1 -1)
+              ("0" -1 -1 "N1728" -1 -1)
             )
           )
           ("M6087" "T3676" -1 -1
             (conn
-              ("0" -1 -1 "N1568" -1 -1)
+              ("0" -1 -1 "N1729" -1 -1)
             )
           )
           ("M6088" "T3677" -1 -1
             (conn
-              ("0" -1 -1 "N1569" -1 -1)
+              ("0" -1 -1 "N1730" -1 -1)
             )
           )
           ("M6089" "T3678" -1 -1
             (conn
-              ("0" -1 -1 "N1572" -1 -1)
+              ("0" -1 -1 "N1733" -1 -1)
             )
           )
           ("M6090" "T3679" -1 -1
             (conn
-              ("0" -1 -1 "N1573" -1 -1)
+              ("0" -1 -1 "N1734" -1 -1)
             )
           )
           ("M6091" "T3680" -1 -1
             (conn
-              ("0" -1 -1 "N1574" -1 -1)
+              ("0" -1 -1 "N1735" -1 -1)
             )
           )
           ("M6092" "T3681" -1 -1
             (conn
-              ("0" -1 -1 "N1575" -1 -1)
+              ("0" -1 -1 "N1736" -1 -1)
             )
           )
           ("M6148" "T3702" -1 -1
             (conn
-              ("0" -1 -1 "N1549" -1 -1)
-            )
-          )
-          ("M6149" "T3703" -1 -1
-            (conn
-              ("0" -1 -1 "N1531" -1 -1)
+              ("0" -1 -1 "N1710" -1 -1)
             )
           )
           ("M6150" "T3704" -1 -1
             (conn
-              ("0" -1 -1 "N1532" -1 -1)
+              ("0" -1 -1 "N1695" -1 -1)
             )
           )
           ("M6151" "T3705" -1 -1
             (conn
-              ("0" -1 -1 "N1533" -1 -1)
+              ("0" -1 -1 "N1696" -1 -1)
             )
           )
           ("M6152" "T3706" -1 -1
             (conn
-              ("0" -1 -1 "N1534" -1 -1)
+              ("0" -1 -1 "N1697" -1 -1)
             )
           )
           ("M6153" "T3707" -1 -1
             (conn
-              ("0" -1 -1 "N1535" -1 -1)
-            )
-          )
-          ("M6154" "T3708" -1 -1
-            (conn
-              ("0" -1 -1 "N1536" -1 -1)
-            )
-          )
-          ("M6155" "T3709" -1 -1
-            (conn
-              ("0" -1 -1 "N1538" -1 -1)
+              ("0" -1 -1 "N1698" -1 -1)
             )
           )
           ("M6156" "T3710" -1 -1
             (conn
-              ("0" -1 -1 "N1546" -1 -1)
-            )
-          )
-          ("M6157" "T3711" -1 -1
-            (conn
-              ("0" -1 -1 "N1547" -1 -1)
+              ("0" -1 -1 "N1707" -1 -1)
             )
           )
           ("M6186" "T3760" -1 -1
             (conn
-              ("0" -1 -1 "N1548" -1 -1)
+              ("0" -1 -1 "N1709" -1 -1)
             )
           )
           ("M6187" "T3761" -1 -1
             (conn
-              ("0" -1 -1 "N1550" -1 -1)
+              ("0" -1 -1 "N1711" -1 -1)
             )
           )
           ("M6188" "T3762" -1 -1
             (conn
-              ("0" -1 -1 "N1557" -1 -1)
+              ("0" -1 -1 "N1718" -1 -1)
             )
           )
           ("M6189" "T3763" -1 -1
             (conn
-              ("0" -1 -1 "N1558" -1 -1)
+              ("0" -1 -1 "N1719" -1 -1)
             )
           )
           ("M6190" "T3764" -1 -1
             (conn
-              ("0" -1 -1 "N1559" -1 -1)
+              ("0" -1 -1 "N1720" -1 -1)
             )
           )
           ("M6191" "T3765" -1 -1
             (conn
-              ("0" -1 -1 "N1540" -1 -1)
+              ("0" -1 -1 "N1701" -1 -1)
             )
           )
           ("M6192" "T3766" -1 -1
             (conn
-              ("0" -1 -1 "N1541" -1 -1)
+              ("0" -1 -1 "N1702" -1 -1)
             )
           )
           ("M6193" "T3767" -1 -1
             (conn
-              ("0" -1 -1 "N1542" -1 -1)
+              ("0" -1 -1 "N1703" -1 -1)
             )
           )
           ("M6194" "T3768" -1 -1
             (conn
-              ("0" -1 -1 "N1570" -1 -1)
+              ("0" -1 -1 "N1731" -1 -1)
             )
           )
           ("M6195" "T3769" -1 -1
             (conn
-              ("0" -1 -1 "N1571" -1 -1)
+              ("0" -1 -1 "N1732" -1 -1)
             )
           )
           ("M6196" "T3770" -1 -1
             (conn
-              ("0" -1 -1 "N1576" -1 -1)
+              ("0" -1 -1 "N1737" -1 -1)
             )
           )
           ("M6197" "T3771" -1 -1
             (conn
-              ("0" -1 -1 "N1543" -1 -1)
+              ("0" -1 -1 "N1704" -1 -1)
             )
           )
           ("M6198" "T3772" -1 -1
             (conn
-              ("0" -1 -1 "N1544" -1 -1)
+              ("0" -1 -1 "N1705" -1 -1)
             )
           )
           ("M6199" "T3773" -1 -1
             (conn
-              ("0" -1 -1 "N1577" -1 -1)
+              ("0" -1 -1 "N1738" -1 -1)
             )
           )
           ("M6200" "T3774" -1 -1
             (conn
-              ("0" -1 -1 "N1578" -1 -1)
+              ("0" -1 -1 "N1739" -1 -1)
             )
           )
           ("M6201" "T3775" -1 -1
             (conn
-              ("0" -1 -1 "N1579" -1 -1)
+              ("0" -1 -1 "N1740" -1 -1)
             )
           )
         )
@@ -430,162 +397,162 @@
         (pins
           ("M6098" "T2734" -1 -1
             (conn
-              ("0" -1 -1 "N1560" -1 -1)
+              ("0" -1 -1 "N1721" -1 -1)
             )
           )
           ("M6099" "T2735" -1 -1
             (conn
-              ("0" -1 -1 "N1561" -1 -1)
+              ("0" -1 -1 "N1722" -1 -1)
             )
           )
           ("M6100" "T2736" -1 -1
             (conn
-              ("0" -1 -1 "N1566" -1 -1)
+              ("0" -1 -1 "N1727" -1 -1)
             )
           )
           ("M6101" "T2737" -1 -1
             (conn
-              ("0" -1 -1 "N1568" -1 -1)
+              ("0" -1 -1 "N1729" -1 -1)
             )
           )
           ("M6102" "T2738" -1 -1
             (conn
-              ("0" -1 -1 "N1572" -1 -1)
+              ("0" -1 -1 "N1733" -1 -1)
             )
           )
           ("M6103" "T2739" -1 -1
             (conn
-              ("0" -1 -1 "N1574" -1 -1)
+              ("0" -1 -1 "N1735" -1 -1)
             )
           )
           ("M6104" "T2744" -1 -1
             (conn
-              ("0" -1 -1 "N1573" -1 -1)
+              ("0" -1 -1 "N1734" -1 -1)
             )
           )
           ("M6105" "T2746" -1 -1
             (conn
-              ("0" -1 -1 "N1575" -1 -1)
+              ("0" -1 -1 "N1736" -1 -1)
             )
           )
           ("M6106" "T2751" -1 -1
             (conn
-              ("0" -1 -1 "N1553" -1 -1)
+              ("0" -1 -1 "N1714" -1 -1)
             )
           )
           ("M6107" "T2752" -1 -1
             (conn
-              ("0" -1 -1 "N1554" -1 -1)
+              ("0" -1 -1 "N1715" -1 -1)
             )
           )
           ("M6108" "T2754" -1 -1
             (conn
-              ("0" -1 -1 "N1563" -1 -1)
+              ("0" -1 -1 "N1724" -1 -1)
             )
           )
           ("M6109" "T2755" -1 -1
             (conn
-              ("0" -1 -1 "N1562" -1 -1)
+              ("0" -1 -1 "N1723" -1 -1)
             )
           )
           ("M6110" "T2760" -1 -1
             (conn
-              ("0" -1 -1 "N1555" -1 -1)
+              ("0" -1 -1 "N1716" -1 -1)
             )
           )
           ("M6111" "T2761" -1 -1
             (conn
-              ("0" -1 -1 "N1556" -1 -1)
+              ("0" -1 -1 "N1717" -1 -1)
             )
           )
           ("M6112" "T2917" -1 -1
             (conn
-              ("0" -1 -1 "N1567" -1 -1)
+              ("0" -1 -1 "N1728" -1 -1)
             )
           )
           ("M6113" "T2918" -1 -1
             (conn
-              ("0" -1 -1 "N1569" -1 -1)
+              ("0" -1 -1 "N1730" -1 -1)
             )
           )
           ("M6114" "T2923" -1 -1
             (conn
-              ("0" -1 -1 "N1557" -1 -1)
+              ("0" -1 -1 "N1718" -1 -1)
             )
           )
           ("M6115" "T2924" -1 -1
             (conn
-              ("0" -1 -1 "N1577" -1 -1)
+              ("0" -1 -1 "N1738" -1 -1)
             )
           )
           ("M6116" "T2926" -1 -1
             (conn
-              ("0" -1 -1 "N1548" -1 -1)
+              ("0" -1 -1 "N1709" -1 -1)
             )
           )
           ("M6117" "T2927" -1 -1
             (conn
-              ("0" -1 -1 "N1570" -1 -1)
+              ("0" -1 -1 "N1731" -1 -1)
             )
           )
           ("M6118" "T2929" -1 -1
             (conn
-              ("0" -1 -1 "N1571" -1 -1)
+              ("0" -1 -1 "N1732" -1 -1)
             )
           )
           ("M6119" "T2934" -1 -1
             (conn
-              ("0" -1 -1 "N1558" -1 -1)
+              ("0" -1 -1 "N1719" -1 -1)
             )
           )
           ("M6120" "T2935" -1 -1
             (conn
-              ("0" -1 -1 "N1559" -1 -1)
+              ("0" -1 -1 "N1720" -1 -1)
             )
           )
           ("M6121" "T2936" -1 -1
             (conn
-              ("0" -1 -1 "N1579" -1 -1)
+              ("0" -1 -1 "N1740" -1 -1)
             )
           )
           ("M6122" "T3208" -1 -1
             (conn
-              ("0" -1 -1 "N1576" -1 -1)
+              ("0" -1 -1 "N1737" -1 -1)
             )
           )
           ("M6123" "T3288" -1 -1
             (conn
-              ("0" -1 -1 "N1564" -1 -1)
+              ("0" -1 -1 "N1725" -1 -1)
             )
           )
           ("M6124" "T3374" -1 -1
             (conn
-              ("0" -1 -1 "N1578" -1 -1)
+              ("0" -1 -1 "N1739" -1 -1)
             )
           )
           ("M6125" "T3375" -1 -1
             (conn
-              ("0" -1 -1 "N1550" -1 -1)
+              ("0" -1 -1 "N1711" -1 -1)
             )
           )
           ("M6126" "T3469" 7 0
             (conn
-              ("0" 7 0 "N1552" 7 0)
+              ("0" 7 0 "N1713" 7 0)
             )
           )
           ("M6127" "T3470" 7 0
             (conn
-              ("0" 7 0 "N1565" 7 0)
+              ("0" 7 0 "N1726" 7 0)
             )
           )
           ("M6128" "T3472" -1 -1
             (conn
-              ("0" -1 -1 "N1549" -1 -1)
+              ("0" -1 -1 "N1710" -1 -1)
             )
           )
           ("M6129" "T3553" 11 0
             (conn
-              ("0" 11 0 "N1551" 11 0)
+              ("0" 11 0 "N1712" 11 0)
             )
           )
         )
@@ -594,77 +561,72 @@
         (pins
           ("M6133" "T3116" -1 -1
             (conn
-              ("0" -1 -1 "N1534" -1 -1)
+              ("0" -1 -1 "N1697" -1 -1)
             )
           )
           ("M6134" "T3117" -1 -1
             (conn
-              ("0" -1 -1 "N1535" -1 -1)
+              ("0" -1 -1 "N1698" -1 -1)
             )
           )
           ("M6135" "T3121" 15 0
             (conn
-              ("0" 15 0 "N1537" 15 0)
-            )
-          )
-          ("M6136" "T3127" -1 -1
-            (conn
-              ("0" -1 -1 "N1536" -1 -1)
-            )
-          )
-          ("M6137" "T3128" -1 -1
-            (conn
-              ("0" -1 -1 "N1538" -1 -1)
+              ("0" 15 0 "N1699" 15 0)
             )
           )
           ("M6138" "T3129" 3 0
             (conn
-              ("0" 3 0 "N1539" 3 0)
-            )
-          )
-          ("M6139" "T3130" -1 -1
-            (conn
-              ("0" -1 -1 "N1547" -1 -1)
+              ("0" 3 0 "N1700" 3 0)
             )
           )
           ("M6140" "T3207" -1 -1
             (conn
-              ("0" -1 -1 "N1546" -1 -1)
+              ("0" -1 -1 "N1707" -1 -1)
             )
           )
           ("M6141" "T3383" -1 -1
             (conn
-              ("0" -1 -1 "N1540" -1 -1)
+              ("0" -1 -1 "N1701" -1 -1)
             )
           )
           ("M6142" "T3384" -1 -1
             (conn
-              ("0" -1 -1 "N1541" -1 -1)
+              ("0" -1 -1 "N1702" -1 -1)
             )
           )
           ("M6143" "T3385" -1 -1
             (conn
-              ("0" -1 -1 "N1542" -1 -1)
+              ("0" -1 -1 "N1703" -1 -1)
             )
           )
           ("M6144" "T3386" -1 -1
             (conn
-              ("0" -1 -1 "N1543" -1 -1)
+              ("0" -1 -1 "N1704" -1 -1)
             )
           )
           ("M6145" "T3387" -1 -1
             (conn
-              ("0" -1 -1 "N1544" -1 -1)
+              ("0" -1 -1 "N1705" -1 -1)
             )
           )
           ("M6146" "T3388" -1 -1
             (conn
-              ("0" -1 -1 "N1545" -1 -1)
+              ("0" -1 -1 "N1706" -1 -1)
             )
           )
-          ("M6147" "T3389" -1 -1
+          ("M6226" "T3821" -1 -1
             (conn
-              ("0" -1 -1 "N1531" -1 -1)
+              ("0" -1 -1 "N1708" -1 -1)
+            )
+          )
+          ("M6227" "T3822" -1 -1
+            (conn
+              ("0" -1 -1 "N1695" -1 -1)
+            )
+          )
+          ("M6228" "T3823" -1 -1
+            (conn
+              ("0" -1 -1 "N1696" -1 -1)
             )
           )
         )

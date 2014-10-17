@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T18:26:08</modificationTime>
+    <modificationTime>2014-10-17T14:07:37</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports2" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>21</instanceid>
-        <netid>31</netid>
-        <insttermid>75</insttermid>
+        <instanceid>24</instanceid>
+        <netid>35</netid>
+        <insttermid>87</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -189,21 +188,6 @@
           </parameters>
           <terms>
             <term>
-              <id>T35</id>
-              <name>burst_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T36</id>
-              <name>combo_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T37</id>
-              <name>prescale_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T38</id>
               <name>rawtrigs</name>
               <direction>input</direction>
@@ -211,8 +195,8 @@
               <lsb>0</lsb>
             </term>
             <term>
-              <id>T39</id>
-              <name>tubii_gt</name>
+              <id>T99</id>
+              <name>tubii_rt</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -312,30 +296,12 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N18</id>
-          <name>combo_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N19</id>
-          <name>prescale_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N20</id>
           <name>rawtrigs</name>
           <scope>interface</scope>
           <direction>inout</direction>
           <msb>3</msb>
           <lsb>0</lsb>
-        </net>
-        <net>
-          <id>N21</id>
-          <name>tubii_gt</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
         </net>
         <net>
           <id>N22</id>
@@ -380,8 +346,20 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N30</id>
-          <name>burst_trig</name>
+          <id>N33</id>
+          <name>tubii_rt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N34</id>
+          <name>clock100_outh</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N35</id>
+          <name>clock100_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1162,27 +1140,6 @@
           </powers>
           <pins>
             <pin>
-              <id>M45</id>
-              <termid>T35</termid>
-              <connections>
-                <connection net="N30" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M46</id>
-              <termid>T36</termid>
-              <connections>
-                <connection net="N18" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M47</id>
-              <termid>T37</termid>
-              <connections>
-                <connection net="N19" />
-              </connections>
-            </pin>
-            <pin>
               <id>M48</id>
               <termid>T38</termid>
               <msb>3</msb>
@@ -1192,10 +1149,10 @@
               </connections>
             </pin>
             <pin>
-              <id>M49</id>
-              <termid>T39</termid>
+              <id>M84</id>
+              <termid>T99</termid>
               <connections>
-                <connection net="N21" />
+                <connection net="N33" />
               </connections>
             </pin>
           </pins>
@@ -1271,6 +1228,90 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I22</id>
+          <cellid>S1</cellid>
+          <name>page1_i23</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M85</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N3" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I23</id>
+          <cellid>S1</cellid>
+          <name>page1_i25</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M86</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N34" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I24</id>
+          <cellid>S1</cellid>
+          <name>page1_i26</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M87</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N35" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1281,7 +1322,13 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
-          <netScope ref="burst_trig">
+          <netScope ref="clock100_outh">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clock100_outl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1299,12 +1346,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="combo_trig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="exttrig">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1314,12 +1355,6 @@
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
-            </pageScope>
-          </netScope>
-          <netScope ref="prescale_trig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="rawtrigs">
@@ -1370,7 +1405,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tubii_gt">
+          <netScope ref="tubii_rt">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1387,16 +1422,15 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="burst_trig"></net>
+              <net ref="clock100_outh"></net>
+              <net ref="clock100_outl"></net>
               <net ref="clock200_outh"></net>
               <net ref="clock200_outl"></net>
-              <net ref="combo_trig"></net>
               <net ref="exttrig">
                 <msb>15</msb>
                 <lsb>0</lsb>
               </net>
               <net ref="gnd"></net>
-              <net ref="prescale_trig"></net>
               <net ref="rawtrigs">
                 <msb>3</msb>
                 <lsb>0</lsb>
@@ -1408,7 +1442,7 @@
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="tubii_gt"></net>
+              <net ref="tubii_rt"></net>
               <net ref="unnamed_1_10e101_i2_a"></net>
               <net ref="unnamed_1_10e101_i2_d"></net>
               <net ref="unnamed_1_10e101_i2_y"></net>
@@ -1440,6 +1474,9 @@
               <instance ref="i20"></instance>
               <instance ref="i21"></instance>
               <instance ref="i22"></instance>
+              <instance ref="i23"></instance>
+              <instance ref="i25"></instance>
+              <instance ref="i26"></instance>
             </instances>
           </page>
         </pages>

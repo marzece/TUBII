@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "ports2"
     (lastIds
-      (lastInstanceId 21)
-      (lastNetId 31)
-      (lastInstTermId 75)
+      (lastInstanceId 24)
+      (lastNetId 35)
+      (lastInstTermId 87)
     )
     (cells
       ("S1" "testpoint_l" "misc" "sym_1"
@@ -61,11 +61,8 @@
       )
       ("S7" "tubii_triggers" "tubii_lib" "sym_1"
         (terms
-          ("T35" "burst_trig" -1 -1 2)
-          ("T36" "combo_trig" -1 -1 2)
-          ("T37" "prescale_trig" -1 -1 2)
           ("T38" "rawtrigs" 3 0 1)
-          ("T39" "tubii_gt" -1 -1 2)
+          ("T99" "tubii_rt" -1 -1 2)
         )
       )
       ("S8" "ellie" "tubii_lib" "sym_1"
@@ -92,10 +89,7 @@
       ("N14" "clock200_outh" -1 -1 1 3)
       ("N15" "clock200_outl" -1 -1 1 3)
       ("N16" "exttrig" 15 0 1 3)
-      ("N18" "combo_trig" -1 -1 1 3)
-      ("N19" "prescale_trig" -1 -1 1 3)
       ("N20" "rawtrigs" 3 0 1 3)
-      ("N21" "tubii_gt" -1 -1 1 3)
       ("N22" "tub_clk_in" -1 -1 1 3)
       ("N24" "smellie_delay_in" -1 -1 1 3)
       ("N25" "smellie_delay_out" -1 -1 1 3)
@@ -103,7 +97,9 @@
       ("N27" "tellie_delay_in" -1 -1 1 3)
       ("N28" "tellie_delay_out" -1 -1 1 3)
       ("N29" "tellie_pulse_out" -1 -1 1 3)
-      ("N30" "burst_trig" -1 -1 1 3)
+      ("N33" "tubii_rt" -1 -1 1 3)
+      ("N34" "clock100_outh" -1 -1 1 3)
+      ("N35" "clock100_outl" -1 -1 1 3)
       ("N3" "gnd" -1 -1 2 )
       ("N13" "vtt" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2  inherited)
@@ -377,29 +373,14 @@
       )
       ("I20" "page1_i21" "S7"
         (pins
-          ("M45" "T35" -1 -1
-            (conn
-              ("0" -1 -1 "N30" -1 -1)
-            )
-          )
-          ("M46" "T36" -1 -1
-            (conn
-              ("0" -1 -1 "N18" -1 -1)
-            )
-          )
-          ("M47" "T37" -1 -1
-            (conn
-              ("0" -1 -1 "N19" -1 -1)
-            )
-          )
           ("M48" "T38" 3 0
             (conn
               ("0" 3 0 "N20" 3 0)
             )
           )
-          ("M49" "T39" -1 -1
+          ("M84" "T99" -1 -1
             (conn
-              ("0" -1 -1 "N21" -1 -1)
+              ("0" -1 -1 "N33" -1 -1)
             )
           )
         )
@@ -434,6 +415,33 @@
           ("M67" "T71" -1 -1
             (conn
               ("0" -1 -1 "N29" -1 -1)
+            )
+          )
+        )
+      )
+      ("I22" "page1_i23" "S1"
+        (pins
+          ("M85" "T6" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+      ("I23" "page1_i25" "S1"
+        (pins
+          ("M86" "T6" -1 -1
+            (conn
+              ("0" -1 -1 "N34" -1 -1)
+            )
+          )
+        )
+      )
+      ("I24" "page1_i26" "S1"
+        (pins
+          ("M87" "T6" -1 -1
+            (conn
+              ("0" -1 -1 "N35" -1 -1)
             )
           )
         )

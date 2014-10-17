@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T13:20:32</modificationTime>
+    <modificationTime>2014-10-17T14:00:48</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>21</instanceid>
-        <netid>29</netid>
-        <insttermid>67</insttermid>
+        <netid>33</netid>
+        <insttermid>83</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -189,31 +189,11 @@
           </parameters>
           <terms>
             <term>
-              <id>T35</id>
-              <name>burst_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T36</id>
-              <name>combo_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T37</id>
-              <name>prescale_trig</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T38</id>
               <name>rawtrigs</name>
               <direction>input</direction>
               <msb>3</msb>
               <lsb>0</lsb>
-            </term>
-            <term>
-              <id>T39</id>
-              <name>tubii_gt</name>
-              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -312,36 +292,12 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N17</id>
-          <name>bursttrig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N18</id>
-          <name>combo_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N19</id>
-          <name>prescale_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N20</id>
           <name>rawtrigs</name>
           <scope>interface</scope>
           <direction>inout</direction>
           <msb>3</msb>
           <lsb>0</lsb>
-        </net>
-        <net>
-          <id>N21</id>
-          <name>tubii_gt</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
         </net>
         <net>
           <id>N22</id>
@@ -382,6 +338,12 @@
         <net>
           <id>N29</id>
           <name>tellie_pulse_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N33</id>
+          <name>tubii_rt</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1162,40 +1124,12 @@
           </powers>
           <pins>
             <pin>
-              <id>M45</id>
-              <termid>T35</termid>
-              <connections>
-                <connection net="N17" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M46</id>
-              <termid>T36</termid>
-              <connections>
-                <connection net="N18" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M47</id>
-              <termid>T37</termid>
-              <connections>
-                <connection net="N19" />
-              </connections>
-            </pin>
-            <pin>
               <id>M48</id>
               <termid>T38</termid>
               <msb>3</msb>
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="3" pinlsb="0" net="N20" netmsb="3" netlsb="0" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M49</id>
-              <termid>T39</termid>
-              <connections>
-                <connection net="N21" />
               </connections>
             </pin>
           </pins>
@@ -1281,12 +1215,6 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
-          <netScope ref="bursttrig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="clock200_outh">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1294,12 +1222,6 @@
             </pageScope>
           </netScope>
           <netScope ref="clock200_outl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="combo_trig">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1314,12 +1236,6 @@
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
-            </pageScope>
-          </netScope>
-          <netScope ref="prescale_trig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="rawtrigs">
@@ -1370,7 +1286,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tubii_gt">
+          <netScope ref="tubii_rt">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1387,16 +1303,13 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="bursttrig"></net>
               <net ref="clock200_outh"></net>
               <net ref="clock200_outl"></net>
-              <net ref="combo_trig"></net>
               <net ref="exttrig">
                 <msb>15</msb>
                 <lsb>0</lsb>
               </net>
               <net ref="gnd"></net>
-              <net ref="prescale_trig"></net>
               <net ref="rawtrigs">
                 <msb>3</msb>
                 <lsb>0</lsb>
@@ -1408,7 +1321,7 @@
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="tubii_gt"></net>
+              <net ref="tubii_rt"></net>
               <net ref="unnamed_1_10e101_i2_a"></net>
               <net ref="unnamed_1_10e101_i2_d"></net>
               <net ref="unnamed_1_10e101_i2_y"></net>
