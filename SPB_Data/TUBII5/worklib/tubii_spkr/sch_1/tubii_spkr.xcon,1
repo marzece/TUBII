@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T18:23:02</modificationTime>
+    <modificationTime>2014-10-09T18:04:41</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -326,11 +326,6 @@
         <net>
           <id>N7</id>
           <name>vcc</name>
-          <scope>global</scope>
-        </net>
-        <net>
-          <id>N8</id>
-          <name>gdn</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -966,7 +961,7 @@
               <id>M49</id>
               <termid>T17</termid>
               <connections>
-                <connection net="N8" />
+                <connection net="N1" />
               </connections>
             </pin>
           </pins>
@@ -1261,11 +1256,6 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
-          <netScope ref="gdn">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
@@ -1288,7 +1278,6 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="gdn"></net>
               <net ref="gnd"></net>
               <net ref="spkr_signal"></net>
               <net ref="unnamed_1_74f06_i8_a0"></net>

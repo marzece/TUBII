@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "fastcomp"
     (lastIds
-      (lastInstanceId 91)
-      (lastNetId 100)
-      (lastInstTermId 354)
+      (lastInstanceId 93)
+      (lastNetId 102)
+      (lastInstTermId 358)
     )
     (cells
       ("S3" "rsmd0805" "resistors" "sym_1"
@@ -156,6 +156,8 @@
       ("N98" "gtrig" -1 -1 1 3)
       ("N99" "unnamed_1_10e101_i101_y" -1 -1 0 )
       ("N100" "unnamed_1_10e101_i99_y" -1 -1 0 )
+      ("N101" "unnamed_1_csmd0805_i105_b" -1 -1 0 )
+      ("N102" "unnamed_1_csmd0805_i106_b" -1 -1 0 )
       ("N11" "gnd" -1 -1 2 )
       ("N66" "vcc" -1 -1 2 )
       ("N67" "vih" -1 -1 2 )
@@ -651,12 +653,12 @@
         (pins
           ("M292" "T188" 0 0
             (conn
-              ("0" 0 0 "N95" -1 -1)
+              ("0" 0 0 "N102" -1 -1)
             )
           )
           ("M293" "T189" 0 0
             (conn
-              ("0" 0 0 "N66" -1 -1)
+              ("0" 0 0 "N101" -1 -1)
             )
           )
           ("M354" "T220" -1 -1
@@ -833,6 +835,34 @@
             )
           )
           ("M349" "T75" -1 -1
+          )
+        )
+      )
+      ("I92" "page1_i105" "S5"
+        (pins
+          ("M355" "T26" 0 0
+            (conn
+              ("0" 0 0 "N66" -1 -1)
+            )
+          )
+          ("M356" "T27" 0 0
+            (conn
+              ("0" 0 0 "N101" -1 -1)
+            )
+          )
+        )
+      )
+      ("I93" "page1_i106" "S5"
+        (pins
+          ("M357" "T26" 0 0
+            (conn
+              ("0" 0 0 "N95" -1 -1)
+            )
+          )
+          ("M358" "T27" 0 0
+            (conn
+              ("0" 0 0 "N102" -1 -1)
+            )
           )
         )
       )
