@@ -8,8 +8,8 @@
   (design "trigger_utility_board_mkii"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 204)
-      (lastInstTermId 386)
+      (lastNetId 217)
+      (lastInstTermId 441)
     )
     (cells
       ("S2" "base_mon" "tubii_lib" "sym_1"
@@ -138,16 +138,15 @@
           ("T151" "data" -1 -1 1)
           ("T152" "data_rdy" -1 -1 1)
           ("T153" "dgth" -1 -1 2)
-          ("T154" "dgtl" -1 -1 2)
           ("T155" "fast_comp_outh" -1 -1 2)
           ("T156" "fast_comp_outl" -1 -1 2)
           ("T157" "fast_pulse" -1 -1 3)
           ("T158" "le_tune" -1 -1 1)
-          ("T159" "lockout" -1 -1 2)
           ("T160" "lockout*" -1 -1 2)
           ("T161" "tune_comp_outh" -1 -1 2)
           ("T162" "tune_comp_outl" -1 -1 2)
           ("T163" "tune_pulse" -1 -1 3)
+          ("T408" "gtrig" -1 -1 0)
         )
       )
       ("S13" "powers" "tubii_lib" "sym_1"
@@ -684,11 +683,6 @@
               ("0" -1 -1 "N101" -1 -1)
             )
           )
-          ("M133" "T154" -1 -1
-            (conn
-              ("0" -1 -1 "N102" -1 -1)
-            )
-          )
           ("M134" "T155" -1 -1
             (conn
               ("0" -1 -1 "N150" -1 -1)
@@ -709,11 +703,6 @@
               ("0" -1 -1 "N53" -1 -1)
             )
           )
-          ("M138" "T159" -1 -1
-            (conn
-              ("0" -1 -1 "N107" -1 -1)
-            )
-          )
           ("M139" "T160" -1 -1
             (conn
               ("0" -1 -1 "N108" -1 -1)
@@ -732,6 +721,11 @@
           ("M142" "T163" -1 -1
             (conn
               ("0" -1 -1 "N160" -1 -1)
+            )
+          )
+          ("M441" "T408" -1 -1
+            (conn
+              ("0" -1 -1 "N105" -1 -1)
             )
           )
         )

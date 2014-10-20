@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-02T11:27:54</modificationTime>
+    <modificationTime>2014-10-08T18:25:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="comparators" view="sch_1">
       <lastids>
         <instanceid>18</instanceid>
-        <netid>64</netid>
-        <insttermid>119</insttermid>
+        <netid>74</netid>
+        <insttermid>141</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -53,6 +53,16 @@
               <id>T97</id>
               <name>lockout*</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T162</id>
+              <name>trig_outh</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T163</id>
+              <name>trig_outl</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -382,6 +392,20 @@
               <termid>T97</termid>
               <connections>
                 <connection net="N35" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M120</id>
+              <termid>T162</termid>
+              <connections>
+                <connection net="N61" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M121</id>
+              <termid>T163</termid>
+              <connections>
+                <connection net="N62" />
               </connections>
             </pin>
           </pins>

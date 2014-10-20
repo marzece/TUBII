@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-17T13:55:16</modificationTime>
+    <modificationTime>2014-10-17T15:15:42</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>204</netid>
-        <insttermid>386</insttermid>
+        <netid>217</netid>
+        <insttermid>441</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -574,11 +574,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T154</id>
-              <name>dgtl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T155</id>
               <name>fast_comp_outh</name>
               <direction>output</direction>
@@ -599,11 +594,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T159</id>
-              <name>lockout</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T160</id>
               <name>lockout*</name>
               <direction>output</direction>
@@ -622,6 +612,11 @@
               <id>T163</id>
               <name>tune_pulse</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T408</id>
+              <name>gtrig</name>
+              <direction>unspec</direction>
             </term>
           </terms>
         </cell>
@@ -1948,13 +1943,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M133</id>
-              <termid>T154</termid>
-              <connections>
-                <connection net="N102" />
-              </connections>
-            </pin>
-            <pin>
               <id>M134</id>
               <termid>T155</termid>
               <connections>
@@ -1983,13 +1971,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M138</id>
-              <termid>T159</termid>
-              <connections>
-                <connection net="N107" />
-              </connections>
-            </pin>
-            <pin>
               <id>M139</id>
               <termid>T160</termid>
               <connections>
@@ -2015,6 +1996,13 @@
               <termid>T163</termid>
               <connections>
                 <connection net="N160" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M441</id>
+              <termid>T408</termid>
+              <connections>
+                <connection net="N105" />
               </connections>
             </pin>
           </pins>

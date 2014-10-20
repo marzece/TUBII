@@ -8,8 +8,8 @@
   (design "comparators"
     (lastIds
       (lastInstanceId 18)
-      (lastNetId 74)
-      (lastInstTermId 141)
+      (lastNetId 82)
+      (lastInstTermId 155)
     )
     (cells
       ("S2" "fastcomp" "tubii_lib" "sym_1"
@@ -17,11 +17,10 @@
           ("T12" "anpulsein" -1 -1 1)
           ("T17" "posneg" -1 -1 1)
           ("T94" "dgth" -1 -1 3)
-          ("T95" "dgtl" -1 -1 3)
-          ("T96" "lockout" -1 -1 3)
           ("T97" "lockout*" -1 -1 3)
           ("T162" "trig_outh" -1 -1 2)
           ("T163" "trig_outl" -1 -1 2)
+          ("T200" "gtrig" -1 -1 3)
         )
       )
       ("S3" "tuncomp" "tubii_lib" "sym_1"
@@ -33,11 +32,10 @@
           ("T42" "le" -1 -1 1)
           ("T43" "posneg" -1 -1 1)
           ("T90" "dgth" -1 -1 3)
-          ("T91" "dgtl" -1 -1 3)
-          ("T92" "lockout" -1 -1 3)
           ("T93" "lockout*" -1 -1 3)
           ("T160" "trig_outh" -1 -1 2)
           ("T161" "trig_outl" -1 -1 2)
+          ("T198" "gtrig" -1 -1 3)
         )
       )
       ("S4" "testpoint_l" "misc" "sym_1"
@@ -68,8 +66,6 @@
       ("N18" "unnamed_1_fastcomp_i1_posneg" -1 -1 0 )
       ("N19" "unnamed_1_testpointl_i6_a" -1 -1 0 )
       ("N32" "dgth" -1 -1 1 3)
-      ("N33" "dgtl" -1 -1 1 3)
-      ("N34" "lockout" -1 -1 1 3)
       ("N35" "lockout*" -1 -1 1 3)
       ("N43" "unnamed_1_bas16lt1_i14_cat" -1 -1 0 )
       ("N59" "fast_pulse" -1 -1 1 3)
@@ -78,12 +74,15 @@
       ("N62" "fast_comp_outl" -1 -1 1 3)
       ("N63" "tune_comp_outh" -1 -1 1 3)
       ("N64" "tune_comp_outl" -1 -1 1 3)
+      ("N82" "gtrig" -1 -1 1 3)
       ("N46" "vref2m" -1 -1 2 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
       ("vih" "vih" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
       ("vcc5" "vcc5" -1 -1 2 )
+      ("vcc15" "vcc15" -1 -1 2  inherited)
+      ("vcc15m" "vcc15m" -1 -1 2  inherited)
     )
 
     (instances
@@ -104,16 +103,6 @@
               ("0" -1 -1 "N32" -1 -1)
             )
           )
-          ("M66" "T95" -1 -1
-            (conn
-              ("0" -1 -1 "N33" -1 -1)
-            )
-          )
-          ("M67" "T96" -1 -1
-            (conn
-              ("0" -1 -1 "N34" -1 -1)
-            )
-          )
           ("M68" "T97" -1 -1
             (conn
               ("0" -1 -1 "N35" -1 -1)
@@ -127,6 +116,11 @@
           ("M121" "T163" -1 -1
             (conn
               ("0" -1 -1 "N62" -1 -1)
+            )
+          )
+          ("M155" "T200" -1 -1
+            (conn
+              ("0" -1 -1 "N82" -1 -1)
             )
           )
         )
@@ -168,16 +162,6 @@
               ("0" -1 -1 "N32" -1 -1)
             )
           )
-          ("M62" "T91" -1 -1
-            (conn
-              ("0" -1 -1 "N33" -1 -1)
-            )
-          )
-          ("M63" "T92" -1 -1
-            (conn
-              ("0" -1 -1 "N34" -1 -1)
-            )
-          )
           ("M64" "T93" -1 -1
             (conn
               ("0" -1 -1 "N35" -1 -1)
@@ -191,6 +175,11 @@
           ("M119" "T161" -1 -1
             (conn
               ("0" -1 -1 "N64" -1 -1)
+            )
+          )
+          ("M154" "T198" -1 -1
+            (conn
+              ("0" -1 -1 "N82" -1 -1)
             )
           )
         )
