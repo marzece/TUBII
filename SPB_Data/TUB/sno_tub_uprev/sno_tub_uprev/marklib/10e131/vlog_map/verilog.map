@@ -1,0 +1,17 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10E131';
+    DEFAULT_MODEL=MC10E131;
+    UPPER_CASE=TRUE;
+    MODEL 'MC10E131';
+        PIN_MAP
+            'S'='(S03,S12,S12,S03)';
+            'R'='(R3,R2,R1,R0)';
+            'Q'<0>='(Q3,Q2,Q1,Q0)';
+            'D'<0>='(D3,D2,D1,D0)';
+            'EN'='(CE3_,CE2_,CE1_,CE0_)';
+            'CLK'='(CC,CC,CC,CC)';
+            '-Q'<0>='(Q3_,Q2_,Q1_,Q0_)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

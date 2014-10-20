@@ -1,0 +1,19 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU AUG  7 14:30:58 1997  ';
+primitive 'CLOCK100';
+  pin
+    'CLKOUT':
+      PIN_NUMBER='(1)';
+      OUTPUT_LOAD='(1.00,-1.00)';
+    '-CLKOUT':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.00,-1.00)';
+  end_pin;
+  body
+    JEDEC_TYPE='DIP14_CLK';
+    CLASS='IC';
+    POWER_PINS='(VEE:14)';
+    POWER_PINS='(GND:7)';
+  end_body;
+end_primitive;
+END.

@@ -1,0 +1,44 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON MON JUL  1 13:04:23 1996  ';
+primitive '10H604';
+  pin
+    '-CLK':
+      PIN_NUMBER='(1,1,1,1,1,1)';
+      INPUT_LOAD='(0.0005,0.145)';
+    'CLK':
+      PIN_NUMBER='(2,2,2,2,2,2)';
+      INPUT_LOAD='(0.0005,0.145)';
+    'MR':
+      PIN_NUMBER='(3,3,3,3,3,3)';
+      INPUT_LOAD='(0.0005,0.145)';
+    'Q'<0>:
+      PIN_NUMBER='(17,15,12,10,8,5)';
+      OUTPUT_LOAD='(-7.4,-23.8)';
+    '-Q'<0>:
+      PIN_NUMBER='(18,16,13,11,9,6)';
+      OUTPUT_LOAD='(-7.4,-23.8)';
+    'D'<0>:
+      FAMILY='STTL';
+      TECH= '74S';
+      PIN_NUMBER='(20,21,22,24,25,26)';
+      INPUT_LOAD='(-0.1,0.02)';
+    'TCLK':
+      PIN_NUMBER='(27,27,27,27,27,27)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'REF':
+      PIN_NUMBER='(28,28,28,28,28,28)';
+      OUTPUT_LOAD='(*,*)';
+
+  end_pin;
+  body
+    JEDEC_TYPE='PLCC28';
+    POWER_PINS='(GND:4)';
+    POWER_PINS='(GND:14)';
+    POWER_PINS='(GND:19)';
+    POWER_PINS='(VCC:23)';
+    POWER_PINS='(VEE:7)';
+    FAMILY='ECL10KH';
+    TECH='10KH';
+  end_body;
+end_primitive;
+END.

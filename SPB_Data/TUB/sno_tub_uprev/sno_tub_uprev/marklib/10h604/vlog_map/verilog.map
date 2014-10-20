@@ -1,0 +1,18 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE '10H604';
+    DEFAULT_MODEL=MC10H604;
+    UPPER_CASE=TRUE;
+    MODEL 'MC10H604';
+        PIN_MAP
+            'D'<0>='(D[5],D[4],D[3],D[2],D[1],D[0])';
+            'Q'<0>='(Q[5],Q[4],Q[3],Q[2],Q[1],Q[0])';
+            '-Q'<0>='(Q_[5],Q_[4],Q_[3],Q_[2],Q_[1],Q_[0])';
+            'MR'='(MR,MR,MR,MR,MR,MR)';
+	    'CLK'='(CLK,CLK,CLK,CLK,CLK,CLK)';
+	    '-CLK'='(CLK_,CLK_,CLK_,CLK_,CLK_,CLK_)';
+	    'TCLK'='(TCLK,TCLK,TCLK,TCLK,TCLK,TCLK)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.
+

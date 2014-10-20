@@ -1,0 +1,1046 @@
+FILE_TYPE = CONNECTIVITY;
+{CONCEPT 2.1-p7 07-Feb-96}
+0"NC";
+1"VEE\G";
+2"VEE\G";
+3"ECL_OUT";
+4"VTT\G";
+5"NIM_IN";
+6"ECL_IN";
+7"UN$1$MRF5943$249P$E";
+8"UN$1$MMBTH81LT1$252P$C";
+9"NIM_OUT";
+10"VEE\G";
+11"UN$1$AD96685$141P$VN";
+12"VTT\G";
+13"UN$1$10E101$233P$C";
+14"UN$1$AD96685$141P$QP";
+15"NEG_IN\I";
+16"VCC\G";
+17"UN$1$RES_L$168P$A";
+18"VCC\G";
+19"UN$1$AD96685$141P$INN";
+20"UN$1$AD96685$141P$INP";
+21"UN$1$AD96685$141P$VP";
+22"UN$1$AD96685$141P$GRND1";
+23"UN$1$10E131$199P$D";
+24"LOCKOUT*\I";
+25"VTT\G";
+26"UN$1$CAP_L$174P$B";
+27"VEE\G";
+28"UN$1$MC10198$236P$REXT";
+29"UN$1$CAP_L$174P$A";
+30"UN$1$10E101$234P$C";
+31"VIH\G";
+32"UN$1$10E131$199P$R";
+33"UN$1$MC10198$237P$EPOS";
+34"UN$1$CAP_L$195P$B";
+35"VEE\G";
+36"UN$1$MC10198$237P$REXT";
+37"UN$1$CAP_L$195P$A";
+38"VTT\G";
+39"UN$1$10E101$234P$A";
+40"TRIG_OUT\I";
+41"UN$1$10H125$212P$B";
+42"UN$1$10H125$212P$A";
+43"UN$1$10H125$212P$Y";
+44"UN$1$GND$214P$G";
+45"UN$1$GND$213P$G";
+46"UN$1$RES_L$217P$A";
+47"UN$1$HCT123$218P$Q";
+48"UN$1$GND$176P$G";
+49"POS_IN\I";
+50"UN$1$RES_L$166P$A";
+51"VCC\G";
+52"VEE\G";
+53"UN$1$AD96685$163P$VN";
+54"UN$1$AD96685$163P$GRND1";
+55"UN$1$AD96685$163P$INN";
+56"UN$1$AD96685$163P$INP";
+57"UN$1$AD96685$163P$VP";
+58"UN$1$10E131$199P$Q";
+59"VIH\G";
+60"VTT\G";
+61"UN$1$CAP_L$207P$B";
+62"UN$1$CAP_L$207P$A";
+63"VCC\G";
+64"VCC\G";
+65"UN$1$GND$244P$G";
+66"UN$1$CAP_L$241P$A";
+67"UN$1$CAP_L$230P$B";
+68"UN$1$CAP_L$227P$B";
+69"UN$1$CAP_L$225P$B";
+70"UN$1$CAP_L$224P$B";
+71"UN$1$CAP_L$197P$B";
+%"RES_L"
+"1","(-5650,5100)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","138P";
+;
+CDS_LOCATION"R26"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"10";
+"A <SIZE-1..0>\NAC"21;
+"B <SIZE-1..0>\NAC"18;
+%"TRIMPOT"
+"1","(-6100,4800)","0","/tape/jrk/timecard/mylib/mylib.lib","139P";
+;
+CDS_LOCATION"PT1"
+CDS_SEC"1"
+SIZE"1B";
+"C<SIZE-1..0>\NAC"17;
+"A <SIZE-1..0>\NAC"18;
+"B <SIZE-1..0>\NAC"10;
+%"RES_L"
+"1","(-5650,4300)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","140P";
+;
+CDS_LOCATION"R48"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"10";
+"A <SIZE-1..0>\NAC"10;
+"B <SIZE-1..0>\NAC"11;
+%"AD96685"
+"1","(-5350,4650)","0","/tape/jrk/timecard/mylib/mylib.lib","141P";
+;
+CDS_LOCATION"U20"
+CDS_SEC"1"
+TOL_ON_OFF"ON"
+NAME"AD96685";
+"GRND2\NAC"22;
+"GRND1\NAC"22;
+"LTCH\NAC"22;
+"INN\NAC"19;
+"QN\NAC \B"0;
+"QP\NAC"14;
+"INP\NAC"20;
+"VN\NAC"11;
+"VP\NAC"21;
+%"RES_L"
+"1","(-800,4900)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","150P";
+;
+CDS_LOCATION"R18"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"38;
+"B <SIZE-1..0>\NAC"41;
+%"RES_L"
+"1","(-6350,4700)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","155P";
+;
+CDS_LOCATION"R47"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"15;
+"B <SIZE-1..0>\NAC"16;
+%"RES_L"
+"1","(-6250,3300)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","156P";
+;
+CDS_LOCATION"R49"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"48;
+"B <SIZE-1..0>\NAC"49;
+%"TRIMPOT"
+"1","(-6100,3600)","0","/tape/jrk/timecard/mylib/mylib.lib","161P";
+;
+CDS_LOCATION"PT2"
+CDS_SEC"1"
+SIZE"1B";
+"C<SIZE-1..0>\NAC"50;
+"A <SIZE-1..0>\NAC"51;
+"B <SIZE-1..0>\NAC"52;
+%"RES_L"
+"1","(-5650,3150)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","162P";
+;
+CDS_LOCATION"R50"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"10";
+"A <SIZE-1..0>\NAC"52;
+"B <SIZE-1..0>\NAC"53;
+%"AD96685"
+"1","(-5350,3450)","0","/tape/jrk/timecard/mylib/mylib.lib","163P";
+;
+CDS_LOCATION"U21"
+CDS_SEC"1"
+TOL_ON_OFF"ON"
+NAME"AD96685";
+"GRND2\NAC"54;
+"GRND1\NAC"54;
+"LTCH\NAC"54;
+"INN\NAC"55;
+"QN\NAC \B"13;
+"QP\NAC"0;
+"INP\NAC"56;
+"VN\NAC"53;
+"VP\NAC"57;
+%"GND"
+"1","(-5100,3200)","0","/cad/9504_5/lib/./element/element.lib","164P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"54;
+%"RES_L"
+"1","(-5750,3400)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","165P";
+;
+CDS_LOCATION"R41"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"100";
+"A <SIZE-1..0>\NAC"49;
+"B <SIZE-1..0>\NAC"55;
+%"RES_L"
+"1","(-5750,3500)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","166P";
+;
+CDS_LOCATION"R33"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"1 K";
+"A <SIZE-1..0>\NAC"50;
+"B <SIZE-1..0>\NAC"56;
+%"RES_L"
+"1","(-5650,3900)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","167P";
+;
+CDS_LOCATION"R27"
+CDS_SEC"1"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"10";
+"A <SIZE-1..0>\NAC"57;
+"B <SIZE-1..0>\NAC"51;
+%"RES_L"
+"1","(-5750,4700)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","168P";
+;
+CDS_LOCATION"R32"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"1 K";
+"A <SIZE-1..0>\NAC"17;
+"B <SIZE-1..0>\NAC"20;
+%"RES_L"
+"1","(-5750,4600)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","169P";
+;
+CDS_LOCATION"R40"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"100";
+"A <SIZE-1..0>\NAC"15;
+"B <SIZE-1..0>\NAC"19;
+%"GND"
+"1","(-5100,4400)","0","/cad/9504_5/lib/./element/element.lib","170P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"22;
+%"RES_L"
+"1","(-2850,4050)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","173P";
+;
+CDS_LOCATION"R4"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"33";
+"A <SIZE-1..0>\NAC"27;
+"B <SIZE-1..0>\NAC"28;
+%"CAP_L"
+"1","(-2700,4050)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","174P";
+;
+CDS_LOCATION"C1"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"39 PF";
+"A <SIZE-1..0>\NAC"29;
+"B <SIZE-1..0>\NAC"26;
+%"GND"
+"1","(-2700,3850)","0","/cad/9504_5/lib/./element/element.lib","175P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"26;
+%"GND"
+"1","(-6250,3050)","0","/cad/9504_5/lib/./element/element.lib","176P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"48;
+%"FLAG"
+"5","(350,5300)","0","/cad/9504_5/lib/./standard/standard.lib","187P";
+;
+BODY_TYPE"FLAG_BODY"
+NEEDS_NO_SIZE"TRUE";
+"A \NWC\NAC"
+OUTPUT_LOAD"(*,*)"40;
+%"GND"
+"1","(-3150,5450)","0","/cad/9504_5/lib/./element/element.lib","188P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"71;
+%"RES_L"
+"1","(-2750,6450)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","189P";
+;
+CDS_LOCATION"R2"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"50";
+"A <SIZE-1..0>\NAC"60;
+"B <SIZE-1..0>\NAC"58;
+%"FLAG"
+"1","(-6800,4600)","0","/cad/9504_5/lib/./standard/standard.lib","191P";
+;
+BODY_TYPE"FLAG_BODY"
+NEEDS_NO_SIZE"TRUE";
+"A \NWC\NAC"
+INPUT_LOAD"(*,*)"15;
+%"FLAG"
+"1","(-6750,3400)","0","/cad/9504_5/lib/./standard/standard.lib","192P";
+;
+BODY_TYPE"FLAG_BODY"
+NEEDS_NO_SIZE"TRUE";
+"A \NWC\NAC"
+INPUT_LOAD"(*,*)"49;
+%"GND"
+"1","(-2200,5800)","0","/cad/9504_5/lib/./element/element.lib","193P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"34;
+%"RES_L"
+"1","(-2350,6000)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","194P";
+;
+CDS_LOCATION"R5"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"33";
+"A <SIZE-1..0>\NAC"35;
+"B <SIZE-1..0>\NAC"36;
+%"CAP_L"
+"1","(-2200,6000)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","195P";
+;
+CDS_LOCATION"C2"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"39 PF";
+"A <SIZE-1..0>\NAC"37;
+"B <SIZE-1..0>\NAC"34;
+%"RES_L"
+"1","(-2900,5700)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","196P";
+;
+CDS_LOCATION"R12"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"500";
+"A <SIZE-1..0>\NAC"32;
+"B <SIZE-1..0>\NAC"33;
+%"CAP_L"
+"1","(-3150,5600)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","197P";
+;
+CDS_LOCATION"C13"
+CDS_SEC"1"
+SIZE"1B"
+IC"UNDEF"
+TOL_ON_OFF"ON"
+POSTOL"CTOL%"
+NEGTOL"CTOL%"
+DIST"FLAT"
+VOLTAGE"CMAX"
+SLOPE"CSMAX"
+KNEE"CBMAX"
+MAX_TEMP"CTMAX"
+TC"0"
+CURRENT"CIMAX"
+VALUE"10 P";
+"A <SIZE-1..0>\NAC"32;
+"B <SIZE-1..0>\NAC"71;
+%"FLAG"
+"1","(-4300,6250)","0","/cad/9504_5/lib/./standard/standard.lib","198P";
+;
+NEEDS_NO_SIZE"TRUE"
+BODY_TYPE"FLAG_BODY";
+"A \NWC\NAC"
+INPUT_LOAD"(*,*)"24;
+%"10E131"
+"1","(-3150,6400)","0","/tape/snopcb/neubauer/marklib/marklib.lib","199P";
+;
+CDS_LOCATION"U10"
+CDS_SEC"1";
+"CLK"0;
+"D <SIZE-1..0>"23;
+"EN"24;
+"Q <SIZE-1..0>"58;
+"Q <SIZE-1..0>* \B"0;
+"R"32;
+"S"0;
+%"TESTPOINT_L"
+"1","(-400,5150)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","202P";
+;
+CDS_LOCATION"TP27"
+CDS_SEC"1";
+"A\NAC \B"41;
+%"CAP_L"
+"1","(-350,6750)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","207P";
+;
+CDS_LOCATION"C25"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"62;
+"B <SIZE-1..0>\NAC"61;
+%"RES_L"
+"1","(-1650,4900)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","208P";
+;
+CDS_LOCATION"R10"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"50";
+"A <SIZE-1..0>\NAC"38;
+"B <SIZE-1..0>\NAC"39;
+%"RES_L"
+"1","(-1550,4900)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","209P";
+;
+CDS_LOCATION"R11"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"38;
+"B <SIZE-1..0>\NAC"30;
+%"10H125"
+"1","(-850,5900)","1","/cad/9504_5/lib/./10kh/10kh.lib","212P";
+SECTION"1";
+CDS_LOCATION"U17"
+CDS_SEC"1"
+PACK_TYPE"PLCC";
+"A <SIZE-1..0>"42;
+"B <SIZE-1..0>* \B"41;
+"V"42;
+"Y <SIZE-1..0>"43;
+%"GND"
+"1","(50,5850)","0","/cad/9504_5/lib/./element/element.lib","213P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"45;
+%"GND"
+"1","(-750,6150)","0","/cad/9504_5/lib/./element/element.lib","214P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"44;
+%"RES_L"
+"1","(-50,7000)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","216P";
+;
+CDS_LOCATION"R16"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"1 M";
+"A <SIZE-1..0>\NAC"62;
+"B <SIZE-1..0>\NAC"64;
+%"RES_L"
+"1","(300,6200)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","217P";
+;
+CDS_LOCATION"R17"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"200";
+"A <SIZE-1..0>\NAC"46;
+"B <SIZE-1..0>\NAC"47;
+%"HCT123"
+"1","(-300,6350)","0","/cad/9504_5/lib/./hcmos/hcmos.lib","218P";
+PULSE_WIDTH"10000";
+CDS_LOCATION"U11"
+CDS_SEC"2"
+NEEDS_NO_SIZE"TRUE";
+"C/R"61;
+"C"62;
+"Q"47;
+"Q* \B"0;
+"CL* \B"63;
+"CLOCK"43;
+"CLOCK* \B"44;
+%"RES_L"
+"1","(-3300,4350)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","219P";
+;
+CDS_LOCATION"R1"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"25;
+"B <SIZE-1..0>\NAC"23;
+%"RES_L"
+"1","(-4550,4150)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","220P";
+;
+CDS_LOCATION"R14"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"12;
+"B <SIZE-1..0>\NAC"14;
+%"RES_L"
+"1","(-4650,4150)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","221P";
+;
+CDS_LOCATION"R15"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"12;
+"B <SIZE-1..0>\NAC"13;
+%"GND"
+"1","(-5450,5050)","0","/cad/9504_5/lib/./element/element.lib","223P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"70;
+%"CAP_L"
+"1","(-5450,5200)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","224P";
+;
+CDS_LOCATION"C40"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"18;
+"B <SIZE-1..0>\NAC"70;
+%"CAP_L"
+"1","(-5450,3950)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","225P";
+;
+CDS_LOCATION"C41"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"51;
+"B <SIZE-1..0>\NAC"69;
+%"GND"
+"1","(-5450,3800)","0","/cad/9504_5/lib/./element/element.lib","226P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"69;
+%"CAP_L"
+"1","(-5200,4050)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","227P";
+;
+CDS_LOCATION"C53"
+CDS_SEC"1"
+SIZE"1B"
+IC"UNDEF"
+TOL_ON_OFF"ON"
+POSTOL"CTOL%"
+NEGTOL"CTOL%"
+DIST"FLAT"
+VOLTAGE"CMAX"
+SLOPE"CSMAX"
+KNEE"CBMAX"
+MAX_TEMP"CTMAX"
+TC"0"
+CURRENT"CIMAX"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"10;
+"B <SIZE-1..0>\NAC"68;
+%"GND"
+"1","(-5200,3900)","0","/cad/9504_5/lib/./element/element.lib","228P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"68;
+%"GND"
+"1","(-5450,2650)","0","/cad/9504_5/lib/./element/element.lib","229P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"67;
+%"CAP_L"
+"1","(-5450,2800)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","230P";
+;
+CDS_LOCATION"C54"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"52;
+"B <SIZE-1..0>\NAC"67;
+%"TESTPOINT_L"
+"1","(200,5900)","3","/tape/snopcb/snolib_fec32/snolib_fec32.lib","231P";
+;
+CDS_LOCATION"TP77"
+CDS_SEC"1";
+"A\NAC \B"45;
+%"TESTPOINT_L"
+"1","(300,5900)","3","/tape/snopcb/snolib_fec32/snolib_fec32.lib","232P";
+;
+CDS_LOCATION"TP78"
+CDS_SEC"1";
+"A\NAC \B"46;
+%"10E101"
+"1","(-4200,4500)","0","/tape/snopcb/neubauer/marklib/marklib.lib","233P";
+;
+CDS_LOCATION"U9"
+CDS_SEC"1";
+"A <SIZE-1..0>"14;
+"B <SIZE-1..0>"0;
+"C <SIZE-1..0>"13;
+"D <SIZE-1..0>"0;
+"Y <SIZE-1..0>"23;
+"Y <SIZE-1..0>* \B"0;
+%"10E101"
+"1","(-1300,5200)","0","/tape/snopcb/neubauer/marklib/marklib.lib","234P";
+;
+CDS_LOCATION"U9"
+CDS_SEC"2";
+"A <SIZE-1..0>"39;
+"B <SIZE-1..0>"0;
+"C <SIZE-1..0>"30;
+"D <SIZE-1..0>"0;
+"Y <SIZE-1..0>"40;
+"Y <SIZE-1..0>* \B"41;
+%"MC10198"
+"1","(-2850,4700)","0","/tape/snopcb/neubauer/marklib/marklib.lib","236P";
+;
+CDS_LOCATION"U1"
+CDS_SEC"1";
+"CEXT"29;
+"REXT"28;
+"EPWC"0;
+"Q* \B"0;
+"Q"30;
+"HSTRIG"0;
+"TRIG"23;
+"ENEG* \B"31;
+"EPOS* \B"30;
+%"MC10198"
+"1","(-2350,6650)","0","/tape/snopcb/neubauer/marklib/marklib.lib","237P";
+;
+CDS_LOCATION"U2"
+CDS_SEC"1";
+"CEXT"37;
+"REXT"36;
+"EPWC"0;
+"Q* \B"0;
+"Q"33;
+"HSTRIG"0;
+"TRIG"58;
+"ENEG* \B"59;
+"EPOS* \B"33;
+%"TESTPOINT_L"
+"1","(-1850,5450)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","238P";
+;
+CDS_LOCATION"JP2"
+CDS_SEC"1";
+"A\NAC \B"39;
+%"TESTPOINT_L"
+"1","(-1850,5550)","3","/tape/snopcb/snolib_fec32/snolib_fec32.lib","239P";
+;
+CDS_LOCATION"JP1"
+CDS_SEC"1";
+"A\NAC \B"33;
+%"GND"
+"1","(-900,5400)","0","/cad/9504_5/lib/./element/element.lib","240P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"66;
+%"CAP_L"
+"1","(-900,5550)","3","/tape/snopcb/snolib_fec32/snolib_fec32.lib","241P";
+;
+CDS_LOCATION"C31"
+CDS_SEC"1"
+CURRENT"CIMAX"
+TC"0"
+MAX_TEMP"CTMAX"
+KNEE"CBMAX"
+SLOPE"CSMAX"
+VOLTAGE"CMAX"
+DIST"FLAT"
+NEGTOL"CTOL%"
+POSTOL"CTOL%"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+SIZE"1B"
+VALUE"0.1 U";
+"A <SIZE-1..0>\NAC"66;
+"B <SIZE-1..0>\NAC"42;
+%"TESTPOINT_L"
+"1","(350,4300)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","242P";
+;
+CDS_LOCATION"TP38"
+CDS_SEC"1";
+"A\NAC \B"3;
+%"TESTPOINT_L"
+"1","(-1000,4300)","0","/tape/snopcb/snolib_fec32/snolib_fec32.lib","243P";
+;
+CDS_LOCATION"TP41"
+CDS_SEC"1";
+"A\NAC \B"9;
+%"GND"
+"1","(-350,3500)","0","/cad/9504_5/lib/./element/element.lib","244P";
+;
+BODY_TYPE"PLUMBING";
+"G\NAC"65;
+%"RES_L"
+"1","(-350,3650)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","245P";
+;
+CDS_LOCATION"R24"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"65;
+"B <SIZE-1..0>\NAC"5;
+%"RES_L"
+"1","(-1700,3650)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","246P";
+;
+CDS_LOCATION"R20"
+CDS_SEC"1"
+TC2"RTMPQ"
+TC1"RTMPL"
+MAX_TEMP"RTMAX"
+SLOPE"RSMAX"
+POWER"RMAX"
+DIST"FLAT"
+NEGTOL"RTOL%"
+POSTOL"RTOL%"
+TOL_ON_OFF"ON"
+SIZE"1B"
+VALUE"50";
+"A <SIZE-1..0>\NAC"4;
+"B <SIZE-1..0>\NAC"6;
+%"TESTPOINT_L"
+"1","(-700,3950)","2","/tape/snopcb/snolib_fec32/snolib_fec32.lib","247P";
+;
+CDS_LOCATION"TP28"
+CDS_SEC"1";
+"A\NAC \B"5;
+%"TESTPOINT_L"
+"1","(-2050,3950)","2","/tape/snopcb/snolib_fec32/snolib_fec32.lib","248P";
+;
+CDS_LOCATION"TP37"
+CDS_SEC"1";
+"A\NAC \B"6;
+%"MRF5943"
+"1","(-50,3950)","0","/tape/jrk/timecard/awb_lib/private.dev","249P";
+;
+CDS_LOCATION"Q3"
+CDS_SEC"1"
+TEMP"UNDEF"
+RCA"DEF"
+TOL_ON_OFF"ON"
+IC_VCE"UNDEF"
+IC_VBE"UNDEF"
+STATE"ON"
+NAME"MRF5943";
+"C\NAC"3;
+"B\NAC"5;
+"E\NAC"7;
+%"RES_L"
+"1","(0,3650)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","250P";
+;
+CDS_LOCATION"R23"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"300";
+"A <SIZE-1..0>\NAC"1;
+"B <SIZE-1..0>\NAC"7;
+%"RES_L"
+"1","(-1350,3650)","1","/tape/snopcb/snolib_fec32/snolib_fec32.lib","251P";
+;
+CDS_LOCATION"R22"
+CDS_SEC"1"
+SIZE"1B"
+TOL_ON_OFF"ON"
+POSTOL"RTOL%"
+NEGTOL"RTOL%"
+DIST"FLAT"
+POWER"RMAX"
+SLOPE"RSMAX"
+MAX_TEMP"RTMAX"
+TC1"RTMPL"
+TC2"RTMPQ"
+VALUE"300";
+"A <SIZE-1..0>\NAC"2;
+"B <SIZE-1..0>\NAC"8;
+%"MMBTH81LT1"
+"1","(-1400,3950)","0","/tape/jrk/timecard/mylib/mylib.lib","252P";
+;
+CDS_LOCATION"Q2"
+CDS_SEC"1"
+TEMP"UNDEF"
+STATE"ON"
+IC_VBE"UNDEF"
+IC_VCE"UNDEF"
+TOL_ON_OFF"ON"
+RCA"DEF"
+NAME"MMBTH81LT1";
+"B\NAC"6;
+"C\NAC"8;
+"E\NAC"9;
+%"DRAWING"
+"1","(-1600,2700)","0","/cad/9504_5/lib/./standard/standard.lib","";
+;
+LAST_MODIFIED"Mon Aug 18 18:31:04 1997"
+ABBREV"DISC"
+TITLE"TUB_DISC";
+END.

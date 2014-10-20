@@ -1,0 +1,30 @@
+FILE_TYPE=LIBRARY_PARTS;
+TIME=' COMPILATION ON THU FEB 10 19:52:46 1994  ';
+primitive 'XC1736';
+  pin
+    '-CE':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-CEO':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'D':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(*,*)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      OUTPUT_TYPE='(TS,TS)';
+    'CLK':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-RSOE':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    JEDEC_TYPE='DIP8_3';
+    CLASS='IC';
+    POWER_PINS='(VCC:7,8)';
+    POWER_PINS='(GND:5)';
+  end_body;
+end_primitive;
+END.

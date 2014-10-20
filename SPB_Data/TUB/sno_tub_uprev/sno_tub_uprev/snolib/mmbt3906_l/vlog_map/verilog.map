@@ -1,0 +1,20 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'MMBT3906';
+    DEFAULT_MODEL=SNOPNP;
+    UPPER_CASE=TRUE;
+    MODEL 'SNOPNP';
+        PIN_MAP
+            'E'='(B)';
+            'B'='(E)';
+            'C'='(C)';
+        END_PIN;
+    END_MODEL;
+    MODEL 'MMBt3906_l';
+        PIN_MAP
+            'E'='()';
+            'B'='()';
+            'C'='()';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

@@ -1,0 +1,27 @@
+FILE_TYPE=VERILOG_MAP;
+PRIMITIVE 'VME2000';
+    DEFAULT_MODEL=SNOVME2000;
+    UPPER_CASE=TRUE;
+    MODEL 'SNOVME2000';
+        PIN_MAP
+            '-MODSEL'='(MODSEL_)';
+            '-INTACK'='(INTACK_)';
+            '-ERR'='(ERR_)';
+            '-ACK'='(ACK_)';
+            '-D1EN'='(D1EN_)';
+            '-D0EN'='(D0EN_)';
+            '-DS'='(DS_)';
+            '-DS0'='(DS0_)';
+            '-ADEN'='(ADEN_)';
+            '-AS'='(AS_)';
+            '-DTACK'='(DTACK_)';
+            '-BERR'='(BERR_)';
+            'AM2'='(AM2)';
+            '-DS1'='(DS1_)';
+            '-IACK'='(IACK_)';
+            'SU'='(SU)';
+            'BC'='(BC)';
+        END_PIN;
+    END_MODEL;
+END_PRIMITIVE;
+END.

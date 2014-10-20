@@ -1,0 +1,43 @@
+FILE_TYPE=MULTI_PHYS_TABLE;
+
+{
+   This is bom_only_XL.ppt.  It is a physical part table 
+   used solely for generating a bill of materials for
+   the translator boards.
+
+   See bom_only.ppt for operating instructions.
+
+===========================================================================
+
+              Doug Cowen 5/1/96
+
+}
+
+PART 'CAP_L'
+  CLASS = DISCRETE
+  : VALUE = DESC ;
+  100PF  (XL-100PF)       = 'CER-NP0-50V-100PF-1206-10%'
+  500PF  (XL-500PF)       = 'CER-NP0-50V-500PF-805-10%'
+  5PF   (XL-5PF)       = 'CER-NP0-50V-5PF-805-5%'
+  100P  (XL-100P)       = 'CER-NP0-50V-100PF-1206-10%'
+  500P  (XL-500P)       = 'CER-NP0-50V-500PF-1206-10%'
+
+END_PART
+
+
+PART 'RES_L'
+  CLASS = DISCRETE
+  : VALUE = DESC ;
+  666  (-666)  = 'IGNORE'
+  5    (-5)    = 'MF-1/10W-51-0805-1%'
+  75    (-75)    = 'MF-1/10W-51-0805-1%'
+  47k    (-47k)    = 'MF-1/10W-51-0805-1%'
+  62k    (-62k)    = 'MF-1/10W-51-0805-1%'
+  240    (-240)    = 'MF-1/10W-51-0805-1%'
+  430    (-430)    = 'MF-1/10W-51-0805-1%'
+  1.5K    (-1.5K)    = 'MF-1/10W-51-0805-1%'
+  20K    (20K)    = 'MF-1/10W-51-0805-1%'
+
+END_PART
+
+END.

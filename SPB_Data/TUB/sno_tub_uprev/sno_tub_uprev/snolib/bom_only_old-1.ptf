@@ -1,0 +1,696 @@
+FILE_TYPE=MULTI_PHYS_TABLE;
+
+{
+   This is bom_only.ppt.  It is a physical part table 
+   used solely for generating a bill of materials across
+   multiple boards, each of which may have used slightly
+   different nomenclature for identical parts.  For example,
+   one designer may have assigned the value "0.1UF" to bypass
+   capacitors whereas another designer may have used "0.1 UF"
+   where the additional space in between causes the vanilla
+   BOM generator to think two different parts have been specified.
+
+   This .ppt file addresses this problem by assigning the same 
+   DESC property for cases like the one described above.  Then,
+   a semi-intelligent spread sheet can be used to collate
+   several BOM files into one large BOM for submission to (say)
+   stuffing houses.
+
+===========================================================================
+
+   USAGE:
+
+   0.  DO NOT RUN THIS PROGRAM ON YOUR ORIGINAL SET OF SCHEMATICS.
+       It will screw up the part numbers and cause you endless headaches.
+   1.  Copy your schematics to a scratch area.  For example:
+          cp -r my_board/ my_board_bom/ 
+   2.  From the syslab interface, modify the setup for the packager-xl
+       to look for this .ppt file (as of this writing, you would enter
+       /tape/cowen/cadence/bom_only.ppt in the field)
+   3.  Run packager-xl (from the command line, if you like, type "pxl")
+   4.  You will probably find that there are parts from this file which
+       your schematic makes reference to.  In that case, either 
+       copy over this file to your my_board_bom/ area, modify the packager-xl 
+       setup accordingly, modify your local version of this file, and
+       go to step 3.
+  
+       Alternatively, if this file is not in /tape/cowen/cadence but in
+       a public area, do step 4 and, once you see that it works, copy
+       it back to the public area.  Be sure that your mod will not adversely
+       affect other users.  Or at least, put in a comment so people will know
+       what happened.  (Comments are enclosed in curly brackets.)
+
+===========================================================================
+
+              Doug Cowen 5/1/96
+
+}
+
+{ Parts specific to the daughter board }
+
+PART 'CONN90'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN90
+  DESC = Vendor??? SFM-145-02-S-D-LC (male+female?)
+END_PART
+
+PART 'CONN50'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN50
+  DESC = Vendor??? SFM-125-02-S-D-LC (male+female?)
+END_PART
+
+PART 'CONN40'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN40
+  DESC = Vendor??? SFM-120-02-S-D-LC (male+female?)
+END_PART
+
+PART 'SNOINT2'
+  CLASS = IC
+  JEDEC_TYPE = SNOINT2
+  : DESC = DESC ;
+    CUSTOM (UPENN) = 'CUSTOM-WE PROVIDE'
+END_PART
+
+PART 'SNODISC2'
+  CLASS = IC
+  JEDEC_TYPE = SNODISC2
+  : DESC = DESC ;
+    CUSTOM (UPENN) = 'CUSTOM-WE PROVIDE'
+END_PART
+
+PART 'SNOCMOS7'
+  CLASS = IC
+  JEDEC_TYPE = SNOCMOS7
+  : DESC = DESC ;
+    CUSTOM (UPENN) = 'CUSTOM-WE PROVIDE'
+END_PART
+
+{ Parts specific to Mother Board }
+
+PART 'CGT24'
+  CLASS = IC
+  DESC = XILINX-3030PC44-100, PLCC
+  JEDEC_TYPE = PLCC
+END_PART
+
+PART 'FIFO_CTRL'
+  CLASS = IC
+  DESC = XILINX-3064PC84-125, PLCC
+  JEDEC_TYPE = PLCC
+END_PART
+
+PART 'BREGST'
+  CLASS = IC
+  DESC = XILINX-3020PC84-70, PLCC
+  JEDEC_TYPE = PLCC
+END_PART
+
+PART 'SEQUENCER32'
+  CLASS = IC
+  DESC = XILINX-3064PQ160-100, PLCC
+  JEDEC_TYPE = PLCC
+END_PART
+
+PART 'EUROCONN'
+  CLASS = DISCRETE
+  JEDEC_TYPE = EUROCON96
+  DESC = VME 96 PIN CONNECTOR: ASK RICK! (MALE/FEMALE?)
+END_PART
+
+PART 'CONN165'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN165
+  DESC = ASK RICK!
+END_PART
+
+PART 'DRAMSIMMB'
+  CLASS = IC
+  JEDEC_TYPE = ?
+  DESC = 4MB MEMORY STICK: ASK RICK!
+END_PART
+
+PART 'INDUCTOR_L'
+  CLASS = DISCRETE
+  JEDEC_TYPE = ???
+  DESC = 1UH FERRITE BEAD
+END_PART
+
+PART 'LED_L'
+  CLASS = DISCRETE
+  : COLOR = DESC JEDEC_TYPE ;
+  { 
+    Daughter Board 
+  }
+  BRIGHT_RED (LED-B_RED) = 'ASK TOM!' 'ASK RICHARD!'
+  GREEN  (LED-GREEN)     = 'ASK TOM!' 'ASK RICHARD!'
+  RED  (LED-RED)         = 'ASK TOM!' 'ASK RICHARD!'
+  YELLOW (LED-YELLOW)    = 'ASK TOM!' 'ASK RICHARD!'
+END_PART
+
+{ Parts specific to High Voltage Card }
+
+PART 'RELAY'
+  CLASS = DISCRETE
+  DESC = American Relays SE051A20 9442
+END_PART
+
+PART 'CONN12'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN12
+  DESC = WE PROVIDE (HV Bus connectors)
+END_PART
+
+PART 'CONN16'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN16
+  DESC = WE PROVIDE (Paddlecard connector)
+END_PART
+
+PART 'CONN24'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN24
+  DESC = WE PROVIDE (Paddlecard connector)
+END_PART
+
+PART 'CONN8'
+  CLASS = DISCRETE
+  JEDEC_TYPE = CONN8
+  DESC = WE PROVIDE (Paddlecard connector)
+END_PART
+
+PART '2N3906'
+  CLASS = DISCRETE
+  JEDEC_TYPE = ???
+  DESC = 2N3906 transistor (package=???) ASK JOSH
+END_PART
+
+PART '1N914'
+  CLASS = DISCRETE
+  JEDEC_TYPE = ???
+  DESC = 1N914 DIODE (package=???) ASK JOSH
+END_PART
+
+
+
+{ Parts (potentially) common to all boards }
+
+PART '10101_L_DIP'
+  CLASS = IC
+  DESC = 10101 ECL quad OR/NOR, DIP-??
+  JEDEC_TYPE = DIP-??
+END_PART
+
+PART '10114_PLCC'
+  CLASS = IC
+  DESC = 10114 ECL triple receiver, PLCC-??
+  JEDEC_TYPE = PLCC-??
+END_PART
+
+PART '10114_L_DIP'
+  CLASS = IC
+  DESC = 10114 ECL triple receiver, DIP-??
+  JEDEC_TYPE = DIP-??
+END_PART
+
+PART '10116_PLCC'
+  CLASS = IC
+  DESC = 10116 ECL triple receiver, PLCC-??
+  JEDEC_TYPE = PLCC-??
+END_PART
+
+PART '10124_PLCC'
+  CLASS = IC
+  DESC = 10124 TTL->ECL converter, PLCC-??
+  JEDEC_TYPE = PLCC-??
+END_PART
+
+PART '10124_DIP'
+  CLASS = IC
+  DESC = 10124 TTL->ECL converter, DIP-??
+  JEDEC_TYPE = DIP-??
+END_PART
+
+PART '10125_PLCC'
+  CLASS = IC
+  DESC = 10125 ECL->TTL converter, PLCC-??
+  JEDEC_TYPE = PLCC-??
+END_PART
+
+PART '10131_PLCC'
+  CLASS = IC
+  DESC = 10131 ECL dual flip-flop, PLCC-??
+  JEDEC_TYPE = PLCC-??
+END_PART
+
+PART '4067B_L_SOIC'
+  CLASS = IC
+  DESC = 4067B mux/demux, SOIC, wide/narrow?
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74ALS05_SOIC'
+  CLASS = IC
+  DESC = ALS05, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74F1765_PLCC'
+  CLASS = IC
+  DESC = f1765 memory controller, PLCC
+  JEDEC_TYPE = PLCC
+END_PART
+
+PART '74GTL16612'
+  CLASS = IC
+  DESC = 16612 GTL/TTL Transceiver, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HC03_DIP'
+  CLASS = IC
+  DESC = hc04 not gates, dip14, signetics 74hc03NH1 or cross
+  JEDEC_TYPE = dip14
+END_PART
+
+PART '74HC04_SOIC'
+  CLASS = IC
+  DESC = hc04 not gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HC154_SOIC'
+  CLASS = IC
+  DESC = hc154 demux/decoder, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HC164_SOIC'
+  CLASS = IC
+  DESC = hc154 demux/decoder, SO16, signetics 74hc164DJ1 or cross
+  JEDEC_TYPE = SO16
+END_PART
+
+PART '74HC164_DIP'
+  CLASS = IC
+  DESC = hc154 demux/decoder, dip16, signetics 74hc164NJ1 or cross
+  JEDEC_TYPE = dip16
+END_PART
+
+PART '74HC4051_L_SOIC'
+  CLASS = IC
+  DESC = hc4051 mux/demux, SOIC, wide/narrow?
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HC4066_SOIC'
+  CLASS = IC
+  DESC = hc4066 switch/mux, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT00_SOIC'
+  CLASS = IC
+  DESC = hct00 nand gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT02_SOIC'
+  CLASS = IC
+  DESC = hct02 nor gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT02_DIP'
+  CLASS = IC
+  DESC = hct02 nor gates, DIP14, signetics 74hct02nh1 or cross
+  JEDEC_TYPE = dip14
+END_PART
+
+PART '74HCT04_SOIC'
+  CLASS = IC
+  DESC = hct04 not gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT05_SOIC'
+  CLASS = IC
+  DESC = hct05 open collector not gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT08_SOIC'
+  CLASS = IC
+  DESC = hct08 and gates, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT11_SOIC'
+  CLASS = IC
+  DESC = hct11 3-input and, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT123_SOIC'
+  CLASS = IC
+  DESC = hct123 one-shot, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT123_DIP'
+  CLASS = IC
+  DESC = hct123 one-shot, DIP16, signetics 74HCT123NJ1 or cross
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT125_SOIC'
+  CLASS = IC
+  DESC = hct125 buffer, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT157_SOIC'
+  CLASS = IC
+  DESC = hct157 mux, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT244_SOIC'
+  CLASS = IC
+  DESC = hct244 register, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT245_SOIC'
+  CLASS = IC
+  DESC = hct245 bidirectional buffer, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT273_SOIC'
+  CLASS = IC
+  DESC = hct273 register, SOIC, signetics 74hct273DL2 or cross
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT273_DIP'
+  CLASS = IC
+  DESC = hct273 register, DIP20, signetics 74hct273NL1 or cross
+  JEDEC_TYPE = DIP20
+END_PART
+
+PART '74HCT32_SOIC'
+  CLASS = IC
+  DESC = hct32 or gate, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT374_SOIC'
+  CLASS = IC
+  DESC = hct374 register, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT4002_SOIC'
+  CLASS = IC
+  DESC = hct4002 quad input nor, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT540_SOIC'
+  CLASS = IC
+  DESC = hct540 register, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '74HCT541_SOIC'
+  CLASS = IC
+  DESC = hct541 register, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART '7815_L'
+  CLASS = DISCRETE
+  DESC = 7815 regulator, TO?
+  JEDEC_TYPE = TO?
+END_PART
+
+PART '7915_L'
+  CLASS = DISCRETE
+  DESC = 7915 regulator, TO?
+  JEDEC_TYPE = TO?
+END_PART
+
+PART 'AD842'
+  CLASS = IC
+  DESC = ad842 opamp, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'ADOP177G_L'
+  CLASS = IC
+  DESC = ultra precision opamp, SOIC, adop177gs (NOTE: AD711JR on HVC!!! FIX!)
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'ADREF02C_L'
+  CLASS = IC
+  DESC = adref02c voltage reference, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'LM337T_L'
+  CLASS = IC
+  DESC = LM337 voltage regulator, SO/TO?
+  JEDEC_TYPE = SO/TO?
+END_PART
+
+PART 'LM35DM'
+  CLASS = IC
+  DESC = Temperature Monitor, National LM35DM SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'LT1364'
+  CLASS = IC
+  DESC = High speed OPAMP, Linear Technology LT1364 (package?
+  JEDEC_TYPE = ???
+END_PART
+
+PART 'MAX120'
+  CLASS = IC
+  DESC = ADC, MAXIM 120, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'MAX507'
+  CLASS = IC
+  DESC = DAC, MAXIM 507, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'MAX529_SOIC'
+  CLASS = IC
+  DESC = ADC, MAXIM 529CWG, SOIC
+  JEDEC_TYPE = SOIC
+END_PART
+
+PART 'MIC29373'
+  CLASS = IC
+  DESC = VOLTAGE REGULATOR, MICREL 29373, TO263
+  JEDEC_TYPE = TO263
+END_PART
+
+PART 'MIC2937A33'
+  CLASS = IC
+  DESC = VOLTAGE REGULATOR, MICREL 2937A33, TO263
+  JEDEC_TYPE = TO263
+END_PART
+
+PART 'MMBR941'
+  CLASS = DISCRETE
+  JEDEC_TYPE = SOT-23???
+  DESC = ASK JOSH!!!
+END_PART
+
+PART 'MMBT3906_L'
+  CLASS = DISCRETE
+  JEDEC_TYPE = SOT-23???
+  DESC = ASK JOSH!!!
+END_PART
+
+{ NOTE: don't know why both instances of this device need
+        to be here. }
+
+PART 'NM93CS06'
+  CLASS = IC
+  : PACK_TYPE (OPT='SOIC') = DESC JEDEC_TYPE;
+  SOIC (NM93CS06_SOIC) = 'NATIONAL NM93CS06M8 (CHECK ON HVC)' 'SOIC'
+  DIP  (NM93CS06_DIP)  = 'NATIONAL NM93CS06 DIP8 (CHECK ON HVC)'   'DIP8'
+END_PART
+
+PART 'NM93CS06_SOIC'
+  CLASS = IC
+  : PACK_TYPE = DESC JEDEC_TYPE;
+  SOIC (-NM93CS06_SOIC) = 'NATIONAL NM93CS06M8' 'SOIC'
+  DIP  (-NM93CS06_DIP)  = 'NATIONAL NM93CS06 DIP8'   'DIP8'
+END_PART
+
+
+PART 'INDUCTOR'
+  CLASS = DISCRETE
+  : VALUE = DESC ;
+  {
+    Daughter Board
+  }
+  .39UH (FILT-.39) = '?????'
+END_PART
+
+PART 'CAP_L'
+  CLASS = DISCRETE
+  : VALUE = DESC ;
+  { 
+    Daughter Board 
+  }
+{  0.01UF (BYPASS-0.01) = 'CER-X7R-50V-0.01UF-0805-50%'}
+{  .01UF  (BYPASS-.01)  = 'CER-X7R-50V-0.01UF-0805-50%'}
+{  0.1UF  (BYPASS-0.1)  = 'CER-X7R-50V-0.1UF-0805-50%' }
+  0.1 UF (BYPASS--0.1)  = 'CER-X7R-50V-0.1UF-0805-50%' 
+  5PF    (INT-5PF)      = 'CER-NP0-50V-5PF-0805-5%'    
+  68PF   (FILT-68PF)    = 'CER-NP0-50V-68PF-0805-5%'   
+  .47UF  (FILT-.47UF)   = 'CER-X7R-50V-0.47UF-0805-20%'
+{  10UF   (TANT-10UF)   = 'TANT-???-20V-10UF-XXX-50%'  }
+  { 
+    Mother Board 
+  }
+  .01UF  (BYPASS-.01)   = 'CER-X7R-50V-0.01UF-0805-50%' 
+  0.01UF (BYPASS-0.01)  = 'CER-X7R-50V-0.01UF-0805-50%' 
+  0.01   (BYPASS-0.01-) = 'CER-X7R-50V-0.01UF-0805-50%' 
+  0.1UF  (BYPASS-0.1)   = 'CER-X7R-50V-0.1UF-0805-50%'  
+  0.10UF (BYPASS-0.10)  = 'CER-X7R-50V-0.1UF-0805-50%'  
+  1UF    (BYPASS-1)     = 'CER-X7R-50V-1.0UF-0805-50%'  
+  1.0UF  (BYPASS-1.0)   = 'CER-X7R-50V-1.0UF-0805-50%'  
+  10PF   (FILT-10PF)    = 'CER-NP0-50V-10PF-0805-5%'    
+  1-5PF  (FILT-1-5PF)   = 'CER-NP0-50V-1-5??PF-0805-5%' 
+{ fix on board: call it CAP_L with value=1.0UF-T, for example
+  1UF    (TANT-1UF)     = 'TANT-???-20V-1.0UF-XXX-50%'  
+}
+  2.2UF  (TANT-2.2UF)   = 'TANT-???-20V-2.2UF-XXX-50%'  
+  10UF   (TANT-10UF)    = 'TANT-???-20V-10UF-XXX-50%'   
+  22UF   (TANT-22UF)    = 'TANT-???-20V-22UF-XXX-50%'   
+  {
+   High Voltage Card
+  }
+  10 NF HV (HV-10NF)       = 'WE PROVIDE, RIGHT? (Philips 378 92103)'
+  4.7NF HV (HV-4.7NF)      = '???-???-2000V?-4.7NF-???-?% Philips 378 92472'
+  C_BP    (BYPASS-HV-)     = 'CER-X7R-50V-0.1UF?-???-?%'
+  C_RS    (RS-HV-)         = '???-???-50V-????-???-?%'
+  100 PF  (HV-100PF)       = 'CER-X7R-50V-100PF-???-?%'
+  10 PF   (HV-10PF)        = 'CER-X7R-50V-10PF-???-?%'
+  0.01 UF (BYPASS-HV-0.01) = 'CER-X7R-50V-0.01UF-???-50%' 
+  0.001 UF (BYPASS-HV-0.001) = 'CER-X7R-50V-0.001UF-???-50%' 
+  0.1 UF MONOLITHIC (HV-0.1UF-MONOLITHIC) = '???-???-50V-0.1UF-????-50%' 
+  1 UF TANTALUM (TANT-HV-1UF) = 'TANT-???-20V-1.0UF-XXX-50%'
+END_PART
+
+
+PART 'RES_L'
+  CLASS = DISCRETE
+  : VALUE = DESC ;
+    { 
+      Daughter Board 
+    }
+  10    (-10)    = 'MF-1/10W-10-0805-1%'
+  24    (-24)    = 'MF-1/10W-24-0805-1%'
+  33    (-33)    = 'MF-1/10W-33-0805-1%'
+  84    (-84)    = 'MF-1/10W-84-0805-1%'
+  100   (-100)   = 'MF-1/10W-100-0805-1%'
+  129   (-129)   = 'MF-1/10W-129-0805-1%'
+  240   (-240)   = 'MF-1/10W-240-0805-1%'
+  330   (-330)   = 'MF-1/10W-330-0805-1%'
+  430   (-430)   = 'MF-1/10W-430-0805-1%'
+  750   (-750)   = 'MF-1/10W-750-0805-1%'
+  1K    (-1K)    = 'MF-1/10W-1K-0805-1%'
+  3.57K (-3.57K) = 'MF-1/10W-3.57K-0805-1%'
+  3.65K (-3.65K) = 'MF-1/10W-3.65K-0805-1%'
+  5K    (-5K)    = 'MF-1/10W-5K-0805-1%'
+  5.1K  (-5.1K)  = 'MF-1/10W-5.1K-0805-1%'
+  10K   (-10K)   = 'MF-1/10W-10K-0805-5%'
+  999   (-999)   = 'MF-1/10W-???-0805-5% ASK MITCH'
+  { 
+    Mother Board 
+  }
+  51    (-51)    = 'MF-1/10W-51-0805-1%'
+  50    (-50)    = 'MF-1/10W-50-0805-1%'
+  60    (-60)    = 'MF-1/10W-60-0805-1%'
+  68    (-68)    = 'MF-1/10W-68-0805-1%'
+  72    (-72)    = 'MF-1/10W-72-0805-1%'
+  120   (-120)   = 'MF-1/10W-120-0805-1%'
+  150   (-150)   = 'MF-1/10W-150-0805-1%'
+  200   (-200)   = 'MF-1/10W-200-0805-1%'
+  300   (-300)   = 'MF-1/10W-300-0805-1%'
+  400   (-400)   = 'MF-1/10W-400-0805-1%'
+  510   (-510)   = 'MF-1/10W-510-0805-1%'
+  820   (-820)   = 'MF-1/10W-820-0805-1%'
+  1240  (-1.24K) = 'MF-1/10W-1.24K-0805-1%'
+  2K    (-2K)    = 'MF-1/10W-2K-0805-5%'
+  2.2K  (-2.2K)  = 'MF-1/10W-2.2K-0805-1%'
+  3K    (-3K)    = 'MF-1/10W-3K-0805-5%'
+  4.7K  (-4.7K)  = 'MF-1/10W-4.7K-0805-1%'
+  4.99K (-4.99K) = 'MF-1/10W-4.99K-0805-1%'
+  15.0K (-15K)   = 'MF-1/10W-15K-0805-1%'
+  20.0K (-20K)   = 'MF-1/10W-20K-0805-1%'
+  27K   (-27K)   = 'MF-1/10W-27K-0805-5%'
+  30.1K (-30.1K) = 'MF-1/10W-30.1K-0805-1%'
+  34.8K (-34.8K) = 'MF-1/10W-34.8K-0805-1%'
+  39K   (-39K)   = 'MF-1/10W-39K-0805-5%'
+  45.3K (-45.3K) = 'MF-1/10W-45.3K-0805-1%'
+  49.9K (-49.9K) = 'MF-1/10W-49.9K-0805-1%'
+  50K   (-50K)   = 'MF-1/10W-50K-0805-5%'
+ 62-40K (-62-40K)= 'MF-1/10W-???-0805-5% ASK RICHARD'
+  500K  (-500K)  = 'MF-1/10W-500K-0805-5%'
+  1M    (-1M)    = 'MF-1/10W-1M-0805-5%'
+  999M  (-999M)  = 'IGNORE'
+
+  SIP10-SMSIP (SIP) = 'SIP-1/10W-???-????-?%'
+  { 
+    High Voltage Card
+  }
+  20K   (-20K-HV) = '??-????-20K-????-?%'
+  R_SHAPE (SHAPE-HV) = '??-1/4W-???-????-?% through hole'
+  R_SET (SET-HV) = '??-1/4W-???-????-?% through hole'
+  R_ISO_GND (ISO_GND-HV) = '??-????-???-????-?%'
+  R_ISO_VCC (ISO_VCC-HV) = '??-????-???-????-?%'
+  DIODE (DIODE)  = 'Actually a t.h.-diode!-ASK MITCH'
+  RA2   (RA2)    = '??-????-???-????-?%'
+  RS    (RS)     = '??-????-???-????-?%'
+  110   (-110)   = '??-????-110-????-?%'
+  220   (-220)   = '??-????-220-????-?%'
+  180   (-180)   = '??-????-180-????-?%'
+  540   (-540)   = '??-????-540-????-?%'
+  100K  (-100K)  = '??-????-100K-???-?%'
+  
+
+END_PART
+
+{ 
+  Parts to ignore (NOTE: done in the bom template file now.  Not
+  necessary!)
+}
+
+PART 'TESTPOINT_L'
+  CLASS = DISCRETE
+  DESC = IGNORE
+  JEDEC_TYPE = FEC32DTP
+END_PART
+
+PART 'TESTPOINT_LS'
+  CLASS = DISCRETE
+  DESC = IGNORE
+  JEDEC_TYPE = FEC32DTP
+END_PART
+
+
+END.
+
