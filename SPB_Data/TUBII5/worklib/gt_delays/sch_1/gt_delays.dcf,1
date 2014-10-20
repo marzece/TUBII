@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 8 )
+			( logicalViewRevNum 9 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -552,6 +552,7 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):unnamed_1_asyncdelays_i3_ddgt"
 				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):\ddgt*\") )
+				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):\ddgt*\") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_ASYNCDELAYS_I3_DDGT"
 					( Origin gPackager )
 				)
@@ -581,8 +582,6 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):vcc5"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):ddgt"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_10e116_i26_a"
 			)
@@ -629,6 +628,9 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i20_q"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_ds102350_i5_q"
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):\ddgt*\"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i3"
 				( attribute "ABBREV" "10E116"
@@ -2904,7 +2906,7 @@
 	( BaseCopy "select_lo_src"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 2 )
+				( logicalViewRevNum 3 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -2914,13 +2916,10 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"
-			)
-			( signal "@tubii_lib.select_lo_src(sch_1):ddgt"
-				( objectStatus "ddgt" )
 			)
 			( signal "@tubii_lib.select_lo_src(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.select_lo_src(sch_1):page1_gnd") )
@@ -2965,6 +2964,9 @@
 			)
 			( signal "@tubii_lib.select_lo_src(sch_1):vtt"
 				( objectStatus "vtt" )
+			)
+			( signal "@tubii_lib.select_lo_src(sch_1):\ddgt*\"
+				( objectStatus "ddgt*" )
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i3"
 				( attribute "ABBREV" "10E116"
@@ -3841,7 +3843,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "asyncdelays"

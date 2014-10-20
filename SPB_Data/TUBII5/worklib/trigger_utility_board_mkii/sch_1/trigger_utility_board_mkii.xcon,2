@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-14T14:58:35</modificationTime>
+    <modificationTime>2014-10-20T15:59:49</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>189</netid>
-        <insttermid>333</insttermid>
+        <netid>233</netid>
+        <insttermid>495</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -574,11 +574,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T154</id>
-              <name>dgtl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T155</id>
               <name>fast_comp_outh</name>
               <direction>output</direction>
@@ -599,11 +594,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T159</id>
-              <name>lockout</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T160</id>
               <name>lockout*</name>
               <direction>output</direction>
@@ -622,6 +612,11 @@
               <id>T163</id>
               <name>tune_pulse</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T408</id>
+              <name>gtrig</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -939,12 +934,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N120</id>
-          <name>burst_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N121</id>
           <name>clock100_outh</name>
           <scope>interface</scope>
@@ -969,26 +958,8 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N125</id>
-          <name>combo_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N126</id>
-          <name>prescale_trig</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N127</id>
           <name>tub_clk_in</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N128</id>
-          <name>tubii_gt</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1121,6 +1092,30 @@
           <name>unnamed_1_cntrlregister_i2_dataout</name>
         </net>
         <net>
+          <id>N204</id>
+          <name>tubii_rt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N231</id>
+          <name>gtrig_ttl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N232</id>
+          <name>sync24_ttl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N233</id>
+          <name>sync_ttl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -1205,12 +1200,6 @@
         <net>
           <id>vih</id>
           <name>vih</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>vm6</id>
-          <name>vm6</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -1972,13 +1961,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M133</id>
-              <termid>T154</termid>
-              <connections>
-                <connection net="N102" />
-              </connections>
-            </pin>
-            <pin>
               <id>M134</id>
               <termid>T155</termid>
               <connections>
@@ -2007,13 +1989,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M138</id>
-              <termid>T159</termid>
-              <connections>
-                <connection net="N107" />
-              </connections>
-            </pin>
-            <pin>
               <id>M139</id>
               <termid>T160</termid>
               <connections>
@@ -2039,6 +2014,13 @@
               <termid>T163</termid>
               <connections>
                 <connection net="N160" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M441</id>
+              <termid>T408</termid>
+              <connections>
+                <connection net="N105" />
               </connections>
             </pin>
           </pins>
@@ -2226,12 +2208,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="burst_trig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="caen_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2257,12 +2233,6 @@
             </pageScope>
           </netScope>
           <netScope ref="clock200_outl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="combo_trig">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2321,6 +2291,12 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="gtrig_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="gtrigh_ecl">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2351,12 +2327,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="prescale_trig">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="smellie_delay_in">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2370,6 +2340,12 @@
             </pageScope>
           </netScope>
           <netScope ref="smellie_pulse_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_ttl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2412,6 +2388,12 @@
             </pageScope>
           </netScope>
           <netScope ref="sync_pulse_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_ttl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2465,7 +2447,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tubii_gt">
+          <netScope ref="tubii_rt">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2507,7 +2489,6 @@
               <net ref="async_delay_in"></net>
               <net ref="async_delay_out"></net>
               <net ref="async_pulse_out"></net>
-              <net ref="burst_trig"></net>
               <net ref="caen_out">
                 <msb>7</msb>
                 <lsb>0</lsb>
@@ -2516,7 +2497,6 @@
               <net ref="clock100_outl"></net>
               <net ref="clock200_outh"></net>
               <net ref="clock200_outl"></net>
-              <net ref="combo_trig"></net>
               <net ref="dgth"></net>
               <net ref="dgtl"></net>
               <net ref="ext_ped_in"></net>
@@ -2529,12 +2509,12 @@
               <net ref="fast_comp_outh"></net>
               <net ref="fast_comp_outl"></net>
               <net ref="gnd"></net>
+              <net ref="gtrig_ttl"></net>
               <net ref="gtrigh_ecl"></net>
               <net ref="gtrigl_ecl"></net>
               <net ref="lockout"></net>
               <net ref="lockout*"></net>
               <net ref="mtcd_lo*"></net>
-              <net ref="prescale_trig"></net>
               <net ref="rawtrigs">
                 <msb>3</msb>
                 <lsb>0</lsb>
@@ -2546,6 +2526,7 @@
               <net ref="smellie_delay_in"></net>
               <net ref="smellie_delay_out"></net>
               <net ref="smellie_pulse_out"></net>
+              <net ref="sync24_ttl"></net>
               <net ref="sync24h_ecl"></net>
               <net ref="sync24h_lvds"></net>
               <net ref="sync24l_ecl"></net>
@@ -2553,6 +2534,7 @@
               <net ref="sync_delay_in"></net>
               <net ref="sync_delay_out"></net>
               <net ref="sync_pulse_out"></net>
+              <net ref="sync_ttl"></net>
               <net ref="synch_ecl"></net>
               <net ref="synch_lvds"></net>
               <net ref="syncl_ecl"></net>
@@ -2561,7 +2543,7 @@
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="tubii_gt"></net>
+              <net ref="tubii_rt"></net>
               <net ref="tune_anpulse"></net>
               <net ref="tune_comp_outh"></net>
               <net ref="tune_comp_outl"></net>
