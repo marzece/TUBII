@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-17T14:00:49</modificationTime>
+    <modificationTime>2014-10-17T14:07:40</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>168</instanceid>
         <netid>1740</netid>
-        <insttermid>6226</insttermid>
+        <insttermid>6228</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -262,6 +262,16 @@
             <term>
               <id>T3821</id>
               <name>tubii_rt</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T3822</id>
+              <name>clock100_outh</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T3823</id>
+              <name>clock100_outl</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -1455,6 +1465,20 @@
               <termid>T3821</termid>
               <connections>
                 <connection net="N1708" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6227</id>
+              <termid>T3822</termid>
+              <connections>
+                <connection net="N1695" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6228</id>
+              <termid>T3823</termid>
+              <connections>
+                <connection net="N1696" />
               </connections>
             </pin>
           </pins>
