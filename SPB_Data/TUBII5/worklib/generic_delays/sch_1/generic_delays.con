@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "generic_delays"
     (lastIds
-      (lastInstanceId 35)
-      (lastNetId 33)
-      (lastInstTermId 91)
+      (lastInstanceId 37)
+      (lastNetId 34)
+      (lastInstTermId 96)
     )
     (cells
       ("S6" "10h124" "ecl" "sym_1"
@@ -47,6 +47,17 @@
           ("T47" "q/p0" -1 -1 1)
         )
       )
+      ("S10" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T57" "a" 0 0 1)
+          ("T58" "b" 0 0 2)
+        )
+      )
+      ("S11" "led_pulse" "tubii_lib" "sym_1"
+        (terms
+          ("T61" "pulse_in" -1 -1 1)
+        )
+      )
     )
 
     (nets
@@ -60,6 +71,7 @@
       ("N5" "gnd" -1 -1 2 )
       ("N29" "vcc" -1 -1 2 )
       ("N30" "vcc5" -1 -1 2 )
+      ("N34" "vtt" -1 -1 2 )
     )
 
     (instances
@@ -148,6 +160,29 @@
           ("M90" "T46" -1 -1
           )
           ("M91" "T47" -1 -1
+          )
+        )
+      )
+      ("I36" "page1_i47" "S10"
+        (pins
+          ("M92" "T57" 0 0
+            (conn
+              ("0" 0 0 "N34" -1 -1)
+            )
+          )
+          ("M93" "T58" 0 0
+            (conn
+              ("0" 0 0 "N32" -1 -1)
+            )
+          )
+        )
+      )
+      ("I37" "page1_i48" "S11"
+        (pins
+          ("M96" "T61" -1 -1
+            (conn
+              ("0" -1 -1 "N26" -1 -1)
+            )
           )
         )
       )
