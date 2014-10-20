@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "pulse_inverter"
     (lastIds
-      (lastInstanceId 7)
-      (lastNetId 7)
-      (lastInstTermId 13)
+      (lastInstanceId 9)
+      (lastNetId 9)
+      (lastInstTermId 17)
     )
     (cells
       ("S2" "testpoint_l" "misc" "sym_1"
@@ -35,6 +35,12 @@
           ("T9" "v-" -1 -1 1)
         )
       )
+      ("S5" "csmd0805" "capacitors" "sym_1"
+        (terms
+          ("T13" "a" 0 0 1)
+          ("T14" "b" 0 0 2)
+        )
+      )
     )
 
     (nets
@@ -42,6 +48,8 @@
       ("N3" "unnamed_1_ad8009_i4_in" -1 -1 0 )
       ("N4" "unnamed_1_ad8009_i4_output" -1 -1 0 )
       ("N5" "page1_gnd" -1 -1 0 )
+      ("N8" "unnamed_1_ad8009_i4_v" -1 -1 0 )
+      ("N9" "unnamed_1_ad8009_i4_v_1" -1 -1 0 )
       ("N2" "gnd" -1 -1 2 )
       ("N6" "vcc" -1 -1 2 )
       ("N7" "vcc5m" -1 -1 2 )
@@ -108,12 +116,12 @@
           )
           ("M9" "T8" -1 -1
             (conn
-              ("0" -1 -1 "N6" -1 -1)
+              ("0" -1 -1 "N8" -1 -1)
             )
           )
           ("M10" "T9" -1 -1
             (conn
-              ("0" -1 -1 "N7" -1 -1)
+              ("0" -1 -1 "N9" -1 -1)
             )
           )
         )
@@ -141,6 +149,34 @@
           ("M13" "T1" -1 -1
             (conn
               ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+        )
+      )
+      ("I8" "page1_i10" "S5"
+        (pins
+          ("M14" "T13" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
+          )
+          ("M15" "T14" 0 0
+            (conn
+              ("0" 0 0 "N9" -1 -1)
+            )
+          )
+        )
+      )
+      ("I9" "page1_i11" "S5"
+        (pins
+          ("M16" "T13" 0 0
+            (conn
+              ("0" 0 0 "N8" -1 -1)
+            )
+          )
+          ("M17" "T14" 0 0
+            (conn
+              ("0" 0 0 "N6" -1 -1)
             )
           )
         )
