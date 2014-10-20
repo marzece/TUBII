@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-07T18:59:09</modificationTime>
+    <modificationTime>2014-10-14T11:13:34</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
       <lastids>
         <instanceid>40</instanceid>
-        <netid>43</netid>
+        <netid>44</netid>
         <insttermid>110</insttermid>
       </lastids>
       <cells>
@@ -196,6 +196,10 @@
           <name>unnamed_1_resl_i10_b</name>
         </net>
         <net>
+          <id>N35</id>
+          <name>vref5m</name>
+        </net>
+        <net>
           <id>N36</id>
           <name>out_att</name>
           <scope>interface</scope>
@@ -221,11 +225,6 @@
           <scope>global</scope>
         </net>
         <net>
-          <id>N35</id>
-          <name>vref5m</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>N38</id>
           <name>vcc5</name>
           <scope>global</scope>
@@ -243,6 +242,11 @@
         <net>
           <id>N43</id>
           <name>vcc15m</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N44</id>
+          <name>vcc5m</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -470,7 +474,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N35" />
+                <connection pinmsb="0" pinlsb="0" net="N44" />
               </connections>
             </pin>
             <pin>
@@ -1116,12 +1120,12 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="vref2m">
+          <netScope ref="vcc5m">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="vref5m">
+          <netScope ref="vref2m">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -1150,6 +1154,7 @@
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
               <net ref="vcc5"></net>
+              <net ref="vcc5m"></net>
               <net ref="vref2m"></net>
               <net ref="vref5m"></net>
             </nets>
