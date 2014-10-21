@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 9 )
+			( logicalViewRevNum 10 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -464,8 +464,8 @@
 			)
 			( signal "@tubii_lib.powers(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_gnd") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):power(2)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):power(3)") )
 				( attribute "PHYS_NET_NAME" "GND<2>"
 					( Origin gPackager )
 				)
@@ -475,58 +475,66 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_gnd" )
 			)
+			( signal "@tubii_lib.powers(sch_1):page1_power(2)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_power<2>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):power(2)"
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_d") )
+				( attribute "PHYS_NET_NAME" "POWER<2>"
+					( Origin gPackager )
+				)
+				( objectStatus "power<2>" )
+			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(1)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<1>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):power(1)"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(1)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_d") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_e") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e") )
 				( attribute "PHYS_NET_NAME" "POWER<1>"
 					( Origin gPackager )
 				)
 				( objectStatus "power<1>" )
 			)
-			( signal "@tubii_lib.powers(sch_1):power(2)"
-				( attribute "BUS_NAME" "POWER"
-					( Origin gFrontEnd )
-				)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d"
 				( objectFlag fObjectAlias )
-				( objectStatus "power<2>" )
-			)
-			( signal "@tubii_lib.powers(sch_1):page1_power(2)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_power<2>" )
-			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_5merge_i71_e" )
+				( objectStatus "page1_unnamed_1_5merge_i71_d" )
 			)
 			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_d"
 				( objectFlag fObjectAlias )
 				( objectStatus "unnamed_1_5merge_i71_d" )
 			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_e" )
+			)
 			( signal "@tubii_lib.powers(sch_1):power(3)"
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b") )
-				( attribute "PHYS_NET_NAME" "POWER<0>"
-					( Origin gPackager )
+				( attribute "BUS_NAME" "POWER"
+					( Origin gFrontEnd )
 				)
+				( objectFlag fObjectAlias )
 				( objectStatus "power<3>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(3)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<3>" )
 			)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_5merge_i71_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_b" )
+			)
 			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_e"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_5merge_i71_e" )
-			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_5merge_i71_d" )
 			)
 			( signal "@tubii_lib.powers(sch_1):unnamed_1_lm337tl_i22_ref"
 				( objectStatus "unnamed_1_lm337tl_i22_ref" )
@@ -577,43 +585,35 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "unnamed_1_5merge_i71_a" )
 			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_5merge_i71_b" )
-			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_5merge_i71_b" )
-			)
 			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_5merge_i71_a" )
 			)
-			( signal "@tubii_lib.powers(sch_1):power(0)"
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(0)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_e") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e") )
-				( attribute "PHYS_NET_NAME" "POWER<0>_1"
-					( Origin gPackager )
-				)
-				( objectStatus "power<0>" )
+			( signal "@tubii_lib.powers(sch_1):page1_power(5)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_power<5>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):power(4)"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(4)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b") )
 				( attribute "PHYS_NET_NAME" "POWER<4>"
 					( Origin gPackager )
 				)
 				( objectStatus "power<4>" )
 			)
-			( signal "@tubii_lib.powers(sch_1):page1_power(0)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_power<0>" )
-			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(4)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<4>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):power(5)"
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(5)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a") )
+				( attribute "PHYS_NET_NAME" "POWER<5>"
+					( Origin gPackager )
+				)
+				( objectStatus "power<5>" )
 			)
 			( gate "@tubii_lib.powers(sch_1):page1_i3"
 				( attribute "ABBREV" "NDC"
@@ -2156,7 +2156,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1100,3875)"
+				( attribute "XY" "(1025,3875)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TANT0805"
@@ -2261,9 +2261,6 @@
 				( attribute "PACKTYPE" "0805"
 					( Origin gFrontEnd )
 				)
-				( attribute "PART_NAME" "CSMD0805"
-					( Origin gFrontEnd )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
@@ -2357,9 +2354,6 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PART_NAME" "CSMD0805"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2599,86 +2593,6 @@
 				( pin "output"
 				)
 			)
-			( gate "@tubii_lib.powers(sch_1):page1_i49"
-				( attribute "CDS_LIB" "capacitors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
-					( Origin gPackager )
-				)
-				( attribute "CURRENT" "CIMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "KNEE" "CBMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "CTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PART_NAME" "CSMD0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "CSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "2.2UF"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "10V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1525,1950)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "CSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "CSMD0805-2.2UF,10%,0805,10V"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I49" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
-			)
 			( gate "@tubii_lib.powers(sch_1):page1_i50"
 				( attribute "CDS_LIB" "capacitors"
 					( Origin gPackager )
@@ -2744,7 +2658,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-825,1950)"
+				( attribute "XY" "(-825,1975)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0805"
@@ -3701,16 +3615,176 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_lib.powers(sch_1):page1_i76"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.33UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1450,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.33UF,10%,0805,25V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I76" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i77"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.33UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1525,1975)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.33UF,10%,0805,25V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I77" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( bus "@tubii_lib.powers(sch_1):power"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_lib.powers(sch_1):page1_power") )
 				( attribute "BUS_NAME" "POWER"
 					( Origin gPackager )
 				)
-				( member ( signalRef "@tubii_lib.powers(sch_1):power(3)") )
-				( member ( signalRef "@tubii_lib.powers(sch_1):power(0)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):power(4)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):power(1)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):power(5)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):power(2)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):gnd") )
 				( objectStatus "POWER" )
 			)
@@ -3720,8 +3794,8 @@
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(1)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
-				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(0)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(4)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(5)") )
 				( objectStatus "PAGE1_POWER" )
 			)
 		)

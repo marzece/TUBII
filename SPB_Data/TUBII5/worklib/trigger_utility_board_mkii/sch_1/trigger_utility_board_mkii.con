@@ -8,8 +8,8 @@
   (design "trigger_utility_board_mkii"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 235)
-      (lastInstTermId 497)
+      (lastNetId 250)
+      (lastInstTermId 551)
     )
     (cells
       ("S2" "base_mon" "tubii_lib" "sym_1"
@@ -152,7 +152,7 @@
       )
       ("S13" "powers" "tubii_lib" "sym_1"
         (terms
-          ("T172" "power" 3 1 1)
+          ("T172" "power" 5 1 1)
         )
       )
     )
@@ -193,9 +193,8 @@
       ("N69" "unnamed_1_genericutilities_i11_pulse" -1 -1 0 )
       ("N70" "unnamed_1_gtdelays_i4_ledgt" -1 -1 0 )
       ("N73" "unnamed_1_microzedconnection_i10_spkr" -1 -1 0 )
-      ("N97" "rawtrigs" 3 0 0 )
+      ("N97" "rawtrigs" 3 0 1 3)
       ("N98" "tellie_pulse_out" -1 -1 1 3)
-      ("N99" "anpulsein" 11 0 1 3)
       ("N100" "caen_out" 7 0 1 3)
       ("N101" "dgth" -1 -1 1 3)
       ("N102" "dgtl" -1 -1 1 3)
@@ -206,7 +205,7 @@
       ("N107" "lockout" -1 -1 1 3)
       ("N108" "lockout*" -1 -1 1 3)
       ("N109" "mtcd_lo*" -1 -1 1 3)
-      ("N110" "scope_out" 7 0 0 )
+      ("N110" "scope_out" 7 0 1 3)
       ("N111" "sync24h_ecl" -1 -1 1 3)
       ("N112" "sync24h_lvds" -1 -1 1 3)
       ("N113" "sync24l_ecl" -1 -1 1 3)
@@ -245,12 +244,13 @@
       ("N168" "unnamed_1_clocks_i15_missedclock" -1 -1 0 )
       ("N169" "unnamed_1_cntrlregister_i2_datardy" -1 -1 0 )
       ("N188" "unnamed_1_cntrlregister_i2_dataout" -1 -1 0 )
-      ("N204" "tubii_rt" -1 -1 1 3)
       ("N231" "gtrig_ttl" -1 -1 1 3)
       ("N232" "sync24_ttl" -1 -1 1 3)
       ("N233" "sync_ttl" -1 -1 1 3)
       ("N234" "unnamed_1_gtdelays_i4_dgtttl" -1 -1 0 )
       ("N235" "unnamed_1_gtdelays_i4_lockout" -1 -1 0 )
+      ("N249" "caen_anpulse" 11 0 1 3)
+      ("N250" "tubii_rt_out" -1 -1 1 3)
       ("N2" "gnd" -1 -1 2 )
       ("N77" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -343,7 +343,7 @@
         (pins
           ("M23" "T27" 11 0
             (conn
-              ("0" 11 0 "N99" 11 0)
+              ("0" 11 0 "N249" 11 0)
             )
           )
           ("M24" "T28" 7 0
@@ -743,7 +743,7 @@
       )
       ("I12" "page1_i14" "S13"
         (pins
-          ("M151" "T172" 3 1
+          ("M151" "T172" 5 1
           )
         )
       )

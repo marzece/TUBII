@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 7 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -482,39 +482,26 @@
 			)
 			( signal "@tubii_lib.powers(sch_1):power(2)"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_b") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_b") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b(0)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b(0)") )
 				( objectStatus "power<2>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(2)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<2>" )
 			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_b"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_3merge_i2_b" )
-			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_b"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_3merge_i2_b" )
-			)
 			( signal "@tubii_lib.powers(sch_1):power(3)"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_a") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_a") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a(0)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a(0)") )
+				( attribute "PHYS_NET_NAME" "POWER<0>"
+					( Origin gPackager )
+				)
 				( objectStatus "power<3>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(3)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<3>" )
-			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_a"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_3merge_i2_a" )
-			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_a"
-				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_3merge_i2_a" )
 			)
 			( signal "@tubii_lib.powers(sch_1):unnamed_1_lm337tl_i22_ref"
 				( objectStatus "unnamed_1_lm337tl_i22_ref" )
@@ -560,6 +547,22 @@
 			)
 			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i69_a"
 				( objectStatus "unnamed_1_ledl_i69_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_a<0>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_5merge_i71_a<0>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_b<0>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_5merge_i71_b<0>" )
 			)
 			( gate "@tubii_lib.powers(sch_1):page1_i3"
 				( attribute "ABBREV" "NDC"
@@ -3650,6 +3653,9 @@
 			( bus "@tubii_lib.powers(sch_1):power"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_lib.powers(sch_1):page1_power") )
+				( attribute "BUS_NAME" "POWER"
+					( Origin gPackager )
+				)
 				( member ( signalRef "@tubii_lib.powers(sch_1):power(2)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):power(3)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):gnd") )
@@ -3662,6 +3668,30 @@
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
 				( objectStatus "PAGE1_POWER" )
+			)
+			( bus "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a(0)") )
+				( objectStatus "UNNAMED_1_5MERGE_I71_A" )
+			)
+			( bus "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a(0)") )
+				( objectStatus "PAGE1_UNNAMED_1_5MERGE_I71_A" )
+			)
+			( bus "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b(0)") )
+				( objectStatus "UNNAMED_1_5MERGE_I71_B" )
+			)
+			( bus "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b"
+				( memberType ( signal ) )
+				( objectFlag fObjectAlias )
+				( member ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b(0)") )
+				( objectStatus "PAGE1_UNNAMED_1_5MERGE_I71_B" )
 			)
 		)
 	)
