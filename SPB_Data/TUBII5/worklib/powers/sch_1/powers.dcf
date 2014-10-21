@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 9 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -464,8 +464,11 @@
 			)
 			( signal "@tubii_lib.powers(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_gnd") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(1)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):power(1)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):power(2)") )
+				( attribute "PHYS_NET_NAME" "GND<2>"
+					( Origin gPackager )
+				)
 				( objectStatus "gnd" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_gnd"
@@ -477,44 +480,53 @@
 				( objectStatus "page1_power<1>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):power(1)"
-				( objectFlag fObjectAlias )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(1)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_d") )
+				( attribute "PHYS_NET_NAME" "POWER<1>"
+					( Origin gPackager )
+				)
 				( objectStatus "power<1>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):power(2)"
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_b") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_b") )
+				( attribute "BUS_NAME" "POWER"
+					( Origin gFrontEnd )
+				)
+				( objectFlag fObjectAlias )
 				( objectStatus "power<2>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(2)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<2>" )
 			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_b"
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e"
 				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_3merge_i2_b" )
+				( objectStatus "unnamed_1_5merge_i71_e" )
 			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_b"
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_d"
 				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_3merge_i2_b" )
+				( objectStatus "unnamed_1_5merge_i71_d" )
 			)
 			( signal "@tubii_lib.powers(sch_1):power(3)"
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_a") )
-				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_a") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b") )
+				( attribute "PHYS_NET_NAME" "POWER<0>"
+					( Origin gPackager )
+				)
 				( objectStatus "power<3>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(3)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<3>" )
 			)
-			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_3merge_i2_a"
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_e"
 				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_3merge_i2_a" )
+				( objectStatus "page1_unnamed_1_5merge_i71_e" )
 			)
-			( signal "@tubii_lib.powers(sch_1):unnamed_1_3merge_i2_a"
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_d"
 				( objectFlag fObjectAlias )
-				( objectStatus "unnamed_1_3merge_i2_a" )
+				( objectStatus "page1_unnamed_1_5merge_i71_d" )
 			)
 			( signal "@tubii_lib.powers(sch_1):unnamed_1_lm337tl_i22_ref"
 				( objectStatus "unnamed_1_lm337tl_i22_ref" )
@@ -542,6 +554,66 @@
 			)
 			( signal "@tubii_lib.powers(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i53_a"
+				( objectStatus "unnamed_1_ledl_i53_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i56_a"
+				( objectStatus "unnamed_1_ledl_i56_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i60_b"
+				( objectStatus "unnamed_1_ledl_i60_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i61_b"
+				( objectStatus "unnamed_1_ledl_i61_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i64_b"
+				( objectStatus "unnamed_1_ledl_i64_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_ledl_i69_a"
+				( objectStatus "unnamed_1_ledl_i69_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_b"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_5merge_i71_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_b"
+				( objectFlag fObjectAlias )
+				( objectStatus "unnamed_1_5merge_i71_b" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_5merge_i71_a" )
+			)
+			( signal "@tubii_lib.powers(sch_1):power(0)"
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(0)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_e") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_e") )
+				( attribute "PHYS_NET_NAME" "POWER<0>_1"
+					( Origin gPackager )
+				)
+				( objectStatus "power<0>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):power(4)"
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_power(4)") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_unnamed_1_5merge_i71_a") )
+				( alias ( signalRef "@tubii_lib.powers(sch_1):unnamed_1_5merge_i71_a") )
+				( attribute "PHYS_NET_NAME" "POWER<4>"
+					( Origin gPackager )
+				)
+				( objectStatus "power<4>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_power(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_power<0>" )
+			)
+			( signal "@tubii_lib.powers(sch_1):page1_power(4)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_power<4>" )
 			)
 			( gate "@tubii_lib.powers(sch_1):page1_i3"
 				( attribute "ABBREV" "NDC"
@@ -598,7 +670,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1400,3325)"
+				( attribute "XY" "(-1375,3400)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "INDUCTOR_L"
@@ -769,7 +841,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-1000,3475)"
+				( attribute "XY" "(-1000,3550)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TANT0805"
@@ -867,7 +939,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-800,3475)"
+				( attribute "XY" "(-800,3550)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0805"
@@ -1158,7 +1230,7 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-600,3475)"
+				( attribute "XY" "(-600,3550)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0805"
@@ -1207,7 +1279,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-250,3425)"
+				( attribute "XY" "(-250,3500)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
@@ -1684,7 +1756,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(650,3325)"
+				( attribute "XY" "(650,3400)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "LM337T_L"
@@ -1994,7 +2066,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1250,3225)"
+				( attribute "XY" "(1250,3275)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
@@ -2527,202 +2599,6 @@
 				( pin "output"
 				)
 			)
-			( gate "@tubii_lib.powers(sch_1):page1_i42"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1950,2525)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I42" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.powers(sch_1):page1_i43"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1925,2075)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I43" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.powers(sch_1):page1_i44"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1950,2425)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I44" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.powers(sch_1):page1_i45"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1925,1975)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I45" )
-				( pin "a"
-				)
-			)
-			( gate "@tubii_lib.powers(sch_1):page1_i48"
-				( attribute "CDS_LIB" "capacitors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
-					( Origin gPackager )
-				)
-				( attribute "CURRENT" "CIMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "KNEE" "CBMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "CTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PART_NAME" "CSMD0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "CSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "2.2UF"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "10V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1525,2425)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "CSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "CSMD0805-2.2UF,10%,0805,10V"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I48" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
-			)
 			( gate "@tubii_lib.powers(sch_1):page1_i49"
 				( attribute "CDS_LIB" "capacitors"
 					( Origin gPackager )
@@ -2883,7 +2759,869 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.powers(sch_1):page1_i51"
+			( gate "@tubii_lib.powers(sch_1):page1_i53"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(0,4150)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I53" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i54"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(0,3950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I54" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i55"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3025,3950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I55" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i56"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(3025,4150)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I56" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i58"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-175,3125)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I58" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i60"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-175,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I60" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i61"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1550,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I61" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i63"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1550,3125)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I63" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i64"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-675,1700)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I64" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i66"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-675,1875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I66" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i69"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-775,2950)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I69" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i70"
+				( attribute "CDS_LIB" "resistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+					( Origin gPackager )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "1000"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-775,2750)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I70" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i72"
+				( attribute "ABBREV" "NDC"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "LMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIELECTRIC" "DSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1600,3000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I72" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i73"
+				( attribute "ABBREV" "NDC"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "LMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIELECTRIC" "DSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "LTOL%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SIZE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1650,2725)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "INDUCTOR_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I73" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i74"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-875,2425)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0805"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I74" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i75"
 				( attribute "CDS_LIB" "capacitors"
 					( Origin gPackager )
 				)
@@ -2938,7 +3676,7 @@
 				( attribute "TOL_ON_OFF" "ON"
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "1.0UF"
+				( attribute "VALUE" "0.22UF"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
@@ -2948,16 +3686,16 @@
 					( Units "uVoltage" "V" 1.000000)
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-875,2425)"
+				( attribute "XY" "(-1600,2425)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "CSMD0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
+				( attribute "CDS_PART_NAME" "CSMD0805-0.22UF,10%,0805,25V"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I51" )
+				( objectStatus "PAGE1_I75" )
 				( pin "a(0)"
 				)
 				( pin "b(0)"
@@ -2966,8 +3704,13 @@
 			( bus "@tubii_lib.powers(sch_1):power"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_lib.powers(sch_1):page1_power") )
-				( member ( signalRef "@tubii_lib.powers(sch_1):power(2)") )
+				( attribute "BUS_NAME" "POWER"
+					( Origin gPackager )
+				)
 				( member ( signalRef "@tubii_lib.powers(sch_1):power(3)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):power(0)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):power(4)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):power(1)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):gnd") )
 				( objectStatus "POWER" )
 			)
@@ -2977,6 +3720,8 @@
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(1)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(2)") )
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(3)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(0)") )
+				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(4)") )
 				( objectStatus "PAGE1_POWER" )
 			)
 		)
