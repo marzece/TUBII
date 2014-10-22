@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T14:39:55</modificationTime>
+    <modificationTime>2014-10-20T11:44:34</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="generic_delays" view="sch_1">
       <lastids>
-        <instanceid>35</instanceid>
-        <netid>33</netid>
-        <insttermid>91</insttermid>
+        <instanceid>37</instanceid>
+        <netid>34</netid>
+        <insttermid>96</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -150,6 +150,45 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S10</id>
+          <library>resistors</library>
+          <name>rsmd0805</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T57</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T58</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S11</id>
+          <library>tubii_lib</library>
+          <name>led_pulse</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T61</id>
+              <name>pulse_in</name>
+              <direction>input</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -203,6 +242,11 @@
         <net>
           <id>N30</id>
           <name>vcc5</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N34</id>
+          <name>vtt</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -416,6 +460,73 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I36</id>
+          <cellid>S10</cellid>
+          <name>page1_i47</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M92</id>
+              <termid>T57</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N34" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M93</id>
+              <termid>T58</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N32" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I37</id>
+          <cellid>S11</cellid>
+          <name>page1_i48</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M96</id>
+              <termid>T61</termid>
+              <connections>
+                <connection net="N26" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -471,6 +582,11 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vtt">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -487,11 +603,14 @@
               <net ref="unnamed_1_ds102350_i46_le"></net>
               <net ref="vcc"></net>
               <net ref="vcc5"></net>
+              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i44"></instance>
               <instance ref="i45"></instance>
               <instance ref="i46"></instance>
+              <instance ref="i47"></instance>
+              <instance ref="i48"></instance>
             </instances>
           </page>
         </pages>

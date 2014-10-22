@@ -3,32 +3,33 @@ FILE_TYPE = CONNECTIVITY;
 "PAGE_NUMBER" = 1;
 0"NC";
 1"UN$1$10H125$I9$Y";
-2"LE_DGT\I";
-3"GTRIGL\I";
-4"GTRIGH\I";
-5"UN$1$DS1023200$I27$LE";
-6"UN$1$10ELT24$I16$D";
-7"GND\G";
-8"VCC\G";
-9"UN$1$DS1023200$I27$Q";
-10"CLK\I";
-11"DELAY_VAL\I";
-12"DGTL\I";
-13"DGTH\I";
-14"UN$1$10ELT24$I20$Q";
-15"UN$1$10ELT24$I20$D";
-16"GND\G";
-17"CLK\I";
-18"DDGT*\I";
-19"VCC\G";
+2"UN$1$DS1023200$I27$LE";
+3"VCC\G";
+4"LE_DGT\I";
+5"CLK\I";
+6"GTRIGL\I";
+7"GTRIGH\I";
+8"UN$1$10ELT24$I16$D";
+9"GND\G";
+10"VCC\G";
+11"UN$1$DS1023200$I27$Q";
+12"DELAY_VAL\I";
+13"DGTL\I";
+14"DGTH\I";
+15"UN$1$10ELT24$I20$Q";
+16"UN$1$10ELT24$I20$D";
+17"GND\G";
+18"CLK\I";
+19"DDGT*\I";
+20"VCC\G";
 %"10ELT24"
 "1","(825,3050)","0","ecl","I16";
 ;
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
-"D"6;
-"Q"13;
-"Q* \B"12;
+"D"8;
+"Q"14;
+"Q* \B"13;
 %"DS1023500"
 "1","(150,2100)","0","ttl","I19";
 ;
@@ -38,74 +39,97 @@ CDS_LMAN_SYM_OUTLINE"-175,250,175,-250";
 "Q/P0"0;
 "P4"0;
 "P3"0;
-"CLK/P1"17;
-"D/P2"9;
+"CLK/P1"18;
+"D/P2"11;
 "P7"0;
 "P6"0;
 "P5"0;
-"MS"16;
-"PS"19;
+"MS"17;
+"PS"20;
 "PWM"0;
-"OUT"15;
-"LE* \B"5;
+"OUT"16;
+"LE* \B"2;
 %"10ELT24"
 "1","(825,2100)","0","ecl","I20";
 ;
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
-"D"15;
-"Q"14;
-"Q* \B"18;
+"D"16;
+"Q"15;
+"Q* \B"19;
 %"F06"
-"1","(-400,3275)","0","ttl","I22";
+"1","(-575,3275)","0","ttl","I22";
 MAX_DELAY"10000";
 CDS_LIB"ttl";
-"A <SIZE-1..0>"2;
-"Y <SIZE-1..0>* \B"5;
+"A <SIZE-1..0>"4;
+"Y <SIZE-1..0>* \B"2;
 %"TESTPOINT_L"
 "1","(1350,2300)","0","misc","I24";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"14;
+"A\NAC \B"15;
 %"LED_PULSE"
 "1","(875,3600)","0","tubii_lib","I25";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"6;
+"PULSE_IN"8;
 %"LED_PULSE"
 "1","(1050,1500)","0","tubii_lib","I26";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"15;
+"PULSE_IN"16;
 %"DS1023200"
 "1","(125,3050)","0","ttl","I27";
 ;
-CDS_LIB"ttl"
-CDS_LMAN_SYM_OUTLINE"-175,350,175,-250";
-"D/P2"11;
-"CLK/P1"10;
-"Q/P0"9;
+CDS_LMAN_SYM_OUTLINE"-175,350,175,-250"
+CDS_LIB"ttl";
+"D/P2"12;
+"CLK/P1"5;
+"Q/P0"11;
 "P7"0;
 "P6"0;
 "P5"0;
 "P4"0;
 "P3"0;
 "IN"1;
-"PS"8;
-"MS"7;
-"OUT"6;
+"PS"10;
+"MS"9;
+"OUT"8;
 "PWM"0;
-"LE* \B"5;
+"LE* \B"2;
+%"RSMD0805"
+"1","(-375,3450)","1","resistors","I28";
+;
+VALUE"499"
+$LOCATION"?"
+PACKTYPE"0805"
+TOL"1%"
+CDS_LIB"resistors"
+CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
+POWER"0.1"
+MAX_TEMP"RTMAX"
+TC2"RTMPO"
+TC1"RTMPL"
+SLOPE"RSMAX"
+VOLTAGE"25V"
+DIST"FLAT"
+TOL_ON_OFF"ON"
+IC"UNDEF"
+NEGTOL"5%"
+NEEDS_NO_SIZE"TRUE"
+POSTOL"5%";
+"A<0>"2;
+"B<0>"3;
 %"10H125"
 "1","(-2600,3050)","0","ecl","I9";
 SECTION"1";
 CDS_LIB"ecl";
-"A <SIZE-1..0>"4;
-"B <SIZE-1..0>* \B"3;
+"A <SIZE-1..0>"7;
+"B <SIZE-1..0>* \B"6;
 "V"0;
 "Y <SIZE-1..0>"1;
 END.

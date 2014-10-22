@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "asyncdelays"
     (lastIds
-      (lastInstanceId 21)
-      (lastNetId 38)
-      (lastInstTermId 95)
+      (lastInstanceId 22)
+      (lastNetId 39)
+      (lastInstTermId 101)
     )
     (cells
       ("S3" "10h125" "ecl" "sym_1"
@@ -83,6 +83,12 @@
           ("T118" "ps" -1 -1 1)
           ("T119" "pwm" -1 -1 2)
           ("T120" "q/p0" -1 -1 1)
+        )
+      )
+      ("S14" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T133" "a" 0 0 1)
+          ("T134" "b" 0 0 2)
         )
       )
     )
@@ -312,6 +318,20 @@
           ("M95" "T120" -1 -1
             (conn
               ("0" -1 -1 "N38" -1 -1)
+            )
+          )
+        )
+      )
+      ("I22" "page1_i28" "S14"
+        (pins
+          ("M100" "T133" 0 0
+            (conn
+              ("0" 0 0 "N37" -1 -1)
+            )
+          )
+          ("M101" "T134" 0 0
+            (conn
+              ("0" 0 0 "vcc" -1 -1)
             )
           )
         )

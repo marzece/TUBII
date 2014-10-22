@@ -8,8 +8,8 @@
   (design "trigger_utility_board_mkii"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 250)
-      (lastInstTermId 554)
+      (lastNetId 264)
+      (lastInstTermId 612)
     )
     (cells
       ("S2" "base_mon" "tubii_lib" "sym_1"
@@ -254,6 +254,7 @@
       ("N235" "unnamed_1_gtdelays_i4_lockout" -1 -1 0 )
       ("N249" "caen_anpulse" 11 0 1 3)
       ("N250" "tubii_rt_out" -1 -1 1 3)
+      ("N264" "unnamed_1_cntrlregister_i2_readenable" -1 -1 0 )
       ("N2" "gnd" -1 -1 2 )
       ("N77" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -268,6 +269,7 @@
       ("vcci0_35" "vcci0_35" -1 -1 2  inherited)
       ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
       ("vih" "vih" -1 -1 2  inherited)
+      ("vref5m" "vref5m" -1 -1 2  inherited)
     )
 
     (alias
@@ -338,6 +340,9 @@
             )
           )
           ("M333" "T294" -1 -1
+            (conn
+              ("0" -1 -1 "N264" -1 -1)
+            )
           )
         )
       )
@@ -542,6 +547,9 @@
             )
           )
           ("M64" "T80" -1 -1
+            (conn
+              ("0" -1 -1 "N264" -1 -1)
+            )
           )
           ("M65" "T81" -1 -1
             (conn

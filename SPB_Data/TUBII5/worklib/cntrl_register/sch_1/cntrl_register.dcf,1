@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 5 )
+			( logicalViewRevNum 6 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -534,11 +534,27 @@
 				( alias ( signalRef "@tubii_lib.cntrl_register(sch_1):unnamed_1_hct374_i7_q") )
 				( objectStatus "display<0>" )
 			)
+			( signal "@tubii_lib.cntrl_register(sch_1):page1_display(0)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_display<0>" )
+			)
+			( signal "@tubii_lib.cntrl_register(sch_1):page1_unnamed_1_hct374_i7_q"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_hct374_i7_q" )
+			)
 			( signal "@tubii_lib.cntrl_register(sch_1):display(1)"
 				( alias ( signalRef "@tubii_lib.cntrl_register(sch_1):page1_display(1)") )
 				( alias ( signalRef "@tubii_lib.cntrl_register(sch_1):page1_unnamed_1_hct374_i6_q") )
 				( alias ( signalRef "@tubii_lib.cntrl_register(sch_1):unnamed_1_hct374_i6_q") )
 				( objectStatus "display<1>" )
+			)
+			( signal "@tubii_lib.cntrl_register(sch_1):page1_display(1)"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_display<1>" )
+			)
+			( signal "@tubii_lib.cntrl_register(sch_1):page1_unnamed_1_hct374_i6_q"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_unnamed_1_hct374_i6_q" )
 			)
 			( signal "@tubii_lib.cntrl_register(sch_1):display(2)"
 				( alias ( signalRef "@tubii_lib.cntrl_register(sch_1):page1_display(2)") )
@@ -549,14 +565,6 @@
 				)
 				( objectStatus "display<2>" )
 			)
-			( signal "@tubii_lib.cntrl_register(sch_1):page1_display(0)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_display<0>" )
-			)
-			( signal "@tubii_lib.cntrl_register(sch_1):page1_display(1)"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_display<1>" )
-			)
 			( signal "@tubii_lib.cntrl_register(sch_1):page1_display(2)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_display<2>" )
@@ -565,13 +573,11 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_unnamed_1_hct374_i5_q" )
 			)
-			( signal "@tubii_lib.cntrl_register(sch_1):page1_unnamed_1_hct374_i6_q"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_hct374_i6_q" )
+			( signal "@tubii_lib.cntrl_register(sch_1):data_out"
+				( objectStatus "data_out" )
 			)
-			( signal "@tubii_lib.cntrl_register(sch_1):page1_unnamed_1_hct374_i7_q"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_unnamed_1_hct374_i7_q" )
+			( signal "@tubii_lib.cntrl_register(sch_1):gnd"
+				( objectStatus "gnd" )
 			)
 			( gate "@tubii_lib.cntrl_register(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -987,6 +993,61 @@
 				)
 				( objectStatus "PAGE1_I14" )
 				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.cntrl_register(sch_1):page1_i16"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,300,125,-300"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1800,2350)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74HCT165"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74HCT165"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I16" )
+				( pin "\ce*\"
+				)
+				( pin "cp"
+				)
+				( pin "d0"
+				)
+				( pin "d1"
+				)
+				( pin "d2"
+				)
+				( pin "d3"
+				)
+				( pin "d4"
+				)
+				( pin "d5"
+				)
+				( pin "d6"
+				)
+				( pin "d7"
+				)
+				( pin "ds"
+				)
+				( pin "\pl*\"
+				)
+				( pin "q7"
+				)
+				( pin "\q7*\"
 				)
 			)
 			( bus "@tubii_lib.cntrl_register(sch_1):display"

@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-13T18:52:37</modificationTime>
+    <modificationTime>2014-10-20T11:45:17</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="generic_pulse" view="sch_1">
       <lastids>
-        <instanceid>13</instanceid>
-        <netid>20</netid>
-        <insttermid>48</insttermid>
+        <instanceid>14</instanceid>
+        <netid>22</netid>
+        <insttermid>52</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -165,6 +165,30 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S8</id>
+          <library>resistors</library>
+          <name>rsmd0805</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T78</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T79</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -218,6 +242,11 @@
         <net>
           <id>vcc5</id>
           <name>vcc5</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>vtt</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -459,6 +488,45 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I14</id>
+          <cellid>S8</cellid>
+          <name>page1_i17</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M51</id>
+              <termid>T78</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N22" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M52</id>
+              <termid>T79</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N18" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -514,6 +582,11 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vtt">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
         </netScopes>
         <pages>
           <page number="1">
@@ -530,12 +603,14 @@
               <net ref="unnamed_1_ds102350_i15_le"></net>
               <net ref="vcc"></net>
               <net ref="vcc5"></net>
+              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i13"></instance>
               <instance ref="i14"></instance>
               <instance ref="i15"></instance>
               <instance ref="i16"></instance>
+              <instance ref="i17"></instance>
             </instances>
           </page>
         </pages>

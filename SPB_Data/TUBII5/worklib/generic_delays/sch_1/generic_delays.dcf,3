@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 7 )
+			( logicalViewRevNum 8 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -475,6 +475,9 @@
 				)
 				( objectStatus "gnd" )
 			)
+			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.generic_delays(sch_1):le"
 				( objectStatus "le" )
 			)
@@ -485,6 +488,9 @@
 				)
 				( objectStatus "unnamed_1_10h124_i44_d" )
 			)
+			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.generic_delays(sch_1):unnamed_1_ds102350_i46_le"
 				( objectStatus "unnamed_1_ds102350_i46_le" )
 			)
@@ -492,8 +498,8 @@
 				( alias ( signalRef "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):vcc") )
 				( objectStatus "vcc" )
 			)
-			( signal "@tubii_lib.generic_delays(sch_1):vcc5"
-				( objectStatus "vcc5" )
+			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):vcc"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.generic_delays(sch_1):async_delay_out"
 				( objectStatus "async_delay_out" )
@@ -503,15 +509,6 @@
 			)
 			( signal "@tubii_lib.generic_delays(sch_1):vtt"
 				( objectStatus "vtt" )
-			)
-			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):pulse_in"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.generic_delays(sch_1):page1_i48@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
@@ -1187,7 +1184,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "led_pulse"

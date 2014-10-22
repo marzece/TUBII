@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-21T16:09:03</modificationTime>
+    <modificationTime>2014-10-21T16:12:10</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>248</netid>
+        <netid>250</netid>
         <insttermid>551</insttermid>
       </lastids>
       <cells>
@@ -810,14 +810,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N99</id>
-          <name>anpulsein</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-          <msb>11</msb>
-          <lsb>0</lsb>
-        </net>
-        <net>
           <id>N100</id>
           <name>caen_out</name>
           <scope>interface</scope>
@@ -1098,12 +1090,6 @@
           <name>unnamed_1_cntrlregister_i2_dataout</name>
         </net>
         <net>
-          <id>N204</id>
-          <name>tubii_rt</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N231</id>
           <name>gtrig_ttl</name>
           <scope>interface</scope>
@@ -1128,6 +1114,20 @@
         <net>
           <id>N235</id>
           <name>unnamed_1_gtdelays_i4_lockout</name>
+        </net>
+        <net>
+          <id>N249</id>
+          <name>caen_anpulse</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+          <msb>11</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N250</id>
+          <name>tubii_rt_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N2</id>
@@ -1373,7 +1373,7 @@
               <msb>11</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="11" pinlsb="0" net="N99" netmsb="11" netlsb="0" />
+                <connection pinmsb="11" pinlsb="0" net="N249" netmsb="11" netlsb="0" />
               </connections>
             </pin>
             <pin>
@@ -2205,12 +2205,6 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
-          <netScope ref="anpulsein">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="async_delay_in">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2224,6 +2218,12 @@
             </pageScope>
           </netScope>
           <netScope ref="async_pulse_out">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="caen_anpulse">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2468,7 +2468,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tubii_rt">
+          <netScope ref="tubii_rt_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2503,13 +2503,13 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>true</errorStatus>
             <nets>
-              <net ref="anpulsein">
-                <msb>11</msb>
-                <lsb>0</lsb>
-              </net>
               <net ref="async_delay_in"></net>
               <net ref="async_delay_out"></net>
               <net ref="async_pulse_out"></net>
+              <net ref="caen_anpulse">
+                <msb>11</msb>
+                <lsb>0</lsb>
+              </net>
               <net ref="caen_out">
                 <msb>7</msb>
                 <lsb>0</lsb>
@@ -2564,7 +2564,7 @@
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="tubii_rt"></net>
+              <net ref="tubii_rt_out"></net>
               <net ref="tune_anpulse"></net>
               <net ref="tune_comp_outh"></net>
               <net ref="tune_comp_outl"></net>

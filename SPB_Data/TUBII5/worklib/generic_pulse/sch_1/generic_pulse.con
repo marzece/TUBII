@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "generic_pulse"
     (lastIds
-      (lastInstanceId 14)
-      (lastNetId 22)
-      (lastInstTermId 52)
+      (lastInstanceId 15)
+      (lastNetId 23)
+      (lastInstTermId 56)
     )
     (cells
       ("S3" "10h124" "ecl" "sym_1"
@@ -70,8 +70,8 @@
       ("N18" "async_pulse_out" -1 -1 1 3)
       ("N1" "gnd" -1 -1 2 )
       ("N7" "vcc" -1 -1 2 )
-      ("vcc5" "vcc5" -1 -1 2 )
       ("N22" "vtt" -1 -1 2 )
+      ("vcc5" "vcc5" -1 -1 2 )
     )
 
     (instances
@@ -182,6 +182,20 @@
           ("M52" "T79" 0 0
             (conn
               ("0" 0 0 "N18" -1 -1)
+            )
+          )
+        )
+      )
+      ("I15" "page1_i18" "S8"
+        (pins
+          ("M55" "T78" 0 0
+            (conn
+              ("0" 0 0 "N17" -1 -1)
+            )
+          )
+          ("M56" "T79" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
             )
           )
         )
