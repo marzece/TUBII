@@ -5,14 +5,13 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-21T16:08:39</modificationTime>
+    <modificationTime>2014-10-22T10:31:11</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="powers" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>56</instanceid>
+        <instanceid>57</instanceid>
         <netid>35</netid>
         <insttermid>107</insttermid>
       </lastids>
@@ -246,6 +245,16 @@
               <name>b</name>
               <direction>inout</direction>
             </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S13</id>
+          <library>tubii_lib</library>
+          <name>vrefs</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
           </terms>
         </cell>
       </cells>
@@ -2054,6 +2063,27 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I57</id>
+          <cellid>S13</cellid>
+          <name>page1_i78</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2062,6 +2092,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
@@ -2108,7 +2139,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
               <net ref="power">
@@ -2180,6 +2211,7 @@
               <instance ref="i75"></instance>
               <instance ref="i76"></instance>
               <instance ref="i77"></instance>
+              <instance ref="i78"></instance>
             </instances>
           </page>
         </pages>

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 11 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -3798,6 +3798,49 @@
 				( member ( signalRef "@tubii_lib.powers(sch_1):page1_power(5)") )
 				( objectStatus "PAGE1_POWER" )
 			)
+			( designInst "@tubii_lib.powers(sch_1):page1_i78"
+				( attribute "BLOCK" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "tubii_lib"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1175,1950)"
+					( Origin gFrontEnd )
+				)
+				( objectStatus "page1_i78 (vrefs)" )
+			)
 		)
+	)
+	( BaseCopy "vrefs"
+		( constraintHeader
+			( revisionNumber
+				( logicalViewRevNum 1 )
+				( physicalViewRevNum 0 )
+				( otherViewRevNum 0 )
+			)
+			( contents
+				( electricalConstraints )
+				( netClasses )
+				( properties )
+			)
+		)
+	( designConstraints
+		( ruleChanges
+			( allRules )
+			( design "vrefs"
+			)
+		)
+	)
+	( EndBaseCopy )
 	)
 )

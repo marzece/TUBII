@@ -1,21 +1,53 @@
 FILE_TYPE=LIBRARY_PARTS;
 primitive 'AD96685';
   pin
-    'INP':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-    'QP':
-      PIN_NUMBER='(11)';
-      PINUSE='UNSPEC';
-    'QN':
-      PIN_NUMBER='(12)';
+    'LTCH':
+      PIN_NUMBER='(6)';
       PINUSE='UNSPEC';
     'INN':
       PIN_NUMBER='(4)';
       PINUSE='UNSPEC';
-    'LTCH':
-      PIN_NUMBER='(6)';
+    'QN':
+      PIN_NUMBER='(12)';
       PINUSE='UNSPEC';
+    'QP':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+    'INP':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'GRND1':
+      PIN_NUMBER='(1)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'GRND2':
+      PIN_NUMBER='(16)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VP':
+      PIN_NUMBER='(2)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VN':
+      PIN_NUMBER='(8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='AD96685';
@@ -31,11 +63,6 @@ primitive 'AD96685';
     JEDEC_TYPE='SOIC16';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    GROUND_NETS='GRND1';
-    POWER_PINS='(GRND1:1)';
-    POWER_PINS='(GRND2:16)';
-    POWER_PINS='(VP:2)';
-    POWER_PINS='(VN:8)';
     NC_PINS='(5,7,9,10,13,14,15)';
   end_body;
 end_primitive;
