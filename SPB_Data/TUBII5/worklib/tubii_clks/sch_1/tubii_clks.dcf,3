@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 13 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,12 +465,6 @@
 			( signal "@tubii_lib.tubii_clks(sch_1):fox200mhz"
 				( objectStatus "fox200mhz" )
 			)
-			( signal "@tubii_lib.tubii_clks(sch_1):clock200h"
-				( objectStatus "clock200h" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):clock200l"
-				( objectStatus "clock200l" )
-			)
 			( signal "@tubii_lib.tubii_clks(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.tubii_clks(sch_1):page1_gnd") )
 				( objectStatus "gnd" )
@@ -529,6 +523,12 @@
 			)
 			( signal "@tubii_lib.tubii_clks(sch_1):tub_clock_in"
 				( objectStatus "tub_clock_in" )
+			)
+			( signal "@tubii_lib.tubii_clks(sch_1):clock200_outh"
+				( objectStatus "clock200_outh" )
+			)
+			( signal "@tubii_lib.tubii_clks(sch_1):clock200_outl"
+				( objectStatus "clock200_outl" )
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i2"
 				( attribute "CDS_LIB" "ecl"
@@ -2294,6 +2294,35 @@
 				( pin "a(0)"
 				)
 				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.tubii_clks(sch_1):page1_i55"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1850,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I55" )
+				( pin "a"
 				)
 			)
 		)

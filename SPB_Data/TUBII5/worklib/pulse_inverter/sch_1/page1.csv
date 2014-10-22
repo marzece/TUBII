@@ -2,15 +2,15 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"VCC5M\G";
-2"UN$1$AD8009$I4$IN";
-3"GND\G";
-4"UN$1$AD8009$I4$OUTPUT";
-5"VCC\G";
-6"UN$1$AD8009$I4$V";
-7"UN$1$RESL$I2$A";
-8"GND\g";
-9"GND\g";
+1"UN$1$AD8009$I4$IN";
+2"UN$1$AD8009$I4$OUTPUT";
+3"UN$1$RESL$I2$A";
+4"GND\g";
+5"GND\g";
+6"VCC5M\G";
+7"GND\G";
+8"VCC\G";
+9"UN$1$AD8009$I4$V";
 10"UN$1$AD8009$I4$V$1";
 %"TESTPOINT_L"
 "1","(1925,875)","2","misc","I1";
@@ -18,10 +18,13 @@ FILE_TYPE = CONNECTIVITY;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"7;
+"A\NAC \B"3;
 %"CSMD0805"
 "1","(3225,625)","1","capacitors","I10";
 ;
+VALUE"1.0UF"
+PACKTYPE"0805"
+VOLTAGE"25V"
 PART_NAME"CSMD0805"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 POSTOL"10%"
@@ -36,15 +39,15 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON"
 CDS_LIB"capacitors"
-TOL"10%"
-VALUE"1.0UF"
-PACKTYPE"0805"
-VOLTAGE"25V";
+TOL"10%";
 "B<0>"10;
-"A<0>"1;
+"A<0>"6;
 %"CSMD0805"
 "1","(3225,1100)","1","capacitors","I11";
 ;
+VALUE"1.0UF"
+PACKTYPE"0805"
+VOLTAGE"25V"
 PART_NAME"CSMD0805"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 POSTOL"10%"
@@ -59,12 +62,23 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON"
 CDS_LIB"capacitors"
-TOL"10%"
-VALUE"1.0UF"
-PACKTYPE"0805"
-VOLTAGE"25V";
-"B<0>"5;
-"A<0>"6;
+TOL"10%";
+"B<0>"8;
+"A<0>"9;
+%"TESTPOINT_L"
+"1","(2350,1075)","1","misc","I12";
+;
+CDS_LIB"misc"
+TITLE"TEST"
+ABBREV"TP";
+"A\NAC \B"3;
+%"TESTPOINT_L"
+"1","(3775,1000)","1","misc","I13";
+;
+ABBREV"TP"
+TITLE"TEST"
+CDS_LIB"misc";
+"A\NAC \B"2;
 %"RES_L"
 "1","(2650,875)","0","resistors","I2";
 ;
@@ -83,11 +97,12 @@ TOL_ON_OFF"ON"
 SIZE"1B"
 $LOCATION"?"
 CDS_LIB"resistors";
-"A <SIZE-1..0>\NAC"7;
-"B <SIZE-1..0>\NAC"2;
+"A <SIZE-1..0>\NAC"3;
+"B <SIZE-1..0>\NAC"1;
 %"RES_L"
 "1","(3175,1375)","0","resistors","I3";
 ;
+VALUE"1K"
 CDS_LIB"resistors"
 $LOCATION"?"
 SIZE"1B"
@@ -101,53 +116,52 @@ MAX_TEMP"RTMAX"
 TC1"RTMPL"
 TC2"RTMPQ"
 ABBREV"res_l"
-TITLE"RES_L"
-VALUE"1K";
-"A <SIZE-1..0>\NAC"2;
-"B <SIZE-1..0>\NAC"4;
+TITLE"RES_L";
+"A <SIZE-1..0>\NAC"1;
+"B <SIZE-1..0>\NAC"2;
 %"AD8009"
 "1","(3200,800)","0","misc","I4";
 ;
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-175,125,75,-125";
-"V+"6;
+"V+"9;
 "V-"10;
-"OUTPUT"4;
-"IN+"3;
-"IN-"2;
+"OUTPUT"2;
+"IN+"7;
+"IN-"1;
 %"TESTPOINT_L"
 "1","(3950,800)","0","misc","I5";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"4;
+"A\NAC \B"2;
 %"TESTPOINT_L"
 "1","(1925,750)","2","misc","I6";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"9;
+"A\NAC \B"4;
 %"TESTPOINT_L"
 "1","(3950,700)","0","misc","I7";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"8;
+"A\NAC \B"5;
 %"GND"
 "1","(2075,650)","0","misc","I8";
 ;
 CDS_LIB"misc"
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING";
-"G\NAC"9;
+"G\NAC"4;
 %"GND"
 "1","(3825,625)","0","misc","I9";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"8;
+"G\NAC"5;
 END.

@@ -5,57 +5,17 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T17:22:10</modificationTime>
+    <modificationTime>2014-10-03T17:28:51</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
       <lastids>
-        <instanceid>5</instanceid>
-        <netid>39</netid>
-        <insttermid>62</insttermid>
+        <instanceid>6</instanceid>
+        <netid>41</netid>
+        <insttermid>72</insttermid>
       </lastids>
       <cells>
-        <cell>
-          <id>S2</id>
-          <library>tubii_lib</library>
-          <name>tubii_clks</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T5</id>
-              <name>bckp_clk</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T6</id>
-              <name>default_clk</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T7</id>
-              <name>default_select</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T8</id>
-              <name>fox200mhz</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T91</id>
-              <name>clock200_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T92</id>
-              <name>clock200_outl</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
         <cell>
           <id>S3</id>
           <library>tubii_lib</library>
@@ -169,6 +129,46 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S6</id>
+          <library>tubii_lib</library>
+          <name>tubii_clock_select</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T97</id>
+              <name>bckp_clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T98</id>
+              <name>clock200_outh</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T99</id>
+              <name>clock200_outl</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T100</id>
+              <name>default_clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T101</id>
+              <name>default_select</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T102</id>
+              <name>fox200mhz</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -226,14 +226,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N16</id>
-          <name>unnamed_1_tubiiclks_i1_bckpclk</name>
-        </net>
-        <net>
-          <id>N17</id>
-          <name>unnamed_1_tubiiclks_i1_defaultclk</name>
-        </net>
-        <net>
           <id>N24</id>
           <name>clock200_outh</name>
           <scope>interface</scope>
@@ -256,6 +248,14 @@
           <name>tub_clk_in</name>
           <scope>interface</scope>
           <direction>inout</direction>
+        </net>
+        <net>
+          <id>N40</id>
+          <name>unnamed_1_tubiiclockselect_i6_bckpclk</name>
+        </net>
+        <net>
+          <id>N41</id>
+          <name>unnamed_1_tubiiclockselect_i6_defaultclk</name>
         </net>
         <net>
           <id>gnd</id>
@@ -305,69 +305,6 @@
       </netinterfaces>
       <instances>
         <instance>
-          <id>I1</id>
-          <cellid>S2</cellid>
-          <name>page1_i1</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M5</id>
-              <termid>T5</termid>
-              <connections>
-                <connection net="N16" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M6</id>
-              <termid>T6</termid>
-              <connections>
-                <connection net="N17" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M7</id>
-              <termid>T7</termid>
-              <connections>
-                <connection net="N11" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M8</id>
-              <termid>T8</termid>
-              <connections>
-                <connection net="N12" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M61</id>
-              <termid>T91</termid>
-              <connections>
-                <connection net="N24" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M62</id>
-              <termid>T92</termid>
-              <connections>
-                <connection net="N25" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I2</id>
           <cellid>S3</cellid>
           <name>page1_i2</name>
@@ -382,7 +319,7 @@
               <id>M14</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N16" />
+                <connection net="N40" />
               </connections>
             </pin>
             <pin>
@@ -417,7 +354,7 @@
               <id>M19</id>
               <termid>T23</termid>
               <connections>
-                <connection net="N17" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -583,6 +520,69 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I6</id>
+          <cellid>S6</cellid>
+          <name>page1_i6</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M67</id>
+              <termid>T97</termid>
+              <connections>
+                <connection net="N40" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M68</id>
+              <termid>T98</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M69</id>
+              <termid>T99</termid>
+              <connections>
+                <connection net="N25" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M70</id>
+              <termid>T100</termid>
+              <connections>
+                <connection net="N41" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M71</id>
+              <termid>T101</termid>
+              <connections>
+                <connection net="N11" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M72</id>
+              <termid>T102</termid>
+              <connections>
+                <connection net="N12" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -591,7 +591,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="clk100_outh">
             <pageScope number="1">
@@ -695,16 +694,16 @@
               <net ref="missedclock"></net>
               <net ref="sr_clk"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="unnamed_1_tubiiclks_i1_bckpclk"></net>
-              <net ref="unnamed_1_tubiiclks_i1_defaultclk"></net>
+              <net ref="unnamed_1_tubiiclockselect_i6_bckpclk"></net>
+              <net ref="unnamed_1_tubiiclockselect_i6_defaultclk"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>
-              <instance ref="i1"></instance>
               <instance ref="i2"></instance>
               <instance ref="i3"></instance>
               <instance ref="i4"></instance>
               <instance ref="i5"></instance>
+              <instance ref="i6"></instance>
             </instances>
           </page>
         </pages>

@@ -8,8 +8,8 @@
   (design "clocks"
     (lastIds
       (lastInstanceId 7)
-      (lastNetId 49)
-      (lastInstTermId 92)
+      (lastNetId 55)
+      (lastInstTermId 102)
     )
     (cells
       ("S2" "tubii_clks" "tubii_lib" "sym_1"
@@ -20,6 +20,7 @@
           ("T8" "fox200mhz" -1 -1 2)
           ("T91" "clock200_outh" -1 -1 2)
           ("T92" "clock200_outl" -1 -1 2)
+          ("T121" "tub_clk_in" -1 -1 1)
         )
       )
       ("S3" "tubii_time" "tubii_lib" "sym_1"
@@ -207,6 +208,11 @@
           ("M83" "T92" -1 -1
             (conn
               ("0" -1 -1 "N25" -1 -1)
+            )
+          )
+          ("M102" "T121" -1 -1
+            (conn
+              ("0" -1 -1 "N33" -1 -1)
             )
           )
         )
