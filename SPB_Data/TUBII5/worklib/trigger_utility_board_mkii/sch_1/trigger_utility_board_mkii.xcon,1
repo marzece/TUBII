@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-21T16:12:10</modificationTime>
+    <modificationTime>2014-10-21T16:14:10</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -800,6 +800,8 @@
         <net>
           <id>N97</id>
           <name>rawtrigs</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
           <msb>3</msb>
           <lsb>0</lsb>
         </net>
@@ -874,6 +876,8 @@
         <net>
           <id>N110</id>
           <name>scope_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
@@ -2343,6 +2347,18 @@
             </pageScope>
           </netScope>
           <netScope ref="mtcd_lo*">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="rawtrigs">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="scope_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>

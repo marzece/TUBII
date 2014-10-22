@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T18:25:05</modificationTime>
+    <modificationTime>2014-10-09T12:50:41</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -579,18 +579,6 @@
       </cells>
       <nets>
         <net>
-          <id>N1</id>
-          <name>async in</name>
-        </net>
-        <net>
-          <id>N3</id>
-          <name>async out</name>
-        </net>
-        <net>
-          <id>N5</id>
-          <name>asyncpuls in</name>
-        </net>
-        <net>
           <id>N7</id>
           <name>bank13_lvds_2_n</name>
         </net>
@@ -637,32 +625,8 @@
           <name>carrier_srst#</name>
         </net>
         <net>
-          <id>N29</id>
-          <name>ddgt in</name>
-        </net>
-        <net>
-          <id>N31</id>
-          <name>ddgt out</name>
-        </net>
-        <net>
-          <id>N33</id>
-          <name>dgt in</name>
-        </net>
-        <net>
-          <id>N35</id>
-          <name>dgt out</name>
-        </net>
-        <net>
-          <id>N37</id>
-          <name>ecal out</name>
-        </net>
-        <net>
           <id>N39</id>
           <name>fpga_done</name>
-        </net>
-        <net>
-          <id>N41</id>
-          <name>glb_triga</name>
         </net>
         <net>
           <id>N43</id>
@@ -761,18 +725,6 @@
           <name>pwr_good</name>
         </net>
         <net>
-          <id>N87</id>
-          <name>semisync in</name>
-        </net>
-        <net>
-          <id>N89</id>
-          <name>semisync out</name>
-        </net>
-        <net>
-          <id>N91</id>
-          <name>semisyncpuls in</name>
-        </net>
-        <net>
           <id>N93</id>
           <name>st_clr</name>
         </net>
@@ -791,18 +743,6 @@
         <net>
           <id>N101</id>
           <name>st_wrclk</name>
-        </net>
-        <net>
-          <id>N103</id>
-          <name>sync in</name>
-        </net>
-        <net>
-          <id>N105</id>
-          <name>sync out</name>
-        </net>
-        <net>
-          <id>N107</id>
-          <name>syncpuls in</name>
         </net>
         <net>
           <id>N109</id>
@@ -1893,7 +1833,6 @@
               <id>M128</id>
               <termid>T28</termid>
               <connections>
-                <connection net="N33" />
               </connections>
             </pin>
             <pin>
@@ -1906,7 +1845,6 @@
               <id>M130</id>
               <termid>T30</termid>
               <connections>
-                <connection net="N35" />
               </connections>
             </pin>
             <pin>
@@ -1934,7 +1872,6 @@
               <id>M134</id>
               <termid>T34</termid>
               <connections>
-                <connection net="N29" />
               </connections>
             </pin>
             <pin>
@@ -1948,7 +1885,6 @@
               <id>M136</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N31" />
               </connections>
             </pin>
             <pin>
@@ -1976,7 +1912,6 @@
               <id>M140</id>
               <termid>T40</termid>
               <connections>
-                <connection net="N103" />
               </connections>
             </pin>
             <pin>
@@ -1990,7 +1925,6 @@
               <id>M142</id>
               <termid>T42</termid>
               <connections>
-                <connection net="N105" />
               </connections>
             </pin>
             <pin>
@@ -2017,7 +1951,6 @@
               <id>M146</id>
               <termid>T46</termid>
               <connections>
-                <connection net="N1" />
               </connections>
             </pin>
             <pin>
@@ -2030,7 +1963,6 @@
               <id>M148</id>
               <termid>T48</termid>
               <connections>
-                <connection net="N3" />
               </connections>
             </pin>
             <pin>
@@ -2057,7 +1989,6 @@
               <id>M152</id>
               <termid>T52</termid>
               <connections>
-                <connection net="N87" />
               </connections>
             </pin>
             <pin>
@@ -2070,7 +2001,6 @@
               <id>M154</id>
               <termid>T54</termid>
               <connections>
-                <connection net="N89" />
               </connections>
             </pin>
             <pin>
@@ -2192,7 +2122,6 @@
               <id>M172</id>
               <termid>T72</termid>
               <connections>
-                <connection net="N107" />
               </connections>
             </pin>
             <pin>
@@ -2206,7 +2135,6 @@
               <id>M174</id>
               <termid>T74</termid>
               <connections>
-                <connection net="N91" />
               </connections>
             </pin>
             <pin>
@@ -2233,7 +2161,6 @@
               <id>M178</id>
               <termid>T78</termid>
               <connections>
-                <connection net="N5" />
               </connections>
             </pin>
             <pin>
@@ -2246,7 +2173,6 @@
               <id>M180</id>
               <termid>T80</termid>
               <connections>
-                <connection net="N37" />
               </connections>
             </pin>
             <pin>
@@ -2406,7 +2332,6 @@
               <id>M204</id>
               <termid>T104</termid>
               <connections>
-                <connection net="N73" netmsb="1" netlsb="1" />
               </connections>
             </pin>
             <pin>
@@ -2420,7 +2345,6 @@
               <id>M206</id>
               <termid>T106</termid>
               <connections>
-                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -2623,9 +2547,6 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="async in"></net>
-              <net ref="async out"></net>
-              <net ref="asyncpuls in"></net>
               <net ref="bank13_lvds_2_n"></net>
               <net ref="bank13_lvds_2_p"></net>
               <net ref="bank13_lvds_3_n"></net>
@@ -2640,13 +2561,7 @@
                 <lsb>0</lsb>
               </net>
               <net ref="carrier_srst#"></net>
-              <net ref="ddgt in"></net>
-              <net ref="ddgt out"></net>
-              <net ref="dgt in"></net>
-              <net ref="dgt out"></net>
-              <net ref="ecal out"></net>
               <net ref="fpga_done"></net>
-              <net ref="glb_triga"></net>
               <net ref="glb_trigb"></net>
               <net ref="gnd"></net>
               <net ref="init#"></net>
@@ -2687,17 +2602,11 @@
               <net ref="pulse_out"></net>
               <net ref="pwr_en"></net>
               <net ref="pwr_good"></net>
-              <net ref="semisync in"></net>
-              <net ref="semisync out"></net>
-              <net ref="semisyncpuls in"></net>
               <net ref="st_clr"></net>
               <net ref="st_data"></net>
               <net ref="st_en"></net>
               <net ref="st_shift_clk"></net>
               <net ref="st_wrclk"></net>
-              <net ref="sync in"></net>
-              <net ref="sync out"></net>
-              <net ref="syncpuls in"></net>
               <net ref="timingclockin"></net>
               <net ref="timingcommandin"></net>
               <net ref="timingsyncechoout"></net>

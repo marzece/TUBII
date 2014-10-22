@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 19 )
+			( logicalViewRevNum 20 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -621,14 +621,6 @@
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i11@tubii_lib.generic_utilities(sch_1):page1_i1@tubii_lib.generic_pulse(sch_1):page1_i16@tubii_lib.led_pulse(sch_1):gnd"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(2)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(2)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(2)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<2>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<2>" )
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(2)"
 				( objectFlag fObjectAlias )
@@ -1915,9 +1907,6 @@
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):unnamed_1_10h116_i15_y_1"
 			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):tubii_rt"
-				( objectStatus "tubii_rt" )
-			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81lt1_i3_c"
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81lt1_i3_e"
@@ -2517,22 +2506,6 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i7@tubii_lib.ecal_control(sch_1):unnamed_1_led1206_i18_a"
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(0)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(0)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(0)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<0>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<0>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(1)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(1)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(1)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<1>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<1>" )
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i9@tubii_lib.tubii_spkr(sch_1):unnamed_1_csmd0603_i5_a"
 			)
@@ -3714,6 +3687,11 @@
 					( Origin gPackager )
 				)
 			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(0)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(0)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(0)") )
+				( objectStatus "caen_anpulse<0>" )
+			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i14@tubii_lib.powers(sch_1):unnamed_1_lm337tl_i22_ref"
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i14@tubii_lib.powers(sch_1):unnamed_1_7815sl_i39_input"
@@ -3734,82 +3712,6 @@
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):tellie_pulse_out"
 				( objectStatus "tellie_pulse_out" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(3)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(3)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(3)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<3>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<3>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(4)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(4)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(4)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<4>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<4>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(5)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(5)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(5)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<5>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<5>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(6)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(6)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(6)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<6>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<6>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(7)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(7)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(7)") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<7>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<7>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(8)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(8)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(8)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\in\") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<8>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<8>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(9)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(9)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(9)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\in\") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<9>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<9>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(10)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(10)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(10)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<10>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<10>" )
-			)
-			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(11)"
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(11)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(11)") )
-				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\") )
-				( attribute "PHYS_NET_NAME" "ANPULSEIN<11>"
-					( Origin gPackager )
-				)
-				( objectStatus "anpulsein<11>" )
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_out(0)"
 				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):caen_out(0)") )
@@ -4645,6 +4547,11 @@
 			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i13@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_csmd0805_i106_b"
 			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(1)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(1)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(1)") )
+				( objectStatus "caen_anpulse<1>" )
+			)
 			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i14@tubii_lib.powers(sch_1):power(4)"
 				( attribute "PHYS_NET_NAME" "POWER<4>"
 					( Status sBlockFlattened )
@@ -4673,6 +4580,63 @@
 				( attribute "PHYS_NET_NAME" "POWER<5>"
 					( Origin gPackager )
 				)
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(2)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(2)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(2)") )
+				( objectStatus "caen_anpulse<2>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(3)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(3)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(3)") )
+				( objectStatus "caen_anpulse<3>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(4)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(4)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(4)") )
+				( objectStatus "caen_anpulse<4>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(5)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(5)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(5)") )
+				( objectStatus "caen_anpulse<5>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(6)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(6)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(6)") )
+				( objectStatus "caen_anpulse<6>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(7)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(7)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(7)") )
+				( objectStatus "caen_anpulse<7>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(8)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(8)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(8)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i70@tubii_lib.caen_buffer(sch_1):\in\") )
+				( objectStatus "caen_anpulse<8>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(9)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(9)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(9)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i71@tubii_lib.caen_buffer(sch_1):\in\") )
+				( objectStatus "caen_anpulse<9>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(10)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(10)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(10)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i72@tubii_lib.caen_buffer(sch_1):\in\") )
+				( objectStatus "caen_anpulse<10>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(11)"
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in(11)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):an_pulse_in(11)") )
+				( alias ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i73@tubii_lib.caen_buffer(sch_1):\in\") )
+				( objectStatus "caen_anpulse<11>" )
+			)
+			( signal "@tubii_lib.trigger_utility_board_mkii(sch_1):tubii_rt_out"
+				( objectStatus "tubii_rt_out" )
 			)
 			( gate "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i1@tubii_lib.base_mon(sch_1):page1_i1"
 				( attribute "CDS_LIB" "misc"
@@ -66168,26 +66132,6 @@
 				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):rawtrigs(3)") )
 				( objectStatus "RAWTRIGS" )
 			)
-			( bus "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein"
-				( memberType ( signal ) )
-				( alias ( busRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in") )
-				( attribute "BUS_NAME" "ANPULSEIN"
-					( Origin gPackager )
-				)
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(0)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(1)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(2)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(3)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(4)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(5)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(6)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(7)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(8)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(9)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(10)") )
-				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):anpulsein(11)") )
-				( objectStatus "ANPULSEIN" )
-			)
 			( bus "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_out"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):caen_out") )
@@ -66230,6 +66174,23 @@
 				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e016_i58_p(5)") )
 				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e016_i58_p(6)") )
 				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e016_i58_p(7)") )
+			)
+			( bus "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse"
+				( memberType ( signal ) )
+				( alias ( busRef "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):an_pulse_in") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(0)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(1)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(2)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(3)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(4)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(5)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(6)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(7)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(8)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(9)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(10)") )
+				( member ( signalRef "@tubii_lib.trigger_utility_board_mkii(sch_1):caen_anpulse(11)") )
+				( objectStatus "CAEN_ANPULSE" )
 			)
 			( designInst "@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i1"
 				( attribute "BLOCK" "TRUE"

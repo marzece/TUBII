@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-21T16:14:10</modificationTime>
+    <modificationTime>2014-10-21T18:44:32</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -14,7 +14,7 @@
       <lastids>
         <instanceid>15</instanceid>
         <netid>250</netid>
-        <insttermid>551</insttermid>
+        <insttermid>554</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -393,6 +393,13 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T647</id>
+              <name>exttrig</name>
+              <direction>input</direction>
+              <msb>15</msb>
+              <lsb>0</lsb>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -1198,12 +1205,6 @@
           <inherited>1</inherited>
         </net>
         <net>
-          <id>vcci0_34</id>
-          <name>vcci0_34</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
           <id>vcci0_35</id>
           <name>vcci0_35</name>
           <scope>global</scope>
@@ -1817,6 +1818,15 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M552</id>
+              <termid>T647</termid>
+              <msb>15</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="15" pinlsb="0" net="N1" netmsb="0" netlsb="15" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -2207,7 +2217,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="async_delay_in">
             <pageScope number="1">

@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-21T16:08:39</modificationTime>
+    <modificationTime>2014-10-22T11:26:00</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="powers" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>56</instanceid>
-        <netid>35</netid>
-        <insttermid>107</insttermid>
+        <instanceid>57</instanceid>
+        <netid>36</netid>
+        <insttermid>111</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -248,6 +247,21 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S13</id>
+          <library>tubii_lib</library>
+          <name>vrefs</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T61</id>
+              <name>vref5m</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -369,6 +383,11 @@
         <net>
           <id>N19</id>
           <name>vcc</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N36</id>
+          <name>vref5m</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -2054,6 +2073,34 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I57</id>
+          <cellid>S13</cellid>
+          <name>page1_i78</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M111</id>
+              <termid>T61</termid>
+              <connections>
+                <connection net="N36" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2099,6 +2146,11 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="vref5m">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vtt">
             <pageScope number="1">
               <scope>global</scope>
@@ -2108,7 +2160,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
               <net ref="power">
@@ -2133,6 +2185,7 @@
               <net ref="vcc15m"></net>
               <net ref="vee"></net>
               <net ref="vp3_3"></net>
+              <net ref="vref5m"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>
@@ -2180,6 +2233,7 @@
               <instance ref="i75"></instance>
               <instance ref="i76"></instance>
               <instance ref="i77"></instance>
+              <instance ref="i78"></instance>
             </instances>
           </page>
         </pages>
