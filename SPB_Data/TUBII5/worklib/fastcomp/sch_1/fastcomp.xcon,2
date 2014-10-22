@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-20T17:01:52</modificationTime>
+    <modificationTime>2014-10-20T17:08:57</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="fastcomp" view="sch_1">
       <lastids>
-        <instanceid>91</instanceid>
-        <netid>100</netid>
-        <insttermid>354</insttermid>
+        <instanceid>93</instanceid>
+        <netid>102</netid>
+        <insttermid>358</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -529,6 +529,14 @@
         <net>
           <id>N100</id>
           <name>unnamed_1_10e101_i99_y</name>
+        </net>
+        <net>
+          <id>N101</id>
+          <name>unnamed_1_csmd0805_i105_b</name>
+        </net>
+        <net>
+          <id>N102</id>
+          <name>unnamed_1_csmd0805_i106_b</name>
         </net>
         <net>
           <id>N11</id>
@@ -1805,7 +1813,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N95" />
+                <connection pinmsb="0" pinlsb="0" net="N102" />
               </connections>
             </pin>
             <pin>
@@ -1814,7 +1822,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N66" />
+                <connection pinmsb="0" pinlsb="0" net="N101" />
               </connections>
             </pin>
             <pin>
@@ -2297,6 +2305,84 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I92</id>
+          <cellid>S5</cellid>
+          <name>page1_i105</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M355</id>
+              <termid>T26</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N66" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M356</id>
+              <termid>T27</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N101" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I93</id>
+          <cellid>S5</cellid>
+          <name>page1_i106</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M357</id>
+              <termid>T26</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N95" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M358</id>
+              <termid>T27</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N102" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2408,6 +2494,8 @@
               <net ref="unnamed_1_10h104_i87_b"></net>
               <net ref="unnamed_1_10h125_i23_y"></net>
               <net ref="unnamed_1_adcmp566_i37_in"></net>
+              <net ref="unnamed_1_csmd0805_i105_b"></net>
+              <net ref="unnamed_1_csmd0805_i106_b"></net>
               <net ref="vcc"></net>
               <net ref="vih"></net>
               <net ref="vref2m"></net>
@@ -2449,6 +2537,8 @@
               <instance ref="i102"></instance>
               <instance ref="i103"></instance>
               <instance ref="i104"></instance>
+              <instance ref="i105"></instance>
+              <instance ref="i106"></instance>
             </instances>
           </page>
         </pages>

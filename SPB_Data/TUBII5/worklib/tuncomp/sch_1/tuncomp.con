@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "tuncomp"
     (lastIds
-      (lastInstanceId 101)
+      (lastInstanceId 102)
       (lastNetId 106)
-      (lastInstTermId 419)
+      (lastInstTermId 422)
     )
     (cells
       ("S4" "f06" "ttl" "sym_1"
@@ -137,6 +137,11 @@
       ("S26" "led_pulse" "tubii_lib" "sym_1"
         (terms
           ("T209" "pulse_in" -1 -1 1)
+        )
+      )
+      ("S27" "testpoint_l" "misc" "sym_1"
+        (terms
+          ("T256" "a" -1 -1 3)
         )
       )
     )
@@ -998,6 +1003,15 @@
           ("M415" "T48" 0 0
             (conn
               ("0" 0 0 "N105" -1 -1)
+            )
+          )
+        )
+      )
+      ("I102" "page1_i123" "S27"
+        (pins
+          ("M422" "T256" -1 -1
+            (conn
+              ("0" -1 -1 "N52" -1 -1)
             )
           )
         )

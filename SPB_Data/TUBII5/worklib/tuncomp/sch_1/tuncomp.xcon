@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-22T13:39:03</modificationTime>
+    <modificationTime>2014-10-22T14:06:26</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tuncomp" view="sch_1">
       <lastids>
-        <instanceid>101</instanceid>
+        <instanceid>102</instanceid>
         <netid>106</netid>
-        <insttermid>419</insttermid>
+        <insttermid>422</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -470,6 +470,21 @@
               <id>T209</id>
               <name>pulse_in</name>
               <direction>input</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S27</id>
+          <library>misc</library>
+          <name>testpoint_l</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T256</id>
+              <name>a</name>
+              <direction>inout</direction>
             </term>
           </terms>
         </cell>
@@ -2699,6 +2714,34 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I102</id>
+          <cellid>S27</cellid>
+          <name>page1_i123</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M422</id>
+              <termid>T256</termid>
+              <connections>
+                <connection net="N52" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2907,6 +2950,7 @@
               <instance ref="i120"></instance>
               <instance ref="i121"></instance>
               <instance ref="i122"></instance>
+              <instance ref="i123"></instance>
             </instances>
           </page>
         </pages>
