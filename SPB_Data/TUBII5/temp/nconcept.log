@@ -1,6 +1,7 @@
-Allegro Design Entry HDL 16.3-p003 (v16-3-85B) 10/27/2009
+Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012
 
 
+mpsdeclare
 mpsdeclare
 mpsdeclare
 mpsdeclare
@@ -15,7 +16,7 @@ set autoroute ON
 set
 set autoheavy ON
 set
-set attributes_dir "G:\Cadence\SPB_16.3/tools/fet/concept/attributes"
+set attributes_dir "C:\Cadence\SPB_16.6/tools/fet/concept/attributes"
 set
 set dots_FILLED
 set
@@ -177,6 +178,9 @@ set wplot_fit_to_page
 set
 set wplot_sheet
 set
+set wplot_dpi -1
+set
+WARNING(SPCOCN-2040): Specify the command "page forcereset all" to reset logical page numbers of all pages of this block.
 set multiformat_vectors ON
 set
 set ppt_optionset_path ""
@@ -215,8 +219,6 @@ set check_page_synch ON
 set
 set dont_annotate_opt_value OFF
 set
-set generate_tdd_netlist OFF
-set
 set retain_prev_hilite OFF
 set
 set lock_for_same_user OFF
@@ -246,7 +248,7 @@ set preserve_zoom_info ON
 set
 set lock_file_perm 444
 set
-set custom_cdslib_search OFF
+set custom_cdslib_search ON
 set
 set replace_ptf_props OFF
 set
@@ -267,6 +269,74 @@ set
 WARNING(SPCOCN-1523): Invalid set option: <off>
 set delete_unattached_invisible_props ON
 set
+set honor_pptoptions_on_modify OFF
+set
+set check_grid_on_tap ON
+set
+set retain_font_settings_on_symbol_add ON
+set
+set retain_font_settings_on_symbol_ba ON
+set
+set search_history_count 5
+set
+WARNING(SPCOCN-1523): Invalid set option: <search_history_count>
+INFO(SPCOCN-1177): Unexpected text: <5>
+set search_history 100EL34/
+set
+WARNING(SPCOCN-1523): Invalid set option: <search_history>
+INFO(SPCOCN-1177): Unexpected text: <100EL34/>
+set search_toolbar_lookin PAGE
+set
+WARNING(SPCOCN-1523): Invalid set option: <search_toolbar_lookin>
+INFO(SPCOCN-1177): Unexpected text: <PAGE>
+set update_lower_level_cm OFF
+set
+set disallow_design_load_thread OFF
+set
+set cm_always_active OFF
+set
+set donot_reuse_path OFF
+set
+set allow_prop_on_prop OFF
+set
+set invisible_pn_overlay OFF
+set
+set modify_quick_reset_filters OFF
+set
+WARNING(SPCOCN-1523): Invalid set option: <modify_quick_reset_filters>
+INFO(SPCOCN-1177): Unexpected text: <OFF>
+set multisig_error OFF
+set
+set wait_seconds_for_conn_lock 0
+set
+set autoupdate_on_port_mismatch ON
+set
+set write_find_mkr_file OFF
+set
+set honor_source_modorder_on_reimport OFF
+set
+set hss_partial_instantiation OFF
+set
+set hss_vector_ports_same_symb ON
+set
+set hss_distribute_ports_method PORTCOUNT
+set
+set hss_distribute_ports_count 25
+set
+WARNING(SPCOCN-1523): Invalid set option: <hss_distribute_ports_count>
+INFO(SPCOCN-1177): Unexpected text: <25>
+set hss_distribute_port_pattern 
+set
+WARNING(SPCOCN-1523): Invalid set option: <hss_distribute_port_pattern>
+set check_ibd_invalid_itaps OFF
+set
+set ibd_attach_mode OFF
+set
+set hss_sym_1_full ON
+set
+set hss_distribute_property_name 
+set
+WARNING(SPCOCN-1523): Invalid set option: <hss_distribute_property_name>
 Unknown project directive : PLOTTER_FACILITY
 set default_grid 0.050 5
 set
@@ -274,22 +344,28 @@ set default_body_grid 0.050 2
 set
 set default_doc_grid 0.100 5
 set
-INFO(SPCOCN-1737): Reading .\cds.lib file.
-nmapedit tubii
+INFO(SPCOCN-1737): Reading C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\cds.lib file.
+nmapedit base_mon
 nmapedit
 _!editincontext
-INFO(SPCOCN-1446): New schematic TUBII.SCH.1.1 started as drawing #1.
+INFO(SPCOCN-1446): New schematic BASE_MON.SCH.1.1 started as drawing #1.
+library
+library
+library
+ERROR(SPCOCN-1334): Library 100e not found in cds.lib list.
+library
+ERROR(SPCOCN-1334): Library 10k not found in cds.lib list.
+library
+ERROR(SPCOCN-1334): Library 10kh not found in cds.lib list.
+library
+ERROR(SPCOCN-1334): Library 54fct not found in cds.lib list.
 library
 library
 library
 library
+ERROR(SPCOCN-1334): Library fast not found in cds.lib list.
 library
-library
-library
-library
-library
-library
-library
+ERROR(SPCOCN-1334): Library hcmos not found in cds.lib list.
 library
 library
 library
@@ -297,835 +373,23 @@ library
 library
 library
 get
-INFO(SPCOCN-1445): Reading TUBII.SCH.1.1 into drawing #1.
+INFO(SPCOCN-1445): Reading BASE_MON.SCH.1.1 into drawing #1.
 backannotate
-INFO(SPCOCN-1028): writing <tubii_lib>TUBII.SCH.1.1:
+INFO(SPCOCN-1028): writing <tubii_lib>BASE_MON.SCH.1.1:
 INFO(SPCOCN-1044): writing binary file...
 INFO(SPCOCN-1049): writing ASCII file...
 INFO(SPCOCN-1053): writing connectivity file...
 INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
 
-Copyright (C) 1996 Cadence Design Systems, Inc.
+CSDirect Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012
 
-
-Processing cell view:   TUBII(SCH_1)
-
-
-Generating for languages: Verilog 
+Netlisting block base_mon
 
 Processing page 1
 
-Total number of pages: 1
+No netlisting errors found. 
 
-
-
-Generating Output File lib.cell:view tubii_lib.tubii:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading CAEN_CHAT.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>CAEN_CHAT.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
 INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   CAEN_CHAT(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.caen_chat:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading POWERS.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>POWERS.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   POWERS(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.powers:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TUBII_TIME.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TUBII_TIME.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TUBII_TIME(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.tubii_time:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TTL-TO-ECL-IN.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TTL-TO-ECL-IN.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TTL-TO-ECL-IN(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ttl-to-ecl-in:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading PROGDELAY.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>PROGDELAY.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   PROGDELAY(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.progdelay:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading DATAIN.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>DATAIN.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   DATAIN(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.datain:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TTL_PROGDELAY.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TTL_PROGDELAY.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TTL_PROGDELAY(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ttl_progdelay:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading EXTTRIG.SCH.1.1 into drawing #1.
-ERROR(SPCOCN-1911): Error on line 1354: Pin A<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1355: Pin B<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1356: Pin C<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1357: Pin D<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1358: Pin Y<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1359: Pin Y<0>* not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i14@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1375: Pin A<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1376: Pin B<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1377: Pin C<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1378: Pin D<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1379: Pin Y<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1380: Pin Y<0>* not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i20@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1382: Pin A<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1383: Pin B<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1384: Pin C<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1385: Pin D<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1386: Pin Y<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1387: Pin Y<0>* not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i21@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1396: Pin A<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1397: Pin B<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1398: Pin C<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1399: Pin D<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1400: Pin Y<0> not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-ERROR(SPCOCN-1911): Error on line 1401: Pin Y<0>* not found on instance @tubii_lib.tubii(sch_1):page1_i19@tubii_lib.exttrig(sch_1):page1_i25@ecl.\100e101\(chips)
-INFO(SPCOCN-1028): writing <tubii_lib>EXTTRIG.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   EXTTRIG(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.exttrig:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading LATCHEXTTRIG.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>LATCHEXTTRIG.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   LATCHEXTTRIG(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.latchexttrig:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading NIM-ECL.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>NIM-ECL.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   NIM-ECL(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.nim-ecl:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ECL-NIM.SCH.1.1 into drawing #1.
-ERROR(SPCOCN-1911): Error on line 1945: Instance I4 of body MMBTH81 not found in drawing.
-INFO(SPCOCN-1028): writing <tubii_lib>ECL-NIM.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ECL-NIM(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ecl-nim:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ECL-TTL.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>ECL-TTL.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ECL-TTL(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ecl-ttl:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TTL-ECL.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TTL-ECL.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TTL-ECL(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ttl-ecl:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ECL-LVDS.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>ECL-LVDS.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ECL-LVDS(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ecl-lvds:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading LVDS-ECL.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>LVDS-ECL.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   LVDS-ECL(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.lvds-ecl:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading PRESCALETRIG.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>PRESCALETRIG.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   PRESCALETRIG(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.prescaletrig:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading BURSTTRIG.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>BURSTTRIG.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   BURSTTRIG(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.bursttrig:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TUBIIGT.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TUBIIGT.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TUBIIGT(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.tubiigt:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ELLIE_COMMS.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>ELLIE_COMMS.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ELLIE_COMMS(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ellie_comms:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading RIBBONDELAY.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>RIBBONDELAY.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   RIBBONDELAY(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.ribbondelay:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ASYNCDELAY.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>ASYNCDELAY.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ASYNCDELAY(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.asyncdelay:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading ASYNCDELAYBIG.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>ASYNCDELAYBIG.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   ASYNCDELAYBIG(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.asyncdelaybig:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading TUNCOMP.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TUNCOMP.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   TUNCOMP(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.tuncomp:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
-INFO(SPCOCN-1445): Reading FASTCOMP.SCH.1.1 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>FASTCOMP.SCH.1.1:
-INFO(SPCOCN-1044): writing binary file...
-INFO(SPCOCN-1049): writing ASCII file...
-INFO(SPCOCN-1053): writing connectivity file...
-INFO(SPCOCN-1054): ...written
-INFO(SPCOCN-1055): writing HDL files...
- HDL Direct 16.3-p003 (v16-3-85B) 10/27/2009 
-
-Copyright (C) 1996 Cadence Design Systems, Inc.
-
-
-Processing cell view:   FASTCOMP(SCH_1)
-
-
-Generating for languages: Verilog 
-
-Processing page 1
-
-Total number of pages: 1
-
-
-
-Generating Output File lib.cell:view tubii_lib.fastcomp:sch_1
-
-
-Design Entry HDL Direct: Created Netlist.
-
-
-No HDL Direct errors found. 
-
-INFO(SPCOCN-1056): ...HDL written
- 25 Error(s) found during backannotation.
- Please see the error log: temp/backannotate.log
 nmapedit
 _!editincontext
-INFO(SPCOCN-1445): Reading TUBII.SCH.1.1 into drawing #1.
 exit
