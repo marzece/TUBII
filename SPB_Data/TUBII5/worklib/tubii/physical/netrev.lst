@@ -2,9 +2,9 @@
 (                                                                     )
 (    Allegro Netrev Import Logic                                      )
 (                                                                     )
-(    Drawing          : TUBiiPrelim.brd                               )
+(    Drawing          : basemon_mod.brd                               )
 (    Software Version : 16.6P004                                      )
-(    Date/Time        : Thu Oct 23 17:15:42 2014                      )
+(    Date/Time        : Thu Oct 23 17:49:29 2014                      )
 (                                                                     )
 (---------------------------------------------------------------------)
 
@@ -18,32 +18,36 @@ RIPUP_SYMBOLS ALWAYS;
 Missing symbol has error FALSE;
 SCHEMATIC_DIRECTORY 'C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\base_mon\packaged';
 BOARD_DIRECTORY '';
-OLD_BOARD_NAME 'C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/TUBiiPrelim.brd';
-NEW_BOARD_NAME 'test.brd';
+OLD_BOARD_NAME 'basemon_mod.brd';
+NEW_BOARD_NAME 'basemon_mod.brd';
 
-CmdLine: netrev -proj C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\tubii.cpm -y 1 -O C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii\physical\TUBiiPrelim.brd C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii\physical\test.brd -$
+CmdLine: netrev -proj C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\tubii.cpm -y 1 -n -O C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii\physical\basemon_mod.brd C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii\physical\basemon_mod.brd -$
 
 ------ Preparing to read pst files ------
 
 Starting to read C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstchip.dat 
-   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstchip.dat (00:00:00.86)
+   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstchip.dat (00:00:00.64)
 Starting to read C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxprt.dat 
-   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxprt.dat (00:00:00.01)
+   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxprt.dat (00:00:00.00)
 Starting to read C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxnet.dat 
-   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxnet.dat (00:00:00.01)
+   Finished reading C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstxnet.dat (00:00:00.00)
 
 ------ Oversights/Warnings/Errors ------
 
+
+#1   WARNING(SPMHNI-192): Device/Symbol check warning detected. [help]
+
+WARNING(SPMHNI-194): Symbol 'CAP805' for device 'CSMD0805-1.0UF,10%,0805,25V' not found in PSMPATH or must be "dbdoctor"ed.
 
 
 
 ===========================================================
 Start Constraint Override Import
 	Constraint File:    C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/base_mon/packaged/pstcmdb.dat
-	Start time: Thu Oct 23 17:15:43 2014
+	Start time: Thu Oct 23 17:49:29 2014
 ===========================================================
 ===========================================================
-Finished Constraint Update	Time: Thu Oct 23 17:15:44 2014
+Finished Constraint Update	Time: Thu Oct 23 17:49:30 2014
 ===========================================================
 
 ------ Library Paths ------
@@ -70,9 +74,9 @@ PADPATH =  .
 ------ Summary Statistics ------
 
 
-netrev run on Oct 23 17:15:41 2014
+netrev run on Oct 23 17:49:29 2014
    DESIGN NAME : 'BASE_MON'
-   PACKAGING ON 23-Oct-2014 AT 17:15:34
+   PACKAGING ON 23-Oct-2014 AT 17:49:21
 
    COMPILE 'logic'
    CHECK_PIN_NAMES OFF
@@ -98,8 +102,8 @@ netrev run on Oct 23 17:15:41 2014
 
  No error detected
  No oversight detected
- No warning detected
+  1 warnings detected
 
-cpu time      0:06:12
-elapsed time  0:00:03
+cpu time      0:04:54
+elapsed time  0:00:02
 
