@@ -6,24 +6,31 @@
    (class "SCHEMATIC")
    (severity 40)
    (error_num 1)
-   (short_msg "ERROR(SPCOCD-198): Signal syntax is incorrect.")
+   (short_msg "ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.")
    (long_msg "Severity : Error (Concept)
-Description : ERROR(SPCOCD-198): Signal syntax is incorrect.
+Description : ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.
+Port name: ttl_lockout*
+Entity file location: C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\gt_delays\entity\verilog.v
 Object dump: 
 {
-    page:  1
-    instance:  i20
-    cell name: 10h125
-    pin name:  Y<SIZE-1..0>
-    net name:  lockout*_ttl\i
+    port name: ttl_lockout*
+}
+{
+    port name: ttl_lockout*
 }
 ")
    (location
     (
-     (object_kind "InstancePin")
-     (canonical_name "_!drawerror pin i20.Y<SIZE-1..0>;")
-     (parent_canonical_name "DRAWERROR PIN i20.Y<SIZE-1..0>;")
-     (drawing_name "@tubii_lib.gt_delays(sch_1):page1")
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal ttl_lockout*;")
+     (parent_canonical_name "DRAWERROR NET ttl_lockout*")
+     (drawing_name "@tubii_lib.tubii(sch_1):page3_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i4@tubii_lib.gt_delays(sch_1):page1")
+    )
+    (
+     (object_kind "ThisEntityPort")
+     (canonical_name "_!drawerror signal ttl_lockout*;")
+     (parent_canonical_name "DRAWERROR NET ttl_lockout*")
+     (drawing_name "@tubii_lib.tubii(sch_1):page3_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i4@tubii_lib.gt_delays(sch_1):page1")
     )
    )
   )
@@ -32,30 +39,29 @@ Object dump:
    (class "SCHEMATIC")
    (severity 40)
    (error_num 2)
-   (short_msg "ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.")
+   (short_msg "ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.")
    (long_msg "Severity : Error (Concept)
-Description : ERROR(SPCOCD-168): Schematic has port but port does not exist in the symbol. Either delete this port from the schematic or add this port in the symbol.
-Port name: dgt_ttl
+Description : ERROR(SPCOCD-171): Port exists in symbol but not in the schematic. Either delete this port from the symbol or add this port in the schematic.
+Port name: lockout*_ttl
 Entity file location: C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\gt_delays\entity\verilog.v
 Object dump: 
 {
-    port name: dgt_ttl
 }
 {
-    port name: dgt_ttl
+    port name: lockout*_ttl
 }
 ")
    (location
     (
-     (object_kind "ThisEntityPort")
-     (canonical_name "_!drawerror signal dgt_ttl;")
-     (parent_canonical_name "DRAWERROR NET dgt_ttl")
+     (object_kind "ThisCellView")
+     (canonical_name ";;;")
+     (parent_canonical_name "CONCEPT")
      (drawing_name "@tubii_lib.tubii(sch_1):page3_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i4@tubii_lib.gt_delays(sch_1):page1")
     )
     (
      (object_kind "ThisEntityPort")
-     (canonical_name "_!drawerror signal dgt_ttl;")
-     (parent_canonical_name "DRAWERROR NET dgt_ttl")
+     (canonical_name "_!drawerror signal lockout*_ttl;")
+     (parent_canonical_name "DRAWERROR NET lockout*_ttl")
      (drawing_name "@tubii_lib.tubii(sch_1):page3_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i4@tubii_lib.gt_delays(sch_1):page1")
     )
    )

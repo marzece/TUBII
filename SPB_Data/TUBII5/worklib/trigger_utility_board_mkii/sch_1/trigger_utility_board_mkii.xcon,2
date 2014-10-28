@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-21T16:14:10</modificationTime>
+    <modificationTime>2014-10-28T15:28:06</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>250</netid>
-        <insttermid>551</insttermid>
+        <netid>278</netid>
+        <insttermid>670</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -258,6 +258,11 @@
               <name>dgt_ttl</name>
               <direction>output</direction>
             </term>
+            <term>
+              <id>T769</id>
+              <name>ttl_lockout*</name>
+              <direction>unspec</direction>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -393,6 +398,13 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T647</id>
+              <name>exttrig</name>
+              <direction>input</direction>
+              <msb>15</msb>
+              <lsb>0</lsb>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -637,7 +649,6 @@
               <id>T172</id>
               <name>power</name>
               <direction>input</direction>
-              <displayName></displayName>
               <msb>5</msb>
               <lsb>1</lsb>
             </term>
@@ -1116,10 +1127,6 @@
           <name>unnamed_1_gtdelays_i4_dgtttl</name>
         </net>
         <net>
-          <id>N235</id>
-          <name>unnamed_1_gtdelays_i4_lockout</name>
-        </net>
-        <net>
           <id>N249</id>
           <name>caen_anpulse</name>
           <scope>interface</scope>
@@ -1132,6 +1139,14 @@
           <name>tubii_rt_out</name>
           <scope>interface</scope>
           <direction>inout</direction>
+        </net>
+        <net>
+          <id>N264</id>
+          <name>unnamed_1_cntrlregister_i2_readenable</name>
+        </net>
+        <net>
+          <id>N278</id>
+          <name>unnamed_1_gtdelays_i4_ttllockout</name>
         </net>
         <net>
           <id>N2</id>
@@ -1198,12 +1213,6 @@
           <inherited>1</inherited>
         </net>
         <net>
-          <id>vcci0_34</id>
-          <name>vcci0_34</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
           <id>vcci0_35</id>
           <name>vcci0_35</name>
           <scope>global</scope>
@@ -1218,6 +1227,12 @@
         <net>
           <id>vih</id>
           <name>vih</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vref5m</id>
+          <name>vref5m</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -1348,6 +1363,7 @@
               <id>M333</id>
               <termid>T294</termid>
               <connections>
+                <connection net="N264" />
               </connections>
             </pin>
           </pins>
@@ -1601,6 +1617,13 @@
                 <connection net="N234" />
               </connections>
             </pin>
+            <pin>
+              <id>M670</id>
+              <termid>T769</termid>
+              <connections>
+                <connection net="N278" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -1689,6 +1712,7 @@
               <id>M64</id>
               <termid>T80</termid>
               <connections>
+                <connection net="N264" />
               </connections>
             </pin>
             <pin>
@@ -1817,6 +1841,15 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M552</id>
+              <termid>T647</termid>
+              <msb>15</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="15" pinlsb="0" net="N1" netmsb="0" netlsb="15" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -2207,7 +2240,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="async_delay_in">
             <pageScope number="1">
@@ -2613,6 +2645,7 @@
               <net ref="unnamed_1_cntrlregister_i2_ecalsetup"></net>
               <net ref="unnamed_1_cntrlregister_i2_le"></net>
               <net ref="unnamed_1_cntrlregister_i2_loselect"></net>
+              <net ref="unnamed_1_cntrlregister_i2_readenable"></net>
               <net ref="unnamed_1_comparators_i13_datardy"></net>
               <net ref="unnamed_1_comparators_i13_letune"></net>
               <net ref="unnamed_1_genericutilities_i11_asyncdelayin"></net>
@@ -2624,7 +2657,7 @@
               <net ref="unnamed_1_genericutilities_i11_pulse"></net>
               <net ref="unnamed_1_gtdelays_i4_dgtttl"></net>
               <net ref="unnamed_1_gtdelays_i4_ledgt"></net>
-              <net ref="unnamed_1_gtdelays_i4_lockout"></net>
+              <net ref="unnamed_1_gtdelays_i4_ttllockout"></net>
               <net ref="unnamed_1_microzedconnection_i10_spkr"></net>
               <net ref="vcc"></net>
             </nets>

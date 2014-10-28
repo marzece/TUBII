@@ -8,8 +8,8 @@
   (design "gt_delays"
     (lastIds
       (lastInstanceId 21)
-      (lastNetId 43)
-      (lastInstTermId 121)
+      (lastNetId 46)
+      (lastInstTermId 126)
     )
     (cells
       ("S2" "select_lo_src" "tubii_lib" "sym_1"
@@ -66,6 +66,7 @@
       ("N28" "gtrigl" -1 -1 1 3)
       ("N36" "mtcd_lo*" -1 -1 1 3)
       ("N43" "dgt_ttl" -1 -1 1 3)
+      ("N46" "ttl_lockout*" -1 -1 1 3)
       ("N20" "vtt" -1 -1 2 )
       ("N31" "gnd" -1 -1 2  inherited)
       ("vcc5" "vcc5" -1 -1 2  inherited)
@@ -224,6 +225,9 @@
           ("M118" "T136" -1 -1
           )
           ("M119" "T137" 0 0
+            (conn
+              ("0" 0 0 "N46" -1 -1)
+            )
           )
         )
       )

@@ -2,10 +2,10 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\g";
-2"GND\g";
-3"GND\g";
-4"GND\g";
+1"CAEN_ANPULSE<11..8>";
+2"CAEN_ANPULSE<7..0>";
+3"UN$1$8MERGE$I22$B";
+4"UN$1$8MERGE$I22$C";
 5"GND\g";
 6"GND\g";
 7"GND\g";
@@ -23,18 +23,18 @@ FILE_TYPE = CONNECTIVITY;
 19"GND\g";
 20"GND\g";
 21"GND\g";
-22"UN$1$4MERGE$I23$B";
-23"UN$1$4MERGE$I23$A";
-24"UN$1$4MERGE$I23$C";
-25"UN$1$4MERGE$I23$D";
-26"UN$1$2MERGE$I24$B";
-27"UN$1$8MERGE$I22$B";
-28"UN$1$8MERGE$I22$C";
-29"UN$1$8MERGE$I22$D";
-30"UN$1$8MERGE$I22$E";
-31"UN$1$8MERGE$I22$F";
-32"UN$1$8MERGE$I22$G";
-33"UN$1$2MERGE$I24$A";
+22"GND\g";
+23"GND\g";
+24"GND\g";
+25"GND\g";
+26"UN$1$4MERGE$I23$B";
+27"UN$1$4MERGE$I23$A";
+28"UN$1$4MERGE$I23$C";
+29"UN$1$4MERGE$I23$D";
+30"UN$1$8MERGE$I22$D";
+31"UN$1$8MERGE$I22$E";
+32"UN$1$8MERGE$I22$F";
+33"UN$1$8MERGE$I22$G";
 34"UN$1$8MERGE$I22$H";
 35"CAEN_ANPULSE<11..0>\I";
 36"UN$1$8MERGE$I22$A";
@@ -116,42 +116,42 @@ CDS_LIB"misc";
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"27;
+"A\NAC \B"3;
 %"TESTPOINT_L"
 "1","(825,2200)","2","misc","I16";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"28;
+"A\NAC \B"4;
 %"TESTPOINT_L"
 "1","(825,2000)","2","misc","I17";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"30;
+"A\NAC \B"31;
 %"TESTPOINT_L"
 "1","(825,1900)","2","misc","I18";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"31;
+"A\NAC \B"32;
 %"TESTPOINT_L"
 "1","(825,2100)","2","misc","I19";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"29;
+"A\NAC \B"30;
 %"GND"
 "1","(1450,3675)","0","misc","I2";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"15;
+"G\NAC"5;
 %"TESTPOINT_L"
 "1","(825,1700)","2","misc","I20";
 ;
@@ -165,7 +165,7 @@ ABBREV"TP";
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"32;
+"A\NAC \B"33;
 %"8 MERGE"
 "1","(1450,2050)","0","standard","I22";
 ;
@@ -173,33 +173,33 @@ BODY_TYPE"PLUMBING"
 NEEDS_NO_SIZE"TRUE"
 CDS_LIB"standard";
 "A\NWC\NAC"36;
-"B\NWC\NAC"27;
-"C\NWC\NAC"28;
-"D\NWC\NAC"29;
-"E\NWC\NAC"30;
-"F\NWC\NAC"31;
-"G\NWC\NAC"32;
+"B\NWC\NAC"3;
+"C\NWC\NAC"4;
+"D\NWC\NAC"30;
+"E\NWC\NAC"31;
+"F\NWC\NAC"32;
+"G\NWC\NAC"33;
 "H\NWC\NAC"34;
-"Y\NWC\NAC"33;
+"Y\NWC\NAC"2;
 %"4 MERGE"
 "1","(1450,1425)","0","standard","I23";
 ;
 BODY_TYPE"PLUMBING"
 NEEDS_NO_SIZE"TRUE"
 CDS_LIB"standard";
-"A\NWC\NAC"23;
-"B\NWC\NAC"22;
-"C\NWC\NAC"24;
-"D\NWC\NAC"25;
-"Y\NWC\NAC"26;
+"A\NWC\NAC"27;
+"B\NWC\NAC"26;
+"C\NWC\NAC"28;
+"D\NWC\NAC"29;
+"Y\NWC\NAC"1;
 %"2 MERGE"
 "1","(1975,1875)","0","standard","I24";
 ;
 NEEDS_NO_SIZE"TRUE"
 BODY_TYPE"PLUMBING"
 CDS_LIB"standard";
-"A\NWC\NAC"33;
-"B\NWC\NAC"26;
+"A\NWC\NAC"2;
+"B\NWC\NAC"1;
 "Y\NWC\NAC"35;
 %"TESTPOINT_L"
 "1","(825,1575)","2","misc","I25";
@@ -207,120 +207,120 @@ CDS_LIB"standard";
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"23;
+"A\NAC \B"27;
 %"TESTPOINT_L"
 "1","(825,1475)","2","misc","I26";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"22;
+"A\NAC \B"26;
 %"TESTPOINT_L"
 "1","(825,1375)","2","misc","I27";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"24;
+"A\NAC \B"28;
 %"TESTPOINT_L"
 "1","(825,1275)","2","misc","I28";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"25;
+"A\NAC \B"29;
 %"TESTPOINT_L"
 "1","(1975,3350)","2","misc","I29";
 ;
-TITLE"TEST"
+CDS_LIB"misc"
 ABBREV"TP"
-CDS_LIB"misc";
-"A\NAC \B"13;
+TITLE"TEST";
+"A\NAC \B"6;
 %"IDS_C10"
 "1","(1450,4025)","0","misc","I3";
 ;
 CDS_LMAN_SYM_OUTLINE"-150,175,125,-225"
 CDS_LIB"misc";
 "PIN7"51;
-"PIN8"15;
+"PIN8"5;
 "PIN6"50;
-"PIN9"15;
-"PIN10"15;
-"PIN4"15;
-"PIN3"15;
+"PIN9"5;
+"PIN10"5;
+"PIN4"5;
+"PIN3"5;
 "PIN2"48;
-"PIN5"15;
+"PIN5"5;
 "PIN1"49;
 %"GND"
 "1","(2200,3300)","0","misc","I30";
 ;
-BODY_TYPE"PLUMBING"
+CDS_LIB"misc"
 HDL_POWER"GND"
-CDS_LIB"misc";
-"G\NAC"13;
+BODY_TYPE"PLUMBING";
+"G\NAC"6;
 %"GND"
 "1","(2200,3125)","0","misc","I31";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"16;
+"G\NAC"7;
 %"GND"
 "1","(2125,3225)","0","misc","I32";
 ;
-HDL_POWER"GND"
+CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
-CDS_LIB"misc";
-"G\NAC"14;
+HDL_POWER"GND";
+"G\NAC"8;
 %"TESTPOINT_L"
 "1","(1975,3275)","2","misc","I33";
 ;
-TITLE"TEST"
+CDS_LIB"misc"
 ABBREV"TP"
-CDS_LIB"misc";
-"A\NAC \B"14;
+TITLE"TEST";
+"A\NAC \B"8;
 %"TESTPOINT_L"
 "1","(1975,3175)","2","misc","I34";
 ;
-TITLE"TEST"
+CDS_LIB"misc"
 ABBREV"TP"
-CDS_LIB"misc";
-"A\NAC \B"16;
+TITLE"TEST";
+"A\NAC \B"7;
 %"TESTPOINT_L"
 "1","(1975,3075)","2","misc","I35";
 ;
+CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP"
-CDS_LIB"misc";
-"A\NAC \B"21;
+ABBREV"TP";
+"A\NAC \B"9;
 %"GND"
 "1","(2125,3025)","0","misc","I36";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"21;
+"G\NAC"9;
 %"GND"
 "1","(2200,2900)","0","misc","I37";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"20;
+"G\NAC"10;
 %"GND"
 "1","(2200,2700)","0","misc","I38";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"19;
+"G\NAC"11;
 %"GND"
 "1","(2125,2600)","0","misc","I39";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"17;
+"G\NAC"12;
 %"LVDS_DRIVER_DS10"
 "1","(950,4000)","0","misc","I4";
 ;
@@ -339,35 +339,35 @@ CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"18;
+"G\NAC"13;
 %"TESTPOINT_L"
 "1","(1975,2950)","2","misc","I41";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"20;
+"A\NAC \B"10;
 %"TESTPOINT_L"
 "1","(1975,2850)","2","misc","I42";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"18;
+"A\NAC \B"13;
 %"TESTPOINT_L"
 "1","(1975,2750)","2","misc","I43";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"19;
+"A\NAC \B"11;
 %"TESTPOINT_L"
 "1","(1975,2650)","2","misc","I44";
 ;
 TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
-"A\NAC \B"17;
+"A\NAC \B"12;
 %"TESTPOINT_L"
 "1","(1875,2650)","0","misc","I5";
 ;
@@ -381,70 +381,70 @@ CDS_LIB"misc";
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"12;
+"A\NAC \B"15;
 %"TESTPOINT_L"
 "1","(725,2400)","0","misc","I51";
 ;
 CDS_LIB"misc"
-TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"1;
+ABBREV"TP"
+TITLE"TEST";
+"A\NAC \B"14;
 %"GND"
 "1","(550,2350)","0","misc","I52";
 ;
 CDS_LIB"misc"
-HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"1;
+BODY_TYPE"PLUMBING"
+HDL_POWER"GND";
+"G\NAC"14;
 %"GND"
 "1","(600,2250)","0","misc","I53";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"12;
+"G\NAC"15;
 %"GND"
 "1","(550,2150)","0","misc","I54";
 ;
-CDS_LIB"misc"
 HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"11;
+BODY_TYPE"PLUMBING"
+CDS_LIB"misc";
+"G\NAC"16;
 %"TESTPOINT_L"
 "1","(725,2200)","0","misc","I55";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"11;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"16;
 %"TESTPOINT_L"
 "1","(725,2100)","0","misc","I56";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"6;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"17;
 %"GND"
 "1","(600,2050)","0","misc","I57";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"6;
+"G\NAC"17;
 %"TESTPOINT_L"
 "1","(725,2000)","0","misc","I58";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"7;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"18;
 %"GND"
 "1","(550,1950)","0","misc","I59";
 ;
-CDS_LIB"misc"
 HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"7;
+BODY_TYPE"PLUMBING"
+CDS_LIB"misc";
+"G\NAC"18;
 %"TESTPOINT_L"
 "1","(1875,3350)","0","misc","I6";
 ;
@@ -455,73 +455,73 @@ CDS_LIB"misc";
 %"TESTPOINT_L"
 "1","(725,1900)","0","misc","I60";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"5;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"19;
 %"GND"
 "1","(600,1850)","0","misc","I61";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"5;
+"G\NAC"19;
 %"TESTPOINT_L"
 "1","(725,1800)","0","misc","I62";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"8;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"20;
 %"GND"
 "1","(550,1750)","0","misc","I63";
 ;
-CDS_LIB"misc"
 HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"8;
+BODY_TYPE"PLUMBING"
+CDS_LIB"misc";
+"G\NAC"20;
 %"TESTPOINT_L"
 "1","(725,1700)","0","misc","I64";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"4;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"21;
 %"GND"
 "1","(600,1650)","0","misc","I65";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"4;
+"G\NAC"21;
 %"TESTPOINT_L"
 "1","(725,1575)","0","misc","I66";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"9;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"22;
 %"GND"
 "1","(550,1525)","0","misc","I67";
 ;
-CDS_LIB"misc"
 HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"9;
+BODY_TYPE"PLUMBING"
+CDS_LIB"misc";
+"G\NAC"22;
 %"TESTPOINT_L"
 "1","(725,1475)","0","misc","I68";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"3;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"23;
 %"GND"
 "1","(600,1425)","0","misc","I69";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"3;
+"G\NAC"23;
 %"TESTPOINT_L"
 "1","(1875,3250)","0","misc","I7";
 ;
@@ -532,31 +532,31 @@ CDS_LIB"misc";
 %"TESTPOINT_L"
 "1","(725,1375)","0","misc","I70";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"10;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"24;
 %"GND"
 "1","(550,1325)","0","misc","I71";
 ;
-CDS_LIB"misc"
 HDL_POWER"GND"
-BODY_TYPE"PLUMBING";
-"G\NAC"10;
+BODY_TYPE"PLUMBING"
+CDS_LIB"misc";
+"G\NAC"24;
 %"TESTPOINT_L"
 "1","(725,1275)","0","misc","I72";
 ;
-CDS_LIB"misc"
 TITLE"TEST"
-ABBREV"TP";
-"A\NAC \B"2;
+ABBREV"TP"
+CDS_LIB"misc";
+"A\NAC \B"25;
 %"GND"
 "1","(600,1225)","0","misc","I73";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"2;
+"G\NAC"25;
 %"TESTPOINT_L"
 "1","(1875,3150)","0","misc","I8";
 ;

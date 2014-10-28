@@ -6,7 +6,7 @@
     Packager-XL 16.6-p001 (v16-6-112A) WIN32 9/10/2012 12:00:00 IST
     (C) Copyright 1994, Cadence Design Systems, Inc.
 
-    Run on Wed Feb 19 14:58:46 2014
+    Run on Tue Oct 28 15:35:47 2014
 
 
  **********************************************
@@ -72,7 +72,7 @@
     PART_TYPE_LENGTH 31
     REF_DES_LENGTH 31
     REPACKAGE OFF
-    ELECTRICAL_CONSTRAINTS OFF
+    ELECTRICAL_CONSTRAINTS ON
     OVERWRITE_CONSTRAINTS OFF
     RUN_DIR ./worklib/tubii/packaged/
     STRICT_PACKAGE_PROP  'REUSE_INSTANCE'
@@ -116,61 +116,47 @@
 
 Creating Configuration "cfg_package" for Design "tubii"
 
- #1    Occurred while reading cds.lib:
-Error on line 14 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\10k: 'Invalid path'.
- #2    Occurred while reading cds.lib:
-Error on line 14 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\10k: 'Invalid path'.
 INFO(SPCODD-181): Loading C:\Cadence\SPB_16.6\share\cdssetup\cdsprop.tmf.
 INFO(SPCODD-181): Loading C:\Cadence\SPB_16.6\share\cdssetup\cdsprop.paf.
- #1   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 14 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\10k: 'Invalid path'. Ignoring t~
-his command.
- #2   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 16 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\10kh: 'Invalid path'. Ignoring ~
-this command.
- #3   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 18 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\54fct: 'Invalid path'. Ignoring~
- this command.
- #4   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 20 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\100e: 'Invalid path'. Ignoring ~
-this command.
- #5   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 22 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\fast: 'Invalid path'. Ignoring ~
-this command.
- #6   WARNING(SPCODD-562): Occurred while reading cds.lib:
-Error on line 24 of C:\Users\HEP\Desktop\orebi\SPB_Data\TUBII1\cds.lib for C:\~
-Users\HEP\Desktop\orebi\ugboard\ugboard\newtub\hcmos: 'Invalid path'. Ignoring~
- this command.
 
  *********************************
  *  Loading the design database  *
  *********************************
 
-INFO(SPCODD-181): Loading C:/Users/HEP/Desktop/orebi/Parts/parts/resistors/rsm~
-d0805/part_table/part.ptf.
-INFO(SPCODD-181): Loading C:/Users/HEP/Desktop/orebi/Parts/parts/capacitors/cs~
-md0805/part_table/part.ptf.
-INFO(SPCODD-181): Loading C:/Users/HEP/Desktop/orebi/Parts/parts/capacitors/ta~
-nt0805/part_table/part.ptf.
- #3    Could not find cell '100el34/'. Ensure that all libraries required are present~
- and referenced in the project file.
- #4   ERROR(SPCODD-439): Connectivity server is unable to load the design. 
-             The .xcon file might be missing or incorrect.  The design needs
-             to be netlisted in 16.5 or later version of Design Entry HDL.
-INFO(SPCOPK-1441): 4 errors detected
-INFO(SPCOPK-1443): 6 warnings detected
+INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/re~
+sistors/rsmd0805/part_table/part.ptf.
+INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
+pacitors/csmd0805/part_table/part.ptf.
+INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/mi~
+sc/led_1206/part_table/part.ptf.
+ #1   ERROR(SPCODD-114): Duplicate physical part name MMBTH81 found on line 2 ~
+in C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/transistors/mmbth81/chips~
+/chips.prt. Edit the chips.prt file to remove the duplicate entry from the pri~
+mitive name
+ Packaging can not complete because the file C:/Users/QGPWindowsVB/Downloads/o~
+rebi/Parts/parts/transistors/mmbth81/chips/chips.prt could not be loaded. Ther~
+e might be syntax errors in this file. Ensure that the syntax is correct befor~
+e proceeding.
+INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
+pacitors/csmd0603/part_table/part.ptf.
+ #2   ERROR(SPCODD-114): Duplicate physical part name 74F06 found on line 2 in~
+ C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ttl/74f06/chips/chips.prt. ~
+Edit the chips.prt file to remove the duplicate entry from the primitive name
+ Packaging can not complete because the file C:/Users/QGPWindowsVB/Downloads/o~
+rebi/Parts/parts/ttl/74f06/chips/chips.prt could not be loaded. There might be~
+ syntax errors in this file. Ensure that the syntax is correct before proceedi~
+ng.
+INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
+pacitors/tant0805/part_table/part.ptf.
+ #3   ERROR(SPCODD-563): Following blocks have netlisting errors. Fix them in ~
+Design Entry HDL before packaging: microzedconnection
+INFO(SPCOPK-1441): 3 errors detected
+INFO(SPCOPK-1444): No warnings detected
 INFO(SPCOPK-1448): Use Tools->Markers->Packager in ConceptHDL to highlight ins~
 tances for the errors/warnings reported.
-    Start time   14:58:45
-    End time     14:58:48
-    Elapsed time  0:00:03
+    Start time   15:35:45
+    End time     15:36:27
+    Elapsed time  0:00:42
 
  **************************************************
  *  FATAL ERROR PackagerXL exiting with status 2  *

@@ -8,8 +8,8 @@
   (design "trigger_utility_board_mkii"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 264)
-      (lastInstTermId 612)
+      (lastNetId 282)
+      (lastInstTermId 670)
     )
     (cells
       ("S2" "base_mon" "tubii_lib" "sym_1"
@@ -63,6 +63,7 @@
           ("T69" "mtcd_lo*" -1 -1 2)
           ("T70" "select_lo_src" -1 -1 1)
           ("T526" "dgt_ttl" -1 -1 2)
+          ("T769" "ttl_lockout*" -1 -1 2)
         )
       )
       ("S6" "hct238" "ttl" "sym_1"
@@ -168,16 +169,12 @@
       ("N7" "page1_unnamed_1_3merge_i6_b" -1 -1 0 )
       ("N8" "unnamed_1_3merge_i6_c" -1 -1 0 )
       ("N9" "page1_unnamed_1_3merge_i6_c" -1 -1 0 )
-      ("N10" "unnamed_1_3merge_i6_y" 2 0 0 )
-      ("N11" "page1_unnamed_1_3merge_i6_y" 2 0 0 )
       ("N12" "unnamed_1_3merge_i8_a" -1 -1 0 )
       ("N13" "page1_unnamed_1_3merge_i8_a" -1 -1 0 )
       ("N14" "unnamed_1_3merge_i8_b" -1 -1 0 )
       ("N15" "page1_unnamed_1_3merge_i8_b" -1 -1 0 )
       ("N16" "unnamed_1_3merge_i8_c" -1 -1 0 )
       ("N17" "page1_unnamed_1_3merge_i8_c" -1 -1 0 )
-      ("N18" "unnamed_1_3merge_i8_y" 2 0 0 )
-      ("N19" "page1_unnamed_1_3merge_i8_y" 2 0 0 )
       ("N22" "unnamed_1_caen_i3_clk" -1 -1 0 )
       ("N23" "unnamed_1_caen_i3_data" -1 -1 0 )
       ("N24" "unnamed_1_caen_i3_datardy" -1 -1 0 )
@@ -251,10 +248,14 @@
       ("N232" "sync24_ttl" -1 -1 1 3)
       ("N233" "sync_ttl" -1 -1 1 3)
       ("N234" "unnamed_1_gtdelays_i4_dgtttl" -1 -1 0 )
-      ("N235" "unnamed_1_gtdelays_i4_lockout" -1 -1 0 )
       ("N249" "caen_anpulse" 11 0 1 3)
       ("N250" "tubii_rt_out" -1 -1 1 3)
       ("N264" "unnamed_1_cntrlregister_i2_readenable" -1 -1 0 )
+      ("N278" "unnamed_1_gtdelays_i4_ttllockout" -1 -1 0 )
+      ("N279" "addr" 2 0 0 )
+      ("N280" "page1_addr" 2 0 0 )
+      ("N281" "scaler" 2 0 0 )
+      ("N282" "page1_scaler" 2 0 0 )
       ("N2" "gnd" -1 -1 2 )
       ("N77" "vcc" -1 -1 2 )
       ("vee" "vee" -1 -1 2  inherited)
@@ -276,17 +277,17 @@
       ("N5" -1 -1 "N4" -1 -1)
       ("N7" -1 -1 "N6" -1 -1)
       ("N9" -1 -1 "N8" -1 -1)
-      ("N11" 2 2 "N5" -1 -1)
-      ("N11" 1 1 "N7" -1 -1)
-      ("N11" 0 0 "N9" -1 -1)
-      ("N11" 2 0 "N10" 2 0)
       ("N13" -1 -1 "N12" -1 -1)
       ("N15" -1 -1 "N14" -1 -1)
       ("N17" -1 -1 "N16" -1 -1)
-      ("N19" 2 2 "N13" -1 -1)
-      ("N19" 1 1 "N15" -1 -1)
-      ("N19" 0 0 "N17" -1 -1)
-      ("N19" 2 0 "N18" 2 0)
+      ("N280" 0 0 "N5" -1 -1)
+      ("N280" 1 1 "N7" -1 -1)
+      ("N280" 2 2 "N9" -1 -1)
+      ("N280" 2 0 "N279" 2 0)
+      ("N282" 0 0 "N13" -1 -1)
+      ("N282" 1 1 "N15" -1 -1)
+      ("N282" 2 2 "N17" -1 -1)
+      ("N282" 2 0 "N281" 2 0)
     )
 
     (instances
@@ -316,7 +317,7 @@
           )
           ("M6" "T10" 2 0
             (conn
-              ("0" 2 0 "N18" 2 0)
+              ("0" 2 0 "N281" 0 2)
             )
           )
           ("M7" "T11" -1 -1
@@ -495,6 +496,11 @@
           ("M497" "T526" -1 -1
             (conn
               ("0" -1 -1 "N234" -1 -1)
+            )
+          )
+          ("M670" "T769" -1 -1
+            (conn
+              ("0" -1 -1 "N278" -1 -1)
             )
           )
         )

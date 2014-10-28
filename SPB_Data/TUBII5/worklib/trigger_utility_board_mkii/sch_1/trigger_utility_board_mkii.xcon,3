@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-21T16:12:10</modificationTime>
+    <modificationTime>2014-10-22T14:53:59</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,8 +13,8 @@
       <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>250</netid>
-        <insttermid>551</insttermid>
+        <netid>264</netid>
+        <insttermid>612</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -393,6 +393,13 @@
           <parameters>
           </parameters>
           <terms>
+            <term>
+              <id>T647</id>
+              <name>exttrig</name>
+              <direction>input</direction>
+              <msb>15</msb>
+              <lsb>0</lsb>
+            </term>
           </terms>
         </cell>
         <cell>
@@ -637,7 +644,6 @@
               <id>T172</id>
               <name>power</name>
               <direction>input</direction>
-              <displayName></displayName>
               <msb>5</msb>
               <lsb>1</lsb>
             </term>
@@ -800,6 +806,8 @@
         <net>
           <id>N97</id>
           <name>rawtrigs</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
           <msb>3</msb>
           <lsb>0</lsb>
         </net>
@@ -874,6 +882,8 @@
         <net>
           <id>N110</id>
           <name>scope_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
           <msb>7</msb>
           <lsb>0</lsb>
         </net>
@@ -1130,6 +1140,10 @@
           <direction>inout</direction>
         </net>
         <net>
+          <id>N264</id>
+          <name>unnamed_1_cntrlregister_i2_readenable</name>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -1194,12 +1208,6 @@
           <inherited>1</inherited>
         </net>
         <net>
-          <id>vcci0_34</id>
-          <name>vcci0_34</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
           <id>vcci0_35</id>
           <name>vcci0_35</name>
           <scope>global</scope>
@@ -1214,6 +1222,12 @@
         <net>
           <id>vih</id>
           <name>vih</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
+          <id>vref5m</id>
+          <name>vref5m</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -1344,6 +1358,7 @@
               <id>M333</id>
               <termid>T294</termid>
               <connections>
+                <connection net="N264" />
               </connections>
             </pin>
           </pins>
@@ -1685,6 +1700,7 @@
               <id>M64</id>
               <termid>T80</termid>
               <connections>
+                <connection net="N264" />
               </connections>
             </pin>
             <pin>
@@ -1813,6 +1829,15 @@
           <powers>
           </powers>
           <pins>
+            <pin>
+              <id>M552</id>
+              <termid>T647</termid>
+              <msb>15</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="15" pinlsb="0" net="N1" netmsb="0" netlsb="15" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -2203,7 +2228,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="async_delay_in">
             <pageScope number="1">
@@ -2343,6 +2367,18 @@
             </pageScope>
           </netScope>
           <netScope ref="mtcd_lo*">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="rawtrigs">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="scope_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2597,6 +2633,7 @@
               <net ref="unnamed_1_cntrlregister_i2_ecalsetup"></net>
               <net ref="unnamed_1_cntrlregister_i2_le"></net>
               <net ref="unnamed_1_cntrlregister_i2_loselect"></net>
+              <net ref="unnamed_1_cntrlregister_i2_readenable"></net>
               <net ref="unnamed_1_comparators_i13_datardy"></net>
               <net ref="unnamed_1_comparators_i13_letune"></net>
               <net ref="unnamed_1_genericutilities_i11_asyncdelayin"></net>
