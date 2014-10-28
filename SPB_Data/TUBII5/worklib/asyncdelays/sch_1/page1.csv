@@ -2,18 +2,18 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$10H125$I9$Y";
-2"UN$1$DS1023200$I27$LE";
-3"VCC\G";
-4"LE_DGT\I";
-5"CLK\I";
-6"GTRIGL\I";
-7"GTRIGH\I";
-8"UN$1$10ELT24$I16$D";
-9"GND\G";
-10"VCC\G";
-11"UN$1$DS1023200$I27$Q";
-12"DELAY_VAL\I";
+1"UN$1$DS1023200$I27$LE";
+2"UN$1$10H125$I9$Y";
+3"DGT_TTL\I";
+4"VCC\G";
+5"DELAY_VAL\I";
+6"LE_DGT\I";
+7"CLK\I";
+8"GTRIGL\I";
+9"GTRIGH\I";
+10"GND\G";
+11"VCC\G";
+12"UN$1$DS1023200$I27$Q";
 13"DGTL\I";
 14"DGTH\I";
 15"UN$1$10ELT24$I20$Q";
@@ -27,7 +27,7 @@ FILE_TYPE = CONNECTIVITY;
 ;
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
-"D"8;
+"D"3;
 "Q"14;
 "Q* \B"13;
 %"DS1023500"
@@ -35,12 +35,12 @@ CDS_LIB"ecl";
 ;
 CDS_LIB"ttl"
 CDS_LMAN_SYM_OUTLINE"-175,250,175,-250";
-"IN"1;
+"IN"2;
 "Q/P0"0;
 "P4"0;
 "P3"0;
 "CLK/P1"18;
-"D/P2"11;
+"D/P2"12;
 "P7"0;
 "P6"0;
 "P5"0;
@@ -48,7 +48,7 @@ CDS_LMAN_SYM_OUTLINE"-175,250,175,-250";
 "PS"20;
 "PWM"0;
 "OUT"16;
-"LE* \B"2;
+"LE* \B"1;
 %"10ELT24"
 "1","(825,2100)","0","ecl","I20";
 ;
@@ -61,8 +61,8 @@ CDS_LIB"ecl";
 "1","(-575,3275)","0","ttl","I22";
 MAX_DELAY"10000";
 CDS_LIB"ttl";
-"A <SIZE-1..0>"4;
-"Y <SIZE-1..0>* \B"2;
+"A <SIZE-1..0>"6;
+"Y <SIZE-1..0>* \B"1;
 %"TESTPOINT_L"
 "1","(1350,2300)","0","misc","I24";
 ;
@@ -75,7 +75,7 @@ CDS_LIB"misc";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"8;
+"PULSE_IN"3;
 %"LED_PULSE"
 "1","(1050,1500)","0","tubii_lib","I26";
 ;
@@ -87,20 +87,20 @@ CDS_LIB"tubii_lib";
 ;
 CDS_LMAN_SYM_OUTLINE"-175,350,175,-250"
 CDS_LIB"ttl";
-"D/P2"12;
-"CLK/P1"5;
-"Q/P0"11;
+"D/P2"5;
+"CLK/P1"7;
+"Q/P0"12;
 "P7"0;
 "P6"0;
 "P5"0;
 "P4"0;
 "P3"0;
-"IN"1;
-"PS"10;
-"MS"9;
-"OUT"8;
+"IN"2;
+"PS"11;
+"MS"10;
+"OUT"3;
 "PWM"0;
-"LE* \B"2;
+"LE* \B"1;
 %"RSMD0805"
 "1","(-375,3450)","1","resistors","I28";
 ;
@@ -122,14 +122,14 @@ IC"UNDEF"
 NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE"
 POSTOL"5%";
-"A<0>"2;
-"B<0>"3;
+"A<0>"1;
+"B<0>"4;
 %"10H125"
 "1","(-2600,3050)","0","ecl","I9";
 SECTION"1";
 CDS_LIB"ecl";
-"A <SIZE-1..0>"7;
-"B <SIZE-1..0>* \B"6;
+"A <SIZE-1..0>"9;
+"B <SIZE-1..0>* \B"8;
 "V"0;
-"Y <SIZE-1..0>"1;
+"Y <SIZE-1..0>"2;
 END.

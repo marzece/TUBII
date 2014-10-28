@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 15 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -645,6 +645,9 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_10h104_i17_b"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_10h116_i32_b"
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):\ttl_lockout*\"
+				( objectStatus "ttl_lockout*" )
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ttl"
@@ -1691,44 +1694,6 @@
 				)
 				( pin "b(0)"
 					( objectStatus "page1_i27.2" )
-				)
-			)
-			( gate "@tubii_lib.gt_delays(sch_1):page1_i19"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "PACK_TYPE" "PLCC"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(0,2950)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H125"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H125_PLCC"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I19" )
-				( pin "a(0)"
-				)
-				( pin "\b*\(0)"
-				)
-				( pin "v"
-				)
-				( pin "y(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i20"
@@ -4614,7 +4579,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "asyncdelays"

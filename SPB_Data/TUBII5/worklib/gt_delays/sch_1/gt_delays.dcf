@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 14 )
+			( logicalViewRevNum 16 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -611,7 +611,8 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):gtrigl"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i16_d"
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i20_d"
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_10ELT24_I20_D"
@@ -622,6 +623,8 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10h125_i9_y"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):dgt_ttl"
+				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgt_ttl") )
+				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "dgt_ttl" )
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i20_q"
@@ -648,6 +651,9 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):\ttl_lockout*\"
 				( objectStatus "ttl_lockout*" )
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgt_ttl"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ttl"
@@ -1694,44 +1700,6 @@
 				)
 				( pin "b(0)"
 					( objectStatus "page1_i27.2" )
-				)
-			)
-			( gate "@tubii_lib.gt_delays(sch_1):page1_i19"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "PACK_TYPE" "PLCC"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(0,2950)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H125"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H125_PLCC"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I19" )
-				( pin "a(0)"
-				)
-				( pin "\b*\(0)"
-				)
-				( pin "v"
-				)
-				( pin "y(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i20"
@@ -4607,7 +4575,7 @@
 	( BaseCopy "asyncdelays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 15 )
+				( logicalViewRevNum 16 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -4638,10 +4606,6 @@
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):le_dgt"
 				( objectStatus "le_dgt" )
-			)
-			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i16_d"
-				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in") )
-				( objectStatus "unnamed_1_10elt24_i16_d" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in"
 				( objectFlag fObjectAlias )
@@ -4708,6 +4672,10 @@
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_ds1023200_i27_q"
 				( objectStatus "unnamed_1_ds1023200_i27_q" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):dgt_ttl"
+				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in") )
+				( objectStatus "dgt_ttl" )
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i9"
 				( attribute "CDS_LIB" "ecl"

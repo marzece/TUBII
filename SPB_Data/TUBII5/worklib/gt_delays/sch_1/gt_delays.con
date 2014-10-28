@@ -8,8 +8,8 @@
   (design "gt_delays"
     (lastIds
       (lastInstanceId 21)
-      (lastNetId 46)
-      (lastInstTermId 126)
+      (lastNetId 48)
+      (lastInstTermId 132)
     )
     (cells
       ("S2" "select_lo_src" "tubii_lib" "sym_1"
@@ -31,6 +31,7 @@
           ("T30" "le_dgt" -1 -1 1)
           ("T67" "gtrigh" -1 -1 1)
           ("T68" "gtrigl" -1 -1 1)
+          ("T160" "dgt_ttl" -1 -1 2)
         )
       )
       ("S6" "rsmd0805" "resistors" "sym_1"
@@ -145,6 +146,11 @@
               ("0" -1 -1 "N28" -1 -1)
             )
           )
+          ("M132" "T160" -1 -1
+            (conn
+              ("0" -1 -1 "N43" -1 -1)
+            )
+          )
         )
       )
       ("I7" "page1_i8" "S6"
@@ -185,27 +191,6 @@
           ("M48" "T40" 0 0
             (conn
               ("0" 0 0 "N9" -1 -1)
-            )
-          )
-        )
-      )
-      ("I19" "page1_i19" "S7"
-        (pins
-          ("M112" "T134" 0 0
-            (conn
-              ("0" 0 0 "N3" -1 -1)
-            )
-          )
-          ("M113" "T135" 0 0
-            (conn
-              ("0" 0 0 "N4" -1 -1)
-            )
-          )
-          ("M114" "T136" -1 -1
-          )
-          ("M115" "T137" 0 0
-            (conn
-              ("0" 0 0 "N43" -1 -1)
             )
           )
         )

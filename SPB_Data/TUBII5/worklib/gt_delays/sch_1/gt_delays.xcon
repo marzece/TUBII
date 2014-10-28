@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-28T15:28:38</modificationTime>
+    <modificationTime>2014-10-28T16:06:43</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="gt_delays" view="sch_1">
       <lastids>
         <instanceid>21</instanceid>
-        <netid>46</netid>
-        <insttermid>126</insttermid>
+        <netid>48</netid>
+        <insttermid>132</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -98,6 +98,11 @@
               <id>T68</id>
               <name>gtrigl</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T160</id>
+              <name>dgt_ttl</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -401,6 +406,13 @@
                 <connection net="N28" />
               </connections>
             </pin>
+            <pin>
+              <id>M132</id>
+              <termid>T160</termid>
+              <connections>
+                <connection net="N43" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -529,60 +541,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I19</id>
-          <cellid>S7</cellid>
-          <name>page1_i19</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M112</id>
-              <termid>T134</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N3" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M113</id>
-              <termid>T135</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M114</id>
-              <termid>T136</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M115</id>
-              <termid>T137</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N43" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I20</id>
           <cellid>S7</cellid>
           <name>page1_i20</name>
@@ -683,7 +641,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="clk">
             <pageScope number="1">
@@ -796,7 +753,6 @@
               <instance ref="i8"></instance>
               <instance ref="i9"></instance>
               <instance ref="i18"></instance>
-              <instance ref="i19"></instance>
               <instance ref="i20"></instance>
               <instance ref="i21"></instance>
             </instances>

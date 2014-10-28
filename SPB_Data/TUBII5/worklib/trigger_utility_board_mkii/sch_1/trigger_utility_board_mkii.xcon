@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-28T15:32:38</modificationTime>
+    <modificationTime>2014-10-28T17:32:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="trigger_utility_board_mkii" view="sch_1">
       <lastids>
         <instanceid>15</instanceid>
-        <netid>282</netid>
-        <insttermid>670</insttermid>
+        <netid>295</netid>
+        <insttermid>761</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -403,6 +403,180 @@
               <direction>input</direction>
               <msb>15</msb>
               <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T891</id>
+              <name>100mhz_clk_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T892</id>
+              <name>async_delay_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T893</id>
+              <name>async_delay_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T894</id>
+              <name>async_pulse_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T895</id>
+              <name>caen_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T896</id>
+              <name>clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T897</id>
+              <name>clr_cnt</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T898</id>
+              <name>cnt_pulse</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T899</id>
+              <name>cntrl_rdy</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T900</id>
+              <name>cntrl_register_chk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T901</id>
+              <name>comp_rdy</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T902</id>
+              <name>data</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T903</id>
+              <name>dgt</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T904</id>
+              <name>fox_200mhz_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T905</id>
+              <name>gtrig</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T906</id>
+              <name>latch_display</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T907</id>
+              <name>load_enable</name>
+              <direction>output</direction>
+              <msb>2</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T908</id>
+              <name>lockout*</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T909</id>
+              <name>rawtrigs_in</name>
+              <direction>input</direction>
+              <msb>3</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T910</id>
+              <name>smellie_delay_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T911</id>
+              <name>smellie_delay_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T912</id>
+              <name>smellie_pulse_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T913</id>
+              <name>spkr</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T914</id>
+              <name>sync</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T915</id>
+              <name>sync24</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T916</id>
+              <name>sync_delay_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T917</id>
+              <name>sync_delay_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T918</id>
+              <name>sync_pulse_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T919</id>
+              <name>tellie_delay_in</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T920</id>
+              <name>tellie_delay_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T921</id>
+              <name>tellie_pulse_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T922</id>
+              <name>tubii_rt_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T923</id>
+              <name>tubiitime_data_rdy</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T924</id>
+              <name>using_bckp</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -1847,6 +2021,248 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="15" pinlsb="0" net="N1" netmsb="0" netlsb="15" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M728</id>
+              <termid>T891</termid>
+              <connections>
+                <connection net="N163" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M729</id>
+              <termid>T892</termid>
+              <connections>
+                <connection net="N147" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M730</id>
+              <termid>T893</termid>
+              <connections>
+                <connection net="N61" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M731</id>
+              <termid>T894</termid>
+              <connections>
+                <connection net="N63" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M732</id>
+              <termid>T895</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M733</id>
+              <termid>T896</termid>
+              <connections>
+                <connection net="N22" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M734</id>
+              <termid>T897</termid>
+              <connections>
+                <connection net="N65" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M735</id>
+              <termid>T898</termid>
+              <connections>
+                <connection net="N69" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M736</id>
+              <termid>T899</termid>
+              <connections>
+                <connection net="N169" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M737</id>
+              <termid>T900</termid>
+              <connections>
+                <connection net="N188" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M738</id>
+              <termid>T901</termid>
+              <connections>
+                <connection net="N47" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M739</id>
+              <termid>T902</termid>
+              <connections>
+                <connection net="N23" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M740</id>
+              <termid>T903</termid>
+              <connections>
+                <connection net="N234" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M741</id>
+              <termid>T904</termid>
+              <connections>
+                <connection net="N166" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M742</id>
+              <termid>T905</termid>
+              <connections>
+                <connection net="N231" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M743</id>
+              <termid>T906</termid>
+              <connections>
+                <connection net="N66" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M744</id>
+              <termid>T907</termid>
+              <msb>2</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="2" pinlsb="0" net="N279" netmsb="2" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M745</id>
+              <termid>T908</termid>
+              <connections>
+                <connection net="N278" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M746</id>
+              <termid>T909</termid>
+              <msb>3</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="3" pinlsb="0" net="N97" netmsb="3" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M747</id>
+              <termid>T910</termid>
+              <connections>
+                <connection net="N152" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M748</id>
+              <termid>T911</termid>
+              <connections>
+                <connection net="N153" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M749</id>
+              <termid>T912</termid>
+              <connections>
+                <connection net="N154" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M750</id>
+              <termid>T913</termid>
+              <connections>
+                <connection net="N73" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M751</id>
+              <termid>T914</termid>
+              <connections>
+                <connection net="N233" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M752</id>
+              <termid>T915</termid>
+              <connections>
+                <connection net="N232" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M753</id>
+              <termid>T916</termid>
+              <connections>
+                <connection net="N155" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M754</id>
+              <termid>T917</termid>
+              <connections>
+                <connection net="N156" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M755</id>
+              <termid>T918</termid>
+              <connections>
+                <connection net="N157" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M756</id>
+              <termid>T919</termid>
+              <connections>
+                <connection net="N158" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M757</id>
+              <termid>T920</termid>
+              <connections>
+                <connection net="N159" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M758</id>
+              <termid>T921</termid>
+              <connections>
+                <connection net="N98" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M759</id>
+              <termid>T922</termid>
+              <connections>
+                <connection net="N250" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M760</id>
+              <termid>T923</termid>
+              <connections>
+                <connection net="N164" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M761</id>
+              <termid>T924</termid>
+              <connections>
+                <connection net="N168" />
               </connections>
             </pin>
           </pins>

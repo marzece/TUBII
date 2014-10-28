@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-22T15:16:27</modificationTime>
+    <modificationTime>2014-10-28T16:06:39</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="asyncdelays" view="sch_1">
       <lastids>
         <instanceid>22</instanceid>
-        <netid>39</netid>
-        <insttermid>101</insttermid>
+        <netid>41</netid>
+        <insttermid>105</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -328,10 +328,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N6</id>
-          <name>unnamed_1_10elt24_i16_d</name>
-        </net>
-        <net>
           <id>N9</id>
           <name>unnamed_1_10elt24_i20_d</name>
         </net>
@@ -386,6 +382,12 @@
         <net>
           <id>N38</id>
           <name>unnamed_1_ds1023200_i27_q</name>
+        </net>
+        <net>
+          <id>N41</id>
+          <name>dgt_ttl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N2</id>
@@ -478,7 +480,7 @@
               <id>M36</id>
               <termid>T40</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -741,7 +743,7 @@
               <id>M66</id>
               <termid>T93</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N41" />
               </connections>
             </pin>
           </pins>
@@ -832,7 +834,7 @@
               <id>M87</id>
               <termid>T112</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N41" />
               </connections>
             </pin>
             <pin>
@@ -961,6 +963,12 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="dgt_ttl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="dgth">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1010,13 +1018,13 @@
               <net ref="clk"></net>
               <net ref="ddgt*"></net>
               <net ref="delay_val"></net>
+              <net ref="dgt_ttl"></net>
               <net ref="dgth"></net>
               <net ref="dgtl"></net>
               <net ref="gnd"></net>
               <net ref="gtrigh"></net>
               <net ref="gtrigl"></net>
               <net ref="le_dgt"></net>
-              <net ref="unnamed_1_10elt24_i16_d"></net>
               <net ref="unnamed_1_10elt24_i20_d"></net>
               <net ref="unnamed_1_10elt24_i20_q"></net>
               <net ref="unnamed_1_10h125_i9_y"></net>

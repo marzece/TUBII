@@ -2,22 +2,22 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"TTL_LOCKOUT*\I";
-2"UN$1$ASYNCDELAYS$I3$DDGT";
-3"DGT_TTL\I";
-4"DGTH\I";
-5"DGTL\I";
-6"LOCKOUT*\I";
-7"LOCKOUT\I";
-8"VTT\G";
-9"VTT\G";
-10"MTCD_LO*\I";
-11"SELECT_LO_SRC\I";
-12"GTRIGL\I";
-13"GTRIGH\I";
-14"LE_DGT\I";
-15"CLK\I";
-16"DATA\I";
+1"DGTL\I";
+2"DGTH\I";
+3"UN$1$ASYNCDELAYS$I3$DDGT";
+4"DATA\I";
+5"CLK\I";
+6"LE_DGT\I";
+7"GTRIGH\I";
+8"GTRIGL\I";
+9"DGT_TTL\I";
+10"TTL_LOCKOUT*\I";
+11"LOCKOUT*\I";
+12"LOCKOUT\I";
+13"VTT\G";
+14"VTT\G";
+15"MTCD_LO*\I";
+16"SELECT_LO_SRC\I";
 %"RSMD0805"
 "1","(1550,1850)","1","resistors","I18";
 ;
@@ -39,36 +39,27 @@ NEEDS_NO_SIZE"TRUE"
 TOL"1%"
 POSTOL"5%"
 PACKTYPE"0805";
-"A<0>"8;
-"B<0>"7;
-%"10H125"
-"1","(0,2950)","0","ecl","I19";
-SECTION"1";
-PACK_TYPE"PLCC"
-CDS_LIB"ecl";
-"A <SIZE-1..0>"4;
-"B <SIZE-1..0>* \B"5;
-"V"0;
-"Y <SIZE-1..0>"3;
+"A<0>"13;
+"B<0>"12;
 %"SELECT_LO_SRC"
 "1","(1100,1950)","0","tubii_lib","I2";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"MTCD_LO* \B"10;
-"SEL"11;
-"DDGT* \B"2;
-"LO"7;
-"LO* \B"6;
+"MTCD_LO* \B"15;
+"SEL"16;
+"DDGT* \B"3;
+"LO"12;
+"LO* \B"11;
 %"10H125"
 "1","(2150,2675)","0","ecl","I20";
 SECTION"1";
 PACK_TYPE"PLCC"
 CDS_LIB"ecl";
-"A <SIZE-1..0>"6;
-"B <SIZE-1..0>* \B"7;
+"A <SIZE-1..0>"11;
+"B <SIZE-1..0>* \B"12;
 "V"0;
-"Y <SIZE-1..0>"1;
+"Y <SIZE-1..0>"10;
 %"RSMD0805"
 "1","(1800,1825)","1","resistors","I21";
 ;
@@ -90,24 +81,25 @@ DIST"FLAT"
 TOL_ON_OFF"ON"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"8;
-"B<0>"6;
+"A<0>"13;
+"B<0>"11;
 %"ASYNCDELAYS"
 "1","(-1850,2075)","0","tubii_lib","I3";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"DGTL"5;
-"DGTH"4;
-"DDGT* \B"2;
-"DELAY_VAL"
-VHDL_MODE"IN"16;
-"CLK"
-VHDL_MODE"IN"15;
+"DGT_TTL"9;
+"GTRIGL"8;
+"GTRIGH"7;
 "LE_DGT"
-VHDL_MODE"IN"14;
-"GTRIGH"13;
-"GTRIGL"12;
+VHDL_MODE"IN"6;
+"CLK"
+VHDL_MODE"IN"5;
+"DELAY_VAL"
+VHDL_MODE"IN"4;
+"DDGT* \B"3;
+"DGTH"2;
+"DGTL"1;
 %"RSMD0805"
 "1","(-325,2300)","1","resistors","I8";
 ;
@@ -129,8 +121,8 @@ POSTOL"5%"
 PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
-"A<0>"9;
-"B<0>"4;
+"A<0>"14;
+"B<0>"2;
 %"RSMD0805"
 "1","(-500,2300)","1","resistors","I9";
 ;
@@ -152,6 +144,6 @@ IC"UNDEF"
 NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE"
 TOL"1%";
-"A<0>"9;
-"B<0>"5;
+"A<0>"14;
+"B<0>"1;
 END.
