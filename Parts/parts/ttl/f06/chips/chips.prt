@@ -1,45 +1,100 @@
 FILE_TYPE=LIBRARY_PARTS;
-TIME=' COMPILATION ON THU JAN 10 22:13:52 1991  ';
 primitive '74F06','74F06_DIP';
   pin
     'A'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
       PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
     '-Y'<0>:
-      OUTPUT_LOAD='(64.0,*)';
-      OUTPUT_TYPE='(OC,AND)';
       PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
   end_pin;
   body
-    POWER_PINS='(VCC:14;GND:7)';
     FAMILY='FAST';
     PART_NAME='74F06';
     BODY_NAME='F06';
     MAX_DELAY='10000';
+    TECH='74F';
     JEDEC_TYPE='DIP14_3';
+    PHYS_DES_PREFIX='U';
     CLASS='IC';
-    TECH='74F';  
+    POWER_PINS='(VCC:14)';
+    POWER_PINS='(GND:7)';
   end_body;
 end_primitive;
+
 primitive '74F06_SOIC';
   pin
     'A'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
       PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
     '-Y'<0>:
-      OUTPUT_LOAD='(64.0,*)';
-      OUTPUT_TYPE='(OC,AND)';
       PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
   end_pin;
   body
-    POWER_PINS='(VCC:14;GND:7)';
     FAMILY='FAST';
     PART_NAME='74F06';
     BODY_NAME='F06';
     MAX_DELAY='10000';
+    TECH='74F';
     JEDEC_TYPE='SOIC14';
+    PHYS_DES_PREFIX='U';
     CLASS='IC';
-    TECH='74F';  
+    POWER_PINS='(VCC:14)';
+    POWER_PINS='(GND:7)';
   end_body;
 end_primitive;
+
+primitive 'F06';
+  pin
+    '-Y0':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y1':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y2':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y3':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y4':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y5':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'A0':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'A1':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'A2':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'A3':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'A4':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.6,0.02)';
+    'A5':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.6,0.02)';
+  end_pin;
+  body
+    PART_NAME='F06';
+    BODY_NAME='F06';
+    JEDEC_TYPE='soic14';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    POWER_PINS='(VCC:14)';
+    POWER_PINS='(GND:7)';
+  end_body;
+end_primitive;
+
 END.
