@@ -2,34 +2,34 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$10E101$I34$A";
-2"UN$1$10H104$I72$A";
-3"BIT8L";
-4"UN$1$10E101$I34$D";
-5"GND\g";
-6"GND\g";
-7"VCC\G";
-8"UN$1$AD7243$I94$SYNC";
-9"DATA\I";
-10"LE\I";
-11"UN$1$AD96685$I98$VP";
-12"UN$1$10H104$I71$B";
-13"ANPULSEIN\I";
-14"UN$1$AD7243$I94$VOUT";
-15"POSNEG\I";
-16"GND\G";
-17"VCC\G";
-18"VCC\G";
-19"VCC\G";
-20"VEE\G";
-21"UN$1$AD96685$I98$VN";
-22"VTT\G";
-23"BIT8H";
-24"VCC15\G";
-25"VCC15M\G";
-26"UN$1$AD7243$I94$VSS";
-27"UN$1$AD7243$I94$VDD";
-28"VTT\G";
+1"GND\g";
+2"GND\g";
+3"POSNEG\I";
+4"BIT8H";
+5"BIT8L";
+6"VCC\G";
+7"UN$1$10E101$I34$A";
+8"UN$1$AD96685$I98$QN";
+9"GND\G";
+10"VCC\G";
+11"VTT\G";
+12"UN$1$AD96685$I98$QP";
+13"UN$1$10E101$I34$D";
+14"UN$1$AD96685$I98$VN";
+15"VCC\G";
+16"UN$1$AD7243$I94$SYNC";
+17"DATA\I";
+18"LE\I";
+19"UN$1$AD96685$I98$VP";
+20"ANPULSEIN\I";
+21"UN$1$AD7243$I94$VOUT";
+22"VCC\G";
+23"VEE\G";
+24"VTT\G";
+25"VCC15\G";
+26"VCC15M\G";
+27"UN$1$AD7243$I94$VSS";
+28"UN$1$AD7243$I94$VDD";
 29"UN$1$AD7243$I94$REFIN";
 30"VTT\G";
 31"GTRIG\I";
@@ -126,9 +126,9 @@ ABBREV"10E131"
 CDS_LMAN_SYM_OUTLINE"-275,200,150,-200"
 CDS_LIB"ecl";
 "Q<SIZE-1..0>* \B"0;
-"D<SIZE-1..0>"4;
+"D<SIZE-1..0>"13;
 "EN"0;
-"Q<SIZE-1..0>"4;
+"Q<SIZE-1..0>"13;
 "R"31;
 "S"0;
 "CLK"33;
@@ -159,7 +159,7 @@ CDS_SEC"1";
 "A<0>"
 $PN"1"43;
 "B<0>"
-$PN"2"4;
+$PN"2"13;
 %"10E101"
 "1","(1275,1825)","0","ecl","I115";
 ;
@@ -181,9 +181,9 @@ ABBREV"10E131"
 CDS_LMAN_SYM_OUTLINE"-275,200,150,-200"
 CDS_LIB"ecl";
 "Q<SIZE-1..0>* \B"0;
-"D<SIZE-1..0>"1;
+"D<SIZE-1..0>"7;
 "EN"0;
-"Q<SIZE-1..0>"1;
+"Q<SIZE-1..0>"7;
 "R"32;
 "S"0;
 "CLK"34;
@@ -236,8 +236,8 @@ POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
-"B<0>"27;
-"A<0>"24;
+"B<0>"28;
+"A<0>"25;
 %"CSMD0805"
 "1","(-3025,3050)","0","capacitors","I119";
 ;
@@ -259,13 +259,13 @@ POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
-"B<0>"26;
-"A<0>"25;
+"B<0>"27;
+"A<0>"26;
 %"RSMD0805"
 "1","(-1325,3900)","1","resistors","I120";
 ;
-$LOCATION"R309"
 VALUE"50"
+$LOCATION"R309"
 CDS_SEC"1"
 $SEC"1"
 CDS_LOCATION"R309"
@@ -286,9 +286,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"23;
+$PN"1"4;
 "B<0>"
-$PN"2"22;
+$PN"2"24;
 %"CSMD0805"
 "1","(-1700,2850)","0","capacitors","I121";
 ;
@@ -310,8 +310,8 @@ POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
-"B<0>"21;
-"A<0>"20;
+"B<0>"14;
+"A<0>"23;
 %"CSMD0805"
 "1","(-1725,3500)","0","capacitors","I122";
 ;
@@ -333,8 +333,8 @@ POSTOL"10%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL"10%";
-"B<0>"11;
-"A<0>"18;
+"B<0>"19;
+"A<0>"22;
 %"TESTPOINT_L"
 "1","(-825,3275)","0","misc","I123";
 ;
@@ -363,8 +363,28 @@ IC"UNDEF"
 NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE"
 POSTOL"5%";
-"A<0>"8;
-"B<0>"7;
+"A<0>"16;
+"B<0>"15;
+%"MC10H104"
+"1","(-850,2275)","0","ecl","I125";
+;
+PACK_TYPE"PLCC"
+POWER_GROUP"VCC=GND"
+CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
+CDS_LIB"ecl";
+"Y"7;
+"B"5;
+"A"8;
+%"MC10H104"
+"1","(-875,4025)","0","ecl","I126";
+;
+PACK_TYPE"PLCC"
+POWER_GROUP"VCC=GND"
+CDS_LIB"ecl"
+CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
+"Y"13;
+"B"12;
+"A"4;
 %"RSMD0805"
 "1","(-1200,2650)","1","resistors","I19";
 ;
@@ -390,9 +410,9 @@ CDS_LOCATION"R310"
 $SEC"1"
 CDS_SEC"1";
 "A<0>"
-$PN"1"28;
+$PN"1"11;
 "B<0>"
-$PN"2"2;
+$PN"2"8;
 %"RSMD0805"
 "1","(-1150,2650)","1","resistors","I20";
 ;
@@ -418,7 +438,7 @@ CDS_LOCATION"R311"
 $SEC"1"
 CDS_SEC"1";
 "A<0>"
-$PN"1"28;
+$PN"1"11;
 "B<0>"
 $PN"2"12;
 %"10E101"
@@ -432,13 +452,13 @@ $SEC"1"
 TITLE"10E101"
 ABBREV"10E101";
 "A <SIZE-1..0>"
-$PN"25"1;
+$PN"25"7;
 "B <SIZE-1..0>"
 $PN"24"0;
 "C <SIZE-1..0>"
 $PN"23"0;
 "D <SIZE-1..0>"
-$PN"22"4;
+$PN"22"13;
 "Y <SIZE-1..0>"
 $PN"19"42;
 "Y <SIZE-1..0>* \B"
@@ -486,7 +506,7 @@ CDS_SEC"1";
 "A<0>"
 $PN"1"41;
 "B<0>"
-$PN"2"1;
+$PN"2"7;
 %"RSMD0805"
 "1","(1475,3200)","1","resistors","I50";
 ;
@@ -518,47 +538,18 @@ $PN"2"33;
 %"10H124"
 "1","(-2000,3750)","0","ecl","I69";
 ;
-$LOCATION"U117"
-CDS_LIB"ecl"
-CDS_LOCATION"U117"
-$SEC"3"
+CDS_LMAN_SYM_OUTLINE"-100,100,50,-100"
 CDS_SEC"3"
-SECTION"1"
-CDS_LMAN_SYM_OUTLINE"-100,100,50,-100";
-"Y* \B"3;
-"Q"23;
-"D"
-$PN"5"15;
-"C"
-$PN"6"19;
-%"10H104"
-"1","(-900,4025)","0","ecl","I71";
-;
-$LOCATION"U106"
-CDS_LIB"ecl"
-CDS_LOCATION"U106"
 $SEC"3"
-CDS_SEC"3";
-"A <SIZE-1..0>"
-$PN"6"23;
-"Y <SIZE-1..0>"
-$PN"3"4;
-"B <SIZE-1..0>"
-$PN"7"12;
-%"10H104"
-"1","(-900,2275)","0","ecl","I72";
-;
-$LOCATION"U106"
+CDS_LOCATION"U117"
 CDS_LIB"ecl"
-CDS_LOCATION"U106"
-$SEC"4"
-CDS_SEC"4";
-"A <SIZE-1..0>"
-$PN"4"2;
-"Y <SIZE-1..0>"
-$PN"2"1;
-"B <SIZE-1..0>"
+$LOCATION"U117";
+"D"
 $PN"5"3;
+"Y"4;
+"Y* \B"5;
+"COMMON"
+$PN"6"6;
 %"RSMD0805"
 "1","(-1400,3900)","1","resistors","I73";
 ;
@@ -584,9 +575,9 @@ CDS_LOCATION"R308"
 $SEC"1"
 CDS_SEC"1";
 "A<0>"
-$PN"1"23;
+$PN"1"4;
 "B<0>"
-$PN"2"22;
+$PN"2"24;
 %"RSMD0805"
 "1","(650,500)","1","resistors","I82";
 ;
@@ -699,21 +690,21 @@ CDS_SEC"1";
 "B<0>"
 $PN"2"55;
 "A<0>"
-$PN"1"5;
+$PN"1"1;
 %"GND"
 "1","(0,875)","0","misc","I88";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"5;
+"G\NAC"1;
 %"GND"
 "1","(-500,650)","0","misc","I89";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"6;
+"G\NAC"2;
 %"CSMD0805"
 "1","(-775,700)","2","capacitors","I90";
 ;
@@ -742,7 +733,7 @@ CDS_SEC"1";
 "B<0>"
 $PN"2"56;
 "A<0>"
-$PN"1"6;
+$PN"1"2;
 %"RSMD0805"
 "1","(-1425,1525)","1","resistors","I92";
 ;
@@ -812,13 +803,13 @@ CDS_LIB"misc";
 "REFOUT"29;
 "DGND"51;
 "ROFS"29;
-"SDIN"9;
+"SDIN"17;
 "SCLK"48;
-"SYNC* \B"8;
-"VSS"26;
-"VDD"27;
+"SYNC* \B"16;
+"VSS"27;
+"VDD"28;
 "DCEN"47;
-"VOUT"14;
+"VOUT"21;
 "SDO"0;
 "LDAC* \B"46;
 "CLR* \B"50;
@@ -827,8 +818,8 @@ CDS_LIB"misc";
 "1","(-3800,2775)","0","ttl","I95";
 MAX_DELAY"10000";
 CDS_LIB"ttl";
-"A <SIZE-1..0>"10;
-"Y <SIZE-1..0>* \B"8;
+"A <SIZE-1..0>"18;
+"Y <SIZE-1..0>* \B"16;
 %"AD96685"
 "1","(-1500,3175)","0","misc","I98";
 ;
@@ -838,13 +829,13 @@ ABBREV"AD96685"
 TITLE"AD96685"
 TOL_ON_OFF"ON"
 CDS_LMAN_SYM_OUTLINE"-150,175,150,-175";
-"GRND2"16;
-"VN"21;
-"VP"11;
-"GRND1"16;
+"GRND2"9;
+"VN"14;
+"VP"19;
+"GRND1"9;
 "QP"12;
-"QN \B"2;
-"INN"14;
-"LTCH"17;
-"INP"13;
+"QN \B"8;
+"INN"21;
+"LTCH"10;
+"INP"20;
 END.

@@ -6,7 +6,7 @@
     Packager-XL 16.6-p001 (v16-6-112A) WIN32 9/10/2012 12:00:00 IST
     (C) Copyright 1994, Cadence Design Systems, Inc.
 
-    Run on Wed Oct 29 11:22:41 2014
+    Run on Wed Oct 29 18:02:47 2014
 
 
  **********************************************
@@ -129,39 +129,249 @@ INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
 pacitors/csmd0805/part_table/part.ptf.
 INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/mi~
 sc/led_1206/part_table/part.ptf.
- #1   ERROR(SPCODD-114): Duplicate physical part name MMBTH81 found on line 2 ~
-in C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/transistors/mmbth81/chips~
-/chips.prt. Edit the chips.prt file to remove the duplicate entry from the pri~
-mitive name
- Packaging can not complete because the file C:/Users/QGPWindowsVB/Downloads/o~
-rebi/Parts/parts/transistors/mmbth81/chips/chips.prt could not be loaded. Ther~
-e might be syntax errors in this file. Ensure that the syntax is correct befor~
-e proceeding.
 INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
 pacitors/csmd0603/part_table/part.ptf.
- #2   ERROR(SPCODD-114): Duplicate physical part name 74F06 found on line 2 in~
- C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ttl/74f06/chips/chips.prt. ~
-Edit the chips.prt file to remove the duplicate entry from the primitive name
- Packaging can not complete because the file C:/Users/QGPWindowsVB/Downloads/o~
-rebi/Parts/parts/ttl/74f06/chips/chips.prt could not be loaded. There might be~
- syntax errors in this file. Ensure that the syntax is correct before proceedi~
-ng.
 INFO(SPCODD-181): Loading C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ca~
 pacitors/tant0805/part_table/part.ptf.
- #3   ERROR(SPCODD-114): Duplicate physical part name 74F06 found on line 2 in~
- C:/Users/QGPWindowsVB/Downloads/orebi/Parts/parts/ttl/74f06/chips/chips.prt. ~
-Edit the chips.prt file to remove the duplicate entry from the primitive name
- Packaging can not complete because the file C:/Users/QGPWindowsVB/Downloads/o~
-rebi/Parts/parts/ttl/74f06/chips/chips.prt could not be loaded. There might be~
- syntax errors in this file. Ensure that the syntax is correct before proceedi~
-ng.
-INFO(SPCOPK-1441): 3 errors detected
+Conflicts found in properties. Please refer to pstprop.dat file
+
+
+ *************************
+ *  Loading State Files  *
+ *************************
+
+Loading ./worklib/tubii/packaged/pxl.state. 
+
+ *****************************************
+ *  End loading State Files  (00:00:00)  *
+ *****************************************
+
+
+ ****************************************
+ *  Starting to assign physical parts.  *
+ ****************************************
+
+
+ ***********************************************
+ *  End assigning physical parts.  (00:00:00)  *
+ ***********************************************
+
+
+ ***************
+ *  Packaging  *
+ ***************
+
+ #1   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I151@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i151@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #2   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I174@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i174@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #3   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I175@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i175@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #4   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I176@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i176@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #5   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I177@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i177@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #6   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I178@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i178@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #7   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I179@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i179@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #8   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I180@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i180@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #9   ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124_PLCC'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I181@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i181@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #10  ERROR(SPCODD-5): Pin 'C' on the following primitive instance cannot be p~
+ackaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I2@TUBII_LIB.PORTS(S~
+CH_1):PAGE1_I154@TUBII_LIB.GENERIC_UTILITIES_PORTS(SCH_1):PAGE1_I13@ECL.10H124~
+(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i2@tubii_lib.ports(sch_1)~
+:page1_i154@tubii_lib.generic_utilities_ports(sch_1):page1_i13@ecl.\10h124\(ch~
+ips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #11  ERROR(SPCODD-5): Pin 'C' on the following primitive instance cannot be p~
+ackaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I2@TUBII_LIB.PORTS(S~
+CH_1):PAGE1_I154@TUBII_LIB.GENERIC_UTILITIES_PORTS(SCH_1):PAGE1_I26@ECL.10H124~
+(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i2@tubii_lib.ports(sch_1)~
+:page1_i154@tubii_lib.generic_utilities_ports(sch_1):page1_i26@ecl.\10h124\(ch~
+ips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #12  ERROR(SPCODD-5): Pin 'C' on the following primitive instance cannot be p~
+ackaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I2@TUBII_LIB.PORTS(S~
+CH_1):PAGE1_I154@TUBII_LIB.GENERIC_UTILITIES_PORTS(SCH_1):PAGE1_I27@ECL.10H124~
+(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i2@tubii_lib.ports(sch_1)~
+:page1_i154@tubii_lib.generic_utilities_ports(sch_1):page1_i27@ecl.\10h124\(ch~
+ips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #13  ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I13@TUBII_LIB.COMPARATORS(SCH_1):PAGE1_I1@TUB~
+II_LIB.FASTCOMP(SCH_1):PAGE1_I21@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i13@tubii_lib.comparators(sch_1):page1_i1@tubii_li~
+b.fastcomp(sch_1):page1_i21@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #14  ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I13@TUBII_LIB.COMPARATORS(SCH_1):PAGE1_I2@TUB~
+II_LIB.TUNCOMP(SCH_1):PAGE1_I69@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i13@tubii_lib.comparators(sch_1):page1_i2@tubii_li~
+b.tuncomp(sch_1):page1_i69@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #15  ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I57@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i57@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #16  ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I124@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i124@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+ #17  ERROR(SPCODD-5): Pin 'Y*<0>' on the following primitive instance cannot ~
+be packaged in package of type '10H124'.
+        Primitive Instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I2@TUBII_LIB.PORTS(S~
+CH_1):PAGE1_I151@TUBII_LIB.TRANSLATORS(SCH_1):PAGE1_I7@TUBII_LIB.TTL-ECL(SCH_1~
+):PAGE1_I5@ECL.10H124(CHIPS)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i2@tubii_lib.ports(sch_1)~
+:page1_i151@tubii_lib.translators(sch_1):page1_i7@tubii_lib.\ttl-ecl\(sch_1):p~
+age1_i5@ecl.\10h124\(chips)
+        No description of the logical pin being used by a primitive instance c~
+ould be found in the chips.prt file.
+        Ensure that the chips.prt file for the part contains a description of ~
+the pin.
+INFO(SPCOPK-1441): 17 errors detected
 INFO(SPCOPK-1444): No warnings detected
 INFO(SPCOPK-1448): Use Tools->Markers->Packager in ConceptHDL to highlight ins~
 tances for the errors/warnings reported.
-    Start time   11:22:37
-    End time     11:24:55
-    Elapsed time  0:02:18
+    Start time   18:02:46
+    End time     18:03:41
+    Elapsed time  0:00:55
 
  **************************************************
  *  FATAL ERROR PackagerXL exiting with status 2  *

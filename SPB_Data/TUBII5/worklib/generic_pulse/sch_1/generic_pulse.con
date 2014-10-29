@@ -8,16 +8,16 @@
   (design "generic_pulse"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 23)
-      (lastInstTermId 56)
+      (lastNetId 24)
+      (lastInstTermId 60)
     )
     (cells
       ("S3" "10h124" "ecl" "sym_1"
         (terms
-          ("T6" "c" -1 -1 1)
           ("T7" "d" -1 -1 1)
-          ("T8" "q" -1 -1 2)
           ("T9" "y*" -1 -1 2)
+          ("T91" "common" -1 -1 1)
+          ("T92" "y" -1 -1 2)
         )
       )
       ("S5" "f06" "ttl" "sym_1"
@@ -77,22 +77,22 @@
     (instances
       ("I10" "page1_i13" "S3"
         (pins
-          ("M26" "T6" -1 -1
-            (conn
-              ("0" -1 -1 "N7" -1 -1)
-            )
-          )
           ("M27" "T7" -1 -1
             (conn
               ("0" -1 -1 "N15" -1 -1)
             )
           )
-          ("M28" "T8" -1 -1
+          ("M29" "T9" -1 -1
+          )
+          ("M59" "T91" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+          ("M60" "T92" -1 -1
             (conn
               ("0" -1 -1 "N18" -1 -1)
             )
-          )
-          ("M29" "T9" -1 -1
           )
         )
       )

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 21 )
+			( logicalViewRevNum 26 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,9 +465,6 @@
 			( signal "@tubii_lib.fastcomp(sch_1):anpulsein"
 				( objectStatus "anpulsein" )
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h104_i87_b"
-				( objectStatus "unnamed_1_10h104_i87_b" )
-			)
 			( signal "@tubii_lib.fastcomp(sch_1):dgth"
 				( objectStatus "dgth" )
 			)
@@ -513,9 +510,6 @@
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i9_b"
 				( objectStatus "unnamed_1_10e116_i9_b" )
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h104_i39_a"
-				( objectStatus "unnamed_1_10h104_i39_a" )
-			)
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h125_i23_y"
 				( alias ( signalRef "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "unnamed_1_10h125_i23_y" )
@@ -541,12 +535,6 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):posneg"
 				( objectStatus "posneg" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h104_i39_b"
-				( objectStatus "unnamed_1_10h104_i39_b" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h104_i87_a"
-				( objectStatus "unnamed_1_10h104_i87_a" )
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_adcmp566_i37_in"
 				( objectStatus "unnamed_1_adcmp566_i37_in" )
@@ -580,6 +568,18 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_csmd0805_i106_b"
 				( objectStatus "unnamed_1_csmd0805_i106_b" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h124_i21_y"
+				( objectStatus "unnamed_1_10h124_i21_y" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_adcmp566_i37_q"
+				( objectStatus "unnamed_1_adcmp566_i37_q" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_adcmp566_i37_q_1"
+				( objectStatus "unnamed_1_adcmp566_i37_q_1" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h124_i21_y_1"
+				( objectStatus "unnamed_1_10h124_i21_y_1" )
 			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i9"
 				( attribute "ABBREV" "10E116"
@@ -673,7 +673,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-2000,3725)"
+				( attribute "XY" "(-1975,3725)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "10H124"
@@ -685,22 +685,19 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
 					( Origin gPackager )
 				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
 				( objectStatus "PAGE1_I21" )
 				( pin "\y*\(0)"
 					( attribute "PN" "3"
 						( Origin gPackager )
 					)
 				)
-				( pin "c"
-					( attribute "PN" "6"
+				( pin "d"
+					( attribute "PN" "7"
 						( Origin gPackager )
 					)
 				)
-				( pin "d"
-					( attribute "PN" "7"
+				( pin "common"
+					( attribute "PN" "6"
 						( Origin gPackager )
 					)
 				)
@@ -1560,57 +1557,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.fastcomp(sch_1):page1_i39"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U140"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "3"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U140"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "3"
-					( Origin gPackager )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-900,2250)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74LS08"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74LS08"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I39" )
-				( pin "a(0)"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i40"
 				( attribute "CDS_LIB" "resistors"
 					( Origin gPackager )
@@ -2283,36 +2229,6 @@
 				( pin "r"
 				)
 				( pin "s"
-				)
-			)
-			( gate "@tubii_lib.fastcomp(sch_1):page1_i87"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-900,4000)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74LS08"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74LS08"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I87" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
-				( pin "y(0)"
 				)
 			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i93"
@@ -3461,6 +3377,83 @@
 				)
 				( objectStatus "PAGE1_I107" )
 				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.fastcomp(sch_1):page1_i108"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-875,4000)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I108" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+				( pin "y"
+				)
+			)
+			( gate "@tubii_lib.fastcomp(sch_1):page1_i109"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-850,2250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I109" )
+				( pin "a"
+				)
+				( pin "b"
+				)
+				( pin "y"
+				)
+			)
+			( pin "@tubii_lib.fastcomp(sch_1):page1_i21:c"
+				( attribute "PN" "6"
+					( Origin gPackager )
 				)
 			)
 			( pin "@tubii_lib.fastcomp(sch_1):page1_i21:a(0)"

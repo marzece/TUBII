@@ -1,31 +1,28 @@
 FILE_TYPE=LIBRARY_PARTS;
 primitive '10H124','10H124_PLCC';
   pin
-    '-Y':
-      PIN_NUMBER='(17,15,4,5)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'Q':
-      PIN_NUMBER='(18,19,2,3)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'C':
-      PIN_NUMBER='(8,8,8,8)';
-      INPUT_LOAD='(-0.001,0.145)';
     'D':
-      PIN_NUMBER='(14,13,9,7)';
-      INPUT_LOAD='(-0.001,0.145)';
+      PIN_NUMBER='(7,9,13,14)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'Y':
+      PIN_NUMBER='(3,2,19,18)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Y':
+      PIN_NUMBER='(4,5,15,17)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'COMMON':
+      PIN_NUMBER='(8,8,8,8)';
+      INPUT_LOAD='(-0.01,0.01)';
   end_pin;
   body
     PART_NAME='10H124';
     BODY_NAME='10H124';
-    FAMILY='ECL10KH';
-    SECTION='1';
-    TECH='10KH';
-    JEDEC_TYPE='PLCC20';
+    JEDEC_TYPE='plcc20';
     PHYS_DES_PREFIX='U';
     CLASS='IC';
-    POWER_PINS='(VCC:12)';
     POWER_PINS='(VEE:10)';
     POWER_PINS='(GND:20)';
+    POWER_PINS='(VCC:12)';
     NC_PINS='(1,6,11,16)';
   end_body;
 end_primitive;

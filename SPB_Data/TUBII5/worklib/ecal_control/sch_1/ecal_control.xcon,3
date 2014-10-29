@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T13:48:15</modificationTime>
+    <modificationTime>2014-10-29T15:59:28</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -52,10 +52,6 @@
           <name>10h104</name>
           <view>sym_1</view>
           <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
           </parameters>
           <terms>
             <term>
@@ -299,6 +295,10 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N19</override>
+            </power>
           </powers>
           <pins>
             <pin>
@@ -308,6 +308,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N12" />
+                <connection net="N12" />
               </connections>
             </pin>
             <pin>
@@ -317,6 +318,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N16" />
+                <connection net="N16" />
               </connections>
             </pin>
             <pin>
@@ -326,6 +328,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection net="N9" />
               </connections>
             </pin>
           </pins>
@@ -347,6 +350,10 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N19</override>
+            </power>
           </powers>
           <pins>
             <pin>
@@ -356,6 +363,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N13" />
+                <connection net="N13" />
               </connections>
             </pin>
             <pin>
@@ -365,6 +373,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N17" />
+                <connection net="N17" />
               </connections>
             </pin>
             <pin>
@@ -374,6 +383,7 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection net="N10" />
               </connections>
             </pin>
           </pins>
@@ -563,45 +573,6 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N9" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I12</id>
-          <cellid>S6</cellid>
-          <name>page1_i14</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M27</id>
-              <termid>T29</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N15" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M28</id>
-              <termid>T30</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N16" />
               </connections>
             </pin>
           </pins>
@@ -842,7 +813,6 @@
               <instance ref="i11"></instance>
               <instance ref="i12"></instance>
               <instance ref="i13"></instance>
-              <instance ref="i14"></instance>
               <instance ref="i15"></instance>
               <instance ref="i16"></instance>
               <instance ref="i17"></instance>

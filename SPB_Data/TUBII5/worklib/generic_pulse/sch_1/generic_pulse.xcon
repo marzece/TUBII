@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-22T15:16:35</modificationTime>
+    <modificationTime>2014-10-29T17:54:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="generic_pulse" view="sch_1">
       <lastids>
         <instanceid>15</instanceid>
-        <netid>23</netid>
-        <insttermid>56</insttermid>
+        <netid>24</netid>
+        <insttermid>60</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -25,23 +25,23 @@
           </parameters>
           <terms>
             <term>
-              <id>T6</id>
-              <name>c</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T7</id>
               <name>d</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T8</id>
-              <name>q</name>
+              <id>T9</id>
+              <name>y*</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T9</id>
-              <name>y*</name>
+              <id>T91</id>
+              <name>common</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T92</id>
+              <name>y</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -273,13 +273,6 @@
           </powers>
           <pins>
             <pin>
-              <id>M26</id>
-              <termid>T6</termid>
-              <connections>
-                <connection net="N7" />
-              </connections>
-            </pin>
-            <pin>
               <id>M27</id>
               <termid>T7</termid>
               <connections>
@@ -287,16 +280,23 @@
               </connections>
             </pin>
             <pin>
-              <id>M28</id>
-              <termid>T8</termid>
-              <connections>
-                <connection net="N18" />
-              </connections>
-            </pin>
-            <pin>
               <id>M29</id>
               <termid>T9</termid>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M59</id>
+              <termid>T91</termid>
+              <connections>
+                <connection net="N7" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M60</id>
+              <termid>T92</termid>
+              <connections>
+                <connection net="N18" />
               </connections>
             </pin>
           </pins>

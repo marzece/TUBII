@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 6 )
+			( logicalViewRevNum 7 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -466,6 +466,9 @@
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "delay_in" )
 			)
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_a"
 				( objectStatus "unnamed_1_10e116_i9_a" )
 			)
@@ -478,14 +481,8 @@
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_y_1"
 				( objectStatus "unnamed_1_10e116_i9_y_1" )
 			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i1_q"
-				( objectStatus "unnamed_1_10h124_i1_q" )
-			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i1_y"
 				( objectStatus "unnamed_1_10h124_i1_y" )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i2_q"
-				( objectStatus "unnamed_1_10h124_i2_q" )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i2_y"
 				( objectStatus "unnamed_1_10h124_i2_y" )
@@ -494,6 +491,12 @@
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):vcc") )
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):vcc") )
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):vcc"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):vcc"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):vtt"
 				( objectStatus "vtt" )
@@ -508,6 +511,9 @@
 				)
 				( objectStatus "pulse_out" )
 			)
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):pulse_in"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.ellie_talk(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):gnd") )
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):gnd") )
@@ -516,10 +522,7 @@
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):pulse_in"
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
@@ -528,20 +531,17 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
 			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):vcc"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):pulse_in"
-				( objectFlag fObjectAlias )
-			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i1_y_1"
+				( objectStatus "unnamed_1_10h124_i1_y_1" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h124_i2_y_1"
+				( objectStatus "unnamed_1_10h124_i2_y_1" )
 			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"
@@ -556,13 +556,10 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(3750,3600)"
+				( attribute "XY" "(3700,3600)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "10H124"
@@ -572,11 +569,7 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I1" )
-				( pin "c"
-				)
 				( pin "d"
-				)
-				( pin "q"
 				)
 				( pin "\y*\"
 				)
@@ -594,13 +587,10 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(3775,3075)"
+				( attribute "XY" "(3750,3075)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "10H124"
@@ -610,11 +600,7 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I2" )
-				( pin "c"
-				)
 				( pin "d"
-				)
-				( pin "q"
 				)
 				( pin "\y*\"
 				)
@@ -2444,6 +2430,14 @@
 					( objectStatus "page1_i7.1" )
 				)
 			)
+			( pin "@tubii_lib.ellie_talk(sch_1):page1_i1:c"
+			)
+			( pin "@tubii_lib.ellie_talk(sch_1):page1_i1:q"
+			)
+			( pin "@tubii_lib.ellie_talk(sch_1):page1_i2:c"
+			)
+			( pin "@tubii_lib.ellie_talk(sch_1):page1_i2:q"
+			)
 			( pin "@tubii_lib.ellie_talk(sch_1):page1_i22:pulse_in"
 			)
 			( pin "@tubii_lib.ellie_talk(sch_1):page1_i23:pulse_in"
@@ -2505,7 +2499,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "led_pulse"
