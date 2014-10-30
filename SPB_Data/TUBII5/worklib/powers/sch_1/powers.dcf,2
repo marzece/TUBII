@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 13 )
+			( logicalViewRevNum 14 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -487,6 +487,9 @@
 				( objectFlag fObjectAlias )
 				( objectStatus "power<3>" )
 			)
+			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):gnd"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.powers(sch_1):page1_power(2)"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_power<2>" )
@@ -562,6 +565,9 @@
 				( alias ( signalRef "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):vcc15m") )
 				( objectStatus "vcc15m" )
 			)
+			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):vcc15m"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.powers(sch_1):vcc"
 				( objectStatus "vcc" )
 			)
@@ -618,12 +624,6 @@
 				( objectStatus "power<5>" )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):vcc15"
-			)
-			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):gnd"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):vcc15m"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.powers(sch_1):page1_i78@tubii_lib.vrefs(sch_1):unnamed_1_csmd0805_i3_a"
 			)
@@ -4395,6 +4395,64 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_lib.powers(sch_1):page1_i79"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-925,2625)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I79" )
+				( pin "a"
+				)
+			)
+			( gate "@tubii_lib.powers(sch_1):page1_i81"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-725,2175)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I81" )
+				( pin "a"
+				)
+			)
 			( bus "@tubii_lib.powers(sch_1):power"
 				( memberType ( signal ) )
 				( alias ( busRef "@tubii_lib.powers(sch_1):page1_power") )
@@ -4454,7 +4512,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "vrefs"

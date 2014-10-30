@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-30T10:48:02</modificationTime>
+    <modificationTime>2014-10-30T11:37:54</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="fastcomp" view="sch_1">
       <lastids>
-        <instanceid>97</instanceid>
+        <instanceid>100</instanceid>
         <netid>109</netid>
-        <insttermid>385</insttermid>
+        <insttermid>392</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -292,35 +292,6 @@
               <id>T98</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S23</id>
-          <library>resistors</library>
-          <name>pot</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T188</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>inout</direction>
-            </term>
-            <term>
-              <id>T189</id>
-              <name>b&lt;SIZE-1..0&gt;</name>
-              <direction>inout</direction>
-            </term>
-            <term>
-              <id>T220</id>
-              <name>c</name>
-              <direction>inout</direction>
             </term>
           </terms>
         </cell>
@@ -1427,52 +1398,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I80</id>
-          <cellid>S23</cellid>
-          <name>page1_i93</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M292</id>
-              <termid>T188</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N102" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M293</id>
-              <termid>T189</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N101" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M354</id>
-              <termid>T220</termid>
-              <connections>
-                <connection net="N94" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I81</id>
           <cellid>S6</cellid>
           <name>page1_i94</name>
@@ -2182,6 +2107,90 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I98</id>
+          <cellid>S6</cellid>
+          <name>page1_i111</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M388</id>
+              <termid>T28</termid>
+              <connections>
+                <connection net="N102" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I99</id>
+          <cellid>S6</cellid>
+          <name>page1_i112</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M389</id>
+              <termid>T28</termid>
+              <connections>
+                <connection net="N94" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I100</id>
+          <cellid>S6</cellid>
+          <name>page1_i113</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M390</id>
+              <termid>T28</termid>
+              <connections>
+                <connection net="N101" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2315,7 +2324,6 @@
               <instance ref="i52"></instance>
               <instance ref="i53"></instance>
               <instance ref="i80"></instance>
-              <instance ref="i93"></instance>
               <instance ref="i94"></instance>
               <instance ref="i95"></instance>
               <instance ref="i96"></instance>
@@ -2331,6 +2339,9 @@
               <instance ref="i108"></instance>
               <instance ref="i109"></instance>
               <instance ref="i110"></instance>
+              <instance ref="i111"></instance>
+              <instance ref="i112"></instance>
+              <instance ref="i113"></instance>
             </instances>
           </page>
         </pages>

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-30T10:29:37</modificationTime>
+    <modificationTime>2014-10-30T17:07:51</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -210,10 +210,6 @@
           <name>unnamed_1_mc10h104_i21_a</name>
         </net>
         <net>
-          <id>N27</id>
-          <name>page1_vcc</name>
-        </net>
-        <net>
           <id>N4</id>
           <name>vcc</name>
           <scope>global</scope>
@@ -231,7 +227,6 @@
       </nets>
       <aliases>
         <alias net1="N20" lsb1="-1" msb1="-1" net2="N19" lsb2="-1" msb2="-1" />
-        <alias net1="N27" lsb1="-1" msb1="-1" net2="N4" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -690,24 +685,28 @@
               <id>M45</id>
               <termid>T66</termid>
               <connections>
+                <connection net="N4" />
               </connections>
             </pin>
             <pin>
               <id>M46</id>
               <termid>T67</termid>
               <connections>
+                <connection net="N1" />
               </connections>
             </pin>
             <pin>
               <id>M47</id>
               <termid>T68</termid>
               <connections>
+                <connection net="N25" />
               </connections>
             </pin>
             <pin>
               <id>M48</id>
               <termid>T69</termid>
               <connections>
+                <connection net="N26" />
               </connections>
             </pin>
           </pins>

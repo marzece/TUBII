@@ -1,62 +1,31 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 02-Dec-2011 AT 10:07:01 }
-primitive '100E101';
-  pin
-    'Y'<0>:
-      OUTPUT_LOAD='(-7.6,-22.4)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(19,17,14,12)';
-    'D'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(22,26,3,7)';
-      PIN_GROUP='1';
-    'C'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(23,27,4,8)';
-      PIN_GROUP='1';
-    'B'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(24,28,5,9)';
-      PIN_GROUP='1';
-    'A'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(25,2,6,10)';
-      PIN_GROUP='1';
-    'Y*'<0>:
-      OUTPUT_LOAD='(-7.6,-22.4)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(20,18,15,13)';
-  end_pin;
-  body
-      FAMILY='ECL100E';
-      PART_NAME='100E101';
-      BODY_NAME='100E101';
-      POWER_PINS='(GND1:16;GND2:11,21;VEE:1)';
-      JEDEC_TYPE='PLCC28';
-      CLASS='IC';
-      TECH='100E';
-  end_body;
-end_primitive;
+{ Packager-XL run on 30-Oct-2014 AT 11:33:13 }
 primitive '100EL05';
   pin
     'IN1*':
       PIN_NUMBER='(2)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN1':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'OUT':
       PIN_NUMBER='(7)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'OUT*':
       PIN_NUMBER='(6)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'IN2*':
       PIN_NUMBER='(4)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN2':
       PIN_NUMBER='(3)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
   end_pin;
   body
       PART_NAME='100EL05';
@@ -69,41 +38,24 @@ primitive '100EL05';
       POWER_PINS='(GND:8)';
   end_body;
 end_primitive;
-primitive '100EL34/';
+primitive '100EL34';
   pin
-    'OUT2':
-      PIN_NUMBER='(1)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'OUT2*':
-      PIN_NUMBER='(2)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'OUT4':
-      PIN_NUMBER='(4)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'OUT4*':
-      PIN_NUMBER='(5)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'OUT8':
-      PIN_NUMBER='(7)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'OUT8*':
-      PIN_NUMBER='(8)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'VBB':
-      PIN_NUMBER='(11)';
-      INPUT_LOAD='(-0.01,0.01)';
     'CLK':
       PIN_NUMBER='(13)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'CLK*':
       PIN_NUMBER='(12)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'EN*':
       PIN_NUMBER='(15)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'MR':
       PIN_NUMBER='(10)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'NC':
       PIN_NUMBER='(14)';
       PINUSE='NC';
@@ -112,15 +64,46 @@ primitive '100EL34/';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+    'VBB':
+      PIN_NUMBER='(11)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT2':
+      PIN_NUMBER='(1)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT4':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT8':
+      PIN_NUMBER='(7)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT2*':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT4*':
+      PIN_NUMBER='(5)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT8*':
+      PIN_NUMBER='(8)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
   end_pin;
   body
-      PART_NAME='100EL34/';
-      BODY_NAME='100EL34/';
+      PART_NAME='100EL34';
+      BODY_NAME='100EL34';
       JEDEC_TYPE='SOIC16';
-      PHYS_DES_PREFIX='U';
+      PHYS_DES_PREFIX='D';
       CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(GND:3,6,16)';
+      POWER_PINS='(VCC:16,3,6)';
       POWER_PINS='(VEE:9)';
   end_body;
 end_primitive;
@@ -129,77 +112,99 @@ primitive '10E016';
     'TCLD':
       PIN_NUMBER='(28)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'TC*':
       PIN_NUMBER='(19)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OUT';
     'Q'<7>:
       PIN_NUMBER='(18)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<6>:
       PIN_NUMBER='(17)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<5>:
       PIN_NUMBER='(15)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<4>:
       PIN_NUMBER='(13)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<3>:
       PIN_NUMBER='(12)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<2>:
       PIN_NUMBER='(11)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<1>:
       PIN_NUMBER='(10)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'Q'<0>:
       PIN_NUMBER='(9)';
       OUTPUT_TYPE='(OE,OR)';
       OUTPUT_LOAD='(-7.6,-22.4)';
+      PINUSE='OCL';
     'PE*':
       PIN_NUMBER='(25)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<7>:
       PIN_NUMBER='(23)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<6>:
       PIN_NUMBER='(22)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<5>:
       PIN_NUMBER='(21)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<4>:
       PIN_NUMBER='(7)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<3>:
       PIN_NUMBER='(6)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<2>:
       PIN_NUMBER='(5)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<1>:
       PIN_NUMBER='(4)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'P'<0>:
       PIN_NUMBER='(3)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'MR':
       PIN_NUMBER='(26)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'CLK':
       PIN_NUMBER='(27)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
     'CE*':
       PIN_NUMBER='(24)';
       INPUT_LOAD='(0.0005,0.15)';
+      PINUSE='IN';
   end_pin;
   body
       PART_NAME='10E016';
@@ -220,26 +225,74 @@ primitive '10E101';
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(19,17,14,12)';
+      PINUSE='OCL';
     'D'<0>:
       INPUT_LOAD='(0.0005,0.15)';
       PIN_NUMBER='(22,26,3,7)';
       PIN_GROUP='1';
+      PINUSE='IN';
     'C'<0>:
       INPUT_LOAD='(0.0005,0.15)';
       PIN_NUMBER='(23,27,4,8)';
       PIN_GROUP='1';
+      PINUSE='IN';
     'B'<0>:
       INPUT_LOAD='(0.0005,0.15)';
       PIN_NUMBER='(24,28,5,9)';
       PIN_GROUP='1';
+      PINUSE='IN';
     'A'<0>:
       INPUT_LOAD='(0.0005,0.15)';
       PIN_NUMBER='(25,2,6,10)';
       PIN_GROUP='1';
+      PINUSE='IN';
     'Y*'<0>:
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(20,18,15,13)';
+      PINUSE='OCL';
+  end_pin;
+  body
+      FAMILY='ECL10E';
+      PART_NAME='10E101';
+      POWER_PINS='(GND:16;GND:11,21;VEE:1)';
+      JEDEC_TYPE='PLCC28';
+      CLASS='IC';
+      TECH='10E';
+  end_body;
+end_primitive;
+primitive '10E101_PLCC';
+  pin
+    'Y'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(19,17,14,12)';
+      PINUSE='OCL';
+    'D'<0>:
+      INPUT_LOAD='(0.0005,0.15)';
+      PIN_NUMBER='(22,26,3,7)';
+      PIN_GROUP='1';
+      PINUSE='IN';
+    'C'<0>:
+      INPUT_LOAD='(0.0005,0.15)';
+      PIN_NUMBER='(23,27,4,8)';
+      PIN_GROUP='1';
+      PINUSE='IN';
+    'B'<0>:
+      INPUT_LOAD='(0.0005,0.15)';
+      PIN_NUMBER='(24,28,5,9)';
+      PIN_GROUP='1';
+      PINUSE='IN';
+    'A'<0>:
+      INPUT_LOAD='(0.0005,0.15)';
+      PIN_NUMBER='(25,2,6,10)';
+      PIN_GROUP='1';
+      PINUSE='IN';
+    'Y*'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(20,18,15,13)';
+      PINUSE='OCL';
   end_pin;
   body
       FAMILY='ECL10E';
@@ -256,19 +309,24 @@ primitive '10E116';
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(20,17,14,11,8)';
+      PINUSE='OCL';
     'REF':
       OUTPUT_LOAD='(*,*)';
       PIN_NUMBER='(2,2,2,2,2)';
+      PINUSE='OUT';
     'A'<0>:
       INPUT_LOAD='(0.0005,0.20)';
       PIN_NUMBER='(23,25,27,5,3)';
+      PINUSE='IN';
     'Y*'<0>:
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(21,18,15,12,9)';
+      PINUSE='OCL';
     'B*'<0>:
       INPUT_LOAD='(0.0005,0.20)';
       PIN_NUMBER='(24,26,28,6,4)';
+      PINUSE='IN';
   end_pin;
   body
       FAMILY='ECL10E';
@@ -284,26 +342,33 @@ primitive '10E131';
     'S':
       INPUT_LOAD='(0.0005,0.45)';
       PIN_NUMBER='(3,28,28,3)';
+      PINUSE='IN';
     'R':
       INPUT_LOAD='(0.0005,0.30)';
       PIN_NUMBER='(25,22,9,6)';
+      PINUSE='IN';
     'Q'<0>:
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(19,17,14,12)';
+      PINUSE='OCL';
     'D'<0>:
       INPUT_LOAD='(0.0005,0.15)';
       PIN_NUMBER='(27,24,7,4)';
+      PINUSE='IN';
     'EN':
       INPUT_LOAD='(0.0005,0.30)';
       PIN_NUMBER='(26,23,8,5)';
+      PINUSE='IN';
     'CLK':
       INPUT_LOAD='(0.0005,0.35)';
       PIN_NUMBER='(2,2,2,2)';
+      PINUSE='IN';
     'Q*'<0>:
       OUTPUT_LOAD='(-7.6,-22.4)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(20,18,15,13)';
+      PINUSE='OCL';
   end_pin;
   body
       POWER_PINS='(GND:11,21;GND:16;VEE:1)';
@@ -315,47 +380,64 @@ primitive '10E131';
       TECH='10E';
   end_body;
 end_primitive;
-primitive '10H104';
+primitive '10ELT24';
   pin
-    'Y1'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(15,0,0,0)';
-    'D'<0>:
-      INPUT_LOAD='(0.0005,0.27)';
-      PIN_NUMBER='(13,0,0,0)';
-      PIN_GROUP='1';
-    'C'<0>:
-      INPUT_LOAD='(0.0005,0.27)';
-      PIN_NUMBER='(12,0,0,0)';
-      PIN_GROUP='1';
-    'Y1*'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(9,0,0,0)';
-    'Y0'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(0,14,3,2)';
-    'B'<0>:
-      INPUT_LOAD='(0.0005,0.27)';
-      PIN_NUMBER='(0,11,7,5)';
-      PIN_GROUP='1';
-    'A'<0>:
-      INPUT_LOAD='(0.0005,0.27)';
-      PIN_NUMBER='(0,10,6,4)';
-      PIN_GROUP='1';
+    'D':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q':
+      PIN_NUMBER='(7)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q*':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
   end_pin;
   body
-      BODY_NAME='10H104';
-      POWER_PINS='(GND2:1;GND1:16;VEE:8)';
-      FAMILY='ECL10KH';
-      SECTION='2';
-      SECTION='1';
-      JEDEC_TYPE='DIP16_3';
+      PART_NAME='10ELT24';
+      BODY_NAME='10ELT24';
+      JEDEC_TYPE='SOIC8';
+      PHYS_DES_PREFIX='U';
       CLASS='IC';
-      PART_NAME='10H104';
-      TECH='10KH';
+      GROUND_NETS='GND';
+      POWER_PINS='(VEE:1)';
+      POWER_PINS='(VCC:8)';
+      POWER_PINS='(GND:5)';
+      NC_PINS='(3,4)';
+  end_body;
+end_primitive;
+primitive '10EP90';
+  pin
+    'Q':
+      PIN_NUMBER='(19,16,13)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q*':
+      PIN_NUMBER='(18,15,12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'D':
+      PIN_NUMBER='(2,5,8)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D*':
+      PIN_NUMBER='(3,6,9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='10EP90';
+      BODY_NAME='10EP90';
+      JEDEC_TYPE='TSSOP20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(VCC:1,11,20)';
+      POWER_PINS='(VBB:4,7)';
+      POWER_PINS='(VEE:10)';
+      POWER_PINS='(GND:17,14)';
   end_body;
 end_primitive;
 primitive '10H116';
@@ -364,20 +446,25 @@ primitive '10H116';
       OUTPUT_LOAD='(-7.4,-23.8)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(15,7,3)';
+      PINUSE='OCL';
     'V':
       OUTPUT_LOAD='(-7.4,-23.8)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(11,11,11)';
+      PINUSE='OCL';
     'A'<0>:
       INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(13,10,5)';
+      PINUSE='IN';
     'Y*'<0>:
       OUTPUT_LOAD='(-7.4,-23.8)';
       OUTPUT_TYPE='(OE,OR)';
       PIN_NUMBER='(14,6,2)';
+      PINUSE='OCL';
     'B*'<0>:
       INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(12,9,4)';
+      PINUSE='IN';
   end_pin;
   body
       BODY_NAME='10H116';
@@ -390,310 +477,434 @@ primitive '10H116';
       TECH='10KH';
   end_body;
 end_primitive;
-primitive '10H124';
+primitive '10H116_PLCC';
   pin
     'Y'<0>:
       OUTPUT_LOAD='(-7.4,-23.8)';
       OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(14,15,2,1)';
-    'E':
-      INPUT_LOAD='(-12.8,0.2)';
-      PIN_NUMBER='(6,6,6,6)';
+      PIN_NUMBER='(19,9,4)';
+      PINUSE='OCL';
+    'V':
+      OUTPUT_LOAD='(-7.4,-23.8)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(14,14,14)';
+      PINUSE='OCL';
     'A'<0>:
-      INPUT_LOAD='(-3.2,0.05)';
-      PIN_NUMBER='(11,10,5,7)';
+      INPUT_LOAD='(0.001,0.095)';
+      PIN_NUMBER='(17,13,7)';
+      PINUSE='IN';
     'Y*'<0>:
       OUTPUT_LOAD='(-7.4,-23.8)';
       OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(13,12,4,3)';
+      PIN_NUMBER='(18,8,3)';
+      PINUSE='OCL';
+    'B*'<0>:
+      INPUT_LOAD='(0.001,0.095)';
+      PIN_NUMBER='(15,12,5)';
+      PINUSE='IN';
   end_pin;
   body
-      BODY_NAME='10H124';
-      POWER_PINS='(VCC:9;VEE:8;GND:16)';
+      BODY_NAME='10H116';
+      POWER_PINS='(GND2:2;GND1:20;VEE:10)';
       FAMILY='ECL10KH';
-      SECTION='B';
-      JEDEC_TYPE='DIP16_3';
+      SECTION='1';
+      NC_PINS='(16,11,6,1)';
+      JEDEC_TYPE='PLCC20';
       CLASS='IC';
-      PART_NAME='10H124';
+      PART_NAME='10H116';
       TECH='10KH';
   end_body;
 end_primitive;
 primitive '10H125';
   pin
     'Y'<0>:
+      PIN_NUMBER='(17,15,7,5)';
       OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(13,12,5,4)';
+      PINUSE='OUT';
     'V':
+      PIN_NUMBER='(2,2,2,2)';
       OUTPUT_LOAD='(*,*)';
-      PIN_NUMBER='(1,1,1,1)';
-    'A'<0>:
-      INPUT_LOAD='(0.001,0.145)';
-      PIN_NUMBER='(15,11,7,3)';
+      PINUSE='OUT';
     'B*'<0>:
+      PIN_NUMBER='(18,13,8,3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A'<0>:
+      PIN_NUMBER='(19,14,9,4)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='10H125';
+      BODY_NAME='10H125';
+      FAMILY='ECL10KH';
+      SECTION='1';
+      TECH='10KH';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:12)';
+      POWER_PINS='(VEE:10)';
+      POWER_PINS='(GND:20)';
+      NC_PINS='(1,6,11,16)';
+  end_body;
+end_primitive;
+primitive '10H125_PLCC';
+  pin
+    'Y'<0>:
+      PIN_NUMBER='(17,15,7,5)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
+    'V':
+      PIN_NUMBER='(2,2,2,2)';
+      OUTPUT_LOAD='(*,*)';
+      PINUSE='OUT';
+    'A'<0>:
+      PIN_NUMBER='(19,14,9,4)';
       INPUT_LOAD='(0.001,0.145)';
-      PIN_NUMBER='(14,10,6,2)';
+      PINUSE='IN';
+    'B*'<0>:
+      PIN_NUMBER='(18,13,8,3)';
+      INPUT_LOAD='(0.001,0.145)';
+      PINUSE='IN';
   end_pin;
   body
       BODY_NAME='10H125';
-      POWER_PINS='(VCC:9;VEE:8;GND:16)';
       FAMILY='ECL10KH';
       SECTION='1';
-      JEDEC_TYPE='DIP16_3';
-      CLASS='IC';
       PART_NAME='10H125';
       TECH='10KH';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:12)';
+      POWER_PINS='(VEE:10)';
+      POWER_PINS='(GND:20)';
+      NC_PINS='(16,11,6,1)';
+  end_body;
+end_primitive;
+primitive '10H131_PLCC';
+  pin
+    'D'<0>:
+      PIN_NUMBER='(7,10)';
+      INPUT_LOAD='(-0.00005,0.35)';
+      PINUSE='IN';
+    'EN':
+      PIN_NUMBER='(6,11)';
+      INPUT_LOAD='(-0.0005,0.35)';
+      PINUSE='IN';
+    'Q'<0>:
+      PIN_NUMBER='(2,15)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'R':
+      PIN_NUMBER='(4,13)';
+      INPUT_LOAD='(-0.0005,0.35)';
+      PINUSE='IN';
+    'S':
+      PIN_NUMBER='(5,12)';
+      INPUT_LOAD='(-0.0005,0.35)';
+      PINUSE='IN';
+    'CLK':
+      PIN_NUMBER='(9,9)';
+      INPUT_LOAD='(-0.0005,0.35)';
+      PINUSE='IN';
+    'Q*'<0>:
+      PIN_NUMBER='(3,14)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='10H131';
+      FAMILY='ECL10H';
+      TECH='10H';
+      BODY_NAME='10H131';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VEE:8)';
+      POWER_PINS='(VCC1:1)';
+      POWER_PINS='(VCC2:16)';
+      NC_PINS='(17,18,19,20)';
+  end_body;
+end_primitive;
+primitive '1N4448';
+  pin
+    'IN':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='1N4448';
+      BODY_NAME='1N4448';
+      JEDEC_TYPE='DO35';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
   end_body;
 end_primitive;
 primitive '74F06';
   pin
     'A'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
       PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
     'Y*'<0>:
-      OUTPUT_LOAD='(64.0,*)';
-      OUTPUT_TYPE='(OC,AND)';
       PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
+      PINUSE='OCA';
   end_pin;
   body
-      POWER_PINS='(VCC:14;GND:7)';
       FAMILY='FAST';
       PART_NAME='74F06';
       BODY_NAME='F06';
       MAX_DELAY='10000';
-      JEDEC_TYPE='DIP14_3';
-      CLASS='IC';
       TECH='74F';
+      JEDEC_TYPE='DIP14_3';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:14)';
+      POWER_PINS='(GND:7)';
   end_body;
 end_primitive;
-primitive '74F07';
+primitive '74F06_SOIC';
   pin
-    'Y'<0>:
-      OUTPUT_LOAD='(64.0,*)';
-      OUTPUT_TYPE='(OC,AND)';
-      PIN_NUMBER='(12,10,8,6,4,2)';
     'A'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
       PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'Y*'<0>:
+      PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
+      PINUSE='OCA';
   end_pin;
   body
-      POWER_PINS='(VCC:14;GND:7)';
       FAMILY='FAST';
-      PART_NAME='74F07';
+      PART_NAME='74F06';
+      BODY_NAME='F06';
+      MAX_DELAY='10000';
+      TECH='74F';
+      JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:14)';
+      POWER_PINS='(GND:7)';
+  end_body;
+end_primitive;
+primitive '74F07_SOIC';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(13,11,9,5,3,1)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'Y':
+      PIN_NUMBER='(12,10,8,6,4,2)';
+      OUTPUT_TYPE='(OC,AND)';
+      OUTPUT_LOAD='(64.0,*)';
+      PINUSE='OCA';
+  end_pin;
+  body
+      PART_NAME='74F07_SOIC';
+      FAMILY='FAST';
       BODY_NAME='F07';
       MAX_DELAY='10000';
-      JEDEC_TYPE='DIP14_3';
-      CLASS='IC';
       TECH='74F';
+      JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:14)';
+      POWER_PINS='(GND:7)';
   end_body;
 end_primitive;
-primitive '74F08';
+primitive '74F164_2';
   pin
-    'Y'<0>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(11,8,6,3)';
-    'B'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(13,10,5,2)';
-      PIN_GROUP='1';
-    'A'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(12,9,4,1)';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      POWER_PINS='(VCC:14;GND:7)';
-      FAMILY='FAST';
-      PART_NAME='74F08';
-      BODY_NAME='F08';
-      JEDEC_TYPE='DIP14_3';
-      CLASS='IC';
-      TECH='74F';
-  end_body;
-end_primitive;
-primitive '74F269';
-  pin
-    'UP/DN':
-      INPUT_LOAD='(-0.6,0.02)';
+    'DSA':
       PIN_NUMBER='(1)';
-    'Q'<7>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(10)';
-    'Q'<6>:
-      OUTPUT_LOAD='(20.0,-1.0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'MR*':
       PIN_NUMBER='(9)';
-    'Q'<5>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(8)';
-    'Q'<4>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(6)';
-    'Q'<3>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(5)';
-    'Q'<2>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(4)';
-    'Q'<1>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(3)';
-    'Q'<0>:
-      OUTPUT_LOAD='(20.0,-1.0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'DSB':
       PIN_NUMBER='(2)';
-    'P'<7>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(15)';
-    'P'<6>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(16)';
-    'P'<5>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(17)';
-    'P'<4>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(18)';
-    'P'<3>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(20)';
-    'P'<2>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(21)';
-    'P'<1>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(22)';
-    'P'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(23)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'CP':
-      INPUT_LOAD='(-0.6,0.02)';
+      PIN_NUMBER='(8)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q0':
+      PIN_NUMBER='(3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q1':
+      PIN_NUMBER='(4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q2':
+      PIN_NUMBER='(5)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q3':
+      PIN_NUMBER='(6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q4':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q5':
       PIN_NUMBER='(11)';
-    'TC*':
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(14)';
-    'PE*':
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(24)';
-    'CET*':
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(13)';
-    'CEP*':
-      INPUT_LOAD='(-0.6,0.02)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q6':
       PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Q7':
+      PIN_NUMBER='(13)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
   end_pin;
   body
-      POWER_PINS='(VCC:19;GND:7)';
-      FAMILY='FAST';
-      PART_NAME='74F269';
-      BODY_NAME='F269';
-      JEDEC_TYPE='DIP24_3';
+      PART_NAME='74F164';
+      BODY_NAME='74F164';
+      JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
       CLASS='IC';
-      TECH='74F';
+      GROUND_NETS='GND';
+      POWER_PINS='(GND:7)';
+      POWER_PINS='(VCC:14)';
   end_body;
 end_primitive;
-primitive '74F273';
+primitive '74HCT123';
   pin
-    'Q'<0>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(19,16,15,12,9,6,5,2)';
-    'D'<0>:
-      INPUT_LOAD='(-0.02,0.02)';
-      PIN_NUMBER='(18,17,14,13,8,7,4,3)';
+    'CLOCK*':
+      PIN_NUMBER='(9,1)';
+      INPUT_LOAD='(-0.001,0.001)';
+      PINUSE='IN';
     'CLOCK':
-      INPUT_LOAD='(-0.02,0.02)';
-      PIN_NUMBER='(11,11,11,11,11,11,11,11)';
+      PIN_NUMBER='(10,2)';
+      INPUT_LOAD='(-0.001,0.001)';
+      PINUSE='IN';
     'CL*':
-      INPUT_LOAD='(-0.02,0.02)';
-      PIN_NUMBER='(1,1,1,1,1,1,1,1)';
-  end_pin;
-  body
-      POWER_PINS='(VCC:20;GND:10)';
-      FAMILY='FAST';
-      PART_NAME='74F273';
-      BODY_NAME='F273';
-      JEDEC_TYPE='DIP20_3';
-      CLASS='IC';
-      TECH='74F';
-  end_body;
-end_primitive;
-primitive '74F74';
-  pin
-    'Q'<0>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(9,5)';
-    'D'<0>:
-      INPUT_LOAD='(-0.6,0.02)';
-      PIN_NUMBER='(12,2)';
-    'CLOCK':
-      INPUT_LOAD='(-0.6,0.02)';
       PIN_NUMBER='(11,3)';
-    'Q*'<0>:
-      OUTPUT_LOAD='(20.0,-1.0)';
-      PIN_NUMBER='(8,6)';
-    'PR*':
-      INPUT_LOAD='(-1.8,0.02)';
-      PIN_NUMBER='(10,4)';
-    'CL*':
-      INPUT_LOAD='(-1.8,0.02)';
-      PIN_NUMBER='(13,1)';
+      INPUT_LOAD='(-0.001,0.001)';
+      PINUSE='IN';
+    'Q*':
+      PIN_NUMBER='(12,4)';
+      OUTPUT_LOAD='(4.0,-4.0)';
+      PINUSE='OUT';
+    'Q':
+      PIN_NUMBER='(5,13)';
+      OUTPUT_LOAD='(4.0,-4.0)';
+      PINUSE='OUT';
+    'C':
+      PIN_NUMBER='(6,14)';
+      PINUSE='UNSPEC';
+      NO_LOAD_CHECK='Both';
+      ALLOW_CONNECT='TRUE';
+      UNKNOWN_LOADING='TRUE';
+    'C/R':
+      PIN_NUMBER='(7,15)';
+      PINUSE='UNSPEC';
+      NO_LOAD_CHECK='Both';
+      ALLOW_CONNECT='TRUE';
+      UNKNOWN_LOADING='TRUE';
   end_pin;
   body
-      POWER_PINS='(VCC:14;GND:7)';
-      FAMILY='FAST';
-      PART_NAME='74F74';
-      BODY_NAME='F74';
-      JEDEC_TYPE='DIP14_3';
+      PART_NAME='74HCT123';
+      FAMILY='HCMOS';
+      BODY_NAME='HCT123';
+      PULSE_WIDTH='10000';
+      TECH='74HCT';
+      JEDEC_TYPE='TSSOP16';
+      PHYS_DES_PREFIX='U';
       CLASS='IC';
-      TECH='74F';
+      POWER_PINS='(VCC:16)';
+      POWER_PINS='(GND:8)';
   end_body;
 end_primitive;
-primitive '74FHCT597';
+primitive '74HCT165';
   pin
-    'Q':
+    'D0':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D1':
+      PIN_NUMBER='(12)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D2':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D3':
+      PIN_NUMBER='(14)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D4':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D5':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D6':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D7':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'DS':
+      PIN_NUMBER='(10)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'CP':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'CE*':
+      PIN_NUMBER='(15)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q7':
       PIN_NUMBER='(9)';
       OUTPUT_LOAD='(1.0,-1.0)';
-    'MR*':
-      PIN_NUMBER='(10)';
-      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='OUT';
+    'Q7*':
+      PIN_NUMBER='(7)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'PL*':
-      PIN_NUMBER='(13)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'SHCP':
-      PIN_NUMBER='(11)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'STCP':
-      PIN_NUMBER='(12)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'DS':
-      PIN_NUMBER='(14)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<0>:
-      PIN_NUMBER='(15)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<1>:
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
-    'D'<2>:
-      PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<3>:
-      PIN_NUMBER='(3)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<4>:
-      PIN_NUMBER='(4)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<5>:
-      PIN_NUMBER='(5)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<6>:
-      PIN_NUMBER='(6)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'D'<7>:
-      PIN_NUMBER='(7)';
-      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
   end_pin;
   body
-      PART_NAME='74FHCT597';
-      BODY_NAME='74FHCT597';
-      JEDEC_TYPE='SOIC16';
+      PART_NAME='74HCT165';
+      BODY_NAME='74HCT165';
+      JEDEC_TYPE='SSOP16';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
       GROUND_NETS='GND';
@@ -701,121 +912,259 @@ primitive '74FHCT597';
       POWER_PINS='(VCC:16)';
   end_body;
 end_primitive;
-primitive '74HCT123';
+primitive '7815S_L';
   pin
-    'Q':
-      OUTPUT_LOAD='(4.0,-4.0)';
-      PIN_NUMBER='(5,13)';
-    'CLOCK':
-      INPUT_LOAD='(-0.001,0.001)';
-      PIN_NUMBER='(10,2)';
-    'C/R':
-      NO_LOAD_CHECK='BOTH';
-      UNKNOWN_LOADING='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PIN_NUMBER='(7,15)';
-    'C':
-      NO_LOAD_CHECK='BOTH';
-      UNKNOWN_LOADING='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PIN_NUMBER='(6,14)';
-    'Q*':
-      OUTPUT_LOAD='(4.0,-4.0)';
-      PIN_NUMBER='(12,4)';
-    'CLOCK*':
-      INPUT_LOAD='(-0.001,0.001)';
-      PIN_NUMBER='(9,1)';
-    'CL*':
-      INPUT_LOAD='(-0.001,0.001)';
-      PIN_NUMBER='(11,3)';
+    'INPUT':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'GROUND':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'OUTPUT':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-      POWER_PINS='(VCC:16;GND:8)';
-      FAMILY='HCMOS';
-      PART_NAME='74HCT123';
-      BODY_NAME='HCT123';
-      PULSE_WIDTH='10000';
-      JEDEC_TYPE='DIP16_3';
+      LAST_MODIFIED='Fri May 22 15:20:13 PDT 1992';
+      ABBREV='7815S_L';
+      NEEDS_NO_SIZE='TRUE';
+      PHYS_DES_PREFIX='Q';
       CLASS='IC';
-      TECH='74HCT';
+      JEDEC_TYPE='TO220ABH';
+      NC_PINS='(4)';
+      LEADOUT_STYLE='TO220ABH';
+      PINCOUNT='4';
+      PATH='10P';
+      SIZE='1';
+      PART_NAME='7815S_L';
   end_body;
 end_primitive;
-primitive 'AD7249';
+primitive '7915_L';
   pin
-    'REFIN':
-      PIN_NUMBER='(2,2)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'SCLK':
-      PIN_NUMBER='(11,11)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'LDAC*':
-      PIN_NUMBER='(10,10)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'SYNC*':
-      PIN_NUMBER='(12,12)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'SDIN':
-      PIN_NUMBER='(9,9)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'BBARC':
-      PIN_NUMBER='(7,7)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'CLR*':
-      PIN_NUMBER='(6,6)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'VOUT':
-      PIN_NUMBER='(14,4)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'ROFS':
-      PIN_NUMBER='(16,3)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'REFOUT':
-      PIN_NUMBER='(1,1)';
-      OUTPUT_LOAD='(1.0,-1.0)';
+    'GROUND':
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+    'INPUT':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'OUTPUT':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
   end_pin;
   body
-      PART_NAME='AD7249';
-      BODY_NAME='AD7249';
+      LAST_MODIFIED='Fri May 22 15:20:13 PDT 1992';
+      ABBREV='7915_L';
+      NEEDS_NO_SIZE='TRUE';
+      PHYS_DES_PREFIX='Q';
+      CLASS='IC';
+      JEDEC_TYPE='TO220ABV';
+      NC_PINS='(4)';
+      LEADOUT_STYLE='TO220ABV';
+      PINCOUNT='4';
+      PATH='10P';
+      SIZE='1';
+      PART_NAME='7915_L';
+  end_body;
+end_primitive;
+primitive 'AD7243';
+  pin
+    'SYNC*':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'SCLK':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'SDIN':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'ROFS':
+      PIN_NUMBER='(13)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      UNKNOWN_LOADING='TRUE';
+    'REFOUT':
+      PIN_NUMBER='(2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'REFIN':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'VSS':
+      PIN_NUMBER='(15)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      UNKNOWN_LOADING='TRUE';
+    'VDD':
+      PIN_NUMBER='(16)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      UNKNOWN_LOADING='TRUE';
+    'DGND':
+      PIN_NUMBER='(8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      UNKNOWN_LOADING='TRUE';
+    'AGND':
+      PIN_NUMBER='(12)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      UNKNOWN_LOADING='TRUE';
+    'DCEN':
+      PIN_NUMBER='(10)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'VOUT':
+      PIN_NUMBER='(14)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'SDO':
+      PIN_NUMBER='(11)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'LDAC*':
+      PIN_NUMBER='(9)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'CLR*':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'BNCP':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='AD7243';
+      BODY_NAME='AD7243';
       JEDEC_TYPE='SOIC16W';
+      CLASS='DISCRETE';
+  end_body;
+end_primitive;
+primitive 'AD8009';
+  pin
+    'IN-':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN+':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUTPUT':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'V-':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V+':
+      PIN_NUMBER='(7)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+      PART_NAME='AD8009';
+      BODY_NAME='AD8009';
+      JEDEC_TYPE='SOIC8';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(VDD:13)';
-      POWER_PINS='(GND:5,8)';
-      POWER_PINS='(VSS:15)';
+      NC_PINS='(1,8,5)';
   end_body;
 end_primitive;
-primitive 'AD96687';
+primitive 'AD96685';
   pin
-    'Q':
-      PIN_NUMBER='(1,16)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'Q*':
-      PIN_NUMBER='(2,15)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-    'LTCHEN':
-      PIN_NUMBER='(4,13)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'LTCHEN*':
-      PIN_NUMBER='(5,12)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'IN':
-      PIN_NUMBER='(7,10)';
-      INPUT_LOAD='(-0.01,0.01)';
-    'IN*':
-      PIN_NUMBER='(8,9)';
-      INPUT_LOAD='(-0.01,0.01)';
+    'LTCH':
+      PIN_NUMBER='(6)';
+      PINUSE='UNSPEC';
+    'INN':
+      PIN_NUMBER='(4)';
+      PINUSE='UNSPEC';
+    'QN':
+      PIN_NUMBER='(12)';
+      PINUSE='UNSPEC';
+    'QP':
+      PIN_NUMBER='(11)';
+      PINUSE='UNSPEC';
+    'INP':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+    'GRND1':
+      PIN_NUMBER='(1)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'GRND2':
+      PIN_NUMBER='(16)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VP':
+      PIN_NUMBER='(2)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VN':
+      PIN_NUMBER='(8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
-      PART_NAME='AD96687';
-      BODY_NAME='AD96687';
+      PART_NAME='AD96685';
+      PATH='34P';
+      DRAWING='ICDEVICES.LOGIC.1.1';
+      VER='1';
+      XY='(950,2800)';
+      DIR='NEWIC.LIB';
+      ROT='0';
+      PINCOUNT='16';
+      SIZE='1';
+      BODY_NAME='AD96685';
       JEDEC_TYPE='SOIC16';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(GND:3,14)';
-      POWER_PINS='(VCC:11)';
-      POWER_PINS='(VS:6)';
+      NC_PINS='(5,7,9,10,13,14,15)';
   end_body;
 end_primitive;
 primitive 'ADCMP566';
@@ -823,15 +1172,19 @@ primitive 'ADCMP566';
     'IN':
       PIN_NUMBER='(3,6)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN*':
       PIN_NUMBER='(2,7)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'LE':
       PIN_NUMBER='(30,11)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'LE*':
       PIN_NUMBER='(31,10)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'NC':
       PIN_NUMBER='(12,18)';
       PINUSE='NC';
@@ -843,9 +1196,11 @@ primitive 'ADCMP566';
     'Q':
       PIN_NUMBER='(26,15)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'Q*':
       PIN_NUMBER='(27,14)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'NC2':
       PIN_NUMBER='(23,29)';
       PINUSE='NC';
@@ -867,7 +1222,114 @@ primitive 'ADCMP566';
       POWER_PINS='(VEE:17,19,22,24)';
   end_body;
 end_primitive;
-primitive 'CSMD0805-0.01UF,10%,0805,25V';
+primitive 'BAS16LT1';
+  pin
+    'AN':
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+    'CAT':
+      PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      LAST_MODIFIED='Thu Dec 27 14:50:46 PST 1990';
+      ABBREV='BAS16LT1';
+      NEEDS_NO_SIZE='TRUE';
+      PHYS_DES_PREFIX='D';
+      CLASS='DISCRETE';
+      JEDEC_TYPE='SOT23';
+      LEADOUT_STYLE='SOT23';
+      PINCOUNT='3';
+      NC_PINS='(1)';
+      PATH='10P';
+      SIZE='1';
+      PART_NAME='BAS16LT1';
+  end_body;
+end_primitive;
+primitive 'COTO2342';
+  pin
+    'NO1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'NO2':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'NC1':
+      PIN_NUMBER='(7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'NC2':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN1':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN2':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CTRL_IN':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CTRL_OUT':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='COTO2342';
+      BODY_NAME='COTO2342';
+      JEDEC_TYPE='NONE_ASSIGNED_YET';
+      PHYS_DES_PREFIX='U';
+      CLASS='DISCRETE';
+  end_body;
+end_primitive;
+primitive 'CSMD0603-100NF,10%,0603,25V';
   pin
     'A'<0>:
       PIN_NUMBER='(1)';
@@ -879,7 +1341,7 @@ primitive 'CSMD0805-0.01UF,10%,0805,25V';
       PIN_GROUP='1';
   end_pin;
   body
-      PART_NAME='CSMD0805';
+      PART_NAME='CSMD0603';
       PATH='1P';
       DRAWING='ELEMENTCHIPS.LOGIC.1.1';
       PRIM_TYPE='CHIPS_PRT';
@@ -890,14 +1352,47 @@ primitive 'CSMD0805-0.01UF,10%,0805,25V';
       ROT='0';
       PINCOUNT='2';
       SIZE='1';
-      BODY_NAME='CSMD0805';
-      JEDEC_TYPE='CAP805';
+      BODY_NAME='CSMD0603';
+      JEDEC_TYPE='CAP0603';
       PHYS_DES_PREFIX='C';
       CLASS='DISCRETE';
-      VALUE='0.01UF';
-      PARENT_PART_TYPE='CSMD0805';
-      PARENT_PPT='CSMD0805';
-      PARENT_PPT_PART='CSMD0805-0.01UF,10%,0805,25V';
+      VALUE='100NF';
+      PARENT_PART_TYPE='CSMD0603';
+      PARENT_PPT='CSMD0603';
+      PARENT_PPT_PART='CSMD0603-100NF,10%,0603,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0603-1UF,10%,0603,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0603';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0603';
+      JEDEC_TYPE='CAP0603';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='1UF';
+      PARENT_PART_TYPE='CSMD0603';
+      PARENT_PPT='CSMD0603';
+      PARENT_PPT_PART='CSMD0603-1UF,10%,0603,25V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-0.1UF,5%,0805,50V';
@@ -931,6 +1426,72 @@ primitive 'CSMD0805-0.1UF,5%,0805,50V';
       PARENT_PART_TYPE='CSMD0805';
       PARENT_PPT='CSMD0805';
       PARENT_PPT_PART='CSMD0805-0.1UF,5%,0805,50V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-0.22UF,10%,0805,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='0.22UF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-0.22UF,10%,0805,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-0.33UF,10%,0805,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='0.33UF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-0.33UF,10%,0805,25V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-1.0UF,10%,0805,25V';
@@ -999,7 +1560,7 @@ primitive 'CSMD0805-10NF,10%,0805,25V';
       PARENT_PPT_PART='CSMD0805-10NF,10%,0805,25V';
   end_body;
 end_primitive;
-primitive 'CSMD0805-60PF,10%,0805,25V';
+primitive 'CSMD0805-15PF,10%,0805,25V';
   pin
     'A'<0>:
       PIN_NUMBER='(1)';
@@ -1026,56 +1587,103 @@ primitive 'CSMD0805-60PF,10%,0805,25V';
       JEDEC_TYPE='CAP805';
       PHYS_DES_PREFIX='C';
       CLASS='DISCRETE';
-      VALUE='60PF';
+      VALUE='15PF';
       PARENT_PART_TYPE='CSMD0805';
       PARENT_PPT='CSMD0805';
-      PARENT_PPT_PART='CSMD0805-60PF,10%,0805,25V';
+      PARENT_PPT_PART='CSMD0805-15PF,10%,0805,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-1UF,10%,0805,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='1UF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-1UF,10%,0805,25V';
   end_body;
 end_primitive;
 primitive 'DS102350';
   pin
-    'PS':
-      PIN_NUMBER='(14)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'MS':
-      PIN_NUMBER='(11)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'OUT':
-      PIN_NUMBER='(15)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'PWM':
-      PIN_NUMBER='(9)';
-      OUTPUT_LOAD='(20.0,-1.0)';
-    'IN':
-      PIN_NUMBER='(1)';
-      INPUT_LOAD='(-0.6,0.02)';
     'LE*':
       PIN_NUMBER='(2)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<0>:
+      PINUSE='IN';
+    'PWM':
+      PIN_NUMBER='(9)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
+    'OUT':
+      PIN_NUMBER='(15)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
+    'MS':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'PS':
+      PIN_NUMBER='(14)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'IN':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'Q/P0':
       PIN_NUMBER='(3)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<1>:
+      PINUSE='IN';
+    'CLK/P1':
       PIN_NUMBER='(4)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<2>:
+      PINUSE='IN';
+    'D/P2':
       PIN_NUMBER='(5)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<3>:
+      PINUSE='IN';
+    'P3':
       PIN_NUMBER='(6)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<4>:
+      PINUSE='IN';
+    'P4':
       PIN_NUMBER='(7)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<5>:
+      PINUSE='IN';
+    'P5':
       PIN_NUMBER='(10)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<6>:
+      PINUSE='IN';
+    'P6':
       PIN_NUMBER='(12)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<7>:
+      PINUSE='IN';
+    'P7':
       PIN_NUMBER='(13)';
       INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
   end_pin;
   body
       PART_NAME='DS102350';
@@ -1093,45 +1701,59 @@ primitive 'DS1023500';
     'IN':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
-    'LE*':
-      PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'OUT':
       PIN_NUMBER='(15)';
       OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
     'PWM':
       PIN_NUMBER='(9)';
       OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
     'PS':
       PIN_NUMBER='(14)';
       INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
     'MS':
       PIN_NUMBER='(11)';
       INPUT_LOAD='(-0.6,0.02)';
-    'P'<0>:
+      PINUSE='IN';
+    'LE*':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q/P0':
       PIN_NUMBER='(3)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<1>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'CLK/P1':
       PIN_NUMBER='(4)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<2>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D/P2':
       PIN_NUMBER='(5)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<3>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'P3':
       PIN_NUMBER='(6)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<4>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'P4':
       PIN_NUMBER='(7)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<5>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'P5':
       PIN_NUMBER='(10)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<6>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'P6':
       PIN_NUMBER='(12)';
-      INPUT_LOAD='(-0.6,0.02)';
-    'P'<7>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'P7':
       PIN_NUMBER='(13)';
-      INPUT_LOAD='(-0.6,0.02)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
   end_pin;
   body
       PART_NAME='DS1023500';
@@ -1149,21 +1771,27 @@ primitive 'EL91L';
     'VBB':
       PIN_NUMBER='(4,4,4)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'VBB2':
       PIN_NUMBER='(7,7,7)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN':
       PIN_NUMBER='(2,5,8)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN*':
       PIN_NUMBER='(3,6,9)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'OUT':
       PIN_NUMBER='(19,16,13)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'OUT*':
       PIN_NUMBER='(18,15,12)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
   end_pin;
   body
       PART_NAME='EL91L';
@@ -1175,6 +1803,965 @@ primitive 'EL91L';
       POWER_PINS='(GND:14,17)';
       POWER_PINS='(VP3_3:1,11,20)';
       POWER_PINS='(VEE:10)';
+  end_body;
+end_primitive;
+primitive 'F273';
+  pin
+    'D':
+      PIN_NUMBER='(3,4,7,8,13,14,17,18)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q':
+      PIN_NUMBER='(2,5,6,9,12,15,16,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'CP':
+      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'CL':
+      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='F273';
+      BODY_NAME='F273';
+      JEDEC_TYPE='SOIC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(GND:10)';
+      POWER_PINS='(VCC:20)';
+  end_body;
+end_primitive;
+primitive 'FCI_61083-101400LF';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '5':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '6':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '7':
+      PIN_NUMBER='(7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '8':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '9':
+      PIN_NUMBER='(9)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '10':
+      PIN_NUMBER='(10)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '11':
+      PIN_NUMBER='(11)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '12':
+      PIN_NUMBER='(12)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '13':
+      PIN_NUMBER='(13)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '14':
+      PIN_NUMBER='(14)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '15':
+      PIN_NUMBER='(15)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '16':
+      PIN_NUMBER='(16)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '17':
+      PIN_NUMBER='(17)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '18':
+      PIN_NUMBER='(18)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '19':
+      PIN_NUMBER='(19)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '20':
+      PIN_NUMBER='(20)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '21':
+      PIN_NUMBER='(21)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '22':
+      PIN_NUMBER='(22)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '23':
+      PIN_NUMBER='(23)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '24':
+      PIN_NUMBER='(24)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '25':
+      PIN_NUMBER='(25)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '26':
+      PIN_NUMBER='(26)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '27':
+      PIN_NUMBER='(27)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '28':
+      PIN_NUMBER='(28)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '29':
+      PIN_NUMBER='(29)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '30':
+      PIN_NUMBER='(30)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '31':
+      PIN_NUMBER='(31)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '32':
+      PIN_NUMBER='(32)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '33':
+      PIN_NUMBER='(33)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '34':
+      PIN_NUMBER='(34)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '35':
+      PIN_NUMBER='(35)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '36':
+      PIN_NUMBER='(36)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '37':
+      PIN_NUMBER='(37)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '38':
+      PIN_NUMBER='(38)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '39':
+      PIN_NUMBER='(39)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '40':
+      PIN_NUMBER='(40)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '41':
+      PIN_NUMBER='(41)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '42':
+      PIN_NUMBER='(42)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '43':
+      PIN_NUMBER='(43)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '44':
+      PIN_NUMBER='(44)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '45':
+      PIN_NUMBER='(45)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '46':
+      PIN_NUMBER='(46)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '47':
+      PIN_NUMBER='(47)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '48':
+      PIN_NUMBER='(48)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '49':
+      PIN_NUMBER='(49)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '50':
+      PIN_NUMBER='(50)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '51':
+      PIN_NUMBER='(51)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '52':
+      PIN_NUMBER='(52)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '53':
+      PIN_NUMBER='(53)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '54':
+      PIN_NUMBER='(54)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '55':
+      PIN_NUMBER='(55)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '56':
+      PIN_NUMBER='(56)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '57':
+      PIN_NUMBER='(57)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '58':
+      PIN_NUMBER='(58)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '59':
+      PIN_NUMBER='(59)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '60':
+      PIN_NUMBER='(60)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '61':
+      PIN_NUMBER='(61)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '62':
+      PIN_NUMBER='(62)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '63':
+      PIN_NUMBER='(63)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '64':
+      PIN_NUMBER='(64)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '65':
+      PIN_NUMBER='(65)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '66':
+      PIN_NUMBER='(66)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '67':
+      PIN_NUMBER='(67)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '68':
+      PIN_NUMBER='(68)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '69':
+      PIN_NUMBER='(69)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '70':
+      PIN_NUMBER='(70)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '71':
+      PIN_NUMBER='(71)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '72':
+      PIN_NUMBER='(72)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '73':
+      PIN_NUMBER='(73)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '74':
+      PIN_NUMBER='(74)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '75':
+      PIN_NUMBER='(75)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '76':
+      PIN_NUMBER='(76)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '77':
+      PIN_NUMBER='(77)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '78':
+      PIN_NUMBER='(78)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '79':
+      PIN_NUMBER='(79)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '80':
+      PIN_NUMBER='(80)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '81':
+      PIN_NUMBER='(81)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '82':
+      PIN_NUMBER='(82)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '83':
+      PIN_NUMBER='(83)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '84':
+      PIN_NUMBER='(84)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '85':
+      PIN_NUMBER='(85)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '86':
+      PIN_NUMBER='(86)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '87':
+      PIN_NUMBER='(87)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '88':
+      PIN_NUMBER='(88)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '89':
+      PIN_NUMBER='(89)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '90':
+      PIN_NUMBER='(90)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '91':
+      PIN_NUMBER='(91)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '92':
+      PIN_NUMBER='(92)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '93':
+      PIN_NUMBER='(93)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '94':
+      PIN_NUMBER='(94)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '95':
+      PIN_NUMBER='(95)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '96':
+      PIN_NUMBER='(96)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '97':
+      PIN_NUMBER='(97)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '98':
+      PIN_NUMBER='(98)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '99':
+      PIN_NUMBER='(99)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '100':
+      PIN_NUMBER='(100)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '101':
+      PIN_NUMBER='(101)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '102':
+      PIN_NUMBER='(102)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='FCI_61083-101400LF';
+      BODY_NAME='FCI_61083-101400LF';
+      JEDEC_TYPE='FCI_61083-101400LF';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
   end_body;
 end_primitive;
 primitive 'FOXCLOCK';
@@ -1190,12 +2777,15 @@ primitive 'FOXCLOCK';
     'OUT':
       PIN_NUMBER='(4)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'OUT*':
       PIN_NUMBER='(5)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'ED':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
   end_pin;
   body
       PART_NAME='FOXCLOCK';
@@ -1208,72 +2798,139 @@ primitive 'FOXCLOCK';
       POWER_PINS='(GND:3)';
   end_body;
 end_primitive;
-primitive 'HC574F';
+primitive 'HCT238_TSSOP';
   pin
-    'OE*':
+    'A0':
       PIN_NUMBER='(1)';
-      OUTPUT_TYPE='(OE,OR)';
-      OUTPUT_LOAD='(0.3,-22.4)';
-    'CK':
-      PIN_NUMBER='(11)';
-      INPUT_LOAD='(-0.1,0.9)';
-    'Q'<0>:
-      PIN_NUMBER='(19)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<1>:
-      PIN_NUMBER='(18)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<2>:
-      PIN_NUMBER='(17)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<3>:
-      PIN_NUMBER='(16)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<4>:
-      PIN_NUMBER='(15)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<5>:
-      PIN_NUMBER='(14)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<6>:
-      PIN_NUMBER='(13)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'Q'<7>:
-      PIN_NUMBER='(12)';
-      OUTPUT_LOAD='(.3,-22.4)';
-    'D'<0>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A1':
       PIN_NUMBER='(2)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<1>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'A2':
       PIN_NUMBER='(3)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<2>:
-      PIN_NUMBER='(4)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<3>:
-      PIN_NUMBER='(5)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<4>:
-      PIN_NUMBER='(6)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<5>:
-      PIN_NUMBER='(7)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<6>:
-      PIN_NUMBER='(8)';
-      INPUT_LOAD='(-.1,0.15)';
-    'D'<7>:
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y0':
+      PIN_NUMBER='(15)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y1':
+      PIN_NUMBER='(14)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y2':
+      PIN_NUMBER='(13)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y3':
+      PIN_NUMBER='(12)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y4':
+      PIN_NUMBER='(11)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y5':
+      PIN_NUMBER='(10)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y6':
       PIN_NUMBER='(9)';
-      INPUT_LOAD='(-.1,0.15)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y7':
+      PIN_NUMBER='(7)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'E1':
+      PIN_NUMBER='(4)';
+      OUTPUT_TYPE='(OE,OR)';
+      OUTPUT_LOAD='(1.0,*)';
+      PINUSE='OCL';
+    'E2':
+      PIN_NUMBER='(5)';
+      OUTPUT_TYPE='(OE,OR)';
+      OUTPUT_LOAD='(1.0,*)';
+      PINUSE='OCL';
+    'E3':
+      PIN_NUMBER='(6)';
+      OUTPUT_TYPE='(OE,OR)';
+      OUTPUT_LOAD='(1.0,*)';
+      PINUSE='OCL';
   end_pin;
   body
-      PART_NAME='HC574F';
-      BODY_NAME='HC574F';
-      JEDEC_TYPE='TSSOP20';
+      PART_NAME='HCT238';
+      ALT_SYMBOLS='(DIP16_3)';
+      BODY_NAME='HCT238';
+      JEDEC_TYPE='TSSOP16';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
       GROUND_NETS='GND';
-      POWER_PINS='(VP3_3:20)';
+      POWER_PINS='(GND:8)';
+      POWER_PINS='(VCC:16)';
+  end_body;
+end_primitive;
+primitive 'HCT374';
+  pin
+    'CLK':
+      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D':
+      PIN_NUMBER='(3,4,7,8,13,14,17,18)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q':
+      PIN_NUMBER='(2,5,6,9,12,15,16,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'CLR*':
+      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='HCT374';
+      ALT_SYMBOLS='(SSOP20)';
+      BODY_NAME='HCT374';
+      JEDEC_TYPE='SOIC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(VCC:20)';
+      POWER_PINS='(GND:10)';
+  end_body;
+end_primitive;
+primitive 'HCT374_SOIC';
+  pin
+    'CLK':
+      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D':
+      PIN_NUMBER='(3,4,7,8,13,14,17,18)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Q':
+      PIN_NUMBER='(2,5,6,9,12,15,16,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'CLR*':
+      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='HCT374';
+      ALT_SYMBOLS='(SSOP20)';
+      BODY_NAME='HCT374';
+      JEDEC_TYPE='SOIC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(VCC:20)';
       POWER_PINS='(GND:10)';
   end_body;
 end_primitive;
@@ -1284,51 +2941,61 @@ primitive 'IDS_C10';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN2':
       PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN3':
       PIN_NUMBER='(3)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN7':
       PIN_NUMBER='(7)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN8':
       PIN_NUMBER='(8)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN6':
       PIN_NUMBER='(6)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN9':
       PIN_NUMBER='(9)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN10':
       PIN_NUMBER='(10)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN5':
       PIN_NUMBER='(5)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
     'PIN4':
       PIN_NUMBER='(4)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
   end_pin;
   body
       PART_NAME='IDS_C10';
@@ -1373,11 +3040,13 @@ primitive 'LED_1206-BLUE,BLUE,1206,16V';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
     'A':
       PIN_NUMBER='(2)';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
   end_pin;
   body
       PART_NAME='LED_1206';
@@ -1404,11 +3073,13 @@ primitive 'LED_1206-GREEN,GREEN,1206,16V';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
     'A':
       PIN_NUMBER='(2)';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
   end_pin;
   body
       PART_NAME='LED_1206';
@@ -1435,11 +3106,13 @@ primitive 'LED_1206-ORANGE,ORANGE,1206,16V';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
     'A':
       PIN_NUMBER='(2)';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
   end_pin;
   body
       PART_NAME='LED_1206';
@@ -1466,11 +3139,13 @@ primitive 'LED_1206-YELLOW,YELLOW,1206,16V';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
     'A':
       PIN_NUMBER='(2)';
       BIDIRECTIONAL='TRUE';
       INPUT_LOAD='(*,*)';
       OUTPUT_LOAD='(*,*)';
+      PINUSE='BI';
   end_pin;
   body
       PART_NAME='LED_1206';
@@ -1488,6 +3163,32 @@ primitive 'LED_1206-YELLOW,YELLOW,1206,16V';
       PARENT_PART_TYPE='LED_1206';
       PARENT_PPT='LED_1206';
       PARENT_PPT_PART='LED_1206-YELLOW,YELLOW,1206,16V';
+  end_body;
+end_primitive;
+primitive 'LED_L';
+  pin
+    'B':
+      BIDIRECTIONAL='TRUE';
+      OUTPUT_LOAD='(*,*)';
+      INPUT_LOAD='(*,*)';
+      PIN_NUMBER='(1)';
+      PINUSE='BI';
+    'A':
+      BIDIRECTIONAL='TRUE';
+      OUTPUT_LOAD='(*,*)';
+      INPUT_LOAD='(*,*)';
+      PIN_NUMBER='(2)';
+      PINUSE='BI';
+  end_pin;
+  body
+      ROT='0';
+      PATH='11P';
+      VER='1';
+      DIR='DISCRETE.LIB';
+      XY='(-1650,1150)';
+      JEDEC_TYPE='LED';
+      SIZE='1';
+      PART_NAME='LED_L';
   end_body;
 end_primitive;
 primitive 'LM1117';
@@ -1522,10 +3223,13 @@ primitive 'LM337T_L';
   pin
     'REF':
       PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
     'AN':
       PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
     'CAT':
       PIN_NUMBER='(3)';
+      PINUSE='UNSPEC';
   end_pin;
   body
       LAST_MODIFIED='Fri Dec  4 14:30:01 PST 1992';
@@ -1555,9 +3259,11 @@ primitive 'LVDS_DRIVER_DS10';
     'IN+':
       PIN_NUMBER='(2)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'IN-':
       PIN_NUMBER='(3)';
       INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     '4':
       PIN_NUMBER='(4)';
       PINUSE='NC';
@@ -1577,9 +3283,11 @@ primitive 'LVDS_DRIVER_DS10';
     'OUT+':
       PIN_NUMBER='(7)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
     'OUT-':
       PIN_NUMBER='(6)';
       OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
   end_pin;
   body
       PART_NAME='LVDS_DRIVER_DS10';
@@ -1588,6 +3296,142 @@ primitive 'LVDS_DRIVER_DS10';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
       POWER_PINS='(VP3_3:8)';
+  end_body;
+end_primitive;
+primitive 'MAX9376';
+  pin
+    'IN1':
+      PIN_NUMBER='(1,0)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN1*':
+      PIN_NUMBER='(2,0)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'OUT1':
+      PIN_NUMBER='(9,0)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT1*':
+      PIN_NUMBER='(8,0)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'IN2':
+      PIN_NUMBER='(0,7)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'IN2*':
+      PIN_NUMBER='(0,6)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'OUT2':
+      PIN_NUMBER='(0,3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'OUT2*':
+      PIN_NUMBER='(0,4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='MAX9376';
+      BODY_NAME='MAX9376';
+      JEDEC_TYPE='UMAX10';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(VCC:5)';
+      POWER_PINS='(GND:10)';
+  end_body;
+end_primitive;
+primitive 'MC10H104_PLCC';
+  pin
+    'A':
+      PIN_NUMBER='(5,8,13,15)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'B':
+      PIN_NUMBER='(7,9,14,17)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y':
+      PIN_NUMBER='(3,4,18,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='MC10H104';
+      BODY_NAME='MC10H104';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:2,20)';
+      POWER_PINS='(VEE:10)';
+      NC_PINS='(1,6,11,12,16)';
+  end_body;
+end_primitive;
+primitive 'MC10H104_PLCC-VCC=GND';
+  pin
+    'A':
+      PIN_NUMBER='(5,8,13,15)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'B':
+      PIN_NUMBER='(7,9,14,17)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y':
+      PIN_NUMBER='(3,4,18,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='MC10H104';
+      BODY_NAME='MC10H104';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      NC_PINS='(1,6,11,12,16)';
+      POWER_PINS='(GND:2,20;VEE:10)';
+      PARENT_PART_TYPE='MC10H104_PLCC';
+      SCH_MODIFIED_PART='TRUE';
+  end_body;
+end_primitive;
+primitive 'MC10H124_PLCC';
+  pin
+    'IN':
+      PIN_NUMBER='(7,9,13,14)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'OUT':
+      PIN_NUMBER='(3,2,19,18)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'COMMON':
+      PIN_NUMBER='(8,8,8,8)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'OUT*':
+      PIN_NUMBER='(5,4,15,17)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='MC10H124';
+      BODY_NAME='MC10H124';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(VEE:10)';
+      POWER_PINS='(VCC:12)';
+      POWER_PINS='(GND:20)';
+      NC_PINS='(1,6,11,16)';
   end_body;
 end_primitive;
 primitive 'MMBTH10';
@@ -1600,6 +3444,7 @@ primitive 'MMBTH10';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
     'B':
       PIN_NUMBER='(1)';
       PIN_TYPE='ANALOG';
@@ -1608,6 +3453,7 @@ primitive 'MMBTH10';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
     'E':
       PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
@@ -1616,6 +3462,7 @@ primitive 'MMBTH10';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
   end_pin;
   body
       PART_NAME='MMBTH10';
@@ -1635,6 +3482,7 @@ primitive 'MMBTH81';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
     'B':
       PIN_NUMBER='(1)';
       PIN_TYPE='ANALOG';
@@ -1643,6 +3491,7 @@ primitive 'MMBTH81';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
     'E':
       PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
@@ -1651,6 +3500,7 @@ primitive 'MMBTH81';
       NO_ASSERT_CHECK='TRUE';
       NO_DIR_CHECK='TRUE';
       ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
   end_pin;
   body
       PART_NAME='MMBTH81';
@@ -1660,58 +3510,489 @@ primitive 'MMBTH81';
       CLASS='IC';
   end_body;
 end_primitive;
-primitive 'MMBTH81LT1';
+primitive 'MPSH81';
   pin
-    'B':
-      PIN_NUMBER='(2)';
-    'E':
-      PIN_NUMBER='(1)';
     'C':
       PIN_NUMBER='(3)';
-  end_pin;
-  body
-      LAST_MODIFIED='Thu Jul 19 12:46:31 PDT 1990';
-      ABBREV='MMBTH81LT1';
-      NEEDS_NO_SIZE='TRUE';
-      PHYS_DES_PREFIX='Q';
-      CLASS='DISCRETE';
-      JEDEC_TYPE='SOT23';
-      LEADOUT_STYLE='SOT23';
-      PINCOUNT='3';
-      PATH='10P';
-      SIZE='1';
-      PART_NAME='MMBTH81LT1';
-  end_body;
-end_primitive;
-primitive 'MUR105';
-  pin
-    'CAT':
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'B':
       PIN_NUMBER='(1)';
       PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='BOTH';
-      UNKNOWN_LOADING='TRUE';
-    'AN':
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'E':
       PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='BOTH';
-      UNKNOWN_LOADING='TRUE';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
   end_pin;
   body
-      LAST_MODIFIED='MON OCT 5 13:48:08 1987';
-      ABBREV='1N4000';
-      NEEDS_NO_SIZE='TRUE';
-      LEADOUT_STYLE='DO4';
-      PINCOUNT='2';
-      PATH='10P';
-      SIZE='1';
-      BODY_NAME='MUR105';
-      JEDEC_TYPE='D041';
-      PHYS_DES_PREFIX='D';
-      CLASS='DISCRETE';
-      PART_NAME='MUR105';
+      PART_NAME='MPSH81';
+      BODY_NAME='MPSH81';
+      JEDEC_TYPE='SOT23';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
   end_body;
 end_primitive;
-primitive 'RSMD0603-50,1%,0603';
+primitive 'OPA2277';
+  pin
+    'OUT_A':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT_B':
+      PIN_NUMBER='(7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'V+':
+      PIN_NUMBER='(8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V-':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    '+IN_B':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '-IN_A':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '-IN_B':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '+IN_A':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='OPA2277';
+      BODY_NAME='OPA2277';
+      JEDEC_TYPE='SOIC8';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive 'OPA277';
+  pin
+    'V+':
+      PIN_NUMBER='(7)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V-':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN-':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN+':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'TRIM_A':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'TRIM_B':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='OPA277';
+      BODY_NAME='OPA277';
+      JEDEC_TYPE='SOIC8';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      NC_PINS='(5)';
+  end_body;
+end_primitive;
+primitive 'OPA4277';
+  pin
+    '-IN_C':
+      PIN_NUMBER='(9)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '+IN_D':
+      PIN_NUMBER='(12)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '-IN_D':
+      PIN_NUMBER='(13)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT_A':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT_D':
+      PIN_NUMBER='(14)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT_C':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '+IN_B':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '-IN_A':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '-IN_B':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '+IN_C':
+      PIN_NUMBER='(10)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT_B':
+      PIN_NUMBER='(7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'V+':
+      PIN_NUMBER='(4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'V-':
+      PIN_NUMBER='(11)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    '+IN_A':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='OPA4277';
+      BODY_NAME='OPA4277';
+      JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive 'PRMA1C05B';
+  pin
+    'IN':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN_CPY':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'OUT2':
+      PIN_NUMBER='(8)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CTRL_IN':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'CTRL_OUT':
+      PIN_NUMBER='(7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='PRMA1C05B';
+      BODY_NAME='PRMA1C05B';
+      JEDEC_TYPE='DIP14_3';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      NC_PINS='(2,6)';
+  end_body;
+end_primitive;
+primitive 'REF02';
+  pin
+    'VIN':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'TEMP':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'GND':
+      PIN_NUMBER='(4)';
+      PINUSE='GROUND';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'VOUT':
+      PIN_NUMBER='(5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'TRIM':
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='REF02';
+      BODY_NAME='REF02';
+      JEDEC_TYPE='SOIC8';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      NC_PINS='(1,7,8)';
+  end_body;
+end_primitive;
+primitive 'RES_L';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PIN_GROUP='1';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PIN_GROUP='1';
+      NO_LOAD_CHECK='BOTH';
+      UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      PHYS_DES_PREFIX='R';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      CLASS='DISCRETE';
+      PINCOUNT='2';
+      SIZE='1';
+      JEDEC_TYPE='RES805';
+      ALT_SYMBOLS='(RES400)';
+      PART_NAME='RES_L';
+  end_body;
+end_primitive;
+primitive 'RSMD0805-0,1%,0805';
   pin
     'B'<0>:
       PIN_NUMBER='(2)';
@@ -1723,7 +4004,7 @@ primitive 'RSMD0603-50,1%,0603';
       PIN_GROUP='1';
   end_pin;
   body
-      PART_NAME='RSMD0603';
+      PART_NAME='RSMD0805';
       COMP_TYPE='RES';
       PATH='2P';
       DRAWING='ELEMENTCHIPS.LOGIC.1.1';
@@ -1735,14 +4016,14 @@ primitive 'RSMD0603-50,1%,0603';
       ROT='0';
       PINCOUNT='2';
       SIZE='1';
-      BODY_NAME='RSMD0603';
-      JEDEC_TYPE='RES0603';
+      BODY_NAME='RSMD0805';
+      JEDEC_TYPE='RES805';
       PHYS_DES_PREFIX='R';
       CLASS='DISCRETE';
-      VALUE='50';
-      PARENT_PART_TYPE='RSMD0603';
-      PARENT_PPT='RSMD0603';
-      PARENT_PPT_PART='RSMD0603-50,1%,0603';
+      VALUE='0';
+      PARENT_PART_TYPE='RSMD0805';
+      PARENT_PPT='RSMD0805';
+      PARENT_PPT_PART='RSMD0805-0,1%,0805';
   end_body;
 end_primitive;
 primitive 'RSMD0805-100,1%,0805';
@@ -1847,6 +4128,40 @@ primitive 'RSMD0805-10K,1%,0805';
       PARENT_PPT_PART='RSMD0805-10K,1%,0805';
   end_body;
 end_primitive;
+primitive 'RSMD0805-111,1%,0805';
+  pin
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='RSMD0805';
+      COMP_TYPE='RES';
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='RSMD0805';
+      JEDEC_TYPE='RES805';
+      PHYS_DES_PREFIX='R';
+      CLASS='DISCRETE';
+      VALUE='111';
+      PARENT_PART_TYPE='RSMD0805';
+      PARENT_PPT='RSMD0805';
+      PARENT_PPT_PART='RSMD0805-111,1%,0805';
+  end_body;
+end_primitive;
 primitive 'RSMD0805-120,1%,0805';
   pin
     'B'<0>:
@@ -1949,6 +4264,40 @@ primitive 'RSMD0805-130,1%,0805';
       PARENT_PPT_PART='RSMD0805-130,1%,0805';
   end_body;
 end_primitive;
+primitive 'RSMD0805-2K,1%,0805';
+  pin
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='RSMD0805';
+      COMP_TYPE='RES';
+      PATH='2P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
+      VER='1';
+      XY='(1350,1350)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='RSMD0805';
+      JEDEC_TYPE='RES805';
+      PHYS_DES_PREFIX='R';
+      CLASS='DISCRETE';
+      VALUE='2K';
+      PARENT_PART_TYPE='RSMD0805';
+      PARENT_PPT='RSMD0805';
+      PARENT_PPT_PART='RSMD0805-2K,1%,0805';
+  end_body;
+end_primitive;
 primitive 'RSMD0805-499,1%,0805';
   pin
     'B'<0>:
@@ -2049,40 +4398,6 @@ primitive 'RSMD0805-71.5,1%,0805';
       PARENT_PART_TYPE='RSMD0805';
       PARENT_PPT='RSMD0805';
       PARENT_PPT_PART='RSMD0805-71.5,1%,0805';
-  end_body;
-end_primitive;
-primitive 'RSMD0805-80.6,1%,0805';
-  pin
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='RSMD0805';
-      COMP_TYPE='RES';
-      PATH='2P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
-      VER='1';
-      XY='(1350,1350)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='RSMD0805';
-      JEDEC_TYPE='RES805';
-      PHYS_DES_PREFIX='R';
-      CLASS='DISCRETE';
-      VALUE='80.6';
-      PARENT_PART_TYPE='RSMD0805';
-      PARENT_PPT='RSMD0805';
-      PARENT_PPT_PART='RSMD0805-80.6,1%,0805';
   end_body;
 end_primitive;
 primitive 'RSMD0805-84,0.1%,0805';
@@ -2192,6 +4507,7 @@ primitive 'TESTPOINT_L';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='BOTH';
       UNKNOWN_LOADING='TRUE';
+      PINUSE='UNSPEC';
   end_pin;
   body
       JEDEC_TYPE='FEC32DTP';
@@ -2203,6 +4519,60 @@ primitive 'TESTPOINT_L';
       PHYS_DES_PREFIX='TP';
       SIZE='1';
       PART_NAME='TESTPOINT_L';
+  end_body;
+end_primitive;
+primitive 'THS3062';
+  pin
+    'VCC-':
+      PIN_NUMBER='(4,4)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+    'OUT':
+      PIN_NUMBER='(1,7)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN-':
+      PIN_NUMBER='(2,6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN+':
+      PIN_NUMBER='(3,5)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'VCC+':
+      PIN_NUMBER='(8,8)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+  end_pin;
+  body
+      BODY_NAME='THS3062';
+      JEDEC_TYPE='SOIC8';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      PART_NAME='THS3062';
   end_body;
 end_primitive;
 END.

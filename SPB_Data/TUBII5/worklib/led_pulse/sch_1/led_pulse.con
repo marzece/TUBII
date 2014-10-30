@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "led_pulse"
     (lastIds
-      (lastInstanceId 5)
-      (lastNetId 7)
-      (lastInstTermId 15)
+      (lastInstanceId 6)
+      (lastNetId 8)
+      (lastInstTermId 17)
     )
     (cells
       ("S2" "rsmd0805" "resistors" "sym_1"
@@ -35,10 +35,10 @@
           ("T14" "q*" -1 -1 2)
         )
       )
-      ("S5" "led_1206" "misc" "sym_1"
+      ("S6" "led_l" "misc" "sym_2"
         (terms
-          ("T15" "a" -1 -1 3)
-          ("T16" "b" -1 -1 3)
+          ("T20" "a" -1 -1 3)
+          ("T21" "b" -1 -1 3)
         )
       )
     )
@@ -48,7 +48,7 @@
       ("N3" "pulse_in" -1 -1 1 3)
       ("N4" "unnamed_1_csmd0805_i2_b" -1 -1 0 )
       ("N5" "unnamed_1_hct123_i5_q" -1 -1 0 )
-      ("N6" "unnamed_1_led1206_i7_a" -1 -1 0 )
+      ("N8" "unnamed_1_ledl_i10_a" -1 -1 0 )
       ("N1" "gnd" -1 -1 2 )
       ("N7" "vcc" -1 -1 2 )
     )
@@ -126,7 +126,7 @@
         (pins
           ("M12" "T4" 0 0
             (conn
-              ("0" 0 0 "N6" -1 -1)
+              ("0" 0 0 "N8" -1 -1)
             )
           )
           ("M13" "T5" 0 0
@@ -136,14 +136,14 @@
           )
         )
       )
-      ("I5" "page1_i7" "S5"
+      ("I6" "page1_i10" "S6"
         (pins
-          ("M14" "T15" -1 -1
+          ("M16" "T20" -1 -1
             (conn
-              ("0" -1 -1 "N6" -1 -1)
+              ("0" -1 -1 "N8" -1 -1)
             )
           )
-          ("M15" "T16" -1 -1
+          ("M17" "T21" -1 -1
             (conn
               ("0" -1 -1 "N1" -1 -1)
             )

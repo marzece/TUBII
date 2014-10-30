@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-14T18:11:45</modificationTime>
+    <modificationTime>2014-10-20T12:00:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl-ttl" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>19</instanceid>
-        <netid>21</netid>
+        <netid>22</netid>
         <insttermid>50</insttermid>
       </lastids>
       <cells>
@@ -149,12 +148,6 @@
           <name>unnamed_1_10e116_i26_b</name>
         </net>
         <net>
-          <id>N17</id>
-          <name>ecl_in_smb</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N18</id>
           <name>ttl_out</name>
           <scope>interface</scope>
@@ -167,6 +160,12 @@
         <net>
           <id>N21</id>
           <name>unnamed_1_10h125_i1_b</name>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>ecl_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N1</id>
@@ -272,7 +271,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N17" />
+                <connection pinmsb="0" pinlsb="0" net="N22" />
               </connections>
             </pin>
           </pins>
@@ -341,7 +340,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N17" />
+                <connection pinmsb="0" pinlsb="0" net="N22" />
               </connections>
             </pin>
             <pin>
@@ -473,8 +472,9 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
-          <netScope ref="ecl_in_smb">
+          <netScope ref="ecl_in">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -502,7 +502,7 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="ecl_in_smb"></net>
+              <net ref="ecl_in"></net>
               <net ref="gnd"></net>
               <net ref="ttl_out"></net>
               <net ref="unnamed_1_10e116_i26_b"></net>

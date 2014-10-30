@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-08T17:52:09</modificationTime>
+    <modificationTime>2014-10-30T17:17:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="led_pulse" view="sch_1">
       <lastids>
-        <instanceid>5</instanceid>
-        <netid>7</netid>
-        <insttermid>15</insttermid>
+        <instanceid>6</instanceid>
+        <netid>8</netid>
+        <insttermid>17</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -110,20 +110,20 @@
           </terms>
         </cell>
         <cell>
-          <id>S5</id>
+          <id>S6</id>
           <library>misc</library>
-          <name>led_1206</name>
-          <view>sym_1</view>
+          <name>led_l</name>
+          <view>sym_2</view>
           <parameters>
           </parameters>
           <terms>
             <term>
-              <id>T15</id>
+              <id>T20</id>
               <name>a</name>
               <direction>inout</direction>
             </term>
             <term>
-              <id>T16</id>
+              <id>T21</id>
               <name>b</name>
               <direction>inout</direction>
             </term>
@@ -150,8 +150,8 @@
           <name>unnamed_1_hct123_i5_q</name>
         </net>
         <net>
-          <id>N6</id>
-          <name>unnamed_1_led1206_i7_a</name>
+          <id>N8</id>
+          <name>unnamed_1_ledl_i10_a</name>
         </net>
         <net>
           <id>N1</id>
@@ -340,7 +340,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N8" />
               </connections>
             </pin>
             <pin>
@@ -363,9 +363,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I5</id>
-          <cellid>S5</cellid>
-          <name>page1_i7</name>
+          <id>I6</id>
+          <cellid>S6</cellid>
+          <name>page1_i10</name>
           <parameters>
           </parameters>
           <masks>
@@ -374,15 +374,15 @@
           </powers>
           <pins>
             <pin>
-              <id>M14</id>
-              <termid>T15</termid>
+              <id>M16</id>
+              <termid>T20</termid>
               <connections>
-                <connection net="N6" />
+                <connection net="N8" />
               </connections>
             </pin>
             <pin>
-              <id>M15</id>
-              <termid>T16</termid>
+              <id>M17</id>
+              <termid>T21</termid>
               <connections>
                 <connection net="N1" />
               </connections>
@@ -432,7 +432,7 @@
               <net ref="pulse_in"></net>
               <net ref="unnamed_1_csmd0805_i2_b"></net>
               <net ref="unnamed_1_hct123_i5_q"></net>
-              <net ref="unnamed_1_led1206_i7_a"></net>
+              <net ref="unnamed_1_ledl_i10_a"></net>
               <net ref="vcc"></net>
             </nets>
             <instances>
@@ -440,7 +440,7 @@
               <instance ref="i2"></instance>
               <instance ref="i5"></instance>
               <instance ref="i6"></instance>
-              <instance ref="i7"></instance>
+              <instance ref="i10"></instance>
             </instances>
           </page>
         </pages>

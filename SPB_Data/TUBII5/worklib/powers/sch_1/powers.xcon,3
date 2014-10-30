@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-22T11:25:21</modificationTime>
+    <modificationTime>2014-10-22T13:20:56</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="powers" view="sch_1">
       <lastids>
-        <instanceid>57</instanceid>
-        <netid>35</netid>
-        <insttermid>111</insttermid>
+        <instanceid>59</instanceid>
+        <netid>36</netid>
+        <insttermid>116</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -383,6 +383,11 @@
         <net>
           <id>N19</id>
           <name>vcc</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N36</id>
+          <name>vref5m</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -2083,6 +2088,63 @@
               <id>M111</id>
               <termid>T61</termid>
               <connections>
+                <connection net="N36" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I58</id>
+          <cellid>S5</cellid>
+          <name>page1_i79</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M115</id>
+              <termid>T14</termid>
+              <connections>
+                <connection net="N17" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I59</id>
+          <cellid>S5</cellid>
+          <name>page1_i81</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M116</id>
+              <termid>T14</termid>
+              <connections>
+                <connection net="N18" />
               </connections>
             </pin>
           </pins>
@@ -2103,7 +2165,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
@@ -2137,6 +2198,11 @@
             </pageScope>
           </netScope>
           <netScope ref="vp3_3">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="vref5m">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -2175,6 +2241,7 @@
               <net ref="vcc15m"></net>
               <net ref="vee"></net>
               <net ref="vp3_3"></net>
+              <net ref="vref5m"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>
@@ -2223,6 +2290,8 @@
               <instance ref="i76"></instance>
               <instance ref="i77"></instance>
               <instance ref="i78"></instance>
+              <instance ref="i79"></instance>
+              <instance ref="i81"></instance>
             </instances>
           </page>
         </pages>

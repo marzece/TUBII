@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 30-Oct-2014 AT 11:16:12 }
+{ Packager-XL run on 30-Oct-2014 AT 15:36:05 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -1329,72 +1329,6 @@ primitive 'COTO2342';
       CLASS='DISCRETE';
   end_body;
 end_primitive;
-primitive 'CSMD0603-100NF,10%,0603,25V';
-  pin
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='CSMD0603';
-      PATH='1P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
-      VER='1';
-      XY='(1400,2400)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='CSMD0603';
-      JEDEC_TYPE='CAP0603';
-      PHYS_DES_PREFIX='C';
-      CLASS='DISCRETE';
-      VALUE='100NF';
-      PARENT_PART_TYPE='CSMD0603';
-      PARENT_PPT='CSMD0603';
-      PARENT_PPT_PART='CSMD0603-100NF,10%,0603,25V';
-  end_body;
-end_primitive;
-primitive 'CSMD0603-1UF,10%,0603,25V';
-  pin
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='CSMD0603';
-      PATH='1P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
-      VER='1';
-      XY='(1400,2400)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='CSMD0603';
-      JEDEC_TYPE='CAP0603';
-      PHYS_DES_PREFIX='C';
-      CLASS='DISCRETE';
-      VALUE='1UF';
-      PARENT_PART_TYPE='CSMD0603';
-      PARENT_PPT='CSMD0603';
-      PARENT_PPT_PART='CSMD0603-1UF,10%,0603,25V';
-  end_body;
-end_primitive;
 primitive 'CSMD0805-0.1UF,5%,0805,50V';
   pin
     'A'<0>:
@@ -1525,6 +1459,39 @@ primitive 'CSMD0805-1.0UF,10%,0805,25V';
       PARENT_PART_TYPE='CSMD0805';
       PARENT_PPT='CSMD0805';
       PARENT_PPT_PART='CSMD0805-1.0UF,10%,0805,25V';
+  end_body;
+end_primitive;
+primitive 'CSMD0805-100NF,10%,0805,25V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0805';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0805';
+      JEDEC_TYPE='CAP805';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='100NF';
+      PARENT_PART_TYPE='CSMD0805';
+      PARENT_PPT='CSMD0805';
+      PARENT_PPT_PART='CSMD0805-100NF,10%,0805,25V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-10NF,10%,0805,25V';
@@ -3835,44 +3802,6 @@ primitive 'OPA4277';
       JEDEC_TYPE='SOIC14';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-  end_body;
-end_primitive;
-primitive 'POT';
-  pin
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-      NO_LOAD_CHECK='Both';
-      UNKNOWN_LOADING='TRUE';
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-      NO_LOAD_CHECK='Both';
-      UNKNOWN_LOADING='TRUE';
-    'C':
-      PIN_NUMBER='(3)';
-      PINUSE='UNSPEC';
-      NO_LOAD_CHECK='Both';
-      UNKNOWN_LOADING='TRUE';
-  end_pin;
-  body
-      PART_NAME='POT';
-      ALT_SYMBOLS='(RES400)';
-      PATH='2P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
-      VER='1';
-      XY='(1350,1350)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='POT';
-      PHYS_DES_PREFIX='R';
-      CLASS='DISCRETE';
   end_body;
 end_primitive;
 primitive 'PRMA1C05B';

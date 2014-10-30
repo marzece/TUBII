@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-08T14:17:20</modificationTime>
+    <modificationTime>2014-10-14T18:35:56</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="nim-ecl" view="sch_1">
       <lastids>
         <instanceid>15</instanceid>
-        <netid>14</netid>
+        <netid>15</netid>
         <insttermid>34</insttermid>
       </lastids>
       <cells>
@@ -190,20 +190,14 @@
           <name>unnamed_1_10h116_i20_y_1</name>
         </net>
         <net>
-          <id>N12</id>
-          <name>ecl_out_bnc</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N13</id>
-          <name>ecl_out_smb</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N14</id>
           <name>nim_in</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N15</id>
+          <name>ecl_out</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -460,73 +454,11 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N13" />
+                <connection pinmsb="0" pinlsb="0" net="N15" />
               </connections>
             </pin>
             <pin>
               <id>M23</id>
-              <termid>T21</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I11</id>
-          <cellid>S7</cellid>
-          <name>page1_i23</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M24</id>
-              <termid>T17</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M25</id>
-              <termid>T18</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M26</id>
-              <termid>T19</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M27</id>
-              <termid>T20</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N12" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M28</id>
               <termid>T21</termid>
               <msb>0</msb>
               <lsb>0</lsb>
@@ -630,13 +562,7 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
-          <netScope ref="ecl_out_bnc">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="ecl_out_smb">
+          <netScope ref="ecl_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -669,8 +595,7 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="ecl_out_bnc"></net>
-              <net ref="ecl_out_smb"></net>
+              <net ref="ecl_out"></net>
               <net ref="gnd"></net>
               <net ref="nim_in"></net>
               <net ref="unnamed_1_10h116_i20_a"></net>
@@ -686,7 +611,6 @@
               <instance ref="i12"></instance>
               <instance ref="i20"></instance>
               <instance ref="i22"></instance>
-              <instance ref="i23"></instance>
               <instance ref="i26"></instance>
               <instance ref="i27"></instance>
             </instances>
