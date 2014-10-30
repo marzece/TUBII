@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-17T14:16:40</modificationTime>
+    <modificationTime>2014-10-17T14:21:58</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_coms" view="sch_1">
       <lastids>
         <instanceid>95</instanceid>
-        <netid>157</netid>
+        <netid>159</netid>
         <insttermid>544</insttermid>
       </lastids>
       <cells>
@@ -497,11 +497,6 @@
           <name>unnamed_1_ledl_i85_a</name>
         </net>
         <net>
-          <id>N82</id>
-          <name>vcc5</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>gnd_power</id>
           <name>gnd_power</name>
           <scope>global</scope>
@@ -535,6 +530,17 @@
           <id>N152</id>
           <name>gnd</name>
           <scope>global</scope>
+        </net>
+        <net>
+          <id>N158</id>
+          <name>vcc</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N159</id>
+          <name>vcc5</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
         </net>
       </nets>
       <aliases>
@@ -571,7 +577,7 @@
               <id>M10</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -633,7 +639,7 @@
               <id>M16</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -695,7 +701,7 @@
               <id>M34</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -757,7 +763,7 @@
               <id>M40</id>
               <termid>T4</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1123,7 +1129,7 @@
               <id>M112</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1273,7 +1279,7 @@
               <id>M128</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1322,7 +1328,7 @@
               <id>M132</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1371,7 +1377,7 @@
               <id>M136</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1916,7 +1922,7 @@
               <id>M232</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -1965,7 +1971,7 @@
               <id>M236</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2014,7 +2020,7 @@
               <id>M240</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2063,7 +2069,7 @@
               <id>M244</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2112,7 +2118,7 @@
               <id>M248</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2161,7 +2167,7 @@
               <id>M252</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2210,7 +2216,7 @@
               <id>M256</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2259,7 +2265,7 @@
               <id>M260</id>
               <termid>T21</termid>
               <connections>
-                <connection net="N82" />
+                <connection net="N158" />
               </connections>
             </pin>
             <pin>
@@ -2638,7 +2644,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="vcc5">
+          <netScope ref="vcc">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -2707,7 +2713,7 @@
               <net ref="unnamed_1_prma1c05b_i14_in"></net>
               <net ref="unnamed_1_prma1c05b_i9_ctrlin"></net>
               <net ref="unnamed_1_prma1c05b_i9_in"></net>
-              <net ref="vcc5"></net>
+              <net ref="vcc"></net>
             </nets>
             <instances>
               <instance ref="i9"></instance>

@@ -2,31 +2,22 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"PULSE_OUT\I";
-2"UN$1$10H124$I1$Y$1";
-3"UN$1$10H124$I1$Y";
-4"VCC\G";
-5"DELAY_OUT\I";
-6"UN$1$10H124$I2$Y$1";
-7"UN$1$10H124$I2$Y";
-8"VCC\G";
-9"DELAY_IN\I";
-10"VTT\G";
+1"VCC\G";
+2"DELAY_OUT\I";
+3"UN$1$MC10H124$I24$OUT";
+4"UN$1$MC10H124$I25$OUT";
+5"VCC\G";
+6"UN$1$MC10H124$I25$OUT$1";
+7"PULSE_OUT\I";
+8"UN$1$MC10H124$I24$OUT$1";
+9"VTT\G";
+10"DELAY_IN\I";
 11"VTT\G";
 12"UN$1$10E116$I9$Y";
 13"UN$1$10E116$I9$B";
 14"VTT\G";
 15"UN$1$10E116$I9$A";
 16"UN$1$10E116$I9$Y$1";
-%"10H124"
-"1","(3700,3600)","0","ecl","I1";
-;
-CDS_LMAN_SYM_OUTLINE"-100,100,50,-100"
-CDS_LIB"ecl";
-"D"1;
-"Y"2;
-"Y* \B"3;
-"COMMON"4;
 %"10H125"
 "1","(1350,3200)","0","ecl","I10";
 SECTION"1";
@@ -34,7 +25,7 @@ CDS_LIB"ecl";
 "A <SIZE-1..0>"12;
 "B <SIZE-1..0>* \B"16;
 "V"0;
-"Y <SIZE-1..0>"9;
+"Y <SIZE-1..0>"10;
 %"RSMD0805"
 "1","(1150,2900)","1","resistors","I11";
 ;
@@ -172,9 +163,9 @@ CDS_LOCATION"R266"
 CDS_LIB"resistors"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
-$PN"1"10;
+$PN"1"9;
 "B<0>"
-$PN"2"3;
+$PN"2"4;
 %"RSMD0805"
 "1","(3825,3375)","1","resistors","I16";
 ;
@@ -200,9 +191,9 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LOCATION"R265"
 CDS_SEC"1";
 "A<0>"
-$PN"1"10;
+$PN"1"9;
 "B<0>"
-$PN"2"2;
+$PN"2"6;
 %"RSMD0805"
 "1","(3950,2875)","1","resistors","I19";
 ;
@@ -225,16 +216,7 @@ POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"11;
-"B<0>"7;
-%"10H124"
-"1","(3750,3075)","0","ecl","I2";
-;
-CDS_LIB"ecl"
-CDS_LMAN_SYM_OUTLINE"-100,100,50,-100";
-"D"5;
-"Y"6;
-"Y* \B"7;
-"COMMON"8;
+"B<0>"8;
 %"RSMD0805"
 "1","(3875,2875)","1","resistors","I20";
 ;
@@ -257,47 +239,67 @@ POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"11;
-"B<0>"6;
+"B<0>"3;
 %"LED_PULSE"
 "1","(2100,3475)","0","tubii_lib","I22";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"9;
+"PULSE_IN"10;
 %"LED_PULSE"
 "1","(3500,3950)","0","tubii_lib","I23";
 ;
 CDS_LIB"tubii_lib"
 BLOCK"TRUE";
-"PULSE_IN"1;
+"PULSE_IN"7;
+%"MC10H124"
+"1","(3775,3075)","0","ecl","I24";
+;
+PACK_TYPE"PLCC"
+CDS_LIB"ecl"
+CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
+"IN"2;
+"OUT"3;
+"COMMON"1;
+"OUT* \B"8;
+%"MC10H124"
+"1","(3725,3600)","0","ecl","I25";
+;
+PACK_TYPE"PLCC"
+CDS_LIB"ecl"
+CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
+"IN"7;
+"OUT"6;
+"COMMON"5;
+"OUT* \B"4;
 %"TESTPOINT_L"
 "1","(4100,3125)","0","misc","I3";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"6;
+"A\NAC \B"3;
 %"TESTPOINT_L"
 "1","(4100,3025)","0","misc","I4";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"7;
+"A\NAC \B"8;
 %"TESTPOINT_L"
 "1","(4025,3550)","0","misc","I5";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"3;
+"A\NAC \B"4;
 %"TESTPOINT_L"
 "1","(4025,3650)","0","misc","I6";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"2;
+"A\NAC \B"6;
 %"TESTPOINT_L"
 "1","(-225,3250)","2","misc","I7";
 ;

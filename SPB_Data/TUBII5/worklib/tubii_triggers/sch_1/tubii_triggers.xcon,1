@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-17T14:03:45</modificationTime>
+    <modificationTime>2014-10-17T14:04:13</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_triggers" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>98</instanceid>
-        <netid>107</netid>
+        <netid>108</netid>
         <insttermid>261</insttermid>
       </lastids>
       <cells>
@@ -174,12 +173,6 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N11</id>
-          <name>tubii_gt</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N71</id>
           <name>unnamed_1_10h125_i125_a</name>
         </net>
@@ -246,6 +239,12 @@
         <net>
           <id>N91</id>
           <name>unnamed_1_f07_i134_y</name>
+        </net>
+        <net>
+          <id>N108</id>
+          <name>tubii_rt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N5</id>
@@ -1114,7 +1113,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N11" />
+                <connection pinmsb="0" pinlsb="0" net="N108" />
               </connections>
             </pin>
             <pin>
@@ -1149,7 +1148,7 @@
               <id>M231</id>
               <termid>T62</termid>
               <connections>
-                <connection net="N11" />
+                <connection net="N108" />
               </connections>
             </pin>
           </pins>
@@ -1170,6 +1169,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="gnd">
             <pageScope number="1">
@@ -1182,7 +1182,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tubii_gt">
+          <netScope ref="tubii_rt">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1204,7 +1204,7 @@
                 <msb>3</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="tubii_gt"></net>
+              <net ref="tubii_rt"></net>
               <net ref="unnamed_1_10h125_i125_a"></net>
               <net ref="unnamed_1_10h125_i125_b"></net>
               <net ref="unnamed_1_10h125_i125_y"></net>

@@ -1,0 +1,31 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'MC10H124','MC10H124_PLCC';
+  pin
+    'IN':
+      PIN_NUMBER='(7,9,13,14)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'OUT':
+      PIN_NUMBER='(3,2,19,18)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'COMMON':
+      PIN_NUMBER='(8,8,8,8)';
+      INPUT_LOAD='(-0.01,0.01)';
+    '-OUT':
+      PIN_NUMBER='(5,4,15,17)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='MC10H124';
+    BODY_NAME='MC10H124';
+    JEDEC_TYPE='plcc20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VEE:10)';
+    POWER_PINS='(VCC:12)';
+    POWER_PINS='(GND:20)';
+    NC_PINS='(1,6,11,16)';
+  end_body;
+end_primitive;
+
+END.

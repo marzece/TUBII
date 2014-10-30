@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-02T18:13:38</modificationTime>
+    <modificationTime>2014-10-03T12:15:43</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="pulse_scaler" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>8</instanceid>
-        <netid>2</netid>
+        <netid>8</netid>
         <insttermid>8</insttermid>
       </lastids>
       <cells>
@@ -33,6 +34,42 @@
         </cell>
       </cells>
       <nets>
+        <net>
+          <id>N3</id>
+          <name>allow_cnt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N4</id>
+          <name>clr_cnt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N5</id>
+          <name>latch_display</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N6</id>
+          <name>leading_zeroes</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N7</id>
+          <name>pulse</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N8</id>
+          <name>test</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
         <net>
           <id>N1</id>
           <name>gnd</name>
@@ -98,6 +135,7 @@
               <id>M2</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N6" />
               </connections>
             </pin>
           </pins>
@@ -125,6 +163,7 @@
               <id>M3</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N5" />
               </connections>
             </pin>
           </pins>
@@ -152,6 +191,7 @@
               <id>M4</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N4" />
               </connections>
             </pin>
           </pins>
@@ -179,6 +219,7 @@
               <id>M5</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N3" />
               </connections>
             </pin>
           </pins>
@@ -206,6 +247,7 @@
               <id>M6</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N8" />
               </connections>
             </pin>
           </pins>
@@ -233,6 +275,7 @@
               <id>M7</id>
               <termid>T3</termid>
               <connections>
+                <connection net="N7" />
               </connections>
             </pin>
           </pins>
@@ -282,9 +325,45 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
+          <netScope ref="allow_cnt">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clr_cnt">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
+            </pageScope>
+          </netScope>
+          <netScope ref="latch_display">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="leading_zeroes">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="pulse">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="test">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="vcc">
@@ -298,7 +377,13 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="allow_cnt"></net>
+              <net ref="clr_cnt"></net>
               <net ref="gnd"></net>
+              <net ref="latch_display"></net>
+              <net ref="leading_zeroes"></net>
+              <net ref="pulse"></net>
+              <net ref="test"></net>
               <net ref="vcc"></net>
             </nets>
             <instances>

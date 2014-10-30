@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-15T11:27:11</modificationTime>
+    <modificationTime>2014-10-22T15:16:27</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="asyncdelays" view="sch_1">
       <lastids>
-        <instanceid>21</instanceid>
-        <netid>38</netid>
-        <insttermid>95</insttermid>
+        <instanceid>22</instanceid>
+        <netid>39</netid>
+        <insttermid>101</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -286,6 +286,30 @@
               <id>T120</id>
               <name>q/p0</name>
               <direction>input</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S14</id>
+          <library>resistors</library>
+          <name>rsmd0805</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T133</id>
+              <name>a</name>
+              <direction>input</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T134</id>
+              <name>b</name>
+              <direction>output</direction>
+              <msb>0</msb>
+              <lsb>0</lsb>
             </term>
           </terms>
         </cell>
@@ -871,6 +895,45 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I22</id>
+          <cellid>S14</cellid>
+          <name>page1_i28</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M100</id>
+              <termid>T133</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N37" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M101</id>
+              <termid>T134</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="vcc" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -971,6 +1034,7 @@
               <instance ref="i25"></instance>
               <instance ref="i26"></instance>
               <instance ref="i27"></instance>
+              <instance ref="i28"></instance>
             </instances>
           </page>
         </pages>

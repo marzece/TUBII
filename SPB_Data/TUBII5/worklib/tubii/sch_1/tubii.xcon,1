@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-21T16:12:13</modificationTime>
+    <modificationTime>2014-10-21T16:14:11</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>171</instanceid>
         <netid>1972</netid>
-        <insttermid>6292</insttermid>
+        <insttermid>6294</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -524,6 +524,20 @@
               <id>T3909</id>
               <name>sync24_ttl</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T3910</id>
+              <name>rawtrigs</name>
+              <direction>input</direction>
+              <msb>3</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T3911</id>
+              <name>scope_out</name>
+              <direction>output</direction>
+              <msb>7</msb>
+              <lsb>0</lsb>
             </term>
           </terms>
         </cell>
@@ -1215,6 +1229,24 @@
               <termid>T3909</termid>
               <connections>
                 <connection net="N1932" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6293</id>
+              <termid>T3910</termid>
+              <msb>3</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="3" pinlsb="0" net="N1938" netmsb="3" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6294</id>
+              <termid>T3911</termid>
+              <msb>7</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="7" pinlsb="0" net="N1962" netmsb="7" netlsb="0" />
               </connections>
             </pin>
           </pins>

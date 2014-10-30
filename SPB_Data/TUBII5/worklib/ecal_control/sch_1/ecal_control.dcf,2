@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 12 )
+			( logicalViewRevNum 14 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -497,11 +497,11 @@
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_led1206_i18_a"
 				( objectStatus "unnamed_1_led1206_i18_a" )
 			)
-			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h124_i4_q"
-				( objectStatus "unnamed_1_10h124_i4_q" )
-			)
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h124_i4_y"
 				( objectStatus "unnamed_1_10h124_i4_y" )
+			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10h124_i4_y_1"
+				( objectStatus "unnamed_1_10h124_i4_y_1" )
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i4"
 				( attribute "CDS_LIB" "ecl"
@@ -519,9 +519,6 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
@@ -535,11 +532,7 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I4" )
-				( pin "c"
-				)
 				( pin "d"
-				)
-				( pin "q"
 				)
 				( pin "\y*\"
 				)
@@ -1123,7 +1116,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I20" )
@@ -1159,7 +1152,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I21" )
@@ -1169,6 +1162,10 @@
 				)
 				( pin "y"
 				)
+			)
+			( pin "@tubii_lib.ecal_control(sch_1):page1_i4:c"
+			)
+			( pin "@tubii_lib.ecal_control(sch_1):page1_i4:q"
 			)
 		)
 	)

@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-29T16:47:36</modificationTime>
+    <modificationTime>2014-10-29T17:47:55</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecal_control" view="sch_1">
       <lastids>
         <instanceid>18</instanceid>
-        <netid>23</netid>
-        <insttermid>42</insttermid>
+        <netid>24</netid>
+        <insttermid>44</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -25,23 +25,23 @@
           </parameters>
           <terms>
             <term>
-              <id>T5</id>
-              <name>c</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T6</id>
               <name>d</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T7</id>
-              <name>q</name>
+              <id>T8</id>
+              <name>y*</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T8</id>
-              <name>y*</name>
+              <id>T57</id>
+              <name>common</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T58</id>
+              <name>y</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -202,12 +202,12 @@
           <name>unnamed_1_led1206_i18_a</name>
         </net>
         <net>
-          <id>N22</id>
-          <name>unnamed_1_10h124_i4_q</name>
-        </net>
-        <net>
           <id>N23</id>
           <name>unnamed_1_10h124_i4_y</name>
+        </net>
+        <net>
+          <id>N24</id>
+          <name>unnamed_1_10h124_i4_y_1</name>
         </net>
         <net>
           <id>N4</id>
@@ -249,13 +249,6 @@
           </powers>
           <pins>
             <pin>
-              <id>M3</id>
-              <termid>T5</termid>
-              <connections>
-                <connection net="N4" />
-              </connections>
-            </pin>
-            <pin>
               <id>M4</id>
               <termid>T6</termid>
               <connections>
@@ -263,17 +256,24 @@
               </connections>
             </pin>
             <pin>
-              <id>M5</id>
-              <termid>T7</termid>
-              <connections>
-                <connection net="N22" />
-              </connections>
-            </pin>
-            <pin>
               <id>M6</id>
               <termid>T8</termid>
               <connections>
                 <connection net="N23" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M43</id>
+              <termid>T57</termid>
+              <connections>
+                <connection net="N4" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M44</id>
+              <termid>T58</termid>
+              <connections>
+                <connection net="N24" />
               </connections>
             </pin>
           </pins>
@@ -384,7 +384,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N22" />
+                <connection pinmsb="0" pinlsb="0" net="N24" />
               </connections>
             </pin>
           </pins>
@@ -636,13 +636,17 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N19</override>
+            </power>
           </powers>
           <pins>
             <pin>
               <id>M37</id>
               <termid>T47</termid>
               <connections>
-                <connection net="N22" />
+                <connection net="N24" />
               </connections>
             </pin>
             <pin>
@@ -678,6 +682,10 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N19</override>
+            </power>
           </powers>
           <pins>
             <pin>
@@ -719,7 +727,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="ecal_active">
             <pageScope number="1">
@@ -773,8 +780,8 @@
               <net ref="gtrig"></net>
               <net ref="unnamed_1_10e101_i7_a"></net>
               <net ref="unnamed_1_10e101_i7_d"></net>
-              <net ref="unnamed_1_10h124_i4_q"></net>
               <net ref="unnamed_1_10h124_i4_y"></net>
+              <net ref="unnamed_1_10h124_i4_y_1"></net>
               <net ref="unnamed_1_led1206_i18_a"></net>
               <net ref="vcc"></net>
               <net ref="vtt"></net>

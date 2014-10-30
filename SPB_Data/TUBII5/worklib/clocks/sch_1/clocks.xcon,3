@@ -5,17 +5,57 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T17:28:51</modificationTime>
+    <modificationTime>2014-10-03T17:29:34</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
       <lastids>
-        <instanceid>6</instanceid>
-        <netid>41</netid>
-        <insttermid>72</insttermid>
+        <instanceid>7</instanceid>
+        <netid>43</netid>
+        <insttermid>83</insttermid>
       </lastids>
       <cells>
+        <cell>
+          <id>S2</id>
+          <library>tubii_lib</library>
+          <name>tubii_clks</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T5</id>
+              <name>bckp_clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T6</id>
+              <name>default_clk</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T7</id>
+              <name>default_select</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T8</id>
+              <name>fox200mhz</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T91</id>
+              <name>clock200_outh</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T92</id>
+              <name>clock200_outl</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
         <cell>
           <id>S3</id>
           <library>tubii_lib</library>
@@ -129,46 +169,6 @@
             </term>
           </terms>
         </cell>
-        <cell>
-          <id>S6</id>
-          <library>tubii_lib</library>
-          <name>tubii_clock_select</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T97</id>
-              <name>bckp_clk</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T98</id>
-              <name>clock200_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T99</id>
-              <name>clock200_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T100</id>
-              <name>default_clk</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T101</id>
-              <name>default_select</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T102</id>
-              <name>fox200mhz</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
       </cells>
       <nets>
         <net>
@@ -250,12 +250,12 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N40</id>
-          <name>unnamed_1_tubiiclockselect_i6_bckpclk</name>
+          <id>N42</id>
+          <name>unnamed_1_tubiiclks_i1_bckpclk</name>
         </net>
         <net>
-          <id>N41</id>
-          <name>unnamed_1_tubiiclockselect_i6_defaultclk</name>
+          <id>N43</id>
+          <name>unnamed_1_tubiiclks_i1_defaultclk</name>
         </net>
         <net>
           <id>gnd</id>
@@ -319,7 +319,7 @@
               <id>M14</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N40" />
+                <connection net="N42" />
               </connections>
             </pin>
             <pin>
@@ -354,7 +354,7 @@
               <id>M19</id>
               <termid>T23</termid>
               <connections>
-                <connection net="N41" />
+                <connection net="N43" />
               </connections>
             </pin>
             <pin>
@@ -521,9 +521,9 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I6</id>
-          <cellid>S6</cellid>
-          <name>page1_i6</name>
+          <id>I7</id>
+          <cellid>S2</cellid>
+          <name>page1_i1</name>
           <parameters>
           </parameters>
           <masks>
@@ -532,45 +532,45 @@
           </powers>
           <pins>
             <pin>
-              <id>M67</id>
-              <termid>T97</termid>
+              <id>M78</id>
+              <termid>T5</termid>
               <connections>
-                <connection net="N40" />
+                <connection net="N42" />
               </connections>
             </pin>
             <pin>
-              <id>M68</id>
-              <termid>T98</termid>
+              <id>M79</id>
+              <termid>T6</termid>
               <connections>
-                <connection net="N24" />
+                <connection net="N43" />
               </connections>
             </pin>
             <pin>
-              <id>M69</id>
-              <termid>T99</termid>
-              <connections>
-                <connection net="N25" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M70</id>
-              <termid>T100</termid>
-              <connections>
-                <connection net="N41" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M71</id>
-              <termid>T101</termid>
+              <id>M80</id>
+              <termid>T7</termid>
               <connections>
                 <connection net="N11" />
               </connections>
             </pin>
             <pin>
-              <id>M72</id>
-              <termid>T102</termid>
+              <id>M81</id>
+              <termid>T8</termid>
               <connections>
                 <connection net="N12" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M82</id>
+              <termid>T91</termid>
+              <connections>
+                <connection net="N24" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M83</id>
+              <termid>T92</termid>
+              <connections>
+                <connection net="N25" />
               </connections>
             </pin>
           </pins>
@@ -694,16 +694,16 @@
               <net ref="missedclock"></net>
               <net ref="sr_clk"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="unnamed_1_tubiiclockselect_i6_bckpclk"></net>
-              <net ref="unnamed_1_tubiiclockselect_i6_defaultclk"></net>
+              <net ref="unnamed_1_tubiiclks_i1_bckpclk"></net>
+              <net ref="unnamed_1_tubiiclks_i1_defaultclk"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>
+              <instance ref="i1"></instance>
               <instance ref="i2"></instance>
               <instance ref="i3"></instance>
               <instance ref="i4"></instance>
               <instance ref="i5"></instance>
-              <instance ref="i6"></instance>
             </instances>
           </page>
         </pages>

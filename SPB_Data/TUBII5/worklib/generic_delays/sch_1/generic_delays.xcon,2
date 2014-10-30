@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-22T11:38:56</modificationTime>
+    <modificationTime>2014-10-29T17:54:45</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="generic_delays" view="sch_1">
       <lastids>
-        <instanceid>37</instanceid>
+        <instanceid>38</instanceid>
         <netid>34</netid>
-        <insttermid>98</insttermid>
+        <insttermid>106</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -25,23 +25,23 @@
           </parameters>
           <terms>
             <term>
-              <id>T26</id>
-              <name>c</name>
-              <direction>input</direction>
-            </term>
-            <term>
               <id>T27</id>
               <name>d</name>
               <direction>input</direction>
             </term>
             <term>
-              <id>T28</id>
-              <name>q</name>
+              <id>T29</id>
+              <name>y*</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T29</id>
-              <name>y*</name>
+              <id>T72</id>
+              <name>common</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T73</id>
+              <name>y</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -268,13 +268,6 @@
           </powers>
           <pins>
             <pin>
-              <id>M72</id>
-              <termid>T26</termid>
-              <connections>
-                <connection net="N29" />
-              </connections>
-            </pin>
-            <pin>
               <id>M73</id>
               <termid>T27</termid>
               <connections>
@@ -282,16 +275,23 @@
               </connections>
             </pin>
             <pin>
-              <id>M74</id>
-              <termid>T28</termid>
-              <connections>
-                <connection net="N32" />
-              </connections>
-            </pin>
-            <pin>
               <id>M75</id>
               <termid>T29</termid>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M105</id>
+              <termid>T72</termid>
+              <connections>
+                <connection net="N29" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M106</id>
+              <termid>T73</termid>
+              <connections>
+                <connection net="N32" />
               </connections>
             </pin>
           </pins>
@@ -522,6 +522,45 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I38</id>
+          <cellid>S10</cellid>
+          <name>page1_i49</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M101</id>
+              <termid>T57</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N28" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M102</id>
+              <termid>T58</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N29" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -600,6 +639,7 @@
               <instance ref="i46"></instance>
               <instance ref="i47"></instance>
               <instance ref="i48"></instance>
+              <instance ref="i49"></instance>
             </instances>
           </page>
         </pages>

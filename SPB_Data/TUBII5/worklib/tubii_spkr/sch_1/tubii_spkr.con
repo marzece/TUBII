@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "tubii_spkr"
     (lastIds
-      (lastInstanceId 36)
+      (lastInstanceId 39)
       (lastNetId 21)
-      (lastInstTermId 112)
+      (lastInstTermId 115)
     )
     (cells
       ("S2" "hct123" "misc" "sym_1"
@@ -24,16 +24,6 @@
           ("T8" "clock*" -1 -1 1)
           ("T9" "q" -1 -1 2)
           ("T10" "q*" -1 -1 2)
-        )
-      )
-      ("S3" "pot" "resistors" "sym_1"
-        (params
-          ("size" "1")
-        )
-        (terms
-          ("T11" "a<SIZE-1..0>" -1 -1 3)
-          ("T12" "b<SIZE-1..0>" -1 -1 3)
-          ("T43" "c" -1 -1 3)
         )
       )
       ("S5" "csmd0603" "capacitors" "sym_1"
@@ -127,25 +117,6 @@
             )
           )
           ("M7" "T10" -1 -1
-          )
-        )
-      )
-      ("I2" "page1_i2" "S3"
-        (pins
-          ("M8" "T11" 0 0
-            (conn
-              ("0" 0 0 "N1" -1 -1)
-            )
-          )
-          ("M9" "T12" 0 0
-            (conn
-              ("0" 0 0 "N7" -1 -1)
-            )
-          )
-          ("M64" "T43" -1 -1
-            (conn
-              ("0" -1 -1 "N3" -1 -1)
-            )
           )
         )
       )
@@ -521,6 +492,33 @@
           ("M112" "T63" 0 0
             (conn
               ("0" 0 0 "N18" -1 -1)
+            )
+          )
+        )
+      )
+      ("I37" "page1_i38" "S6"
+        (pins
+          ("M113" "T17" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+        )
+      )
+      ("I38" "page1_i39" "S6"
+        (pins
+          ("M114" "T17" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+        )
+      )
+      ("I39" "page1_i40" "S6"
+        (pins
+          ("M115" "T17" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
             )
           )
         )

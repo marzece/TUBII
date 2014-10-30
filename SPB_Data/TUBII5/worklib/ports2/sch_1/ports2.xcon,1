@@ -5,16 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-17T14:05:38</modificationTime>
+    <modificationTime>2014-10-17T14:07:37</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports2" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
-        <instanceid>22</instanceid>
-        <netid>33</netid>
-        <insttermid>85</insttermid>
+        <instanceid>24</instanceid>
+        <netid>35</netid>
+        <insttermid>87</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -349,6 +348,18 @@
         <net>
           <id>N33</id>
           <name>tubii_rt</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N34</id>
+          <name>clock100_outh</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N35</id>
+          <name>clock100_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1245,6 +1256,62 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I23</id>
+          <cellid>S1</cellid>
+          <name>page1_i25</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M86</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N34" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I24</id>
+          <cellid>S1</cellid>
+          <name>page1_i26</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M87</id>
+              <termid>T6</termid>
+              <connections>
+                <connection net="N35" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1255,6 +1322,18 @@
         <schematicExtension>
         <errorStatus>true</errorStatus>
         <netScopes>
+          <netScope ref="clock100_outh">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clock100_outl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="clock200_outh">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1343,6 +1422,8 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
+              <net ref="clock100_outh"></net>
+              <net ref="clock100_outl"></net>
               <net ref="clock200_outh"></net>
               <net ref="clock200_outl"></net>
               <net ref="exttrig">
@@ -1394,6 +1475,8 @@
               <instance ref="i21"></instance>
               <instance ref="i22"></instance>
               <instance ref="i23"></instance>
+              <instance ref="i25"></instance>
+              <instance ref="i26"></instance>
             </instances>
           </page>
         </pages>

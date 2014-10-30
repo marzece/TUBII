@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-10-20T16:19:04</modificationTime>
+    <modificationTime>2014-10-21T16:12:11</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii" view="sch_1">
       <lastids>
         <instanceid>171</instanceid>
-        <netid>1908</netid>
-        <insttermid>6266</insttermid>
+        <netid>1923</netid>
+        <insttermid>6292</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -506,6 +506,23 @@
             <term>
               <id>T3868</id>
               <name>sync_ttl</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T3907</id>
+              <name>caen_anpulse</name>
+              <direction>output</direction>
+              <msb>11</msb>
+              <lsb>0</lsb>
+            </term>
+            <term>
+              <id>T3908</id>
+              <name>tubii_rt_out</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T3909</id>
+              <name>sync24_ttl</name>
               <direction>inout</direction>
             </term>
           </terms>
@@ -1175,6 +1192,29 @@
               <termid>T3868</termid>
               <connections>
                 <connection net="N1865" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6290</id>
+              <termid>T3907</termid>
+              <msb>11</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="11" pinlsb="0" net="N1886" netmsb="11" netlsb="0" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6291</id>
+              <termid>T3908</termid>
+              <connections>
+                <connection net="N1882" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M6292</id>
+              <termid>T3909</termid>
+              <connections>
+                <connection net="N1868" />
               </connections>
             </pin>
           </pins>
