@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 05-Nov-2014 AT 11:15:46 }
+{ Packager-XL run on 05-Nov-2014 AT 13:45:00 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -1327,6 +1327,39 @@ primitive 'COTO2342';
       JEDEC_TYPE='COTO2300_V1';
       PHYS_DES_PREFIX='U';
       CLASS='DISCRETE';
+  end_body;
+end_primitive;
+primitive 'CSMD0603-0.1UF,5%,0603,50V';
+  pin
+    'A'<0>:
+      PIN_NUMBER='(1)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+    'B'<0>:
+      PIN_NUMBER='(2)';
+      PINUSE='UNSPEC';
+      PIN_GROUP='1';
+  end_pin;
+  body
+      PART_NAME='CSMD0603';
+      PATH='1P';
+      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
+      PRIM_TYPE='CHIPS_PRT';
+      PRIM_FILE='/modeler/build/awbged/element/capacitor/chips_prt';
+      VER='1';
+      XY='(1400,2400)';
+      DIR='ELEMENT.LIB';
+      ROT='0';
+      PINCOUNT='2';
+      SIZE='1';
+      BODY_NAME='CSMD0603';
+      JEDEC_TYPE='CAP0603';
+      PHYS_DES_PREFIX='C';
+      CLASS='DISCRETE';
+      VALUE='0.1UF';
+      PARENT_PART_TYPE='CSMD0603';
+      PARENT_PPT='CSMD0603';
+      PARENT_PPT_PART='CSMD0603-0.1UF,5%,0603,50V';
   end_body;
 end_primitive;
 primitive 'CSMD0805-0.1UF,5%,0805,50V';

@@ -5,7 +5,7 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v1.dsn
+# Design File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v2.dsn
 # Initialization options:
 #   -do pasde.do
 # Status File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\monitor.sts
@@ -15,7 +15,7 @@
 #
 #
 #
-# do $/tubii_v1_rules.do
+# do $/tubii_v2_rules.do
 define (class _bus_POWER POWER<2> POWER<5> POWER<1> POWER<4> 
   GND )
 define (class _bus_JX1_LVDS_N JX1_LVDS_N<23> JX1_LVDS_N<22> JX1_LVDS_N<21> JX1_LVDS_N<20> 
@@ -209,8 +209,11 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaae01180.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac02544.tmp
 unselect all routing
+select component U40
+select component U42
+select component U41
 set route_diagonal 0
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
@@ -237,52 +240,5 @@ rule pcb (trombone_gap -1)
 unprotect selected
 route 25 1
 clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaf01180.tmp
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaah01180.tmp
-unselect all objects
-select net UNNAMED_1_CSMD0805_I23_A
-select net VCC5
-select net UNNAMED_1_LEDL_I43_A
-select net UNNAMED_1_LEDL_I42_A
-select net UNNAMED_1_F06_I26_A
-select net UNNAMED_1_MICROZEDCONNECTION_I1
-select net VP3_3
-select net UNNAMED_1_CSMD0805_I22_A
-select net VCC
-select net GND
-unprotect selected
-delete selected
-unprotect selected polygon
-delete selected polygon
-unselect all objects
-read route C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaag01180.tmp
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaj01180.tmp
-unselect all routing
-set route_diagonal 0
-grid wire 0.010000 (direction x) (offset 0.000000)
-grid wire 0.010000 (direction y) (offset 0.000000)
-grid via 0.010000 (direction x) (offset 0.000000)
-grid via 0.010000 (direction y) (offset 0.000000)
-protect all wires
-direction TOP horizontal
-select layer TOP
-unprotect layer_wires TOP
-direction BOTTOM vertical
-select layer BOTTOM
-unprotect layer_wires BOTTOM
-cost via -1
-set turbo_stagger off
-limit outside -1
-rule pcb (patterns_allowed  trombone accordion)
-set pattern_stacking on
-rule pcb (sawtooth_amplitude -1 -1)
-rule pcb (sawtooth_gap -1)
-rule pcb (accordion_amplitude -1 -1)
-rule pcb (accordion_gap -1)
-rule pcb (trombone_run_length -1)
-rule pcb (trombone_gap -1)
-unprotect selected
-route 25 1
-clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaak01180.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaad02544.tmp
 quit -c
