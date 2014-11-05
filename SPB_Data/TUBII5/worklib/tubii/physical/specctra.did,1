@@ -209,11 +209,11 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac02544.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaab01600.tmp
 unselect all routing
 select component U40
-select component U42
 select component U41
+select component U42
 set route_diagonal 0
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
@@ -240,5 +240,73 @@ rule pcb (trombone_gap -1)
 unprotect selected
 route 25 1
 clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaad02544.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac01600.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaf01600.tmp
+unselect all objects
+select net VCC
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaae01600.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaag01600.tmp
+unselect all routing
+select component U40
+select component U41
+select component U42
+select component C132
+select component C131
+select component C126
+set route_diagonal 0
+grid wire 0.010000 (direction x) (offset 0.000000)
+grid wire 0.010000 (direction y) (offset 0.000000)
+grid via 0.010000 (direction x) (offset 0.000000)
+grid via 0.010000 (direction y) (offset 0.000000)
+protect all wires
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+cost via -1
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+route 25 1
+clean 2
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaah01600.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaj01600.tmp
+unselect all objects
+select net UNNAMED_1_74F164_I1_Q7
+select net UNNAMED_1_CNTRLREGISTER_I2_DATA
+select net UNNAMED_1_CNTRLREGISTER_I2_READ
+select net UNNAMED_1_CNTRLREGISTER_I2_DA_1
+select net UNNAMED_1_CAEN_I3_CLK
+select net UNNAMED_1_CAEN_I3_DATA
+select net UNNAMED_1_74HCT165_I16_CE
+select net UNNAMED_1_74F164_I1_Q3
+select net UNNAMED_1_74F164_I1_Q5
+select net UNNAMED_1_74F164_I1_Q6
+select net UNNAMED_1_74F164_I1_Q4
+select net UNNAMED_1_74F164_I1_Q1
+select net UNNAMED_1_74F164_I1_Q2
+select net GND
+select net UNNAMED_1_74F164_I1_Q0
+select net VCC
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaai01600.tmp
 quit -c
