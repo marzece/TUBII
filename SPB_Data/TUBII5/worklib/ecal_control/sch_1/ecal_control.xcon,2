@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-30T15:38:36</modificationTime>
+    <modificationTime>2014-10-30T17:22:48</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecal_control" view="sch_1">
       <lastids>
-        <instanceid>19</instanceid>
-        <netid>27</netid>
-        <insttermid>48</insttermid>
+        <instanceid>20</instanceid>
+        <netid>28</netid>
+        <insttermid>50</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -85,26 +85,6 @@
           </terms>
         </cell>
         <cell>
-          <id>S7</id>
-          <library>misc</library>
-          <name>led_1206</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T38</id>
-              <name>a</name>
-              <direction>inout</direction>
-            </term>
-            <term>
-              <id>T39</id>
-              <name>b</name>
-              <direction>inout</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
           <id>S8</id>
           <library>ecl</library>
           <name>mc10h104</name>
@@ -159,6 +139,26 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S10</id>
+          <library>misc</library>
+          <name>led_l</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T77</id>
+              <name>a</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T78</id>
+              <name>b</name>
+              <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -198,16 +198,16 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N21</id>
-          <name>unnamed_1_led1206_i18_a</name>
-        </net>
-        <net>
           <id>N25</id>
           <name>unnamed_1_mc10h104_i20_a</name>
         </net>
         <net>
           <id>N26</id>
           <name>unnamed_1_mc10h104_i21_a</name>
+        </net>
+        <net>
+          <id>N28</id>
+          <name>unnamed_1_ledl_i23_a</name>
         </net>
         <net>
           <id>N4</id>
@@ -530,42 +530,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N21" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I16</id>
-          <cellid>S7</cellid>
-          <name>page1_i18</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M35</id>
-              <termid>T38</termid>
-              <connections>
-                <connection net="N21" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M36</id>
-              <termid>T39</termid>
-              <connections>
-                <connection net="N19" />
+                <connection pinmsb="0" pinlsb="0" net="N28" />
               </connections>
             </pin>
           </pins>
@@ -719,6 +684,41 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I20</id>
+          <cellid>S10</cellid>
+          <name>page1_i23</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M49</id>
+              <termid>T77</termid>
+              <connections>
+                <connection net="N28" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M50</id>
+              <termid>T78</termid>
+              <connections>
+                <connection net="N19" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -780,7 +780,7 @@
               <net ref="gtrig"></net>
               <net ref="unnamed_1_10e101_i7_a"></net>
               <net ref="unnamed_1_10e101_i7_d"></net>
-              <net ref="unnamed_1_led1206_i18_a"></net>
+              <net ref="unnamed_1_ledl_i23_a"></net>
               <net ref="unnamed_1_mc10h104_i20_a"></net>
               <net ref="unnamed_1_mc10h104_i21_a"></net>
               <net ref="vcc"></net>
@@ -794,10 +794,10 @@
               <instance ref="i15"></instance>
               <instance ref="i16"></instance>
               <instance ref="i17"></instance>
-              <instance ref="i18"></instance>
               <instance ref="i20"></instance>
               <instance ref="i21"></instance>
               <instance ref="i22"></instance>
+              <instance ref="i23"></instance>
             </instances>
           </page>
         </pages>

@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 03-Nov-2014 AT 18:11:52 }
+{ Packager-XL run on 04-Nov-2014 AT 14:32:04 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -1324,7 +1324,7 @@ primitive 'COTO2342';
   body
       PART_NAME='COTO2342';
       BODY_NAME='COTO2342';
-      JEDEC_TYPE='COTO2300';
+      JEDEC_TYPE='COTO2300_V1';
       PHYS_DES_PREFIX='U';
       CLASS='DISCRETE';
   end_body;
@@ -2726,7 +2726,7 @@ primitive 'FCI_61083-101400LF';
   body
       PART_NAME='FCI_61083-101400LF';
       BODY_NAME='FCI_61083-101400LF';
-      JEDEC_TYPE='FCI_61083-101400LF';
+      JEDEC_TYPE='FCI_61083_CONNECTOR';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
@@ -3677,16 +3677,7 @@ end_primitive;
 primitive 'PRMA1C05B';
   pin
     'IN':
-      PIN_NUMBER='(4)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PINUSE='UNSPEC';
-    'IN_CPY':
-      PIN_NUMBER='(5)';
+      PIN_NUMBER='(7)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -3704,7 +3695,7 @@ primitive 'PRMA1C05B';
       ALLOW_CONNECT='TRUE';
       PINUSE='UNSPEC';
     'OUT2':
-      PIN_NUMBER='(8)';
+      PIN_NUMBER='(14)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -3713,7 +3704,7 @@ primitive 'PRMA1C05B';
       ALLOW_CONNECT='TRUE';
       PINUSE='UNSPEC';
     'CTRL_IN':
-      PIN_NUMBER='(3)';
+      PIN_NUMBER='(2)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -3722,7 +3713,16 @@ primitive 'PRMA1C05B';
       ALLOW_CONNECT='TRUE';
       PINUSE='UNSPEC';
     'CTRL_OUT':
-      PIN_NUMBER='(7)';
+      PIN_NUMBER='(6)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    'IN_CPY':
+      PIN_NUMBER='(8)';
       PIN_TYPE='ANALOG';
       NO_LOAD_CHECK='Both';
       NO_IO_CHECK='Both';
@@ -3737,7 +3737,7 @@ primitive 'PRMA1C05B';
       JEDEC_TYPE='DIP14_3';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-      NC_PINS='(2,6)';
+      NC_PINS='(3,4,5,9,10,11,12,13)';
   end_body;
 end_primitive;
 primitive 'REF02';

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 19 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -638,7 +638,7 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):unnamed_1_10elt24_i20_q"
 			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_led1206_i30_a"
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):vcc"
 			)
@@ -646,13 +646,9 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
-			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_10h116_i32_b"
 			)
@@ -662,6 +658,10 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_mc10h104_i33_a"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_mc10h104_i34_a"
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_ledl_i36_a"
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ttl"
@@ -695,6 +695,34 @@
 				( attribute "CDS_PART_NAME" "DS102350"
 					( Status sBlockFlattened )
 					( Origin gPackager )
+				)
+				( pin "\clk/p1\"
+				)
+				( pin "\d/p2\"
+				)
+				( pin "\in\"
+				)
+				( pin "\le*\"
+				)
+				( pin "ms"
+				)
+				( pin "\out\"
+				)
+				( pin "p3"
+				)
+				( pin "p4"
+				)
+				( pin "p5"
+				)
+				( pin "p6"
+				)
+				( pin "p7"
+				)
+				( pin "ps"
+				)
+				( pin "pwm"
+				)
+				( pin "\q/p0\"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i7"
@@ -794,6 +822,36 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C72"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C72"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i7.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i7.2" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i11"
 				( attribute "CDS_LIB" "resistors"
@@ -887,6 +945,36 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R168"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R168"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i11.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i11.2" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i15"
@@ -982,6 +1070,36 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R164"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R164"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i15.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i15.2" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i16"
 				( attribute "CDS_LIB" "resistors"
@@ -1075,6 +1193,36 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R163"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R163"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i16.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i16.2" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i20"
@@ -1170,6 +1318,36 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R171"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R171"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i20.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i20.2" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i24"
 				( attribute "CDS_LIB" "resistors"
@@ -1263,6 +1441,36 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "R169"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R169"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i24.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i24.2" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i25"
@@ -1358,6 +1566,36 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R170"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R170"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i25.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i25.2" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26"
 				( attribute "ABBREV" "10E116"
@@ -1394,6 +1632,57 @@
 				)
 				( attribute "CDS_PART_NAME" "10E116"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U147"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U147"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i26.3" )
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i26.4" )
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i26.2" )
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i26.8" )
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i26.9" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i27"
@@ -1493,6 +1782,36 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C73"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C73"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i27.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i27.2" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i20"
 				( attribute "CDS_LIB" "ecl"
@@ -1535,6 +1854,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I20" )
+				( pin "a(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i9"
 				( attribute "CDS_LIB" "ecl"
@@ -1567,6 +1906,50 @@
 				)
 				( attribute "CDS_PART_NAME" "10H125"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U79"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U79"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i9.4" )
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "13"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i9.3" )
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i9.2" )
+				)
+				( pin "y(0)"
+					( attribute "PN" "15"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i9.5" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i21"
@@ -1653,6 +2036,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I21" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i16"
 				( attribute "CDS_LIB" "ecl"
@@ -1685,6 +2078,43 @@
 				)
 				( attribute "CDS_PART_NAME" "10ELT24"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U151"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U151"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "d"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i16.2" )
+				)
+				( pin "q"
+					( attribute "PN" "7"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i16.7" )
+				)
+				( pin "\q*\"
+					( attribute "PN" "6"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i16.6" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19"
@@ -1719,6 +2149,120 @@
 				( attribute "CDS_PART_NAME" "DS1023500"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U150"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U150"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "\clk/p1\"
+					( attribute "PN" "4"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.4" )
+				)
+				( pin "\d/p2\"
+					( attribute "PN" "5"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.5" )
+				)
+				( pin "\in\"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.1" )
+				)
+				( pin "\le*\"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.2" )
+				)
+				( pin "ms"
+					( attribute "PN" "11"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.11" )
+				)
+				( pin "\out\"
+					( attribute "PN" "15"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.15" )
+				)
+				( pin "p3"
+					( attribute "PN" "6"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.6" )
+				)
+				( pin "p4"
+					( attribute "PN" "7"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.7" )
+				)
+				( pin "p5"
+					( attribute "PN" "10"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.10" )
+				)
+				( pin "p6"
+					( attribute "PN" "12"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.12" )
+				)
+				( pin "p7"
+					( attribute "PN" "13"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.13" )
+				)
+				( pin "ps"
+					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.14" )
+				)
+				( pin "pwm"
+					( attribute "PN" "9"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.9" )
+				)
+				( pin "\q/p0\"
+					( attribute "PN" "3"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i19.3" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i20"
 				( attribute "CDS_LIB" "ecl"
@@ -1752,6 +2296,43 @@
 				( attribute "CDS_PART_NAME" "10ELT24"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U152"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U152"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "d"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i20.2" )
+				)
+				( pin "q"
+					( attribute "PN" "7"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i20.7" )
+				)
+				( pin "\q*\"
+					( attribute "PN" "6"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i20.6" )
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i22"
 				( attribute "CDS_LIB" "ttl"
@@ -1784,6 +2365,36 @@
 				)
 				( attribute "CDS_PART_NAME" "74F06"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U74"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U74"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "11"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i22.1" )
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "10"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "page1_i22.2" )
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i8"
@@ -1870,6 +2481,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I8" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i9"
 				( attribute "CDS_LIB" "resistors"
@@ -1955,6 +2576,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i18"
 				( attribute "CDS_LIB" "resistors"
@@ -2040,6 +2671,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I18" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i24"
 				( attribute "ABBREV" "TP"
@@ -2073,8 +2714,30 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP264"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP264"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
 			)
-			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i30"
+			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -2083,19 +2746,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -2103,33 +2754,28 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "6"
+				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
+				( attribute "VER" "2"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VER" "1"
+				( attribute "XY" "(2925,3075)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2150,3525)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i31"
@@ -2225,6 +2871,34 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R167"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R167"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -2318,6 +2992,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-10K,1%,0805"
 					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i2"
@@ -2417,6 +3095,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5"
 				( attribute "CDS_LIB" "misc"
@@ -2453,6 +3135,20 @@
 				)
 				( attribute "CDS_PART_NAME" "74HCT123"
 					( Origin gPackager )
+				)
+				( pin "c"
+				)
+				( pin "\c/r\"
+				)
+				( pin "\cl*\"
+				)
+				( pin "clock"
+				)
+				( pin "\clock*\"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i6"
@@ -2548,63 +3244,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
-			)
-			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
+				( pin "a(0)"
 				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
+				( pin "b(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i1"
@@ -2699,6 +3341,10 @@
 				)
 				( attribute "CDS_PART_NAME" "RSMD0805-10K,1%,0805"
 					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i2"
@@ -2798,6 +3444,10 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5"
 				( attribute "CDS_LIB" "misc"
@@ -2834,6 +3484,20 @@
 				)
 				( attribute "CDS_PART_NAME" "74HCT123"
 					( Origin gPackager )
+				)
+				( pin "c"
+				)
+				( pin "\c/r\"
+				)
+				( pin "\cl*\"
+				)
+				( pin "clock"
+				)
+				( pin "\clock*\"
+				)
+				( pin "q"
+				)
+				( pin "\q*\"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i6"
@@ -2929,63 +3593,9 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
-			)
-			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
+				( pin "a(0)"
 				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
+				( pin "b(0)"
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32"
@@ -3023,6 +3633,52 @@
 				)
 				( attribute "CDS_PART_NAME" "10H116_PLCC"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U146"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U146"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "17"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "15"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "19"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "18"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i28"
@@ -3118,6 +3774,34 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R172"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R172"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i33"
 				( attribute "CDS_LIB" "ecl"
@@ -3154,6 +3838,40 @@
 				)
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U91"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "3"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U91"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "3"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a"
+					( attribute "PN" "13"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "18"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i34"
@@ -3192,6 +3910,40 @@
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U91"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "4"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U91"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "4"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "a"
+					( attribute "PN" "15"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "17"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "19"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i35"
 				( attribute "CDS_LIB" "ecl"
@@ -3229,325 +3981,134 @@
 				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U97"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "4"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U97"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "4"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( pin "common"
+					( attribute "PN" "8"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "\in\"
+					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "18"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "\out*\"
+					( attribute "PN" "17"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
 			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\clk/p1\"
+			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i36"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,3525)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
+				)
 			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\d/p2\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\in\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\le*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:ms"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\out\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:p3"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:p4"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:p5"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:p6"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:p7"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:ps"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:pwm"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i27:\q/p0\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i7:a(0)"
-				( objectStatus "page1_i7.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i7:b(0)"
-				( objectStatus "page1_i7.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i11:a(0)"
-				( objectStatus "page1_i11.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i11:b(0)"
-				( objectStatus "page1_i11.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i15:a(0)"
-				( objectStatus "page1_i15.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i15:b(0)"
-				( objectStatus "page1_i15.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i16:a(0)"
-				( objectStatus "page1_i16.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i16:b(0)"
-				( objectStatus "page1_i16.2" )
+			( gate "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
+				)
 			)
 			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i19:c"
 				( objectStatus "page1_i19.8" )
 			)
 			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i19:q"
 				( objectStatus "page1_i19.3" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i20:a(0)"
-				( objectStatus "page1_i20.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i20:b(0)"
-				( objectStatus "page1_i20.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i24:a(0)"
-				( objectStatus "page1_i24.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i24:b(0)"
-				( objectStatus "page1_i24.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i25:a(0)"
-				( objectStatus "page1_i25.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i25:b(0)"
-				( objectStatus "page1_i25.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26:a(0)"
-				( objectStatus "page1_i26.3" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26:\b*\(0)"
-				( objectStatus "page1_i26.4" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26:ref"
-				( objectStatus "page1_i26.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26:y(0)"
-				( objectStatus "page1_i26.8" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i26:\y*\(0)"
-				( objectStatus "page1_i26.9" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i27:a(0)"
-				( objectStatus "page1_i27.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i27:b(0)"
-				( objectStatus "page1_i27.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i20:a(0)"
-				( attribute "PN" "19"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i20:\b*\(0)"
-				( attribute "PN" "18"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i20:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i20:y(0)"
-				( attribute "PN" "17"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i9:a(0)"
-				( objectStatus "page1_i9.4" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i9:\b*\(0)"
-				( objectStatus "page1_i9.3" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i9:v"
-				( objectStatus "page1_i9.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i9:y(0)"
-				( objectStatus "page1_i9.5" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i21:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i21:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i16:d"
-				( objectStatus "page1_i16.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i16:q"
-				( objectStatus "page1_i16.7" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i16:\q*\"
-				( objectStatus "page1_i16.6" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\clk/p1\"
-				( objectStatus "page1_i19.4" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\d/p2\"
-				( objectStatus "page1_i19.5" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\in\"
-				( objectStatus "page1_i19.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\le*\"
-				( objectStatus "page1_i19.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:ms"
-				( objectStatus "page1_i19.11" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\out\"
-				( objectStatus "page1_i19.15" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:p3"
-				( objectStatus "page1_i19.6" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:p4"
-				( objectStatus "page1_i19.7" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:p5"
-				( objectStatus "page1_i19.10" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:p6"
-				( objectStatus "page1_i19.12" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:p7"
-				( objectStatus "page1_i19.13" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:ps"
-				( objectStatus "page1_i19.14" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:pwm"
-				( objectStatus "page1_i19.9" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i19:\q/p0\"
-				( objectStatus "page1_i19.3" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i20:d"
-				( objectStatus "page1_i20.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i20:q"
-				( objectStatus "page1_i20.7" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i20:\q*\"
-				( objectStatus "page1_i20.6" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i22:a(0)"
-				( objectStatus "page1_i22.1" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i22:\y*\(0)"
-				( objectStatus "page1_i22.2" )
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i8:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i8:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i9:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i9:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i18:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i18:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i24:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i30:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i30:b"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i31:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i31:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i1:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i1:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i2:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i2:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:c"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:\c/r\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:\cl*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:clock"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:\clock*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:q"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i5:\q*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i6:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i6:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i7:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i7:b"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i1:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i1:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i2:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i2:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:c"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:\c/r\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:\cl*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:clock"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:\clock*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:q"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i5:\q*\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i6:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i6:b(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i7:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i7:b"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32:\b*\(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32:v"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32:y(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i32:\y*\(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i28:a(0)"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i28:b(0)"
 			)
 			( pin "@tubii_lib.gt_delays(sch_1):page1_i2:lo"
 			)
@@ -3572,26 +4133,6 @@
 			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i25:pulse_in"
 			)
 			( pin "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):page1_i26:pulse_in"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i33:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i33:b"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i33:y"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i34:a"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i34:b"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i34:y"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i35:common"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i35:\in\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i35:\out\"
-			)
-			( pin "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i35:\out*\"
 			)
 			( designInst "@tubii_lib.gt_delays(sch_1):page1_i2"
 				( attribute "BLOCK" "TRUE"
@@ -3692,7 +4233,7 @@
 	( BaseCopy "select_lo_src"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 11 )
+				( logicalViewRevNum 13 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -3736,9 +4277,6 @@
 			( signal "@tubii_lib.select_lo_src(sch_1):\ddgt*\"
 				( objectStatus "ddgt*" )
 			)
-			( signal "@tubii_lib.select_lo_src(sch_1):unnamed_1_led1206_i30_a"
-				( objectStatus "unnamed_1_led1206_i30_a" )
-			)
 			( signal "@tubii_lib.select_lo_src(sch_1):\mtcd_lo*\"
 				( objectStatus "mtcd_lo*" )
 			)
@@ -3756,6 +4294,9 @@
 			)
 			( signal "@tubii_lib.select_lo_src(sch_1):unnamed_1_mc10h104_i34_a"
 				( objectStatus "unnamed_1_mc10h104_i34_a" )
+			)
+			( signal "@tubii_lib.select_lo_src(sch_1):unnamed_1_ledl_i36_a"
+				( objectStatus "unnamed_1_ledl_i36_a" )
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i7"
 				( attribute "CDS_LIB" "capacitors"
@@ -3831,7 +4372,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C72"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C72"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I7" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i11"
 				( attribute "CDS_LIB" "resistors"
@@ -3904,7 +4467,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R168"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R168"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I11" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i15"
 				( attribute "CDS_LIB" "resistors"
@@ -3977,7 +4562,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R164"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R164"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I15" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i16"
 				( attribute "CDS_LIB" "resistors"
@@ -4050,7 +4657,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R163"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R163"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i20"
 				( attribute "CDS_LIB" "resistors"
@@ -4123,7 +4752,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R171"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R171"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I20" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i24"
 				( attribute "CDS_LIB" "resistors"
@@ -4196,7 +4847,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R169"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R169"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I24" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i25"
 				( attribute "CDS_LIB" "resistors"
@@ -4269,7 +4942,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R170"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R170"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I25" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i26"
 				( attribute "ABBREV" "10E116"
@@ -4299,7 +4994,44 @@
 				( attribute "CDS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U147"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U147"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I26" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i27"
 				( attribute "CDS_LIB" "capacitors"
@@ -4375,53 +5107,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C73"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C73"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I27" )
-			)
-			( gate "@tubii_lib.select_lo_src(sch_1):page1_i30"
-				( attribute "ABBREV" "LED"
-					( Origin gFrontEnd )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "6"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2150,3525)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I30" )
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i31"
 				( attribute "CDS_LIB" "resistors"
@@ -4494,7 +5202,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-100,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R167"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R167"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I31" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i32"
 				( attribute "CDS_LIB" "ecl"
@@ -4524,7 +5254,44 @@
 				( attribute "CDS_PART_NAME" "10H116_PLCC"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U146"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U146"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I32" )
+				( pin "a(0)"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i33"
 				( attribute "CDS_LIB" "ecl"
@@ -4554,7 +5321,34 @@
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U91"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "3"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U91"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "3"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I33" )
+				( pin "a"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i34"
 				( attribute "CDS_LIB" "ecl"
@@ -4584,7 +5378,34 @@
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U91"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "4"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U91"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "4"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I34" )
+				( pin "a"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.select_lo_src(sch_1):page1_i35"
 				( attribute "CDS_LIB" "ecl"
@@ -4614,87 +5435,73 @@
 				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U97"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "4"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U97"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "4"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I35" )
+				( pin "common"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "\in\"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out\"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out*\"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
 			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i7:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i7:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i11:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i11:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i15:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i15:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i16:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i16:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i20:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i20:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i24:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i24:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i25:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i25:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i26:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i26:\b*\(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i26:ref"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i26:y(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i26:\y*\(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i27:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i27:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i30:a"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i30:b"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i31:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i31:b(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i32:a(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i32:\b*\(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i32:v"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i32:y(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i32:\y*\(0)"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i33:a"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i33:b"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i33:y"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i34:a"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i34:b"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i34:y"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i35:common"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i35:\in\"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i35:\out\"
-			)
-			( pin "@tubii_lib.select_lo_src(sch_1):page1_i35:\out*\"
+			( gate "@tubii_lib.select_lo_src(sch_1):page1_i36"
+				( attribute "ABBREV" "LED"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "6"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,3525)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I36" )
+				( pin "a"
+				)
+				( pin "b"
+				)
 			)
 			( pin "@tubii_lib.select_lo_src(sch_1):page1_i19:c"
 			)
@@ -4707,7 +5514,7 @@
 	( BaseCopy "asyncdelays"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 16 )
+				( logicalViewRevNum 17 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -4717,7 +5524,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "asyncdelays"
@@ -4791,13 +5598,11 @@
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
-			)
-			( signal "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_ds1023200_i27_le"
 				( objectStatus "unnamed_1_ds1023200_i27_le" )
@@ -4808,6 +5613,8 @@
 			( signal "@tubii_lib.asyncdelays(sch_1):dgt_ttl"
 				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "dgt_ttl" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i9"
 				( attribute "CDS_LIB" "ecl"
@@ -4834,14 +5641,38 @@
 				( attribute "CDS_PART_NAME" "10H125"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U79"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U79"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I9" )
 				( pin "a(0)"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "\b*\(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "y(0)"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i16"
@@ -4869,12 +5700,33 @@
 				( attribute "CDS_PART_NAME" "10ELT24"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U151"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U151"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I16" )
 				( pin "d"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "q"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q*\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i19"
@@ -4902,34 +5754,88 @@
 				( attribute "CDS_PART_NAME" "DS1023500"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U150"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U150"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I19" )
 				( pin "\clk/p1\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
 				( pin "\d/p2\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 				( pin "\in\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\le*\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "ms"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
 				)
 				( pin "\out\"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
 				( pin "p3"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 				( pin "p4"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "p5"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 				( pin "p6"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
 				)
 				( pin "p7"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
 				)
 				( pin "ps"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
 				)
 				( pin "pwm"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q/p0\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i20"
@@ -4957,12 +5863,33 @@
 				( attribute "CDS_PART_NAME" "10ELT24"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U152"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U152"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I20" )
 				( pin "d"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "q"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
 				( pin "\q*\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i22"
@@ -4990,10 +5917,28 @@
 				( attribute "CDS_PART_NAME" "74F06"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U74"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U74"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I22" )
 				( pin "a(0)"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
 				)
 				( pin "\y*\(0)"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i24"
@@ -5021,8 +5966,23 @@
 				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "TP264"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "TP264"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I24" )
 				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i1"
@@ -5387,7 +6347,7 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i7"
+			( gate "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -5396,19 +6356,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -5416,20 +6364,11 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "7"
+				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "VER" "2"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -5437,18 +6376,16 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
 				( pin "a"
-					( objectStatus "page1_i7.2" )
 				)
 				( pin "b"
-					( objectStatus "page1_i7.1" )
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i1"
@@ -5813,70 +6750,6 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i7.2" )
-				)
-				( pin "b"
-					( objectStatus "page1_i7.1" )
-				)
-			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ttl"
 					( Origin gPackager )
@@ -6003,10 +6876,69 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R172"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R172"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I28" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
 				)
 			)
 			( pin "@tubii_lib.asyncdelays(sch_1):page1_i25:pulse_in"

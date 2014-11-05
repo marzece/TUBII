@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 04-Nov-2014 AT 11:56:45 }
+{ Packager-XL run on 04-Nov-2014 AT 17:46:15 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -2726,7 +2726,7 @@ primitive 'FCI_61083-101400LF';
   body
       PART_NAME='FCI_61083-101400LF';
       BODY_NAME='FCI_61083-101400LF';
-      JEDEC_TYPE='FCI_61083-101400LF';
+      JEDEC_TYPE='FCI_61083_CONNECTOR';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
@@ -2841,10 +2841,6 @@ primitive 'HCT238_TSSOP';
 end_primitive;
 primitive 'HCT374';
   pin
-    'CLK':
-      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
     'D':
       PIN_NUMBER='(3,4,7,8,13,14,17,18)';
       INPUT_LOAD='(-0.01,0.01)';
@@ -2853,8 +2849,12 @@ primitive 'HCT374';
       PIN_NUMBER='(2,5,6,9,12,15,16,19)';
       OUTPUT_LOAD='(1.0,-1.0)';
       PINUSE='OUT';
+    'CLK':
+      PIN_NUMBER='(11,11,11,11,11,11,11,11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'CLR*':
-      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      PIN_NUMBER='(1,1,1,1,1,1,1,1)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
   end_pin;
@@ -2872,10 +2872,6 @@ primitive 'HCT374';
 end_primitive;
 primitive 'HCT374_SOIC';
   pin
-    'CLK':
-      PIN_NUMBER='(11,0,0,0,0,0,0,0)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
     'D':
       PIN_NUMBER='(3,4,7,8,13,14,17,18)';
       INPUT_LOAD='(-0.01,0.01)';
@@ -2884,8 +2880,12 @@ primitive 'HCT374_SOIC';
       PIN_NUMBER='(2,5,6,9,12,15,16,19)';
       OUTPUT_LOAD='(1.0,-1.0)';
       PINUSE='OUT';
+    'CLK':
+      PIN_NUMBER='(11,11,11,11,11,11,11,11)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
     'CLR*':
-      PIN_NUMBER='(1,0,0,0,0,0,0,0)';
+      PIN_NUMBER='(1,1,1,1,1,1,1,1)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
   end_pin;
