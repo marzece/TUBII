@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 17 )
+			( logicalViewRevNum 20 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -461,6 +461,11 @@
 		( ruleChanges
 			( allRules )
 			( design "caen_buffer"
+				( attribute "CDS_EXPORT_CONTENTS_MASK" "33330"
+				)
+				( attribute "CDS_EDIT_PNS_STATUS" "0"
+					( Origin gFrontEnd )
+				)
 			)
 			( signal "@tubii_lib.caen_buffer(sch_1):ctrl"
 				( attribute "CDS_PHYS_NET_NAME" "CTRL"
@@ -557,12 +562,6 @@
 				)
 				( objectStatus "OUT_ATT" )
 			)
-			( signal "@tubii_lib.caen_buffer(sch_1):vcc5"
-				( attribute "CDS_PHYS_NET_NAME" "VCC5"
-					( Origin gPackager )
-				)
-				( objectStatus "VCC5" )
-			)
 			( signal "@tubii_lib.caen_buffer(sch_1):vref2m"
 				( attribute "CDS_PHYS_NET_NAME" "VREF2M"
 					( Origin gPackager )
@@ -658,6 +657,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "UNNAMED_1_CSMD0805_I38_B" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):vcc"
+				( attribute "CDS_PHYS_NET_NAME" "VCC"
+					( Origin gPackager )
+				)
+				( objectStatus "VCC" )
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "ABBREV" "res_l"

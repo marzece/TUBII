@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-22T11:29:43</modificationTime>
+    <modificationTime>2014-11-06T16:06:46</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
       <lastids>
         <instanceid>52</instanceid>
-        <netid>55</netid>
+        <netid>56</netid>
         <insttermid>134</insttermid>
       </lastids>
       <cells>
@@ -318,11 +318,6 @@
           <scope>global</scope>
         </net>
         <net>
-          <id>N38</id>
-          <name>vcc5</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>N39</id>
           <name>vref2m</name>
           <scope>global</scope>
@@ -340,6 +335,11 @@
         <net>
           <id>N44</id>
           <name>vcc5m</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N56</id>
+          <name>vcc</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -767,7 +767,7 @@
               <id>M72</id>
               <termid>T7</termid>
               <connections>
-                <connection net="N38" />
+                <connection net="N56" />
               </connections>
             </pin>
             <pin>
@@ -1627,17 +1627,17 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vcc">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vcc15">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
           </netScope>
           <netScope ref="vcc15m">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
-          <netScope ref="vcc5">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -1689,9 +1689,9 @@
               <net ref="unnamed_1_resl_i20_b"></net>
               <net ref="unnamed_1_resl_i6_b"></net>
               <net ref="unnamed_1_rsmd0805_i32_b"></net>
+              <net ref="vcc"></net>
               <net ref="vcc15"></net>
               <net ref="vcc15m"></net>
-              <net ref="vcc5"></net>
               <net ref="vcc5m"></net>
               <net ref="vref2m"></net>
               <net ref="vref5m"></net>

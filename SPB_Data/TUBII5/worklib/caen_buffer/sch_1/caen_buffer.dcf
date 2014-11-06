@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 18 )
+			( logicalViewRevNum 21 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -562,12 +562,6 @@
 				)
 				( objectStatus "OUT_ATT" )
 			)
-			( signal "@tubii_lib.caen_buffer(sch_1):vcc5"
-				( attribute "CDS_PHYS_NET_NAME" "VCC5"
-					( Origin gPackager )
-				)
-				( objectStatus "VCC5" )
-			)
 			( signal "@tubii_lib.caen_buffer(sch_1):vref2m"
 				( attribute "CDS_PHYS_NET_NAME" "VREF2M"
 					( Origin gPackager )
@@ -664,6 +658,12 @@
 				)
 				( objectStatus "UNNAMED_1_CSMD0805_I38_B" )
 			)
+			( signal "@tubii_lib.caen_buffer(sch_1):vcc"
+				( attribute "CDS_PHYS_NET_NAME" "VCC"
+					( Origin gPackager )
+				)
+				( objectStatus "VCC" )
+			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "ABBREV" "res_l"
 					( Origin gFrontEnd )
@@ -725,16 +725,28 @@
 				( attribute "CDS_LOCATION" "R4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R4"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R4"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R4" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R4.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R4.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i2"
 				( attribute "ABBREV" "res_l"
@@ -797,16 +809,28 @@
 				( attribute "CDS_LOCATION" "R7"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R7"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R7"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R7" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R7.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R7.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i3"
 				( attribute "ABBREV" "res_l"
@@ -869,16 +893,28 @@
 				( attribute "CDS_LOCATION" "R5"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R5"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R5"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R5" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R5.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R5.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i4"
 				( attribute "ABBREV" "res_l"
@@ -941,16 +977,28 @@
 				( attribute "CDS_LOCATION" "R6"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R6"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R6"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R6" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R6.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R6.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i5"
 				( attribute "ABBREV" "res_l"
@@ -1013,16 +1061,28 @@
 				( attribute "CDS_LOCATION" "R10"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R10"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R10"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R10" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R10.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R10.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i6"
 				( attribute "ABBREV" "res_l"
@@ -1085,16 +1145,28 @@
 				( attribute "CDS_LOCATION" "R11"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R11"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R11"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R11" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R11.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R11.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i7"
 				( attribute "ABBREV" "res_l"
@@ -1157,16 +1229,28 @@
 				( attribute "CDS_LOCATION" "R1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R1"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R1"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R1" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R1.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R1.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i8"
 				( attribute "ABBREV" "res_l"
@@ -1229,16 +1313,28 @@
 				( attribute "CDS_LOCATION" "R8"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R8"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R8"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R8" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R8.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R8.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i9"
 				( attribute "ABBREV" "res_l"
@@ -1301,16 +1397,28 @@
 				( attribute "CDS_LOCATION" "R2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R2"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R2"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R2" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R2.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R2.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i10"
 				( attribute "ABBREV" "res_l"
@@ -1373,16 +1481,28 @@
 				( attribute "CDS_LOCATION" "R3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R3"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R3"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R3" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R3.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R3.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i12"
 				( attribute "CDS_LIB" "misc"
@@ -1412,16 +1532,64 @@
 				( attribute "CDS_LOCATION" "U1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U1"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "U1"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "U1" )
+				( pin "ctrl_in"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.2" )
+				)
+				( pin "ctrl_out"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.3" )
+				)
+				( pin "in1"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.5" )
+				)
+				( pin "in2"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.8" )
+				)
+				( pin "nc1"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.7" )
+				)
+				( pin "nc2"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.6" )
+				)
+				( pin "no1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.1" )
+				)
+				( pin "no2"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.4" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i16"
 				( attribute "ABBREV" "res_l"
@@ -1484,16 +1652,28 @@
 				( attribute "CDS_LOCATION" "R14"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R14"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R14"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R14" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R14.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R14.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i18"
 				( attribute "ABBREV" "res_l"
@@ -1556,16 +1736,28 @@
 				( attribute "CDS_LOCATION" "R15"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R15"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R15"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R15" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R15.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R15.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i20"
 				( attribute "ABBREV" "res_l"
@@ -1628,16 +1820,28 @@
 				( attribute "CDS_LOCATION" "R18"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R18"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R18"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R18" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R18.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R18.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i21"
 				( attribute "CDS_LIB" "diodes"
@@ -1667,16 +1871,28 @@
 				( attribute "CDS_LOCATION" "U4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U4"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "U4"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "U4" )
+				( pin "\in\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "U4.1" )
+				)
+				( pin "\out\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "U4.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i22"
 				( attribute "CDS_LIB" "diodes"
@@ -1706,16 +1922,28 @@
 				( attribute "CDS_LOCATION" "U5"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U5"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "U5"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "U5" )
+				( pin "\in\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "U5.1" )
+				)
+				( pin "\out\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "U5.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i25"
 				( attribute "CDS_LIB" "misc"
@@ -1745,16 +1973,44 @@
 				( attribute "CDS_LOCATION" "U2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U2"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "U2"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "U2" )
+				( pin "\in+\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+					( objectStatus "U2.3" )
+				)
+				( pin "\in-\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "U2.2" )
+				)
+				( pin "\out\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "U2.1" )
+				)
+				( pin "\vcc+\"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "\vcc-\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i26"
 				( attribute "CDS_LIB" "misc"
@@ -1784,16 +2040,44 @@
 				( attribute "CDS_LOCATION" "U3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U3"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "U3"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "U3" )
+				( pin "\in+\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+					( objectStatus "U3.3" )
+				)
+				( pin "\in-\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "U3.2" )
+				)
+				( pin "\out\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "U3.1" )
+				)
+				( pin "\vcc+\"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "\vcc-\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i27"
 				( attribute "CDS_LIB" "capacitors"
@@ -1872,16 +2156,28 @@
 				( attribute "CDS_LOCATION" "C5"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C5"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "C5"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "C5" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C5.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C5.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i28"
 				( attribute "CDS_LIB" "capacitors"
@@ -1960,16 +2256,28 @@
 				( attribute "CDS_LOCATION" "C4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C4"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "C4"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "C4" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C4.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C4.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i29"
 				( attribute "CDS_LIB" "capacitors"
@@ -2048,16 +2356,28 @@
 				( attribute "CDS_LOCATION" "C3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C3"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "C3"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "C3" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C3.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C3.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i30"
 				( attribute "CDS_LIB" "capacitors"
@@ -2136,16 +2456,28 @@
 				( attribute "CDS_LOCATION" "C2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C2"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "C2"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "C2" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C2.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C2.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i31"
 				( attribute "CDS_LIB" "resistors"
@@ -2221,16 +2553,28 @@
 				( attribute "CDS_LOCATION" "R9"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R9"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R9"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R9" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R9.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R9.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i32"
 				( attribute "CDS_LIB" "resistors"
@@ -2306,16 +2650,28 @@
 				( attribute "CDS_LOCATION" "R17"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R17"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R17"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R17" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R17.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R17.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i33"
 				( attribute "CDS_LIB" "resistors"
@@ -2391,16 +2747,28 @@
 				( attribute "CDS_LOCATION" "R16"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R16"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R16"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R16" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R16.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R16.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i34"
 				( attribute "CDS_LIB" "resistors"
@@ -2476,16 +2844,28 @@
 				( attribute "CDS_LOCATION" "R20"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R20"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R20"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R20" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R20.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R20.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i35"
 				( attribute "CDS_LIB" "resistors"
@@ -2561,16 +2941,28 @@
 				( attribute "CDS_LOCATION" "R19"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R19"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R19"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R19" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R19.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R19.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i36"
 				( attribute "CDS_LIB" "resistors"
@@ -2646,16 +3038,28 @@
 				( attribute "CDS_LOCATION" "R12"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R12"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R12"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R12" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R12.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R12.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i37"
 				( attribute "CDS_LIB" "resistors"
@@ -2731,16 +3135,28 @@
 				( attribute "CDS_LOCATION" "R13"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R13"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "R13"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "R13" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R13.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R13.2" )
+				)
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i38"
 				( attribute "CDS_LIB" "capacitors"
@@ -2819,432 +3235,28 @@
 				( attribute "CDS_LOCATION" "C1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C1"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "LOCATION" "C1"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "C1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i1:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C1.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C1.2" )
 				)
-				( objectStatus "R4.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i1:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R4.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i2:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R7.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i2:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R7.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i3:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R5.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i3:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R5.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i4:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R6.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i4:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R6.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i5:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R10.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i5:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R10.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i6:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R11.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i6:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R11.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i7:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R1.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i7:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R1.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i8:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R8.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i8:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R8.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i9:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R2.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i9:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R2.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i10:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R3.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i10:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R3.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:ctrl_in"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:ctrl_out"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.3" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:in1"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.5" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:in2"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.8" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:nc1"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.7" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:nc2"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.6" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:no1"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i12:no2"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.4" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i16:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R14.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i16:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R14.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i18:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R15.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i18:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R15.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i20:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R18.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i20:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R18.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i21:\in\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "U4.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i21:\out\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "U4.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i22:\in\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "U5.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i22:\out\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "U5.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i25:\in+\"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-				( objectStatus "U2.3" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i25:\in-\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "U2.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i25:\out\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "U2.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i25:\vcc+\"
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i25:\vcc-\"
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i26:\in+\"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-				( objectStatus "U3.3" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i26:\in-\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "U3.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i26:\out\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "U3.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i26:\vcc+\"
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i26:\vcc-\"
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i27:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C5.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i27:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C5.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i28:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C4.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i28:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C4.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i29:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C3.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i29:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C3.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i30:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C2.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i30:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C2.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i31:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R9.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i31:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R9.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i32:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R17.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i32:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R17.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i33:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R16.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i33:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R16.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i34:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R20.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i34:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R20.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i35:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R19.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i35:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R19.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i36:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R12.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i36:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R12.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i37:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R13.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i37:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R13.2" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i38:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C1.1" )
-			)
-			( pin "@tubii_lib.caen_buffer(sch_1):page1_i38:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C1.2" )
 			)
 		)
 	)
