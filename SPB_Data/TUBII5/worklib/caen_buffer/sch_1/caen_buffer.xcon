@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-11-06T16:06:46</modificationTime>
+    <modificationTime>2014-11-06T16:23:54</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_buffer" view="sch_1">
       <lastids>
         <instanceid>52</instanceid>
-        <netid>56</netid>
+        <netid>58</netid>
         <insttermid>134</insttermid>
       </lastids>
       <cells>
@@ -202,10 +202,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N21</id>
-          <name>page1_gnd_power</name>
-        </net>
-        <net>
           <id>N22</id>
           <name>in</name>
           <scope>interface</scope>
@@ -308,9 +304,8 @@
           <name>unnamed_1_csmd0805_i38_b</name>
         </net>
         <net>
-          <id>N20</id>
-          <name>gnd_power</name>
-          <scope>global</scope>
+          <id>N58</id>
+          <name>page1_gnd</name>
         </net>
         <net>
           <id>N35</id>
@@ -342,9 +337,14 @@
           <name>vcc</name>
           <scope>global</scope>
         </net>
+        <net>
+          <id>N57</id>
+          <name>gnd</name>
+          <scope>global</scope>
+        </net>
       </nets>
       <aliases>
-        <alias net1="N21" lsb1="-1" msb1="-1" net2="N20" lsb2="-1" msb2="-1" />
+        <alias net1="N58" lsb1="-1" msb1="-1" net2="N57" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -528,7 +528,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N57" />
               </connections>
             </pin>
             <pin>
@@ -723,7 +723,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N57" />
               </connections>
             </pin>
             <pin>
@@ -839,7 +839,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N57" />
               </connections>
             </pin>
             <pin>
@@ -961,7 +961,7 @@
               <id>M98</id>
               <termid>T20</termid>
               <connections>
-                <connection net="N20" />
+                <connection net="N57" />
               </connections>
             </pin>
           </pins>
@@ -1294,7 +1294,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N20" />
+                <connection pinmsb="0" pinlsb="0" net="N57" />
               </connections>
             </pin>
             <pin>
@@ -1604,7 +1604,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="gnd_power">
+          <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
             </pageScope>
@@ -1664,7 +1664,7 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="ctrl"></net>
-              <net ref="gnd_power"></net>
+              <net ref="gnd"></net>
               <net ref="in"></net>
               <net ref="out"></net>
               <net ref="out_att"></net>

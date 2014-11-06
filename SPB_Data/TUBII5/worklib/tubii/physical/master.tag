@@ -1,1 +1,1 @@
-CAEN_BUFFER.brd
+tubii_v2.brd

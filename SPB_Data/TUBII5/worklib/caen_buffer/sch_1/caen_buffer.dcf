@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 21 )
+			( logicalViewRevNum 22 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -456,6 +456,19 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "$location" )
+			( Description "" )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty )
+			)
+			( Objects
+				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -472,17 +485,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "CTRL" )
-			)
-			( signal "@tubii_lib.caen_buffer(sch_1):gnd_power"
-				( alias ( signalRef "@tubii_lib.caen_buffer(sch_1):page1_gnd_power") )
-				( attribute "CDS_PHYS_NET_NAME" "GND_POWER"
-					( Origin gPackager )
-				)
-				( objectStatus "GND_POWER" )
-			)
-			( signal "@tubii_lib.caen_buffer(sch_1):page1_gnd_power"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_gnd_power" )
 			)
 			( signal "@tubii_lib.caen_buffer(sch_1):\in\"
 				( attribute "CDS_PHYS_NET_NAME" "IN"
@@ -663,6 +665,14 @@
 					( Origin gPackager )
 				)
 				( objectStatus "VCC" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):gnd"
+				( alias ( signalRef "@tubii_lib.caen_buffer(sch_1):page1_gnd") )
+				( objectStatus "gnd" )
+			)
+			( signal "@tubii_lib.caen_buffer(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
 			)
 			( gate "@tubii_lib.caen_buffer(sch_1):page1_i1"
 				( attribute "ABBREV" "res_l"
