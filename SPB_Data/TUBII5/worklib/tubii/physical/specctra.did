@@ -5,7 +5,7 @@
 # 
 #            Command Line Parameters
 #            -----------------------
-# Design File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\CAEN_BUFFER.dsn
+# Design File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v2.dsn
 # Initialization options:
 #   -do pasde.do
 # Status File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\monitor.sts
@@ -15,7 +15,41 @@
 #
 #
 #
-# do $/CAEN_BUFFER_rules.do
+# do $/tubii_v2_rules.do
+define (class _bus_POWER POWER<2> POWER<5> POWER<1> POWER<4> 
+  GND )
+define (class _bus_JX1_LVDS_N JX1_LVDS_N<23> JX1_LVDS_N<22> JX1_LVDS_N<21> JX1_LVDS_N<20> 
+  JX1_LVDS_N<19> JX1_LVDS_N<18> JX1_LVDS_N<17> JX1_LVDS_N<16> 
+  JX1_LVDS_N<15> JX1_LVDS_N<14> JX1_LVDS_N<13> JX1_LVDS_N<12> 
+  JX1_LVDS_N<11> JX1_LVDS_N<10> JX1_LVDS_N<9> JX1_LVDS_N<8> 
+  JX1_LVDS_N<7> JX1_LVDS_N<6> JX1_LVDS_N<5> JX1_LVDS_N<1> )
+define (class _bus_JX2_LVDS_N JX2_LVDS_N<23> JX2_LVDS_N<22> )
+define (class _bus_JX1_LVDS_P JX1_LVDS_P<23> JX1_LVDS_P<22> JX1_LVDS_P<21> JX1_LVDS_P<20> 
+  JX1_LVDS_P<19> JX1_LVDS_P<18> JX1_LVDS_P<17> JX1_LVDS_P<16> 
+  JX1_LVDS_P<15> JX1_LVDS_P<14> JX1_LVDS_P<13> JX1_LVDS_P<12> 
+  JX1_LVDS_P<11> JX1_LVDS_P<10> JX1_LVDS_P<9> JX1_LVDS_P<8> 
+  JX1_LVDS_P<7> )
+define (class _bus_UNNAMED_3_PORTS2_I3_EXTTRIG UNNAMED_3_PORTS2_I3_EXTTRIG<15> UNNAMED_3_PORTS2_I3_EXTTRIG<14> UNNAMED_3_PORTS2_I3_EXTTRIG<13> UNNAMED_3_PORTS2_I3_EXTTRIG<12> 
+  UNNAMED_3_PORTS2_I3_EXTTRIG<11> UNNAMED_3_PORTS2_I3_EXTTRIG<10> UNNAMED_3_PORTS2_I3_EXTTRIG<9> UNNAMED_3_PORTS2_I3_EXTTRIG<8> 
+  UNNAMED_3_PORTS2_I3_EXTTRIG<7> UNNAMED_3_PORTS2_I3_EXTTRIG<6> UNNAMED_3_PORTS2_I3_EXTTRIG<5> UNNAMED_3_PORTS2_I3_EXTTRIG<4> 
+  UNNAMED_3_PORTS2_I3_EXTTRIG<3> UNNAMED_3_PORTS2_I3_EXTTRIG<2> UNNAMED_3_PORTS2_I3_EXTTRIG<1> UNNAMED_3_PORTS2_I3_EXTTRIG<0> )
+define (class _bus_JX2_LVDS_P JX2_LVDS_P<23> JX2_LVDS_P<22> )
+define (class _bus_ADDR ADDR<2> ADDR<1> ADDR<0> )
+define (class _bus_UNNAMED_3_PORTS_I2_SCOPEOUT UNNAMED_3_PORTS_I2_SCOPEOUT<7> UNNAMED_3_PORTS_I2_SCOPEOUT<6> UNNAMED_3_PORTS_I2_SCOPEOUT<5> UNNAMED_3_PORTS_I2_SCOPEOUT<4> 
+  UNNAMED_3_PORTS_I2_SCOPEOUT<3> UNNAMED_3_PORTS_I2_SCOPEOUT<2> UNNAMED_3_PORTS_I2_SCOPEOUT<1> UNNAMED_3_PORTS_I2_SCOPEOUT<0> )
+define (class _bus_SCALER SCALER<2> SCALER<1> SCALER<0> )
+define (class _bus_BANK13_LVDS_N BANK13_LVDS_N<5> )
+define (class _bus_BANK13_LVDS_P BANK13_LVDS_P<5> )
+define (class _bus_COUNT_VAL COUNT_VAL<6> COUNT_VAL<5> COUNT_VAL<4> COUNT_VAL<3> 
+  COUNT_VAL<2> COUNT_VAL<1> COUNT_VAL<0> )
+define (class _bus_NIM_TRIG_OUT NIM_TRIG_OUT<0> )
+define (class _bus_UNNAMED_3_PORTS_I2_CAENOUT UNNAMED_3_PORTS_I2_CAENOUT<7> UNNAMED_3_PORTS_I2_CAENOUT<6> UNNAMED_3_PORTS_I2_CAENOUT<5> UNNAMED_3_PORTS_I2_CAENOUT<4> 
+  UNNAMED_3_PORTS_I2_CAENOUT<3> UNNAMED_3_PORTS_I2_CAENOUT<2> UNNAMED_3_PORTS_I2_CAENOUT<1> UNNAMED_3_PORTS_I2_CAENOUT<0> )
+define (class _bus_UNNAMED_3_PORTS2_I3_RAWTRIGS UNNAMED_3_PORTS2_I3_RAWTRIGS<3> UNNAMED_3_PORTS2_I3_RAWTRIGS<2> UNNAMED_3_PORTS2_I3_RAWTRIGS<1> UNNAMED_3_PORTS2_I3_RAWTRIGS<0> )
+define (class _bus_UNNAMED_3_PORTS_I2_CAENANPULSE UNNAMED_3_PORTS_I2_CAENANPU<11> UNNAMED_3_PORTS_I2_CAENANPU<10> UNNAMED_3_PORTS_I2_CAENANPUL<9> UNNAMED_3_PORTS_I2_CAENANPUL<8> 
+  UNNAMED_3_PORTS_I2_CAENANPUL<7> UNNAMED_3_PORTS_I2_CAENANPUL<6> UNNAMED_3_PORTS_I2_CAENANPUL<5> UNNAMED_3_PORTS_I2_CAENANPUL<4> 
+  UNNAMED_3_PORTS_I2_CAENANPUL<3> UNNAMED_3_PORTS_I2_CAENANPUL<2> UNNAMED_3_PORTS_I2_CAENANPUL<1> UNNAMED_3_PORTS_I2_CAENANPUL<0> )
+define (class _bus_NIM_TRIG_IN NIM_TRIG_IN<2> NIM_TRIG_IN<0> )
 rule PCB (width 5)
 rule PCB (clearance 5 (type buried_via_gap))
 rule PCB (clearance 5 (type wire_wire))
@@ -175,8 +209,9 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaap02632.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaab02992.tmp
 unselect all routing
+select component U160
 set route_diagonal 0
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
@@ -203,5 +238,20 @@ rule pcb (trombone_gap -1)
 unprotect selected
 route 25 1
 clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaq02632.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac02992.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaae02992.tmp
+unselect all objects
+select net UNNAMED_1_COTO2342_I12_NC1
+select net UNNAMED_1_COTO2342_I12_NO1
+select net UNNAMED_1_COTO2342_I12_NO2
+select net UNNAMED_1_COTO2342_I12_NC2
+select net UNNAMED_1_COTO2342_I12_IN1
+select net UNNAMED_1_COTO2342_I12_IN2
+select net UNNAMED_1_COTO2342_I12_CTRLIN
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaad02992.tmp
 quit -c
