@@ -209,12 +209,20 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaab00908.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaad00908.tmp
 unselect all routing
-select component U78
-select component U84
-select component U85
-select component U86
+select component R226
+select component R225
+select component R224
+select component R223
+select component R221
+select component R222
+select component R220
+select component R219
+select component R218
+select component R217
+select component R216
+select component R215
 set route_diagonal 0
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
@@ -241,5 +249,26 @@ rule pcb (trombone_gap -1)
 unprotect selected
 route 25 1
 clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac00908.tmp
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaae00908.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaag00908.tmp
+unselect all objects
+select net UNNAMED_1_10E116_I15_B
+select net UNNAMED_1_10E116_I9_A
+select net UNNAMED_1_10E116_I9_B
+select net VTT
+select net UNNAMED_1_10E116_I16_B
+select net UNNAMED_1_10E116_I5_B
+select net UNNAMED_1_10E116_I5_A
+select net UNNAMED_1_10E116_I16_A
+select net UNNAMED_1_10E116_I12_B
+select net UNNAMED_1_10E116_I15_A
+select net UNNAMED_1_10E116_I10_B
+select net UNNAMED_1_10E116_I12_A
+select net UNNAMED_1_10E116_I10_A
+unprotect selected
+delete selected
+unprotect selected polygon
+delete selected polygon
+unselect all objects
+read route C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaaf00908.tmp
 quit -c

@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "ribbondelay"
     (lastIds
-      (lastInstanceId 24)
-      (lastNetId 25)
-      (lastInstTermId 78)
+      (lastInstanceId 26)
+      (lastNetId 27)
+      (lastInstTermId 82)
     )
     (cells
       ("S2" "ids_c10" "misc" "sym_1"
@@ -49,6 +49,12 @@
           ("T19" "b" 0 0 2)
         )
       )
+      ("S6" "csmd0603" "capacitors" "sym_1"
+        (terms
+          ("T23" "a" 0 0 1)
+          ("T24" "b" 0 0 2)
+        )
+      )
     )
 
     (nets
@@ -77,6 +83,8 @@
       ("N23" "unnamed_1_10e116_i9_y" -1 -1 0 )
       ("N24" "unnamed_1_10e116_i9_y_1" -1 -1 0 )
       ("N25" "vtt" -1 -1 2 )
+      ("N26" "gnd" -1 -1 2 )
+      ("N27" "vee" -1 -1 2 )
     )
 
     (instances
@@ -544,6 +552,34 @@
           ("M78" "T19" 0 0
             (conn
               ("0" 0 0 "N10" -1 -1)
+            )
+          )
+        )
+      )
+      ("I25" "page1_i31" "S6"
+        (pins
+          ("M79" "T23" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
+            )
+          )
+          ("M80" "T24" 0 0
+            (conn
+              ("0" 0 0 "N27" -1 -1)
+            )
+          )
+        )
+      )
+      ("I26" "page1_i32" "S6"
+        (pins
+          ("M81" "T23" 0 0
+            (conn
+              ("0" 0 0 "N26" -1 -1)
+            )
+          )
+          ("M82" "T24" 0 0
+            (conn
+              ("0" 0 0 "N27" -1 -1)
             )
           )
         )
