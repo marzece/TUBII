@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "generic_pulse"
     (lastIds
-      (lastInstanceId 16)
-      (lastNetId 34)
-      (lastInstTermId 82)
+      (lastInstanceId 17)
+      (lastNetId 35)
+      (lastInstTermId 86)
     )
     (cells
       ("S5" "f06" "ttl" "sym_1"
@@ -56,6 +56,12 @@
           ("T105" "in" -1 -1 1)
           ("T106" "out" -1 -1 2)
           ("T107" "out*" -1 -1 2)
+        )
+      )
+      ("S10" "csmd0603" "capacitors" "sym_1"
+        (terms
+          ("T119" "a" 0 0 1)
+          ("T120" "b" 0 0 2)
         )
       )
     )
@@ -197,6 +203,20 @@
             )
           )
           ("M66" "T107" -1 -1
+          )
+        )
+      )
+      ("I17" "page1_i20" "S10"
+        (pins
+          ("M85" "T119" 0 0
+            (conn
+              ("0" 0 0 "N1" -1 -1)
+            )
+          )
+          ("M86" "T120" 0 0
+            (conn
+              ("0" 0 0 "N7" -1 -1)
+            )
           )
         )
       )
