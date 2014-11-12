@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 21 )
+			( logicalViewRevNum 23 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -607,8 +607,6 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_adcmp566_i37_in"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):anpulsein"
 				( objectFlag fObjectAlias )
 			)
@@ -760,7 +758,7 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):vcc15"
 			)
@@ -787,6 +785,8 @@
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_mc10h104_i108_a"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_mc10h104_i109_b"
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -3519,68 +3519,6 @@
 						( Origin gPackager )
 					)
 					( objectStatus "U133.18" )
-				)
-			)
-			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( pin "a"
-				)
-				( pin "b"
 				)
 			)
 			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i19"
@@ -8145,7 +8083,7 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):page1_i7"
+			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -8154,19 +8092,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -8174,20 +8100,11 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "7"
+				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "VER" "2"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -8195,11 +8112,11 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
 				( pin "a"
@@ -9621,10 +9538,28 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C16"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C16"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I23" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.comparators(sch_1):page1_i24"
@@ -9701,10 +9636,69 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C17"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C17"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I24" )
 				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
 				)
 			)
 			( pin "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i21:c"
@@ -10013,8 +10007,6 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-			)
 			( signal "@tubii_lib.fastcomp(sch_1):gtrig"
 				( objectStatus "gtrig" )
 			)
@@ -10041,6 +10033,8 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_mc10h104_i109_b"
 				( objectStatus "unnamed_1_mc10h104_i109_b" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i9"
 				( attribute "ABBREV" "10E116"
@@ -12083,70 +12077,6 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i7.2" )
-				)
-				( pin "b"
-					( objectStatus "page1_i7.1" )
-				)
-			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i96"
 				( attribute "ABBREV" "10E131"
 					( Origin gFrontEnd )
@@ -13192,6 +13122,47 @@
 					)
 				)
 			)
+			( gate "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
 			( pin "@tubii_lib.fastcomp(sch_1):page1_i21:c"
 				( attribute "PN" "6"
 					( Origin gPackager )
@@ -13381,8 +13352,6 @@
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-			)
 			( signal "@tubii_lib.tuncomp(sch_1):vcc15"
 				( objectStatus "vcc15" )
 			)
@@ -13415,6 +13384,8 @@
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_ad96685_i98_qp"
 				( objectStatus "unnamed_1_ad96685_i98_qp" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( gate "@tubii_lib.tuncomp(sch_1):page1_i19"
 				( attribute "CDS_LIB" "resistors"
@@ -15777,70 +15748,6 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i7.2" )
-				)
-				( pin "b"
-					( objectStatus "page1_i7.1" )
-				)
-			)
 			( gate "@tubii_lib.tuncomp(sch_1):page1_i111"
 				( attribute "ABBREV" "10E101"
 					( Origin gFrontEnd )
@@ -16885,6 +16792,47 @@
 					( attribute "PN" "15"
 						( Origin gPackager )
 					)
+				)
+			)
+			( gate "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
 				)
 			)
 			( pin "@tubii_lib.tuncomp(sch_1):page1_i69:c"
