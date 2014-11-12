@@ -10,6 +10,14 @@ primitive 'FOXCLOCK';
     'ED':
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
+    'NC':
+      PIN_NUMBER='(2)';
+      PINUSE='NC';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
     PART_NAME='FOXCLOCK';
@@ -20,7 +28,6 @@ primitive 'FOXCLOCK';
     GROUND_NETS='GND';
     POWER_PINS='(VP3_3:6)';
     POWER_PINS='(GND:3)';
-    NC_PINS='(2)';
   end_body;
 end_primitive;
 

@@ -1,1 +1,1 @@
-SMD_FOX.dra
+tubii_v2.brd

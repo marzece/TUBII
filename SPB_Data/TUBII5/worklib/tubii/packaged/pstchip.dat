@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 11-Nov-2014 AT 14:55:08 }
+{ Packager-XL run on 11-Nov-2014 AT 17:25:17 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -2799,14 +2799,6 @@ primitive 'FCI_61083-101400LF';
 end_primitive;
 primitive 'FOXCLOCK';
   pin
-    'NC':
-      PIN_NUMBER='(2)';
-      PINUSE='NC';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
     'OUT':
       PIN_NUMBER='(4)';
       OUTPUT_LOAD='(1.0,-1.0)';
@@ -2819,11 +2811,19 @@ primitive 'FOXCLOCK';
       PIN_NUMBER='(1)';
       INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
+    'NC':
+      PIN_NUMBER='(2)';
+      PINUSE='NC';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
       PART_NAME='FOXCLOCK';
       BODY_NAME='FOXCLOCK';
-      JEDEC_TYPE='SIP6';
+      JEDEC_TYPE='SMD_FOX';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
       GROUND_NETS='GND';
