@@ -6,7 +6,7 @@
     Packager-XL 16.6-p001 (v16-6-112A) WIN32 9/10/2012 12:00:00 IST
     (C) Copyright 1994, Cadence Design Systems, Inc.
 
-    Run on Thu Nov 13 17:01:58 2014
+    Run on Fri Nov 14 12:10:50 2014
 
 
  **********************************************
@@ -109,7 +109,7 @@
     PTF_NAME cache
 
  **************************************************************
- *  End processing project file and command line  (00:00:01)  *
+ *  End processing project file and command line  (00:00:00)  *
  **************************************************************
 
 
@@ -138,7 +138,7 @@ pacitors/tant0805/part_table/part.ptf.
 Loading ./worklib/tubii/packaged/pxl.state. 
 
  *****************************************
- *  End loading State Files  (00:00:00)  *
+ *  End loading State Files  (00:00:01)  *
  *****************************************
 
 
@@ -156,19 +156,63 @@ Loading ./worklib/tubii/packaged/pxl.state.
  *  Packaging  *
  ***************
 
-
- *******************************
- *  End packaging  (00:00:00)  *
- *******************************
-
-INFO(SPCOPK-1442): No errors detected
+ #1   ERROR(SPCOPK-1109): Cannot package instance into package U44.
+        Schematic instance: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER~
+_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LI~
+B.TUBII_TIME(SCH_1):PAGE1_I208@ECL.10H116(CHIPS) (MODULE: TUBII_TIME; PART: 10~
+H116)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i208@ecl.\10h116\(chips)
+        The instances have the same location property value. Change the locati~
+on property value for any one of the instances in the Design Entry HDL Schemat~
+ic.
+Section 1 is assigned @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTILI~
+TY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUBI~
+I_TIME(SCH_1):PAGE1_I158@ECL.10H116(CHIPS) (MODULE: TUBII_TIME; PART: 10H116)
+ #2   ERROR(SPCOPK-1422): Section 2, common pin V is connected to different ne~
+ts:
+        Schematic net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTIL~
+ITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUB~
+II_TIME(SCH_1):UNNAMED_1_10H116_I208_B
+        Package net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTILIT~
+Y_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUBII~
+_TIME(SCH_1):UNNAMED_1_10H116_I158_B
+        Package net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTILIT~
+Y_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUBII~
+_TIME(SCH_1):PAGE1_I158@ECL.10H116(CHIPS) (MODULE: TUBII_TIME; PART: 10H116)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i158@ecl.\10h116\(chips)
+        Packaged instance: 
+ #3   ERROR(SPCOPK-1422): Section 3, common pin V is connected to different ne~
+ts:
+        Schematic net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTIL~
+ITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUB~
+II_TIME(SCH_1):UNNAMED_1_10H116_I208_B
+        Package net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTILIT~
+Y_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUBII~
+_TIME(SCH_1):UNNAMED_1_10H116_I158_B
+        Package net: @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.TRIGGER_UTILIT~
+Y_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@TUBII_LIB.TUBII~
+_TIME(SCH_1):PAGE1_I158@ECL.10H116(CHIPS) (MODULE: TUBII_TIME; PART: 10H116)
+        Physical Path: @tubii_lib.tubii(sch_1):page2_i1@tubii_lib.trigger_util~
+ity_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tub~
+ii_time(sch_1):page1_i158@ecl.\10h116\(chips)
+        Packaged instance: 
+ #4   ERROR(SPCODD-101): Primitive @TUBII_LIB.TUBII(SCH_1):PAGE1_I1@TUBII_LIB.~
+TRIGGER_UTILITY_BOARD_MKII(SCH_1):PAGE1_I15@TUBII_LIB.CLOCKS(SCH_1):PAGE1_I2@T~
+UBII_LIB.TUBII_TIME(SCH_1):PAGE1_I208@ECL.10H116(CHIPS) is not packaged.
+ #5   ERROR(SPCODD-100): State file not written for design TUBII.
+INFO(SPCOPK-1441): 5 errors detected
 INFO(SPCOPK-1444): No warnings detected
-    Start time   17:01:57
-    End time     17:03:04
-    Elapsed time  0:01:07
+INFO(SPCOPK-1448): Use Tools->Markers->Packager in ConceptHDL to highlight ins~
+tances for the errors/warnings reported.
+    Start time   12:10:49
+    End time     12:11:42
+    Elapsed time  0:00:53
 
- ***************************************************************************
- *  Packager-XL execution done.
- ***************************************************************************
-Starting to audit ECsets in the design...
-Audit completed successfully.
+ **************************************************
+ *  FATAL ERROR PackagerXL exiting with status 2  *
+ **************************************************
+
