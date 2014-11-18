@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-11-12T18:41:36</modificationTime>
+    <modificationTime>2014-11-14T13:31:53</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>63</instanceid>
         <netid>66</netid>
-        <insttermid>203</insttermid>
+        <insttermid>205</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -137,11 +137,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T21</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T22</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -150,6 +145,11 @@
               <id>T23</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T119</id>
+              <name>vbb</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -1548,10 +1548,6 @@
           <cellid>S5</cellid>
           <name>page1_i61</name>
           <parameters>
-            <parameter>
-              <name>section</name>
-              <value>1</value>
-            </parameter>
           </parameters>
           <masks>
           </masks>
@@ -1577,12 +1573,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M196</id>
-              <termid>T21</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M197</id>
               <termid>T22</termid>
               <msb>0</msb>
@@ -1600,6 +1590,12 @@
                 <connection pinmsb="0" pinlsb="0" net="N9" />
               </connections>
             </pin>
+            <pin>
+              <id>M204</id>
+              <termid>T119</termid>
+              <connections>
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -1615,10 +1611,6 @@
           <cellid>S5</cellid>
           <name>page1_i62</name>
           <parameters>
-            <parameter>
-              <name>section</name>
-              <value>1</value>
-            </parameter>
           </parameters>
           <masks>
           </masks>
@@ -1644,12 +1636,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M201</id>
-              <termid>T21</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M202</id>
               <termid>T22</termid>
               <msb>0</msb>
@@ -1665,6 +1651,12 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N58" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M205</id>
+              <termid>T119</termid>
+              <connections>
               </connections>
             </pin>
           </pins>

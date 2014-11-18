@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-11-13T17:06:27</modificationTime>
+    <modificationTime>2014-11-14T13:57:57</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>15</instanceid>
         <netid>15</netid>
-        <insttermid>34</insttermid>
+        <insttermid>36</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -112,11 +112,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T14</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T15</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -125,6 +120,11 @@
               <id>T16</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T33</id>
+              <name>v</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -379,13 +379,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M15</id>
-              <termid>T14</termid>
-              <connections>
-                <connection net="N6" />
-              </connections>
-            </pin>
-            <pin>
               <id>M16</id>
               <termid>T15</termid>
               <msb>0</msb>
@@ -401,6 +394,13 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N8" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M36</id>
+              <termid>T33</termid>
+              <connections>
+                <connection net="N6" />
               </connections>
             </pin>
           </pins>

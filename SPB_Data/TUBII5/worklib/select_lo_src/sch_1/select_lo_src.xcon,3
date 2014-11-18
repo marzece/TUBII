@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-11-12T18:39:59</modificationTime>
+    <modificationTime>2014-11-14T13:31:46</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>22</instanceid>
         <netid>28</netid>
-        <insttermid>61</insttermid>
+        <insttermid>62</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -130,11 +130,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T44</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T45</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -143,6 +138,11 @@
               <id>T46</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T99</id>
+              <name>vbb</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -733,10 +733,6 @@
           <cellid>S9</cellid>
           <name>page1_i32</name>
           <parameters>
-            <parameter>
-              <name>section</name>
-              <value>1</value>
-            </parameter>
           </parameters>
           <masks>
           </masks>
@@ -762,13 +758,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M45</id>
-              <termid>T44</termid>
-              <connections>
-                <connection net="N20" />
-              </connections>
-            </pin>
-            <pin>
               <id>M46</id>
               <termid>T45</termid>
               <msb>0</msb>
@@ -783,6 +772,13 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M62</id>
+              <termid>T99</termid>
+              <connections>
+                <connection net="N20" />
               </connections>
             </pin>
           </pins>

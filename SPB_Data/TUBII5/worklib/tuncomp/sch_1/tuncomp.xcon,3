@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2014-11-12T18:41:03</modificationTime>
+    <modificationTime>2014-11-14T13:31:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>106</instanceid>
         <netid>108</netid>
-        <insttermid>466</insttermid>
+        <insttermid>476</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -383,11 +383,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T187</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T188</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -396,6 +391,11 @@
               <id>T189</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T350</id>
+              <name>vbb</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -1655,13 +1655,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M346</id>
-              <termid>T187</termid>
-              <connections>
-                <connection net="N86" />
-              </connections>
-            </pin>
-            <pin>
               <id>M347</id>
               <termid>T188</termid>
               <msb>0</msb>
@@ -1676,6 +1669,13 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M475</id>
+              <termid>T350</termid>
+              <connections>
+                <connection net="N86" />
               </connections>
             </pin>
           </pins>
@@ -1718,12 +1718,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M351</id>
-              <termid>T187</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M352</id>
               <termid>T188</termid>
               <msb>0</msb>
@@ -1739,6 +1733,12 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N96" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M476</id>
+              <termid>T350</termid>
+              <connections>
               </connections>
             </pin>
           </pins>

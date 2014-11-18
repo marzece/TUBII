@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-11-12T18:42:04</modificationTime>
+    <modificationTime>2014-11-14T13:32:06</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>12</instanceid>
         <netid>11</netid>
-        <insttermid>24</insttermid>
+        <insttermid>26</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -54,11 +54,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T11</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T12</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -67,6 +62,11 @@
               <id>T13</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T23</id>
+              <name>vbb</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -307,12 +307,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M7</id>
-              <termid>T11</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M8</id>
               <termid>T12</termid>
               <msb>0</msb>
@@ -328,6 +322,12 @@
               <lsb>0</lsb>
               <connections>
                 <connection pinmsb="0" pinlsb="0" net="N8" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M25</id>
+              <termid>T23</termid>
+              <connections>
               </connections>
             </pin>
           </pins>
@@ -370,12 +370,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M12</id>
-              <termid>T11</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M13</id>
               <termid>T12</termid>
               <msb>0</msb>
@@ -389,6 +383,12 @@
               <termid>T13</termid>
               <msb>0</msb>
               <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M26</id>
+              <termid>T23</termid>
               <connections>
               </connections>
             </pin>

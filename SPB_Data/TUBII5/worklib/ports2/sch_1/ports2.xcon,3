@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-11-12T18:42:06</modificationTime>
+    <modificationTime>2014-11-14T13:31:21</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports2" view="sch_1">
       <lastids>
         <instanceid>24</instanceid>
-        <netid>44</netid>
-        <insttermid>168</insttermid>
+        <netid>48</netid>
+        <insttermid>206</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -122,11 +122,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T17</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T18</id>
               <name>y&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
@@ -135,6 +130,11 @@
               <id>T19</id>
               <name>y*&lt;SIZE-1..0&gt;</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T126</id>
+              <name>vbb</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -679,13 +679,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M18</id>
-              <termid>T17</termid>
-              <connections>
-                <connection net="N10" />
-              </connections>
-            </pin>
-            <pin>
               <id>M19</id>
               <termid>T18</termid>
               <msb>0</msb>
@@ -700,6 +693,13 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M205</id>
+              <termid>T126</termid>
+              <connections>
+                <connection net="N10" />
               </connections>
             </pin>
           </pins>
@@ -742,12 +742,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M23</id>
-              <termid>T17</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
               <id>M24</id>
               <termid>T18</termid>
               <msb>0</msb>
@@ -761,6 +755,12 @@
               <termid>T19</termid>
               <msb>0</msb>
               <lsb>0</lsb>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M206</id>
+              <termid>T126</termid>
               <connections>
               </connections>
             </pin>
