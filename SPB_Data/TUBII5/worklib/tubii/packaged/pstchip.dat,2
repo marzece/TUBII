@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 14-Nov-2014 AT 11:46:08 }
+{ Packager-XL run on 19-Nov-2014 AT 20:15:18 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -442,77 +442,85 @@ primitive '10EP90';
 end_primitive;
 primitive '10H116';
   pin
-    'Y'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(15,7,3)';
-      PINUSE='OCL';
-    'V':
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(11,11,11)';
-      PINUSE='OCL';
     'A'<0>:
-      INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(13,10,5)';
+      INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
-    'Y*'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(14,6,2)';
-      PINUSE='OCL';
     'B*'<0>:
-      INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(12,9,4)';
+      INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
+    'Y'<0>:
+      PIN_NUMBER='(15,7,3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y*'<0>:
+      PIN_NUMBER='(14,6,2)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'V':
+      PIN_NUMBER='(11,11,11)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
+      PART_NAME='10H116';
       BODY_NAME='10H116';
-      POWER_PINS='(GND2:1;GND1:16;VEE:8)';
       FAMILY='ECL10KH';
       SECTION='1';
-      JEDEC_TYPE='DIP16_3';
-      CLASS='IC';
-      PART_NAME='10H116';
       TECH='10KH';
+      JEDEC_TYPE='DIP16_3';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(GND2:1)';
+      POWER_PINS='(GND1:16)';
+      POWER_PINS='(VEE:8)';
   end_body;
 end_primitive;
 primitive '10H116_PLCC';
   pin
-    'Y'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(19,9,4)';
-      PINUSE='OCL';
-    'V':
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(14,14,14)';
-      PINUSE='OCL';
     'A'<0>:
-      INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(17,13,7)';
+      INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
-    'Y*'<0>:
-      OUTPUT_LOAD='(-7.4,-23.8)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(18,8,3)';
-      PINUSE='OCL';
     'B*'<0>:
-      INPUT_LOAD='(0.001,0.095)';
       PIN_NUMBER='(15,12,5)';
+      INPUT_LOAD='(-0.01,0.01)';
       PINUSE='IN';
+    'Y'<0>:
+      PIN_NUMBER='(19,9,4)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'Y*'<0>:
+      PIN_NUMBER='(18,8,3)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'V':
+      PIN_NUMBER='(14,14,14)';
+      PINUSE='POWER';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
   end_pin;
   body
+      PART_NAME='10H116';
       BODY_NAME='10H116';
-      POWER_PINS='(GND2:2;GND1:20;VEE:10)';
       FAMILY='ECL10KH';
       SECTION='1';
-      NC_PINS='(16,11,6,1)';
-      JEDEC_TYPE='PLCC20';
-      CLASS='IC';
-      PART_NAME='10H116';
       TECH='10KH';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(GND2:2)';
+      POWER_PINS='(GND1:20)';
+      POWER_PINS='(VEE:10)';
+      NC_PINS='(16,11,6,1)';
   end_body;
 end_primitive;
 primitive '10H125';
