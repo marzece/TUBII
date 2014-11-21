@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 13 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -456,6 +456,19 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "$location" )
+			( Description "" )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty )
+			)
+			( Objects
+				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -509,12 +522,6 @@
 			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_10h116_i15_y_1"
 				( objectStatus "unnamed_1_10h116_i15_y_1" )
 			)
-			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81lt1_i3_c"
-				( objectStatus "unnamed_1_mmbth81lt1_i3_c" )
-			)
-			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81lt1_i3_e"
-				( objectStatus "unnamed_1_mmbth81lt1_i3_e" )
-			)
 			( signal "@tubii_lib.caen_chat(sch_1):vee"
 				( objectStatus "vee" )
 			)
@@ -554,80 +561,11 @@
 			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_rsmd0805_i59_a"
 				( objectStatus "unnamed_1_rsmd0805_i59_a" )
 			)
-			( gate "@tubii_lib.caen_chat(sch_1):page1_i3"
-				( attribute "ABBREV" "MMBTH81LT1"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "transistors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "Q1"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "IC_VBE" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC_VCE" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "LOCATION" "Q1"
-					( Origin gPackager )
-				)
-				( attribute "NAME" "MMBTH81LT1"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "RCA" "DEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "STATE" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "TEMP" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1300,3400)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "MMBTH81LT1"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "MMBTH81LT1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I3" )
-				( pin "b"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "c"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-				( pin "e"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
+			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81_i67_c"
+				( objectStatus "unnamed_1_mmbth81_i67_c" )
+			)
+			( signal "@tubii_lib.caen_chat(sch_1):unnamed_1_mmbth81_i67_e"
+				( objectStatus "unnamed_1_mmbth81_i67_e" )
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i4"
 				( attribute "CDS_LIB" "resistors"
@@ -713,16 +651,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I4" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i8"
 				( attribute "ABBREV" "TP"
@@ -762,11 +690,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I8" )
-				( pin "a"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i9"
 				( attribute "CDS_LIB" "resistors"
@@ -852,16 +775,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i11"
 				( attribute "CDS_LIB" "ecl"
@@ -901,31 +814,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I11" )
-				( pin "a(0)"
-					( attribute "PN" "13"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "12"
-						( Origin gPackager )
-					)
-				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "15"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "14"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i14"
 				( attribute "CDS_LIB" "resistors"
@@ -1011,16 +899,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I14" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i15"
 				( attribute "CDS_LIB" "ecl"
@@ -1060,43 +938,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I15" )
-				( pin "a(0)"
-					( attribute "PN" "10"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "9"
-						( Origin gPackager )
-					)
-				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i26"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U3"
+				( attribute "CDS_LOCATION" "U15"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U3"
+				( attribute "LOCATION" "U15"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1124,31 +977,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
-				( pin "a(0)"
-					( attribute "PN" "5"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "4"
-						( Origin gPackager )
-					)
-				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i47"
 				( attribute "CDS_LIB" "misc"
@@ -1157,13 +985,13 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U35"
+				( attribute "CDS_LOCATION" "U11"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U35"
+				( attribute "LOCATION" "U11"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1188,41 +1016,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I47" )
-				( pin "\1\"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "\4\"
-					( attribute "PN" "4"
-						( Origin gPackager )
-					)
-				)
-				( pin "\5\"
-					( attribute "PN" "5"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in+\"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in-\"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-				( pin "\out+\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "\out-\"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i48"
 				( attribute "CDS_LIB" "resistors"
@@ -1308,16 +1101,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I48" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i49"
 				( attribute "CDS_LIB" "resistors"
@@ -1403,16 +1186,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I49" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i50"
 				( attribute "CDS_LIB" "resistors"
@@ -1421,7 +1194,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R251"
+				( attribute "CDS_LOCATION" "R10"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1433,7 +1206,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R251"
+				( attribute "LOCATION" "R10"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1498,16 +1271,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I50" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i51"
 				( attribute "CDS_LIB" "misc"
@@ -1534,15 +1297,19 @@
 				( attribute "CDS_PART_NAME" "MAX9376"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U116"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I51" )
-				( pin "in2"
-				)
-				( pin "\in2*\"
-				)
-				( pin "out2"
-				)
-				( pin "\out2*\"
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i52"
 				( attribute "CDS_LIB" "resistors"
@@ -1551,7 +1318,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R252"
+				( attribute "CDS_LOCATION" "R13"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1563,7 +1330,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R252"
+				( attribute "LOCATION" "R13"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1628,16 +1395,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I52" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i53"
 				( attribute "CDS_LIB" "resistors"
@@ -1646,7 +1403,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R248"
+				( attribute "CDS_LOCATION" "R4"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1658,7 +1415,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R248"
+				( attribute "LOCATION" "R4"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1723,16 +1480,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I53" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i54"
 				( attribute "CDS_LIB" "resistors"
@@ -1741,7 +1488,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R249"
+				( attribute "CDS_LOCATION" "R7"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1753,7 +1500,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R249"
+				( attribute "LOCATION" "R7"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1818,16 +1565,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I54" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i55"
 				( attribute "CDS_LIB" "ecl"
@@ -1848,18 +1585,25 @@
 				( attribute "XY" "(1200,2550)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "10EP91"
+				( attribute "CHIPS_PART_NAME" "10EP90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10EP90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U106"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U106"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I55" )
-				( pin "d"
-				)
-				( pin "\d*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i56"
 				( attribute "CDS_LIB" "misc"
@@ -1899,41 +1643,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I56" )
-				( pin "\1\"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "\4\"
-					( attribute "PN" "4"
-						( Origin gPackager )
-					)
-				)
-				( pin "\5\"
-					( attribute "PN" "5"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in+\"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "\in-\"
-					( attribute "PN" "3"
-						( Origin gPackager )
-					)
-				)
-				( pin "\out+\"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "\out-\"
-					( attribute "PN" "6"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i59"
 				( attribute "CDS_LIB" "resistors"
@@ -1942,7 +1651,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R251"
+				( attribute "CDS_LOCATION" "R9"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1954,7 +1663,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R251"
+				( attribute "LOCATION" "R9"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2019,16 +1728,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I59" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i60"
 				( attribute "CDS_LIB" "misc"
@@ -2055,15 +1754,19 @@
 				( attribute "CDS_PART_NAME" "MAX9376"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I60" )
-				( pin "in2"
-				)
-				( pin "\in2*\"
-				)
-				( pin "out2"
-				)
-				( pin "\out2*\"
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i61"
 				( attribute "CDS_LIB" "resistors"
@@ -2072,7 +1775,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R252"
+				( attribute "CDS_LOCATION" "R12"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2084,7 +1787,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R252"
+				( attribute "LOCATION" "R12"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2149,16 +1852,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I61" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i62"
 				( attribute "CDS_LIB" "resistors"
@@ -2167,7 +1860,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R248"
+				( attribute "CDS_LOCATION" "R3"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2179,7 +1872,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R248"
+				( attribute "LOCATION" "R3"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2244,16 +1937,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I62" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i63"
 				( attribute "CDS_LIB" "resistors"
@@ -2262,7 +1945,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R249"
+				( attribute "CDS_LOCATION" "R6"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2274,7 +1957,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R249"
+				( attribute "LOCATION" "R6"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2339,16 +2022,6 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I63" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i64"
 				( attribute "CDS_LIB" "ecl"
@@ -2369,18 +2042,25 @@
 				( attribute "XY" "(-2025,2550)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "10EP91"
+				( attribute "CHIPS_PART_NAME" "10EP90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10EP90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U106"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U106"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I64" )
-				( pin "d"
-				)
-				( pin "\d*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i65"
 				( attribute "CDS_LIB" "resistors"
@@ -2453,11 +2133,19 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-130,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R153"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R153"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I65" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
 			)
 			( gate "@tubii_lib.caen_chat(sch_1):page1_i66"
 				( attribute "CDS_LIB" "resistors"
@@ -2530,10 +2218,452 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-130,1%,0805"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I66" )
-				( pin "a(0)"
+				( attribute "CDS_LOCATION" "R154"
+					( Origin gPackager )
 				)
-				( pin "b(0)"
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R154"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I66" )
+			)
+			( gate "@tubii_lib.caen_chat(sch_1):page1_i67"
+				( attribute "CDS_LIB" "transistors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1350,3400)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MMBTH81"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MMBTH81"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U115"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U115"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I67" )
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i4:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i4:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i8:a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i9:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i9:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i11:a(0)"
+				( attribute "PN" "13"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i11:\b*\(0)"
+				( attribute "PN" "12"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i11:v"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i11:y(0)"
+				( attribute "PN" "15"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i11:\y*\(0)"
+				( attribute "PN" "14"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i14:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i14:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i15:a(0)"
+				( attribute "PN" "10"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i15:\b*\(0)"
+				( attribute "PN" "9"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i15:v"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i15:y(0)"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i15:\y*\(0)"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i26:a(0)"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i26:\b*\(0)"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i26:v"
+				( attribute "PN" "11"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i26:y(0)"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i26:\y*\(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\1\"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\4\"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\5\"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\in+\"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\in-\"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\out+\"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i47:\out-\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i48:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i48:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i49:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i49:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i50:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i50:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i51:in2"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i51:\in2*\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i51:out2"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i51:\out2*\"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i52:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i52:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i53:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i53:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i54:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i54:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i55:d"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i55:\d*\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i55:q"
+				( attribute "PN" "16"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i55:\q*\"
+				( attribute "PN" "15"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\1\"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\4\"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\5\"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\in+\"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\in-\"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\out+\"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i56:\out-\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i59:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i59:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i60:in2"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i60:\in2*\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i60:out2"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i60:\out2*\"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i61:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i61:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i62:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i62:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i63:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i63:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i64:d"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i64:\d*\"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i64:q"
+				( attribute "PN" "19"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i64:\q*\"
+				( attribute "PN" "18"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i65:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i65:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i66:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i66:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i67:b"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i67:c"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.caen_chat(sch_1):page1_i67:e"
+				( attribute "PN" "2"
+					( Origin gPackager )
 				)
 			)
 		)
