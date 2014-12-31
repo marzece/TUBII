@@ -6,7 +6,21 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \author{Eric Marzec}
-\title{Tubii: A Field Of Dreaks}
+\title{Tubii: A Field Of Dreams}
 \begin{document}
 \maketitle
+\section{Motivation for TUBii}
+All user interactions are done through the MicroZed unless otherwise stated.
+\section{Clocks}
+The TUBii is designed to have two clocks. One is the 100MHz ECL clock from the TUB and the other is a 200MHz LVPECL clock. Since the 200MHz clock comes from FOX Electronics, I've taken to calling it "The Fox Clock". The Fox Clock gets converted to ECL and divided down to 100MHz to match the TUB clock. Then the user can decide which of the two clocks will be the default used clock, and which will be the backup. From there the clock signal that is decided to be the default clock is watched for if any clock signals get missed. And if more then $x$ clocks pulses are missed the backup clock automatically takes over for the default clock. This continues until the default clock resumes normal operation. $x$ is a value that can be set by the user. However, due to the speed of the clock $x$ cannot go lower than a few clock pulses. Testing and prototyping will determine the exact minimum. The design for this automatic fault detection system is similar as that of the UGBoard's.
+\section{ELLIE}
+The TUBii provides a pair of the exactly the same utilities for ELLIE, one for TELLIE and one for SMELLIE.
+The utilities are a synchronous pulse, a synchronous delay, and an asynchronous delay.    The asynchronous delay is really another synchronous delay followed by a small tune-able asynchronous delay. 
+\section{GT Timing}
+The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the MTCD. This copy of GT is used to create two more signals, Delayed Global Trigger ($DGT$), and Delayed Delayed Global Trigger ($DDGT$). $DGT$ can be set to come between ***DGT DETAILS*** after GT in steps of ***DGT DETAILS***. Similarly $DDGT$ can be up to 1275ns after $GT$ in steps of 5ns. From here $DGT$ goes off the board to the ***MTCD?***. A signal from the MicroZed (set by the user) is the used to decide if the $LO*_{MTCD}$  or $DDGT$ will be used as the $LO*$ signal. Where $LO*_{MTCD}$ is the signal generated on the MTCD that indicates the end of Lockout Out. The $LO*$ and $DGT$ signals are used on the MTCD to determine when there should be the detector should re-trigger.
+ 
+\section{CAEN}
+
+\section{General Utilities}
+Part of the goal of the TUBii is to provide utilities that have no exact purpose in mind, but may someday be useful to the user. The first of these is a synchronous delay. The synchronous delay is done completely on the MicroZed, with no need for an other ICs.  There is also an asynchronous delay. The asynchronous delay  
 \end{document}
