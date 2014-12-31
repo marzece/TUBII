@@ -5,22 +5,70 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\usepackage{hyperref}
 \author{Eric Marzec}
 \title{Tubii: A Field Of Dreams}
 \begin{document}
 \maketitle
+\begin{abstract}
+Here the functionality of the TUBII, as it is designed, is described in detail. The goal of this document is to inform any interested parties of what the TUBII will actually do. This will hopefully prevent the TUBII from lacking functions that everyone just assumed would be present. Or, conversly, prevent the TUBII from having functions that are unecessary. Because this document is meant to be comprehensive if there is something that is not described here, it is likely that it will not be on the TUBII. If some function that should be present is not,  contact Eric Marzec (marzece@hep.upenn.edu)
+
+Additionally, this document will continue to be updated as the TUBII progresses.
+\end{abstract}
 \section{Motivation for TUBii}
-All user interactions are done through the MicroZed unless otherwise stated.
+All user interactions between the TUBII and the user are done through the MicroZed unless otherwise stated.
 \section{Clocks}
 The TUBii is designed to have two clocks. One is the 100MHz ECL clock from the TUB and the other is a 200MHz LVPECL clock. Since the 200MHz clock comes from FOX Electronics, I've taken to calling it "The Fox Clock". The Fox Clock gets converted to ECL and divided down to 100MHz to match the TUB clock. Then the user can decide which of the two clocks will be the default used clock, and which will be the backup. From there the clock signal that is decided to be the default clock is watched for if any clock signals get missed. And if more then $x$ clocks pulses are missed the backup clock automatically takes over for the default clock. This continues until the default clock resumes normal operation. $x$ is a value that can be set by the user. However, due to the speed of the clock $x$ cannot go lower than a few clock pulses. Testing and prototyping will determine the exact minimum. The design for this automatic fault detection system is similar as that of the UGBoard's.
 \section{ELLIE}
 The TUBii provides a pair of the exactly the same utilities for ELLIE, one for TELLIE and one for SMELLIE.
 The utilities are a synchronous pulse, a synchronous delay, and an asynchronous delay.    The asynchronous delay is really another synchronous delay followed by a small tune-able asynchronous delay. 
 \section{GT Timing}
-The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the MTCD. This copy of GT is used to create two more signals, Delayed Global Trigger ($DGT$), and Delayed Delayed Global Trigger ($DDGT$). $DGT$ can be set to come between ***DGT DETAILS*** after GT in steps of ***DGT DETAILS***. Similarly $DDGT$ can be up to 1275ns after $GT$ in steps of 5ns. From here $DGT$ goes off the board to the ***MTCD?***. A signal from the MicroZed (set by the user) is the used to decide if the $LO*_{MTCD}$  or $DDGT$ will be used as the $LO*$ signal. Where $LO*_{MTCD}$ is the signal generated on the MTCD that indicates the end of Lockout Out. The $LO*$ and $DGT$ signals are used on the MTCD to determine when there should be the detector should re-trigger.
+\label{GTTiming}
+The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the MTCD. This copy of GT is used to create two more signals, Delayed Global Trigger ($DGT$), and Delayed Delayed Global Trigger ($DDGT$). $DGT$ can be set to come between 0 and 510ns after GT in steps of 2ns. Similarly $DDGT$ can be up to 1275ns after $GT$ in steps of 5ns. From here $DGT$ goes off the board to the ***MTCD?***.  From here the $DDGT$ signal may or maynot be sent to the MTCD to be used as the $LO*$ (Lock Out*) signal. If $DDGT$ is not used as $LO*$ then another signal, that I'll call $LO*_{MTCD}$, is used as $LO*$. $LO*_{MTCD}$ is generated on the MTCD and previously has been the only signal used for $LO*$. A bit, that is set by the user, on the MicroZed is used to decide if $DDGT$ or $LO*_{MTCD}$ is used as $LO*$. 
+The $LO*$ and $DGT$ signals are then used on the MTCD to determine when there should be the detector should re-trigger.
  
-\section{CAEN}
+\section{CAEN Interface}
+There are two functions which the TUBII provides for the CAEN. The first of which is to convert the $SYNC$ and $SYNC24$ signals to LVDS 
+\section{Baseline Monitoring}
+The TUBII's Baseline Monitoring provides a simple buffer between the signals from the backplane and the MTCD. This is done by putting several unity gain op-amps between the two. The goal is to prevent noise from propagating from the MTCD back into the backplane. 
 
 \section{General Utilities}
-Part of the goal of the TUBii is to provide utilities that have no exact purpose in mind, but may someday be useful to the user. The first of these is a synchronous delay. The synchronous delay is done completely on the MicroZed, with no need for an other ICs.  There is also an asynchronous delay. The asynchronous delay  
+
+Part of the goal of the TUBii is to provide utilities that have no exact purpose in mind except that they may someday be useful to the user.
+\subsection{Delays}
+The first of these is a synchronous delay. The synchronous delay is done completely on the MicroZed.  There is also an asynchronous delay that is performed by doing a synchronous delay followed by a small asynchronous delay. The asynchronous part of the delay can be up to 127.5ns in length in steps of 0.5ns. The synchronous portion of the delay can be as long as necessary.
+\subsection{Pulser}
+Similar to the delays availible, the TUBII also can act as a pulser. It can provide two independent pulses, one that is synchronous, and one that is asynchronous. The asynchronous pulse is created similar to how the asynchronous delay is created, it is a synchronous pulse followed by some tuneable asynchronous offset. The offset can be as large as 127.5ns in steps of 0.5ns.
+\subsection{Pulse Inverter}
+The TUBII also provides a pulse inverter. It is a simple circuit that takes an incoming pulse, that can be either analog or digital, and inverts it using an op-amp. The limitations of the circuit are that the incoming pulses must be between -5 and +5 volts and should not exceed 500MHz in frequency. Additionally any signal that changes faster than 5,500V/$\mu$s will not be faithfully inverted.
+\subsection{Ribbon Delay}
+A "ribbon delay" is also availible to the user. The ribbon delay simply takes any ECL signal and sends it along a ribbon cable, which will delay the signal several nanoseconds (depending on how long the cable is). However, thing are made slightly more complex because the delay is designed such that the signal will be sent along the cable five times and is buffered after each trip along the cable by an MC10E116. This means a ribbon cable that has 2ns worth of length will give a delay of 10ns. It also means that the effectiveness of the ribbon delay is limited to signals usable by the MC10E116.
+\subsection{Translation}
+
+\subsection{Pulse Scaler}
+The final generic utility is a pulse scaler. The pulse scaler is designed to be used as a display of the frequency of any chosen trigger. The MicroZed simply sends out a pulse to the scaler, which then causes a counter to increment. And since the MicroZed recieves many different trigger signals any of these can be copied within the MicroZed and sent to the scaler. The value of the count will be displayed on a small display on the front of the TUBII and also be availible to user on a connected computer (***CHECKWITH IAN THAT THIS IS TRUE***)
+
+\section{Speaker}
+Anyone familiar with the TUB's speaker should understand what the idea behind the  speaker on the TUBII. The difference between the TUB's and TUBII's speaker is that the TUBII will be able to emit noise for any of the triggers it has availible, opposed to the TUB which emits noise corresponding only to the Global Trigger. Furthermore, the sophistication of the MicroZed will allow for the speaker's clicks to correspond to logical combiations of triggers (e.g ESUMH AND !PED). (***AGAIN CHECK WITH IAN***)
+
+\section{Inner Workings}
+Inevitably, the TUBII will be used as a black box by the many of it's users, so ideally nothing described here will be useful knowledge to those users. But for the sake of completeness and for posterity this section will be devoted to describing the parts of the TUBII which have no direct interaction with the end user.
+
+\subsection{Shift Register Addressing}
+A great many of the TUBII's utilities require a shift register being loaded. Doing so generally require three separate signals, $Latch Enable$ ($LE$), $Clock$ ($CLK$), and $Data$.
+So if the TUBII had eight shift registers that would use up a minimum of 24 pins on the MicroZed. To prevent such a large consuption of pins a 3-bit addressing scheme is used. This allows for 3 pins on the MicroZed to choose which of the eight shift registers will be programmed. This multiplexed signal acts as the $LatchEnable$ signal for the majority of the shift registers on the board. The $DATA$ and $CLK$ signals are shared between all of the shift registers. This means every shift register gets programmed at the same time but only the register that is specified by the 3-bit address will be "paying attention". This allows for a total of 5 pins on the MicroZed to be dedicated to programming shift registers.
+\subsection{Control Register}
+One of the shift registers addressed as described above is the "Control Register". The Control Register is meant to hold all the bits that the user will likely only ever set once. An example of this $Select_LO_SRC$ bit, which decides if $DDGT$ or $LO*_{MTCD}$ will be used as $LO*$, as described in \ref{GTTiming}. The user will probably only ever want to set the $Select_LO_SRC$ bit once, so the bit is stored in the Control Register rather than on the MicroZed. This saves one pin on the MicroZed with effectively no cost. Also a parallel-in serial-out register is connected to the eight outputs of the Control Register, this was added for debugging purposes. It allows the MicroZed to read the state of the Control Register in a non-destructive way. 
+\subsection{Powers}
+The TUBII requires an unfortunately varied amount of different powers due to the fact that it has to perform both analog and digital operations, and for its digital operations it has to use several different logic families. Each power line that goes onto the board is buffered through an inductor and regulated (with a regulator). The following powers are used by the TUBII, +15V, +5V ($VCC$), +3.3V, 0V ($GND$), -2V ($VTT$), -5V ($VEE$), and -15V. Additionally a -5V reference is created which is used in the Caen interface circuitry. It is worth noting that with ECL the $VCC$ signal generally corresponds to 0V while with TTL $VCC$ is at 5V. This can obviously lead to some amount of confusion, but in designing the TUBII I have tried to always use the convention that $VCC$ is 5V and that $GND$ is 0V regardless of which logic family is being considered.
+
+\section{Abandoned Dreams}
+Here is described all of the things that were considered to be put on the TUBII, but ultimately were abandoned for one reason or another.
+\subsection{High NHit Alert}
+The idea behind this is that it would be nice to have some sort of low level alert that would let an operator know everytime a high NHit event occurs. This would be similar to how the TUB speaker lets operator know when the event rate increases. The big advantage to this would be that if ORCA beached then the operator would still have a good idea of the state of the detector.
+
+Currently though, there are no plans to have this alert for the following reasons. It would be very difficult to create a noise that is highly distinct from the noise of the TUB without adding a decent amount of audio engineering type circuitry to an already very full board. Additionally getting the NHit without going through ORCA would require quite a bit of extra work as well. So all told this alarm would end up increasing the size of an already tubby board significantly.(***GET ANDY TO LOOK AT THIS***)
+
+\subsection{LCD Display}
+Aside from the pulse scaler there had been hopes for any LCD display that could present a variety of information as well as do neat things like having a scrolling marquee of neutrino buddies. Having this is still within the realm of possibility, but the front (and back) panel are expected to have ~100 ports for the TUBII. So it is very likely that space constraints will not allow for an extra LCD display.
 \end{document}
