@@ -1,13 +1,13 @@
 
-\title{TUBII: A Field of Dreams}
+
 \documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{hyperref}
+\title{TUBII: A Field of Dreams}
 \author{Eric Marzec}
-\title{Tubii: A Field Of Dreams}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -15,7 +15,7 @@ Here the functionality of the TUBII, as it is designed, is described in detail. 
 
 Additionally, this document will continue to be updated as the TUBII progresses.
 \end{abstract}
-%\tableofcontents%
+%\tableofcontents
 \section{Motivation for TUBii}
 Unavoidably, in the creation SNO+'s DAQ the primary focus was what features were needed. But now that much of the DAQ is``on an even keel'' so to speak there is a long list of features that could be beneficial to the experiment, though they are not strictly necessary. This is where the TUBII comes in, it serves to improve the DAQ by providing a lot of functions and utilties to the user that haven't previously been availible. It seeks to solve the problems that has plagued the experiment in the past. And hopefully it can even help address problems that may occur in the future. In summary, the TUBII is meant to solve everyone's problems forever. Obviously SNO+ will not exist in some state of utopic, experiment nirvana upon the completion of TUBII. But hopefully the TUBII will at least allow operators to have a few more degrees of freedom for how they take data and address problems with the detector as they occur. The remainder of the document will describe exactly what new functionality is provided.
 \section{The MicroZed}
@@ -28,8 +28,8 @@ The TUBii provides a pair of the exactly the same utilities for ELLIE, one for T
 The utilities are a synchronous pulse, a synchronous delay, and an asynchronous delay.    The asynchronous delay is really another synchronous delay followed by a small tune-able asynchronous delay. 
 \section{GT Timing}
 \label{GTTiming}
-The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the MTCD. This copy of GT is used to create two more signals, Delayed Global Trigger ($DGT$), and Delayed Delayed Global Trigger ($DDGT$). $DGT$ can be set to come between 0 and 510ns after GT in steps of 2ns. Similarly $DDGT$ can be up to 1275ns after $GT$ in steps of 5ns. From here $DGT$ goes off the board to the ***MTCD?***.  From here the $DDGT$ signal may or maynot be sent to the MTCD to be used as the $LO*$ (Lock Out*) signal. If $DDGT$ is not used as $LO*$ then another signal, that I'll call $LO*_{MTCD}$, is used as $LO*$. $LO*_{MTCD}$ is generated on the MTCD and previously has been the only signal used for $LO*$. A bit, that is set by the user, on the MicroZed is used to decide if $DDGT$ or $LO*_{MTCD}$ is used as $LO*$. 
-The $LO*$ and $DGT$ signals are then used on the MTCD to determine when there should be the detector should re-trigger.
+The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the MTCD. This copy of GT is used to create two more signals, Delayed Global Trigger ($DGT$), and Delayed Delayed Global Trigger ($DDGT$). $DGT$ can be set to come between 0 and 510ns after GT in steps of 2ns. Similarly $DDGT$ can be up to 1275ns after $GT$ in steps of 5ns. From here $DGT$ goes off the board to the ***MTCD?***.  From here the $DDGT$ signal may or maynot be sent to the MTCD to be used as the $LO^*$ (Read:Lock Out Star) signal. If $DDGT$ is not used as $LO^*$ then another signal, that I'll call $LO^*_{MTCD}$, is used as $LO^*$. $LO^*_{MTCD}$ is generated on the MTCD and previously has been the only signal used for $LO^*$. A bit, that is set by the user, on the MicroZed is used to decide if $DDGT$ or $LO^*_{MTCD}$ is used as $LO^*$. 
+The $LO^*$ and $DGT$ signals are then used on the MTCD to determine when the detector should re-trigger.
  
 \section{CAEN Interface}
 There are two functions which the TUBII provides for the CAEN. The first of which is to convert the $SYNC$ and $SYNC24$ signals to LVDS before they are sent to the CAEN. Similarly it provides a NIM copy of each Global Trigger. Currently these conversions are done by the TIB(***ASK ANDY***), which will be replaced once the TUBII is completed. 
@@ -37,15 +37,17 @@ There are two functions which the TUBII provides for the CAEN. The first of whic
  The second function provided for the CAEN is that of a channel selector for the various analog signals that may be plugged into the CAEN. Currently any time an operator would like to change which channels are seen by the CAEN he/she would have to physically remove a cable and plug in their desired cable. This is undesireable for several reasons, not the least of which is that it leaves no record of what changes occured. And ultimately leads to no one being quite sure what the CAEN is telling them. With the TUBII changing the channels in the CAEN will be able to be done in software which can they automatically keep track of which signals are availible and which aren't. Unfortunately, the TUBII's channel selecting ability is somewhat limited, it provides eight output channels. Four of those channels have two possible inputs that can be chosen between, meaning there are 12 total inputs and 8 outputs. It also means that some combinations of channels are not possible. For example, if ESUMH and NHIT\_100H were plugged into two input channels that share an output, then the user could never have both ESUMH and NHIT\_100H availible to the CAEN. This scheme was chosen because it's believed to be sufficient for most nearly any user while being of maneagble complexity.
  
     In addition to allowing the user to choose which of the plugged in channels are sent to the CAEN the TUBII will attenuate signals to ensure they fit within the dynamic range of the CAEN. The user can also choose to send any signal to an oscilloscope instead of the CAEN. If the signal is sent out to the oscilloscope the signal will be clipped so that it is withing -2V and 0V. In summary, the TUBII will allow for 12 channels to be plugged in, 8 of which can either attenuated and sent to the CAEN or clipped and sent to an oscilloscope. 
+\section{Trigger Fan-In}
+Since the TUBII will permanently take up several of the MTCD's external trigger ports, the TUBII will also provide 16 new external ports. Eight of these ports will be designed for ECL signals, the other eight will be for TTL inputs. These 16 signals will be compared with the TUBII Trigger Word on the MicroZed, at which point if any of the 16 slots are masked in the TUBII will realease a raw trigger that is sent to the MTCD.
 \section{Baseline Monitoring}
 The TUBII's Baseline Monitoring provides a simple buffer between the signals from the backplane and the MTCD. This is done by putting several unity gain op-amps between the two. The goal is to prevent noise from propagating from the MTCD back into the backplane. 
 \section{Ecal Control}
 ***I CAN'T REMEMBER WHY WE WANTED THIS. ASK SOMEONE(ANDY? RICHIE? GDOG?)***
 \section{General Utilities}
 
-Part of the goal of the TUBii is to provide utilities that have no exact purpose in mind except that they may someday be useful to the user.
+The following utilities were designed with no specific purpose in mind except that they may someday be useful to the user, for this reason they're referred to as general utilities.
 \subsection{Comparators}
-The TUBII has two separate blocks of circuitry that each act as mimics to the MTCD's ***IT IS THE MTCD, RIGHT?*** trigger logic. In the TUBII i refer to these blocks as the Comparators, though I realize this is a horrible abuse of terminology. The difference between the two Comparators is that one is faster but the trigger threshold is set by a dial. The other is slower but the threshold can be set through software. Otherwise, both compare whatever analog signal is plugged into them to their threshold value and depending on the state of $GT$, $DGT$, and $LO*$ will emit a trigger. The reason for having the Comparators is that someone in the future may have some analog pulse that they would like to trigger on and currently doing so would be difficult. By having the Comparators this difficulty can hopefully be avoided.
+The TUBII has two separate blocks of circuitry that each act as mimics to the MTCD's ***IT IS THE MTCD, RIGHT?*** trigger logic. In the TUBII i refer to these blocks as the Comparators, though I realize this is a horrible abuse of terminology. The difference between the two Comparators is that one is faster but the trigger threshold is set by a dial. The other is slower but the threshold can be set through software. Otherwise, both compare whatever analog signal is plugged into them to their threshold value and depending on the state of $GT$, $DGT$, and $LO^*$ will emit a trigger. The reason for having the Comparators is that someone in the future may have some analog pulse that they would like to trigger on and currently doing so would be difficult. By having the Comparators this difficulty can hopefully be avoided.
 \subsection{Delays}
 The first of these is a synchronous delay. The synchronous delay is done completely on the MicroZed.  There is also an asynchronous delay that is performed by doing a synchronous delay followed by a small asynchronous delay. The asynchronous part of the delay can be up to 127.5ns in length in steps of 0.5ns. The synchronous portion of the delay can be as long as necessary.
 \subsection{Pulser}
@@ -63,13 +65,13 @@ The TUBII will provide voltage level translation between the following standards
 Anyone familiar with the TUB's speaker should understand what the idea behind the  speaker on the TUBII. The difference between the TUB's and TUBII's speaker is that the TUBII will be able to emit noise for any of the triggers it has availible, opposed to the TUB which emits noise corresponding only to the Global Trigger. Furthermore, the sophistication of the MicroZed will allow for the speaker's clicks to correspond to logical combiations of triggers (e.g ESUMH AND !PED). (***AGAIN CHECK WITH IAN***)
 
 \section{Inner Workings}
-Inevitably, the TUBII will be used as a black box by the many of it's users, so ideally nothing described here will be useful knowledge to those users. But for the sake of completeness and for posterity this section will be devoted to describing the parts of the TUBII which have no direct interaction with the end user.
+Inevitably, the TUBII will be used as a black box by the many of its users, so ideally nothing described here will be useful knowledge to those users. But for the sake of completeness and for posterity this section will be devoted to describing the parts of the TUBII which have no direct interaction with the end user.
 
 \subsection{Shift Register Addressing}
 A great many of the TUBII's utilities require a shift register being loaded. Doing so generally require three separate signals, $Latch Enable$ ($LE$), $Clock$ ($CLK$), and $Data$.
 So if the TUBII had eight shift registers that would use up a minimum of 24 pins on the MicroZed. To prevent such a large consuption of pins a 3-bit addressing scheme is used. This allows for 3 pins on the MicroZed to choose which of the eight shift registers will be programmed. This multiplexed signal acts as the $LatchEnable$ signal for the majority of the shift registers on the board. The $DATA$ and $CLK$ signals are shared between all of the shift registers. This means every shift register gets programmed at the same time but only the register that is specified by the 3-bit address will be "paying attention". This allows for a total of 5 pins on the MicroZed to be dedicated to programming shift registers.
 \subsection{Control Register}
-One of the shift registers addressed as described above is the "Control Register". The Control Register is meant to hold all the bits that the user will likely only ever set once. An example of this $Select_LO_SRC$ bit, which decides if $DDGT$ or $LO*_{MTCD}$ will be used as $LO*$, as described in \ref{GTTiming}. The user will probably only ever want to set the $Select_LO_SRC$ bit once, so the bit is stored in the Control Register rather than on the MicroZed. This saves one pin on the MicroZed with effectively no cost. Also a parallel-in serial-out register is connected to the eight outputs of the Control Register, this was added for debugging purposes. It allows the MicroZed to read the state of the Control Register in a non-destructive way. 
+One of the shift registers addressed as described above is the "Control Register". The Control Register is meant to hold all the bits that the user will likely only ever set once. An example of this $Select_LO_SRC$ bit, which decides if $DDGT$ or $LO^*_{MTCD}$ will be used as $LO^*$, as described in \ref{GTTiming}. The user will probably only ever want to set the $Select_LO_SRC$ bit once, so the bit is stored in the Control Register rather than on the MicroZed. This saves one pin on the MicroZed with effectively no cost. Also a parallel-in serial-out register is connected to the eight outputs of the Control Register, this was added for debugging purposes. It allows the MicroZed to read the state of the Control Register in a non-destructive way. 
 \subsection{Powers}
 The TUBII requires an unfortunately varied amount of different powers due to the fact that it has to perform both analog and digital operations, and for its digital operations it has to use several different logic families. Each power line that goes onto the board is buffered through an inductor and regulated (with a regulator). The following powers are used by the TUBII, +15V, +5V ($VCC$), +3.3V, 0V ($GND$), -2V ($VTT$), -5V ($VEE$), and -15V. Additionally a -5V reference is created which is used in the Caen interface circuitry. It is worth noting that with ECL the $VCC$ signal generally corresponds to 0V while with TTL $VCC$ is at 5V. This can obviously lead to some amount of confusion, but in designing the TUBII I have tried to always use the convention that $VCC$ is 5V and that $GND$ is 0V regardless of which logic family is being considered.
 
@@ -81,5 +83,5 @@ The idea behind this is that it would be nice to have some sort of low level ale
 Currently though, there are no plans to have this alert for the following reasons. It would be very difficult to create a noise that is highly distinct from the noise of the TUB without adding a decent amount of audio engineering type circuitry to an already very full board. Additionally getting the NHit without going through ORCA would require quite a bit of extra work as well. So all told this alarm would end up increasing the size of an already tubby board significantly.(***GET ANDY TO LOOK AT THIS***)
 
 \subsection{LCD Display}
-Aside from the pulse scaler there had been hopes for any LCD display that could present a variety of information as well as do neat things like having a scrolling marquee of neutrino buddies. Having this is still within the realm of possibility, but the front (and back) panel are expected to have ~100 ports for the TUBII. So it is very likely that space constraints will not allow for an extra LCD display.
+Aside from the pulse scaler there had been hopes for any LCD display that could present a variety of information as well as do neat things like having a scrolling marquee of neutrino buddies. Having this is still within the realm of possibility, but between the front and back panels there are expected to have ~100 ports for the TUBII. So it is very likely that space constraints will not allow for an extra LCD display.
 \end{document}
