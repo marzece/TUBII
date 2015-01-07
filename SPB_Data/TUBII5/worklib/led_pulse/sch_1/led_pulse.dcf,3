@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 4 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -456,6 +456,19 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "$location" )
+			( Description "" )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty )
+			)
+			( Objects
+				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -479,11 +492,11 @@
 			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 				( objectStatus "unnamed_1_hct123_i5_q" )
 			)
-			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-				( objectStatus "unnamed_1_led1206_i7_a" )
-			)
 			( signal "@tubii_lib.led_pulse(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
+				( objectStatus "unnamed_1_ledl_i10_a" )
 			)
 			( gate "@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -763,54 +776,112 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.led_pulse(sch_1):page1_i7"
+			( gate "@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Origin gFrontEnd )
 				)
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "7"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
 				( attribute "XY" "(2925,3075)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I7" )
+				( objectStatus "PAGE1_I10" )
 				( pin "a"
 				)
 				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.led_pulse(sch_1):page1_i11"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,2150)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I11" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 		)
