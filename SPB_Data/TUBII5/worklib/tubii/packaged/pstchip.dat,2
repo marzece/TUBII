@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 06-Jan-2015 AT 11:31:02 }
+{ Packager-XL run on 07-Jan-2015 AT 14:39:04 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -663,31 +663,6 @@ primitive '1N4448';
       JEDEC_TYPE='DO35';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
-  end_body;
-end_primitive;
-primitive '74F06';
-  pin
-    'A'<0>:
-      PIN_NUMBER='(13,11,9,5,3,1)';
-      INPUT_LOAD='(-0.6,0.02)';
-      PINUSE='IN';
-    'Y*'<0>:
-      PIN_NUMBER='(12,10,8,6,4,2)';
-      OUTPUT_TYPE='(OC,AND)';
-      OUTPUT_LOAD='(64.0,*)';
-      PINUSE='OCA';
-  end_pin;
-  body
-      FAMILY='FAST';
-      PART_NAME='74F06';
-      BODY_NAME='F06';
-      MAX_DELAY='10000';
-      TECH='74F';
-      JEDEC_TYPE='DIP14_3';
-      PHYS_DES_PREFIX='U';
-      CLASS='IC';
-      POWER_PINS='(VCC:14)';
-      POWER_PINS='(GND:7)';
   end_body;
 end_primitive;
 primitive '74F06_SOIC';
