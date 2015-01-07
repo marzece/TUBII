@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 07-Jan-2015 AT 15:04:02 }
+{ Packager-XL run on 07-Jan-2015 AT 18:13:41 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -3233,6 +3233,32 @@ primitive 'MAX9376';
       GROUND_NETS='GND';
       POWER_PINS='(VCC:5)';
       POWER_PINS='(GND:10)';
+  end_body;
+end_primitive;
+primitive 'MC10H104_PLCC';
+  pin
+    'A':
+      PIN_NUMBER='(5,8,13,15)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'B':
+      PIN_NUMBER='(7,9,14,17)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'Y':
+      PIN_NUMBER='(3,4,18,19)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+  end_pin;
+  body
+      PART_NAME='MC10H104';
+      BODY_NAME='MC10H104';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC:2,20)';
+      POWER_PINS='(VEE:10)';
+      NC_PINS='(1,6,11,12,16)';
   end_body;
 end_primitive;
 primitive 'MC10H104_PLCC-VCC=GND';
