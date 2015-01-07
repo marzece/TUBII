@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 07-Jan-2015 AT 14:49:39 }
-TIME=' COMPILATION ON 07-Jan-2015 AT 14:49:39';
+{ Packager-XL run on 07-Jan-2015 AT 18:13:41 }
+TIME=' COMPILATION ON 07-Jan-2015 AT 18:13:41';
 primitive '100EL05';     body '100EL05';
     'IN1*':'(2)';IN;
     'IN1':'(1)';IN;
@@ -518,6 +518,11 @@ primitive 'MAX9376';     body 'MAX9376';
     'IN2*':'(0,6)';$S;IN;
     'OUT2':'(0,3)';$S;OUT;
     'OUT2*':'(0,4)';$S;OUT;
+end_primitive;
+primitive 'MC10H104_PLCC';body 'MC10H104';
+    'A':'(5,8,13,15)';$S;IN;
+    'B':'(7,9,14,17)';$S;IN;
+    'Y':'(3,4,18,19)';$S;OUT;
 end_primitive;
 primitive 'MC10H104_PLCC-VCC=GND';body 'MC10H104';
     'A':'(5,8,13,15)';$S;IN;

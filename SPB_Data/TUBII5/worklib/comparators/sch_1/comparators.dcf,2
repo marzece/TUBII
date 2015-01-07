@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 42 )
+			( logicalViewRevNum 44 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -477,13 +477,10 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):dgth"
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):dgth") )
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):dgth") )
 				( objectStatus "dgth" )
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):dgt"
-			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):\gtrig/i\"
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):\gtrig/i\"
 			)
 			( signal "@tubii_lib.comparators(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):gnd") )
@@ -510,6 +507,8 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):\lockout*\"
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):\lo*\") )
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):\lo*\") )
 				( objectStatus "lockout*" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):gtrig"
@@ -610,6 +609,7 @@
 				( objectStatus "gtrig" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):\lo*\"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i34_a"
 			)
@@ -773,10 +773,14 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10h116_i129_b"
 			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):dgth"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):dgth"
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):\lo*\"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i34_c"
 			)
@@ -10937,7 +10941,7 @@
 	( BaseCopy "fastcomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 39 )
+				( logicalViewRevNum 40 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -11062,8 +11066,8 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):dgt"
-				( objectStatus "dgt" )
+			( signal "@tubii_lib.fastcomp(sch_1):dgth"
+				( objectStatus "dgth" )
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):\lo*\"
 				( objectStatus "lo*" )
@@ -14509,7 +14513,7 @@
 	( BaseCopy "tuncomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 49 )
+				( logicalViewRevNum 50 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -14544,9 +14548,6 @@
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):gnd"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.tuncomp(sch_1):\gtrig/i\"
-				( objectStatus "gtrig/i" )
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i34_a"
 				( objectStatus "unnamed_1_10e101_i34_a" )
