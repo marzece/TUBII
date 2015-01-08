@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 46 )
+			( logicalViewRevNum 47 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -483,6 +483,9 @@
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):dgt_gate") )
 				( objectStatus "unnamed_1_10h131_i26_q" )
 			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):dgt_gate"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):dgt_gate"
 				( objectFlag fObjectAlias )
 			)
@@ -797,9 +800,6 @@
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10h131_i118_clk"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10h131_i139_clk"
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):dgt_gate"
-				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -6827,19 +6827,19 @@
 				( attribute "CDS_PART_NAME" "10H131_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U82"
+				( attribute "CDS_LOCATION" "U48"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "CDS_SEC" "2"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U82"
+				( attribute "LOCATION" "U48"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "SEC" "1"
+				( attribute "SEC" "2"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -6850,37 +6850,37 @@
 					)
 				)
 				( pin "d(0)"
-					( attribute "PN" "7"
+					( attribute "PN" "10"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
 				)
 				( pin "en"
-					( attribute "PN" "6"
+					( attribute "PN" "11"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
 				)
 				( pin "q(0)"
-					( attribute "PN" "2"
+					( attribute "PN" "15"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
 				)
 				( pin "\q*\(0)"
-					( attribute "PN" "3"
+					( attribute "PN" "14"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
 				)
 				( pin "r"
-					( attribute "PN" "4"
+					( attribute "PN" "13"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
 				)
 				( pin "s"
-					( attribute "PN" "5"
+					( attribute "PN" "12"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
@@ -9900,7 +9900,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -10176,7 +10176,7 @@
 				( attribute "CHIPS_PART_NAME" "10H131"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H131_PLCC"
+				( attribute "CDS_PART_NAME" "10H131_PLCC-VCC1=GND;VCC2=GND"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
@@ -10619,7 +10619,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H131_PLCC"
+				( attribute "CDS_PART_NAME" "10H131_PLCC-VCC1=GND;VCC2=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U49"
@@ -10840,7 +10840,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H131_PLCC"
+				( attribute "CDS_PART_NAME" "10H131_PLCC-VCC1=GND;VCC2=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U49"
@@ -10935,7 +10935,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -11006,7 +11006,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -11245,7 +11245,7 @@
 	( BaseCopy "fastcomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 44 )
+				( logicalViewRevNum 46 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -14454,7 +14454,7 @@
 				( attribute "CHIPS_PART_NAME" "10H131"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H131_PLCC"
+				( attribute "CDS_PART_NAME" "10H131_PLCC-VCC1=GND;VCC2=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U49"
@@ -14629,7 +14629,7 @@
 				( attribute "CHIPS_PART_NAME" "10H131"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H131_PLCC"
+				( attribute "CDS_PART_NAME" "10H131_PLCC-VCC1=GND;VCC2=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U49"
@@ -14706,7 +14706,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -14763,7 +14763,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -14855,7 +14855,7 @@
 	( BaseCopy "tuncomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 54 )
+				( logicalViewRevNum 56 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -16505,16 +16505,16 @@
 				( attribute "CDS_PART_NAME" "10H131_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U82"
+				( attribute "CDS_LOCATION" "U48"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U82"
+				( attribute "LOCATION" "U48"
 					( Origin gPackager )
 				)
-				( attribute "SEC" "1"
+				( attribute "SEC" "2"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I105" )
@@ -16524,32 +16524,32 @@
 					)
 				)
 				( pin "d(0)"
-					( attribute "PN" "7"
+					( attribute "PN" "10"
 						( Origin gPackager )
 					)
 				)
 				( pin "en"
-					( attribute "PN" "6"
+					( attribute "PN" "11"
 						( Origin gPackager )
 					)
 				)
 				( pin "q(0)"
-					( attribute "PN" "2"
+					( attribute "PN" "15"
 						( Origin gPackager )
 					)
 				)
 				( pin "\q*\(0)"
-					( attribute "PN" "3"
+					( attribute "PN" "14"
 						( Origin gPackager )
 					)
 				)
 				( pin "r"
-					( attribute "PN" "4"
+					( attribute "PN" "13"
 						( Origin gPackager )
 					)
 				)
 				( pin "s"
-					( attribute "PN" "5"
+					( attribute "PN" "12"
 						( Origin gPackager )
 					)
 				)
@@ -18602,7 +18602,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"
@@ -18659,7 +18659,7 @@
 				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U46"

@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-07T18:31:08</modificationTime>
+    <modificationTime>2015-01-07T19:21:39</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="fastcomp" view="sch_1">
       <lastids>
         <instanceid>110</instanceid>
-        <netid>121</netid>
-        <insttermid>479</insttermid>
+        <netid>122</netid>
+        <insttermid>485</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -531,10 +531,6 @@
           <name>unnamed_1_10h131_i120_s</name>
         </net>
         <net>
-          <id>N117</id>
-          <name>unnamed_1_10h131_i124_q</name>
-        </net>
-        <net>
           <id>N118</id>
           <name>gtrig</name>
           <scope>interface</scope>
@@ -545,14 +541,14 @@
           <name>gtrig/i</name>
         </net>
         <net>
-          <id>N120</id>
-          <name>dgth</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N121</id>
           <name>unnamed_1_10h131_i118_clk</name>
+        </net>
+        <net>
+          <id>N122</id>
+          <name>dgt_gate</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N11</id>
@@ -2201,6 +2197,10 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N11</override>
+            </power>
           </powers>
           <pins>
             <pin>
@@ -2214,7 +2214,7 @@
               <id>M464</id>
               <termid>T236</termid>
               <connections>
-                <connection net="N117" />
+                <connection net="N122" />
               </connections>
             </pin>
             <pin>
@@ -2243,13 +2243,17 @@
           <masks>
           </masks>
           <powers>
+            <power>
+              <name>vcc</name>
+              <override>N11</override>
+            </power>
           </powers>
           <pins>
             <pin>
               <id>M466</id>
               <termid>T235</termid>
               <connections>
-                <connection net="N117" />
+                <connection net="N122" />
               </connections>
             </pin>
             <pin>
@@ -2264,117 +2268,6 @@
               <termid>T237</termid>
               <connections>
                 <connection net="N116" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I109</id>
-          <cellid>S3</cellid>
-          <name>page1_i123</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M469</id>
-              <termid>T17</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N68" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M470</id>
-              <termid>T18</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N117" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I110</id>
-          <cellid>S27</cellid>
-          <name>page1_i124</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M471</id>
-              <termid>T289</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M472</id>
-              <termid>T290</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M473</id>
-              <termid>T291</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M474</id>
-              <termid>T292</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N117" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M475</id>
-              <termid>T293</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M476</id>
-              <termid>T294</termid>
-              <connections>
-                <connection net="N113" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M477</id>
-              <termid>T295</termid>
-              <connections>
-                <connection net="N120" />
               </connections>
             </pin>
           </pins>
@@ -2402,7 +2295,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="dgth">
+          <netScope ref="dgt_gate">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2470,7 +2363,7 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="anpulsein"></net>
-              <net ref="dgth"></net>
+              <net ref="dgt_gate"></net>
               <net ref="gnd"></net>
               <net ref="gtrig"></net>
               <net ref="gtrig/i"></net>
@@ -2492,7 +2385,6 @@
               <net ref="unnamed_1_10h131_i118_clk"></net>
               <net ref="unnamed_1_10h131_i118_d"></net>
               <net ref="unnamed_1_10h131_i120_s"></net>
-              <net ref="unnamed_1_10h131_i124_q"></net>
               <net ref="unnamed_1_adcmp566_i37_in"></net>
               <net ref="unnamed_1_adcmp566_i37_q"></net>
               <net ref="unnamed_1_adcmp566_i37_q_1"></net>
@@ -2544,8 +2436,6 @@
               <instance ref="i120"></instance>
               <instance ref="i121"></instance>
               <instance ref="i122"></instance>
-              <instance ref="i123"></instance>
-              <instance ref="i124"></instance>
             </instances>
           </page>
         </pages>
