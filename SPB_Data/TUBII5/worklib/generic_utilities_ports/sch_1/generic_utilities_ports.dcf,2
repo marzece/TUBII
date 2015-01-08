@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 2 )
+			( logicalViewRevNum 3 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -488,15 +488,6 @@
 			( signal "@tubii_lib.generic_utilities_ports(sch_1):sync_pulse_out"
 				( objectStatus "sync_pulse_out" )
 			)
-			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_10h124_i13_q"
-				( objectStatus "unnamed_1_10h124_i13_q" )
-			)
-			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_10h124_i26_q"
-				( objectStatus "unnamed_1_10h124_i26_q" )
-			)
-			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_10h124_i27_q"
-				( objectStatus "unnamed_1_10h124_i27_q" )
-			)
 			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_10h125_i2_a"
 				( objectStatus "unnamed_1_10h125_i2_a" )
 			)
@@ -511,6 +502,15 @@
 			)
 			( signal "@tubii_lib.generic_utilities_ports(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_mc10h124_i26_out"
+				( objectStatus "unnamed_1_mc10h124_i26_out" )
+			)
+			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_mc10h124_i27_out"
+				( objectStatus "unnamed_1_mc10h124_i27_out" )
+			)
+			( signal "@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_mc10h124_i28_out"
+				( objectStatus "unnamed_1_mc10h124_i28_out" )
 			)
 			( gate "@tubii_lib.generic_utilities_ports(sch_1):page1_i1"
 				( attribute "CDS_LIB" "capacitors"
@@ -858,44 +858,6 @@
 				( pin "a"
 				)
 			)
-			( gate "@tubii_lib.generic_utilities_ports(sch_1):page1_i13"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(200,3225)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H124"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H124"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I13" )
-				( pin "c"
-				)
-				( pin "d"
-				)
-				( pin "q"
-				)
-				( pin "\y*\"
-				)
-			)
 			( gate "@tubii_lib.generic_utilities_ports(sch_1):page1_i14"
 				( attribute "ABBREV" "TP"
 					( Origin gFrontEnd )
@@ -1132,8 +1094,11 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,25,-100"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
@@ -1141,37 +1106,37 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(325,4050)"
+				( attribute "XY" "(350,4050)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "10H124"
+				( attribute "CHIPS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H124"
+				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
-				( pin "c"
+				( pin "common"
 				)
-				( pin "d"
+				( pin "\in\"
 				)
-				( pin "q"
+				( pin "\out\"
 				)
-				( pin "\y*\"
+				( pin "\out*\"
 				)
 			)
 			( gate "@tubii_lib.generic_utilities_ports(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-100,100,50,-100"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,25,-100"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
@@ -1179,29 +1144,64 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(375,3675)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H124"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I27" )
+				( pin "common"
+				)
+				( pin "\in\"
+				)
+				( pin "\out\"
+				)
+				( pin "\out*\"
+				)
+			)
+			( gate "@tubii_lib.generic_utilities_ports(sch_1):page1_i28"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,25,-100"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(350,3675)"
+				( attribute "XY" "(225,3225)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "10H124"
+				( attribute "CHIPS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10H124"
+				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I27" )
-				( pin "c"
+				( objectStatus "PAGE1_I28" )
+				( pin "common"
 				)
-				( pin "d"
+				( pin "\in\"
 				)
-				( pin "q"
+				( pin "\out\"
 				)
-				( pin "\y*\"
+				( pin "\out*\"
 				)
 			)
 		)

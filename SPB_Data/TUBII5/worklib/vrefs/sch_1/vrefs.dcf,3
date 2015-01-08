@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 3 )
+			( logicalViewRevNum 4 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -456,6 +456,19 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "$location" )
+			( Description "" )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty )
+			)
+			( Objects
+				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -511,17 +524,19 @@
 				( attribute "CDS_PART_NAME" "REF02"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U89"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U89"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I1" )
-				( pin "gnd"
-				)
-				( pin "temp"
-				)
-				( pin "trim"
-				)
-				( pin "vin"
-				)
-				( pin "vout"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i2"
 				( attribute "CDS_LIB" "misc"
@@ -542,27 +557,25 @@
 				( attribute "XY" "(1000,2675)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "OPA2277"
+				( attribute "CHIPS_PART_NAME" "OPA277"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "OPA2277"
+				( attribute "CDS_PART_NAME" "OPA277"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U90"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U90"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I2" )
-				( pin "\in+\"
-				)
-				( pin "\in-\"
-				)
-				( pin "\out\"
-				)
-				( pin "trim_a"
-				)
-				( pin "trim_b"
-				)
-				( pin "\v+\"
-				)
-				( pin "\v-\"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i3"
 				( attribute "CDS_LIB" "capacitors"
@@ -638,11 +651,19 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C67"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C67"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I3" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i4"
 				( attribute "CDS_LIB" "capacitors"
@@ -718,11 +739,19 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "C68"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C68"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I4" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i5"
 				( attribute "CDS_LIB" "resistors"
@@ -795,11 +824,19 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R137"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R137"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I5" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i6"
 				( attribute "CDS_LIB" "resistors"
@@ -872,11 +909,19 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-1000,1%,0805"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "R136"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "R136"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I6" )
-				( pin "a(0)"
-				)
-				( pin "b(0)"
-				)
 			)
 			( gate "@tubii_lib.vrefs(sch_1):page1_i7"
 				( attribute "CDS_LIB" "capacitors"
@@ -952,10 +997,128 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-1.0UF,10%,0805,25V"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I7" )
-				( pin "a(0)"
+				( attribute "CDS_LOCATION" "C66"
+					( Origin gPackager )
 				)
-				( pin "b(0)"
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "C66"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I7" )
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i1:gnd"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i1:temp"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i1:trim"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i1:vin"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i1:vout"
+				( attribute "PN" "5"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:\in+\"
+				( attribute "PN" "3"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:\in-\"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:\out\"
+				( attribute "PN" "6"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:trim_a"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:trim_b"
+				( attribute "PN" "8"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:\v+\"
+				( attribute "PN" "7"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i2:\v-\"
+				( attribute "PN" "4"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i3:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i3:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i4:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i4:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i5:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i5:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i6:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i6:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i7:a(0)"
+				( attribute "PN" "1"
+					( Origin gPackager )
+				)
+			)
+			( pin "@tubii_lib.vrefs(sch_1):page1_i7:b(0)"
+				( attribute "PN" "2"
+					( Origin gPackager )
 				)
 			)
 		)

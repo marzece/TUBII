@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 07-Jan-2015 AT 14:27:20 }
-TIME=' COMPILATION ON 07-Jan-2015 AT 14:27:20';
+{ Packager-XL run on 08-Jan-2015 AT 15:59:46 }
+TIME=' COMPILATION ON 08-Jan-2015 AT 15:59:46';
 primitive '100EL05';     body '100EL05';
     'IN1*':'(2)';IN;
     'IN1':'(1)';IN;
@@ -79,11 +79,6 @@ primitive '10E131';      body '10E131';
     'CLK':'(2,2,2,2)';IN;
     'Q*'<0>:'(20,18,15,13)';$S;OUT;
 end_primitive;
-primitive '10ELT24';     body '10ELT24';
-    'D':'(2)';IN;
-    'Q':'(7)';OUT;
-    'Q*':'(6)';OUT;
-end_primitive;
 primitive '10EP90';      body '10EP90';
     'Q':'(19,16,13)';$S;OUT;
     'Q*':'(18,15,12)';$S;OUT;
@@ -117,6 +112,15 @@ primitive '10H125_PLCC'; body '10H125';
     'B*'<0>:'(18,13,8,3)';$S;IN;
 end_primitive;
 primitive '10H131_PLCC'; body '10H131';
+    'D'<0>:'(7,10)';$S;IN;
+    'EN':'(6,11)';$S;IN;
+    'Q'<0>:'(2,15)';$S;OUT;
+    'R':'(4,13)';$S;IN;
+    'S':'(5,12)';$S;IN;
+    'CLK':'(9,9)';IN;
+    'Q*'<0>:'(3,14)';$S;OUT;
+end_primitive;
+primitive '10H131_PLCC-VCC1=GND,VCC2=GND';body '10H131';
     'D'<0>:'(7,10)';$S;IN;
     'EN':'(6,11)';$S;IN;
     'Q'<0>:'(2,15)';$S;OUT;

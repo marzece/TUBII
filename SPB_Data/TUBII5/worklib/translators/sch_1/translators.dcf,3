@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 11 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -5004,7 +5004,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(0,3175)"
+				( attribute "XY" "(-25,3175)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -5013,6 +5013,10 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -5029,13 +5033,6 @@
 					)
 					( objectStatus "U25.12" )
 				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U25.11" )
-				)
 				( pin "y(0)"
 					( attribute "PN" "15"
 						( Status sBlockFlattened )
@@ -5049,6 +5046,13 @@
 						( Origin gPackager )
 					)
 					( objectStatus "U25.14" )
+				)
+				( pin "v"
+					( attribute "PN" "11"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "U25.11" )
 				)
 			)
 			( gate "@tubii_lib.translators(sch_1):page1_i37@tubii_lib.\nim-ecl\(sch_1):page1_i22"
@@ -7682,7 +7686,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ttl-ecl\"
@@ -8207,7 +8211,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-ttl\"
@@ -8788,7 +8792,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\lvds-ecl\"
@@ -9423,7 +9427,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-lvds\"
@@ -10722,7 +10726,7 @@
 	( BaseCopy "\nim-ecl\"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 8 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -11045,13 +11049,16 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(0,3175)"
+				( attribute "XY" "(-25,3175)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "10H116"
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I20" )
@@ -11065,11 +11072,6 @@
 						( Origin gPackager )
 					)
 				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Origin gPackager )
-					)
-				)
 				( pin "y(0)"
 					( attribute "PN" "15"
 						( Origin gPackager )
@@ -11077,6 +11079,11 @@
 				)
 				( pin "\y*\(0)"
 					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "11"
 						( Origin gPackager )
 					)
 				)
@@ -11355,7 +11362,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "\ecl-nim\"
