@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 08-Jan-2015 AT 16:27:16 }
+{ Packager-XL run on 14-Jan-2015 AT 11:07:20 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -1657,6 +1657,76 @@ primitive 'CSMD0805-1UF,10%,0805,25V';
       PARENT_PART_TYPE='CSMD0805';
       PARENT_PPT='CSMD0805';
       PARENT_PPT_PART='CSMD0805-1UF,10%,0805,25V';
+  end_body;
+end_primitive;
+primitive 'DS1023200';
+  pin
+    'LE*':
+      PIN_NUMBER='(2)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'PWM':
+      PIN_NUMBER='(9)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
+    'OUT':
+      PIN_NUMBER='(15)';
+      OUTPUT_LOAD='(20.0,-1.0)';
+      PINUSE='OUT';
+    'MS':
+      PIN_NUMBER='(11)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'PS':
+      PIN_NUMBER='(14)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'IN':
+      PIN_NUMBER='(1)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'P3':
+      PIN_NUMBER='(6)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'P4':
+      PIN_NUMBER='(7)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'P5':
+      PIN_NUMBER='(10)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'P6':
+      PIN_NUMBER='(12)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'P7':
+      PIN_NUMBER='(13)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'Q/P0':
+      PIN_NUMBER='(3)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'CLK/P1':
+      PIN_NUMBER='(4)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+    'D/P2':
+      PIN_NUMBER='(5)';
+      INPUT_LOAD='(-0.6,0.02)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='DS1023200';
+      BODY_NAME='DS1023200';
+      JEDEC_TYPE='SOIC16';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      GROUND_NETS='GND';
+      POWER_PINS='(GND:8)';
+      POWER_PINS='(VCC:16)';
   end_body;
 end_primitive;
 primitive 'DS102350';

@@ -1,6 +1,6 @@
 FILE_TYPE=PINLIST;
-{ Packager-XL run on 08-Jan-2015 AT 16:53:48 }
-TIME=' COMPILATION ON 08-Jan-2015 AT 16:53:48';
+{ Packager-XL run on 14-Jan-2015 AT 11:46:09 }
+TIME=' COMPILATION ON 14-Jan-2015 AT 11:46:09';
 primitive '100EL05';     body '100EL05';
     'IN1*':'(2)';IN;
     'IN1':'(1)';IN;
@@ -289,6 +289,22 @@ end_primitive;
 primitive 'CSMD0805-1UF,10%,0805,25V';body 'CSMD0805';
     'A'<0>:'(1)';
     'B'<0>:'(2)';
+end_primitive;
+primitive 'DS1023200';   body 'DS1023200';
+    'LE*':'(2)';IN;
+    'PWM':'(9)';OUT;
+    'OUT':'(15)';OUT;
+    'MS':'(11)';IN;
+    'PS':'(14)';IN;
+    'IN':'(1)';IN;
+    'P3':'(6)';IN;
+    'P4':'(7)';IN;
+    'P5':'(10)';IN;
+    'P6':'(12)';IN;
+    'P7':'(13)';IN;
+    'Q/P0':'(3)';IN;
+    'CLK/P1':'(4)';IN;
+    'D/P2':'(5)';IN;
 end_primitive;
 primitive 'DS102350';    body 'DS102350';
     'LE*':'(2)';IN;

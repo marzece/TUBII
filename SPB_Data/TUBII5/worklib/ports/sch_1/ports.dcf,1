@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 55 )
+			( logicalViewRevNum 56 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -744,8 +744,6 @@
 			( signal "@tubii_lib.ports(sch_1):page1_i152@tubii_lib.caen_ports(sch_1):sync24h_lvds"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.ports(sch_1):page1_i155@tubii_lib.gt_delays_ports(sch_1):unnamed_1_10h116_i7_y"
-			)
 			( signal "@tubii_lib.ports(sch_1):sync24h_lvds"
 				( alias ( signalRef "@tubii_lib.ports(sch_1):page1_i152@tubii_lib.caen_ports(sch_1):sync24h_lvds") )
 				( attribute "PHYS_NET_NAME" "SYNC24H_LVDS"
@@ -1349,6 +1347,8 @@
 			( signal "@tubii_lib.ports(sch_1):page1_i154@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_mc10h124_i27_out"
 			)
 			( signal "@tubii_lib.ports(sch_1):page1_i154@tubii_lib.generic_utilities_ports(sch_1):unnamed_1_mc10h124_i28_out"
+			)
+			( signal "@tubii_lib.ports(sch_1):page1_i155@tubii_lib.gt_delays_ports(sch_1):unnamed_1_10h116_i15_y"
 			)
 			( gate "@tubii_lib.ports(sch_1):page1_i3"
 				( attribute "CDS_LIB" "resistors"
@@ -4328,85 +4328,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.ports(sch_1):page1_i155@tubii_lib.gt_delays_ports(sch_1):page1_i7"
-				( attribute "CDS_LIB" "ecl"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(100,2925)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H116"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U64"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "2"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U64"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "SEC" "2"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( pin "a(0)"
-					( attribute "PN" "10"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "9"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "7"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "6"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_lib.ports(sch_1):page1_i154@tubii_lib.generic_utilities_ports(sch_1):page1_i5"
 				( attribute "CDS_LIB" "capacitors"
 					( Status sBlockFlattened )
@@ -4554,7 +4475,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-25,3475)"
+				( attribute "XY" "(-50,3475)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -4581,6 +4502,10 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
 				( pin "a(0)"
 					( attribute "PN" "13"
 						( Status sBlockFlattened )
@@ -4593,12 +4518,6 @@
 						( Origin gPackager )
 					)
 				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
 				( pin "y(0)"
 					( attribute "PN" "15"
 						( Status sBlockFlattened )
@@ -4607,6 +4526,12 @@
 				)
 				( pin "\y*\(0)"
 					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "11"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
@@ -10170,7 +10095,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(0,3175)"
+				( attribute "XY" "(-25,3175)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -10179,6 +10104,10 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -10193,12 +10122,6 @@
 						( Origin gPackager )
 					)
 				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-				)
 				( pin "y(0)"
 					( attribute "PN" "15"
 						( Status sBlockFlattened )
@@ -10207,6 +10130,12 @@
 				)
 				( pin "\y*\(0)"
 					( attribute "PN" "14"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "11"
 						( Status sBlockFlattened )
 						( Origin gPackager )
 					)
@@ -15121,6 +15050,57 @@
 					)
 				)
 			)
+			( gate "@tubii_lib.ports(sch_1):page1_i155@tubii_lib.gt_delays_ports(sch_1):page1_i15"
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1\PARAMETER"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(75,2925)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10H116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10H116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+				( pin "v"
+				)
+			)
 			( pin "@tubii_lib.ports(sch_1):page1_i151@tubii_lib.translators(sch_1):page1_i7@tubii_lib.\ttl-ecl\(sch_1):page1_i5:a(0)"
 				( attribute "PN" "5"
 					( Status sBlockFlattened )
@@ -15639,7 +15619,7 @@
 	( BaseCopy "\nim-ecl\"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 5 )
+				( logicalViewRevNum 8 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -21835,7 +21815,7 @@
 	( BaseCopy "translators"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 9 )
+				( logicalViewRevNum 10 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -26379,7 +26359,7 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(0,3175)"
+				( attribute "XY" "(-25,3175)"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -26388,6 +26368,10 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -26404,13 +26388,6 @@
 					)
 					( objectStatus "U25.12" )
 				)
-				( pin "v"
-					( attribute "PN" "11"
-						( Status sBlockFlattened )
-						( Origin gPackager )
-					)
-					( objectStatus "U25.11" )
-				)
 				( pin "y(0)"
 					( attribute "PN" "15"
 						( Status sBlockFlattened )
@@ -26424,6 +26401,13 @@
 						( Origin gPackager )
 					)
 					( objectStatus "U25.14" )
+				)
+				( pin "v"
+					( attribute "PN" "11"
+						( Status sBlockFlattened )
+						( Origin gPackager )
+					)
+					( objectStatus "U25.11" )
 				)
 			)
 			( gate "@tubii_lib.translators(sch_1):page1_i37@tubii_lib.\nim-ecl\(sch_1):page1_i22"
@@ -29059,7 +29043,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "caen_ports"
@@ -31575,7 +31559,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "comparator_ports"
@@ -31975,7 +31959,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "generic_utilities_ports"
@@ -33065,7 +33049,7 @@
 	( BaseCopy "gt_delays_ports"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 3 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -33109,11 +33093,11 @@
 			( signal "@tubii_lib.gt_delays_ports(sch_1):unnamed_1_10h116_i6_y_1"
 				( objectStatus "unnamed_1_10h116_i6_y_1" )
 			)
-			( signal "@tubii_lib.gt_delays_ports(sch_1):unnamed_1_10h116_i7_y"
-				( objectStatus "unnamed_1_10h116_i7_y" )
-			)
 			( signal "@tubii_lib.gt_delays_ports(sch_1):vtt"
 				( objectStatus "vtt" )
+			)
+			( signal "@tubii_lib.gt_delays_ports(sch_1):unnamed_1_10h116_i15_y"
+				( objectStatus "unnamed_1_10h116_i15_y" )
 			)
 			( gate "@tubii_lib.gt_delays_ports(sch_1):page1_i1"
 				( attribute "ABBREV" "TP"
@@ -33307,7 +33291,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-25,3475)"
+				( attribute "XY" "(-50,3475)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "10H116"
@@ -33328,6 +33312,9 @@
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I6" )
 				( pin "a(0)"
 					( attribute "PN" "13"
@@ -33336,11 +33323,6 @@
 				)
 				( pin "\b*\(0)"
 					( attribute "PN" "12"
-						( Origin gPackager )
-					)
-				)
-				( pin "v"
-					( attribute "PN" "11"
 						( Origin gPackager )
 					)
 				)
@@ -33354,67 +33336,8 @@
 						( Origin gPackager )
 					)
 				)
-			)
-			( gate "@tubii_lib.gt_delays_ports(sch_1):page1_i7"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(100,2925)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10H116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10H116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U64"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "2"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U64"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I7" )
-				( pin "a(0)"
-					( attribute "PN" "10"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "9"
-						( Origin gPackager )
-					)
-				)
 				( pin "v"
 					( attribute "PN" "11"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "7"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "6"
 						( Origin gPackager )
 					)
 				)
@@ -33885,6 +33808,49 @@
 					( attribute "PN" "2"
 						( Origin gPackager )
 					)
+				)
+			)
+			( gate "@tubii_lib.gt_delays_ports(sch_1):page1_i15"
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1\PARAMETER"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(75,2925)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10H116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10H116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I15" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+				( pin "v"
 				)
 			)
 		)
