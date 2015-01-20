@@ -2,30 +2,30 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"GND\g";
-2"GND\g";
-3"VTT\G";
-4"SMELLIE_DELAY_IN\I";
-5"UN$1$10H116$I28$B";
-6"UN$1$10H116$I27$A";
-7"UN$1$10E101$I2$Y";
-8"UN$1$10H116$I27$B";
-9"UN$1$10E101$I2$A";
-10"UN$1$10E101$I2$D";
-11"SMELLIE_PULSE_OUT\I";
-12"UN$1$10H116$I28$A";
-13"TELLIE_DELAY_IN\I";
-14"TELLIE_PULSE_OUT\I";
-15"TELLIE_DELAY_OUT\I";
-16"SMELLIE_DELAY_OUT\I";
-17"RAWTRIGS<3..0>\I";
-18"TUBII_RT\I";
-19"EXTTRIG<15..0>\I";
-20"CLOCK200_OUTH\I";
-21"CLOCK200_OUTL\I";
-22"CLOCK100_OUTL\I";
-23"CLOCK100_OUTH\I";
-24"TUB_CLK_IN\I";
+1"TUB_CLK_IN\I";
+2"CLOCK100_OUTH\I";
+3"CLOCK100_OUTL\I";
+4"CLOCK200_OUTL\I";
+5"CLOCK200_OUTH\I";
+6"EXTTRIG<15..0>\I";
+7"TUBII_RT\I";
+8"RAWTRIGS<3..0>\I";
+9"SMELLIE_DELAY_OUT\I";
+10"TELLIE_DELAY_OUT\I";
+11"TELLIE_PULSE_OUT\I";
+12"TELLIE_DELAY_IN\I";
+13"UN$1$10H116$I28$A";
+14"SMELLIE_PULSE_OUT\I";
+15"UN$1$10E101$I2$D";
+16"UN$1$10E101$I2$A";
+17"UN$1$10H116$I27$B";
+18"UN$1$10E101$I2$Y";
+19"UN$1$10H116$I27$A";
+20"UN$1$10H116$I28$B";
+21"SMELLIE_DELAY_IN\I";
+22"VTT\G";
+23"GND\g";
+24"GND\g";
 %"TESTPOINT_L"
 "1","(1675,4400)","0","misc","I1";
 ;
@@ -37,14 +37,14 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"7;
+$PN"1"18;
 %"GND"
 "1","(-300,4400)","0","misc","I10";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"2;
+"G\NAC"24;
 %"RSMD0805"
 "1","(50,3825)","1","resistors","I11";
 ;
@@ -70,9 +70,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"6;
+$PN"2"19;
 %"RSMD0805"
 "1","(-100,3825)","1","resistors","I12";
 ;
@@ -98,9 +98,9 @@ POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"12;
+$PN"2"13;
 %"RSMD0805"
 "1","(-250,3825)","1","resistors","I13";
 ;
@@ -126,9 +126,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"5;
+$PN"2"20;
 %"TESTPOINT_L"
 "1","(-500,4700)","2","misc","I14";
 ;
@@ -140,7 +140,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"6;
+$PN"1"19;
 %"TESTPOINT_L"
 "1","(-500,4550)","2","misc","I15";
 ;
@@ -152,7 +152,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"2;
+$PN"1"24;
 %"TESTPOINT_L"
 "1","(-500,4250)","2","misc","I16";
 ;
@@ -164,7 +164,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"12;
+$PN"1"13;
 %"TESTPOINT_L"
 "1","(-500,4150)","2","misc","I17";
 ;
@@ -176,7 +176,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"5;
+$PN"1"20;
 %"TESTPOINT_L"
 "1","(1725,3425)","0","misc","I18";
 ;
@@ -188,7 +188,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"20;
+$PN"1"5;
 %"TESTPOINT_L"
 "1","(1725,3300)","0","misc","I19";
 ;
@@ -200,7 +200,7 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"21;
+$PN"1"4;
 %"10E101"
 "1","(900,4450)","0","ecl","I2";
 ;
@@ -208,46 +208,47 @@ $LOCATION"U5"
 CDS_LOCATION"U5"
 $SEC"1"
 CDS_SEC"1"
-TITLE"10E101"
+PACK_TYPE"PLCC"
+CDS_LIB"ecl"
 ABBREV"10E101"
-CDS_LIB"ecl";
+TITLE"10E101";
 "A <SIZE-1..0>"
-$PN"25"9;
+$PN"25"16;
 "B <SIZE-1..0>"
 $PN"24"0;
 "C <SIZE-1..0>"
 $PN"23"0;
 "D <SIZE-1..0>"
-$PN"22"10;
+$PN"22"15;
 "Y <SIZE-1..0>"
-$PN"19"24;
+$PN"19"1;
 "Y <SIZE-1..0>* \B"
-$PN"20"7;
+$PN"20"18;
 %"LATCHEXTTRIG"
 "1","(325,1925)","0","tubii_lib","I20";
 ;
 CDS_LIB"tubii_lib"
 BLOCK"TRUE";
 "EXTTRIG<15..0>"
-VHDL_MODE"OUT"19;
+VHDL_MODE"OUT"6;
 %"TUBII_TRIGGERS"
 "1","(525,1175)","2","tubii_lib","I21";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"TUBII_RT"18;
-"RAWTRIGS<3..0>"17;
+"TUBII_RT"7;
+"RAWTRIGS<3..0>"8;
 %"ELLIE"
 "1","(-2600,3375)","0","tubii_lib","I22";
 ;
 CDS_LIB"tubii_lib"
 BLOCK"TRUE";
-"SMELLIE_DELAY_IN"4;
-"SMELLIE_DELAY_OUT"16;
-"SMELLIE_PULSE_OUT"11;
-"TELLIE_PULSE_OUT"14;
-"TELLIE_DELAY_OUT"15;
-"TELLIE_DELAY_IN"13;
+"SMELLIE_DELAY_IN"21;
+"SMELLIE_DELAY_OUT"9;
+"SMELLIE_PULSE_OUT"14;
+"TELLIE_PULSE_OUT"11;
+"TELLIE_DELAY_OUT"10;
+"TELLIE_DELAY_IN"12;
 %"TESTPOINT_L"
 "1","(-600,4200)","0","misc","I23";
 ;
@@ -259,14 +260,14 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"1;
+$PN"1"23;
 %"GND"
 "1","(-750,4075)","0","misc","I24";
 ;
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING"
 CDS_LIB"misc";
-"G\NAC"1;
+"G\NAC"23;
 %"TESTPOINT_L"
 "1","(1725,3100)","0","misc","I25";
 ;
@@ -278,7 +279,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"23;
+$PN"1"2;
 %"TESTPOINT_L"
 "1","(1725,2975)","0","misc","I26";
 ;
@@ -290,7 +291,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"22;
+$PN"1"3;
 %"10H116"
 "1","(350,4650)","0","ecl","I27";
 ;
@@ -303,15 +304,15 @@ SECTION"1\PARAMETER"
 CDS_LMAN_SYM_OUTLINE"-125,100,50,-100"
 CDS_LIB"ecl";
 "V"
-$PN"14"8;
+$PN"14"17;
 "Y<SIZE-1..0>* \B"
 $PN"18"0;
 "Y<SIZE-1..0>"
-$PN"19"9;
+$PN"19"16;
 "B<SIZE-1..0>* \B"
-$PN"15"8;
+$PN"15"17;
 "A<SIZE-1..0>"
-$PN"17"6;
+$PN"17"19;
 %"10H116"
 "1","(300,4200)","0","ecl","I28";
 ;
@@ -328,11 +329,11 @@ $PN"14"0;
 "Y<SIZE-1..0>* \B"
 $PN"8"0;
 "Y<SIZE-1..0>"
-$PN"9"10;
+$PN"9"15;
 "B<SIZE-1..0>* \B"
-$PN"12"5;
+$PN"12"20;
 "A<SIZE-1..0>"
-$PN"13"12;
+$PN"13"13;
 %"RSMD0805"
 "1","(1250,3875)","1","resistors","I3";
 ;
@@ -358,9 +359,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"7;
+$PN"2"18;
 %"RSMD0805"
 "1","(1100,3875)","1","resistors","I4";
 ;
@@ -386,9 +387,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"24;
+$PN"2"1;
 %"RSMD0805"
 "1","(600,3825)","1","resistors","I5";
 ;
@@ -414,9 +415,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"9;
+$PN"2"16;
 %"RSMD0805"
 "1","(475,3825)","1","resistors","I6";
 ;
@@ -442,9 +443,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"10;
+$PN"2"15;
 %"CSMD0805"
 "1","(-75,4500)","0","capacitors","I9";
 ;
@@ -471,7 +472,7 @@ TOL"5%"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors";
 "B<0>"
-$PN"2"8;
+$PN"2"17;
 "A<0>"
-$PN"1"2;
+$PN"1"24;
 END.

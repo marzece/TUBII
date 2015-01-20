@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-01-08T17:54:10</modificationTime>
+    <modificationTime>2015-01-19T18:11:51</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="comparators" view="sch_1">
       <lastids>
         <instanceid>22</instanceid>
-        <netid>355</netid>
-        <insttermid>624</insttermid>
+        <netid>397</netid>
+        <insttermid>693</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -58,6 +58,11 @@
               <id>T320</id>
               <name>dgt_gate</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T369</id>
+              <name>vbb_comp</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -123,6 +128,11 @@
               <id>T321</id>
               <name>dgt_gate</name>
               <direction>inout</direction>
+            </term>
+            <term>
+              <id>T370</id>
+              <name>vbb_comp</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -359,6 +369,10 @@
           <name>unnamed_1_10h131_i26_q</name>
         </net>
         <net>
+          <id>N397</id>
+          <name>vbb_comp</name>
+        </net>
+        <net>
           <id>N46</id>
           <name>vref2m</name>
           <scope>global</scope>
@@ -479,6 +493,13 @@
                 <connection net="N307" />
               </connections>
             </pin>
+            <pin>
+              <id>M692</id>
+              <termid>T369</termid>
+              <connections>
+                <connection net="N397" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -575,6 +596,13 @@
               <termid>T321</termid>
               <connections>
                 <connection net="N307" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M693</id>
+              <termid>T370</termid>
+              <connections>
+                <connection net="N397" />
               </connections>
             </pin>
           </pins>
@@ -1022,11 +1050,11 @@
           </masks>
           <powers>
             <power>
-              <name>vcc1</name>
+              <name>vcc2</name>
               <override>gnd</override>
             </power>
             <power>
-              <name>vcc2</name>
+              <name>vcc1</name>
               <override>gnd</override>
             </power>
           </powers>
@@ -1229,6 +1257,7 @@
               <net ref="unnamed_1_fastcomp_i1_anpulsein"></net>
               <net ref="unnamed_1_fastcomp_i1_posneg"></net>
               <net ref="unnamed_1_testpointl_i6_a"></net>
+              <net ref="vbb_comp"></net>
               <net ref="vcc"></net>
               <net ref="vcc5"></net>
               <net ref="vref2m"></net>

@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 14-Jan-2015 AT 11:07:20 }
+{ Packager-XL run on 19-Jan-2015 AT 18:42:41 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -219,48 +219,6 @@ primitive '10E016';
       NC_PINS='(2)';
   end_body;
 end_primitive;
-primitive '10E101';
-  pin
-    'Y'<0>:
-      OUTPUT_LOAD='(-7.6,-22.4)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(19,17,14,12)';
-      PINUSE='OCL';
-    'D'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(22,26,3,7)';
-      PIN_GROUP='1';
-      PINUSE='IN';
-    'C'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(23,27,4,8)';
-      PIN_GROUP='1';
-      PINUSE='IN';
-    'B'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(24,28,5,9)';
-      PIN_GROUP='1';
-      PINUSE='IN';
-    'A'<0>:
-      INPUT_LOAD='(0.0005,0.15)';
-      PIN_NUMBER='(25,2,6,10)';
-      PIN_GROUP='1';
-      PINUSE='IN';
-    'Y*'<0>:
-      OUTPUT_LOAD='(-7.6,-22.4)';
-      OUTPUT_TYPE='(OE,OR)';
-      PIN_NUMBER='(20,18,15,13)';
-      PINUSE='OCL';
-  end_pin;
-  body
-      FAMILY='ECL10E';
-      PART_NAME='10E101';
-      POWER_PINS='(GND:16;GND:11,21;VEE:1)';
-      JEDEC_TYPE='PLCC28';
-      CLASS='IC';
-      TECH='10E';
-  end_body;
-end_primitive;
 primitive '10E101_PLCC';
   pin
     'Y'<0>:
@@ -304,6 +262,40 @@ primitive '10E101_PLCC';
   end_body;
 end_primitive;
 primitive '10E116';
+  pin
+    'Y'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(20,17,14,11,8)';
+      PINUSE='OCL';
+    'REF':
+      OUTPUT_LOAD='(*,*)';
+      PIN_NUMBER='(2,2,2,2,2)';
+      PINUSE='OUT';
+    'A'<0>:
+      INPUT_LOAD='(0.0005,0.20)';
+      PIN_NUMBER='(23,25,27,5,3)';
+      PINUSE='IN';
+    'Y*'<0>:
+      OUTPUT_LOAD='(-7.6,-22.4)';
+      OUTPUT_TYPE='(OE,OR)';
+      PIN_NUMBER='(21,18,15,12,9)';
+      PINUSE='OCL';
+    'B*'<0>:
+      INPUT_LOAD='(0.0005,0.20)';
+      PIN_NUMBER='(24,26,28,6,4)';
+      PINUSE='IN';
+  end_pin;
+  body
+      FAMILY='ECL10E';
+      PART_NAME='10E116';
+      POWER_PINS='(GND:7,10,13,19,22;GND:16;VEE:1)';
+      JEDEC_TYPE='PLCC28';
+      CLASS='IC';
+      TECH='10E';
+  end_body;
+end_primitive;
+primitive '10E116_PLCC';
   pin
     'Y'<0>:
       OUTPUT_LOAD='(-7.6,-22.4)';
@@ -410,47 +402,6 @@ primitive '10EP90';
       POWER_PINS='(VBB:4,7)';
       POWER_PINS='(VEE:10)';
       POWER_PINS='(GND:17,14)';
-  end_body;
-end_primitive;
-primitive '10H116';
-  pin
-    'A'<0>:
-      PIN_NUMBER='(13,10,5)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'B*'<0>:
-      PIN_NUMBER='(12,9,4)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'Y'<0>:
-      PIN_NUMBER='(15,7,3)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'Y*'<0>:
-      PIN_NUMBER='(14,6,2)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'V':
-      PIN_NUMBER='(11,11,11)';
-      PINUSE='POWER';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-  end_pin;
-  body
-      PART_NAME='10H116';
-      BODY_NAME='10H116';
-      FAMILY='ECL10KH';
-      SECTION='1';
-      TECH='10KH';
-      JEDEC_TYPE='DIP16_3';
-      PHYS_DES_PREFIX='U';
-      CLASS='IC';
-      POWER_PINS='(GND2:1)';
-      POWER_PINS='(GND1:16)';
-      POWER_PINS='(VEE:8)';
   end_body;
 end_primitive;
 primitive '10H116_PLCC';
