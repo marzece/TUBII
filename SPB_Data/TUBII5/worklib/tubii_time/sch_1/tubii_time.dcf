@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 47 )
+			( logicalViewRevNum 50 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -878,6 +894,9 @@
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):vbb"
 				( objectStatus "vbb" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):delay_vbb"
+				( objectStatus "delay_vbb" )
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i38"
 				( attribute "CDS_LIB" "ecl"
@@ -5501,14 +5520,14 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U93"
+				( attribute "CDS_LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "LOCATION" "U93"
-					( Origin gPackager )
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )

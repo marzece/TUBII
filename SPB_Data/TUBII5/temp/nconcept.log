@@ -363,10 +363,13 @@ library
 get
 INFO(SPCOCN-1445): Reading TUBII.SCH.1.1 into drawing #1.
 backannotate
-INFO(SPCOCN-1445): Reading TUBII.SCH.1.2 into drawing #1.
-INFO(SPCOCN-1028): writing <tubii_lib>TUBII.SCH.1.2:
+ERROR(SPCOCN-1911): Error on line 4: Instance I4 of body 10H125 not found in drawing.
+ERROR(SPCOCN-1911): Error on line 9: Instance I5 of body 10H125 not found in drawing.
+ERROR(SPCOCN-1911): Error on line 14: Instance I6 of body 10H125 not found in drawing.
+INFO(SPCOCN-1028): writing <tubii_lib>TUBII.SCH.1.1:
 INFO(SPCOCN-1044): writing binary file...
 INFO(SPCOCN-1049): writing ASCII file...
+INFO(SPCOCN-1727): Appending master.tag page2.csa with page1.csa
 INFO(SPCOCN-1053): writing connectivity file...
 INFO(SPCOCN-1054): ...written
 
@@ -374,7 +377,7 @@ CSDirect Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012
 
 Netlisting block tubii
 
-Processing page 2
+Processing page 1
 
 No netlisting errors found. 
 
@@ -1004,6 +1007,8 @@ Processing page 1
 No netlisting errors found. 
 
 INFO(SPCOCN-1054): ...written
+ 3 Error(s) found during backannotation.
+ Please see the error log: temp/backannotate.log
 nmapedit
 _!editincontext
 INFO(SPCOCN-1445): Reading TUBII.SCH.1.1 into drawing #1.

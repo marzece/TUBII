@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 41 )
+			( logicalViewRevNum 42 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -865,6 +865,13 @@
 			( signal "@tubii_lib.clocks(sch_1):page1_i1@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i68_b"
 			)
 			( signal "@tubii_lib.clocks(sch_1):page1_i1@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i69_b"
+			)
+			( signal "@tubii_lib.clocks(sch_1):delay_vbb"
+				( alias ( signalRef "@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):delay_vbb") )
+				( objectStatus "delay_vbb" )
+			)
+			( signal "@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):delay_vbb"
+				( objectFlag fObjectAlias )
 			)
 			( gate "@tubii_lib.clocks(sch_1):page1_i1@tubii_lib.tubii_clks(sch_1):page1_i54"
 				( attribute "CDS_LIB" "resistors"
@@ -10562,7 +10569,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U93"
+				( attribute "CDS_LOCATION" "U61"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -10572,7 +10579,7 @@
 				)
 				( attribute "LOCATION" "U93"
 					( Status sBlockFlattened )
-					( Origin gPackager )
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
@@ -18352,7 +18359,7 @@
 	( BaseCopy "tubii_time"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 47 )
+				( logicalViewRevNum 50 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -18770,6 +18777,9 @@
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):vbb"
 				( objectStatus "vbb" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):delay_vbb"
+				( objectStatus "delay_vbb" )
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i38"
 				( attribute "CDS_LIB" "ecl"
@@ -23393,14 +23403,14 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U93"
+				( attribute "CDS_LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "LOCATION" "U93"
-					( Origin gPackager )
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )

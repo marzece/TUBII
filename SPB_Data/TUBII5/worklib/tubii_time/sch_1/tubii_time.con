@@ -8,7 +8,7 @@
   (design "tubii_time"
     (lastIds
       (lastInstanceId 196)
-      (lastNetId 204)
+      (lastNetId 205)
       (lastInstTermId 629)
     )
     (cells
@@ -301,6 +301,7 @@
       ("N84" "vcc" -1 -1 2 )
       ("N85" "vih" -1 -1 2 )
       ("N87" "vtt" -1 -1 2 )
+      ("N205" "delay_vbb" -1 -1 2 )
     )
 
     (alias
@@ -1389,6 +1390,9 @@
             )
           )
           ("M301" "T90" -1 -1
+            (conn
+              ("0" -1 -1 "N205" -1 -1)
+            )
           )
           ("M302" "T91" 0 0
             (conn

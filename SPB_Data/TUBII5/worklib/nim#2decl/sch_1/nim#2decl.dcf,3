@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -800,27 +816,27 @@
 				)
 				( objectStatus "PAGE1_I20" )
 				( pin "a(0)"
-					( attribute "PN" "13"
+					( attribute "PN" "17"
 						( Origin gPackager )
 					)
 				)
 				( pin "\b*\(0)"
-					( attribute "PN" "12"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
 					( attribute "PN" "15"
 						( Origin gPackager )
 					)
 				)
+				( pin "y(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
 				( pin "\y*\(0)"
-					( attribute "PN" "14"
+					( attribute "PN" "18"
 						( Origin gPackager )
 					)
 				)
 				( pin "v"
-					( attribute "PN" "11"
+					( attribute "PN" "14"
 						( Origin gPackager )
 					)
 				)
@@ -832,13 +848,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U93"
+				( attribute "CDS_LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U93"
+				( attribute "LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"

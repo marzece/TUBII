@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-20T11:43:35</modificationTime>
+    <modificationTime>2015-01-21T18:24:33</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_time" view="sch_1">
       <lastids>
         <instanceid>196</instanceid>
-        <netid>204</netid>
+        <netid>205</netid>
         <insttermid>629</insttermid>
       </lastids>
       <cells>
@@ -1137,6 +1137,11 @@
         <net>
           <id>N87</id>
           <name>vtt</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N205</id>
+          <name>delay_vbb</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -3828,6 +3833,7 @@
               <id>M301</id>
               <termid>T90</termid>
               <connections>
+                <connection net="N205" />
               </connections>
             </pin>
             <pin>
@@ -6731,6 +6737,11 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="delay_vbb">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="gnd">
             <pageScope number="1">
               <scope>global</scope>
@@ -6797,6 +6808,7 @@
               <net ref="data"></net>
               <net ref="data_rdy"></net>
               <net ref="default_clk"></net>
+              <net ref="delay_vbb"></net>
               <net ref="ecl_reset"></net>
               <net ref="gnd"></net>
               <net ref="le"></net>

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 46 )
+			( logicalViewRevNum 49 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -878,6 +894,9 @@
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):vbb"
 				( objectStatus "vbb" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):delay_vbb"
+				( objectStatus "delay_vbb" )
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i38"
 				( attribute "CDS_LIB" "ecl"
@@ -2674,8 +2693,11 @@
 				( attribute "CHIPS_PART_NAME" "10E101"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E101"
+				( attribute "CDS_PART_NAME" "10E101_PLCC"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I79" )
 				( pin "a(0)"
@@ -5073,8 +5095,11 @@
 				( attribute "CHIPS_PART_NAME" "10E101"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E101"
+				( attribute "CDS_PART_NAME" "10E101_PLCC"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I111" )
 				( pin "a(0)"
@@ -5495,13 +5520,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U93"
+				( attribute "CDS_LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U93"
+				( attribute "LOCATION" "U61"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5648,8 +5673,11 @@
 				( attribute "CHIPS_PART_NAME" "10E101"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E101"
+				( attribute "CDS_PART_NAME" "10E101_PLCC"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I123" )
 				( pin "a(0)"
