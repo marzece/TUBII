@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 30 )
+			( logicalViewRevNum 31 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,6 +465,22 @@
 			)
 			( Objects
 				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
 			)
 			( Analysis
 			)
@@ -3704,7 +3720,7 @@
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U76"
+				( attribute "CDS_LOCATION" "U121"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -3712,7 +3728,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U76"
+				( attribute "LOCATION" "U121"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -4567,7 +4583,7 @@
 	( BaseCopy "select_lo_src"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 19 )
+				( logicalViewRevNum 20 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -4577,7 +4593,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"
@@ -5588,13 +5604,13 @@
 				( attribute "CDS_PART_NAME" "MC10H104_PLCC-VCC=GND"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U76"
+				( attribute "CDS_LOCATION" "U121"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U76"
+				( attribute "LOCATION" "U121"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "4"
@@ -5879,7 +5895,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "asyncdelays"

@@ -1,26 +1,47 @@
-van.exe -q -nolinks -sironly -cdslib cds.lib -module tubii_lib.glbl:tubii_cfg_package -lib tubii_lib -view tubii_cfg_package -globals tubii_lib.glbl:tubii_cfg_package
-progdelay;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\progdelay\sch_1\verilog.v;2;1
-fastcomp;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\fastcomp\sch_1\verilog.v;2;1
-tuncomp;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\tuncomp\sch_1\verilog.v;2;1
-datain;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\datain\sch_1\verilog.v;2;1
-asyncdelaybig;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\asyncdelaybig\sch_1\verilog.v;2;1
-asyncdelay;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\asyncdelay\sch_1\verilog.v;2;1
-ribbondelay;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ribbondelay\sch_1\verilog.v;2;1
-ttl_progdelay;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ttl_progdelay\sch_1\verilog.v;2;1
-ellie_comms;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ellie_comms\sch_1\verilog.v;2;1
-tubiigt;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\tubiigt\sch_1\verilog.v;2;1
-bursttrig;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\bursttrig\sch_1\verilog.v;2;1
-ttl#232dto#232decl#232din;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ttl#2dto#2decl#2din\sch_1\verilog.v;2;1
-tubii_time;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\tubii_time\sch_1\verilog.v;2;1
-prescaletrig;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\prescaletrig\sch_1\verilog.v;2;1
-lvds#232decl;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\lvds#2decl\sch_1\verilog.v;2;1
-ecl#232dlvds;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ecl#2dlvds\sch_1\verilog.v;2;1
-ttl#232decl;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ttl#2decl\sch_1\verilog.v;2;1
-ecl#232dttl;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ecl#2dttl\sch_1\verilog.v;2;1
-ecl#232dnim;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\ecl#2dnim\sch_1\verilog.v;2;1
-nim#232decl;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\nim#2decl\sch_1\verilog.v;2;1
-latchexttrig;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\latchexttrig\sch_1\verilog.v;2;1
-powers;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\powers\sch_1\verilog.v;2;1
-exttrig;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\exttrig\sch_1\verilog.v;2;1
-caen_chat;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\caen_chat\sch_1\verilog.v;2;1
-tubii;tubii_lib;sch_1;G:\My Dropbox\SNO+\TUBii\SPB_Data\TUBII1\worklib\tubii\sch_1\verilog.v;2;1
+van.exe -q -nolinks -sironly -cdslib cds.lib -module tubii_lib.glbl:tubii_cfg_analog -lib tubii_lib -view tubii_cfg_analog -globals tubii_lib.glbl:tubii_cfg_analog
+ellie_talk;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ellie_talk\sch_1\verilog.v;2;1
+ellie;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ellie\sch_1\verilog.v;2;1
+tubii_triggers;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii_triggers\sch_1\verilog.v;2;1
+latchexttrig;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\latchexttrig\sch_1\verilog.v;2;1
+ports2;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ports2\sch_1\verilog.v;2;1
+gt_delays_ports;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\gt_delays_ports\sch_1\verilog.v;2;1
+generic_utilities_ports;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\generic_utilities_ports\sch_1\verilog.v;2;1
+comparator_ports;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\comparator_ports\sch_1\verilog.v;2;1
+caen_ports;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\caen_ports\sch_1\verilog.v;2;1
+ttl#232decl;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ttl#2decl\sch_1\verilog.v;2;1
+ecl#232dnim;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ecl#2dnim\sch_1\verilog.v;2;1
+nim#232decl;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\nim#2decl\sch_1\verilog.v;2;1
+ecl#232dlvds;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ecl#2dlvds\sch_1\verilog.v;2;1
+lvds#232decl;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\lvds#2decl\sch_1\verilog.v;2;1
+ecl#232dttl;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ecl#2dttl\sch_1\verilog.v;2;1
+translators;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\translators\sch_1\verilog.v;2;1
+ports;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ports\sch_1\verilog.v;2;1
+tubii_spkr;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii_spkr\sch_1\verilog.v;2;1
+ecal_control;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ecal_control\sch_1\verilog.v;2;1
+asyncdelays;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\asyncdelays\sch_1\verilog.v;2;1
+select_lo_src;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\select_lo_src\sch_1\verilog.v;2;1
+gt_delays;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\gt_delays\sch_1\verilog.v;2;1
+caen_buffer;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\caen_buffer\sch_1\verilog.v;2;1
+caen_coms;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\caen_coms\sch_1\verilog.v;2;1
+caen_chat;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\caen_chat\sch_1\verilog.v;2;1
+caen;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\caen\sch_1\verilog.v;2;1
+cntrl_register;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\cntrl_register\sch_1\verilog.v;2;1
+tubii_time;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii_time\sch_1\verilog.v;2;1
+tubii_clks;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii_clks\sch_1\verilog.v;2;1
+clocks;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\clocks\sch_1\verilog.v;2;1
+vrefs;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\vrefs\sch_1\verilog.v;2;1
+powers;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\powers\sch_1\verilog.v;2;1
+tuncomp;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tuncomp\sch_1\verilog.v;2;1
+fastcomp;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\fastcomp\sch_1\verilog.v;2;1
+comparators;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\comparators\sch_1\verilog.v;2;1
+pulse_inverter;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\pulse_inverter\sch_1\verilog.v;2;1
+generic_delays;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\generic_delays\sch_1\verilog.v;2;1
+pulse_scaler;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\pulse_scaler\sch_1\verilog.v;2;1
+ribbondelay;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\ribbondelay\sch_1\verilog.v;2;1
+led_pulse;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\led_pulse\sch_1\verilog.v;2;1
+generic_pulse;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\generic_pulse\sch_1\verilog.v;2;1
+generic_utilities;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\generic_utilities\sch_1\verilog.v;2;1
+microzedconnection;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\microzedconnection\sch_1\verilog.v;2;1
+base_mon;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\base_mon\sch_1\verilog.v;2;1
+trigger_utility_board_mkii;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\trigger_utility_board_mkii\sch_1\verilog.v;2;1
+tubii;tubii_lib;sch_1;C:\Users\QGPWindowsVB\Downloads\orebi\SPB_Data\TUBII5\worklib\tubii\sch_1\verilog.v;2;1

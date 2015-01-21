@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 44 )
+			( logicalViewRevNum 48 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -477,7 +477,7 @@
 				( Status  sProperty  sPackage )
 			)
 			( Objects
-				( ValidObjects  oGate  oBlock  oPart  oDesign  oSystem  oGateDefn  oPartDefn )
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
 				( NoInherit
 					( oGate oPin )
 				)
@@ -547,9 +547,6 @@
 			( signal "@tubii_lib.tubii_clks(sch_1):tub_clk_in"
 				( objectStatus "tub_clk_in" )
 			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i67_a"
-				( objectStatus "unnamed_1_mc10h104_i67_a" )
-			)
 			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i65_b"
 				( objectStatus "unnamed_1_mc10h104_i65_b" )
 			)
@@ -561,27 +558,6 @@
 			)
 			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i64_b"
 				( objectStatus "unnamed_1_mc10h104_i64_b" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i66_b"
-				( objectStatus "unnamed_1_mc10h104_i66_b" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i67_b"
-				( objectStatus "unnamed_1_mc10h104_i67_b" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i64_y"
-				( objectStatus "unnamed_1_mc10h104_i64_y" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i65_y"
-				( objectStatus "unnamed_1_mc10h104_i65_y" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i66_y"
-				( objectStatus "unnamed_1_mc10h104_i66_y" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i67_y"
-				( objectStatus "unnamed_1_mc10h104_i67_y" )
-			)
-			( signal "@tubii_lib.tubii_clks(sch_1):unnamed_1_mc10h104_i65_a"
-				( objectStatus "unnamed_1_mc10h104_i65_a" )
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i2"
 				( attribute "CDS_LIB" "ecl"
@@ -2525,9 +2501,6 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "PACKAGE" "CLK_SELECT"
-					( Origin gFrontEnd )
-				)
 				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
@@ -2585,9 +2558,6 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "PACKAGE" "CLK_SELECT"
-					( Origin gFrontEnd )
-				)
 				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
@@ -2600,7 +2570,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2925,2975)"
+				( attribute "XY" "(2925,3625)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "MC10H104"
@@ -2645,9 +2615,6 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "PACKAGE" "CLK_SELECT"
-					( Origin gFrontEnd )
-				)
 				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
@@ -2660,7 +2627,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2925,3625)"
+				( attribute "XY" "(2925,3275)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "MC10H104"
@@ -2705,9 +2672,6 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "PACKAGE" "CLK_SELECT"
-					( Origin gFrontEnd )
-				)
 				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
@@ -2720,7 +2684,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2925,3275)"
+				( attribute "XY" "(2925,2975)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "MC10H104"
@@ -2759,761 +2723,229 @@
 				)
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i68"
-				( attribute "CDS_LIB" "resistors"
+				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
+				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "XY" "(4200,4200)"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2175,3475)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
+				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R449"
+				( attribute "CDS_LOCATION" "U35"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R449"
+				( attribute "LOCATION" "U35"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I68" )
-				( pin "a(0)"
-					( attribute "PN" "1"
+				( pin "a"
+					( attribute "PN" "5"
 						( Origin gPackager )
 					)
 				)
-				( pin "b(0)"
-					( attribute "PN" "2"
+				( pin "b"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "3"
 						( Origin gPackager )
 					)
 				)
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i69"
-				( attribute "CDS_LIB" "resistors"
+				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
+				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "XY" "(4200,3875)"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2700,3850)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
+				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R451"
+				( attribute "CDS_LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R451"
+				( attribute "LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "SEC" "1"
+				( attribute "SEC" "2"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I69" )
-				( pin "a(0)"
-					( attribute "PN" "1"
+				( pin "a"
+					( attribute "PN" "8"
 						( Origin gPackager )
 					)
 				)
-				( pin "b(0)"
-					( attribute "PN" "2"
+				( pin "b"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "4"
 						( Origin gPackager )
 					)
 				)
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i70"
-				( attribute "CDS_LIB" "resistors"
+				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
+				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
 				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "XY" "(4200,3550)"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(2525,2925)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
+				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R450"
+				( attribute "CDS_LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R450"
+				( attribute "LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "SEC" "1"
+				( attribute "SEC" "3"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I70" )
-				( pin "a(0)"
-					( attribute "PN" "1"
+				( pin "a"
+					( attribute "PN" "13"
 						( Origin gPackager )
 					)
 				)
-				( pin "b(0)"
-					( attribute "PN" "2"
+				( pin "b"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "18"
 						( Origin gPackager )
 					)
 				)
 			)
 			( gate "@tubii_lib.tubii_clks(sch_1):page1_i71"
-				( attribute "CDS_LIB" "resistors"
+				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
 					( Origin gPackager )
 				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
+				( attribute "PACK_TYPE" "PLCC"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "XY" "(4200,3225)"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(3300,3950)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
+				( attribute "CHIPS_PART_NAME" "MC10H104"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
+				( attribute "CDS_PART_NAME" "MC10H104_PLCC"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R454"
+				( attribute "CDS_LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "1"
+				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R454"
+				( attribute "LOCATION" "U35"
 					( Origin gPackager )
 				)
-				( attribute "SEC" "1"
+				( attribute "SEC" "4"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I71" )
-				( pin "a(0)"
-					( attribute "PN" "1"
+				( pin "a"
+					( attribute "PN" "15"
 						( Origin gPackager )
 					)
 				)
-				( pin "b(0)"
-					( attribute "PN" "2"
+				( pin "b"
+					( attribute "PN" "17"
 						( Origin gPackager )
 					)
 				)
-			)
-			( gate "@tubii_lib.tubii_clks(sch_1):page1_i72"
-				( attribute "CDS_LIB" "resistors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
-					( Origin gPackager )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(3300,3700)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "R455"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "R455"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I72" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_lib.tubii_clks(sch_1):page1_i73"
-				( attribute "CDS_LIB" "resistors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
-					( Origin gPackager )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(3250,3275)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "R452"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "R452"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I73" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_lib.tubii_clks(sch_1):page1_i74"
-				( attribute "CDS_LIB" "resistors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
-					( Origin gPackager )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(3250,2975)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "R453"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "R453"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I74" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
-			( gate "@tubii_lib.tubii_clks(sch_1):page1_i75"
-				( attribute "CDS_LIB" "resistors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
-					( Origin gPackager )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "MAX_TEMP" "RTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "POWER" "0.1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "SLOPE" "RSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC1" "RTMPL"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC2" "RTMPO"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "1%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "25V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2525,3400)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "RSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "RSMD0805-0,1%,0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "R456"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "R456"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I75" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
+				( pin "y"
+					( attribute "PN" "19"
 						( Origin gPackager )
 					)
 				)
