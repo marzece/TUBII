@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 23 )
+			( logicalViewRevNum 26 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -707,8 +723,6 @@
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_a"
 			)
-			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i109_b"
-			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_y"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_y_1"
@@ -722,8 +736,6 @@
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i125_y_1"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_a"
-			)
-			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i125_b"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_y"
 			)
@@ -739,15 +751,11 @@
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_a"
 			)
-			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_b"
-			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_y"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_y_1"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_a"
-			)
-			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_b"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_y"
 			)
@@ -1138,7 +1146,7 @@
 				( attribute "CHIPS_PART_NAME" "10E101"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E101"
+				( attribute "CDS_PART_NAME" "10E101_PLCC"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U5"
@@ -1152,6 +1160,9 @@
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( objectStatus "PAGE1_I2" )
 				( pin "a(0)"
@@ -2465,10 +2476,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U36"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -2476,10 +2483,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -2497,7 +2500,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U36"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -3490,10 +3505,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U37"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -3501,10 +3512,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -3522,7 +3529,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U37"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -4267,10 +4286,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U38"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -4278,10 +4293,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -4299,7 +4310,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U38"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -5044,10 +5067,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U40"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -5055,10 +5074,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -5076,7 +5091,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U40"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -5821,10 +5848,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U41"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -5832,10 +5855,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -5853,7 +5872,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U41"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -6598,10 +6629,6 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U43"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -6609,10 +6636,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -6630,7 +6653,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -7367,15 +7402,11 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U84"
+				( attribute "CDS_LOCATION" "U43"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "2"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U84"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -7386,10 +7417,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "2"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -7407,7 +7434,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -7857,15 +7896,11 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U84"
+				( attribute "CDS_LOCATION" "U43"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "3"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U84"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
@@ -7876,10 +7911,6 @@
 				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "3"
-					( Status sBlockFlattened )
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Status sBlockFlattened )
@@ -7897,7 +7928,19 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "SEC" "3"
+					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( pin "a(0)"
@@ -18135,6 +18178,414 @@
 				( pin "b(0)"
 				)
 			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i230"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,5075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i231"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4875)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i232"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4650)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i233"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4450)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i234"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1325,4450)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i235"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1325,4700)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i236"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1350,4900)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i237"
+				( attribute "ABBREV" "10E116"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1575,5100)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
 			( pin "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):page1_i1:c"
 			)
 			( pin "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):page1_i1:q"
@@ -18569,7 +19020,7 @@
 	( BaseCopy "latchexttrig"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 11 )
+				( logicalViewRevNum 15 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -18910,9 +19361,6 @@
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_a"
 				( objectStatus "unnamed_1_10e116_i117_a" )
 			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i109_b"
-				( objectStatus "unnamed_1_10e116_i109_b" )
-			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_y"
 				( objectStatus "unnamed_1_10e116_i117_y" )
 			)
@@ -18933,9 +19381,6 @@
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_a"
 				( objectStatus "unnamed_1_10e116_i133_a" )
-			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i125_b"
-				( objectStatus "unnamed_1_10e116_i125_b" )
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_y"
 				( objectStatus "unnamed_1_10e116_i133_y" )
@@ -18958,9 +19403,6 @@
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_a"
 				( objectStatus "unnamed_1_10e116_i43_a" )
 			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_b"
-				( objectStatus "unnamed_1_10e116_i43_b" )
-			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_y"
 				( objectStatus "unnamed_1_10e116_i43_y" )
 			)
@@ -18969,9 +19411,6 @@
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_a"
 				( objectStatus "unnamed_1_10e116_i93_a" )
-			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_b"
-				( objectStatus "unnamed_1_10e116_i93_b" )
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_y"
 				( objectStatus "unnamed_1_10e116_i93_y" )
@@ -19205,17 +19644,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U36"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -19229,7 +19662,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U36"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I43" )
@@ -19992,17 +20434,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U37"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -20016,7 +20452,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U37"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I93" )
@@ -20589,17 +21034,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U38"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -20613,7 +21052,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U38"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I101" )
@@ -21186,17 +21634,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U40"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -21210,7 +21652,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U40"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I109" )
@@ -21783,17 +22234,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U41"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -21807,7 +22252,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U41"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I117" )
@@ -22380,17 +22834,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U43"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -22404,7 +22852,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I125" )
@@ -22971,13 +23428,10 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U84"
+				( attribute "CDS_LOCATION" "U43"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "2"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U84"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -22985,9 +23439,6 @@
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "2"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -23001,7 +23452,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "2"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I133" )
@@ -23346,13 +23806,10 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U84"
+				( attribute "CDS_LOCATION" "U43"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "3"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U84"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -23360,9 +23817,6 @@
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "3"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -23376,7 +23830,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U43"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "3"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I138" )
@@ -25662,6 +26125,350 @@
 					)
 				)
 			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i230"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,5075)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I230" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i231"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4875)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I231" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i232"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4650)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I232" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i233"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1000,4450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I233" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i234"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1325,4450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I234" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i235"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1325,4700)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I235" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i236"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1350,4900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I236" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i237"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1575,5100)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I237" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
+			)
 			( pin "@tubii_lib.latchexttrig(sch_1):page1_i190:a(0)"
 				( attribute "PN" "10"
 					( Origin gPackager )
@@ -25739,7 +26546,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "tubii_triggers"

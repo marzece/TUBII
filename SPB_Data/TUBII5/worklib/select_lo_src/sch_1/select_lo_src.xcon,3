@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-01-21T18:06:23</modificationTime>
+    <modificationTime>2015-01-21T18:27:55</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="select_lo_src" view="sch_1">
       <lastids>
         <instanceid>25</instanceid>
-        <netid>33</netid>
+        <netid>34</netid>
         <insttermid>78</insttermid>
       </lastids>
       <cells>
@@ -231,10 +231,6 @@
           <name>unnamed_1_10e116_i37_y</name>
         </net>
         <net>
-          <id>N32</id>
-          <name>unnamed_1_10e116_i37_b</name>
-        </net>
-        <net>
           <id>N33</id>
           <name>unnamed_1_10e116_i38_a</name>
         </net>
@@ -251,6 +247,11 @@
         <net>
           <id>N25</id>
           <name>vcc</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N34</id>
+          <name>delay_vbb</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -292,7 +293,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N32" />
+                <connection pinmsb="0" pinlsb="0" net="N34" />
               </connections>
             </pin>
           </pins>
@@ -565,7 +566,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N32" />
+                <connection pinmsb="0" pinlsb="0" net="N34" />
               </connections>
             </pin>
           </pins>
@@ -819,14 +820,14 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N32" />
+                <connection pinmsb="0" pinlsb="0" net="N34" />
               </connections>
             </pin>
             <pin>
               <id>M71</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N32" />
+                <connection net="N34" />
               </connections>
             </pin>
             <pin>
@@ -882,14 +883,14 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N32" />
+                <connection pinmsb="0" pinlsb="0" net="N34" />
               </connections>
             </pin>
             <pin>
               <id>M76</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N32" />
+                <connection net="N34" />
               </connections>
             </pin>
             <pin>
@@ -933,6 +934,11 @@
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="delay_vbb">
+            <pageScope number="1">
+              <scope>global</scope>
             </pageScope>
           </netScope>
           <netScope ref="gnd">
@@ -981,12 +987,12 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="ddgt*"></net>
+              <net ref="delay_vbb"></net>
               <net ref="gnd"></net>
               <net ref="lo"></net>
               <net ref="lo*"></net>
               <net ref="mtcd_lo*"></net>
               <net ref="sel"></net>
-              <net ref="unnamed_1_10e116_i37_b"></net>
               <net ref="unnamed_1_10e116_i37_y"></net>
               <net ref="unnamed_1_10e116_i38_a"></net>
               <net ref="unnamed_1_ledl_i36_a"></net>
