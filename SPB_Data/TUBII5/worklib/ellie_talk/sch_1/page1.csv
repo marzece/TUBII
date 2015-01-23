@@ -2,30 +2,30 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"VCC\G";
-2"DELAY_OUT\I";
-3"UN$1$MC10H124$I24$OUT";
-4"UN$1$MC10H124$I25$OUT";
+1"UN$1$10H116$I9$A";
+2"UN$1$10H116$I9$Y";
+3"DELAY_IN\I";
+4"DELAY_OUT\I";
 5"VCC\G";
-6"UN$1$MC10H124$I25$OUT$1";
+6"VTT\G";
 7"PULSE_OUT\I";
-8"UN$1$MC10H124$I24$OUT$1";
-9"VTT\G";
-10"DELAY_IN\I";
-11"VTT\G";
-12"UN$1$10E116$I9$Y";
-13"UN$1$10E116$I9$B";
-14"VTT\G";
-15"UN$1$10E116$I9$A";
-16"UN$1$10E116$I9$Y$1";
+8"UN$1$10H116$I9$B";
+9"UN$1$10H116$I9$Y$1";
+10"VCC\G";
+11"UN$1$MC10H124$I24$OUT";
+12"UN$1$MC10H124$I25$OUT";
+13"UN$1$MC10H124$I25$OUT$1";
+14"UN$1$MC10H124$I24$OUT$1";
+15"VTT\G";
+16"VTT\G";
 %"10H125"
 "1","(1350,3200)","0","ecl","I10";
 SECTION"1";
 CDS_LIB"ecl";
-"A <SIZE-1..0>"12;
-"B <SIZE-1..0>* \B"16;
+"A <SIZE-1..0>"2;
+"B <SIZE-1..0>* \B"9;
 "V"0;
-"Y <SIZE-1..0>"10;
+"Y <SIZE-1..0>"3;
 %"RSMD0805"
 "1","(1150,2900)","1","resistors","I11";
 ;
@@ -51,9 +51,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"14;
+$PN"1"16;
 "B<0>"
-$PN"2"12;
+$PN"2"2;
 %"RSMD0805"
 "1","(1000,2900)","1","resistors","I12";
 ;
@@ -79,9 +79,9 @@ POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"14;
+$PN"1"16;
 "B<0>"
-$PN"2"16;
+$PN"2"9;
 %"RSMD0805"
 "1","(500,2900)","1","resistors","I13";
 ;
@@ -107,9 +107,9 @@ PACKTYPE"0805"
 CDS_LIB"resistors"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
-$PN"1"14;
+$PN"1"16;
 "B<0>"
-$PN"2"13;
+$PN"2"8;
 %"RSMD0805"
 "1","(350,2900)","1","resistors","I14";
 ;
@@ -135,9 +135,9 @@ POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"14;
+$PN"1"16;
 "B<0>"
-$PN"2"15;
+$PN"2"1;
 %"RSMD0805"
 "1","(3900,3375)","1","resistors","I15";
 ;
@@ -163,9 +163,9 @@ CDS_LOCATION"R266"
 CDS_LIB"resistors"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25";
 "A<0>"
-$PN"1"9;
+$PN"1"6;
 "B<0>"
-$PN"2"4;
+$PN"2"12;
 %"RSMD0805"
 "1","(3825,3375)","1","resistors","I16";
 ;
@@ -191,9 +191,9 @@ CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LOCATION"R265"
 CDS_SEC"1";
 "A<0>"
-$PN"1"9;
+$PN"1"6;
 "B<0>"
-$PN"2"6;
+$PN"2"13;
 %"RSMD0805"
 "1","(3950,2875)","1","resistors","I19";
 ;
@@ -215,8 +215,8 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
-"A<0>"11;
-"B<0>"8;
+"A<0>"15;
+"B<0>"14;
 %"RSMD0805"
 "1","(3875,2875)","1","resistors","I20";
 ;
@@ -238,14 +238,14 @@ NEEDS_NO_SIZE"TRUE"
 POSTOL"5%"
 TOL"1%"
 PACKTYPE"0805";
-"A<0>"11;
-"B<0>"3;
+"A<0>"15;
+"B<0>"11;
 %"LED_PULSE"
 "1","(2100,3475)","0","tubii_lib","I22";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"PULSE_IN"10;
+"PULSE_IN"3;
 %"LED_PULSE"
 "1","(3500,3950)","0","tubii_lib","I23";
 ;
@@ -256,73 +256,74 @@ BLOCK"TRUE";
 "1","(3775,3075)","0","ecl","I24";
 ;
 PACK_TYPE"PLCC"
-CDS_LIB"ecl"
-CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
-"IN"2;
-"OUT"3;
-"COMMON"1;
-"OUT* \B"8;
+CDS_LMAN_SYM_OUTLINE"-125,100,25,-100"
+CDS_LIB"ecl";
+"IN"4;
+"OUT"11;
+"COMMON"10;
+"OUT* \B"14;
 %"MC10H124"
 "1","(3725,3600)","0","ecl","I25";
 ;
 PACK_TYPE"PLCC"
-CDS_LIB"ecl"
-CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
+CDS_LMAN_SYM_OUTLINE"-125,100,25,-100"
+CDS_LIB"ecl";
 "IN"7;
-"OUT"6;
+"OUT"13;
 "COMMON"5;
-"OUT* \B"4;
+"OUT* \B"12;
 %"TESTPOINT_L"
 "1","(4100,3125)","0","misc","I3";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"3;
+"A\NAC \B"11;
 %"TESTPOINT_L"
 "1","(4100,3025)","0","misc","I4";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"8;
+"A\NAC \B"14;
 %"TESTPOINT_L"
 "1","(4025,3550)","0","misc","I5";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"4;
+"A\NAC \B"12;
 %"TESTPOINT_L"
 "1","(4025,3650)","0","misc","I6";
 ;
 CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
-"A\NAC \B"6;
+"A\NAC \B"13;
 %"TESTPOINT_L"
 "1","(-225,3250)","2","misc","I7";
 ;
 CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
-"A\NAC \B"15;
+"A\NAC \B"1;
 %"TESTPOINT_L"
 "1","(-225,3150)","2","misc","I8";
 ;
 ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
-"A\NAC \B"13;
-%"10E116"
+"A\NAC \B"8;
+%"10H116"
 "1","(900,3200)","0","ecl","I9";
-SECTION"1";
-ABBREV"10E116"
-TITLE"10E116"
-CDS_LIB"ecl";
-"A <SIZE-1..0>"15;
-"B <SIZE-1..0>* \B"13;
-"REF"0;
-"Y <SIZE-1..0>"12;
-"Y <SIZE-1..0>* \B"16;
+;
+PACK_TYPE"PLCC"
+CDS_LIB"ecl"
+CDS_LMAN_SYM_OUTLINE"-125,100,50,-100"
+SECTION"1\PARAMETER";
+"V"0;
+"Y<SIZE-1..0>* \B"9;
+"Y<SIZE-1..0>"2;
+"B<SIZE-1..0>* \B"8;
+"A<SIZE-1..0>"1;
 END.

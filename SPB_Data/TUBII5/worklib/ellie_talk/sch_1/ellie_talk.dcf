@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 8 )
+			( logicalViewRevNum 9 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -456,6 +456,35 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "$location" )
+			( Description "" )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty )
+			)
+			( Objects
+				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -468,18 +497,6 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):pulse_in"
 				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_a"
-				( objectStatus "unnamed_1_10e116_i9_a" )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_b"
-				( objectStatus "unnamed_1_10e116_i9_b" )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_y"
-				( objectStatus "unnamed_1_10e116_i9_y" )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_y_1"
-				( objectStatus "unnamed_1_10e116_i9_y_1" )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):vcc"
 				( alias ( signalRef "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):vcc") )
@@ -523,13 +540,14 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 			)
-			( signal "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h116_i9_a"
+				( objectStatus "unnamed_1_10h116_i9_a" )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_mc10h124_i24_out"
 				( objectStatus "unnamed_1_mc10h124_i24_out" )
@@ -542,6 +560,17 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_mc10h124_i25_out_1"
 				( objectStatus "unnamed_1_mc10h124_i25_out_1" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h116_i9_b"
+				( objectStatus "unnamed_1_10h116_i9_b" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h116_i9_y"
+				( objectStatus "unnamed_1_10h116_i9_y" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10h116_i9_y_1"
+				( objectStatus "unnamed_1_10h116_i9_y_1" )
 			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i3"
 				( attribute "ABBREV" "TP"
@@ -718,11 +747,14 @@
 				)
 			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i9"
-				( attribute "ABBREV" "10E116"
-					( Origin gFrontEnd )
-				)
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,50,-100"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
@@ -730,7 +762,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SECTION" "1"
+				( attribute "SECTION" "1\PARAMETER"
 					( Origin gFrontEnd )
 				)
 				( attribute "VER" "1"
@@ -739,10 +771,10 @@
 				( attribute "XY" "(900,3200)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "10E116"
+				( attribute "CHIPS_PART_NAME" "10H116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10H116_PLCC"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
@@ -750,7 +782,7 @@
 				)
 				( pin "\b*\(0)"
 				)
-				( pin "ref"
+				( pin "v"
 				)
 				( pin "y(0)"
 				)
@@ -1878,7 +1910,7 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):page1_i7"
+			( gate "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
@@ -1887,19 +1919,7 @@
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -1907,20 +1927,11 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "7"
+				( attribute "ROT" "0"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "VER" "2"
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
@@ -1928,18 +1939,16 @@
 					( Status sBlockFlattened )
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
 				( pin "a"
-					( objectStatus "page1_i7.2" )
 				)
 				( pin "b"
-					( objectStatus "page1_i7.1" )
 				)
 			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):page1_i1"
@@ -2304,70 +2313,6 @@
 					( objectStatus "page1_i6.2" )
 				)
 			)
-			( gate "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):page1_i7"
-				( attribute "ABBREV" "LED"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "7"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "GREEN"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2925,3075)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
-					( Origin gPackager )
-				)
-				( pin "a"
-					( objectStatus "page1_i7.2" )
-				)
-				( pin "b"
-					( objectStatus "page1_i7.1" )
-				)
-			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i24"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
@@ -2444,6 +2389,251 @@
 				( pin "\out*\"
 				)
 			)
+			( gate "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):page1_i10"
+				( attribute "ABBREV" "LED"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "2"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2925,3075)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "LED_L"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "LED_L"
+					( Origin gPackager )
+				)
+				( pin "a"
+				)
+				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.ellie_talk(sch_1):page1_i22@tubii_lib.led_pulse(sch_1):page1_i12"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,2150)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,5%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
+			( gate "@tubii_lib.ellie_talk(sch_1):page1_i23@tubii_lib.led_pulse(sch_1):page1_i12"
+				( attribute "CDS_LIB" "capacitors"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,2150)"
+					( Status sBlockFlattened )
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Status sBlockFlattened )
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,5%,0603,50V"
+					( Origin gPackager )
+				)
+				( pin "a(0)"
+				)
+				( pin "b(0)"
+				)
+			)
 			( pin "@tubii_lib.ellie_talk(sch_1):page1_i1:c"
 			)
 			( pin "@tubii_lib.ellie_talk(sch_1):page1_i1:q"
@@ -2503,7 +2693,7 @@
 	( BaseCopy "led_pulse"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 2 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -2513,7 +2703,7 @@
 				( properties )
 			)
 		)
-    ( designConstraints
+	( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "led_pulse"
@@ -2535,11 +2725,11 @@
 			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_hct123_i5_q"
 				( objectStatus "unnamed_1_hct123_i5_q" )
 			)
-			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_led1206_i7_a"
-				( objectStatus "unnamed_1_led1206_i7_a" )
-			)
 			( signal "@tubii_lib.led_pulse(sch_1):vcc"
 				( objectStatus "vcc" )
+			)
+			( signal "@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
+				( objectStatus "unnamed_1_ledl_i10_a" )
 			)
 			( gate "@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -2819,54 +3009,118 @@
 				( pin "b(0)"
 				)
 			)
-			( gate "@tubii_lib.led_pulse(sch_1):page1_i7"
+			( gate "@tubii_lib.led_pulse(sch_1):page1_i10"
 				( attribute "ABBREV" "LED"
 					( Origin gFrontEnd )
 				)
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,75,100,-25"
-					( Origin gPackager )
-				)
-				( attribute "COLOR" "GREEN"
-					( Origin gFrontEnd )
-				)
 				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "1206"
 					( Origin gFrontEnd )
 				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "ROT" "7"
+				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "VALUE" "GREEN"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "16V"
-					( Units "uVoltage" "V" 1.000000)
+				( attribute "VER" "2"
 					( Origin gFrontEnd )
 				)
 				( attribute "XY" "(2925,3075)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "LED_1206"
+				( attribute "CHIPS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "LED_1206-GREEN,GREEN,1206,16V"
+				( attribute "CDS_PART_NAME" "LED_L"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I7" )
+				( objectStatus "PAGE1_I10" )
 				( pin "a"
 				)
 				( pin "b"
+				)
+			)
+			( gate "@tubii_lib.led_pulse(sch_1):page1_i12"
+				( attribute "CDS_LIB" "capacitors"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
+					( Origin gPackager )
+				)
+				( attribute "CURRENT" "CIMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "KNEE" "CBMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "CTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PART_NAME" "CSMD0603"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "10%"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "CSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "0.1UF"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "50V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(2150,2150)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "CSMD0603"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "CSMD0603-0.1UF,5%,0603,50V"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I12" )
+				( pin "a(0)"
+				)
+				( pin "b(0)"
 				)
 			)
 		)

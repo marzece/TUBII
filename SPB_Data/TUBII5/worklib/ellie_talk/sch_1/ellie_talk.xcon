@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-30T10:48:52</modificationTime>
+    <modificationTime>2015-01-23T13:15:48</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ellie_talk" view="sch_1">
       <lastids>
-        <instanceid>24</instanceid>
-        <netid>26</netid>
-        <insttermid>73</insttermid>
+        <instanceid>25</instanceid>
+        <netid>31</netid>
+        <insttermid>82</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -28,45 +28,6 @@
               <id>T10</id>
               <name>a</name>
               <direction>inout</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S4</id>
-          <library>ecl</library>
-          <name>10e116</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T11</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T12</id>
-              <name>b*&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T13</id>
-              <name>ref</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T14</id>
-              <name>y&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T15</id>
-              <name>y*&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -173,6 +134,49 @@
             </term>
           </terms>
         </cell>
+        <cell>
+          <id>S9</id>
+          <library>ecl</library>
+          <name>10h116</name>
+          <view>sym_1</view>
+          <parameters>
+            <parameter>
+              <name>section</name>
+              <value>1</value>
+            </parameter>
+            <parameter>
+              <name>size</name>
+              <value>1</value>
+            </parameter>
+          </parameters>
+          <terms>
+            <term>
+              <id>T60</id>
+              <name>a&lt;SIZE-1..0&gt;</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T61</id>
+              <name>b*&lt;SIZE-1..0&gt;</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T62</id>
+              <name>v</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T63</id>
+              <name>y&lt;SIZE-1..0&gt;</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T64</id>
+              <name>y*&lt;SIZE-1..0&gt;</name>
+              <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
       </cells>
       <nets>
         <net>
@@ -180,22 +184,6 @@
           <name>delay_in</name>
           <scope>interface</scope>
           <direction>inout</direction>
-        </net>
-        <net>
-          <id>N4</id>
-          <name>unnamed_1_10e116_i9_a</name>
-        </net>
-        <net>
-          <id>N5</id>
-          <name>unnamed_1_10e116_i9_b</name>
-        </net>
-        <net>
-          <id>N6</id>
-          <name>unnamed_1_10e116_i9_y</name>
-        </net>
-        <net>
-          <id>N7</id>
-          <name>unnamed_1_10e116_i9_y_1</name>
         </net>
         <net>
           <id>N15</id>
@@ -224,6 +212,22 @@
         <net>
           <id>N26</id>
           <name>unnamed_1_mc10h124_i25_out_1</name>
+        </net>
+        <net>
+          <id>N28</id>
+          <name>unnamed_1_10h116_i9_a</name>
+        </net>
+        <net>
+          <id>N29</id>
+          <name>unnamed_1_10h116_i9_b</name>
+        </net>
+        <net>
+          <id>N30</id>
+          <name>unnamed_1_10h116_i9_y</name>
+        </net>
+        <net>
+          <id>N31</id>
+          <name>unnamed_1_10h116_i9_y_1</name>
         </net>
         <net>
           <id>N13</id>
@@ -380,7 +384,7 @@
               <id>M13</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N4" />
+                <connection net="N28" />
               </connections>
             </pin>
           </pins>
@@ -408,70 +412,7 @@
               <id>M14</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N5" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I9</id>
-          <cellid>S4</cellid>
-          <name>page1_i9</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M15</id>
-              <termid>T11</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M16</id>
-              <termid>T12</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N5" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M17</id>
-              <termid>T13</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M18</id>
-              <termid>T14</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M19</id>
-              <termid>T15</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
+                <connection net="N29" />
               </connections>
             </pin>
           </pins>
@@ -501,7 +442,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N30" />
               </connections>
             </pin>
             <pin>
@@ -510,7 +451,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
+                <connection pinmsb="0" pinlsb="0" net="N31" />
               </connections>
             </pin>
             <pin>
@@ -564,7 +505,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N30" />
               </connections>
             </pin>
           </pins>
@@ -603,7 +544,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
+                <connection pinmsb="0" pinlsb="0" net="N31" />
               </connections>
             </pin>
           </pins>
@@ -642,7 +583,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N5" />
+                <connection pinmsb="0" pinlsb="0" net="N29" />
               </connections>
             </pin>
           </pins>
@@ -681,7 +622,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
+                <connection pinmsb="0" pinlsb="0" net="N28" />
               </connections>
             </pin>
           </pins>
@@ -1004,6 +945,69 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I25</id>
+          <cellid>S9</cellid>
+          <name>page1_i9</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M78</id>
+              <termid>T60</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N28" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M79</id>
+              <termid>T61</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N29" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M80</id>
+              <termid>T62</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M81</id>
+              <termid>T63</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N30" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M82</id>
+              <termid>T64</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N31" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1050,10 +1054,10 @@
               <net ref="delay_in"></net>
               <net ref="delay_out"></net>
               <net ref="pulse_out"></net>
-              <net ref="unnamed_1_10e116_i9_a"></net>
-              <net ref="unnamed_1_10e116_i9_b"></net>
-              <net ref="unnamed_1_10e116_i9_y"></net>
-              <net ref="unnamed_1_10e116_i9_y_1"></net>
+              <net ref="unnamed_1_10h116_i9_a"></net>
+              <net ref="unnamed_1_10h116_i9_b"></net>
+              <net ref="unnamed_1_10h116_i9_y"></net>
+              <net ref="unnamed_1_10h116_i9_y_1"></net>
               <net ref="unnamed_1_mc10h124_i24_out"></net>
               <net ref="unnamed_1_mc10h124_i24_out_1"></net>
               <net ref="unnamed_1_mc10h124_i25_out"></net>
