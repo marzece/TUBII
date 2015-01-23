@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -801,9 +817,6 @@
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_a"
 				( objectStatus "unnamed_1_10e116_i117_a" )
 			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i109_b"
-				( objectStatus "unnamed_1_10e116_i109_b" )
-			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i117_y"
 				( objectStatus "unnamed_1_10e116_i117_y" )
 			)
@@ -824,9 +837,6 @@
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_a"
 				( objectStatus "unnamed_1_10e116_i133_a" )
-			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i125_b"
-				( objectStatus "unnamed_1_10e116_i125_b" )
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i133_y"
 				( objectStatus "unnamed_1_10e116_i133_y" )
@@ -849,9 +859,6 @@
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_a"
 				( objectStatus "unnamed_1_10e116_i43_a" )
 			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_b"
-				( objectStatus "unnamed_1_10e116_i43_b" )
-			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i43_y"
 				( objectStatus "unnamed_1_10e116_i43_y" )
 			)
@@ -860,9 +867,6 @@
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_a"
 				( objectStatus "unnamed_1_10e116_i93_a" )
-			)
-			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_b"
-				( objectStatus "unnamed_1_10e116_i93_b" )
 			)
 			( signal "@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i93_y"
 				( objectStatus "unnamed_1_10e116_i93_y" )
@@ -907,13 +911,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP43"
+				( attribute "CDS_LOCATION" "TP167"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP43"
+				( attribute "LOCATION" "TP167"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -938,6 +942,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I29" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i30"
 				( attribute "ABBREV" "TP"
@@ -946,13 +955,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP42"
+				( attribute "CDS_LOCATION" "TP166"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP42"
+				( attribute "LOCATION" "TP166"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -977,6 +986,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I30" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i41"
 				( attribute "CDS_LIB" "resistors"
@@ -985,7 +999,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R74"
+				( attribute "CDS_LOCATION" "R48"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -997,7 +1011,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R74"
+				( attribute "LOCATION" "R48"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1062,6 +1076,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I41" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i43"
 				( attribute "ABBREV" "10E116"
@@ -1070,13 +1094,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U14"
+				( attribute "CDS_LOCATION" "U36"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "2"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U14"
+				( attribute "LOCATION" "U36"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1085,7 +1109,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "2"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -1104,18 +1128,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I43" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i84"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U18"
+				( attribute "CDS_LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U18"
+				( attribute "LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1143,6 +1192,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I84" )
+				( pin "a(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i85"
 				( attribute "CDS_LIB" "resistors"
@@ -1151,7 +1220,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R88"
+				( attribute "CDS_LOCATION" "R55"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1163,7 +1232,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R88"
+				( attribute "LOCATION" "R55"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1228,6 +1297,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I85" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i86"
 				( attribute "CDS_LIB" "resistors"
@@ -1236,7 +1315,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R95"
+				( attribute "CDS_LOCATION" "R62"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1248,7 +1327,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R95"
+				( attribute "LOCATION" "R62"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1313,6 +1392,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I86" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i217"
 				( attribute "CDS_LIB" "capacitors"
@@ -1388,19 +1477,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C42"
+				( attribute "CDS_LOCATION" "C45"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C42"
+				( attribute "LOCATION" "C45"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I217" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i88"
 				( attribute "ABBREV" "TP"
@@ -1409,13 +1508,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP45"
+				( attribute "CDS_LOCATION" "TP169"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP45"
+				( attribute "LOCATION" "TP169"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1440,6 +1539,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I88" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i89"
 				( attribute "ABBREV" "TP"
@@ -1448,13 +1552,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP44"
+				( attribute "CDS_LOCATION" "TP168"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP44"
+				( attribute "LOCATION" "TP168"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1479,6 +1583,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I89" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i90"
 				( attribute "CDS_LIB" "resistors"
@@ -1487,7 +1596,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R75"
+				( attribute "CDS_LOCATION" "R49"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1499,7 +1608,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R75"
+				( attribute "LOCATION" "R49"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1564,6 +1673,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I90" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i91"
 				( attribute "CDS_LIB" "resistors"
@@ -1572,7 +1691,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R89"
+				( attribute "CDS_LOCATION" "R56"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1584,7 +1703,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R89"
+				( attribute "LOCATION" "R56"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1649,6 +1768,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I91" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i92"
 				( attribute "CDS_LIB" "resistors"
@@ -1657,7 +1786,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R96"
+				( attribute "CDS_LOCATION" "R63"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -1669,7 +1798,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R96"
+				( attribute "LOCATION" "R63"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -1734,6 +1863,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I92" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i93"
 				( attribute "ABBREV" "10E116"
@@ -1742,13 +1881,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U7"
+				( attribute "CDS_LOCATION" "U37"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "3"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U7"
+				( attribute "LOCATION" "U37"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1757,7 +1896,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "3"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -1776,18 +1915,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I93" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i94"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U18"
+				( attribute "CDS_LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U18"
+				( attribute "LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1815,6 +1979,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I94" )
+				( pin "a(0)"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i215"
 				( attribute "CDS_LIB" "capacitors"
@@ -1890,19 +2074,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C43"
+				( attribute "CDS_LOCATION" "C46"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C43"
+				( attribute "LOCATION" "C46"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I215" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i96"
 				( attribute "ABBREV" "TP"
@@ -1911,13 +2105,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP47"
+				( attribute "CDS_LOCATION" "TP171"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP47"
+				( attribute "LOCATION" "TP171"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1942,6 +2136,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I96" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i97"
 				( attribute "ABBREV" "TP"
@@ -1950,13 +2149,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP46"
+				( attribute "CDS_LOCATION" "TP170"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP46"
+				( attribute "LOCATION" "TP170"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -1981,6 +2180,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I97" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i98"
 				( attribute "CDS_LIB" "resistors"
@@ -1989,7 +2193,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R76"
+				( attribute "CDS_LOCATION" "R50"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2001,7 +2205,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R76"
+				( attribute "LOCATION" "R50"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2066,6 +2270,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I98" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i99"
 				( attribute "CDS_LIB" "resistors"
@@ -2074,7 +2288,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R90"
+				( attribute "CDS_LOCATION" "R57"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2086,7 +2300,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R90"
+				( attribute "LOCATION" "R57"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2151,6 +2365,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I99" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i100"
 				( attribute "CDS_LIB" "resistors"
@@ -2159,7 +2383,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R97"
+				( attribute "CDS_LOCATION" "R64"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2171,7 +2395,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R97"
+				( attribute "LOCATION" "R64"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2236,6 +2460,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I100" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i101"
 				( attribute "ABBREV" "10E116"
@@ -2244,13 +2478,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U8"
+				( attribute "CDS_LOCATION" "U38"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "4"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U8"
+				( attribute "LOCATION" "U38"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2259,7 +2493,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "4"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -2278,18 +2512,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I101" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i102"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U18"
+				( attribute "CDS_LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U18"
+				( attribute "LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2317,6 +2576,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I102" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i213"
 				( attribute "CDS_LIB" "capacitors"
@@ -2392,19 +2671,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C44"
+				( attribute "CDS_LOCATION" "C47"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C44"
+				( attribute "LOCATION" "C47"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I213" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i104"
 				( attribute "ABBREV" "TP"
@@ -2413,13 +2702,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP49"
+				( attribute "CDS_LOCATION" "TP173"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP49"
+				( attribute "LOCATION" "TP173"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2444,6 +2733,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I104" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i105"
 				( attribute "ABBREV" "TP"
@@ -2452,13 +2746,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP48"
+				( attribute "CDS_LOCATION" "TP172"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP48"
+				( attribute "LOCATION" "TP172"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2483,6 +2777,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I105" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i106"
 				( attribute "CDS_LIB" "resistors"
@@ -2491,7 +2790,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R77"
+				( attribute "CDS_LOCATION" "R51"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2503,7 +2802,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R77"
+				( attribute "LOCATION" "R51"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2568,6 +2867,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I106" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i107"
 				( attribute "CDS_LIB" "resistors"
@@ -2576,7 +2885,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R91"
+				( attribute "CDS_LOCATION" "R58"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2588,7 +2897,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R91"
+				( attribute "LOCATION" "R58"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2653,6 +2962,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I107" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i108"
 				( attribute "CDS_LIB" "resistors"
@@ -2661,7 +2980,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R98"
+				( attribute "CDS_LOCATION" "R65"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -2673,7 +2992,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R98"
+				( attribute "LOCATION" "R65"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -2738,6 +3057,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I108" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i109"
 				( attribute "ABBREV" "10E116"
@@ -2746,13 +3075,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U9"
+				( attribute "CDS_LOCATION" "U40"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "5"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U9"
+				( attribute "LOCATION" "U40"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2761,7 +3090,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "5"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -2780,18 +3109,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I109" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i110"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U18"
+				( attribute "CDS_LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U18"
+				( attribute "LOCATION" "U44"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2819,6 +3173,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I110" )
+				( pin "a(0)"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i211"
 				( attribute "CDS_LIB" "capacitors"
@@ -2894,19 +3268,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C46"
+				( attribute "CDS_LOCATION" "C48"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C46"
+				( attribute "LOCATION" "C48"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I211" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i112"
 				( attribute "ABBREV" "TP"
@@ -2915,13 +3299,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP51"
+				( attribute "CDS_LOCATION" "TP175"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP51"
+				( attribute "LOCATION" "TP175"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2946,6 +3330,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I112" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i113"
 				( attribute "ABBREV" "TP"
@@ -2954,13 +3343,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP50"
+				( attribute "CDS_LOCATION" "TP174"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP50"
+				( attribute "LOCATION" "TP174"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -2985,6 +3374,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I113" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i114"
 				( attribute "CDS_LIB" "resistors"
@@ -2993,7 +3387,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R78"
+				( attribute "CDS_LOCATION" "R52"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3005,7 +3399,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R78"
+				( attribute "LOCATION" "R52"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3070,6 +3464,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I114" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i115"
 				( attribute "CDS_LIB" "resistors"
@@ -3078,7 +3482,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R92"
+				( attribute "CDS_LOCATION" "R59"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3090,7 +3494,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R92"
+				( attribute "LOCATION" "R59"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3155,6 +3559,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I115" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i116"
 				( attribute "CDS_LIB" "resistors"
@@ -3163,7 +3577,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R99"
+				( attribute "CDS_LOCATION" "R66"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3175,7 +3589,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R99"
+				( attribute "LOCATION" "R66"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3240,6 +3654,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I116" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i117"
 				( attribute "ABBREV" "10E116"
@@ -3248,13 +3672,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U17"
+				( attribute "CDS_LOCATION" "U41"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U17"
+				( attribute "LOCATION" "U41"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3282,18 +3706,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I117" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i118"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U19"
+				( attribute "CDS_LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U19"
+				( attribute "LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3321,6 +3770,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I118" )
+				( pin "a(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i209"
 				( attribute "CDS_LIB" "capacitors"
@@ -3409,6 +3878,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I209" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i120"
 				( attribute "ABBREV" "TP"
@@ -3417,13 +3896,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP53"
+				( attribute "CDS_LOCATION" "TP177"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP53"
+				( attribute "LOCATION" "TP177"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3448,6 +3927,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I120" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i121"
 				( attribute "ABBREV" "TP"
@@ -3456,13 +3940,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP52"
+				( attribute "CDS_LOCATION" "TP176"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP52"
+				( attribute "LOCATION" "TP176"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3487,6 +3971,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I121" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i122"
 				( attribute "CDS_LIB" "resistors"
@@ -3495,7 +3984,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R79"
+				( attribute "CDS_LOCATION" "R53"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3507,7 +3996,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R79"
+				( attribute "LOCATION" "R53"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3572,6 +4061,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I122" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i123"
 				( attribute "CDS_LIB" "resistors"
@@ -3580,7 +4079,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R93"
+				( attribute "CDS_LOCATION" "R60"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3592,7 +4091,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R93"
+				( attribute "LOCATION" "R60"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3657,6 +4156,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I123" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i124"
 				( attribute "CDS_LIB" "resistors"
@@ -3665,7 +4174,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R100"
+				( attribute "CDS_LOCATION" "R67"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -3677,7 +4186,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R100"
+				( attribute "LOCATION" "R67"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -3742,6 +4251,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I124" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i125"
 				( attribute "ABBREV" "10E116"
@@ -3750,13 +4269,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U10"
+				( attribute "CDS_LOCATION" "U43"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "2"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U10"
+				( attribute "LOCATION" "U43"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3765,7 +4284,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "2"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -3784,18 +4303,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I125" )
+				( pin "a(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "21"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i126"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U19"
+				( attribute "CDS_LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U19"
+				( attribute "LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3823,6 +4367,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I126" )
+				( pin "a(0)"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i207"
 				( attribute "CDS_LIB" "capacitors"
@@ -3898,19 +4462,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C48"
+				( attribute "CDS_LOCATION" "C49"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C48"
+				( attribute "LOCATION" "C49"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I207" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i128"
 				( attribute "ABBREV" "TP"
@@ -3919,13 +4493,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP55"
+				( attribute "CDS_LOCATION" "TP179"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP55"
+				( attribute "LOCATION" "TP179"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3950,6 +4524,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I128" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i129"
 				( attribute "ABBREV" "TP"
@@ -3958,13 +4537,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP54"
+				( attribute "CDS_LOCATION" "TP178"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP54"
+				( attribute "LOCATION" "TP178"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -3989,6 +4568,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I129" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i130"
 				( attribute "CDS_LIB" "resistors"
@@ -3997,7 +4581,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R80"
+				( attribute "CDS_LOCATION" "R54"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4009,7 +4593,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R80"
+				( attribute "LOCATION" "R54"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4074,6 +4658,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I130" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i131"
 				( attribute "CDS_LIB" "resistors"
@@ -4082,7 +4676,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R94"
+				( attribute "CDS_LOCATION" "R61"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4094,7 +4688,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R94"
+				( attribute "LOCATION" "R61"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4159,6 +4753,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I131" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i132"
 				( attribute "CDS_LIB" "resistors"
@@ -4167,7 +4771,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R101"
+				( attribute "CDS_LOCATION" "R68"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4179,7 +4783,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R101"
+				( attribute "LOCATION" "R68"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4244,6 +4848,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I132" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i133"
 				( attribute "ABBREV" "10E116"
@@ -4252,13 +4866,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U26"
+				( attribute "CDS_LOCATION" "U84"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "3"
+				( attribute "CDS_SEC" "2"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U26"
+				( attribute "LOCATION" "U84"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4267,7 +4881,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "3"
+				( attribute "SEC" "2"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -4286,18 +4900,43 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I133" )
+				( pin "a(0)"
+					( attribute "PN" "25"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "26"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i134"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U19"
+				( attribute "CDS_LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U19"
+				( attribute "LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4325,18 +4964,38 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I134" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i135"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U19"
+				( attribute "CDS_LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U19"
+				( attribute "LOCATION" "U45"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4364,6 +5023,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I135" )
+				( pin "a(0)"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "v"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i136"
 				( attribute "CDS_LIB" "resistors"
@@ -4372,7 +5051,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R104"
+				( attribute "CDS_LOCATION" "R71"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4384,7 +5063,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R104"
+				( attribute "LOCATION" "R71"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4449,6 +5128,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I136" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i137"
 				( attribute "CDS_LIB" "resistors"
@@ -4457,7 +5146,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R105"
+				( attribute "CDS_LOCATION" "R72"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4469,7 +5158,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R105"
+				( attribute "LOCATION" "R72"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4534,6 +5223,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I137" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i138"
 				( attribute "ABBREV" "10E116"
@@ -4542,13 +5241,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U26"
+				( attribute "CDS_LOCATION" "U84"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "4"
+				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U26"
+				( attribute "LOCATION" "U84"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4557,7 +5256,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "4"
+				( attribute "SEC" "3"
 					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
@@ -4576,6 +5275,31 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I138" )
+				( pin "a(0)"
+					( attribute "PN" "27"
+						( Origin gPackager )
+					)
+				)
+				( pin "\b*\(0)"
+					( attribute "PN" "28"
+						( Origin gPackager )
+					)
+				)
+				( pin "ref"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i139"
 				( attribute "CDS_LIB" "resistors"
@@ -4584,7 +5308,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R102"
+				( attribute "CDS_LOCATION" "R69"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4596,7 +5320,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R102"
+				( attribute "LOCATION" "R69"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4661,6 +5385,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I139" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i140"
 				( attribute "CDS_LIB" "resistors"
@@ -4669,7 +5403,7 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R103"
+				( attribute "CDS_LOCATION" "R70"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
@@ -4681,7 +5415,7 @@
 				( attribute "IC" "UNDEF"
 					( Origin gFrontEnd )
 				)
-				( attribute "LOCATION" "R103"
+				( attribute "LOCATION" "R70"
 					( Origin gPackager )
 				)
 				( attribute "MAX_TEMP" "RTMAX"
@@ -4746,6 +5480,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I140" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i141"
 				( attribute "ABBREV" "TP"
@@ -4754,13 +5498,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP56"
+				( attribute "CDS_LOCATION" "TP180"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP56"
+				( attribute "LOCATION" "TP180"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4785,6 +5529,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I141" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i142"
 				( attribute "ABBREV" "TP"
@@ -4793,13 +5542,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP57"
+				( attribute "CDS_LOCATION" "TP181"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP57"
+				( attribute "LOCATION" "TP181"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4824,6 +5573,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I142" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i143"
 				( attribute "ABBREV" "TP"
@@ -4832,13 +5586,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP60"
+				( attribute "CDS_LOCATION" "TP184"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP60"
+				( attribute "LOCATION" "TP184"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4863,6 +5617,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I143" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i144"
 				( attribute "ABBREV" "TP"
@@ -4871,13 +5630,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP61"
+				( attribute "CDS_LOCATION" "TP185"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP61"
+				( attribute "LOCATION" "TP185"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4902,6 +5661,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I144" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i157"
 				( attribute "ABBREV" "TP"
@@ -4910,13 +5674,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP62"
+				( attribute "CDS_LOCATION" "TP186"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP62"
+				( attribute "LOCATION" "TP186"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4941,6 +5705,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I157" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i158"
 				( attribute "ABBREV" "TP"
@@ -4949,13 +5718,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP63"
+				( attribute "CDS_LOCATION" "TP187"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP63"
+				( attribute "LOCATION" "TP187"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -4980,6 +5749,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I158" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i160"
 				( attribute "ABBREV" "TP"
@@ -4988,13 +5762,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP64"
+				( attribute "CDS_LOCATION" "TP188"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP64"
+				( attribute "LOCATION" "TP188"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5019,6 +5793,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I160" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i161"
 				( attribute "ABBREV" "TP"
@@ -5027,13 +5806,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP65"
+				( attribute "CDS_LOCATION" "TP189"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP65"
+				( attribute "LOCATION" "TP189"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5058,6 +5837,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I161" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i163"
 				( attribute "ABBREV" "TP"
@@ -5066,13 +5850,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP66"
+				( attribute "CDS_LOCATION" "TP190"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP66"
+				( attribute "LOCATION" "TP190"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5097,6 +5881,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I163" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i164"
 				( attribute "ABBREV" "TP"
@@ -5105,13 +5894,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP67"
+				( attribute "CDS_LOCATION" "TP191"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP67"
+				( attribute "LOCATION" "TP191"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5136,6 +5925,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I164" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i166"
 				( attribute "ABBREV" "TP"
@@ -5144,13 +5938,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP68"
+				( attribute "CDS_LOCATION" "TP192"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP68"
+				( attribute "LOCATION" "TP192"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5175,6 +5969,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I166" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i167"
 				( attribute "ABBREV" "TP"
@@ -5183,13 +5982,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP69"
+				( attribute "CDS_LOCATION" "TP193"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP69"
+				( attribute "LOCATION" "TP193"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5214,6 +6013,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I167" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i169"
 				( attribute "ABBREV" "TP"
@@ -5222,13 +6026,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP70"
+				( attribute "CDS_LOCATION" "TP194"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP70"
+				( attribute "LOCATION" "TP194"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5253,6 +6057,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I169" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i170"
 				( attribute "ABBREV" "TP"
@@ -5261,13 +6070,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP71"
+				( attribute "CDS_LOCATION" "TP195"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP71"
+				( attribute "LOCATION" "TP195"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5292,6 +6101,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I170" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i172"
 				( attribute "ABBREV" "TP"
@@ -5300,13 +6114,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP72"
+				( attribute "CDS_LOCATION" "TP196"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP72"
+				( attribute "LOCATION" "TP196"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5331,6 +6145,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I172" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i173"
 				( attribute "ABBREV" "TP"
@@ -5339,13 +6158,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP73"
+				( attribute "CDS_LOCATION" "TP197"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP73"
+				( attribute "LOCATION" "TP197"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5370,6 +6189,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I173" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i175"
 				( attribute "ABBREV" "TP"
@@ -5378,13 +6202,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP58"
+				( attribute "CDS_LOCATION" "TP182"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP58"
+				( attribute "LOCATION" "TP182"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5409,6 +6233,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I175" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i176"
 				( attribute "ABBREV" "TP"
@@ -5417,13 +6246,13 @@
 				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP59"
+				( attribute "CDS_LOCATION" "TP183"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "TP59"
+				( attribute "LOCATION" "TP183"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -5448,6 +6277,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I176" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i193"
 				( attribute "CDS_LIB" "ttl"
@@ -5456,13 +6290,13 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U20"
+				( attribute "CDS_LOCATION" "U129"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "2"
+				( attribute "CDS_SEC" "6"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U20"
+				( attribute "LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5474,7 +6308,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "2"
+				( attribute "SEC" "6"
 					( Origin gPackager )
 				)
 				( attribute "VER" "1"
@@ -5490,6 +6324,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I193" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i194"
 				( attribute "CDS_LIB" "ttl"
@@ -5498,55 +6342,13 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U20"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "3"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U20"
-					( Origin gPackager )
-				)
-				( attribute "MAX_DELAY" "10000"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "3"
-					( Origin gPackager )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-75,1525)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74F07_SOIC"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I194" )
-			)
-			( gate "@tubii_lib.latchexttrig(sch_1):page1_i195"
-				( attribute "CDS_LIB" "ttl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U20"
+				( attribute "CDS_LOCATION" "U46"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U20"
+				( attribute "LOCATION" "U46"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5564,7 +6366,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-75,2075)"
+				( attribute "XY" "(-75,1525)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
@@ -5573,64 +6375,32 @@
 				( attribute "CDS_PART_NAME" "74F07_SOIC"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I195" )
+				( objectStatus "PAGE1_I194" )
+				( pin "a(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
+				)
 			)
-			( gate "@tubii_lib.latchexttrig(sch_1):page1_i196"
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i195"
 				( attribute "CDS_LIB" "ttl"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U21"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "6"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U21"
-					( Origin gPackager )
-				)
-				( attribute "MAX_DELAY" "10000"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "6"
-					( Origin gPackager )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-75,2350)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74F07_SOIC"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I196" )
-			)
-			( gate "@tubii_lib.latchexttrig(sch_1):page1_i197"
-				( attribute "CDS_LIB" "ttl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U21"
+				( attribute "CDS_LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "5"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U21"
+				( attribute "LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5648,7 +6418,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-75,2675)"
+				( attribute "XY" "(-75,2075)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
@@ -5657,22 +6427,32 @@
 				( attribute "CDS_PART_NAME" "74F07_SOIC"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I197" )
+				( objectStatus "PAGE1_I195" )
+				( pin "a(0)"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
-			( gate "@tubii_lib.latchexttrig(sch_1):page1_i198"
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i196"
 				( attribute "CDS_LIB" "ttl"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U20"
+				( attribute "CDS_LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U20"
+				( attribute "LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5690,7 +6470,7 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(-75,1250)"
+				( attribute "XY" "(-75,2350)"
 					( Origin gFrontEnd )
 				)
 				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
@@ -5699,22 +6479,32 @@
 				( attribute "CDS_PART_NAME" "74F07_SOIC"
 					( Origin gPackager )
 				)
-				( objectStatus "PAGE1_I198" )
+				( objectStatus "PAGE1_I196" )
+				( pin "a(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
 			)
-			( gate "@tubii_lib.latchexttrig(sch_1):page1_i199"
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i197"
 				( attribute "CDS_LIB" "ttl"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U20"
+				( attribute "CDS_LOCATION" "U129"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "5"
+				( attribute "CDS_SEC" "3"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U20"
+				( attribute "LOCATION" "U129"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5726,7 +6516,111 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "5"
+				( attribute "SEC" "3"
+					( Origin gPackager )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-75,2675)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74F07_SOIC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I197" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i198"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U46"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U46"
+					( Origin gPackager )
+				)
+				( attribute "MAX_DELAY" "10000"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SEC" "2"
+					( Origin gPackager )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-75,1250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "74F07_SOIC"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "74F07_SOIC"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I198" )
+				( pin "a(0)"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
+				)
+			)
+			( gate "@tubii_lib.latchexttrig(sch_1):page1_i199"
+				( attribute "CDS_LIB" "ttl"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U46"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "3"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U46"
+					( Origin gPackager )
+				)
+				( attribute "MAX_DELAY" "10000"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SEC" "3"
 					( Origin gPackager )
 				)
 				( attribute "VER" "1"
@@ -5742,6 +6636,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I199" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i200"
 				( attribute "CDS_LIB" "ttl"
@@ -5750,13 +6654,13 @@
 				( attribute "CDS_LMAN_SYM_OUTLINE" "-50,75,100,-75"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U20"
+				( attribute "CDS_LOCATION" "U46"
 					( Origin gPackager )
 				)
-				( attribute "CDS_SEC" "6"
+				( attribute "CDS_SEC" "4"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U20"
+				( attribute "LOCATION" "U46"
 					( Origin gPackager )
 				)
 				( attribute "MAX_DELAY" "10000"
@@ -5768,7 +6672,7 @@
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
 				)
-				( attribute "SEC" "6"
+				( attribute "SEC" "4"
 					( Origin gPackager )
 				)
 				( attribute "VER" "1"
@@ -5784,6 +6688,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I200" )
+				( pin "a(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i219"
 				( attribute "CDS_LIB" "capacitors"
@@ -5859,19 +6773,29 @@
 				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "C41"
+				( attribute "CDS_LOCATION" "C44"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "C41"
+				( attribute "LOCATION" "C44"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I219" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i222"
 				( attribute "CDS_LIB" "resistors"
@@ -5944,19 +6868,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R107"
+				( attribute "CDS_LOCATION" "R74"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R107"
+				( attribute "LOCATION" "R74"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I222" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i223"
 				( attribute "CDS_LIB" "resistors"
@@ -6029,19 +6963,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R109"
+				( attribute "CDS_LOCATION" "R76"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R109"
+				( attribute "LOCATION" "R76"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I223" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i224"
 				( attribute "CDS_LIB" "resistors"
@@ -6114,19 +7058,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R115"
+				( attribute "CDS_LOCATION" "R78"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R115"
+				( attribute "LOCATION" "R78"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I224" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i225"
 				( attribute "CDS_LIB" "resistors"
@@ -6199,19 +7153,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R118"
+				( attribute "CDS_LOCATION" "R80"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R118"
+				( attribute "LOCATION" "R80"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I225" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i226"
 				( attribute "CDS_LIB" "resistors"
@@ -6284,19 +7248,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R106"
+				( attribute "CDS_LOCATION" "R73"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R106"
+				( attribute "LOCATION" "R73"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I226" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i227"
 				( attribute "CDS_LIB" "resistors"
@@ -6369,19 +7343,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R108"
+				( attribute "CDS_LOCATION" "R75"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R108"
+				( attribute "LOCATION" "R75"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I227" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i228"
 				( attribute "CDS_LIB" "resistors"
@@ -6454,19 +7438,29 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R113"
+				( attribute "CDS_LOCATION" "R77"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R113"
+				( attribute "LOCATION" "R77"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I228" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.latchexttrig(sch_1):page1_i229"
 				( attribute "CDS_LIB" "resistors"
@@ -6539,1018 +7533,28 @@
 				( attribute "CDS_PART_NAME" "RSMD0805-499,1%,0805"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "R116"
+				( attribute "CDS_LOCATION" "R79"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "R116"
+				( attribute "LOCATION" "R79"
 					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I229" )
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i29:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i30:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i41:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i41:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i43:a(0)"
-				( attribute "PN" "25"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i43:\b*\(0)"
-				( attribute "PN" "26"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i43:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i43:y(0)"
-				( attribute "PN" "17"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i43:\y*\(0)"
-				( attribute "PN" "18"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i84:a(0)"
-				( attribute "PN" "19"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i84:\b*\(0)"
-				( attribute "PN" "18"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i84:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i84:y(0)"
-				( attribute "PN" "17"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i85:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i85:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i86:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i86:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i217:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i217:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i88:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i89:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i90:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i90:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i91:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i91:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i92:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i92:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i93:a(0)"
-				( attribute "PN" "27"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i93:\b*\(0)"
-				( attribute "PN" "28"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i93:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i93:y(0)"
-				( attribute "PN" "14"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i93:\y*\(0)"
-				( attribute "PN" "15"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i94:a(0)"
-				( attribute "PN" "14"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i94:\b*\(0)"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i94:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i94:y(0)"
-				( attribute "PN" "15"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i215:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i215:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i96:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i97:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i98:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i98:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i99:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i99:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i100:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i100:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i101:a(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i101:\b*\(0)"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i101:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i101:y(0)"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i101:\y*\(0)"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i102:a(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i102:\b*\(0)"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i102:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i102:y(0)"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i213:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i213:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i104:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i105:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i106:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i106:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i107:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i107:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i108:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i108:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i109:a(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i109:\b*\(0)"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i109:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i109:y(0)"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i109:\y*\(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i110:a(0)"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i110:\b*\(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i110:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i110:y(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i211:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i211:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i112:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i113:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i114:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i114:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i115:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i115:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i116:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i116:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i117:a(0)"
-				( attribute "PN" "23"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i117:\b*\(0)"
-				( attribute "PN" "24"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i117:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i117:y(0)"
-				( attribute "PN" "20"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i117:\y*\(0)"
-				( attribute "PN" "21"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i118:a(0)"
-				( attribute "PN" "19"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i118:\b*\(0)"
-				( attribute "PN" "18"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i118:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i118:y(0)"
-				( attribute "PN" "17"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i209:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i209:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i120:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i121:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i122:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i122:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i123:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i123:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i124:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i124:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i125:a(0)"
-				( attribute "PN" "25"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i125:\b*\(0)"
-				( attribute "PN" "26"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i125:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i125:y(0)"
-				( attribute "PN" "17"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i125:\y*\(0)"
-				( attribute "PN" "18"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i126:a(0)"
-				( attribute "PN" "14"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i126:\b*\(0)"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i126:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i126:y(0)"
-				( attribute "PN" "15"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i207:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i207:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i128:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i129:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i130:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i130:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i131:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i131:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i132:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i132:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i133:a(0)"
-				( attribute "PN" "27"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i133:\b*\(0)"
-				( attribute "PN" "28"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i133:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i133:y(0)"
-				( attribute "PN" "14"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i133:\y*\(0)"
-				( attribute "PN" "15"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i134:a(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i134:\b*\(0)"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i134:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i134:y(0)"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i135:a(0)"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i135:\b*\(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i135:v"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i135:y(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i136:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i136:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i137:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i137:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i138:a(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i138:\b*\(0)"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i138:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i138:y(0)"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i138:\y*\(0)"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i139:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i139:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i140:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i140:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i141:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i142:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i143:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i144:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i157:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i158:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i160:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i161:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i163:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i164:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i166:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i167:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i169:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i170:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i172:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i173:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i175:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i176:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i193:a(0)"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i193:y"
-				( attribute "PN" "10"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i194:a(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i194:y"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i195:a(0)"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i195:y"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i196:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i196:y"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i197:a(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i197:y"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i198:a(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i198:y"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i199:a(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i199:y"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i200:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i200:y"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i219:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i219:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i222:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i222:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i223:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i223:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i224:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i224:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i225:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i225:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i226:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i226:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i227:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i227:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i228:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i228:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i229:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.latchexttrig(sch_1):page1_i229:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_lib.latchexttrig(sch_1):page1_i190:a(0)"
