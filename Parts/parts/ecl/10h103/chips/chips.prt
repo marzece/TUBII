@@ -1,0 +1,27 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive '10H103';
+  pin
+    'Q':
+      PIN_NUMBER='(3,4,19,18)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    'D1':
+      PIN_NUMBER='(5,8,15,13)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'D2':
+      PIN_NUMBER='(7,9,17,14)';
+      INPUT_LOAD='(-0.01,0.01)';
+  end_pin;
+  body
+    PART_NAME='10H103';
+    BODY_NAME='10H103';
+    JEDEC_TYPE='plcc20';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    POWER_PINS='(VCC1:2)';
+    POWER_PINS='(VCC2:20)';
+    POWER_PINS='(VEE:10)';
+    NC_PINS='(1,6,11,12,16)';
+  end_body;
+end_primitive;
+
+END.
