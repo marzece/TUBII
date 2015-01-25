@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 14 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -780,17 +780,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U126"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -804,7 +798,16 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
+					( Origin gPackager )
+				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "LOCATION" "U126"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
@@ -1028,6 +1031,46 @@
 					( attribute "PN" "2"
 						( Origin gPackager )
 					)
+				)
+			)
+			( gate "@tubii_lib.\ecl-ttl\(sch_1):page1_i31"
+				( attribute "ABBREV" "10E116"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "ecl"
+					( Origin gPackager )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "SECTION" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-1850,3450)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( attribute "CDS_PART_NAME" "10E116"
+					( Origin gPackager )
+				)
+				( objectStatus "PAGE1_I31" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
 				)
 			)
 			( pin "@tubii_lib.\ecl-ttl\(sch_1):page1_i29:c(0)"

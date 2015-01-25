@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-23T17:35:22</modificationTime>
+    <modificationTime>2015-01-25T15:22:56</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl-lvds" view="sch_1">
       <lastids>
         <instanceid>35</instanceid>
-        <netid>34</netid>
+        <netid>35</netid>
         <insttermid>89</insttermid>
       </lastids>
       <cells>
@@ -215,10 +215,6 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N10</id>
-          <name>unnamed_1_10e116_i46_b</name>
-        </net>
-        <net>
           <id>N25</id>
           <name>lvds_out</name>
           <scope>interface</scope>
@@ -271,6 +267,11 @@
         <net>
           <id>N18</id>
           <name>vtt</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N35</id>
+          <name>vbb_trans</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -447,7 +448,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N35" />
               </connections>
             </pin>
             <pin>
@@ -495,14 +496,14 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N10" />
+                <connection pinmsb="0" pinlsb="0" net="N35" />
               </connections>
             </pin>
             <pin>
               <id>M59</id>
               <termid>T19</termid>
               <connections>
-                <connection net="N10" />
+                <connection net="N35" />
               </connections>
             </pin>
             <pin>
@@ -929,6 +930,11 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vbb_trans">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vp3_3">
             <pageScope number="1">
               <scope>global</scope>
@@ -948,7 +954,6 @@
               <net ref="ecl_in"></net>
               <net ref="gnd"></net>
               <net ref="lvds_out"></net>
-              <net ref="unnamed_1_10e116_i46_b"></net>
               <net ref="unnamed_1_10e116_i46_y"></net>
               <net ref="unnamed_1_10ep90_i51_d"></net>
               <net ref="unnamed_1_10ep90_i51_q"></net>
@@ -956,6 +961,7 @@
               <net ref="unnamed_1_lvdsdriverds10_i14_in_1"></net>
               <net ref="unnamed_1_max9376_i48_in2"></net>
               <net ref="unnamed_1_rsmd0805_i54_a"></net>
+              <net ref="vbb_trans"></net>
               <net ref="vp3_3"></net>
               <net ref="vtt"></net>
             </nets>

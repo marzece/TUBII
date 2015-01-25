@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 10 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -483,9 +499,6 @@
 			( signal "@tubii_lib.\ecl-lvds\(sch_1):page1_gnd"
 				( objectFlag fObjectAlias )
 				( objectStatus "page1_gnd" )
-			)
-			( signal "@tubii_lib.\ecl-lvds\(sch_1):unnamed_1_10e116_i46_b"
-				( objectStatus "unnamed_1_10e116_i46_b" )
 			)
 			( signal "@tubii_lib.\ecl-lvds\(sch_1):vp3_3"
 				( objectStatus "vp3_3" )
@@ -519,6 +532,9 @@
 			)
 			( signal "@tubii_lib.\ecl-lvds\(sch_1):unnamed_1_rsmd0805_i54_a"
 				( objectStatus "unnamed_1_rsmd0805_i54_a" )
+			)
+			( signal "@tubii_lib.\ecl-lvds\(sch_1):vbb_trans"
+				( objectStatus "vbb_trans" )
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i12"
 				( attribute "CDS_LIB" "resistors"
@@ -604,6 +620,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I12" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i13"
 				( attribute "CDS_LIB" "resistors"
@@ -689,6 +715,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I13" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i14"
 				( attribute "CDS_LIB" "misc"
@@ -728,6 +764,41 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I14" )
+				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "\4\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "\5\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "\in+\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "\in-\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out+\"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out-\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i43"
 				( attribute "CDS_LIB" "capacitors"
@@ -816,6 +887,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I43" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i46"
 				( attribute "ABBREV" "10E116"
@@ -830,17 +911,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U130"
-					( Origin gPackager )
-				)
 				( attribute "PHYS_PAGE" "1"
 					( Origin gFrontEnd )
 				)
 				( attribute "ROT" "0"
 					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
 				)
 				( attribute "SECTION" "1"
 					( Origin gFrontEnd )
@@ -854,10 +929,23 @@
 				( attribute "CHIPS_PART_NAME" "10E116"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10E116"
+				( attribute "CDS_PART_NAME" "10E116_PLCC"
 					( Origin gPackager )
 				)
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
 				( objectStatus "PAGE1_I46" )
+				( pin "a(0)"
+				)
+				( pin "\b*\(0)"
+				)
+				( pin "ref"
+				)
+				( pin "y(0)"
+				)
+				( pin "\y*\(0)"
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i47"
 				( attribute "CDS_LIB" "resistors"
@@ -943,6 +1031,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I47" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i48"
 				( attribute "CDS_LIB" "misc"
@@ -982,6 +1080,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I48" )
+				( pin "in2"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+				)
+				( pin "\in2*\"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
+				( pin "out2"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "\out2*\"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i49"
 				( attribute "CDS_LIB" "resistors"
@@ -1067,6 +1185,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I49" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i50"
 				( attribute "CDS_LIB" "resistors"
@@ -1152,6 +1280,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I50" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i51"
 				( attribute "CDS_LIB" "ecl"
@@ -1191,6 +1329,26 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I51" )
+				( pin "d"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
+				( pin "\d*\"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "q"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "\q*\"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i52"
 				( attribute "CDS_LIB" "resistors"
@@ -1276,6 +1434,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I52" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i53"
 				( attribute "CDS_LIB" "resistors"
@@ -1361,6 +1529,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I53" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i54"
 				( attribute "CDS_LIB" "resistors"
@@ -1446,6 +1624,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I54" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i55"
 				( attribute "CDS_LIB" "resistors"
@@ -1531,205 +1719,15 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I55" )
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i12:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i12:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i13:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i13:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\1\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\4\"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\5\"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\in+\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\in-\"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\out+\"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i14:\out-\"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i43:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i43:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i46:a(0)"
-				( attribute "PN" "23"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i46:\b*\(0)"
-				( attribute "PN" "24"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i46:ref"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i46:y(0)"
-				( attribute "PN" "20"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i46:\y*\(0)"
-				( attribute "PN" "21"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i47:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i47:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i48:in2"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i48:\in2*\"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i48:out2"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i48:\out2*\"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i49:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i49:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i50:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i50:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i51:d"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i51:\d*\"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i51:q"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i51:\q*\"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i52:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i52:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i53:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i53:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i54:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i54:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i55:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i55:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_lib.\ecl-lvds\(sch_1):page1_i45:a(0)"
