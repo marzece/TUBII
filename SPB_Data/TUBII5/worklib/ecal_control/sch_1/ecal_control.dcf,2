@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 21 )
+			( logicalViewRevNum 32 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -519,6 +535,9 @@
 			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_ledl_i23_a"
 				( objectStatus "unnamed_1_ledl_i23_a" )
 			)
+			( signal "@tubii_lib.ecal_control(sch_1):unnamed_1_10e101_i7_y"
+				( objectStatus "unnamed_1_10e101_i7_y" )
+			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i7"
 				( attribute "ABBREV" "10E101"
 					( Origin gFrontEnd )
@@ -560,6 +579,36 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I7" )
+				( pin "a(0)"
+					( attribute "PN" "25"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "24"
+						( Origin gPackager )
+					)
+				)
+				( pin "c(0)"
+					( attribute "PN" "23"
+						( Origin gPackager )
+					)
+				)
+				( pin "d(0)"
+					( attribute "PN" "22"
+						( Origin gPackager )
+					)
+				)
+				( pin "y(0)"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "20"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i11"
 				( attribute "CDS_LIB" "resistors"
@@ -645,6 +694,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I11" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i12"
 				( attribute "CDS_LIB" "resistors"
@@ -730,6 +789,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I12" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i13"
 				( attribute "CDS_LIB" "resistors"
@@ -815,6 +884,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I13" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i15"
 				( attribute "CDS_LIB" "resistors"
@@ -900,6 +979,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I15" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i16"
 				( attribute "CDS_LIB" "resistors"
@@ -985,6 +1074,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I16" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i17"
 				( attribute "CDS_LIB" "resistors"
@@ -1070,6 +1169,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I17" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i20"
 				( attribute "CDS_LIB" "ecl"
@@ -1112,6 +1221,21 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I20" )
+				( pin "a"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "14"
+						( Origin gPackager )
+					)
+				)
+				( pin "y"
+					( attribute "PN" "18"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i21"
 				( attribute "CDS_LIB" "ecl"
@@ -1154,48 +1278,21 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I21" )
-			)
-			( gate "@tubii_lib.ecal_control(sch_1):page1_i22"
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
+				( pin "a"
+					( attribute "PN" "15"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,100,-125"
-					( Origin gPackager )
+				( pin "b"
+					( attribute "PN" "17"
+						( Origin gPackager )
+					)
 				)
-				( attribute "PACK_TYPE" "PLCC"
-					( Origin gFrontEnd )
+				( pin "y"
+					( attribute "PN" "19"
+						( Origin gPackager )
+					)
 				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-25,3250)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "MC10H124"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U25"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U25"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I22" )
 			)
 			( gate "@tubii_lib.ecal_control(sch_1):page1_i23"
 				( attribute "ABBREV" "LED"
@@ -1238,155 +1335,213 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I23" )
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:a(0)"
-				( attribute "PN" "25"
-					( Origin gPackager )
+				( pin "a"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
+				( pin "b"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:b(0)"
-				( attribute "PN" "24"
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i24"
+				( attribute "ABBREV" "TP"
+					( Origin gFrontEnd )
+				)
+				( attribute "CDS_LIB" "misc"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:c(0)"
-				( attribute "PN" "23"
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1600,2900)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:d(0)"
-				( attribute "PN" "22"
+				( attribute "CDS_PART_NAME" "TESTPOINT_L"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:y(0)"
-				( attribute "PN" "19"
+				( attribute "CDS_LOCATION" "TP287"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i7:\y*\(0)"
-				( attribute "PN" "20"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i11:a(0)"
-				( attribute "PN" "1"
+				( attribute "LOCATION" "TP287"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i11:b(0)"
-				( attribute "PN" "2"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i12:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I24" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i12:b(0)"
-				( attribute "PN" "2"
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i25"
+				( attribute "CDS_LIB" "resistors"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i13:a(0)"
-				( attribute "PN" "1"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-75,25,75,-25"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i13:b(0)"
-				( attribute "PN" "2"
+				( attribute "DIST" "FLAT"
+					( Origin gFrontEnd )
+				)
+				( attribute "IC" "UNDEF"
+					( Origin gFrontEnd )
+				)
+				( attribute "MAX_TEMP" "RTMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEEDS_NO_SIZE" "TRUE"
+					( Origin gFrontEnd )
+				)
+				( attribute "NEGTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "PACKTYPE" "0805"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "POSTOL" "5%"
+					( Origin gFrontEnd )
+				)
+				( attribute "POWER" "0.1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "SLOPE" "RSMAX"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC1" "RTMPL"
+					( Origin gFrontEnd )
+				)
+				( attribute "TC2" "RTMPO"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL" "1%"
+					( Origin gFrontEnd )
+				)
+				( attribute "TOL_ON_OFF" "ON"
+					( Origin gFrontEnd )
+				)
+				( attribute "VALUE" "50"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "VOLTAGE" "25V"
+					( Units "uVoltage" "V" 1.000000)
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(1400,2725)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "RSMD0805"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i15:a(0)"
-				( attribute "PN" "1"
+				( attribute "CDS_PART_NAME" "RSMD0805-50,1%,0805"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i15:b(0)"
-				( attribute "PN" "2"
+				( attribute "CDS_LOCATION" "R449"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i16:a(0)"
-				( attribute "PN" "1"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i16:b(0)"
-				( attribute "PN" "2"
+				( attribute "LOCATION" "R449"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i17:a(0)"
-				( attribute "PN" "1"
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i17:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I25" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i20:a"
-				( attribute "PN" "13"
+			( gate "@tubii_lib.ecal_control(sch_1):page1_i28"
+				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i20:b"
-				( attribute "PN" "14"
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,100,25,-100"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i20:y"
-				( attribute "PN" "18"
+				( attribute "PACK_TYPE" "PLCC"
+					( Origin gFrontEnd )
+				)
+				( attribute "PHYS_PAGE" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "ROT" "0"
+					( Origin gFrontEnd )
+				)
+				( attribute "VER" "1"
+					( Origin gFrontEnd )
+				)
+				( attribute "XY" "(-25,3250)"
+					( Origin gFrontEnd )
+				)
+				( attribute "CHIPS_PART_NAME" "MC10H124"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i21:a"
-				( attribute "PN" "15"
+				( attribute "CDS_PART_NAME" "MC10H124_PLCC"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i21:b"
-				( attribute "PN" "17"
+				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i21:y"
-				( attribute "PN" "19"
+				( attribute "LOCATION" "U25"
+					( Origin gFrontEnd )
+				)
+				( attribute "SEC" "1"
 					( Origin gPackager )
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i22:common"
-				( attribute "PN" "8"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I28" )
+				( pin "common"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i22:\in\"
-				( attribute "PN" "7"
-					( Origin gPackager )
+				( pin "\in\"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i22:\out\"
-				( attribute "PN" "3"
-					( Origin gPackager )
+				( pin "\out\"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i22:\out*\"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i23:a"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.ecal_control(sch_1):page1_i23:b"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "\out*\"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_lib.ecal_control(sch_1):page1_i4:c"
