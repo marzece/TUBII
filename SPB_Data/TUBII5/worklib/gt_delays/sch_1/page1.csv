@@ -2,22 +2,22 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"SELECT_LO_SRC\I";
-2"MTCD_LO*\I";
-3"VTT\G";
-4"VTT\G";
-5"LOCKOUT\I";
-6"LOCKOUT*\I";
-7"TTL_LOCKOUT*\I";
-8"DGT_TTL\I";
-9"GTRIGL\I";
-10"GTRIGH\I";
-11"LE_DGT\I";
-12"CLK\I";
-13"DATA\I";
-14"UN$1$ASYNCDELAYS$I3$DDGT";
-15"DGTH\I";
-16"DGTL\I";
+1"DGTL\I";
+2"DGTH\I";
+3"UN$1$ASYNCDELAYS$I3$DDGT";
+4"DATA\I";
+5"CLK\I";
+6"LE_DGT\I";
+7"GTRIGH\I";
+8"GTRIGL\I";
+9"DGT_TTL\I";
+10"TTL_LOCKOUT*\I";
+11"LOCKOUT*\I";
+12"LOCKOUT\I";
+13"VTT\G";
+14"VTT\G";
+15"MTCD_LO*\I";
+16"SELECT_LO_SRC\I";
 %"RSMD0805"
 "1","(1550,1850)","1","resistors","I18";
 ;
@@ -43,19 +43,19 @@ TOL"1%"
 POSTOL"5%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"4;
+$PN"1"13;
 "B<0>"
-$PN"2"5;
+$PN"2"12;
 %"SELECT_LO_SRC"
 "1","(1100,1950)","0","tubii_lib","I2";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"MTCD_LO* \B"2;
-"SEL"1;
-"DDGT* \B"14;
-"LO"5;
-"LO* \B"6;
+"MTCD_LO* \B"15;
+"SEL"16;
+"DDGT* \B"3;
+"LO"12;
+"LO* \B"11;
 %"10H125"
 "1","(2150,2675)","0","ecl","I20";
 SECTION"1";
@@ -66,13 +66,13 @@ CDS_SEC"1"
 PACK_TYPE"PLCC"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"19"6;
+$PN"19"11;
 "B <SIZE-1..0>* \B"
-$PN"18"5;
+$PN"18"12;
 "V"
 $PN"2"0;
 "Y <SIZE-1..0>"
-$PN"17"7;
+$PN"17"10;
 %"RSMD0805"
 "1","(1800,1825)","1","resistors","I21";
 ;
@@ -98,26 +98,26 @@ TOL_ON_OFF"ON"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"4;
+$PN"1"13;
 "B<0>"
-$PN"2"6;
+$PN"2"11;
 %"ASYNCDELAYS"
 "1","(-1850,2075)","0","tubii_lib","I3";
 ;
 BLOCK"TRUE"
 CDS_LIB"tubii_lib";
-"DGT_TTL"8;
-"GTRIGL"9;
-"GTRIGH"10;
+"DGT_TTL"9;
+"GTRIGL"8;
+"GTRIGH"7;
 "LE_DGT"
-VHDL_MODE"IN"11;
+VHDL_MODE"IN"6;
 "CLK"
-VHDL_MODE"IN"12;
+VHDL_MODE"IN"5;
 "DELAY_VAL"
-VHDL_MODE"IN"13;
-"DDGT* \B"14;
-"DGTH"15;
-"DGTL"16;
+VHDL_MODE"IN"4;
+"DDGT* \B"3;
+"DGTH"2;
+"DGTL"1;
 %"RSMD0805"
 "1","(-325,2300)","1","resistors","I8";
 ;
@@ -143,9 +143,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"14;
 "B<0>"
-$PN"2"15;
+$PN"2"2;
 %"RSMD0805"
 "1","(-500,2300)","1","resistors","I9";
 ;
@@ -171,7 +171,7 @@ NEGTOL"5%"
 NEEDS_NO_SIZE"TRUE"
 TOL"1%";
 "A<0>"
-$PN"1"3;
+$PN"1"14;
 "B<0>"
-$PN"2"16;
+$PN"2"1;
 END.

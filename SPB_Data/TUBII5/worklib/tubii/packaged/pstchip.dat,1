@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 23-Jan-2015 AT 15:22:04 }
+{ Packager-XL run on 23-Jan-2015 AT 17:30:43 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -402,6 +402,33 @@ primitive '10EP90';
       POWER_PINS='(VBB:4,7)';
       POWER_PINS='(VEE:10)';
       POWER_PINS='(GND:17,14)';
+  end_body;
+end_primitive;
+primitive '10H103';
+  pin
+    'Q':
+      PIN_NUMBER='(3,4,19,18)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+      PINUSE='OUT';
+    'D1':
+      PIN_NUMBER='(5,8,15,13)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+    'D2':
+      PIN_NUMBER='(7,9,17,14)';
+      INPUT_LOAD='(-0.01,0.01)';
+      PINUSE='IN';
+  end_pin;
+  body
+      PART_NAME='10H103';
+      BODY_NAME='10H103';
+      JEDEC_TYPE='PLCC20';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+      POWER_PINS='(VCC1:2)';
+      POWER_PINS='(VCC2:20)';
+      POWER_PINS='(VEE:10)';
+      NC_PINS='(1,6,11,12,16)';
   end_body;
 end_primitive;
 primitive '10H116_PLCC';
