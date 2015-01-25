@@ -8,7 +8,7 @@
   (design "nim-ecl"
     (lastIds
       (lastInstanceId 15)
-      (lastNetId 15)
+      (lastNetId 16)
       (lastInstTermId 36)
     )
     (cells
@@ -68,6 +68,7 @@
       ("N1" "gnd" -1 -1 2 )
       ("N10" "vee" -1 -1 2 )
       ("N11" "vtt" -1 -1 2 )
+      ("N16" "vbb_trans" -1 -1 2 )
     )
 
     (alias
@@ -164,6 +165,9 @@
             )
           )
           ("M21" "T19" -1 -1
+            (conn
+              ("0" -1 -1 "N16" -1 -1)
+            )
           )
           ("M22" "T20" 0 0
             (conn

@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-23T17:35:25</modificationTime>
+    <modificationTime>2015-01-25T14:35:51</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="nim-ecl" view="sch_1">
       <lastids>
         <instanceid>15</instanceid>
-        <netid>15</netid>
+        <netid>16</netid>
         <insttermid>36</insttermid>
       </lastids>
       <cells>
@@ -214,6 +214,11 @@
         <net>
           <id>N11</id>
           <name>vtt</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N16</id>
+          <name>vbb_trans</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -446,6 +451,7 @@
               <id>M21</id>
               <termid>T19</termid>
               <connections>
+                <connection net="N16" />
               </connections>
             </pin>
             <pin>
@@ -579,6 +585,11 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vbb_trans">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vee">
             <pageScope number="1">
               <scope>global</scope>
@@ -602,6 +613,7 @@
               <net ref="unnamed_1_10h116_i20_b"></net>
               <net ref="unnamed_1_10h116_i20_y"></net>
               <net ref="unnamed_1_10h116_i20_y_1"></net>
+              <net ref="vbb_trans"></net>
               <net ref="vee"></net>
               <net ref="vtt"></net>
             </nets>

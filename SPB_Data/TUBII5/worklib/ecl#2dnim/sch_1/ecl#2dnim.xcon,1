@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-23T15:26:12</modificationTime>
+    <modificationTime>2015-01-25T13:59:51</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecl-nim" view="sch_1">
       <lastids>
         <instanceid>19</instanceid>
-        <netid>21</netid>
+        <netid>22</netid>
         <insttermid>49</insttermid>
       </lastids>
       <cells>
@@ -135,10 +135,6 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N9</id>
-          <name>unnamed_1_10e116_i22_b</name>
-        </net>
-        <net>
           <id>N10</id>
           <name>unnamed_1_mpsh81_i4_c</name>
         </net>
@@ -171,6 +167,11 @@
         <net>
           <id>N13</id>
           <name>vtt</name>
+          <scope>global</scope>
+        </net>
+        <net>
+          <id>N22</id>
+          <name>vbb_trans</name>
           <scope>global</scope>
         </net>
       </nets>
@@ -332,14 +333,14 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N22" />
               </connections>
             </pin>
             <pin>
               <id>M25</id>
               <termid>T12</termid>
               <connections>
-                <connection net="N9" />
+                <connection net="N22" />
               </connections>
             </pin>
             <pin>
@@ -425,7 +426,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N22" />
               </connections>
             </pin>
             <pin>
@@ -473,6 +474,11 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="vbb_trans">
+            <pageScope number="1">
+              <scope>global</scope>
+            </pageScope>
+          </netScope>
           <netScope ref="vee">
             <pageScope number="1">
               <scope>global</scope>
@@ -492,9 +498,9 @@
               <net ref="ecl_in"></net>
               <net ref="gnd"></net>
               <net ref="nim_out"></net>
-              <net ref="unnamed_1_10e116_i22_b"></net>
               <net ref="unnamed_1_10e116_i22_y"></net>
               <net ref="unnamed_1_mpsh81_i4_c"></net>
+              <net ref="vbb_trans"></net>
               <net ref="vee"></net>
               <net ref="vtt"></net>
             </nets>
