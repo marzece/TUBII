@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 11 )
+			( logicalViewRevNum 12 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -594,18 +610,6 @@
 			)
 			( signal "@tubii_lib.caen_ports(sch_1):sync24h_lvds"
 				( objectStatus "sync24h_lvds" )
-			)
-			( signal "@tubii_lib.caen_ports(sch_1):unnamed_1_idsc10_i3_pin7"
-				( objectStatus "unnamed_1_idsc10_i3_pin7" )
-			)
-			( signal "@tubii_lib.caen_ports(sch_1):unnamed_1_idsc10_i3_pin6"
-				( objectStatus "unnamed_1_idsc10_i3_pin6" )
-			)
-			( signal "@tubii_lib.caen_ports(sch_1):unnamed_1_idsc10_i3_pin2"
-				( objectStatus "unnamed_1_idsc10_i3_pin2" )
-			)
-			( signal "@tubii_lib.caen_ports(sch_1):unnamed_1_idsc10_i3_pin1"
-				( objectStatus "unnamed_1_idsc10_i3_pin1" )
 			)
 			( signal "@tubii_lib.caen_ports(sch_1):page1_unnamed_1_8merge_i13_d"
 				( objectFlag fObjectAlias )
@@ -944,6 +948,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I12" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i11"
 				( attribute "ABBREV" "TP"
@@ -983,6 +992,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I11" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i10"
 				( attribute "ABBREV" "TP"
@@ -1022,6 +1036,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I10" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i9"
 				( attribute "ABBREV" "TP"
@@ -1061,6 +1080,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i8"
 				( attribute "ABBREV" "TP"
@@ -1100,6 +1124,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I8" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i7"
 				( attribute "ABBREV" "TP"
@@ -1139,6 +1168,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I7" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i6"
 				( attribute "ABBREV" "TP"
@@ -1178,6 +1212,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I6" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i5"
 				( attribute "ABBREV" "TP"
@@ -1217,45 +1256,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I5" )
-			)
-			( gate "@tubii_lib.caen_ports(sch_1):page1_i4"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(950,4000)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "LVDS_DRIVER_DS10"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "LVDS_DRIVER_DS10"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U30"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U30"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I4" )
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i3"
 				( attribute "CDS_LIB" "misc"
@@ -1295,45 +1300,56 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I3" )
-			)
-			( gate "@tubii_lib.caen_ports(sch_1):page1_i1"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
+				( pin "pin1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-125,125,125,-125"
-					( Origin gPackager )
+				( pin "pin2"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
+				( pin "pin3"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
 				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
+				( pin "pin4"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
 				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
+				( pin "pin5"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
 				)
-				( attribute "XY" "(1975,4025)"
-					( Origin gFrontEnd )
+				( pin "pin6"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CHIPS_PART_NAME" "LVDS_DRIVER_DS10"
-					( Origin gPackager )
+				( pin "pin7"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_PART_NAME" "LVDS_DRIVER_DS10"
-					( Origin gPackager )
+				( pin "pin8"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_LOCATION" "U32"
-					( Origin gPackager )
+				( pin "pin9"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
 				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
+				( pin "pin10"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
 				)
-				( attribute "LOCATION" "U32"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I1" )
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i14"
 				( attribute "ABBREV" "TP"
@@ -1373,6 +1389,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I14" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i15"
 				( attribute "ABBREV" "TP"
@@ -1412,6 +1433,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I15" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i16"
 				( attribute "ABBREV" "TP"
@@ -1451,6 +1477,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I16" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i17"
 				( attribute "ABBREV" "TP"
@@ -1490,6 +1521,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I17" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i18"
 				( attribute "ABBREV" "TP"
@@ -1529,6 +1565,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I18" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i19"
 				( attribute "ABBREV" "TP"
@@ -1568,6 +1609,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I19" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i20"
 				( attribute "ABBREV" "TP"
@@ -1607,6 +1653,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I20" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i21"
 				( attribute "ABBREV" "TP"
@@ -1646,6 +1697,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I21" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i25"
 				( attribute "ABBREV" "TP"
@@ -1685,6 +1741,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I25" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i26"
 				( attribute "ABBREV" "TP"
@@ -1724,6 +1785,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i27"
 				( attribute "ABBREV" "TP"
@@ -1763,6 +1829,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I27" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i28"
 				( attribute "ABBREV" "TP"
@@ -1802,6 +1873,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I28" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i29"
 				( attribute "ABBREV" "TP"
@@ -1841,6 +1917,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I29" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i33"
 				( attribute "ABBREV" "TP"
@@ -1880,6 +1961,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I33" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i34"
 				( attribute "ABBREV" "TP"
@@ -1919,6 +2005,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I34" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i35"
 				( attribute "ABBREV" "TP"
@@ -1958,6 +2049,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I35" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i41"
 				( attribute "ABBREV" "TP"
@@ -1997,6 +2093,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I41" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i42"
 				( attribute "ABBREV" "TP"
@@ -2036,6 +2137,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I42" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i43"
 				( attribute "ABBREV" "TP"
@@ -2075,6 +2181,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I43" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i44"
 				( attribute "ABBREV" "TP"
@@ -2114,6 +2225,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I44" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i50"
 				( attribute "ABBREV" "TP"
@@ -2153,6 +2269,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I50" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i51"
 				( attribute "ABBREV" "TP"
@@ -2192,6 +2313,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I51" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i55"
 				( attribute "ABBREV" "TP"
@@ -2231,6 +2357,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I55" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i56"
 				( attribute "ABBREV" "TP"
@@ -2270,6 +2401,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I56" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i58"
 				( attribute "ABBREV" "TP"
@@ -2309,6 +2445,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I58" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i60"
 				( attribute "ABBREV" "TP"
@@ -2348,6 +2489,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I60" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i62"
 				( attribute "ABBREV" "TP"
@@ -2387,6 +2533,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I62" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i64"
 				( attribute "ABBREV" "TP"
@@ -2426,6 +2577,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I64" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i66"
 				( attribute "ABBREV" "TP"
@@ -2465,6 +2621,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I66" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i68"
 				( attribute "ABBREV" "TP"
@@ -2504,6 +2665,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I68" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i70"
 				( attribute "ABBREV" "TP"
@@ -2543,6 +2709,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I70" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.caen_ports(sch_1):page1_i72"
 				( attribute "ABBREV" "TP"
@@ -2582,325 +2753,10 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I72" )
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i12:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i11:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i10:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i9:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i8:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i7:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i6:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i5:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\1\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\4\"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\5\"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\in+\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\in-\"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\out+\"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i4:\out-\"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin1"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin2"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin3"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin4"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin5"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin6"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin7"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin8"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin9"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i3:pin10"
-				( attribute "PN" "10"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\1\"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\4\"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\5\"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\in+\"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\in-\"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\out+\"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i1:\out-\"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i14:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i15:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i16:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i17:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i18:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i19:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i20:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i21:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i25:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i26:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i27:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i28:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i29:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i33:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i34:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i35:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i41:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i42:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i43:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i44:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i50:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i51:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i55:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i56:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i58:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i60:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i62:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i64:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i66:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i68:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i70:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.caen_ports(sch_1):page1_i72:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 			( bus "@tubii_lib.caen_ports(sch_1):caen_out"
