@@ -1,0 +1,26 @@
+FILE_TYPE=LIBRARY_PARTS;
+primitive 'DS90LV027';
+  pin
+    'D':
+      PIN_NUMBER='(2,3)';
+      INPUT_LOAD='(-0.01,0.01)';
+    'Q':
+      PIN_NUMBER='(7,6)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+    '-Q':
+      PIN_NUMBER='(8,5)';
+      OUTPUT_LOAD='(1.0,-1.0)';
+  end_pin;
+  body
+    PART_NAME='DS90LV027';
+    BODY_NAME='DS90LV027';
+    JEDEC_TYPE='soic8';
+    PHYS_DES_PREFIX='U';
+    CLASS='IC';
+    GROUND_NETS='GND';
+    POWER_PINS='(VCC:1)';
+    POWER_PINS='(GND:4)';
+  end_body;
+end_primitive;
+
+END.
