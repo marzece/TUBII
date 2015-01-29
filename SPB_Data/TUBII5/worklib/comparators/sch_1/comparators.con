@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "comparators"
     (lastIds
-      (lastInstanceId 22)
-      (lastNetId 533)
-      (lastInstTermId 914)
+      (lastInstanceId 24)
+      (lastNetId 542)
+      (lastInstTermId 933)
     )
     (cells
       ("S2" "fastcomp" "tubii_lib" "sym_1"
@@ -38,11 +38,6 @@
           ("T284" "lo*" -1 -1 3)
           ("T321" "dgt_gate" -1 -1 3)
           ("T370" "vbb_comp" -1 -1 1)
-        )
-      )
-      ("S4" "testpoint_l" "misc" "sym_1"
-        (terms
-          ("T49" "a" -1 -1 3)
         )
       )
       ("S6" "bas16lt1" "diodes" "sym_1"
@@ -77,6 +72,13 @@
           ("T330" "s" -1 -1 1)
         )
       )
+      ("S10" "ss12sdp2" "misc" "sym_1"
+        (terms
+          ("T406" "p" -1 -1 3)
+          ("T407" "t_a" -1 -1 3)
+          ("T408" "t_b" -1 -1 3)
+        )
+      )
     )
 
     (nets
@@ -86,7 +88,6 @@
       ("N16" "le_tune" -1 -1 1 3)
       ("N17" "unnamed_1_fastcomp_i1_anpulsein" -1 -1 0 )
       ("N18" "unnamed_1_fastcomp_i1_posneg" -1 -1 0 )
-      ("N19" "unnamed_1_testpointl_i6_a" -1 -1 0 )
       ("N32" "dgth" -1 -1 1 3)
       ("N35" "lockout*" -1 -1 1 3)
       ("N43" "unnamed_1_bas16lt1_i14_cat" -1 -1 0 )
@@ -99,6 +100,7 @@
       ("N82" "gtrig" -1 -1 1 3)
       ("N307" "unnamed_1_10h131_i26_q" -1 -1 0 )
       ("N397" "vbb_comp" -1 -1 0 )
+      ("N542" "unnamed_1_ss12sdp2_i27_p" -1 -1 0 )
       ("N46" "vref2m" -1 -1 2 )
       ("gnd" "gnd" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2 )
@@ -184,7 +186,7 @@
           )
           ("M32" "T43" -1 -1
             (conn
-              ("0" -1 -1 "N19" -1 -1)
+              ("0" -1 -1 "N542" -1 -1)
             )
           )
           ("M118" "T160" -1 -1
@@ -215,60 +217,6 @@
           ("M693" "T370" -1 -1
             (conn
               ("0" -1 -1 "N397" -1 -1)
-            )
-          )
-        )
-      )
-      ("I3" "page1_i3" "S4"
-        (pins
-          ("M33" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "N18" -1 -1)
-            )
-          )
-        )
-      )
-      ("I4" "page1_i4" "S4"
-        (pins
-          ("M34" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "vcc" -1 -1)
-            )
-          )
-        )
-      )
-      ("I5" "page1_i5" "S4"
-        (pins
-          ("M35" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "gnd" -1 -1)
-            )
-          )
-        )
-      )
-      ("I6" "page1_i6" "S4"
-        (pins
-          ("M36" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "N19" -1 -1)
-            )
-          )
-        )
-      )
-      ("I7" "page1_i7" "S4"
-        (pins
-          ("M37" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "vcc" -1 -1)
-            )
-          )
-        )
-      )
-      ("I8" "page1_i8" "S4"
-        (pins
-          ("M38" "T49" -1 -1
-            (conn
-              ("0" -1 -1 "gnd" -1 -1)
             )
           )
         )
@@ -398,6 +346,44 @@
           ("M546" "T330" -1 -1
             (conn
               ("0" -1 -1 "N32" -1 -1)
+            )
+          )
+        )
+      )
+      ("I23" "page1_i27" "S10"
+        (pins
+          ("M928" "T406" -1 -1
+            (conn
+              ("0" -1 -1 "N542" -1 -1)
+            )
+          )
+          ("M929" "T407" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+          ("M930" "T408" -1 -1
+            (conn
+              ("0" -1 -1 "gnd" -1 -1)
+            )
+          )
+        )
+      )
+      ("I24" "page1_i28" "S10"
+        (pins
+          ("M931" "T406" -1 -1
+            (conn
+              ("0" -1 -1 "N18" -1 -1)
+            )
+          )
+          ("M932" "T407" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+          ("M933" "T408" -1 -1
+            (conn
+              ("0" -1 -1 "gnd" -1 -1)
             )
           )
         )
