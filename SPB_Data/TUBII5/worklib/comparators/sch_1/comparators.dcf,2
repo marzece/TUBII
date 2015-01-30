@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 67 )
+			( logicalViewRevNum 68 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -592,6 +608,12 @@
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):vbb_comp") )
 				( objectStatus "vbb_comp" )
 			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):vbb_comp"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):vbb_comp"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i29_y"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_ad96685_i98_qp"
@@ -703,7 +725,7 @@
 				( objectStatus "unnamed_1_fastcomp_i1_posneg" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):unnamed_1_testpointl_i6_a"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):anpulsein") )
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):posneg") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_TESTPOINTL_I6_A"
 					( Origin gPackager )
 				)
@@ -717,7 +739,7 @@
 				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):unnamed_1_bas16lt1_i14_cat"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):posneg") )
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):anpulsein") )
 				( attribute "PHYS_NET_NAME" "UNNAMED_1_BAS16LT1_I14_CAT"
 					( Origin gPackager )
 				)
@@ -767,12 +789,6 @@
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_mc10h104_i109_b"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_ledl_i10_a"
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):vbb_comp"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):vbb_comp"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_mc10h104_i126_a"
 			)
@@ -1097,7 +1113,6 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10E116_PLCC"
-					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( attribute "PACK_TYPE" "PLCC"
@@ -1983,7 +1998,6 @@
 					( Origin gPackager )
 				)
 				( attribute "CDS_PART_NAME" "10E116_PLCC"
-					( Status sBlockFlattened )
 					( Origin gPackager )
 				)
 				( attribute "PACK_TYPE" "PLCC"
@@ -11261,7 +11275,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "fastcomp"
@@ -14880,7 +14894,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "tuncomp"

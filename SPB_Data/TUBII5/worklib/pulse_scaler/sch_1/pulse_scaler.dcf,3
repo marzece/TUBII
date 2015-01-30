@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 4 )
+			( logicalViewRevNum 6 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -499,11 +515,11 @@
 			( signal "@tubii_lib.pulse_scaler(sch_1):test"
 				( objectStatus "test" )
 			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i1"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
+			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i9"
 				( attribute "CDS_LIB" "misc"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,400,50,-400"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -515,340 +531,47 @@
 				( attribute "VER" "1"
 					( Origin gFrontEnd )
 				)
-				( attribute "XY" "(1200,3650)"
+				( attribute "XY" "(1600,3475)"
 					( Origin gFrontEnd )
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
+				( attribute "CHIPS_PART_NAME" "SIP_HEADER_16PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
+				( attribute "CDS_PART_NAME" "SIP_HEADER_16PIN"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "TP223"
-					( Origin gPackager )
+				( objectStatus "PAGE1_I9" )
+				( pin "\1\"
 				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
+				( pin "\2\"
 				)
-				( attribute "LOCATION" "TP223"
-					( Origin gPackager )
+				( pin "\3\"
 				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
+				( pin "\4\"
 				)
-				( objectStatus "PAGE1_I1" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i2"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
+				( pin "\5\"
 				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
+				( pin "\6\"
 				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
+				( pin "\7\"
 				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
+				( pin "\8\"
 				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
+				( pin "\9\"
 				)
-				( attribute "XY" "(1200,3825)"
-					( Origin gFrontEnd )
+				( pin "\10\"
 				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
+				( pin "\11\"
 				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
+				( pin "\12\"
 				)
-				( attribute "CDS_LOCATION" "TP222"
-					( Origin gPackager )
+				( pin "\13\"
 				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
+				( pin "\14\"
 				)
-				( attribute "LOCATION" "TP222"
-					( Origin gPackager )
+				( pin "\15\"
 				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I2" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i3"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,3500)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP224"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP224"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I3" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i4"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,3350)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP225"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP225"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I4" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i5"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,3200)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP226"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP226"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I5" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i6"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,3050)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP227"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP227"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I6" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i7"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,2925)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP228"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP228"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I7" )
-			)
-			( gate "@tubii_lib.pulse_scaler(sch_1):page1_i8"
-				( attribute "ABBREV" "TP"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(1200,3975)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "TESTPOINT_L"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "TP221"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "TP221"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I8" )
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i1:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i2:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i3:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i4:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i5:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i6:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i7:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.pulse_scaler(sch_1):page1_i8:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "\16\"
 				)
 			)
 		)

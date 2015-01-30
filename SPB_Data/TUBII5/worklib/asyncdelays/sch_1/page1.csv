@@ -2,26 +2,26 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"DGT_TTL\I";
-2"UN$1$10H125$I9$Y";
-3"LE_DGT\I";
-4"UN$1$DS1023200$I31$Q";
-5"UN$1$DS1023500$I19$LE";
-6"CLK\I";
-7"DELAY_VAL\I";
-8"VCC\G";
-9"GND\G";
-10"DGTL\I";
-11"DGTH\I";
-12"DDGT*\I";
-13"UN$1$MC10H124$I29$OUT";
-14"UN$1$DS1023500$I19$OUT";
-15"GND\G";
-16"VCC\G";
-17"CLK\I";
-18"GTRIGL\I";
-19"VCC\G";
-20"GTRIGH\I";
+1"GTRIGH\I";
+2"VCC\G";
+3"GTRIGL\I";
+4"CLK\I";
+5"VCC\G";
+6"GND\G";
+7"UN$1$DS1023500$I19$OUT";
+8"UN$1$MC10H124$I29$OUT";
+9"DDGT*\I";
+10"DGTH\I";
+11"DGTL\I";
+12"GND\G";
+13"VCC\G";
+14"DELAY_VAL\I";
+15"CLK\I";
+16"UN$1$DS1023500$I19$LE";
+17"UN$1$DS1023200$I31$Q";
+18"LE_DGT\I";
+19"UN$1$10H125$I9$Y";
+20"DGT_TTL\I";
 %"DS1023500"
 "1","(150,2100)","0","ttl","I19";
 ;
@@ -32,7 +32,7 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-175,250,175,-250"
 CDS_LIB"ttl";
 "IN"
-$PN"1"2;
+$PN"1"19;
 "Q/P0"
 $PN"3"0;
 "P4"
@@ -40,9 +40,9 @@ $PN"7"0;
 "P3"
 $PN"6"0;
 "CLK/P1"
-$PN"4"17;
+$PN"4"4;
 "D/P2"
-$PN"5"4;
+$PN"5"17;
 "P7"
 $PN"13"0;
 "P6"
@@ -50,15 +50,15 @@ $PN"12"0;
 "P5"
 $PN"10"0;
 "MS"
-$PN"11"15;
+$PN"11"6;
 "PS"
-$PN"14"16;
+$PN"14"5;
 "PWM"
 $PN"9"0;
 "OUT"
-$PN"15"14;
+$PN"15"7;
 "LE* \B"
-$PN"2"5;
+$PN"2"16;
 %"F06"
 "1","(-575,3275)","0","ttl","I22";
 MAX_DELAY"10000";
@@ -69,9 +69,9 @@ CDS_SEC"5"
 PACK_TYPE"SOIC"
 CDS_LIB"ttl";
 "A <SIZE-1..0>"
-$PN"3"3;
+$PN"3"18;
 "Y <SIZE-1..0>* \B"
-$PN"4"5;
+$PN"4"16;
 %"TESTPOINT_L"
 "1","(1375,2200)","0","misc","I24";
 ;
@@ -83,19 +83,19 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"13;
+$PN"1"8;
 %"LED_PULSE"
 "1","(875,3600)","0","tubii_lib","I25";
 ;
 CDS_LIB"tubii_lib"
 BLOCK"TRUE";
-"PULSE_IN"1;
+"PULSE_IN"20;
 %"LED_PULSE"
 "1","(1050,1500)","0","tubii_lib","I26";
 ;
 CDS_LIB"tubii_lib"
 BLOCK"TRUE";
-"PULSE_IN"14;
+"PULSE_IN"7;
 %"RSMD0805"
 "1","(-375,3450)","1","resistors","I28";
 ;
@@ -121,9 +121,9 @@ CDS_LIB"resistors"
 TOL"1%"
 PACKTYPE"0805";
 "A<0>"
-$PN"1"5;
+$PN"1"16;
 "B<0>"
-$PN"2"19;
+$PN"2"2;
 %"MC10H124"
 "1","(825,2150)","0","ecl","I29";
 ;
@@ -135,13 +135,13 @@ PACK_TYPE"PLCC"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
 "IN"
-$PN"7"14;
+$PN"7"7;
 "OUT"
-$PN"3"13;
+$PN"3"8;
 "COMMON"
 $PN"8"0;
 "OUT* \B"
-$PN"5"12;
+$PN"5"9;
 %"MC10H124"
 "1","(975,3100)","0","ecl","I30";
 ;
@@ -153,13 +153,13 @@ PACK_TYPE"PLCC"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,100,25,-100";
 "IN"
-$PN"9"1;
+$PN"9"20;
 "OUT"
-$PN"2"11;
+$PN"2"10;
 "COMMON"
 $PN"8"0;
 "OUT* \B"
-$PN"4"10;
+$PN"4"11;
 %"DS1023200"
 "1","(75,3100)","0","ttl","I31";
 ;
@@ -170,27 +170,27 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-125,300,125,-300"
 CDS_LIB"ttl";
 "IN"
-$PN"1"2;
+$PN"1"19;
 "PWM"
 $PN"9"0;
 "OUT"
-$PN"15"1;
+$PN"15"20;
 "P3"
 $PN"6"0;
 "P4"
 $PN"7"0;
 "D/P2"
-$PN"5"7;
+$PN"5"14;
 "PS"
-$PN"14"8;
+$PN"14"13;
 "CLK/P1"
-$PN"4"6;
+$PN"4"15;
 "LE* \B"
-$PN"2"5;
+$PN"2"16;
 "Q/P0"
-$PN"3"4;
+$PN"3"17;
 "MS"
-$PN"11"9;
+$PN"11"12;
 "P5"
 $PN"10"0;
 "P6"
@@ -206,11 +206,11 @@ $SEC"2"
 CDS_SEC"2"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"14"20;
+$PN"14"1;
 "B <SIZE-1..0>* \B"
-$PN"13"18;
+$PN"13"3;
 "V"
 $PN"2"0;
 "Y <SIZE-1..0>"
-$PN"15"2;
+$PN"15"19;
 END.
