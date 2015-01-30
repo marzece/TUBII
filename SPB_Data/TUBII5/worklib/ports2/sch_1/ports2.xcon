@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-01-30T17:33:31</modificationTime>
+    <modificationTime>2015-01-30T18:39:18</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports2" view="sch_1">
       <lastids>
         <instanceid>28</instanceid>
-        <netid>98</netid>
-        <insttermid>618</insttermid>
+        <netid>100</netid>
+        <insttermid>627</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -150,14 +150,14 @@
             <term>
               <id>T38</id>
               <name>rawtrigs</name>
-              <direction>input</direction>
+              <direction>inout</direction>
               <msb>3</msb>
               <lsb>0</lsb>
             </term>
             <term>
               <id>T99</id>
               <name>tubii_rt</name>
-              <direction>output</direction>
+              <direction>inout</direction>
             </term>
           </terms>
         </cell>
@@ -345,6 +345,12 @@
           <name>unnamed_1_10h103_i2_d2</name>
         </net>
         <net>
+          <id>N100</id>
+          <name>page1_rawtrigs</name>
+          <msb>3</msb>
+          <lsb>0</lsb>
+        </net>
+        <net>
           <id>N3</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -363,6 +369,7 @@
       </nets>
       <aliases>
         <alias net1="N4" lsb1="-1" msb1="-1" net2="N3" lsb2="-1" msb2="-1" />
+        <alias net1="N100" lsb1="0" msb1="3" net2="N20" lsb2="0" msb2="3" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -861,7 +868,6 @@
               <msb>3</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="3" pinlsb="0" net="N20" netmsb="3" netlsb="0" />
               </connections>
             </pin>
             <pin>

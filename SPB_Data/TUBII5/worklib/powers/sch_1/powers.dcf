@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 20 )
+			( logicalViewRevNum 21 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,6 +465,22 @@
 			)
 			( Objects
 				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
 			)
 			( Analysis
 			)
@@ -2808,22 +2824,10 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U13"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
 				( objectStatus "PAGE1_I53" )
 				( pin "a"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
 				)
 				( pin "b"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
 				)
 			)
 			( gate "@tubii_lib.powers(sch_1):page1_i54"
@@ -3050,22 +3054,10 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U15"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
 				( objectStatus "PAGE1_I56" )
 				( pin "a"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
 				)
 				( pin "b"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
 				)
 			)
 			( gate "@tubii_lib.powers(sch_1):page1_i58"
