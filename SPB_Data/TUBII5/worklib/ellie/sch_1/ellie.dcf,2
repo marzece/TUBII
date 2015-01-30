@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 4 )
+			( logicalViewRevNum 5 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -482,7 +482,8 @@
 			( signal "@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):delay_out"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):pulse_in"
+			( signal "@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):pulse_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ellie(sch_1):tellie_delay_in"
 				( alias ( signalRef "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):delay_in") )
@@ -498,7 +499,8 @@
 			( signal "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):delay_out"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):pulse_in"
+			( signal "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):pulse_out"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.ellie(sch_1):vcc"
 				( alias ( signalRef "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):vcc") )
@@ -559,9 +561,11 @@
 			( signal "@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):unnamed_1_rsmd0805_i19_a"
 			)
 			( signal "@tubii_lib.ellie(sch_1):smellie_pulse_out"
+				( alias ( signalRef "@tubii_lib.ellie(sch_1):page1_i2@tubii_lib.ellie_talk(sch_1):pulse_out") )
 				( objectStatus "smellie_pulse_out" )
 			)
 			( signal "@tubii_lib.ellie(sch_1):tellie_pulse_out"
+				( alias ( signalRef "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):pulse_out") )
 				( objectStatus "tellie_pulse_out" )
 			)
 			( gate "@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):page1_i1"
@@ -3781,7 +3785,7 @@
 	( BaseCopy "ellie_talk"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 4 )
+				( logicalViewRevNum 5 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -3798,9 +3802,6 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):delay_in"
 				( objectStatus "delay_in" )
-			)
-			( signal "@tubii_lib.ellie_talk(sch_1):pulse_in"
-				( objectStatus "pulse_in" )
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):unnamed_1_10e116_i9_a"
 				( objectStatus "unnamed_1_10e116_i9_a" )
@@ -3837,6 +3838,9 @@
 			)
 			( signal "@tubii_lib.ellie_talk(sch_1):delay_out"
 				( objectStatus "delay_out" )
+			)
+			( signal "@tubii_lib.ellie_talk(sch_1):pulse_out"
+				( objectStatus "pulse_out" )
 			)
 			( gate "@tubii_lib.ellie_talk(sch_1):page1_i1"
 				( attribute "CDS_LIB" "ecl"

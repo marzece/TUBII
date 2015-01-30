@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-09-24T17:32:11</modificationTime>
+    <modificationTime>2014-10-03T15:57:30</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ellie" view="sch_1">
       <lastids>
         <instanceid>2</instanceid>
-        <netid>8</netid>
-        <insttermid>10</insttermid>
+        <netid>12</netid>
+        <insttermid>14</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -27,16 +27,11 @@
             <term>
               <id>T9</id>
               <name>delay_in</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T10</id>
               <name>delay_out</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T11</id>
-              <name>pulse_in</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -56,12 +51,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N3</id>
-          <name>smellie_pulse_in</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N4</id>
           <name>tellie_delay_in</name>
           <scope>interface</scope>
@@ -74,8 +63,14 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N6</id>
-          <name>tellie_pulse_in</name>
+          <id>N11</id>
+          <name>smellie_pulse_out</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N12</id>
+          <name>tellie_pulse_out</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -128,13 +123,6 @@
                 <connection net="N5" />
               </connections>
             </pin>
-            <pin>
-              <id>M5</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N6" />
-              </connections>
-            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -170,13 +158,6 @@
                 <connection net="N2" />
               </connections>
             </pin>
-            <pin>
-              <id>M10</id>
-              <termid>T11</termid>
-              <connections>
-                <connection net="N3" />
-              </connections>
-            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -195,7 +176,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="smellie_delay_in">
             <pageScope number="1">
@@ -209,7 +189,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="smellie_pulse_in">
+          <netScope ref="smellie_pulse_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -227,7 +207,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tellie_pulse_in">
+          <netScope ref="tellie_pulse_out">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -241,10 +221,10 @@
             <nets>
               <net ref="smellie_delay_in"></net>
               <net ref="smellie_delay_out"></net>
-              <net ref="smellie_pulse_in"></net>
+              <net ref="smellie_pulse_out"></net>
               <net ref="tellie_delay_in"></net>
               <net ref="tellie_delay_out"></net>
-              <net ref="tellie_pulse_in"></net>
+              <net ref="tellie_pulse_out"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

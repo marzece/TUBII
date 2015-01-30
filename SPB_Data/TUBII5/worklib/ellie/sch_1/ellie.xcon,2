@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-03T15:56:35</modificationTime>
+    <modificationTime>2014-10-03T15:58:19</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -13,7 +13,7 @@
       <lastids>
         <instanceid>2</instanceid>
         <netid>12</netid>
-        <insttermid>14</insttermid>
+        <insttermid>16</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -27,16 +27,16 @@
             <term>
               <id>T9</id>
               <name>delay_in</name>
-              <direction>input</direction>
+              <direction>output</direction>
             </term>
             <term>
               <id>T10</id>
               <name>delay_out</name>
-              <direction>output</direction>
+              <direction>input</direction>
             </term>
             <term>
-              <id>T11</id>
-              <name>pulse_in</name>
+              <id>T24</id>
+              <name>pulse_out</name>
               <direction>input</direction>
             </term>
           </terms>
@@ -118,19 +118,19 @@
               <id>M3</id>
               <termid>T9</termid>
               <connections>
-                <connection net="N5" />
+                <connection net="N4" />
               </connections>
             </pin>
             <pin>
               <id>M4</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N4" />
+                <connection net="N5" />
               </connections>
             </pin>
             <pin>
-              <id>M5</id>
-              <termid>T11</termid>
+              <id>M15</id>
+              <termid>T24</termid>
               <connections>
                 <connection net="N12" />
               </connections>
@@ -160,19 +160,19 @@
               <id>M8</id>
               <termid>T9</termid>
               <connections>
-                <connection net="N2" />
+                <connection net="N1" />
               </connections>
             </pin>
             <pin>
               <id>M9</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N1" />
+                <connection net="N2" />
               </connections>
             </pin>
             <pin>
-              <id>M10</id>
-              <termid>T11</termid>
+              <id>M16</id>
+              <termid>T24</termid>
               <connections>
                 <connection net="N11" />
               </connections>
@@ -195,7 +195,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="smellie_delay_in">
             <pageScope number="1">
