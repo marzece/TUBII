@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 52 )
+			( logicalViewRevNum 55 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -595,12 +595,6 @@
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i107_b"
 				( objectStatus "unnamed_1_10e116_i107_b" )
 			)
-			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i119_a"
-				( objectStatus "unnamed_1_10e116_i119_a" )
-			)
-			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i119_b"
-				( objectStatus "unnamed_1_10e116_i119_b" )
-			)
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i74_y"
 				( objectStatus "unnamed_1_10e116_i74_y" )
 			)
@@ -614,12 +608,20 @@
 				( objectStatus "sr_clk" )
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):clk100_outl"
+				( alias ( signalRef "@tubii_lib.tubii_time(sch_1):page1_clk100_outl") )
+				( attribute "PHYS_NET_NAME" "CLK100_OUTL"
+					( Origin gPackager )
+				)
 				( objectStatus "clk100_outl" )
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):unnamed_1_10h125_i38_y"
 				( objectStatus "unnamed_1_10h125_i38_y" )
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):clk100_outh"
+				( alias ( signalRef "@tubii_lib.tubii_time(sch_1):page1_clk100_outh") )
+				( attribute "PHYS_NET_NAME" "CLK100_OUTH"
+					( Origin gPackager )
+				)
 				( objectStatus "clk100_outh" )
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):vcc"
@@ -896,7 +898,23 @@
 				( objectStatus "vbb" )
 			)
 			( signal "@tubii_lib.tubii_time(sch_1):delay_vbb"
+				( alias ( signalRef "@tubii_lib.tubii_time(sch_1):page1_delay_vbb") )
+				( attribute "PHYS_NET_NAME" "DELAY_VBB"
+					( Origin gPackager )
+				)
 				( objectStatus "delay_vbb" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):page1_clk100_outh"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_clk100_outh" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):page1_clk100_outl"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_clk100_outl" )
+			)
+			( signal "@tubii_lib.tubii_time(sch_1):page1_delay_vbb"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_delay_vbb" )
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i38"
 				( attribute "CDS_LIB" "ecl"
@@ -5513,73 +5531,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.tubii_time(sch_1):page1_i119"
-				( attribute "ABBREV" "10E116"
-					( Origin gFrontEnd )
-				)
-				( attribute "CDS_LIB" "ecl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "U61"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "LOCATION" "U93"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "2"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "SECTION" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(2050,4775)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "10E116"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I119" )
-				( pin "a(0)"
-					( attribute "PN" "23"
-						( Origin gPackager )
-					)
-				)
-				( pin "\b*\(0)"
-					( attribute "PN" "24"
-						( Origin gPackager )
-					)
-				)
-				( pin "ref"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-				( pin "y(0)"
-					( attribute "PN" "20"
-						( Origin gPackager )
-					)
-				)
-				( pin "\y*\(0)"
-					( attribute "PN" "21"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i120"
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
@@ -5813,13 +5764,13 @@
 				( attribute "CDS_LIB" "ecl"
 					( Origin gPackager )
 				)
-				( attribute "CDS_LOCATION" "U78"
+				( attribute "CDS_LOCATION" "U33"
 					( Origin gPackager )
 				)
 				( attribute "CDS_SEC" "5"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U78"
+				( attribute "LOCATION" "U33"
 					( Origin gPackager )
 				)
 				( attribute "PHYS_PAGE" "1"
@@ -9365,10 +9316,48 @@
 				( attribute "CDS_PART_NAME" "SS22SDP2"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U104"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I216" )
 				( pin "p1"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 				( pin "p2"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "t_a1"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "t_a2"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
+				( pin "t_b1"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "t_b2"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i217"
@@ -9396,10 +9385,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U48"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U48"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I217" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i219"
@@ -9427,10 +9434,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U100"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U100"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I219" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i220"
@@ -9458,10 +9483,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U99"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U99"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I220" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i222"
@@ -9489,10 +9532,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U49"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U49"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I222" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i223"
@@ -9520,10 +9581,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U50"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U50"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I223" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( gate "@tubii_lib.tubii_time(sch_1):page1_i224"
@@ -9551,10 +9630,28 @@
 				( attribute "CDS_PART_NAME" "SIP_HEADER_2PIN"
 					( Origin gPackager )
 				)
+				( attribute "CDS_LOCATION" "U86"
+					( Origin gPackager )
+				)
+				( attribute "CDS_SEC" "1"
+					( Origin gPackager )
+				)
+				( attribute "LOCATION" "U86"
+					( Origin gPackager )
+				)
+				( attribute "SEC" "1"
+					( Origin gPackager )
+				)
 				( objectStatus "PAGE1_I224" )
 				( pin "\1\"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 				( pin "\2\"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 			( pin "@tubii_lib.tubii_time(sch_1):page1_i216:ta1"

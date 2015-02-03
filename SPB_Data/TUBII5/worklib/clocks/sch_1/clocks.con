@@ -8,8 +8,8 @@
   (design "clocks"
     (lastIds
       (lastInstanceId 7)
-      (lastNetId 416)
-      (lastInstTermId 634)
+      (lastNetId 424)
+      (lastInstTermId 645)
     )
     (cells
       ("S2" "tubii_clks" "tubii_lib" "sym_1"
@@ -34,23 +34,7 @@
           ("T24" "le" -1 -1 1)
           ("T25" "missedclock" -1 -1 2)
           ("T26" "sr_clk" -1 -1 1)
-        )
-      )
-      ("S4" "10h125" "ecl" "sym_1"
-        (params
-          ("size" "1")
-        )
-        (terms
-          ("T57" "a<SIZE-1..0>" -1 -1 1)
-          ("T58" "b*<SIZE-1..0>" -1 -1 1)
-          ("T59" "v" -1 -1 2)
-          ("T60" "y<SIZE-1..0>" -1 -1 2)
-        )
-      )
-      ("S5" "rsmd0805" "resistors" "sym_1"
-        (terms
-          ("T61" "a" 0 0 1)
-          ("T62" "b" 0 0 2)
+          ("T152" "clock100_out_ttl" -1 -1 2)
         )
       )
     )
@@ -73,11 +57,11 @@
       ("N43" "unnamed_1_tubiiclks_i1_defaultclk" -1 -1 0 )
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vp3_3" "vp3_3" -1 -1 2  inherited)
-      ("vtt" "vtt" -1 -1 2 )
       ("vcc" "vcc" -1 -1 2  inherited)
       ("mstreset_ecl" "mstreset_ecl" -1 -1 2  inherited)
       ("vih" "vih" -1 -1 2  inherited)
       ("delay_vbb" "delay_vbb" -1 -1 2  inherited)
+      ("N424" "vtt" -1 -1 2  inherited)
     )
 
     (instances
@@ -128,53 +112,9 @@
               ("0" -1 -1 "N15" -1 -1)
             )
           )
-        )
-      )
-      ("I3" "page1_i3" "S4"
-        (pins
-          ("M35" "T57" 0 0
+          ("M645" "T152" -1 -1
             (conn
-              ("0" 0 0 "N7" -1 -1)
-            )
-          )
-          ("M36" "T58" 0 0
-            (conn
-              ("0" 0 0 "N8" -1 -1)
-            )
-          )
-          ("M37" "T59" -1 -1
-          )
-          ("M38" "T60" 0 0
-            (conn
-              ("0" 0 0 "N26" -1 -1)
-            )
-          )
-        )
-      )
-      ("I4" "page1_i4" "S5"
-        (pins
-          ("M39" "T61" 0 0
-            (conn
-              ("0" 0 0 "N8" -1 -1)
-            )
-          )
-          ("M40" "T62" 0 0
-            (conn
-              ("0" 0 0 "vtt" -1 -1)
-            )
-          )
-        )
-      )
-      ("I5" "page1_i5" "S5"
-        (pins
-          ("M41" "T61" 0 0
-            (conn
-              ("0" 0 0 "N7" -1 -1)
-            )
-          )
-          ("M42" "T62" 0 0
-            (conn
-              ("0" 0 0 "vtt" -1 -1)
+              ("0" -1 -1 "N26" -1 -1)
             )
           )
         )

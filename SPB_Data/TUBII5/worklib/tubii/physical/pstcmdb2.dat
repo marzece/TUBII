@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 686 )
+			( logicalViewRevNum 696 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -889,7 +889,7 @@
 			( signal "UNNAMED_3_PORTS2_I3_CLOCK200OUT"
 				( objectStatus "@tubii_lib.tubii(sch_1):unnamed_3_ports2_i3_clock200outh" )
 			)
-			( signal "UNNAMED_3_PORTS2_I3_CLOCK100O_1"
+			( signal "CLOCK100_OUTL"
 				( objectStatus "@tubii_lib.tubii(sch_1):unnamed_3_ports2_i3_clock100outl" )
 			)
 			( signal "UNNAMED_3_PORTS_I2_CAENOUT<4>"
@@ -1174,7 +1174,7 @@
 			( signal "UNNAMED_3_10H125_I4_B"
 				( objectStatus "@tubii_lib.tubii(sch_1):unnamed_3_10h125_i4_b" )
 			)
-			( signal "UNNAMED_3_PORTS2_I3_CLOCK100OUT"
+			( signal "CLOCK100_OUTH"
 				( objectStatus "@tubii_lib.tubii(sch_1):unnamed_3_ports2_i3_clock100outh" )
 			)
 			( signal "UNNAMED_3_PORTS2_I3_EXTTRIG<0>"
@@ -1500,9 +1500,6 @@
 			)
 			( signal "UNNAMED_1_AD8009_I4_V_1"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i11@tubii_lib.generic_utilities(sch_1):page1_i3@tubii_lib.pulse_inverter(sch_1):unnamed_1_ad8009_i4_v_1" )
-			)
-			( signal "UNNAMED_1_10E116_I119_A"
-				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i119_a" )
 			)
 			( signal "UNNAMED_1_CLOCKS_I15_DATARDY"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):unnamed_1_clocks_i15_datardy" )
@@ -1903,9 +1900,6 @@
 			( signal "UNNAMED_1_10E101_I79_Y"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e101_i79_y" )
 			)
-			( signal "UNNAMED_1_10E116_I119_B"
-				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i119_b" )
-			)
 			( signal "UNNAMED_1_10E116_I74_Y"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i74_y" )
 			)
@@ -1939,7 +1933,7 @@
 			( signal "UNNAMED_1_COTO2342_I12_IN2_2"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i3@tubii_lib.caen_coms(sch_1):page1_i68@tubii_lib.caen_buffer(sch_1):unnamed_1_coto2342_i12_in2" )
 			)
-			( signal "UNNAMED_1_CLOCKS_I15_CLOCK100"
+			( signal "CLOCK100"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):unnamed_1_clocks_i15_clock100" )
 			)
 			( signal "UNNAMED_1_CLOCKS_I15_LE"
@@ -2658,6 +2652,12 @@
 			)
 			( signal "UNNAMED_1_CONN32_I238_23"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i3@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_conn32_i238_23" )
+			)
+			( signal "UNNAMED_1_10E116_I225_B"
+				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i225_b" )
+			)
+			( signal "UNNAMED_1_10E116_I225_A"
+				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):unnamed_1_10e116_i225_a" )
 			)
 			( gate "R202"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i3@tubii_lib.caen(sch_1):page1_i1@tubii_lib.caen_chat(sch_1):page1_i9" )
@@ -4510,12 +4510,6 @@
 			( gate "C70"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):page1_i163" )
 			)
-			( gate "R24"
-				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i4" )
-			)
-			( gate "R23"
-				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i5" )
-			)
 			( gate "D5"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i1@tubii_lib.tubii_clks(sch_1):page1_i36" )
 			)
@@ -4680,9 +4674,6 @@
 			)
 			( gate "R192"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):page1_i118" )
-			)
-			( gate "U61"
-				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):page1_i119" )
 			)
 			( gate "R150"
 				( objectStatus "@tubii_lib.tubii(sch_1):page1_i1@tubii_lib.trigger_utility_board_mkii(sch_1):page1_i15@tubii_lib.clocks(sch_1):page1_i2@tubii_lib.tubii_time(sch_1):page1_i125" )
