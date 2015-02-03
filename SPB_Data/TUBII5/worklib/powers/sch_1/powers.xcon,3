@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-01-30T17:22:34</modificationTime>
+    <modificationTime>2015-02-02T18:30:16</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="powers" view="sch_1">
       <lastids>
-        <instanceid>60</instanceid>
+        <instanceid>62</instanceid>
         <netid>36</netid>
-        <insttermid>283</insttermid>
+        <insttermid>300</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -259,6 +259,36 @@
               <id>T61</id>
               <name>vref5m</name>
               <direction>output</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S14</id>
+          <library>misc</library>
+          <name>ostoq047150</name>
+          <view>sym_1</view>
+          <parameters>
+          </parameters>
+          <terms>
+            <term>
+              <id>T74</id>
+              <name>1</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T75</id>
+              <name>2</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T76</id>
+              <name>3</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T77</id>
+              <name>4</name>
+              <direction>inout</direction>
             </term>
           </terms>
         </cell>
@@ -2157,6 +2187,96 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I61</id>
+          <cellid>S14</cellid>
+          <name>page1_i82</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M290</id>
+              <termid>T74</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M291</id>
+              <termid>T75</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M292</id>
+              <termid>T76</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M293</id>
+              <termid>T77</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I62</id>
+          <cellid>S14</cellid>
+          <name>page1_i83</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M294</id>
+              <termid>T74</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M295</id>
+              <termid>T75</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M296</id>
+              <termid>T76</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M297</id>
+              <termid>T77</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -2292,6 +2412,8 @@
               <instance ref="i78"></instance>
               <instance ref="i79"></instance>
               <instance ref="i81"></instance>
+              <instance ref="i82"></instance>
+              <instance ref="i83"></instance>
             </instances>
           </page>
         </pages>

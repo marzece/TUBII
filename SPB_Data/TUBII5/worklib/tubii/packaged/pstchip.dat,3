@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 30-Jan-2015 AT 17:27:55 }
+{ Packager-XL run on 02-Feb-2015 AT 18:26:48 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -4077,6 +4077,7 @@ primitive 'LED_L';
       SIZE='1';
       BODY_NAME='LED_L';
       JEDEC_TYPE='LED_SSFLXH1031D';
+      PHYS_DES_PREFIX='D';
       CLASS='DISCRETE';
   end_body;
 end_primitive;
@@ -4697,6 +4698,53 @@ primitive 'OPA4277';
       PART_NAME='OPA4277';
       BODY_NAME='OPA4277';
       JEDEC_TYPE='SOIC14';
+      PHYS_DES_PREFIX='U';
+      CLASS='IC';
+  end_body;
+end_primitive;
+primitive 'OSTOQ047150';
+  pin
+    '1':
+      PIN_NUMBER='(1)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '2':
+      PIN_NUMBER='(2)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '3':
+      PIN_NUMBER='(3)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+    '4':
+      PIN_NUMBER='(4)';
+      PIN_TYPE='ANALOG';
+      NO_LOAD_CHECK='Both';
+      NO_IO_CHECK='Both';
+      NO_ASSERT_CHECK='TRUE';
+      NO_DIR_CHECK='TRUE';
+      ALLOW_CONNECT='TRUE';
+      PINUSE='UNSPEC';
+  end_pin;
+  body
+      PART_NAME='OSTOQ047150';
+      BODY_NAME='OSTOQ047150';
+      JEDEC_TYPE='OSTOQ047150';
       PHYS_DES_PREFIX='U';
       CLASS='IC';
   end_body;
