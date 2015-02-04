@@ -5,51 +5,17 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-03T19:31:00</modificationTime>
+    <modificationTime>2015-02-04T18:14:49</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="asyncdelays" view="sch_1">
       <lastids>
         <instanceid>26</instanceid>
-        <netid>113</netid>
-        <insttermid>389</insttermid>
+        <netid>117</netid>
+        <insttermid>401</insttermid>
       </lastids>
       <cells>
-        <cell>
-          <id>S3</id>
-          <library>ecl</library>
-          <name>10h125</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T29</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T30</id>
-              <name>b*&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T31</id>
-              <name>v</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T32</id>
-              <name>y&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
         <cell>
           <id>S9</id>
           <library>ttl</library>
@@ -333,10 +299,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N13</id>
-          <name>unnamed_1_10h125_i9_y</name>
-        </net>
-        <net>
           <id>N24</id>
           <name>dgth</name>
           <scope>interface</scope>
@@ -345,18 +307,6 @@
         <net>
           <id>N25</id>
           <name>dgtl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N27</id>
-          <name>gtrigh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N28</id>
-          <name>gtrigl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -395,6 +345,12 @@
           <name>unnamed_1_ds1023200_i31_q</name>
         </net>
         <net>
+          <id>N116</id>
+          <name>gtrig</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -416,60 +372,6 @@
       <netinterfaces>
       </netinterfaces>
       <instances>
-        <instance>
-          <id>I3</id>
-          <cellid>S3</cellid>
-          <name>page1_i9</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M22</id>
-              <termid>T29</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N27" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M23</id>
-              <termid>T30</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N28" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M24</id>
-              <termid>T31</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M25</id>
-              <termid>T32</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N13" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
         <instance>
           <id>I13</id>
           <cellid>S9</cellid>
@@ -499,7 +401,7 @@
               <id>M43</id>
               <termid>T45</termid>
               <connections>
-                <connection net="N13" />
+                <connection net="N116" />
               </connections>
             </pin>
             <pin>
@@ -869,7 +771,7 @@
               <id>M262</id>
               <termid>T167</termid>
               <connections>
-                <connection net="N13" />
+                <connection net="N116" />
               </connections>
             </pin>
             <pin>
@@ -1003,13 +905,7 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="gtrigh">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="gtrigl">
+          <netScope ref="gtrig">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1039,10 +935,8 @@
               <net ref="dgth"></net>
               <net ref="dgtl"></net>
               <net ref="gnd"></net>
-              <net ref="gtrigh"></net>
-              <net ref="gtrigl"></net>
+              <net ref="gtrig"></net>
               <net ref="le_dgt"></net>
-              <net ref="unnamed_1_10h125_i9_y"></net>
               <net ref="unnamed_1_ds1023200_i31_q"></net>
               <net ref="unnamed_1_ds1023500_i19_le"></net>
               <net ref="unnamed_1_ds1023500_i19_out"></net>
@@ -1050,7 +944,6 @@
               <net ref="vcc"></net>
             </nets>
             <instances>
-              <instance ref="i9"></instance>
               <instance ref="i19"></instance>
               <instance ref="i22"></instance>
               <instance ref="i24"></instance>
