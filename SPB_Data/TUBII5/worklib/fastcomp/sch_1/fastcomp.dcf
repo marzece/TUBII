@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 67 )
+			( logicalViewRevNum 68 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -465,6 +465,22 @@
 			)
 			( Objects
 				( ValidObjects  oAll )
+			)
+			( Analysis
+			)
+		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
 			)
 			( Analysis
 			)
@@ -1147,7 +1163,7 @@
 					( Origin gFrontEnd )
 				)
 				( attribute "LOCATION" "U68"
-					( Origin gFrontEnd )
+					( Origin gPackager )
 				)
 				( attribute "SEC" "1"
 					( Origin gPackager )

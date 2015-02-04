@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-03T18:53:03</modificationTime>
+    <modificationTime>2015-02-03T19:14:48</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -104,36 +104,8 @@
             </term>
           </terms>
         </cell>
-        <cell>
-          <id>S7</id>
-          <library>capacitors</library>
-          <name>csmd0805</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T21</id>
-              <name>a</name>
-              <direction>input</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-            <term>
-              <id>T22</id>
-              <name>b</name>
-              <direction>output</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-          </terms>
-        </cell>
       </cells>
       <nets>
-        <net>
-          <id>N2</id>
-          <name>page1_gnd</name>
-        </net>
         <net>
           <id>N10</id>
           <name>unnamed_1_mpsh81_i4_c</name>
@@ -155,11 +127,6 @@
           <name>unnamed_1_10e116_i33_y</name>
         </net>
         <net>
-          <id>N1</id>
-          <name>gnd</name>
-          <scope>global</scope>
-        </net>
-        <net>
           <id>N12</id>
           <name>vee</name>
           <scope>global</scope>
@@ -176,7 +143,6 @@
         </net>
       </nets>
       <aliases>
-        <alias net1="N2" lsb1="-1" msb1="-1" net2="N1" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -347,45 +313,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I18</id>
-          <cellid>S7</cellid>
-          <name>page1_i30</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M40</id>
-              <termid>T21</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N22" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M41</id>
-              <termid>T22</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N1" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I20</id>
           <cellid>S5</cellid>
           <name>page1_i33</name>
@@ -463,11 +390,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="gnd">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
           <netScope ref="nim_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -496,7 +418,6 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="ecl_in"></net>
-              <net ref="gnd"></net>
               <net ref="nim_out"></net>
               <net ref="unnamed_1_10e116_i33_y"></net>
               <net ref="unnamed_1_mpsh81_i4_c"></net>
@@ -509,7 +430,6 @@
               <instance ref="i6"></instance>
               <instance ref="i16"></instance>
               <instance ref="i27"></instance>
-              <instance ref="i30"></instance>
               <instance ref="i33"></instance>
             </instances>
           </page>
