@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-03T15:08:42</modificationTime>
+    <modificationTime>2015-02-03T19:14:37</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -33,30 +33,6 @@
             </term>
             <term>
               <id>T6</id>
-              <name>b</name>
-              <direction>output</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S3</id>
-          <library>capacitors</library>
-          <name>csmd0805</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T7</id>
-              <name>a</name>
-              <direction>input</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-            <term>
-              <id>T8</id>
               <name>b</name>
               <direction>output</direction>
               <msb>0</msb>
@@ -211,10 +187,6 @@
       </cells>
       <nets>
         <net>
-          <id>N2</id>
-          <name>page1_gnd</name>
-        </net>
-        <net>
           <id>N25</id>
           <name>lvds_out</name>
           <scope>interface</scope>
@@ -276,7 +248,6 @@
         </net>
       </nets>
       <aliases>
-        <alias net1="N2" lsb1="-1" msb1="-1" net2="N1" lsb2="-1" msb2="-1" />
       </aliases>
       <differentialnets>
       </differentialnets>
@@ -419,45 +390,6 @@
               <id>M27</id>
               <termid>T15</termid>
               <connections>
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I24</id>
-          <cellid>S3</cellid>
-          <name>page1_i43</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M49</id>
-              <termid>T7</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N35" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M50</id>
-              <termid>T8</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N1" />
               </connections>
             </pin>
           </pins>
@@ -977,7 +909,6 @@
               <instance ref="i12"></instance>
               <instance ref="i13"></instance>
               <instance ref="i14"></instance>
-              <instance ref="i43"></instance>
               <instance ref="i47"></instance>
               <instance ref="i48"></instance>
               <instance ref="i49"></instance>

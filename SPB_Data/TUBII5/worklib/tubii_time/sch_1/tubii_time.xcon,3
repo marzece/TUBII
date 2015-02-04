@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-03T14:47:50</modificationTime>
+    <modificationTime>2015-02-03T15:03:28</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_time" view="sch_1">
       <lastids>
-        <instanceid>204</instanceid>
-        <netid>210</netid>
-        <insttermid>656</insttermid>
+        <instanceid>205</instanceid>
+        <netid>211</netid>
+        <insttermid>660</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -1173,6 +1173,12 @@
         <net>
           <id>N210</id>
           <name>unnamed_1_10e116_i225_b</name>
+        </net>
+        <net>
+          <id>N211</id>
+          <name>clock100_out_ttl</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N14</id>
@@ -6521,6 +6527,60 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I205</id>
+          <cellid>S10</cellid>
+          <name>page1_i226</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M657</id>
+              <termid>T59</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N209" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M658</id>
+              <termid>T60</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N210" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M659</id>
+              <termid>T61</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M660</id>
+              <termid>T62</termid>
+              <msb>0</msb>
+              <lsb>0</lsb>
+              <connections>
+                <connection pinmsb="0" pinlsb="0" net="N211" />
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -6543,6 +6603,12 @@
             </pageScope>
           </netScope>
           <netScope ref="clk100_outl">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clock100_out_ttl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -6627,6 +6693,7 @@
               <net ref="bckpclock2l"></net>
               <net ref="clk100_outh"></net>
               <net ref="clk100_outl"></net>
+              <net ref="clock100_out_ttl"></net>
               <net ref="clock100h"></net>
               <net ref="clock100l"></net>
               <net ref="clockgood"></net>
@@ -6833,6 +6900,7 @@
               <instance ref="i223"></instance>
               <instance ref="i224"></instance>
               <instance ref="i225"></instance>
+              <instance ref="i226"></instance>
             </instances>
           </page>
         </pages>
