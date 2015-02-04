@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 26 )
+			( logicalViewRevNum 27 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -476,11 +476,19 @@
 			( design "asyncdelays"
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):delay_val"
+				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_delay_val") )
+				( attribute "PHYS_NET_NAME" "DELAY_VAL"
+					( Origin gPackager )
+				)
 				( objectStatus "delay_val" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):gnd") )
 				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):gnd") )
+				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_gnd") )
+				( attribute "PHYS_NET_NAME" "GND"
+					( Origin gPackager )
+				)
 				( objectStatus "gnd" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):gnd"
@@ -495,9 +503,6 @@
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):pulse_in"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_ds1023200_i31_q"
-				( objectStatus "unnamed_1_ds1023200_i31_q" )
-			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):pulse_in"
 				( objectFlag fObjectAlias )
 			)
@@ -505,6 +510,10 @@
 				( objectStatus "ddgt*" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):clk"
+				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_clk") )
+				( attribute "PHYS_NET_NAME" "CLK"
+					( Origin gPackager )
+				)
 				( objectStatus "clk" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_10h125_i9_y"
@@ -522,12 +531,13 @@
 			( signal "@tubii_lib.asyncdelays(sch_1):gtrigl"
 				( objectStatus "gtrigl" )
 			)
-			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_ds1023200_i31_le"
-				( objectStatus "unnamed_1_ds1023200_i31_le" )
-			)
 			( signal "@tubii_lib.asyncdelays(sch_1):vcc"
 				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):vcc") )
 				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_i26@tubii_lib.led_pulse(sch_1):vcc") )
+				( alias ( signalRef "@tubii_lib.asyncdelays(sch_1):page1_vcc") )
+				( attribute "PHYS_NET_NAME" "VCC"
+					( Origin gPackager )
+				)
 				( objectStatus "vcc" )
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):page1_i25@tubii_lib.led_pulse(sch_1):vcc"
@@ -561,6 +571,25 @@
 			)
 			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_mc10h124_i29_out"
 				( objectStatus "unnamed_1_mc10h124_i29_out" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):unnamed_1_ds1023500_i19_le"
+				( objectStatus "unnamed_1_ds1023500_i19_le" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_clk"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_clk" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_delay_val"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_delay_val" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_gnd"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_gnd" )
+			)
+			( signal "@tubii_lib.asyncdelays(sch_1):page1_vcc"
+				( objectFlag fObjectAlias )
+				( objectStatus "page1_vcc" )
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i9"
 				( attribute "CDS_LIB" "ecl"
@@ -728,61 +757,6 @@
 					( attribute "PN" "3"
 						( Origin gPackager )
 					)
-				)
-			)
-			( gate "@tubii_lib.asyncdelays(sch_1):page1_i31"
-				( attribute "CDS_LIB" "ttl"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-175,350,175,-250"
-					( Origin gPackager )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(125,3050)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "DS102350"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "DS102350"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I31" )
-				( pin "\clk/p1\"
-				)
-				( pin "\d/p2\"
-				)
-				( pin "\in\"
-				)
-				( pin "\le*\"
-				)
-				( pin "ms"
-				)
-				( pin "\out\"
-				)
-				( pin "p3"
-				)
-				( pin "p4"
-				)
-				( pin "p5"
-				)
-				( pin "p6"
-				)
-				( pin "p7"
-				)
-				( pin "ps"
-				)
-				( pin "pwm"
-				)
-				( pin "\q/p0\"
 				)
 			)
 			( gate "@tubii_lib.asyncdelays(sch_1):page1_i22"
