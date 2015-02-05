@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-05T12:26:34</modificationTime>
+    <modificationTime>2015-02-05T15:02:41</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="select_lo_src" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>27</instanceid>
-        <netid>36</netid>
+        <netid>37</netid>
         <insttermid>84</insttermid>
       </lastids>
       <cells>
@@ -270,14 +269,14 @@
           <name>unnamed_1_10e116_i38_a</name>
         </net>
         <net>
-          <id>N35</id>
-          <name>ttl_lockout</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N36</id>
           <name>unnamed_1_10h125_i39_b</name>
+        </net>
+        <net>
+          <id>N37</id>
+          <name>ttl_lockout*</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N2</id>
@@ -969,7 +968,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N35" />
+                <connection pinmsb="0" pinlsb="0" net="N37" />
               </connections>
             </pin>
           </pins>
@@ -1029,6 +1028,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="ddgt*">
             <pageScope number="1">
@@ -1070,7 +1070,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="ttl_lockout">
+          <netScope ref="ttl_lockout*">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1099,7 +1099,7 @@
               <net ref="lo*"></net>
               <net ref="mtcd_lo*"></net>
               <net ref="sel"></net>
-              <net ref="ttl_lockout"></net>
+              <net ref="ttl_lockout*"></net>
               <net ref="unnamed_1_10e116_i37_y"></net>
               <net ref="unnamed_1_10e116_i38_a"></net>
               <net ref="unnamed_1_10h125_i39_b"></net>
