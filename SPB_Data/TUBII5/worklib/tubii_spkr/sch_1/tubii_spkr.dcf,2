@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 22 )
+			( logicalViewRevNum 23 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -584,6 +600,48 @@
 					( Origin gPackager )
 				)
 				( objectStatus "U1" )
+				( pin "c"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.6" )
+				)
+				( pin "\c/r\"
+					( attribute "PN" "7"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.7" )
+				)
+				( pin "\cl*\"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.11" )
+				)
+				( pin "clock"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.10" )
+				)
+				( pin "\clock*\"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.9" )
+				)
+				( pin "q"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.5" )
+				)
+				( pin "\q*\"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
+					( objectStatus "U1.12" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i6"
 				( attribute "ABBREV" "TP"
@@ -623,6 +681,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP2" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP2.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i7"
 				( attribute "ABBREV" "TP"
@@ -662,6 +726,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP1" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP1.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i12"
 				( attribute "ABBREV" "TP"
@@ -701,6 +771,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP3" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP3.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i13"
 				( attribute "CDS_LIB" "resistors"
@@ -786,6 +862,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R6" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R6.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R6.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i14"
 				( attribute "ABBREV" "TP"
@@ -825,6 +913,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP5" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP5.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i15"
 				( attribute "ABBREV" "TP"
@@ -864,6 +958,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP4" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP4.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i16"
 				( attribute "ABBREV" "TP"
@@ -903,6 +1003,12 @@
 					( Origin gPackager )
 				)
 				( objectStatus "TP6" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "TP6.1" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i17"
 				( attribute "CDS_LIB" "resistors"
@@ -988,6 +1094,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R7" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R7.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R7.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i18"
 				( attribute "CDS_LIB" "resistors"
@@ -1073,6 +1191,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R2" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R2.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R2.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i19"
 				( attribute "CDS_LIB" "resistors"
@@ -1158,6 +1288,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R3" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R3.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R3.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i20"
 				( attribute "CDS_LIB" "resistors"
@@ -1243,6 +1385,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R4" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R4.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R4.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i21"
 				( attribute "CDS_LIB" "resistors"
@@ -1328,6 +1482,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "R5" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "R5.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "R5.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i22"
 				( attribute "CDS_LIB" "capacitors"
@@ -1416,6 +1582,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "C3" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C3.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C3.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i23"
 				( attribute "CDS_LIB" "capacitors"
@@ -1504,6 +1682,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "C2" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+					( objectStatus "C2.1" )
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+					( objectStatus "C2.2" )
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i26"
 				( attribute "CDS_LIB" "ttl"
@@ -1549,6 +1739,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I26" )
+				( pin "a(0)"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i27"
 				( attribute "CDS_LIB" "ttl"
@@ -1594,6 +1794,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I27" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i28"
 				( attribute "CDS_LIB" "ttl"
@@ -1639,6 +1849,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I28" )
+				( pin "a(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i29"
 				( attribute "CDS_LIB" "ttl"
@@ -1684,6 +1904,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I29" )
+				( pin "a(0)"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i30"
 				( attribute "CDS_LIB" "ttl"
@@ -1729,6 +1959,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I30" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i31"
 				( attribute "CDS_LIB" "ttl"
@@ -1771,6 +2011,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I31" )
+				( pin "a(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i32"
 				( attribute "CDS_LIB" "ttl"
@@ -1816,6 +2066,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I32" )
+				( pin "a(0)"
+					( attribute "PN" "9"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "8"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i33"
 				( attribute "CDS_LIB" "ttl"
@@ -1861,6 +2121,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I33" )
+				( pin "a(0)"
+					( attribute "PN" "5"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "6"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i34"
 				( attribute "CDS_LIB" "ttl"
@@ -1906,6 +2176,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I34" )
+				( pin "a(0)"
+					( attribute "PN" "3"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "4"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i35"
 				( attribute "CDS_LIB" "ttl"
@@ -1951,6 +2231,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I35" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i36"
 				( attribute "CDS_LIB" "ttl"
@@ -1993,6 +2283,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I36" )
+				( pin "a(0)"
+					( attribute "PN" "13"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "12"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i37"
 				( attribute "CDS_LIB" "ttl"
@@ -2038,6 +2338,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I37" )
+				( pin "a(0)"
+					( attribute "PN" "11"
+						( Origin gPackager )
+					)
+				)
+				( pin "\y*\(0)"
+					( attribute "PN" "10"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i38"
 				( attribute "ABBREV" "TP"
@@ -2077,6 +2387,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I38" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i39"
 				( attribute "ABBREV" "TP"
@@ -2116,6 +2431,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I39" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i40"
 				( attribute "ABBREV" "TP"
@@ -2155,6 +2475,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I40" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i41"
 				( attribute "CDS_LIB" "capacitors"
@@ -2243,6 +2568,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I41" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i42"
 				( attribute "ABBREV" "LED"
@@ -2278,13 +2613,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U29"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
 				( objectStatus "PAGE1_I42" )
+				( pin "a"
+				)
+				( pin "b"
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i43"
 				( attribute "ABBREV" "LED"
@@ -2320,13 +2653,11 @@
 				( attribute "CDS_SEC" "1"
 					( Origin gPackager )
 				)
-				( attribute "LOCATION" "U28"
-					( Origin gPackager )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
 				( objectStatus "PAGE1_I43" )
+				( pin "a"
+				)
+				( pin "b"
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i44"
 				( attribute "CDS_LIB" "capacitors"
@@ -2415,6 +2746,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I44" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i45"
 				( attribute "CDS_LIB" "capacitors"
@@ -2503,6 +2844,16 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I45" )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.tubii_spkr(sch_1):page1_i46"
 				( attribute "CDS_LIB" "capacitors"
@@ -2591,374 +2942,15 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I46" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:c"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.6" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:\c/r\"
-				( attribute "PN" "7"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.7" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:\cl*\"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.11" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:clock"
-				( attribute "PN" "10"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.10" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:\clock*\"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.9" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:q"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.5" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i1:\q*\"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-				( objectStatus "U1.12" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i6:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP2.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i7:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP1.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i12:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP3.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i13:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R6.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i13:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R6.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i14:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP5.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i15:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP4.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i16:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "TP6.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i17:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R7.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i17:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R7.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i18:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R2.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i18:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R2.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i19:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R3.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i19:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R3.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i20:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R4.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i20:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R4.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i21:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "R5.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i21:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "R5.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i22:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C3.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i22:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C3.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i23:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-				( objectStatus "C2.1" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i23:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-				( objectStatus "C2.2" )
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i26:a(0)"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i26:\y*\(0)"
-				( attribute "PN" "10"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i27:a(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i27:\y*\(0)"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i28:a(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i28:\y*\(0)"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i29:a(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i29:\y*\(0)"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i30:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i30:\y*\(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i31:a(0)"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i31:\y*\(0)"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i32:a(0)"
-				( attribute "PN" "9"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i32:\y*\(0)"
-				( attribute "PN" "8"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i33:a(0)"
-				( attribute "PN" "5"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i33:\y*\(0)"
-				( attribute "PN" "6"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i34:a(0)"
-				( attribute "PN" "3"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i34:\y*\(0)"
-				( attribute "PN" "4"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i35:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i35:\y*\(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i36:a(0)"
-				( attribute "PN" "13"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i36:\y*\(0)"
-				( attribute "PN" "12"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i37:a(0)"
-				( attribute "PN" "11"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i37:\y*\(0)"
-				( attribute "PN" "10"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i38:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i39:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i40:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i41:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i41:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i42:a"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i42:b"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i43:a"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i43:b"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i44:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i44:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i45:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i45:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i46:a(0)"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.tubii_spkr(sch_1):page1_i46:b(0)"
-				( attribute "PN" "2"
-					( Origin gPackager )
+				( pin "a(0)"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
+				( pin "b(0)"
+					( attribute "PN" "2"
+						( Origin gPackager )
+					)
 				)
 			)
 		)
