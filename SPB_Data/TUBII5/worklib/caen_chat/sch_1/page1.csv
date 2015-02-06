@@ -2,37 +2,37 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$MMBTH81$I67$E";
-2"VEE\G";
-3"UN$1$MMBTH81$I67$C";
-4"VTT\G";
-5"VTT\G";
-6"UN$1$10H125$I75$Y";
-7"SYNC24H_LVDS\I";
-8"SYNC24L_LVDS\I";
-9"UN$1$10H125$I77$Y";
-10"SYNCH_LVDS\I";
-11"SYNCL_LVDS\I";
-12"VTT\G";
-13"UN$1$10H116$I80$Y$1";
-14"UN$1$10H116$I80$Y";
-15"SYNC24L_ECL\I";
-16"SYNC24H_ECL\I";
-17"SYNCH_ECL\I";
-18"UN$1$10H116$I79$Y";
-19"GTRIGH_ECL\I";
-20"GTRIGL_ECL\I";
-21"UN$1$10H116$I81$Y";
-22"UN$1$10H116$I81$Y$1";
-23"SYNCL_ECL\I";
-24"GND\g";
+1"GND\g";
+2"SYNCL_ECL\I";
+3"UN$1$10H116$I81$Y$1";
+4"UN$1$10H116$I81$Y";
+5"GTRIGL_ECL\I";
+6"GTRIGH_ECL\I";
+7"UN$1$10H116$I79$Y";
+8"SYNCH_ECL\I";
+9"SYNC24H_ECL\I";
+10"SYNC24L_ECL\I";
+11"UN$1$10H116$I80$Y";
+12"UN$1$10H116$I80$Y$1";
+13"VTT\G";
+14"SYNCL_LVDS\I";
+15"SYNCH_LVDS\I";
+16"UN$1$10H125$I77$Y";
+17"SYNC24L_LVDS\I";
+18"SYNC24H_LVDS\I";
+19"UN$1$10H125$I75$Y";
+20"VTT\G";
+21"VTT\G";
+22"UN$1$MMBTH81$I67$C";
+23"VEE\G";
+24"UN$1$MMBTH81$I67$E";
 %"GND"
 "1","(1900,3500)","0","misc","I10";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"24;
+"G\NAC"1;
 %"RSMD0805"
 "1","(950,3100)","1","resistors","I14";
 ;
@@ -58,9 +58,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"12;
+$PN"1"13;
 "B<0>"
-$PN"2"18;
+$PN"2"7;
 %"RSMD0805"
 "1","(1650,3250)","0","resistors","I4";
 ;
@@ -86,9 +86,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"3;
+$PN"1"22;
 "B<0>"
-$PN"2"2;
+$PN"2"23;
 %"MMBTH81"
 "1","(1350,3400)","0","transistors","I67";
 ;
@@ -99,11 +99,11 @@ CDS_SEC"1"
 CDS_LIB"transistors"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 "E"
-$PN"2"1;
+$PN"2"24;
 "B"
-$PN"1"18;
+$PN"1"7;
 "C"
-$PN"3"3;
+$PN"3"22;
 %"RSMD0805"
 "1","(975,2325)","1","resistors","I71";
 ;
@@ -129,9 +129,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"5;
+$PN"1"20;
 "B<0>"
-$PN"2"14;
+$PN"2"11;
 %"RSMD0805"
 "1","(925,2325)","1","resistors","I72";
 ;
@@ -157,9 +157,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"5;
+$PN"1"20;
 "B<0>"
-$PN"2"13;
+$PN"2"12;
 %"RSMD0805"
 "1","(-1750,2325)","1","resistors","I73";
 ;
@@ -185,9 +185,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"4;
+$PN"1"21;
 "B<0>"
-$PN"2"21;
+$PN"2"4;
 %"RSMD0805"
 "1","(-1675,2325)","1","resistors","I74";
 ;
@@ -213,9 +213,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"4;
+$PN"1"21;
 "B<0>"
-$PN"2"22;
+$PN"2"3;
 %"10H125"
 "1","(1375,2550)","0","ecl","I75";
 SECTION"1";
@@ -226,13 +226,13 @@ CDS_SEC"3"
 PACK_TYPE"PLCC"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"9"14;
+$PN"9"11;
 "B <SIZE-1..0>* \B"
-$PN"8"13;
+$PN"8"12;
 "V"
 $PN"2"0;
 "Y <SIZE-1..0>"
-$PN"7"6;
+$PN"7"19;
 %"DS90LV027"
 "1","(1800,2550)","0","misc","I76";
 ;
@@ -243,11 +243,11 @@ CDS_SEC"2"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"misc";
 "Q* \B"
-$PN"5"8;
+$PN"5"17;
 "Q"
-$PN"6"7;
+$PN"6"18;
 "D"
-$PN"3"6;
+$PN"3"19;
 %"10H125"
 "1","(-2075,2550)","2","ecl","I77";
 SECTION"1";
@@ -258,13 +258,13 @@ CDS_SEC"1"
 PACK_TYPE"PLCC"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"19"21;
+$PN"19"4;
 "B <SIZE-1..0>* \B"
-$PN"18"22;
+$PN"18"3;
 "V"
 $PN"2"0;
 "Y <SIZE-1..0>"
-$PN"17"9;
+$PN"17"16;
 %"DS90LV027"
 "1","(-2500,2550)","2","misc","I78";
 ;
@@ -275,11 +275,11 @@ CDS_SEC"1"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"misc";
 "Q* \B"
-$PN"8"11;
+$PN"8"14;
 "Q"
-$PN"7"10;
+$PN"7"15;
 "D"
-$PN"2"9;
+$PN"2"16;
 %"10H116"
 "1","(700,3350)","0","ecl","I79";
 ;
@@ -296,11 +296,11 @@ $PN"14"0;
 "Y<SIZE-1..0>* \B"
 $PN"8"0;
 "Y<SIZE-1..0>"
-$PN"9"18;
+$PN"9"7;
 "B<SIZE-1..0>* \B"
-$PN"12"20;
+$PN"12"5;
 "A<SIZE-1..0>"
-$PN"13"19;
+$PN"13"6;
 %"TESTPOINT_L"
 "1","(1450,3850)","0","misc","I8";
 ;
@@ -312,7 +312,7 @@ TITLE"TEST"
 ABBREV"TP"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"1;
+$PN"1"24;
 %"10H116"
 "1","(800,2550)","0","ecl","I80";
 ;
@@ -327,13 +327,13 @@ SECTION"1\PARAMETER";
 "V"
 $PN"14"0;
 "Y<SIZE-1..0>* \B"
-$PN"3"13;
+$PN"3"12;
 "Y<SIZE-1..0>"
-$PN"4"14;
+$PN"4"11;
 "B<SIZE-1..0>* \B"
-$PN"5"15;
+$PN"5"10;
 "A<SIZE-1..0>"
-$PN"7"16;
+$PN"7"9;
 %"10H116"
 "1","(-1475,2550)","2","ecl","I81";
 ;
@@ -348,13 +348,13 @@ CDS_LIB"ecl";
 "V"
 $PN"14"0;
 "Y<SIZE-1..0>* \B"
-$PN"18"22;
+$PN"18"3;
 "Y<SIZE-1..0>"
-$PN"19"21;
+$PN"19"4;
 "B<SIZE-1..0>* \B"
-$PN"15"23;
+$PN"15"2;
 "A<SIZE-1..0>"
-$PN"17"17;
+$PN"17"8;
 %"RSMD0805"
 "1","(1650,3600)","0","resistors","I9";
 ;
@@ -380,7 +380,7 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"1;
+$PN"1"24;
 "B<0>"
-$PN"2"24;
+$PN"2"1;
 END.
