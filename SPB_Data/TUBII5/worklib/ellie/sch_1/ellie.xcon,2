@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-05T11:52:47</modificationTime>
+    <modificationTime>2015-02-05T18:57:44</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ellie" view="sch_1">
       <lastids>
-        <instanceid>49</instanceid>
+        <instanceid>51</instanceid>
         <netid>78</netid>
-        <insttermid>252</insttermid>
+        <insttermid>266</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -229,6 +229,55 @@
               <id>T78</id>
               <name>12</name>
               <direction>inout</direction>
+            </term>
+          </terms>
+        </cell>
+        <cell>
+          <id>S10</id>
+          <library>misc</library>
+          <name>hct123</name>
+          <view>sym_1</view>
+          <parameters>
+            <parameter>
+              <name>pulse_width</name>
+              <value>10000</value>
+            </parameter>
+          </parameters>
+          <terms>
+            <term>
+              <id>T90</id>
+              <name>c</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T91</id>
+              <name>c/r</name>
+              <direction>inout</direction>
+            </term>
+            <term>
+              <id>T92</id>
+              <name>cl*</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T93</id>
+              <name>clock</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T94</id>
+              <name>clock*</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T95</id>
+              <name>q</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T96</id>
+              <name>q*</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -1633,6 +1682,132 @@
           <portinterfaces>
           </portinterfaces>
         </instance>
+        <instance>
+          <id>I50</id>
+          <cellid>S10</cellid>
+          <name>page1_i50</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M253</id>
+              <termid>T90</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M254</id>
+              <termid>T91</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M255</id>
+              <termid>T92</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M256</id>
+              <termid>T93</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M257</id>
+              <termid>T94</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M258</id>
+              <termid>T95</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M259</id>
+              <termid>T96</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
+        <instance>
+          <id>I51</id>
+          <cellid>S10</cellid>
+          <name>page1_i51</name>
+          <parameters>
+          </parameters>
+          <masks>
+          </masks>
+          <powers>
+          </powers>
+          <pins>
+            <pin>
+              <id>M260</id>
+              <termid>T90</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M261</id>
+              <termid>T91</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M262</id>
+              <termid>T92</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M263</id>
+              <termid>T93</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M264</id>
+              <termid>T94</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M265</id>
+              <termid>T95</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M266</id>
+              <termid>T96</termid>
+              <connections>
+              </connections>
+            </pin>
+          </pins>
+          <differentialpins>
+          </differentialpins>
+          <differentialbuspins>
+          </differentialbuspins>
+          <portgroups>
+          </portgroups>
+          <portinterfaces>
+          </portinterfaces>
+        </instance>
       </instances>
       <templateresolutions>
       </templateresolutions>
@@ -1749,6 +1924,8 @@
               <instance ref="i45"></instance>
               <instance ref="i48"></instance>
               <instance ref="i49"></instance>
+              <instance ref="i50"></instance>
+              <instance ref="i51"></instance>
             </instances>
           </page>
         </pages>
