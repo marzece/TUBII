@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 16 )
+			( logicalViewRevNum 18 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -909,9 +925,12 @@
 					( Origin gPackager )
 				)
 				( attribute "LOCATION" "U42"
-					( Origin gFrontEnd )
+					( Origin gPackager )
 				)
 				( attribute "SEC" "6"
+					( Origin gPackager )
+				)
+				( attribute "CDS_LOCATION" "U42"
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I8" )
