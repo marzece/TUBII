@@ -2,23 +2,23 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$LEDL$I36$A";
-2"VCC\G";
-3"MTCD_LO*\I";
-4"SEL\I";
-5"VTT\G";
-6"DDGT*\I";
-7"UN$1$10E116$I37$Y";
-8"UN$1$MC10H104$I33$A";
+1"GND\g";
+2"GND\g";
+3"UN$1$10E116$I38$A";
+4"LO\I";
+5"LO*\I";
+6"TTL_LOCKOUT*\I";
+7"UN$1$10H125$I39$B";
+8"DELAY_VBB\G";
 9"UN$1$MC10H104$I34$A";
-10"DELAY_VBB\G";
-11"UN$1$10H125$I39$B";
-12"TTL_LOCKOUT*\I";
-13"LO*\I";
-14"LO\I";
-15"UN$1$10E116$I38$A";
-16"GND\g";
-17"GND\g";
+10"UN$1$MC10H104$I33$A";
+11"UN$1$10E116$I37$Y";
+12"DDGT*\I";
+13"VTT\G";
+14"SEL\I";
+15"MTCD_LO*\I";
+16"VCC\G";
+17"UN$1$LEDL$I36$A";
 18"GND\g";
 %"RSMD0805"
 "1","(3100,2225)","1","resistors","I11";
@@ -45,9 +45,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
-$PN"2"7;
+$PN"2"11;
 %"RSMD0805"
 "1","(1950,2250)","1","resistors","I15";
 ;
@@ -73,9 +73,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
-$PN"2"6;
+$PN"2"12;
 %"RSMD0805"
 "1","(1825,2275)","1","resistors","I16";
 ;
@@ -101,9 +101,9 @@ PACKTYPE"0805"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
-$PN"2"3;
+$PN"2"15;
 %"RSMD0805"
 "1","(4125,2250)","1","resistors","I20";
 ;
@@ -129,9 +129,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
-$PN"2"15;
+$PN"2"3;
 %"RSMD0805"
 "1","(3550,2250)","1","resistors","I24";
 ;
@@ -157,7 +157,7 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
 $PN"2"9;
 %"RSMD0805"
@@ -185,16 +185,16 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"5;
+$PN"1"13;
 "B<0>"
-$PN"2"8;
+$PN"2"10;
 %"GND"
 "1","(2150,3400)","0","misc","I29";
 ;
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND"
 CDS_LIB"misc";
-"G\NAC"17;
+"G\NAC"1;
 %"RSMD0805"
 "1","(2150,3725)","1","resistors","I31";
 ;
@@ -220,9 +220,9 @@ POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"1;
+$PN"1"17;
 "B<0>"
-$PN"2"4;
+$PN"2"14;
 %"MC10H104"
 "1","(3875,3275)","0","ecl","I33";
 ;
@@ -235,11 +235,11 @@ PACK_TYPE"PLCC"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125"
 CDS_LIB"ecl";
 "Y"
-$PN"19"15;
+$PN"19"3;
 "B"
-$PN"17"7;
+$PN"17"11;
 "A"
-$PN"15"8;
+$PN"15"10;
 %"MC10H104"
 "1","(3875,2950)","0","ecl","I34";
 ;
@@ -252,9 +252,9 @@ PACK_TYPE"PLCC"
 CDS_LIB"ecl"
 CDS_LMAN_SYM_OUTLINE"-125,125,125,-125";
 "Y"
-$PN"3"15;
+$PN"3"3;
 "B"
-$PN"7"6;
+$PN"7"12;
 "A"
 $PN"5"9;
 %"MC10H124"
@@ -268,11 +268,11 @@ PACK_TYPE"PLCC"
 CDS_LMAN_SYM_OUTLINE"-125,100,25,-100"
 CDS_LIB"ecl";
 "IN"
-$PN"7"4;
+$PN"7"14;
 "OUT"
-$PN"3"8;
+$PN"3"10;
 "COMMON"
-$PN"8"2;
+$PN"8"16;
 "OUT* \B"
 $PN"5"9;
 %"LED_L"
@@ -287,9 +287,9 @@ ABBREV"LED"
 TITLE"LED"
 CDS_LIB"misc";
 "A\NAC"
-$PN"2"1;
+$PN"2"17;
 "B\NAC"
-$PN"1"17;
+$PN"1"1;
 %"10E116"
 "1","(2775,3225)","0","ecl","I37";
 SECTION"1";
@@ -301,13 +301,13 @@ ABBREV"10E116"
 TITLE"10E116"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"27"3;
+$PN"27"15;
 "B <SIZE-1..0>* \B"
-$PN"28"10;
+$PN"28"8;
 "REF"
-$PN"2"10;
+$PN"2"8;
 "Y <SIZE-1..0>"
-$PN"14"7;
+$PN"14"11;
 "Y <SIZE-1..0>* \B"
 $PN"15"0;
 %"10E116"
@@ -322,15 +322,15 @@ ABBREV"10E116"
 TITLE"10E116"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"25"15;
+$PN"25"3;
 "B <SIZE-1..0>* \B"
-$PN"26"10;
+$PN"26"8;
 "REF"
-$PN"2"10;
+$PN"2"8;
 "Y <SIZE-1..0>"
-$PN"17"13;
+$PN"17"5;
 "Y <SIZE-1..0>* \B"
-$PN"18"14;
+$PN"18"4;
 %"10H125"
 "1","(4775,3500)","0","ecl","I39";
 SECTION"1";
@@ -341,13 +341,13 @@ CDS_SEC"1"
 PACK_TYPE"PLCC"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"19"15;
+$PN"19"3;
 "B <SIZE-1..0>* \B"
-$PN"18"11;
+$PN"18"7;
 "V"
-$PN"2"11;
+$PN"2"7;
 "Y <SIZE-1..0>"
-$PN"17"12;
+$PN"17"6;
 %"CSMD0805"
 "1","(4450,3325)","1","capacitors","I40";
 ;
@@ -374,7 +374,7 @@ VOLTAGE"50V"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors";
 "B<0>"
-$PN"2"11;
+$PN"2"7;
 "A<0>"
 $PN"1"18;
 %"GND"
@@ -410,14 +410,14 @@ PART_NAME"CSMD0805"
 PACKTYPE"0805"
 VOLTAGE"50V";
 "B<0>"
-$PN"2"10;
+$PN"2"8;
 "A<0>"
-$PN"1"16;
+$PN"1"2;
 %"GND"
 "1","(2125,3125)","0","misc","I9";
 ;
 CDS_LIB"misc"
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING";
-"G\NAC"16;
+"G\NAC"2;
 END.

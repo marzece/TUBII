@@ -2,15 +2,15 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"UN$1$AD8009$I4$IN";
-2"VCC5M\G";
-3"VCC\G";
-4"UN$1$AD8009$I4$V";
+1"GND\g";
+2"GND\g";
+3"GND\G";
+4"UN$1$RESL$I2$A";
 5"UN$1$AD8009$I4$OUTPUT";
-6"UN$1$RESL$I2$A";
-7"GND\G";
-8"GND\g";
-9"GND\g";
+6"UN$1$AD8009$I4$V";
+7"VCC\G";
+8"VCC5M\G";
+9"UN$1$AD8009$I4$IN";
 10"UN$1$AD8009$I4$V$1";
 %"TESTPOINT_L"
 "1","(1925,875)","2","misc","I1";
@@ -23,7 +23,7 @@ CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
 "A\NAC \B"
-$PN"1"6;
+$PN"1"4;
 %"CSMD0805"
 "1","(3225,625)","1","capacitors","I10";
 ;
@@ -52,7 +52,7 @@ TOL"10%";
 "B<0>"
 $PN"2"10;
 "A<0>"
-$PN"1"2;
+$PN"1"8;
 %"CSMD0805"
 "1","(3225,1100)","1","capacitors","I11";
 ;
@@ -79,9 +79,9 @@ TOL_ON_OFF"ON"
 CDS_LIB"capacitors"
 TOL"10%";
 "B<0>"
-$PN"2"3;
+$PN"2"7;
 "A<0>"
-$PN"1"4;
+$PN"1"6;
 %"TESTPOINT_L"
 "1","(2350,1075)","1","misc","I12";
 ;
@@ -93,7 +93,7 @@ CDS_LIB"misc"
 TITLE"TEST"
 ABBREV"TP";
 "A\NAC \B"
-$PN"1"6;
+$PN"1"4;
 %"TESTPOINT_L"
 "1","(3775,1000)","1","misc","I13";
 ;
@@ -128,9 +128,9 @@ TOL_ON_OFF"ON"
 SIZE"1B"
 CDS_LIB"resistors";
 "A <SIZE-1..0>\NAC"
-$PN"1"6;
+$PN"1"4;
 "B <SIZE-1..0>\NAC"
-$PN"2"1;
+$PN"2"9;
 %"RES_L"
 "1","(3175,1375)","0","resistors","I3";
 ;
@@ -153,7 +153,7 @@ TC2"RTMPQ"
 ABBREV"res_l"
 TITLE"RES_L";
 "A <SIZE-1..0>\NAC"
-$PN"1"1;
+$PN"1"9;
 "B <SIZE-1..0>\NAC"
 $PN"2"5;
 %"AD8009"
@@ -166,15 +166,15 @@ CDS_SEC"1"
 CDS_LIB"misc"
 CDS_LMAN_SYM_OUTLINE"-175,125,75,-125";
 "V+"
-$PN"7"4;
+$PN"7"6;
 "V-"
 $PN"4"10;
 "OUTPUT"
 $PN"6"5;
 "IN+"
-$PN"3"7;
+$PN"3"3;
 "IN-"
-$PN"2"1;
+$PN"2"9;
 %"TESTPOINT_L"
 "1","(3950,800)","0","misc","I5";
 ;
@@ -198,7 +198,7 @@ ABBREV"TP"
 TITLE"TEST"
 CDS_LIB"misc";
 "A\NAC \B"
-$PN"1"9;
+$PN"1"1;
 %"TESTPOINT_L"
 "1","(3950,700)","0","misc","I7";
 ;
@@ -210,19 +210,19 @@ CDS_LIB"misc"
 ABBREV"TP"
 TITLE"TEST";
 "A\NAC \B"
-$PN"1"8;
+$PN"1"2;
 %"GND"
 "1","(2075,650)","0","misc","I8";
 ;
 CDS_LIB"misc"
 HDL_POWER"GND"
 BODY_TYPE"PLUMBING";
-"G\NAC"9;
+"G\NAC"1;
 %"GND"
 "1","(3825,625)","0","misc","I9";
 ;
 CDS_LIB"misc"
 BODY_TYPE"PLUMBING"
 HDL_POWER"GND";
-"G\NAC"8;
+"G\NAC"2;
 END.
