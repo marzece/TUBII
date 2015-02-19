@@ -5,8 +5,12 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{hyperref}
-\author{Eric Marzec}
+\usepackage{authblk}
+
+
 \title{Tubii: A Field Of Dreams}
+\author{Eric Marzec \& Ian Coulter\\ With help from Gabriel Orebi Gann, Josk Klein, Andy Mastbaum, Richie Bonventre, Godwin Mayers \& Rick Van Berg}
+
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -16,7 +20,7 @@ Additionally, this document will continue to be updated as the TUBII progresses.
 \end{abstract}
 %\tableofcontents%
 \section{Motivation for TUBii}
-Unavoidably, in the creation SNO+'s DAQ the primary focus was what features were needed. But now that much of the DAQ is ``on an even keel'', so to speak, there is a long list of features that could be beneficial to the experiment, though they are not strictly necessary. This is where the TUBII comes in, it serves to improve the DAQ by providing a lot of functions and utilties to the user that haven't previously been availible. It seeks to solve the problems that has plagued the experiment in the past. And hopefully it can even help address problems that may occur in the future. In short, the TUBII is meant to solve everyone's problems forever. Obviously SNO+ will not exist in some state of utopic, experiment nirvana upon the completion of TUBII. But hopefully the TUBII will at least allow operators to have a few more degrees of freedom for how they take data and address problems with the detector as they occur. The remainder of the document will describe exactly what new functionality is provided.
+Unavoidably, in the creation SNO+'s DAQ the primary focus was what features were needed. But now that much of the DAQ is ``on an even keel'', so to speak, there is a long list of features that could be beneficial to the experiment, though they are not strictly necessary. This is where the TUBII comes in, it serves to improve the DAQ by providing a lot of functions and utilties to the user that haven't previously been availible. It seeks to solve the problems that has plagued the experiment in the past. And hopefully it can even help address problems that may occur in the future. In short, the TUBII is meant to solve everyone's problems forever. Obviously SNO+ will not exist in some state of utopic, experiment nirvana upon the completion of TUBII. But hopefully the TUBII will at least allow operators to have a few more degrees of freedom for how they take data and address problems with the detector as they occur. The original plan for the functionality to be provided by the TUBII can be seen in it's proposal \cite{TubiiPlanDocument}.The remainder of the document will describe exactly what new functionality is provided in greater detail then was possible in the proposal.
 
 \section{The MicroZed}
 
@@ -35,7 +39,7 @@ The TUBii has a copy of the Global Trigger ($GT$) signal that is sent from the M
 The $LO*$ and $DGT$ signals are then used on the MTCD to determine when there should be the detector should re-trigger.
  
 \section{CAEN Interface}
-There are two functions which the TUBII provides for the CAEN. The first of which is to convert the $SYNC$ and $SYNC24$ signals to LVDS before they are sent to the CAEN. Similarly it provides a NIM copy of each Global Trigger. Currently these conversions are done by the Teeny-Tubii, which will be replaced once the TUBII is completed. 
+There are two functions which the TUBII provides for the CAEN. The first of which is to convert the $SYNC$ and $SYNC24$ signals to LVDS before they are sent to the CAEN. Similarly it provides a NIM copy of each Global Trigger. Currently these conversions are done by the Teeny-Tubii \cite{ElectronicsUpdate}, which will be replaced once the TUBII is completed. 
 
  The second function provided for the CAEN is that of a channel selector for the various analog signals that may be plugged into the CAEN. Currently any time an operator would like to change which channels are seen by the CAEN he/she would have to physically remove a cable and plug in their desired cable. This is undesireable for several reasons, not the least of which is that it leaves no record of what changes occured. And ultimately leads to no one being quite sure what the CAEN is telling them. With the TUBII changing the channels in the CAEN will be able to be done in software which can they automatically keep track of which signals are sent to the CAEN and which aren't. Unfortunately, the TUBII's channel selecting ability is somewhat limited, it provides eight output channels. Four of those channels have two possible inputs that can be chosen between, meaning there are 12 total inputs and 8 outputs. It also means that some combinations of channels are not possible. For example, if ESUMH and NHIT\_100H were plugged into two input channels that share an output, then the user could never have both ESUMH and NHIT\_100H availible to the CAEN. This scheme was chosen because it's believed to be sufficient for most nearly any user while being of maneagble complexity.
  
@@ -75,7 +79,7 @@ Inevitably, the TUBII will be used as a black box by the many of it's users, so 
 A great many of the TUBII's utilities require a shift register being loaded. Doing so generally require three separate signals, $Latch Enable$ ($LE$), $Clock$ ($CLK$), and $Data$.
 So if the TUBII had eight shift registers that would use up a minimum of 24 pins on the MicroZed. To prevent such a large consuption of pins a 3-bit addressing scheme is used. This allows for 3 pins on the MicroZed to choose which of the eight shift registers will be programmed. This multiplexed signal acts as the $LatchEnable$ signal for the majority of the shift registers on the board. The $DATA$ and $CLK$ signals are shared between all of the shift registers. This means every shift register gets programmed at the same time but only the register that is specified by the 3-bit address will be "paying attention". This allows for a total of 5 pins on the MicroZed to be dedicated to programming shift registers.
 \subsection{Control Register}
-One of the shift registers addressed as described above is the "Control Register". The Control Register is meant to hold all the bits that the user will likely only ever set once. An example of this $Select_LO_SRC$ bit, which decides if $DDGT$ or $LO*_{MTCD}$ will be used as $LO*$, as described in \ref{GTTiming}. The user will probably only ever want to set the $Select_LO_SRC$ bit once, so the bit is stored in the Control Register rather than on the MicroZed. This saves one pin on the MicroZed with effectively no cost. Also a parallel-in serial-out register is connected to the eight outputs of the Control Register, this was added for debugging purposes. It allows the MicroZed to read the state of the Control Register in a non-destructive way. 
+One of the shift registers addressed as described above is the "Control Register". The Control Register is meant to hold all the bits that the user will likely only ever set once. An example, $Select\_LO\_SRC$ is a bit that decides if $DDGT$ or $LO*_{MTCD}$ will be used as $LO*$, as described in \ref{GTTiming}. The user will probably only ever want to set the $Select\_LO\_SRC$ bit once, so the bit is stored in the Control Register rather than on the MicroZed. This saves one pin on the MicroZed with effectively no cost. Also a parallel-in serial-out register is connected to the eight outputs of the Control Register, this was added for debugging purposes. It allows the MicroZed to read the state of the Control Register in a non-destructive way. 
 \subsection{Powers}
 The TUBII requires an unfortunately varied amount of different powers due to the fact that it has to perform both analog and digital operations, and for its digital operations it has to use several different logic families. Each power line that goes onto the board is buffered through an inductor and regulated (with a regulator). The following powers are used by the TUBII, +15V, +5V ($VCC$), +3.3V, 0V ($GND$), -2V ($VTT$), -5V ($VEE$), and -15V. Additionally a -5V reference is created which is used in the Caen interface circuitry. It is worth noting that with ECL the $VCC$ signal generally corresponds to 0V while with TTL $VCC$ is at 5V. This can obviously lead to some amount of confusion, but in designing the TUBII I have tried to always use the convention that $VCC$ is 5V and that $GND$ is 0V regardless of which logic family is being considered.
 
@@ -138,4 +142,11 @@ $\bullet$ 8 bits. Serial in, parallel out \\
 $\bullet$ Connected to pin 10 of LE MUX \\
 $\bullet$ Data is gated. Toggle $TubiiTime\_Data\_Time$ once programming is finished.\\
 $\bullet$ Outputs the value for how many missed counts are allowed before clock switch over \\
+
+\begin{thebibliography}{9}
+\bibitem{TubiiPlanDocument}
+Gabriel Orebi Gann, TUBii Proposal \href{https://www.snolab.ca/snoplus/private/DocDB/cgi/ShowDocument?docid=2167}{SNO+-doc-2167-v1}
+\bibitem{ElectronicsUpdate}
+Andy Mastbaum, Electronics Status Update 2013 \href{https://www.snolab.ca/snoplus/private/DocDB/0017/001783/001/electronics.pdf}{SNO+-doc-1783-v1}
+\end{thebibliography}
 \end{document}
