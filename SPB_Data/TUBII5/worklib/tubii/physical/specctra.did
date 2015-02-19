@@ -9,16 +9,13 @@
 # Initialization options:
 #   -do pasde.do
 # Status File Name : C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\monitor.sts
+# -nog specified. Graphics not utilized.
 # Use Colormap In Design File.
 #
 #
 #
 #
 # do $/tubii_v5_rules.do
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_custom_route.do
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_setup.do
-set dofile_auto_repaint off
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_physical.do
 define (class _bus_JX1_LVDS_N JX1_LVDS_N<23> JX1_LVDS_N<22> JX1_LVDS_N<21> JX1_LVDS_N<20> 
   JX1_LVDS_N<19> JX1_LVDS_N<18> JX1_LVDS_N<17> JX1_LVDS_N<16> 
   JX1_LVDS_N<15> JX1_LVDS_N<14> JX1_LVDS_N<13> JX1_LVDS_N<12> 
@@ -207,35 +204,42 @@ rule pcb (tjunction on)(junction_type all)
 rule pcb (staggered_via on (min_gap 5))
 rule pcb (via_at_smd off)
 rule PCB (turn_under_pad off)
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_timing.do
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_shielding.do
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_diffpair.do
-set stub_viols_cost off
-set reroute_order_viols on
-# do C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/tubii_v5_route.do
-set dofile_auto_repaint on
-vset system Place_error off
-vset system Place_front off
-vset system Place_back off
-set banner 0
-set banner 9
-set slp
-create $/window.scr
-append  #
-append  # Custom Route - Requires fanout complete.
-append  #
-append  # Provides and guides you through an enhanced route strategy.
-append  #
-append  # Allows user intervention to monitor performance and improve router strategy.
-append  #
-append  # Optional setup may be performed before continuing(display, layer bias, grid, object selection, etc).
-append  #
-close
-report file $/window.scr
-# if (&slp) (
-# else
-measure 12760 14599.92 12760 14599.92
-measure 10950 11880 10950 11880
+write colormap _notify.std
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaah03048.tmp
+unselect all routing
+select component U50
+select component U48
+select component U49
+select component U86
+select component U99
+select component U100
+set route_diagonal 0
+grid wire 0.010000 (direction x) (offset 0.000000)
+grid wire 0.010000 (direction y) (offset 0.000000)
+grid via 0.010000 (direction x) (offset 0.000000)
+grid via 0.010000 (direction y) (offset 0.000000)
+protect all wires
+direction TOP horizontal
+select layer TOP
+unprotect layer_wires TOP
+direction BOTTOM vertical
+select layer BOTTOM
+unprotect layer_wires BOTTOM
+cost via -1
+set turbo_stagger off
+limit outside -1
+rule pcb (patterns_allowed  trombone accordion)
+set pattern_stacking on
+rule pcb (sawtooth_amplitude -1 -1)
+rule pcb (sawtooth_gap -1)
+rule pcb (accordion_amplitude -1 -1)
+rule pcb (accordion_gap -1)
+rule pcb (trombone_run_length -1)
+rule pcb (trombone_gap -1)
+unprotect selected
+route 25 1
+clean 2
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaai03048.tmp
 quit -c
