@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 4 )
+			( logicalViewRevNum 5 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -469,6 +469,22 @@
 			( Analysis
 			)
 		)
+		( Attribute
+			( Name "PACKAGE" )
+			( Description " " )
+			( Value
+				( DataType ( dString ) )
+				( Status  sProperty  sPackage )
+			)
+			( Objects
+				( ValidObjects  oGate  oGateDefn  oBlock  oPart  oDesign  oSystem  oPartDefn )
+				( NoInherit
+					( oGate oPin )
+				)
+			)
+			( Analysis
+			)
+		)
 	)
 	( designConstraints
 		( ruleChanges
@@ -477,12 +493,6 @@
 			)
 			( signal "@tubii_lib.comparator_ports(sch_1):fast_anpulse"
 				( objectStatus "fast_anpulse" )
-			)
-			( signal "@tubii_lib.comparator_ports(sch_1):fast_comp_outh"
-				( objectStatus "fast_comp_outh" )
-			)
-			( signal "@tubii_lib.comparator_ports(sch_1):fast_comp_outl"
-				( objectStatus "fast_comp_outl" )
 			)
 			( signal "@tubii_lib.comparator_ports(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.comparator_ports(sch_1):page1_gnd") )
@@ -495,11 +505,17 @@
 			( signal "@tubii_lib.comparator_ports(sch_1):tune_anpulse"
 				( objectStatus "tune_anpulse" )
 			)
-			( signal "@tubii_lib.comparator_ports(sch_1):tune_comp_outh"
-				( objectStatus "tune_comp_outh" )
+			( signal "@tubii_lib.comparator_ports(sch_1):fast_comp_out_n"
+				( objectStatus "fast_comp_out_n" )
 			)
-			( signal "@tubii_lib.comparator_ports(sch_1):tune_comp_outl"
-				( objectStatus "tune_comp_outl" )
+			( signal "@tubii_lib.comparator_ports(sch_1):fast_comp_out_p"
+				( objectStatus "fast_comp_out_p" )
+			)
+			( signal "@tubii_lib.comparator_ports(sch_1):tune_comp_out_n"
+				( objectStatus "tune_comp_out_n" )
+			)
+			( signal "@tubii_lib.comparator_ports(sch_1):tune_comp_out_p"
+				( objectStatus "tune_comp_out_p" )
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i1"
 				( attribute "ABBREV" "TP"
@@ -539,6 +555,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I1" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i2"
 				( attribute "ABBREV" "TP"
@@ -578,6 +599,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I2" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i3"
 				( attribute "ABBREV" "TP"
@@ -617,6 +643,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I3" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i4"
 				( attribute "ABBREV" "TP"
@@ -656,6 +687,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I4" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i5"
 				( attribute "ABBREV" "TP"
@@ -695,6 +731,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I5" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i6"
 				( attribute "ABBREV" "TP"
@@ -734,6 +775,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I6" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i9"
 				( attribute "ABBREV" "TP"
@@ -773,6 +819,11 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I9" )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
+				)
 			)
 			( gate "@tubii_lib.comparator_ports(sch_1):page1_i10"
 				( attribute "ABBREV" "TP"
@@ -812,45 +863,10 @@
 					( Origin gPackager )
 				)
 				( objectStatus "PAGE1_I10" )
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i1:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i2:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i3:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i4:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i5:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i6:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i9:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
-				)
-			)
-			( pin "@tubii_lib.comparator_ports(sch_1):page1_i10:a"
-				( attribute "PN" "1"
-					( Origin gPackager )
+				( pin "a"
+					( attribute "PN" "1"
+						( Origin gPackager )
+					)
 				)
 			)
 		)

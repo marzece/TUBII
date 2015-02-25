@@ -2,30 +2,14 @@ FILE_TYPE = CONNECTIVITY;
 {Allegro Design Entry HDL 16.6-p007 (v16-6-112F) 10/10/2012}
 "PAGE_NUMBER" = 1;
 0"NC";
-1"TTL_OUT\I";
-2"UN$1$10H125$I1$B";
-3"UN$1$10E116$I31$Y";
-4"VTT\G";
+1"ECL_IN\I";
+2"VBB_TRANS\G";
+3"VTT\G";
+4"UN$1$10E116$I31$Y";
 5"VBB_TRANS\G";
-6"ECL_IN\I";
+6"TTL_OUT\I";
 7"GND\g";
 8"GND\g";
-%"10H125"
-"1","(-475,2925)","0","ecl","I1";
-SECTION"1";
-$LOCATION"U127"
-CDS_LOCATION"U127"
-$SEC"1"
-CDS_SEC"1"
-CDS_LIB"ecl";
-"A <SIZE-1..0>"
-$PN"19"3;
-"B <SIZE-1..0>* \B"
-$PN"18"2;
-"V"
-$PN"2"2;
-"Y <SIZE-1..0>"
-$PN"17"1;
 %"RSMD0805"
 "1","(-2100,2625)","1","resistors","I13";
 ;
@@ -51,9 +35,9 @@ POWER"0.1"
 CDS_LMAN_SYM_OUTLINE"-75,25,75,-25"
 CDS_LIB"resistors";
 "A<0>"
-$PN"1"4;
+$PN"1"3;
 "B<0>"
-$PN"2"6;
+$PN"2"1;
 %"RSMD0805"
 "1","(-1100,2625)","1","resistors","I17";
 ;
@@ -79,9 +63,9 @@ TC2"RTMPO"
 MAX_TEMP"RTMAX"
 POWER"0.1";
 "A<0>"
-$PN"1"4;
+$PN"1"3;
 "B<0>"
-$PN"2"3;
+$PN"2"4;
 %"CSMD0805"
 "1","(-1850,2875)","0","capacitors","I27";
 ;
@@ -91,8 +75,8 @@ $SEC"1"
 CDS_SEC"1"
 VOLTAGE"50V"
 PACKTYPE"0805"
-PART_NAME"CSMD0805"
 VALUE"0.1UF"
+PART_NAME"CSMD0805"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 CDS_LIB"capacitors"
 TOL_ON_OFF"ON"
@@ -110,7 +94,7 @@ TOL"5%";
 "B<0>"
 $PN"2"8;
 "A<0>"
-$PN"1"5;
+$PN"1"2;
 %"GND"
 "1","(-1750,2825)","0","misc","I28";
 ;
@@ -126,9 +110,9 @@ CDS_LOCATION"C90"
 $SEC"1"
 CDS_SEC"1"
 PACKTYPE"0805"
-PART_NAME"CSMD0805"
 VALUE"0.1UF"
 VOLTAGE"50V"
+PART_NAME"CSMD0805"
 CDS_LIB"capacitors"
 CDS_LMAN_SYM_OUTLINE"-25,25,25,-25"
 TOL"5%"
@@ -144,7 +128,7 @@ TC"0"
 CURRENT"CIMAX"
 TOL_ON_OFF"ON";
 "B<0>"
-$PN"2"2;
+$PN"2"5;
 "A<0>"
 $PN"1"7;
 %"GND"
@@ -166,13 +150,30 @@ ABBREV"10E116"
 TITLE"10E116"
 CDS_LIB"ecl";
 "A <SIZE-1..0>"
-$PN"25"6;
+$PN"25"1;
 "B <SIZE-1..0>* \B"
-$PN"26"5;
+$PN"26"2;
 "REF"
-$PN"2"5;
+$PN"2"2;
 "Y <SIZE-1..0>"
-$PN"17"3;
+$PN"17"4;
 "Y <SIZE-1..0>* \B"
 $PN"18"0;
+%"10H125"
+"1","(-475,2925)","0","ecl","I32";
+SECTION"1";
+$LOCATION"U127"
+CDS_LOCATION"U127"
+$SEC"1"
+CDS_SEC"1"
+PACK_TYPE"PLCC"
+CDS_LIB"ecl";
+"A <SIZE-1..0>"
+$PN"19"4;
+"B <SIZE-1..0>* \B"
+$PN"18"5;
+"V"
+$PN"2"5;
+"Y <SIZE-1..0>"
+$PN"17"6;
 END.

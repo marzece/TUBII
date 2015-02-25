@@ -8,22 +8,22 @@
   (design "caen"
     (lastIds
       (lastInstanceId 3)
-      (lastNetId 126)
-      (lastInstTermId 139)
+      (lastNetId 148)
+      (lastInstTermId 159)
     )
     (cells
       ("S2" "caen_chat" "tubii_lib" "sym_1"
         (terms
-          ("T61" "sync24h_ecl" -1 -1 1)
-          ("T62" "sync24l_ecl" -1 -1 1)
-          ("T63" "synch_ecl" -1 -1 1)
-          ("T64" "syncl_ecl" -1 -1 1)
-          ("T101" "sync24h_lvds" -1 -1 2)
-          ("T103" "synch_lvds" -1 -1 2)
-          ("T104" "syncl_lvds" -1 -1 2)
-          ("T242" "gtrigh_ecl" -1 -1 1)
-          ("T243" "gtrigl_ecl" -1 -1 1)
-          ("T281" "sync24l_lvds" -1 -1 2)
+          ("T331" "gt_ecl_n" -1 -1 1)
+          ("T332" "gt_ecl_p" -1 -1 1)
+          ("T333" "sync24_ecl_n" -1 -1 1)
+          ("T334" "sync24_ecl_p" -1 -1 1)
+          ("T335" "sync24_lvds_n" -1 -1 2)
+          ("T336" "sync24_lvds_p" -1 -1 2)
+          ("T337" "sync_lvds_n" -1 -1 2)
+          ("T338" "sync_lvds_p" -1 -1 2)
+          ("T339" "sync_ecl_n" -1 -1 1)
+          ("T340" "sync_ecl_p" -1 -1 1)
         )
       )
       ("S3" "caen_coms" "tubii_lib" "sym_1"
@@ -44,82 +44,81 @@
       ("N2" "data" -1 -1 1 3)
       ("N3" "data_rdy" -1 -1 1 3)
       ("N4" "le" -1 -1 1 3)
-      ("N27" "gtrigh_ecl" -1 -1 1 3)
-      ("N28" "gtrigl_ecl" -1 -1 1 3)
-      ("N29" "sync24h_ecl" -1 -1 1 3)
-      ("N30" "sync24l_ecl" -1 -1 1 3)
-      ("N31" "synch_ecl" -1 -1 1 3)
-      ("N32" "syncl_ecl" -1 -1 1 3)
-      ("N34" "synch_lvds" -1 -1 1 3)
-      ("N35" "syncl_lvds" -1 -1 1 3)
-      ("N73" "sync24h_lvds" -1 -1 1 3)
-      ("N74" "sync24l_lvds" -1 -1 1 3)
       ("N75" "caen_out" 7 0 1 3)
       ("N76" "scope_out" 7 0 1 3)
       ("N103" "an_pulse_in" 11 0 1 3)
+      ("N139" "gt_ecl_n" -1 -1 1 3)
+      ("N140" "gt_ecl_p" -1 -1 1 3)
+      ("N141" "sync24_ecl_n" -1 -1 1 3)
+      ("N142" "sync24_ecl_p" -1 -1 1 3)
+      ("N143" "sync24_lvds_n" -1 -1 1 3)
+      ("N144" "sync24_lvds_p" -1 -1 1 3)
+      ("N145" "sync_ecl_n" -1 -1 1 3)
+      ("N146" "sync_ecl_p" -1 -1 1 3)
+      ("N147" "sync_lvds_n" -1 -1 1 3)
+      ("N148" "sync_lvds_p" -1 -1 1 3)
       ("gnd" "gnd" -1 -1 2  inherited)
       ("vee" "vee" -1 -1 2  inherited)
-      ("vp3_3" "vp3_3" -1 -1 2  inherited)
       ("vtt" "vtt" -1 -1 2  inherited)
-      ("vcc5" "vcc5" -1 -1 2  inherited)
-      ("gnd_power" "gnd_power" -1 -1 2  inherited)
       ("vref2m" "vref2m" -1 -1 2  inherited)
       ("vcc15" "vcc15" -1 -1 2  inherited)
       ("vcc15m" "vcc15m" -1 -1 2  inherited)
       ("vcc5m" "vcc5m" -1 -1 2  inherited)
+      ("vcc" "vcc" -1 -1 2  inherited)
+      ("vref5m" "vref5m" -1 -1 2  inherited)
     )
 
     (instances
       ("I1" "page1_i1" "S2"
         (pins
-          ("M29" "T61" -1 -1
+          ("M150" "T331" -1 -1
             (conn
-              ("0" -1 -1 "N29" -1 -1)
+              ("0" -1 -1 "N139" -1 -1)
             )
           )
-          ("M30" "T62" -1 -1
+          ("M151" "T332" -1 -1
             (conn
-              ("0" -1 -1 "N30" -1 -1)
+              ("0" -1 -1 "N140" -1 -1)
             )
           )
-          ("M31" "T63" -1 -1
+          ("M152" "T333" -1 -1
             (conn
-              ("0" -1 -1 "N31" -1 -1)
+              ("0" -1 -1 "N141" -1 -1)
             )
           )
-          ("M32" "T64" -1 -1
+          ("M153" "T334" -1 -1
             (conn
-              ("0" -1 -1 "N32" -1 -1)
+              ("0" -1 -1 "N142" -1 -1)
             )
           )
-          ("M56" "T101" -1 -1
+          ("M154" "T335" -1 -1
             (conn
-              ("0" -1 -1 "N73" -1 -1)
+              ("0" -1 -1 "N143" -1 -1)
             )
           )
-          ("M58" "T103" -1 -1
+          ("M155" "T336" -1 -1
             (conn
-              ("0" -1 -1 "N34" -1 -1)
+              ("0" -1 -1 "N144" -1 -1)
             )
           )
-          ("M59" "T104" -1 -1
+          ("M156" "T337" -1 -1
             (conn
-              ("0" -1 -1 "N35" -1 -1)
+              ("0" -1 -1 "N147" -1 -1)
             )
           )
-          ("M127" "T242" -1 -1
+          ("M157" "T338" -1 -1
             (conn
-              ("0" -1 -1 "N27" -1 -1)
+              ("0" -1 -1 "N148" -1 -1)
             )
           )
-          ("M128" "T243" -1 -1
+          ("M158" "T339" -1 -1
             (conn
-              ("0" -1 -1 "N28" -1 -1)
+              ("0" -1 -1 "N145" -1 -1)
             )
           )
-          ("M139" "T281" -1 -1
+          ("M159" "T340" -1 -1
             (conn
-              ("0" -1 -1 "N74" -1 -1)
+              ("0" -1 -1 "N146" -1 -1)
             )
           )
         )

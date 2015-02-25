@@ -1,0 +1,3 @@
+page1.csa
+lvds_ecl_translation.xcon
+lvds_ecl_translation.dcf

@@ -5,7 +5,7 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-11T17:54:50</modificationTime>
+    <modificationTime>2015-02-20T14:27:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
@@ -212,54 +212,6 @@
           </terms>
         </cell>
         <cell>
-          <id>S6</id>
-          <library>ttl</library>
-          <name>f06</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
-            <term>
-              <id>T62</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T63</id>
-              <name>y*&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S7</id>
-          <library>resistors</library>
-          <name>rsmd0805</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T64</id>
-              <name>a</name>
-              <direction>input</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-            <term>
-              <id>T65</id>
-              <name>b</name>
-              <direction>output</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-          </terms>
-        </cell>
-        <cell>
           <id>S8</id>
           <library>capacitors</library>
           <name>csmd0603</name>
@@ -416,10 +368,6 @@
           <name>read_enable</name>
           <scope>interface</scope>
           <direction>inout</direction>
-        </net>
-        <net>
-          <id>N30</id>
-          <name>unnamed_1_74hct165_i16_ce</name>
         </net>
         <net>
           <id>N4</id>
@@ -1018,14 +966,14 @@
               <id>M50</id>
               <termid>T36</termid>
               <connections>
-                <connection net="N30" />
+                <connection net="N31" />
               </connections>
             </pin>
             <pin>
               <id>M51</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N1" />
+                <connection net="N29" />
               </connections>
             </pin>
             <pin>
@@ -1346,84 +1294,6 @@
           </portinterfaces>
         </instance>
         <instance>
-          <id>I24</id>
-          <cellid>S6</cellid>
-          <name>page1_i25</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M72</id>
-              <termid>T62</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N29" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M73</id>
-              <termid>T63</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N30" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I25</id>
-          <cellid>S7</cellid>
-          <name>page1_i26</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M74</id>
-              <termid>T64</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M75</id>
-              <termid>T65</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N30" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
           <id>I26</id>
           <cellid>S8</cellid>
           <name>page1_i27</name>
@@ -1686,7 +1556,6 @@
               <net ref="unnamed_1_74f164_i1_q5"></net>
               <net ref="unnamed_1_74f164_i1_q6"></net>
               <net ref="unnamed_1_74f164_i1_q7"></net>
-              <net ref="unnamed_1_74hct165_i16_ce"></net>
               <net ref="unnamed_1_hct374_i5_q"></net>
               <net ref="unnamed_1_hct374_i6_q"></net>
               <net ref="unnamed_1_hct374_i7_q"></net>
@@ -1715,8 +1584,6 @@
               <instance ref="i22"></instance>
               <instance ref="i23"></instance>
               <instance ref="i24"></instance>
-              <instance ref="i25"></instance>
-              <instance ref="i26"></instance>
               <instance ref="i27"></instance>
               <instance ref="i28"></instance>
               <instance ref="i29"></instance>

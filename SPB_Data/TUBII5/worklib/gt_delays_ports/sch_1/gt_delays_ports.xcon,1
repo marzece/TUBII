@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-11T17:56:57</modificationTime>
+    <modificationTime>2015-02-25T10:36:16</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="gt_delays_ports" view="sch_1">
       <lastids>
         <instanceid>13</instanceid>
-        <netid>12</netid>
+        <netid>16</netid>
         <insttermid>33</insttermid>
       </lastids>
       <cells>
@@ -101,18 +101,6 @@
       </cells>
       <nets>
         <net>
-          <id>N1</id>
-          <name>dgth</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N2</id>
-          <name>dgtl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N4</id>
           <name>page1_gnd</name>
         </net>
@@ -135,16 +123,28 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N8</id>
-          <name>unnamed_1_10h116_i6_y</name>
-        </net>
-        <net>
-          <id>N9</id>
-          <name>unnamed_1_10h116_i6_y_1</name>
-        </net>
-        <net>
           <id>N12</id>
           <name>unnamed_1_10h116_i15_y</name>
+        </net>
+        <net>
+          <id>N13</id>
+          <name>dgt_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N14</id>
+          <name>dgt_out_n</name>
+        </net>
+        <net>
+          <id>N15</id>
+          <name>dgt_out_p</name>
+        </net>
+        <net>
+          <id>N16</id>
+          <name>dgt_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N3</id>
@@ -184,7 +184,7 @@
               <id>M1</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N8" />
+                <connection net="N14" />
               </connections>
             </pin>
           </pins>
@@ -212,7 +212,7 @@
               <id>M2</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N9" />
+                <connection net="N15" />
               </connections>
             </pin>
           </pins>
@@ -298,7 +298,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N1" />
+                <connection pinmsb="0" pinlsb="0" net="N16" />
               </connections>
             </pin>
             <pin>
@@ -307,7 +307,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N2" />
+                <connection pinmsb="0" pinlsb="0" net="N13" />
               </connections>
             </pin>
             <pin>
@@ -316,7 +316,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N15" />
               </connections>
             </pin>
             <pin>
@@ -325,7 +325,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
+                <connection pinmsb="0" pinlsb="0" net="N14" />
               </connections>
             </pin>
             <pin>
@@ -549,13 +549,13 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
-          <netScope ref="dgth">
+          <netScope ref="dgt_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="dgtl">
+          <netScope ref="dgt_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -595,15 +595,15 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="dgth"></net>
-              <net ref="dgtl"></net>
+              <net ref="dgt_n"></net>
+              <net ref="dgt_out_n"></net>
+              <net ref="dgt_out_p"></net>
+              <net ref="dgt_p"></net>
               <net ref="gnd"></net>
               <net ref="lockout"></net>
               <net ref="lockout*"></net>
               <net ref="mtcd_lo*"></net>
               <net ref="unnamed_1_10h116_i15_y"></net>
-              <net ref="unnamed_1_10h116_i6_y"></net>
-              <net ref="unnamed_1_10h116_i6_y_1"></net>
               <net ref="vtt"></net>
             </nets>
             <instances>

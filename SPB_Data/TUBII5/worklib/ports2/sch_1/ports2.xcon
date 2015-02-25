@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-17T16:05:00</modificationTime>
+    <modificationTime>2015-02-25T12:05:46</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ports2" view="sch_1">
       <lastids>
         <instanceid>28</instanceid>
-        <netid>115</netid>
-        <insttermid>762</insttermid>
+        <netid>125</netid>
+        <insttermid>780</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -233,18 +233,6 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N14</id>
-          <name>clock200_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N15</id>
-          <name>clock200_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N16</id>
           <name>exttrig</name>
           <scope>interface</scope>
@@ -309,18 +297,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N34</id>
-          <name>clock100_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N35</id>
-          <name>clock100_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N50</id>
           <name>unnamed_1_10h116_i27_a</name>
         </net>
@@ -329,20 +305,44 @@
           <name>unnamed_1_10h116_i27_b</name>
         </net>
         <net>
-          <id>N52</id>
-          <name>unnamed_1_10h116_i28_a</name>
-        </net>
-        <net>
-          <id>N53</id>
-          <name>unnamed_1_10h116_i28_b</name>
-        </net>
-        <net>
           <id>N88</id>
           <name>unnamed_1_10h103_i2_d1</name>
         </net>
         <net>
           <id>N89</id>
           <name>unnamed_1_10h103_i2_d2</name>
+        </net>
+        <net>
+          <id>N118</id>
+          <name>clk100_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N119</id>
+          <name>clk100_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N120</id>
+          <name>clk200_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N121</id>
+          <name>clk200_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N124</id>
+          <name>unnamed_1_10h116_i28_a</name>
+        </net>
+        <net>
+          <id>N125</id>
+          <name>unnamed_1_10h116_i28_b</name>
         </net>
         <net>
           <id>N3</id>
@@ -594,7 +594,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N52" />
+                <connection pinmsb="0" pinlsb="0" net="N124" />
               </connections>
             </pin>
           </pins>
@@ -633,7 +633,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N53" />
+                <connection pinmsb="0" pinlsb="0" net="N125" />
               </connections>
             </pin>
           </pins>
@@ -717,7 +717,7 @@
               <id>M36</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N52" />
+                <connection net="N124" />
               </connections>
             </pin>
           </pins>
@@ -745,7 +745,7 @@
               <id>M37</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N53" />
+                <connection net="N125" />
               </connections>
             </pin>
           </pins>
@@ -773,7 +773,7 @@
               <id>M38</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N121" />
               </connections>
             </pin>
           </pins>
@@ -801,7 +801,7 @@
               <id>M39</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N15" />
+                <connection net="N120" />
               </connections>
             </pin>
           </pins>
@@ -987,7 +987,7 @@
               <id>M86</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N34" />
+                <connection net="N119" />
               </connections>
             </pin>
           </pins>
@@ -1015,7 +1015,7 @@
               <id>M87</id>
               <termid>T6</termid>
               <connections>
-                <connection net="N35" />
+                <connection net="N118" />
               </connections>
             </pin>
           </pins>
@@ -1108,7 +1108,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N52" />
+                <connection pinmsb="0" pinlsb="0" net="N124" />
               </connections>
             </pin>
             <pin>
@@ -1117,7 +1117,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N53" />
+                <connection pinmsb="0" pinlsb="0" net="N125" />
               </connections>
             </pin>
             <pin>
@@ -1233,25 +1233,25 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
-          <netScope ref="clock100_outh">
+          <netScope ref="clk100_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock100_outl">
+          <netScope ref="clk100_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outh">
+          <netScope ref="clk200_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outl">
+          <netScope ref="clk200_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1333,10 +1333,10 @@
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="clock100_outh"></net>
-              <net ref="clock100_outl"></net>
-              <net ref="clock200_outh"></net>
-              <net ref="clock200_outl"></net>
+              <net ref="clk100_out_n"></net>
+              <net ref="clk100_out_p"></net>
+              <net ref="clk200_out_n"></net>
+              <net ref="clk200_out_p"></net>
               <net ref="exttrig">
                 <msb>15</msb>
                 <lsb>0</lsb>

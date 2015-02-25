@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-03T11:53:05</modificationTime>
+    <modificationTime>2015-02-25T16:07:19</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="clocks" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>7</instanceid>
-        <netid>416</netid>
-        <insttermid>634</insttermid>
+        <netid>434</netid>
+        <insttermid>657</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -45,19 +46,19 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T91</id>
-              <name>clock200_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T92</id>
-              <name>clock200_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T121</id>
               <name>tub_clk_in</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T187</id>
+              <name>clk200_out_n</name>
+              <direction>unspec</direction>
+            </term>
+            <term>
+              <id>T188</id>
+              <name>clk200_out_p</name>
+              <direction>unspec</direction>
             </term>
           </terms>
         </cell>
@@ -73,16 +74,6 @@
               <id>T18</id>
               <name>bckp_clk</name>
               <direction>input</direction>
-            </term>
-            <term>
-              <id>T19</id>
-              <name>clk100_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T20</id>
-              <name>clk100_outl</name>
-              <direction>output</direction>
             </term>
             <term>
               <id>T21</id>
@@ -114,80 +105,15 @@
               <name>sr_clk</name>
               <direction>input</direction>
             </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S4</id>
-          <library>ecl</library>
-          <name>10h125</name>
-          <view>sym_1</view>
-          <parameters>
-            <parameter>
-              <name>size</name>
-              <value>1</value>
-            </parameter>
-          </parameters>
-          <terms>
             <term>
-              <id>T57</id>
-              <name>a&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T58</id>
-              <name>b*&lt;SIZE-1..0&gt;</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T59</id>
-              <name>v</name>
+              <id>T152</id>
+              <name>clock100_out_ttl</name>
               <direction>output</direction>
-            </term>
-            <term>
-              <id>T60</id>
-              <name>y&lt;SIZE-1..0&gt;</name>
-              <direction>output</direction>
-            </term>
-          </terms>
-        </cell>
-        <cell>
-          <id>S5</id>
-          <library>resistors</library>
-          <name>rsmd0805</name>
-          <view>sym_1</view>
-          <parameters>
-          </parameters>
-          <terms>
-            <term>
-              <id>T61</id>
-              <name>a</name>
-              <direction>input</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
-            </term>
-            <term>
-              <id>T62</id>
-              <name>b</name>
-              <direction>output</direction>
-              <msb>0</msb>
-              <lsb>0</lsb>
             </term>
           </terms>
         </cell>
       </cells>
       <nets>
-        <net>
-          <id>N7</id>
-          <name>clk100_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N8</id>
-          <name>clk100_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
         <net>
           <id>N9</id>
           <name>data</name>
@@ -231,18 +157,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N24</id>
-          <name>clock200_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N25</id>
-          <name>clock200_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N26</id>
           <name>clock100</name>
           <scope>interface</scope>
@@ -263,6 +177,36 @@
           <name>unnamed_1_tubiiclks_i1_defaultclk</name>
         </net>
         <net>
+          <id>N431</id>
+          <name>clk100_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N432</id>
+          <name>clk100_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N433</id>
+          <name>clk200_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N434</id>
+          <name>clk200_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N424</id>
+          <name>vtt</name>
+          <scope>global</scope>
+          <inherited>1</inherited>
+        </net>
+        <net>
           <id>gnd</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -273,11 +217,6 @@
           <name>vp3_3</name>
           <scope>global</scope>
           <inherited>1</inherited>
-        </net>
-        <net>
-          <id>vtt</id>
-          <name>vtt</name>
-          <scope>global</scope>
         </net>
         <net>
           <id>vcc</id>
@@ -334,20 +273,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M15</id>
-              <termid>T19</termid>
-              <connections>
-                <connection net="N7" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M16</id>
-              <termid>T20</termid>
-              <connections>
-                <connection net="N8" />
-              </connections>
-            </pin>
-            <pin>
               <id>M17</id>
               <termid>T21</termid>
               <connections>
@@ -389,136 +314,11 @@
                 <connection net="N15" />
               </connections>
             </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I3</id>
-          <cellid>S4</cellid>
-          <name>page1_i3</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
             <pin>
-              <id>M35</id>
-              <termid>T57</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
+              <id>M645</id>
+              <termid>T152</termid>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M36</id>
-              <termid>T58</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M37</id>
-              <termid>T59</termid>
-              <connections>
-              </connections>
-            </pin>
-            <pin>
-              <id>M38</id>
-              <termid>T60</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N26" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I4</id>
-          <cellid>S5</cellid>
-          <name>page1_i4</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M39</id>
-              <termid>T61</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M40</id>
-              <termid>T62</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="vtt" />
-              </connections>
-            </pin>
-          </pins>
-          <differentialpins>
-          </differentialpins>
-          <differentialbuspins>
-          </differentialbuspins>
-          <portgroups>
-          </portgroups>
-          <portinterfaces>
-          </portinterfaces>
-        </instance>
-        <instance>
-          <id>I5</id>
-          <cellid>S5</cellid>
-          <name>page1_i5</name>
-          <parameters>
-          </parameters>
-          <masks>
-          </masks>
-          <powers>
-          </powers>
-          <pins>
-            <pin>
-              <id>M41</id>
-              <termid>T61</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M42</id>
-              <termid>T62</termid>
-              <msb>0</msb>
-              <lsb>0</lsb>
-              <connections>
-                <connection pinmsb="0" pinlsb="0" net="vtt" />
+                <connection net="N26" />
               </connections>
             </pin>
           </pins>
@@ -571,24 +371,24 @@
               </connections>
             </pin>
             <pin>
-              <id>M82</id>
-              <termid>T91</termid>
-              <connections>
-                <connection net="N24" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M83</id>
-              <termid>T92</termid>
-              <connections>
-                <connection net="N25" />
-              </connections>
-            </pin>
-            <pin>
               <id>M102</id>
               <termid>T121</termid>
               <connections>
                 <connection net="N33" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M656</id>
+              <termid>T187</termid>
+              <connections>
+                <connection net="N433" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M657</id>
+              <termid>T188</termid>
+              <connections>
+                <connection net="N434" />
               </connections>
             </pin>
           </pins>
@@ -610,31 +410,31 @@
         <extension name="schematic_extension">
         <schematicExtension>
         <netScopes>
-          <netScope ref="clk100_outh">
+          <netScope ref="clk100_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clk100_outl">
+          <netScope ref="clk100_out_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk200_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="clk200_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
           <netScope ref="clock100">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="clock200_outh">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="clock200_outl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -688,22 +488,17 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="vtt">
-            <pageScope number="1">
-              <scope>global</scope>
-            </pageScope>
-          </netScope>
         </netScopes>
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
             <errorStatus>false</errorStatus>
             <nets>
-              <net ref="clk100_outh"></net>
-              <net ref="clk100_outl"></net>
+              <net ref="clk100_out_n"></net>
+              <net ref="clk100_out_p"></net>
+              <net ref="clk200_out_n"></net>
+              <net ref="clk200_out_p"></net>
               <net ref="clock100"></net>
-              <net ref="clock200_outh"></net>
-              <net ref="clock200_outl"></net>
               <net ref="data"></net>
               <net ref="data_rdy"></net>
               <net ref="default_select"></net>
@@ -714,14 +509,10 @@
               <net ref="tub_clk_in"></net>
               <net ref="unnamed_1_tubiiclks_i1_bckpclk"></net>
               <net ref="unnamed_1_tubiiclks_i1_defaultclk"></net>
-              <net ref="vtt"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>
               <instance ref="i2"></instance>
-              <instance ref="i3"></instance>
-              <instance ref="i4"></instance>
-              <instance ref="i5"></instance>
             </instances>
           </page>
         </pages>

@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 45 )
+			( logicalViewRevNum 46 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -511,25 +511,9 @@
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):delay_val"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.gt_delays(sch_1):dgth"
-				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgth") )
-				( attribute "PHYS_NET_NAME" "DGTH"
-					( Origin gPackager )
-				)
-				( objectStatus "dgth" )
-			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgth"
-				( objectFlag fObjectAlias )
-			)
-			( signal "@tubii_lib.gt_delays(sch_1):dgtl"
-				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgtl") )
-				( attribute "PHYS_NET_NAME" "DGTL"
-					( Origin gPackager )
-				)
-				( objectStatus "dgtl" )
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i3@tubii_lib.asyncdelays(sch_1):dgtl"
-				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):gnd"
 				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):gnd") )
@@ -660,6 +644,9 @@
 				( alias ( signalRef "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):\ttl_lockout*\") )
 				( objectStatus "ttl_lockout*" )
 			)
+			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):\ttl_lockout*\"
+				( objectFlag fObjectAlias )
+			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_mc10h104_i33_a"
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_mc10h104_i34_a"
@@ -689,8 +676,11 @@
 			)
 			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):unnamed_1_10h125_i39_b"
 			)
-			( signal "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):\ttl_lockout*\"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_lib.gt_delays(sch_1):dgt_n"
+				( objectStatus "dgt_n" )
+			)
+			( signal "@tubii_lib.gt_delays(sch_1):dgt_p"
+				( objectStatus "dgt_p" )
 			)
 			( gate "@tubii_lib.gt_delays(sch_1):page1_i2@tubii_lib.select_lo_src(sch_1):page1_i7"
 				( attribute "CDS_LIB" "capacitors"
@@ -4334,7 +4324,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "select_lo_src"
@@ -5701,7 +5691,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "asyncdelays"

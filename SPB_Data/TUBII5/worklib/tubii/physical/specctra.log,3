@@ -5,7 +5,7 @@
 # ===============================================================================
 # 
 # Software licensed for sale by Cadence Design Systems, Inc.
-# Current time = Wed Feb 18 12:04:45 2015
+# Current time = Fri Feb 20 14:56:28 2015
 # 
 # Allegro PCB Router v16-6-112 made 2012/09/12 at 23:00:45
 # Running on: qgpwindowsvb-pc, OS Version: WindowsNT 6.1.7601, Architecture: Intel Pentium II, III, or 4
@@ -14,11 +14,11 @@
 # Design Name C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
 # Batch File Name: pasde.do
 # Did File Name: C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical/specctra.did
-# Current time = Wed Feb 18 12:04:45 2015
+# Current time = Fri Feb 20 14:56:28 2015
 # PCB C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical
 # Master Unit set up as: MIL 1000
 # PCB Limits xlo=-360.0000 ylo=-1120.0000 xhi=16360.0000 yhi=16360.0000
-# Total 908 Images Consolidated.
+# Total 899 Images Consolidated.
 # Via VIA z=1, 2 xlo=-12.0000 ylo=-12.0000 xhi= 12.0000 yhi= 12.0000
 # 
 #    VIA     TOP  BOTTOM
@@ -26,15 +26,15 @@
 #    TOP  ------   VIA  
 # BOTTOM   VIA    ------
 # 
-# Wires Processed 374, Vias Processed 67
+# Wires Processed 0, Vias Processed 0
 # Using colormap in design file.
 # Layers Processed: Signal Layers 2
 # Layers Processed: Power Layers 3
-# Components Placed 941, Images Processed 977, Padstacks Processed 24
-# Nets Processed 870, Net Terminals 3312
-# PCB Area=231040000.000  EIC=281  Area/EIC=822206.406  SMDs=689
-# Total Pin Count: 3937
-# Signal Connections Created 1250
+# Components Placed 930, Images Processed 964, Padstacks Processed 24
+# Nets Processed 862, Net Terminals 3211
+# PCB Area=231040000.000  EIC=277  Area/EIC=834079.422  SMDs=678
+# Total Pin Count: 3883
+# Signal Connections Created 1492
 # 
 # Design Rules --------------------------------------------
 # Via Grid 0.0100 with offset 0.0000
@@ -43,29 +43,23 @@
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
 # 
 # Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
-# Nets 870 Connections 2225 Unroutes 1958
+# Nets 862 Connections 2198 Unroutes 2195
 # Signal Layers 2 Power Layers 3
-# Wire Junctions 70, at vias 28 Total Vias 67
-# Percent Connected   11.37
-# Manhattan Length 2154083.1300 Horizontal 982165.5540 Vertical 1171917.5760
-# Routed Length 97002.4193 Horizontal 49203.3600 Vertical 48214.5400
-# Ratio Actual / Manhattan   0.0450
-# Unconnected Length 2073485.1300 Horizontal 951400.9900 Vertical 1122084.1400
-# Total Conflicts: 156 (Cross: 14, Clear: 142, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.14
+# Manhattan Length 2072143.0300 Horizontal 961383.6410 Vertical 1110759.3890
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 2072143.0300 Horizontal 968364.8400 Vertical 1103778.1900
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:01
 # Loading Do File pasde.do ...
 # Loading Do File C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5_rules.do ...
 # Colormap Written to File _notify.std
-# Enter command <# Loading Do File C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaah03048.tmp ...
+# Enter command <# Loading Do File C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaab01216.tmp ...
 # All Components Unselected.
 # All Nets Unselected.
-# Component U50 Selected.
-# Component U48 Selected.
-# Component U49 Selected.
-# Component U86 Selected.
-# Component U99 Selected.
-# Component U100 Selected.
-set route_diagonal 0
+set route_diagonal 4
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
 grid via 0.010000 (direction x) (offset 0.000000)
@@ -94,8 +88,12 @@ rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
 # All Selected Wires Unprotected.
-route 25 1
-# Current time = Wed Feb 18 12:05:27 2015
+fanout 10 (direction In_out) (location Anywhere) (pin_type power) (pin_type signal)
+# Fanout in any direction.
+# Fanout inside and outside component outline.
+# Fanout..Signal Nets.
+# Fanout..Power Nets.
+# Current time = Fri Feb 20 14:56:30 2015
 # 
 #    VIA     TOP  BOTTOM
 # 
@@ -109,35 +107,122 @@ route 25 1
 # Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
 # 
 # Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
-# Nets 870 Connections 2225 Unroutes 1958
+# Nets 862 Connections 2198 Unroutes 2195
 # Signal Layers 2 Power Layers 3
-# Wire Junctions 70, at vias 28 Total Vias 67
-# Percent Connected   11.37
-# Manhattan Length 2154083.1300 Horizontal 982165.5540 Vertical 1171917.5760
-# Routed Length 97002.4193 Horizontal 49203.3600 Vertical 48214.5400
-# Ratio Actual / Manhattan   0.0450
-# Unconnected Length 2073485.1300 Horizontal 951400.9900 Vertical 1122084.1400
-# Start Route Pass 1 of 25
-# Routing 14 wires.
-# Total Conflicts: 6 (Cross: 6, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 1944
-# Attempts 14 Successes 14 Failures 0 Vias 72
-# Cpu Time = 0:00:01  Elapsed Time = 0:00:00
-# End Pass 1 of 25
-# 7 bend points have been removed.
+# Wire Junctions 0, at vias 0 Total Vias 0
+# Percent Connected    0.14
+# Manhattan Length 2072143.0300 Horizontal 961383.6410 Vertical 1110759.3890
+# Routed Length   0.0000 Horizontal   0.0000 Vertical   0.0000
+# Ratio Actual / Manhattan   0.0000
+# Unconnected Length 2072143.0300 Horizontal 968364.8400 Vertical 1103778.1900
+# Start Fanout Pass 1 of 10
+# Attempts 2500 Successes 2500 Failures 0 Vias 2500
 # 0 bend points have been removed.
 # 0 bend points have been removed.
-# Start Route Pass 2 of 25
-# Routing 11 wires.
-# 9 bend points have been removed.
 # 0 bend points have been removed.
 # 0 bend points have been removed.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 1944
-# Attempts 9 Successes 9 Failures 0 Vias 72
+# Cpu Time = 0:00:02  Elapsed Time = 0:00:02
+# End Pass 1 of 10
+# Cpu Time = 0:00:02  Elapsed Time = 0:00:03
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 1504
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 544, at vias 544 Total Vias 2500
+# Percent Connected   31.57
+# Manhattan Length 2072143.0300 Horizontal 962074.0400 Vertical 1110068.9900
+# Routed Length 111564.4015 Horizontal 71730.3000 Vertical 39864.0000
+# Ratio Actual / Manhattan   0.0538
+# Unconnected Length 2047092.1000 Horizontal 950123.1900 Vertical 1096968.9100
+route 500 1
+# Current time = Fri Feb 20 14:56:34 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 1504
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 544, at vias 544 Total Vias 2500
+# Percent Connected   31.57
+# Manhattan Length 2072143.0300 Horizontal 962074.0400 Vertical 1110068.9900
+# Routed Length 111564.4015 Horizontal 71730.3000 Vertical 39864.0000
+# Ratio Actual / Manhattan   0.0538
+# Unconnected Length 2047092.1000 Horizontal 950123.1900 Vertical 1096968.9100
+# Start Route Pass 1 of 500
+# Routing 2177 wires.
+# 23 bend points have been removed.
+# 0 bend points have been removed.
+# 12 bend points have been removed.
+# Total Conflicts: 1650 (Cross: 1414, Clear: 236, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 23
+# Attempts 2177 Successes 2172 Failures 5 Vias 1929
+# Cpu Time = 0:00:25  Elapsed Time = 0:00:26
+# End Pass 1 of 500
+# Start Route Pass 2 of 500
+# Routing 2535 wires.
+# 27 bend points have been removed.
+# 0 bend points have been removed.
+# 56 bend points have been removed.
+# Total Conflicts: 610 (Cross: 553, Clear: 57, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2326 Successes 2320 Failures 6 Vias 1908
+# Cpu Time = 0:00:35  Elapsed Time = 0:00:38
+# Conflict Reduction  0.6303
+# End Pass 2 of 500
+# Start Route Pass 3 of 500
+# Routing 2887 wires.
+# Total Conflicts: 220 (Cross: 195, Clear: 25, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2467 Successes 2465 Failures 2 Vias 1884
+# Cpu Time = 0:00:25  Elapsed Time = 0:00:27
+# Conflict Reduction  0.6393
+# End Pass 3 of 500
+# Start Route Pass 4 of 500
+# Routing 3196 wires.
+# 31 bend points have been removed.
+# 0 bend points have been removed.
+# 45 bend points have been removed.
+# Total Conflicts: 45 (Cross: 43, Clear: 2, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 19
+# Attempts 2518 Successes 2513 Failures 5 Vias 1876
+# Cpu Time = 0:00:24  Elapsed Time = 0:00:26
+# Conflict Reduction  0.7955
+# End Pass 4 of 500
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Start Route Pass 5 of 500
+# Routing 94 wires.
+# Total Conflicts: 2 (Cross: 1, Clear: 1, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 94 Successes 94 Failures 0 Vias 1900
+# Cpu Time = 0:00:17  Elapsed Time = 0:00:18
+# End Pass 5 of 500
+# Start Route Pass 6 of 500
+# Routing 4 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 3 Successes 3 Failures 0 Vias 1898
 # Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# End Pass 2 of 25
+# End Pass 6 of 500
+# Start Route Pass 7 of 500
+# Routing 0 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 0 Successes 0 Failures 0 Vias 1898
 # Cpu Time = 0:00:01  Elapsed Time = 0:00:01
+# End Pass 7 of 500
+# Cpu Time = 0:02:13  Elapsed Time = 0:02:22
 # 
 # Design Rules --------------------------------------------
 # Via Grid 0.0100 with offset 0.0000
@@ -147,8 +232,14 @@ route 25 1
 #     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
 #   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
 #----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
-# Route    |  1|     6|     0|   0| 1944|   72|    0|   0|  0|  0:00:01|  0:00:01|
-# Route    |  2|     0|     0|   0| 1944|   72|    0|   0|100|  0:00:00|  0:00:01|
+# Fanout   |  1|     0|     0|   0| 1504| 2500|    0|   0|   |  0:00:02|  0:00:02|
+# Route    |  2|  1414|   236|   5|   23| 1929|    0|   0|  0|  0:00:25|  0:00:27|
+# Route    |  3|   553|    57|   6|   18| 1908|    0|   0| 63|  0:00:35|  0:01:02|
+# Route    |  4|   195|    25|   2|   18| 1884|    0|   0| 63|  0:00:25|  0:01:27|
+# Route    |  5|    43|     2|   5|   19| 1876|    0|   0| 79|  0:00:24|  0:01:51|
+# Route    |  6|     1|     1|   0|   18| 1900|    0|   0| 95|  0:00:17|  0:02:08|
+# Route    |  7|     0|     0|   0|   18| 1898|    0|   0|100|  0:00:00|  0:02:08|
+# Route    |  8|     0|     0|   0|   18| 1898|    0|   0|  0|  0:00:01|  0:02:09|
 # Conflicts between polygon wires and fixed objects:   0
 # Stub Violations:   0
 # Net Order Violations:   0
@@ -156,19 +247,19 @@ route 25 1
 # Diffpair Phase Tolerance  Violations:   0
 # Total layerset violations:   0
 # Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
-# Overall Routing Time: 0:00:01
+# Overall Routing Time: 0:02:09
 # 
 # Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
-# Nets 870 Connections 2225 Unroutes 1944
+# Nets 862 Connections 2198 Unroutes 18
 # Signal Layers 2 Power Layers 3
-# Wire Junctions 71, at vias 28 Total Vias 72
-# Percent Connected   12.63
-# Manhattan Length 2154083.1300 Horizontal 982220.0040 Vertical 1171863.1260
-# Routed Length 108304.1993 Horizontal 52254.1200 Vertical 56465.5600
-# Ratio Actual / Manhattan   0.0503
-# Unconnected Length 2062996.8700 Horizontal 949064.7300 Vertical 1113932.1400
-clean 2
-# Current time = Wed Feb 18 12:05:28 2015
+# Wire Junctions 545, at vias 196 Total Vias 1898
+# Percent Connected   99.18
+# Manhattan Length 2058081.9050 Horizontal 955604.4410 Vertical 1102477.4640
+# Routed Length 2040129.5984 Horizontal 1014807.7570 Vertical 1096198.9320
+# Ratio Actual / Manhattan   0.9913
+# Unconnected Length 82611.0000 Horizontal 25151.0000 Vertical 57460.0000
+clean 10
+# Current time = Fri Feb 20 14:58:56 2015
 # 
 #    VIA     TOP  BOTTOM
 # 
@@ -182,32 +273,88 @@ clean 2
 # Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
 # 
 # Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
-# Nets 870 Connections 2225 Unroutes 1944
+# Nets 862 Connections 2198 Unroutes 18
 # Signal Layers 2 Power Layers 3
-# Wire Junctions 71, at vias 28 Total Vias 72
-# Percent Connected   12.63
-# Manhattan Length 2154083.1300 Horizontal 982220.0040 Vertical 1171863.1260
-# Routed Length 108304.1993 Horizontal 52254.1200 Vertical 56465.5600
-# Ratio Actual / Manhattan   0.0503
-# Unconnected Length 2062996.8700 Horizontal 949064.7300 Vertical 1113932.1400
-# Start Clean Pass 1 of 2
-# Routing 20 wires.
+# Wire Junctions 545, at vias 196 Total Vias 1898
+# Percent Connected   99.18
+# Manhattan Length 2058081.9050 Horizontal 955604.4410 Vertical 1102477.4640
+# Routed Length 2040129.5984 Horizontal 1014807.7570 Vertical 1096198.9320
+# Ratio Actual / Manhattan   0.9913
+# Unconnected Length 82611.0000 Horizontal 25151.0000 Vertical 57460.0000
+# Start Clean Pass 1 of 10
+# Routing 3158 wires.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 1944
-# Attempts 16 Successes 16 Failures 0 Vias 70
-# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# End Pass 1 of 2
-# Start Clean Pass 2 of 2
-# Routing 23 wires.
-# 0 bend points have been removed.
-# 0 bend points have been removed.
-# 0 bend points have been removed.
+# Total Unroutes: 18
+# Attempts 2521 Successes 2486 Failures 35 Vias 1723
+# Cpu Time = 0:00:18  Elapsed Time = 0:00:20
+# End Pass 1 of 10
+# Start Clean Pass 2 of 10
+# Routing 3548 wires.
 # Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
-# Total Unroutes: 1944
-# Attempts 19 Successes 19 Failures 0 Vias 70
-# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
-# End Pass 2 of 2
-# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# Total Unroutes: 18
+# Attempts 2583 Successes 2545 Failures 38 Vias 1693
+# Cpu Time = 0:00:12  Elapsed Time = 0:00:14
+# End Pass 2 of 10
+# Start Clean Pass 3 of 10
+# Routing 3506 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2613 Successes 2584 Failures 29 Vias 1662
+# Cpu Time = 0:00:12  Elapsed Time = 0:00:14
+# End Pass 3 of 10
+# Start Clean Pass 4 of 10
+# Routing 3447 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2618 Successes 2588 Failures 30 Vias 1650
+# Cpu Time = 0:00:16  Elapsed Time = 0:00:17
+# End Pass 4 of 10
+# Start Clean Pass 5 of 10
+# Routing 3434 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2636 Successes 2612 Failures 24 Vias 1640
+# Cpu Time = 0:00:11  Elapsed Time = 0:00:12
+# End Pass 5 of 10
+# Start Clean Pass 6 of 10
+# Routing 3392 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2644 Successes 2621 Failures 23 Vias 1638
+# Cpu Time = 0:00:11  Elapsed Time = 0:00:12
+# End Pass 6 of 10
+# Start Clean Pass 7 of 10
+# Routing 3391 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2643 Successes 2621 Failures 22 Vias 1636
+# Cpu Time = 0:00:11  Elapsed Time = 0:00:12
+# End Pass 7 of 10
+# Start Clean Pass 8 of 10
+# Routing 3385 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2644 Successes 2625 Failures 19 Vias 1636
+# Cpu Time = 0:00:10  Elapsed Time = 0:00:12
+# End Pass 8 of 10
+# Start Clean Pass 9 of 10
+# Routing 3390 wires.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 18
+# Attempts 2650 Successes 2629 Failures 21 Vias 1637
+# Cpu Time = 0:00:15  Elapsed Time = 0:00:16
+# End Pass 9 of 10
+# Start Clean Pass 10 of 10
+# Routing 3380 wires.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# 6 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Total Unroutes: 19
+# Attempts 2651 Successes 2632 Failures 19 Vias 1634
+# Cpu Time = 0:00:11  Elapsed Time = 0:00:11
+# End Pass 10 of 10
+# Cpu Time = 0:02:10  Elapsed Time = 0:02:21
 # 
 # Design Rules --------------------------------------------
 # Via Grid 0.0100 with offset 0.0000
@@ -217,10 +364,24 @@ clean 2
 #     Pass     |   Conflicts |    |     |     |     |    |Red|      CPU Time     |
 #   Name   |No.| Cross| Clear|Fail|Unrte| Vias|XTalk|Len.| % |  Pass   |  Total  |
 #----------+---+------+------+----+-----+-----+-----+----+---+---------+---------|
-# Route    |  1|     6|     0|   0| 1944|   72|    0|   0|  0|  0:00:01|  0:00:01|
-# Route    |  2|     0|     0|   0| 1944|   72|    0|   0|100|  0:00:00|  0:00:01|
-# Clean    |  3|     0|     0|   0| 1944|   70|    0|   0|   |  0:00:00|  0:00:01|
-# Clean    |  4|     0|     0|   0| 1944|   70|    0|   0|   |  0:00:00|  0:00:01|
+# Fanout   |  1|     0|     0|   0| 1504| 2500|    0|   0|   |  0:00:02|  0:00:02|
+# Route    |  2|  1414|   236|   5|   23| 1929|    0|   0|  0|  0:00:25|  0:00:27|
+# Route    |  3|   553|    57|   6|   18| 1908|    0|   0| 63|  0:00:35|  0:01:02|
+# Route    |  4|   195|    25|   2|   18| 1884|    0|   0| 63|  0:00:25|  0:01:27|
+# Route    |  5|    43|     2|   5|   19| 1876|    0|   0| 79|  0:00:24|  0:01:51|
+# Route    |  6|     1|     1|   0|   18| 1900|    0|   0| 95|  0:00:17|  0:02:08|
+# Route    |  7|     0|     0|   0|   18| 1898|    0|   0|100|  0:00:00|  0:02:08|
+# Route    |  8|     0|     0|   0|   18| 1898|    0|   0|  0|  0:00:01|  0:02:09|
+# Clean    |  9|     0|     0|  35|   18| 1723|    0|   0|   |  0:00:18|  0:02:27|
+# Clean    | 10|     0|     0|  38|   18| 1693|    0|   0|   |  0:00:12|  0:02:39|
+# Clean    | 11|     0|     0|  29|   18| 1662|    0|   0|   |  0:00:12|  0:02:51|
+# Clean    | 12|     0|     0|  30|   18| 1650|    0|   0|   |  0:00:16|  0:03:07|
+# Clean    | 13|     0|     0|  24|   18| 1640|    0|   0|   |  0:00:11|  0:03:18|
+# Clean    | 14|     0|     0|  23|   18| 1638|    0|   0|   |  0:00:11|  0:03:29|
+# Clean    | 15|     0|     0|  22|   18| 1636|    0|   0|   |  0:00:11|  0:03:40|
+# Clean    | 16|     0|     0|  19|   18| 1636|    0|   0|   |  0:00:10|  0:03:50|
+# Clean    | 17|     0|     0|  21|   18| 1637|    0|   0|   |  0:00:15|  0:04:05|
+# Clean    | 18|     0|     0|  19|   19| 1634|    0|   0|   |  0:00:11|  0:04:16|
 # Conflicts between polygon wires and fixed objects:   0
 # Stub Violations:   0
 # Net Order Violations:   0
@@ -228,17 +389,93 @@ clean 2
 # Diffpair Phase Tolerance  Violations:   0
 # Total layerset violations:   0
 # Total layerset violations (exclude Fanout/Stagger/XNet Short side):   0
-# Overall Routing Time: 0:00:01
+# Overall Routing Time: 0:04:16
 # 
 # Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
-# Nets 870 Connections 2225 Unroutes 1944
+# Nets 862 Connections 2198 Unroutes 19
 # Signal Layers 2 Power Layers 3
-# Wire Junctions 74, at vias 28 Total Vias 70
-# Percent Connected   12.63
-# Manhattan Length 2153805.6300 Horizontal 982147.8920 Vertical 1171657.7380
-# Routed Length 108280.1793 Horizontal 52431.6200 Vertical 56264.0400
-# Ratio Actual / Manhattan   0.0503
-# Unconnected Length 2062996.8700 Horizontal 949064.7300 Vertical 1113932.1400
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaai03048.tmp
-# Routing Written to File C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaai03048.tmp
+# Wire Junctions 603, at vias 245 Total Vias 1634
+# Percent Connected   99.14
+# Manhattan Length 2056670.8610 Horizontal 955372.4010 Vertical 1101298.4600
+# Routed Length 2047298.5035 Horizontal 1006986.9700 Vertical 1088432.5280
+# Ratio Actual / Manhattan   0.9954
+# Unconnected Length 84102.7300 Horizontal 25286.3600 Vertical 58816.3700
+critic
+# Current time = Fri Feb 20 15:01:18 2015
+# 1 bend points have been removed.
+# 0 bend points have been removed.
+# 0 bend points have been removed.
+# Cpu Time = 0:00:00  Elapsed Time = 0:00:00
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 19
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 603, at vias 245 Total Vias 1634
+# Percent Connected   99.14
+# Manhattan Length 2056670.8610 Horizontal 955372.4010 Vertical 1101298.4600
+# Routed Length 2047240.9494 Horizontal 1006929.4100 Vertical 1088432.5280
+# Ratio Actual / Manhattan   0.9954
+# Unconnected Length 84102.7300 Horizontal 25286.3600 Vertical 58816.3700
+spread (extra 2.500000)
+# Current time = Fri Feb 20 15:01:18 2015
+# 
+#    VIA     TOP  BOTTOM
+# 
+#    TOP  ------   VIA  
+# BOTTOM   VIA    ------
+# 
+# 
+# Design Rules --------------------------------------------
+# Via Grid 0.0100 with offset 0.0000
+# Layer TOP Horz Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# Layer BOTTOM Vert Signal Wire Grid 0.0100 with offset 0.0000, Width= 5.0000, Clearance= 5.0000
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 19
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 603, at vias 245 Total Vias 1634
+# Percent Connected   99.14
+# Manhattan Length 2056670.8610 Horizontal 955372.4010 Vertical 1101298.4600
+# Routed Length 2047240.9494 Horizontal 1006929.4100 Vertical 1088432.5280
+# Ratio Actual / Manhattan   0.9954
+# Unconnected Length 84102.7300 Horizontal 25286.3600 Vertical 58816.3700
+# 290 bend points have been removed.
+# 55 bend points have been removed.
+# 89 bend points have been removed.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:02  Elapsed Time = 0:00:03
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 19
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 603, at vias 245 Total Vias 1634
+# Percent Connected   99.14
+# Manhattan Length 2056670.8610 Horizontal 955372.4010 Vertical 1101298.4600
+# Routed Length 2047588.2960 Horizontal 1006970.3900 Vertical 1088625.6680
+# Ratio Actual / Manhattan   0.9956
+# Unconnected Length 84102.7300 Horizontal 25286.3600 Vertical 58816.3700
+miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
+# Diagonal wire corners are preferred.
+# Current time = Fri Feb 20 15:01:21 2015
+# 88 bend points have been removed.
+# Convert orthogonal pin exit to diagonal...
+# Convert wire segment to diagonal...
+# Convert orthogonal corner to diagonal...
+# 0 bend points have been removed.
+# Corners changed 1661
+# 90 degree wire corners are preferred.
+# Total Conflicts: 0 (Cross: 0, Clear: 0, Xtalk: 0, Length: 0, Polygon Clear: 0 )
+# Cpu Time = 0:00:08  Elapsed Time = 0:00:09
+# 
+# Wiring Statistics ----------------- C:/Users/QGPWindowsVB/Downloads/orebi/SPB_Data/TUBII5/worklib/tubii/physical\tubii_v5.dsn
+# Nets 862 Connections 2198 Unroutes 19
+# Signal Layers 2 Power Layers 3
+# Wire Junctions 598, at vias 248 Total Vias 1634
+# Percent Connected   99.14
+# Manhattan Length 2056670.8610 Horizontal 955382.4500 Vertical 1101288.4110
+# Routed Length 1987503.4764 Horizontal 1007316.4700 Vertical 1089093.1680
+# Ratio Actual / Manhattan   0.9664
+# Unconnected Length 84102.7300 Horizontal 25286.3600 Vertical 58816.3700
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac01216.tmp
+# Routing Written to File C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac01216.tmp
 quit

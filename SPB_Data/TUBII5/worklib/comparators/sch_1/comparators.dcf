@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 71 )
+			( logicalViewRevNum 73 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -521,12 +521,7 @@
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):gnd"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.comparators(sch_1):tune_comp_outh"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_outh") )
-				( objectStatus "tune_comp_outh" )
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_outh"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):fast_comp_trig_n"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):gtrig"
 				( objectFlag fObjectAlias )
@@ -599,7 +594,7 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_d"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_y"
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):fast_comp_trig_p"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i29_a"
 			)
@@ -618,9 +613,13 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_ad96685_i98_qp"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i9_a"
+			( signal "@tubii_lib.comparators(sch_1):fast_comp_out_n"
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_out_n") )
+				( objectStatus "fast_comp_out_n" )
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i9_b"
+			( signal "@tubii_lib.comparators(sch_1):fast_comp_out_p"
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_out_p") )
+				( objectStatus "fast_comp_out_p" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10h125_i23_y"
 			)
@@ -649,12 +648,9 @@
 			( signal "@tubii_lib.comparators(sch_1):tune_pulse"
 				( objectStatus "tune_pulse" )
 			)
-			( signal "@tubii_lib.comparators(sch_1):tune_comp_outl"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_outl") )
-				( objectStatus "tune_comp_outl" )
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):\tune_comp_trig__pulse_n\"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_outl"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):\fast_comp_trig__pulse_n\"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10h125_i36_y"
 			)
@@ -724,12 +720,9 @@
 				)
 				( objectStatus "unnamed_1_fastcomp_i1_posneg" )
 			)
-			( signal "@tubii_lib.comparators(sch_1):fast_comp_outh"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_outh") )
-				( objectStatus "fast_comp_outh" )
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_outh"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_lib.comparators(sch_1):tune_comp_out_n"
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_out_n") )
+				( objectStatus "tune_comp_out_n" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):unnamed_1_bas16lt1_i14_cat"
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):anpulsein") )
@@ -738,12 +731,9 @@
 				)
 				( objectStatus "unnamed_1_bas16lt1_i14_cat" )
 			)
-			( signal "@tubii_lib.comparators(sch_1):fast_comp_outl"
-				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_outl") )
-				( objectStatus "fast_comp_outl" )
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_outl"
-				( objectFlag fObjectAlias )
+			( signal "@tubii_lib.comparators(sch_1):tune_comp_out_p"
+				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_out_p") )
+				( objectStatus "tune_comp_out_p" )
 			)
 			( signal "@tubii_lib.comparators(sch_1):vref2m"
 				( alias ( signalRef "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):vref2m") )
@@ -791,7 +781,7 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10h131_i139_s"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_y_1"
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):fast_comp_trig_pulse_p"
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10h131_i118_d"
 			)
@@ -807,13 +797,11 @@
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_d"
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_y"
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_out_n"
+				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_y_1"
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i146_a"
-			)
-			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i146_b"
+			( signal "@tubii_lib.comparators(sch_1):page1_i1@tubii_lib.fastcomp(sch_1):trig_out_p"
+				( objectFlag fObjectAlias )
 			)
 			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i147_y"
 			)
@@ -823,6 +811,18 @@
 					( Origin gPackager )
 				)
 				( objectStatus "unnamed_1_ss12sdp2_i27_p" )
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_out_n"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):trig_out_p"
+				( objectFlag fObjectAlias )
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):tune_comp_trig_n"
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):tune_comp_trig_p"
+			)
+			( signal "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):tune_comp_trig_pulse_p"
 			)
 			( gate "@tubii_lib.comparators(sch_1):page1_i2@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):page1_i1"
 				( attribute "CDS_LIB" "resistors"
@@ -10981,7 +10981,7 @@
 	( BaseCopy "fastcomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 67 )
+				( logicalViewRevNum 70 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -11023,12 +11023,6 @@
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i29_y"
 				( objectStatus "unnamed_1_10e116_i29_y" )
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i9_a"
-				( objectStatus "unnamed_1_10e116_i9_a" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e116_i9_b"
-				( objectStatus "unnamed_1_10e116_i9_b" )
-			)
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10h125_i23_y"
 				( alias ( signalRef "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "unnamed_1_10h125_i23_y" )
@@ -11060,12 +11054,6 @@
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):vref2m"
 				( objectStatus "vref2m" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):trig_outh"
-				( objectStatus "trig_outh" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):trig_outl"
-				( objectStatus "trig_outl" )
 			)
 			( signal "@tubii_lib.fastcomp(sch_1):page1_i95@tubii_lib.led_pulse(sch_1):unnamed_1_csmd0805_i2_b"
 			)
@@ -11115,14 +11103,26 @@
 			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_d"
 				( objectStatus "unnamed_1_10e101_i123_d" )
 			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_y"
-				( objectStatus "unnamed_1_10e101_i123_y" )
-			)
-			( signal "@tubii_lib.fastcomp(sch_1):unnamed_1_10e101_i123_y_1"
-				( objectStatus "unnamed_1_10e101_i123_y_1" )
-			)
 			( signal "@tubii_lib.fastcomp(sch_1):vbb_comp"
 				( objectStatus "vbb_comp" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):\fast_comp_trig__pulse_n\"
+				( objectStatus "fast_comp_trig__pulse_n" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):fast_comp_trig_n"
+				( objectStatus "fast_comp_trig_n" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):fast_comp_trig_p"
+				( objectStatus "fast_comp_trig_p" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):fast_comp_trig_pulse_p"
+				( objectStatus "fast_comp_trig_pulse_p" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):trig_out_n"
+				( objectStatus "trig_out_n" )
+			)
+			( signal "@tubii_lib.fastcomp(sch_1):trig_out_p"
+				( objectStatus "trig_out_p" )
 			)
 			( gate "@tubii_lib.fastcomp(sch_1):page1_i9"
 				( attribute "ABBREV" "10E116"
@@ -14600,7 +14600,7 @@
 	( BaseCopy "tuncomp"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 79 )
+				( logicalViewRevNum 81 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -14636,9 +14636,6 @@
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10h131_i139_clk"
 				( objectStatus "unnamed_1_10h131_i139_clk" )
 			)
-			( signal "@tubii_lib.tuncomp(sch_1):trig_outl"
-				( objectStatus "trig_outl" )
-			)
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10h125_i36_y"
 				( alias ( signalRef "@tubii_lib.tuncomp(sch_1):page1_i110@tubii_lib.led_pulse(sch_1):pulse_in") )
 				( objectStatus "unnamed_1_10h125_i36_y" )
@@ -14673,9 +14670,6 @@
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):posneg"
 				( objectStatus "posneg" )
-			)
-			( signal "@tubii_lib.tuncomp(sch_1):trig_outh"
-				( objectStatus "trig_outh" )
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_ad7243_i94_refin"
 				( objectStatus "unnamed_1_ad7243_i94_refin" )
@@ -14755,20 +14749,26 @@
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_d"
 				( objectStatus "unnamed_1_10e101_i145_d" )
 			)
-			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_y"
-				( objectStatus "unnamed_1_10e101_i145_y" )
-			)
-			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e101_i145_y_1"
-				( objectStatus "unnamed_1_10e101_i145_y_1" )
-			)
-			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i146_a"
-				( objectStatus "unnamed_1_10e116_i146_a" )
-			)
-			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i146_b"
-				( objectStatus "unnamed_1_10e116_i146_b" )
+			( signal "@tubii_lib.tuncomp(sch_1):\tune_comp_trig__pulse_n\"
+				( objectStatus "tune_comp_trig__pulse_n" )
 			)
 			( signal "@tubii_lib.tuncomp(sch_1):unnamed_1_10e116_i147_y"
 				( objectStatus "unnamed_1_10e116_i147_y" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):trig_out_n"
+				( objectStatus "trig_out_n" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):trig_out_p"
+				( objectStatus "trig_out_p" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):tune_comp_trig_n"
+				( objectStatus "tune_comp_trig_n" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):tune_comp_trig_p"
+				( objectStatus "tune_comp_trig_p" )
+			)
+			( signal "@tubii_lib.tuncomp(sch_1):tune_comp_trig_pulse_p"
+				( objectStatus "tune_comp_trig_pulse_p" )
 			)
 			( gate "@tubii_lib.tuncomp(sch_1):page1_i19"
 				( attribute "CDS_LIB" "resistors"

@@ -1,5 +1,5 @@
 FILE_TYPE = LIBRARY_PARTS;
-{ Packager-XL run on 10-Feb-2015 AT 18:50:47 }
+{ Packager-XL run on 20-Feb-2015 AT 14:25:49 }
 primitive '100EL05';
   pin
     'IN1*':
@@ -370,37 +370,6 @@ primitive '10E131';
       JEDEC_TYPE='PLCC28';
       CLASS='IC';
       TECH='10E';
-  end_body;
-end_primitive;
-primitive '10EP90-VCC=VP3_3';
-  pin
-    'Q':
-      PIN_NUMBER='(19,16,13)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'Q*':
-      PIN_NUMBER='(18,15,12)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'D':
-      PIN_NUMBER='(2,5,8)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'D*':
-      PIN_NUMBER='(3,6,9)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-  end_pin;
-  body
-      PART_NAME='10EP90';
-      BODY_NAME='10EP90';
-      JEDEC_TYPE='TSSOP20';
-      PHYS_DES_PREFIX='U';
-      CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(VP3_3:1,11,20;VBB:4,7;VEE:10;GND:17,14)';
-      PARENT_PART_TYPE='10EP90';
-      SCH_MODIFIED_PART='TRUE';
   end_body;
 end_primitive;
 primitive '10H103_PLCC';
@@ -4136,110 +4105,6 @@ primitive 'LM337T_L';
       PART_NAME='LM337T_L';
   end_body;
 end_primitive;
-primitive 'LVDS_DRIVER_DS10';
-  pin
-    '1':
-      PIN_NUMBER='(1)';
-      PINUSE='NC';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-    'IN+':
-      PIN_NUMBER='(2)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'IN-':
-      PIN_NUMBER='(3)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    '4':
-      PIN_NUMBER='(4)';
-      PINUSE='NC';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-    '5':
-      PIN_NUMBER='(5)';
-      PINUSE='NC';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-    'OUT+':
-      PIN_NUMBER='(7)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'OUT-':
-      PIN_NUMBER='(6)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-  end_pin;
-  body
-      PART_NAME='LVDS_DRIVER_DS10';
-      BODY_NAME='LVDS_DRIVER_DS10';
-      JEDEC_TYPE='SOIC8';
-      PHYS_DES_PREFIX='U';
-      CLASS='IC';
-      POWER_PINS='(VP3_3:8)';
-  end_body;
-end_primitive;
-primitive 'MAX9376-VCC=VP3_3';
-  pin
-    'IN1':
-      PIN_NUMBER='(1,0)';
-      PIN_TYPE='ANALOG';
-      NO_LOAD_CHECK='Both';
-      NO_IO_CHECK='Both';
-      NO_ASSERT_CHECK='TRUE';
-      NO_DIR_CHECK='TRUE';
-      ALLOW_CONNECT='TRUE';
-      PINUSE='UNSPEC';
-    'IN1*':
-      PIN_NUMBER='(2,0)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'OUT1':
-      PIN_NUMBER='(9,0)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'OUT1*':
-      PIN_NUMBER='(8,0)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'IN2':
-      PIN_NUMBER='(0,7)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'IN2*':
-      PIN_NUMBER='(0,6)';
-      INPUT_LOAD='(-0.01,0.01)';
-      PINUSE='IN';
-    'OUT2':
-      PIN_NUMBER='(0,3)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-    'OUT2*':
-      PIN_NUMBER='(0,4)';
-      OUTPUT_LOAD='(1.0,-1.0)';
-      PINUSE='OUT';
-  end_pin;
-  body
-      PART_NAME='MAX9376';
-      BODY_NAME='MAX9376';
-      JEDEC_TYPE='UMAX10';
-      PHYS_DES_PREFIX='U';
-      CLASS='IC';
-      GROUND_NETS='GND';
-      POWER_PINS='(VP3_3:5;GND:10)';
-      PARENT_PART_TYPE='MAX9376';
-      SCH_MODIFIED_PART='TRUE';
-  end_body;
-end_primitive;
 primitive 'MC10H104_PLCC-VCC=GND';
   pin
     'A':
@@ -5140,40 +5005,6 @@ primitive 'RSMD0805-125,1%,0805';
       PARENT_PART_TYPE='RSMD0805';
       PARENT_PPT='RSMD0805';
       PARENT_PPT_PART='RSMD0805-125,1%,0805';
-  end_body;
-end_primitive;
-primitive 'RSMD0805-130,1%,0805';
-  pin
-    'B'<0>:
-      PIN_NUMBER='(2)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-    'A'<0>:
-      PIN_NUMBER='(1)';
-      PINUSE='UNSPEC';
-      PIN_GROUP='1';
-  end_pin;
-  body
-      PART_NAME='RSMD0805';
-      COMP_TYPE='RES';
-      PATH='2P';
-      DRAWING='ELEMENTCHIPS.LOGIC.1.1';
-      PRIM_TYPE='CHIPS_PRT';
-      PRIM_FILE='/modeler/build/awbged/element/resistor/chips_prt';
-      VER='1';
-      XY='(1350,1350)';
-      DIR='ELEMENT.LIB';
-      ROT='0';
-      PINCOUNT='2';
-      SIZE='1';
-      BODY_NAME='RSMD0805';
-      JEDEC_TYPE='RES805';
-      PHYS_DES_PREFIX='R';
-      CLASS='DISCRETE';
-      VALUE='130';
-      PARENT_PART_TYPE='RSMD0805';
-      PARENT_PPT='RSMD0805';
-      PARENT_PPT_PART='RSMD0805-130,1%,0805';
   end_body;
 end_primitive;
 primitive 'RSMD0805-2K,1%,0805';

@@ -5,15 +5,16 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-11T17:56:00</modificationTime>
+    <modificationTime>2015-02-25T10:35:13</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="comparators" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>24</instanceid>
-        <netid>670</netid>
-        <insttermid>1141</insttermid>
+        <netid>698</netid>
+        <insttermid>1184</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -35,16 +36,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T162</id>
-              <name>trig_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T163</id>
-              <name>trig_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T279</id>
               <name>gtrig</name>
               <direction>inout</direction>
@@ -63,6 +54,16 @@
               <id>T369</id>
               <name>vbb_comp</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T446</id>
+              <name>trig_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T447</id>
+              <name>trig_out_p</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -105,16 +106,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T160</id>
-              <name>trig_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T161</id>
-              <name>trig_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T280</id>
               <name>gtrig</name>
               <direction>inout</direction>
@@ -133,6 +124,16 @@
               <id>T370</id>
               <name>vbb_comp</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T444</id>
+              <name>trig_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T445</id>
+              <name>trig_out_p</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -341,30 +342,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N61</id>
-          <name>fast_comp_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N62</id>
-          <name>fast_comp_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N63</id>
-          <name>tune_comp_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N64</id>
-          <name>tune_comp_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N82</id>
           <name>gtrig</name>
           <scope>interface</scope>
@@ -381,6 +358,26 @@
         <net>
           <id>N542</id>
           <name>unnamed_1_ss12sdp2_i27_p</name>
+        </net>
+        <net>
+          <id>N695</id>
+          <name>fast_comp_out_n</name>
+        </net>
+        <net>
+          <id>N696</id>
+          <name>fast_comp_out_p</name>
+        </net>
+        <net>
+          <id>N697</id>
+          <name>tune_comp_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N698</id>
+          <name>tune_comp_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N46</id>
@@ -469,20 +466,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M120</id>
-              <termid>T162</termid>
-              <connections>
-                <connection net="N61" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M121</id>
-              <termid>T163</termid>
-              <connections>
-                <connection net="N62" />
-              </connections>
-            </pin>
-            <pin>
               <id>M504</id>
               <termid>T279</termid>
               <connections>
@@ -508,6 +491,20 @@
               <termid>T369</termid>
               <connections>
                 <connection net="N397" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1183</id>
+              <termid>T446</termid>
+              <connections>
+                <connection net="N695" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1184</id>
+              <termid>T447</termid>
+              <connections>
+                <connection net="N696" />
               </connections>
             </pin>
           </pins>
@@ -574,20 +571,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M118</id>
-              <termid>T160</termid>
-              <connections>
-                <connection net="N63" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M119</id>
-              <termid>T161</termid>
-              <connections>
-                <connection net="N64" />
-              </connections>
-            </pin>
-            <pin>
               <id>M505</id>
               <termid>T280</termid>
               <connections>
@@ -613,6 +596,20 @@
               <termid>T370</termid>
               <connections>
                 <connection net="N397" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1181</id>
+              <termid>T444</termid>
+              <connections>
+                <connection net="N697" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1182</id>
+              <termid>T445</termid>
+              <connections>
+                <connection net="N698" />
               </connections>
             </pin>
           </pins>
@@ -1079,18 +1076,6 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="fast_comp_outh">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="fast_comp_outl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="fast_pulse">
             <pageScope number="1">
               <scope>interface</scope>
@@ -1120,13 +1105,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outh">
+          <netScope ref="tune_comp_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outl">
+          <netScope ref="tune_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1168,15 +1153,15 @@
               <net ref="data"></net>
               <net ref="data_rdy"></net>
               <net ref="dgth"></net>
-              <net ref="fast_comp_outh"></net>
-              <net ref="fast_comp_outl"></net>
+              <net ref="fast_comp_out_n"></net>
+              <net ref="fast_comp_out_p"></net>
               <net ref="fast_pulse"></net>
               <net ref="gnd"></net>
               <net ref="gtrig"></net>
               <net ref="le_tune"></net>
               <net ref="lockout*"></net>
-              <net ref="tune_comp_outh"></net>
-              <net ref="tune_comp_outl"></net>
+              <net ref="tune_comp_out_n"></net>
+              <net ref="tune_comp_out_p"></net>
               <net ref="tune_pulse"></net>
               <net ref="unnamed_1_10h131_i26_q"></net>
               <net ref="unnamed_1_bas16lt1_i14_cat"></net>

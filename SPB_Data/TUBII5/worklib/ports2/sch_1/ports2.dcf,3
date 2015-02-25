@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 50 )
+			( logicalViewRevNum 52 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -580,12 +580,6 @@
 			( signal "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i1@tubii_lib.ellie_talk(sch_1):vtt"
 				( objectFlag fObjectAlias )
 			)
-			( signal "@tubii_lib.ports2(sch_1):clock200_outh"
-				( objectStatus "clock200_outh" )
-			)
-			( signal "@tubii_lib.ports2(sch_1):clock200_outl"
-				( objectStatus "clock200_outl" )
-			)
 			( signal "@tubii_lib.ports2(sch_1):exttrig(2)"
 				( alias ( signalRef "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):exttrig(2)") )
 				( objectStatus "exttrig<2>" )
@@ -695,12 +689,6 @@
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_f07_i199_a"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_f07_i200_a"
-			)
-			( signal "@tubii_lib.ports2(sch_1):clock100_outh"
-				( objectStatus "clock100_outh" )
-			)
-			( signal "@tubii_lib.ports2(sch_1):clock100_outl"
-				( objectStatus "clock100_outl" )
 			)
 			( signal "@tubii_lib.ports2(sch_1):rawtrigs(0)"
 				( alias ( signalRef "@tubii_lib.ports2(sch_1):page1_i21@tubii_lib.tubii_triggers(sch_1):unnamed_1_10h125_i139_y") )
@@ -944,12 +932,6 @@
 			( signal "@tubii_lib.ports2(sch_1):unnamed_1_10h116_i27_b"
 				( objectStatus "unnamed_1_10h116_i27_b" )
 			)
-			( signal "@tubii_lib.ports2(sch_1):unnamed_1_10h116_i28_a"
-				( objectStatus "unnamed_1_10h116_i28_a" )
-			)
-			( signal "@tubii_lib.ports2(sch_1):unnamed_1_10h116_i28_b"
-				( objectStatus "unnamed_1_10h116_i28_b" )
-			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i230_a"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_10e116_i230_b"
@@ -1085,6 +1067,24 @@
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_conn32_i238_21"
 			)
 			( signal "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):unnamed_1_conn32_i238_23"
+			)
+			( signal "@tubii_lib.ports2(sch_1):clk100_out_n"
+				( objectStatus "clk100_out_n" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):clk100_out_p"
+				( objectStatus "clk100_out_p" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):clk200_out_n"
+				( objectStatus "clk200_out_n" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):clk200_out_p"
+				( objectStatus "clk200_out_p" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):tub_twinax_n"
+				( objectStatus "tub_twinax_n" )
+			)
+			( signal "@tubii_lib.ports2(sch_1):tub_twinax_p"
+				( objectStatus "tub_twinax_p" )
 			)
 			( gate "@tubii_lib.ports2(sch_1):page1_i2"
 				( attribute "CDS_LIB" "ecl"
@@ -15585,108 +15585,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i50"
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PULSE_WIDTH" "10000\PARAMETER"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(4125,4925)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74HCT123"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( pin "c"
-				)
-				( pin "\c/r\"
-				)
-				( pin "\cl*\"
-				)
-				( pin "clock"
-				)
-				( pin "\clock*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
-				)
-			)
-			( gate "@tubii_lib.ports2(sch_1):page1_i22@tubii_lib.ellie(sch_1):page1_i51"
-				( attribute "CDS_LIB" "misc"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "PULSE_WIDTH" "10000\PARAMETER"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(4125,4475)"
-					( Status sBlockFlattened )
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74HCT123"
-					( Status sBlockFlattened )
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( pin "c"
-				)
-				( pin "\c/r\"
-				)
-				( pin "\cl*\"
-				)
-				( pin "clock"
-				)
-				( pin "\clock*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
-				)
-			)
 			( pin "@tubii_lib.ports2(sch_1):page1_i20@tubii_lib.latchexttrig(sch_1):page1_i190:a(0)"
 				( attribute "PN" "10"
 					( Status sBlockFlattened )
@@ -16067,7 +15965,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "latchexttrig"
@@ -21534,7 +21432,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "tubii_triggers"
@@ -23504,7 +23402,7 @@
 	( BaseCopy "ellie"
 		( constraintHeader
 			( revisionNumber
-				( logicalViewRevNum 17 )
+				( logicalViewRevNum 19 )
 				( physicalViewRevNum 0 )
 				( otherViewRevNum 0 )
 			)
@@ -23514,7 +23412,7 @@
 				( properties )
 			)
 		)
-	( designConstraints
+    ( designConstraints
 		( ruleChanges
 			( allRules )
 			( design "ellie"
@@ -27830,94 +27728,6 @@
 					( attribute "PN" "15"
 						( Origin gPackager )
 					)
-				)
-			)
-			( gate "@tubii_lib.ellie(sch_1):page1_i50"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "PULSE_WIDTH" "10000\PARAMETER"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(4125,4925)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I50" )
-				( pin "c"
-				)
-				( pin "\c/r\"
-				)
-				( pin "\cl*\"
-				)
-				( pin "clock"
-				)
-				( pin "\clock*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
-				)
-			)
-			( gate "@tubii_lib.ellie(sch_1):page1_i51"
-				( attribute "CDS_LIB" "misc"
-					( Origin gPackager )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "PULSE_WIDTH" "10000\PARAMETER"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(4125,4475)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "74HCT123"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I51" )
-				( pin "c"
-				)
-				( pin "\c/r\"
-				)
-				( pin "\cl*\"
-				)
-				( pin "clock"
-				)
-				( pin "\clock*\"
-				)
-				( pin "q"
-				)
-				( pin "\q*\"
 				)
 			)
 			( pin "@tubii_lib.ellie(sch_1):page1_i1:pulse_in"

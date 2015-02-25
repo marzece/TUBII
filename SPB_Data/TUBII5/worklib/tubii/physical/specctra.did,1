@@ -207,15 +207,9 @@ rule PCB (turn_under_pad off)
 rule layer TOP (restricted_layer_length_factor 1)
 rule layer BOTTOM (restricted_layer_length_factor 1)
 write colormap _notify.std
-# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaah03048.tmp
+# do C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaab01216.tmp
 unselect all routing
-select component U50
-select component U48
-select component U49
-select component U86
-select component U99
-select component U100
-set route_diagonal 0
+set route_diagonal 4
 grid wire 0.010000 (direction x) (offset 0.000000)
 grid wire 0.010000 (direction y) (offset 0.000000)
 grid via 0.010000 (direction x) (offset 0.000000)
@@ -239,7 +233,11 @@ rule pcb (accordion_gap -1)
 rule pcb (trombone_run_length -1)
 rule pcb (trombone_gap -1)
 unprotect selected
-route 25 1
-clean 2
-write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaai03048.tmp
+fanout 10 (direction In_out) (location Anywhere) (pin_type power) (pin_type signal)
+route 500 1
+clean 10
+critic
+spread (extra 2.500000)
+miter 4 (style diagonal) (pin) (slant) (tjunction) (bend) (layer TOP BOTTOM)
+write routes (changed_only) (reset_changed) C:/Users/QGPWIN~1/AppData/Local/Temp/#Taaaaac01216.tmp
 quit -c

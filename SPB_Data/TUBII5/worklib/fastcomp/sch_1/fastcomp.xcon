@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-17T16:04:07</modificationTime>
+    <modificationTime>2015-02-25T10:54:30</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="fastcomp" view="sch_1">
       <lastids>
         <instanceid>112</instanceid>
-        <netid>129</netid>
-        <insttermid>586</insttermid>
+        <netid>135</netid>
+        <insttermid>590</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -386,14 +386,6 @@
           <name>unnamed_1_10e116_i29_y</name>
         </net>
         <net>
-          <id>N46</id>
-          <name>unnamed_1_10e116_i9_a</name>
-        </net>
-        <net>
-          <id>N47</id>
-          <name>unnamed_1_10e116_i9_b</name>
-        </net>
-        <net>
           <id>N56</id>
           <name>unnamed_1_10h125_i23_y</name>
         </net>
@@ -406,18 +398,6 @@
         <net>
           <id>N94</id>
           <name>unnamed_1_adcmp566_i37_in</name>
-        </net>
-        <net>
-          <id>N96</id>
-          <name>trig_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N97</id>
-          <name>trig_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
         </net>
         <net>
           <id>N101</id>
@@ -486,20 +466,40 @@
           <name>unnamed_1_10e101_i123_d</name>
         </net>
         <net>
-          <id>N126</id>
-          <name>unnamed_1_10e101_i123_y</name>
-        </net>
-        <net>
-          <id>N127</id>
-          <name>unnamed_1_10e101_i123_y_1</name>
-        </net>
-        <net>
           <id>N128</id>
           <name>unnamed_1_10e101_i123_c</name>
         </net>
         <net>
           <id>N129</id>
           <name>vbb_comp</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N130</id>
+          <name>fast_comp_trig__pulse_n</name>
+        </net>
+        <net>
+          <id>N131</id>
+          <name>fast_comp_trig_n</name>
+        </net>
+        <net>
+          <id>N132</id>
+          <name>fast_comp_trig_p</name>
+        </net>
+        <net>
+          <id>N133</id>
+          <name>fast_comp_trig_pulse_p</name>
+        </net>
+        <net>
+          <id>N134</id>
+          <name>trig_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N135</id>
+          <name>trig_out_p</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -558,7 +558,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N46" />
+                <connection pinmsb="0" pinlsb="0" net="N133" />
               </connections>
             </pin>
             <pin>
@@ -567,7 +567,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N47" />
+                <connection pinmsb="0" pinlsb="0" net="N130" />
               </connections>
             </pin>
             <pin>
@@ -583,7 +583,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N96" />
+                <connection pinmsb="0" pinlsb="0" net="N135" />
               </connections>
             </pin>
             <pin>
@@ -592,7 +592,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N97" />
+                <connection pinmsb="0" pinlsb="0" net="N134" />
               </connections>
             </pin>
           </pins>
@@ -622,7 +622,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N127" />
+                <connection pinmsb="0" pinlsb="0" net="N132" />
               </connections>
             </pin>
             <pin>
@@ -631,7 +631,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N126" />
+                <connection pinmsb="0" pinlsb="0" net="N131" />
               </connections>
             </pin>
             <pin>
@@ -685,7 +685,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N47" />
+                <connection pinmsb="0" pinlsb="0" net="N130" />
               </connections>
             </pin>
           </pins>
@@ -724,7 +724,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N46" />
+                <connection pinmsb="0" pinlsb="0" net="N133" />
               </connections>
             </pin>
           </pins>
@@ -802,7 +802,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N46" />
+                <connection pinmsb="0" pinlsb="0" net="N133" />
               </connections>
             </pin>
           </pins>
@@ -1213,7 +1213,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N126" />
+                <connection pinmsb="0" pinlsb="0" net="N131" />
               </connections>
             </pin>
           </pins>
@@ -1252,7 +1252,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N127" />
+                <connection pinmsb="0" pinlsb="0" net="N132" />
               </connections>
             </pin>
           </pins>
@@ -2154,7 +2154,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N127" />
+                <connection pinmsb="0" pinlsb="0" net="N132" />
               </connections>
             </pin>
             <pin>
@@ -2163,7 +2163,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N126" />
+                <connection pinmsb="0" pinlsb="0" net="N131" />
               </connections>
             </pin>
           </pins>
@@ -2206,7 +2206,7 @@
               <id>M514</id>
               <termid>T291</termid>
               <connections>
-                <connection net="N127" />
+                <connection net="N132" />
               </connections>
             </pin>
             <pin>
@@ -2215,7 +2215,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N46" />
+                <connection pinmsb="0" pinlsb="0" net="N133" />
               </connections>
             </pin>
             <pin>
@@ -2224,7 +2224,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N47" />
+                <connection pinmsb="0" pinlsb="0" net="N130" />
               </connections>
             </pin>
             <pin>
@@ -2294,13 +2294,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="trig_outh">
+          <netScope ref="trig_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="trig_outl">
+          <netScope ref="trig_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2340,22 +2340,22 @@
             <nets>
               <net ref="anpulsein"></net>
               <net ref="dgt_gate"></net>
+              <net ref="fast_comp_trig__pulse_n"></net>
+              <net ref="fast_comp_trig_n"></net>
+              <net ref="fast_comp_trig_p"></net>
+              <net ref="fast_comp_trig_pulse_p"></net>
               <net ref="gnd"></net>
               <net ref="gtrig"></net>
               <net ref="gtrig/i"></net>
               <net ref="lo*"></net>
               <net ref="posneg"></net>
-              <net ref="trig_outh"></net>
-              <net ref="trig_outl"></net>
+              <net ref="trig_out_n"></net>
+              <net ref="trig_out_p"></net>
               <net ref="unnamed_1_10e101_i123_a"></net>
               <net ref="unnamed_1_10e101_i123_c"></net>
               <net ref="unnamed_1_10e101_i123_d"></net>
-              <net ref="unnamed_1_10e101_i123_y"></net>
-              <net ref="unnamed_1_10e101_i123_y_1"></net>
               <net ref="unnamed_1_10e116_i29_a"></net>
               <net ref="unnamed_1_10e116_i29_y"></net>
-              <net ref="unnamed_1_10e116_i9_a"></net>
-              <net ref="unnamed_1_10e116_i9_b"></net>
               <net ref="unnamed_1_10h125_i23_y"></net>
               <net ref="unnamed_1_10h131_i118_clk"></net>
               <net ref="unnamed_1_10h131_i118_d"></net>

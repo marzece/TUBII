@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-01-08T16:59:02</modificationTime>
+    <modificationTime>2015-02-25T10:36:04</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="comparator_ports" view="sch_1">
       <lastids>
         <instanceid>8</instanceid>
-        <netid>8</netid>
+        <netid>12</netid>
         <insttermid>8</insttermid>
       </lastids>
       <cells>
@@ -40,18 +40,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N2</id>
-          <name>fast_comp_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N3</id>
-          <name>fast_comp_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N5</id>
           <name>page1_gnd</name>
         </net>
@@ -62,14 +50,26 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N7</id>
-          <name>tune_comp_outh</name>
+          <id>N9</id>
+          <name>fast_comp_out_n</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
         <net>
-          <id>N8</id>
-          <name>tune_comp_outl</name>
+          <id>N10</id>
+          <name>fast_comp_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N11</id>
+          <name>tune_comp_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N12</id>
+          <name>tune_comp_out_p</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -106,7 +106,7 @@
               <id>M1</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N7" />
+                <connection net="N12" />
               </connections>
             </pin>
           </pins>
@@ -134,7 +134,7 @@
               <id>M2</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N8" />
+                <connection net="N11" />
               </connections>
             </pin>
           </pins>
@@ -162,7 +162,7 @@
               <id>M3</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N2" />
+                <connection net="N10" />
               </connections>
             </pin>
           </pins>
@@ -190,7 +190,7 @@
               <id>M4</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N3" />
+                <connection net="N9" />
               </connections>
             </pin>
           </pins>
@@ -330,13 +330,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="fast_comp_outh">
+          <netScope ref="fast_comp_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="fast_comp_outl">
+          <netScope ref="fast_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -353,13 +353,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outh">
+          <netScope ref="tune_comp_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outl">
+          <netScope ref="tune_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -372,12 +372,12 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="fast_anpulse"></net>
-              <net ref="fast_comp_outh"></net>
-              <net ref="fast_comp_outl"></net>
+              <net ref="fast_comp_out_n"></net>
+              <net ref="fast_comp_out_p"></net>
               <net ref="gnd"></net>
               <net ref="tune_anpulse"></net>
-              <net ref="tune_comp_outh"></net>
-              <net ref="tune_comp_outl"></net>
+              <net ref="tune_comp_out_n"></net>
+              <net ref="tune_comp_out_p"></net>
             </nets>
             <instances>
               <instance ref="i1"></instance>

@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-01-28T11:51:41</modificationTime>
+    <modificationTime>2015-02-25T10:36:11</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_ports" view="sch_1">
       <lastids>
         <instanceid>56</instanceid>
-        <netid>116</netid>
+        <netid>120</netid>
         <insttermid>160</insttermid>
       </lastids>
       <cells>
@@ -392,30 +392,6 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N33</id>
-          <name>sync24h_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N34</id>
-          <name>sync24l_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N35</id>
-          <name>synch_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N36</id>
-          <name>syncl_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N37</id>
           <name>unnamed_1_8merge_i13_a</name>
         </net>
@@ -708,6 +684,30 @@
         <net>
           <id>N116</id>
           <name>unnamed_1_conn30_i75_9</name>
+        </net>
+        <net>
+          <id>N117</id>
+          <name>sync24_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N118</id>
+          <name>sync24_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N119</id>
+          <name>sync_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N120</id>
+          <name>sync_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N31</id>
@@ -1904,28 +1904,28 @@
               <id>M97</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N35" />
+                <connection net="N120" />
               </connections>
             </pin>
             <pin>
               <id>M98</id>
               <termid>T38</termid>
               <connections>
-                <connection net="N36" />
+                <connection net="N119" />
               </connections>
             </pin>
             <pin>
               <id>M99</id>
               <termid>T39</termid>
               <connections>
-                <connection net="N33" />
+                <connection net="N118" />
               </connections>
             </pin>
             <pin>
               <id>M100</id>
               <termid>T40</termid>
               <connections>
-                <connection net="N34" />
+                <connection net="N117" />
               </connections>
             </pin>
             <pin>
@@ -2405,25 +2405,25 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="sync24h_lvds">
+          <netScope ref="sync24_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="sync24l_lvds">
+          <netScope ref="sync24_lvds_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="synch_lvds">
+          <netScope ref="sync_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="syncl_lvds">
+          <netScope ref="sync_lvds_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2444,10 +2444,10 @@
                 <lsb>0</lsb>
               </net>
               <net ref="gnd"></net>
-              <net ref="sync24h_lvds"></net>
-              <net ref="sync24l_lvds"></net>
-              <net ref="synch_lvds"></net>
-              <net ref="syncl_lvds"></net>
+              <net ref="sync24_lvds_n"></net>
+              <net ref="sync24_lvds_p"></net>
+              <net ref="sync_lvds_n"></net>
+              <net ref="sync_lvds_p"></net>
               <net ref="unnamed_1_4merge_i23_a"></net>
               <net ref="unnamed_1_4merge_i23_b"></net>
               <net ref="unnamed_1_4merge_i23_c"></net>

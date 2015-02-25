@@ -1,0 +1,72 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "nim_ecl_translation"
+    (lastIds
+      (lastInstanceId 2)
+      (lastNetId 8)
+      (lastInstTermId 10)
+    )
+    (cells
+      ("S2" "ecl-nim" "tubii_lib" "sym_1"
+        (terms
+          ("T8" "ecl_in" -1 -1 1)
+          ("T9" "nim_out" -1 -1 2)
+        )
+      )
+      ("S3" "nim-ecl" "tubii_lib" "sym_1"
+        (terms
+          ("T16" "ecl_out" -1 -1 2)
+          ("T17" "nim_in" -1 -1 1)
+        )
+      )
+    )
+
+    (nets
+      ("N1" "ecl_in" -1 -1 1 3)
+      ("N2" "ecl_out" -1 -1 1 3)
+      ("N3" "nim_in" -1 -1 1 3)
+      ("N4" "nim_out" -1 -1 1 3)
+      ("vee" "vee" -1 -1 2  inherited)
+      ("vtt" "vtt" -1 -1 2  inherited)
+      ("vbb_trans" "vbb_trans" -1 -1 2  inherited)
+      ("gnd" "gnd" -1 -1 2  inherited)
+    )
+
+    (instances
+      ("I1" "page1_i1" "S2"
+        (pins
+          ("M4" "T8" -1 -1
+            (conn
+              ("0" -1 -1 "N1" -1 -1)
+            )
+          )
+          ("M5" "T9" -1 -1
+            (conn
+              ("0" -1 -1 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I2" "page1_i2" "S3"
+        (pins
+          ("M9" "T16" -1 -1
+            (conn
+              ("0" -1 -1 "N2" -1 -1)
+            )
+          )
+          ("M10" "T17" -1 -1
+            (conn
+              ("0" -1 -1 "N3" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

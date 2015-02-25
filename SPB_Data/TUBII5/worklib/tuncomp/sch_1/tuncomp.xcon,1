@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-11T17:56:12</modificationTime>
+    <modificationTime>2015-02-25T10:34:41</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tuncomp" view="sch_1">
       <lastids>
         <instanceid>126</instanceid>
-        <netid>140</netid>
-        <insttermid>674</insttermid>
+        <netid>146</netid>
+        <insttermid>680</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -571,18 +571,6 @@
           <name>unnamed_1_ad7243_i94_vout</name>
         </net>
         <net>
-          <id>N95</id>
-          <name>trig_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N96</id>
-          <name>trig_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N102</id>
           <name>unnamed_1_ad7243_i94_vdd</name>
         </net>
@@ -649,22 +637,6 @@
           <name>unnamed_1_10e101_i145_d</name>
         </net>
         <net>
-          <id>N132</id>
-          <name>unnamed_1_10e101_i145_y</name>
-        </net>
-        <net>
-          <id>N133</id>
-          <name>unnamed_1_10e101_i145_y_1</name>
-        </net>
-        <net>
-          <id>N134</id>
-          <name>unnamed_1_10e116_i146_a</name>
-        </net>
-        <net>
-          <id>N135</id>
-          <name>unnamed_1_10e116_i146_b</name>
-        </net>
-        <net>
           <id>N136</id>
           <name>unnamed_1_10e116_i147_a</name>
         </net>
@@ -681,6 +653,34 @@
         <net>
           <id>N140</id>
           <name>unnamed_1_mc10h104_i126_a</name>
+        </net>
+        <net>
+          <id>N141</id>
+          <name>trig_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N142</id>
+          <name>trig_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N143</id>
+          <name>tune_comp_trig_n</name>
+        </net>
+        <net>
+          <id>N144</id>
+          <name>tune_comp_trig_p</name>
+        </net>
+        <net>
+          <id>N145</id>
+          <name>tune_comp_trig_pulse_n</name>
+        </net>
+        <net>
+          <id>N146</id>
+          <name>tune_comp_trig_pulse_p</name>
         </net>
         <net>
           <id>N11</id>
@@ -830,7 +830,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N132" />
+                <connection pinmsb="0" pinlsb="0" net="N144" />
               </connections>
             </pin>
             <pin>
@@ -839,7 +839,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N133" />
+                <connection pinmsb="0" pinlsb="0" net="N143" />
               </connections>
             </pin>
             <pin>
@@ -971,7 +971,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N133" />
+                <connection pinmsb="0" pinlsb="0" net="N143" />
               </connections>
             </pin>
           </pins>
@@ -1010,7 +1010,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N132" />
+                <connection pinmsb="0" pinlsb="0" net="N144" />
               </connections>
             </pin>
           </pins>
@@ -1049,7 +1049,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N134" />
+                <connection pinmsb="0" pinlsb="0" net="N146" />
               </connections>
             </pin>
           </pins>
@@ -1127,7 +1127,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N134" />
+                <connection pinmsb="0" pinlsb="0" net="N146" />
               </connections>
             </pin>
           </pins>
@@ -1166,7 +1166,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N135" />
+                <connection pinmsb="0" pinlsb="0" net="N145" />
               </connections>
             </pin>
           </pins>
@@ -1464,7 +1464,7 @@
               <id>M334</id>
               <termid>T180</termid>
               <connections>
-                <connection net="N132" />
+                <connection net="N144" />
               </connections>
             </pin>
             <pin>
@@ -1473,7 +1473,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N134" />
+                <connection pinmsb="0" pinlsb="0" net="N146" />
               </connections>
             </pin>
             <pin>
@@ -1482,7 +1482,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N135" />
+                <connection pinmsb="0" pinlsb="0" net="N145" />
               </connections>
             </pin>
             <pin>
@@ -2597,7 +2597,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N132" />
+                <connection pinmsb="0" pinlsb="0" net="N144" />
               </connections>
             </pin>
             <pin>
@@ -2606,7 +2606,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N133" />
+                <connection pinmsb="0" pinlsb="0" net="N143" />
               </connections>
             </pin>
           </pins>
@@ -2636,7 +2636,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N134" />
+                <connection pinmsb="0" pinlsb="0" net="N146" />
               </connections>
             </pin>
             <pin>
@@ -2645,7 +2645,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N135" />
+                <connection pinmsb="0" pinlsb="0" net="N145" />
               </connections>
             </pin>
             <pin>
@@ -2661,7 +2661,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N95" />
+                <connection pinmsb="0" pinlsb="0" net="N142" />
               </connections>
             </pin>
             <pin>
@@ -2670,7 +2670,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N96" />
+                <connection pinmsb="0" pinlsb="0" net="N141" />
               </connections>
             </pin>
           </pins>
@@ -2814,13 +2814,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="trig_outh">
+          <netScope ref="trig_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="trig_outl">
+          <netScope ref="trig_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2884,15 +2884,15 @@
               <net ref="le"></net>
               <net ref="lo*"></net>
               <net ref="posneg"></net>
-              <net ref="trig_outh"></net>
-              <net ref="trig_outl"></net>
+              <net ref="trig_out_n"></net>
+              <net ref="trig_out_p"></net>
+              <net ref="tune_comp_trig_n"></net>
+              <net ref="tune_comp_trig_p"></net>
+              <net ref="tune_comp_trig_pulse_n"></net>
+              <net ref="tune_comp_trig_pulse_p"></net>
               <net ref="unnamed_1_10e101_i145_a"></net>
               <net ref="unnamed_1_10e101_i145_c"></net>
               <net ref="unnamed_1_10e101_i145_d"></net>
-              <net ref="unnamed_1_10e101_i145_y"></net>
-              <net ref="unnamed_1_10e101_i145_y_1"></net>
-              <net ref="unnamed_1_10e116_i146_a"></net>
-              <net ref="unnamed_1_10e116_i146_b"></net>
               <net ref="unnamed_1_10e116_i147_a"></net>
               <net ref="unnamed_1_10e116_i147_y"></net>
               <net ref="unnamed_1_10h125_i36_y"></net>

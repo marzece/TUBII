@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-17T16:04:36</modificationTime>
+    <modificationTime>2015-02-25T16:10:53</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_clks" view="sch_1">
       <lastids>
         <instanceid>80</instanceid>
-        <netid>80</netid>
+        <netid>88</netid>
         <insttermid>252</insttermid>
       </lastids>
       <cells>
@@ -334,22 +334,6 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N8</id>
-          <name>unnamed_1_100el34_i36_clk</name>
-        </net>
-        <net>
-          <id>N9</id>
-          <name>unnamed_1_100el34_i36_clk_1</name>
-        </net>
-        <net>
-          <id>N22</id>
-          <name>unnamed_1_el91l_i2_in</name>
-        </net>
-        <net>
-          <id>N23</id>
-          <name>unnamed_1_el91l_i2_in_1</name>
-        </net>
-        <net>
           <id>N45</id>
           <name>unnamed_1_100el34_i36_out2</name>
         </net>
@@ -382,30 +366,10 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N57</id>
-          <name>clock200_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N58</id>
-          <name>clock200_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N59</id>
           <name>tub_clk_in</name>
           <scope>interface</scope>
           <direction>inout</direction>
-        </net>
-        <net>
-          <id>N67</id>
-          <name>unnamed_1_10h116_i62_a</name>
-        </net>
-        <net>
-          <id>N68</id>
-          <name>unnamed_1_10h116_i62_b</name>
         </net>
         <net>
           <id>N79</id>
@@ -414,6 +378,42 @@
         <net>
           <id>N80</id>
           <name>unnamed_1_mc10h104_i69_b</name>
+        </net>
+        <net>
+          <id>N81</id>
+          <name>clk200_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N82</id>
+          <name>clk200_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N83</id>
+          <name>ecl_fox2_n</name>
+        </net>
+        <net>
+          <id>N84</id>
+          <name>ecl_fox2_p</name>
+        </net>
+        <net>
+          <id>N85</id>
+          <name>ecl_fox_n</name>
+        </net>
+        <net>
+          <id>N86</id>
+          <name>ecl_fox_p</name>
+        </net>
+        <net>
+          <id>N87</id>
+          <name>fox_clk_n</name>
+        </net>
+        <net>
+          <id>N88</id>
+          <name>fox_clk_p</name>
         </net>
         <net>
           <id>N5</id>
@@ -463,28 +463,28 @@
               <id>M1</id>
               <termid>T7</termid>
               <connections>
-                <connection net="N22" />
+                <connection net="N88" />
               </connections>
             </pin>
             <pin>
               <id>M2</id>
               <termid>T8</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N87" />
               </connections>
             </pin>
             <pin>
               <id>M3</id>
               <termid>T9</termid>
               <connections>
-                <connection net="N67" />
+                <connection net="N86" />
               </connections>
             </pin>
             <pin>
               <id>M4</id>
               <termid>T10</termid>
               <connections>
-                <connection net="N68" />
+                <connection net="N85" />
               </connections>
             </pin>
             <pin>
@@ -526,7 +526,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N23" />
+                <connection pinmsb="0" pinlsb="0" net="N87" />
               </connections>
             </pin>
             <pin>
@@ -565,7 +565,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N22" />
+                <connection pinmsb="0" pinlsb="0" net="N88" />
               </connections>
             </pin>
             <pin>
@@ -614,14 +614,14 @@
               <id>M13</id>
               <termid>T17</termid>
               <connections>
-                <connection net="N22" />
+                <connection net="N88" />
               </connections>
             </pin>
             <pin>
               <id>M14</id>
               <termid>T18</termid>
               <connections>
-                <connection net="N23" />
+                <connection net="N87" />
               </connections>
             </pin>
           </pins>
@@ -660,7 +660,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N23" />
+                <connection pinmsb="0" pinlsb="0" net="N87" />
               </connections>
             </pin>
           </pins>
@@ -699,7 +699,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N22" />
+                <connection pinmsb="0" pinlsb="0" net="N88" />
               </connections>
             </pin>
           </pins>
@@ -738,7 +738,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
+                <connection pinmsb="0" pinlsb="0" net="N84" />
               </connections>
             </pin>
           </pins>
@@ -777,7 +777,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N83" />
               </connections>
             </pin>
           </pins>
@@ -816,7 +816,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N67" />
+                <connection pinmsb="0" pinlsb="0" net="N86" />
               </connections>
             </pin>
           </pins>
@@ -855,7 +855,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N68" />
+                <connection pinmsb="0" pinlsb="0" net="N85" />
               </connections>
             </pin>
           </pins>
@@ -885,7 +885,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N67" />
+                <connection pinmsb="0" pinlsb="0" net="N86" />
               </connections>
             </pin>
             <pin>
@@ -894,7 +894,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N68" />
+                <connection pinmsb="0" pinlsb="0" net="N85" />
               </connections>
             </pin>
             <pin>
@@ -937,14 +937,14 @@
               <id>M79</id>
               <termid>T37</termid>
               <connections>
-                <connection net="N8" />
+                <connection net="N84" />
               </connections>
             </pin>
             <pin>
               <id>M80</id>
               <termid>T38</termid>
               <connections>
-                <connection net="N9" />
+                <connection net="N83" />
               </connections>
             </pin>
             <pin>
@@ -1376,7 +1376,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N67" />
+                <connection pinmsb="0" pinlsb="0" net="N86" />
               </connections>
             </pin>
             <pin>
@@ -1385,7 +1385,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N68" />
+                <connection pinmsb="0" pinlsb="0" net="N85" />
               </connections>
             </pin>
             <pin>
@@ -1394,7 +1394,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N57" />
+                <connection pinmsb="0" pinlsb="0" net="N82" />
               </connections>
             </pin>
             <pin>
@@ -1403,7 +1403,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N58" />
+                <connection pinmsb="0" pinlsb="0" net="N81" />
               </connections>
             </pin>
             <pin>
@@ -1439,7 +1439,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N67" />
+                <connection pinmsb="0" pinlsb="0" net="N86" />
               </connections>
             </pin>
             <pin>
@@ -1448,7 +1448,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N68" />
+                <connection pinmsb="0" pinlsb="0" net="N85" />
               </connections>
             </pin>
             <pin>
@@ -1457,7 +1457,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N8" />
+                <connection pinmsb="0" pinlsb="0" net="N84" />
               </connections>
             </pin>
             <pin>
@@ -1466,7 +1466,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N83" />
               </connections>
             </pin>
             <pin>
@@ -1684,13 +1684,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outh">
+          <netScope ref="clk200_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outl">
+          <netScope ref="clk200_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1747,21 +1747,21 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="bckp_clk"></net>
-              <net ref="clock200_outh"></net>
-              <net ref="clock200_outl"></net>
+              <net ref="clk200_out_n"></net>
+              <net ref="clk200_out_p"></net>
               <net ref="default_clk"></net>
               <net ref="default_select"></net>
+              <net ref="ecl_fox2_n"></net>
+              <net ref="ecl_fox2_p"></net>
+              <net ref="ecl_fox_n"></net>
+              <net ref="ecl_fox_p"></net>
               <net ref="fox200mhz"></net>
+              <net ref="fox_clk_n"></net>
+              <net ref="fox_clk_p"></net>
               <net ref="gnd"></net>
               <net ref="tub_clk_in"></net>
-              <net ref="unnamed_1_100el34_i36_clk"></net>
-              <net ref="unnamed_1_100el34_i36_clk_1"></net>
               <net ref="unnamed_1_100el34_i36_out2"></net>
               <net ref="unnamed_1_100el34_i36_out2_1"></net>
-              <net ref="unnamed_1_10h116_i62_a"></net>
-              <net ref="unnamed_1_10h116_i62_b"></net>
-              <net ref="unnamed_1_el91l_i2_in"></net>
-              <net ref="unnamed_1_el91l_i2_in_1"></net>
               <net ref="unnamed_1_mc10h104_i68_b"></net>
               <net ref="unnamed_1_mc10h104_i69_b"></net>
               <net ref="vcc"></net>

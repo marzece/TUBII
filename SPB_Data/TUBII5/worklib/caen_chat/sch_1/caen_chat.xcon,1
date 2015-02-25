@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-11T17:54:56</modificationTime>
+    <modificationTime>2015-02-25T10:36:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen_chat" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>91</instanceid>
-        <netid>70</netid>
+        <netid>78</netid>
         <insttermid>274</insttermid>
       </lastids>
       <cells>
@@ -189,62 +190,14 @@
           <name>page1_gnd</name>
         </net>
         <net>
-          <id>N4</id>
-          <name>gtrigh_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N6</id>
-          <name>gtrigl_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N7</id>
-          <name>sync24h_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N8</id>
-          <name>sync24h_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N9</id>
-          <name>sync24l_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N10</id>
-          <name>sync24l_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N11</id>
           <name>synch_ecl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
         <net>
-          <id>N12</id>
-          <name>synch_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N13</id>
           <name>syncl_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N14</id>
-          <name>syncl_lvds</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -283,6 +236,54 @@
         <net>
           <id>N70</id>
           <name>unnamed_1_10h116_i81_y_1</name>
+        </net>
+        <net>
+          <id>N71</id>
+          <name>gt_ecl_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N72</id>
+          <name>gt_ecl_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N73</id>
+          <name>sync24_ecl_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N74</id>
+          <name>sync24_ecl_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N75</id>
+          <name>sync24_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N76</id>
+          <name>sync24_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N77</id>
+          <name>sync_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N78</id>
+          <name>sync_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N1</id>
@@ -731,14 +732,14 @@
               <id>M246</id>
               <termid>T95</termid>
               <connections>
-                <connection net="N8" />
+                <connection net="N76" />
               </connections>
             </pin>
             <pin>
               <id>M247</id>
               <termid>T96</termid>
               <connections>
-                <connection net="N10" />
+                <connection net="N75" />
               </connections>
             </pin>
           </pins>
@@ -827,14 +828,14 @@
               <id>M253</id>
               <termid>T95</termid>
               <connections>
-                <connection net="N12" />
+                <connection net="N78" />
               </connections>
             </pin>
             <pin>
               <id>M254</id>
               <termid>T96</termid>
               <connections>
-                <connection net="N14" />
+                <connection net="N77" />
               </connections>
             </pin>
           </pins>
@@ -864,7 +865,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N4" />
+                <connection pinmsb="0" pinlsb="0" net="N72" />
               </connections>
             </pin>
             <pin>
@@ -873,7 +874,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N6" />
+                <connection pinmsb="0" pinlsb="0" net="N71" />
               </connections>
             </pin>
             <pin>
@@ -926,7 +927,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N7" />
+                <connection pinmsb="0" pinlsb="0" net="N74" />
               </connections>
             </pin>
             <pin>
@@ -935,7 +936,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N9" />
+                <connection pinmsb="0" pinlsb="0" net="N73" />
               </connections>
             </pin>
             <pin>
@@ -1049,37 +1050,49 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
-          <netScope ref="gtrigh_ecl">
+          <netScope ref="gt_ecl_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="gtrigl_ecl">
+          <netScope ref="gt_ecl_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="sync24h_ecl">
+          <netScope ref="sync24_ecl_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="sync24h_lvds">
+          <netScope ref="sync24_ecl_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="sync24l_ecl">
+          <netScope ref="sync24_lvds_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="sync24l_lvds">
+          <netScope ref="sync24_lvds_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_lvds_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_lvds_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1091,19 +1104,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="synch_lvds">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
           <netScope ref="syncl_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="syncl_lvds">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -1126,16 +1127,16 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="gnd"></net>
-              <net ref="gtrigh_ecl"></net>
-              <net ref="gtrigl_ecl"></net>
-              <net ref="sync24h_ecl"></net>
-              <net ref="sync24h_lvds"></net>
-              <net ref="sync24l_ecl"></net>
-              <net ref="sync24l_lvds"></net>
+              <net ref="gt_ecl_n"></net>
+              <net ref="gt_ecl_p"></net>
+              <net ref="sync24_ecl_n"></net>
+              <net ref="sync24_ecl_p"></net>
+              <net ref="sync24_lvds_n"></net>
+              <net ref="sync24_lvds_p"></net>
+              <net ref="sync_lvds_n"></net>
+              <net ref="sync_lvds_p"></net>
               <net ref="synch_ecl"></net>
-              <net ref="synch_lvds"></net>
               <net ref="syncl_ecl"></net>
-              <net ref="syncl_lvds"></net>
               <net ref="unnamed_1_10h116_i79_y"></net>
               <net ref="unnamed_1_10h116_i80_y"></net>
               <net ref="unnamed_1_10h116_i80_y_1"></net>

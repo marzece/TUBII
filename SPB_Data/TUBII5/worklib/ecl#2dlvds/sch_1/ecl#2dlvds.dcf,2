@@ -7,7 +7,7 @@
 			( 16.6 )
 		)
 		( revisionNumber
-			( logicalViewRevNum 14 )
+			( logicalViewRevNum 16 )
 			( physicalViewRevNum 0 )
 			( otherViewRevNum 0 )
 		)
@@ -493,12 +493,10 @@
 				( objectStatus "ecl-lvds" )
 			)
 			( signal "@tubii_lib.\ecl-lvds\(sch_1):gnd"
-				( alias ( signalRef "@tubii_lib.\ecl-lvds\(sch_1):page1_gnd") )
+				( attribute "PHYS_NET_NAME" "GND"
+					( Origin gPackager )
+				)
 				( objectStatus "gnd" )
-			)
-			( signal "@tubii_lib.\ecl-lvds\(sch_1):page1_gnd"
-				( objectFlag fObjectAlias )
-				( objectStatus "page1_gnd" )
 			)
 			( signal "@tubii_lib.\ecl-lvds\(sch_1):unnamed_1_10e116_i56_y"
 				( objectStatus "unnamed_1_10e116_i56_y" )
@@ -800,104 +798,6 @@
 					)
 				)
 			)
-			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i43"
-				( attribute "CDS_LIB" "capacitors"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LMAN_SYM_OUTLINE" "-25,25,25,-25"
-					( Origin gPackager )
-				)
-				( attribute "CDS_LOCATION" "C91"
-					( Origin gPackager )
-				)
-				( attribute "CDS_SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "CURRENT" "CIMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "DIST" "FLAT"
-					( Origin gFrontEnd )
-				)
-				( attribute "IC" "UNDEF"
-					( Origin gFrontEnd )
-				)
-				( attribute "KNEE" "CBMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "LOCATION" "C91"
-					( Origin gPackager )
-				)
-				( attribute "MAX_TEMP" "CTMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEEDS_NO_SIZE" "TRUE"
-					( Origin gFrontEnd )
-				)
-				( attribute "NEGTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "PACKTYPE" "0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PART_NAME" "CSMD0805"
-					( Origin gFrontEnd )
-				)
-				( attribute "PHYS_PAGE" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "POSTOL" "10%"
-					( Origin gFrontEnd )
-				)
-				( attribute "ROT" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "SEC" "1"
-					( Origin gPackager )
-				)
-				( attribute "SLOPE" "CSMAX"
-					( Origin gFrontEnd )
-				)
-				( attribute "TC" "0"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL" "5%"
-					( Origin gFrontEnd )
-				)
-				( attribute "TOL_ON_OFF" "ON"
-					( Origin gFrontEnd )
-				)
-				( attribute "VALUE" "0.1UF"
-					( Origin gFrontEnd )
-				)
-				( attribute "VER" "1"
-					( Origin gFrontEnd )
-				)
-				( attribute "VOLTAGE" "50V"
-					( Units "uVoltage" "V" 1.000000)
-					( Origin gFrontEnd )
-				)
-				( attribute "XY" "(-1550,3525)"
-					( Origin gFrontEnd )
-				)
-				( attribute "CHIPS_PART_NAME" "CSMD0805"
-					( Origin gPackager )
-				)
-				( attribute "CDS_PART_NAME" "CSMD0805-0.1UF,5%,0805,50V"
-					( Origin gPackager )
-				)
-				( objectStatus "PAGE1_I43" )
-				( pin "a(0)"
-					( attribute "PN" "1"
-						( Origin gPackager )
-					)
-				)
-				( pin "b(0)"
-					( attribute "PN" "2"
-						( Origin gPackager )
-					)
-				)
-			)
 			( gate "@tubii_lib.\ecl-lvds\(sch_1):page1_i47"
 				( attribute "CDS_LIB" "resistors"
 					( Origin gPackager )
@@ -1015,7 +915,7 @@
 				( attribute "CHIPS_PART_NAME" "MAX9376"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "MAX9376"
+				( attribute "CDS_PART_NAME" "MAX9376-VCC=VP3_3"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U131"
@@ -1264,7 +1164,7 @@
 				( attribute "CHIPS_PART_NAME" "10EP90"
 					( Origin gPackager )
 				)
-				( attribute "CDS_PART_NAME" "10EP90"
+				( attribute "CDS_PART_NAME" "10EP90-VCC=VP3_3"
 					( Origin gPackager )
 				)
 				( attribute "CDS_LOCATION" "U101"

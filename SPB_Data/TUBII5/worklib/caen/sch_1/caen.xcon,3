@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2014-10-09T11:58:27</modificationTime>
+    <modificationTime>2014-10-15T11:29:35</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="caen" view="sch_1">
       <lastids>
         <instanceid>3</instanceid>
-        <netid>103</netid>
-        <insttermid>113</insttermid>
+        <netid>126</netid>
+        <insttermid>139</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -57,6 +57,21 @@
             <term>
               <id>T104</id>
               <name>syncl_lvds</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T242</id>
+              <name>gtrigh_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T243</id>
+              <name>gtrigl_ecl</name>
+              <direction>input</direction>
+            </term>
+            <term>
+              <id>T281</id>
+              <name>sync24l_lvds</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -107,8 +122,7 @@
               <id>T198</id>
               <name>an_pulse_in</name>
               <direction>inout</direction>
-              <displayName></displayName>
-              <msb>7</msb>
+              <msb>11</msb>
               <lsb>0</lsb>
             </term>
           </terms>
@@ -220,24 +234,12 @@
           <name>an_pulse_in</name>
           <scope>interface</scope>
           <direction>inout</direction>
-          <msb>7</msb>
+          <msb>11</msb>
           <lsb>0</lsb>
         </net>
         <net>
           <id>gnd</id>
           <name>gnd</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>gtrigh</id>
-          <name>gtrigh</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>gtrigl</id>
-          <name>gtrigl</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -256,12 +258,6 @@
         <net>
           <id>vtt</id>
           <name>vtt</name>
-          <scope>global</scope>
-          <inherited>1</inherited>
-        </net>
-        <net>
-          <id>gtrig_ttl</id>
-          <name>gtrig_ttl</name>
           <scope>global</scope>
           <inherited>1</inherited>
         </net>
@@ -373,6 +369,27 @@
                 <connection net="N35" />
               </connections>
             </pin>
+            <pin>
+              <id>M127</id>
+              <termid>T242</termid>
+              <connections>
+                <connection net="N27" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M128</id>
+              <termid>T243</termid>
+              <connections>
+                <connection net="N28" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M139</id>
+              <termid>T281</termid>
+              <connections>
+                <connection net="N74" />
+              </connections>
+            </pin>
           </pins>
           <differentialpins>
           </differentialpins>
@@ -443,10 +460,10 @@
             <pin>
               <id>M113</id>
               <termid>T198</termid>
-              <msb>7</msb>
+              <msb>11</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="7" pinlsb="0" net="N103" netmsb="7" netlsb="0" />
+                <connection pinmsb="11" pinlsb="0" net="N103" netmsb="11" netlsb="0" />
               </connections>
             </pin>
           </pins>
@@ -467,7 +484,6 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
-        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="an_pulse_in">
             <pageScope number="1">
@@ -578,7 +594,7 @@
             <errorStatus>false</errorStatus>
             <nets>
               <net ref="an_pulse_in">
-                <msb>7</msb>
+                <msb>11</msb>
                 <lsb>0</lsb>
               </net>
               <net ref="caen_out">

@@ -1,0 +1,171 @@
+(
+  (version 16.6)
+  (tool
+    (creator "conceptHDL")
+    (last "conceptHDL")
+  )
+  (library "tubii_lib")
+  (design "lvds_ecl_translation"
+    (lastIds
+      (lastInstanceId 9)
+      (lastNetId 11)
+      (lastInstTermId 39)
+    )
+    (cells
+      ("S4" "mc10h124" "ecl" "sym_1"
+        (terms
+          ("T18" "common" -1 -1 1)
+          ("T19" "in" -1 -1 1)
+          ("T20" "out" -1 -1 2)
+          ("T21" "out*" -1 -1 2)
+        )
+      )
+      ("S5" "ds90lv019" "misc" "sym_1"
+        (terms
+          ("T22" "de" -1 -1 1)
+          ("T23" "din" -1 -1 1)
+          ("T24" "dout" -1 -1 2)
+          ("T25" "dout*" -1 -1 2)
+          ("T26" "re" -1 -1 1)
+          ("T27" "ri" -1 -1 1)
+          ("T28" "ri*" -1 -1 1)
+          ("T29" "rout" -1 -1 2)
+        )
+      )
+      ("S6" "10h125" "ecl" "sym_1"
+        (params
+          ("size" "1")
+        )
+        (terms
+          ("T30" "a<SIZE-1..0>" -1 -1 1)
+          ("T31" "b*<SIZE-1..0>" -1 -1 1)
+          ("T32" "v" -1 -1 2)
+          ("T33" "y<SIZE-1..0>" -1 -1 2)
+        )
+      )
+      ("S7" "rsmd0805" "resistors" "sym_1"
+        (terms
+          ("T34" "a" 0 0 1)
+          ("T35" "b" 0 0 2)
+        )
+      )
+    )
+
+    (nets
+      ("N4" "ecl_in" -1 -1 1 3)
+      ("N5" "ecl_out" -1 -1 1 3)
+      ("N6" "lvds_out" -1 -1 1 3)
+      ("N7" "lvdsh_in" -1 -1 1 3)
+      ("N8" "lvdsl_in" -1 -1 1 3)
+      ("N10" "unnamed_1_ds90lv019_i5_rout" -1 -1 0 )
+      ("N11" "unnamed_1_10h125_i10_y" -1 -1 0 )
+      ("vcc" "vcc" -1 -1 2 )
+      ("vtt" "vtt" -1 -1 2 )
+      ("vbb_trans" "vbb_trans" -1 -1 2 )
+    )
+
+    (instances
+      ("I3" "page1_i3" "S4"
+        (pins
+          ("M10" "T18" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+          ("M11" "T19" -1 -1
+            (conn
+              ("0" -1 -1 "N10" -1 -1)
+            )
+          )
+          ("M12" "T20" -1 -1
+            (conn
+              ("0" -1 -1 "N5" -1 -1)
+            )
+          )
+          ("M13" "T21" -1 -1
+          )
+        )
+      )
+      ("I4" "page1_i5" "S5"
+        (pins
+          ("M14" "T22" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+          ("M15" "T23" -1 -1
+            (conn
+              ("0" -1 -1 "N11" -1 -1)
+            )
+          )
+          ("M16" "T24" -1 -1
+            (conn
+              ("0" -1 -1 "N6" -1 -1)
+            )
+          )
+          ("M17" "T25" -1 -1
+          )
+          ("M18" "T26" -1 -1
+            (conn
+              ("0" -1 -1 "vcc" -1 -1)
+            )
+          )
+          ("M19" "T27" -1 -1
+            (conn
+              ("0" -1 -1 "N7" -1 -1)
+            )
+          )
+          ("M20" "T28" -1 -1
+            (conn
+              ("0" -1 -1 "N8" -1 -1)
+            )
+          )
+          ("M21" "T29" -1 -1
+            (conn
+              ("0" -1 -1 "N10" -1 -1)
+            )
+          )
+        )
+      )
+      ("I6" "page1_i7" "S7"
+        (pins
+          ("M26" "T34" 0 0
+            (conn
+              ("0" 0 0 "vtt" -1 -1)
+            )
+          )
+          ("M27" "T35" 0 0
+            (conn
+              ("0" 0 0 "N4" -1 -1)
+            )
+          )
+        )
+      )
+      ("I9" "page1_i10" "S6"
+        (pins
+          ("M36" "T30" 0 0
+            (conn
+              ("0" 0 0 "N4" -1 -1)
+            )
+          )
+          ("M37" "T31" 0 0
+            (conn
+              ("0" 0 0 "vbb_trans" -1 -1)
+            )
+          )
+          ("M38" "T32" -1 -1
+            (conn
+              ("0" -1 -1 "vbb_trans" -1 -1)
+            )
+          )
+          ("M39" "T33" 0 0
+            (conn
+              ("0" 0 0 "N11" -1 -1)
+            )
+          )
+        )
+      )
+    )
+
+  )
+)

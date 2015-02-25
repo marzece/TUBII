@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-03T15:06:44</modificationTime>
+    <modificationTime>2015-02-25T12:50:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="trigger_utility_board_mkii" view="sch_1">
       <lastids>
         <instanceid>15</instanceid>
-        <netid>397</netid>
-        <insttermid>1215</insttermid>
+        <netid>443</netid>
+        <insttermid>1347</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -126,16 +126,6 @@
               <direction>input</direction>
             </term>
             <term>
-              <id>T32</id>
-              <name>gtrigh_ecl</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T33</id>
-              <name>gtrigl_ecl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T34</id>
               <name>le</name>
               <direction>input</direction>
@@ -148,43 +138,53 @@
               <lsb>0</lsb>
             </term>
             <term>
-              <id>T36</id>
-              <name>sync24h_ecl</name>
+              <id>T1176</id>
+              <name>gt_ecl_n</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T37</id>
-              <name>sync24h_lvds</name>
+              <id>T1177</id>
+              <name>gt_ecl_p</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T38</id>
-              <name>sync24l_ecl</name>
+              <id>T1178</id>
+              <name>sync24_ecl_n</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T39</id>
-              <name>sync24l_lvds</name>
+              <id>T1179</id>
+              <name>sync24_ecl_p</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T40</id>
-              <name>synch_ecl</name>
+              <id>T1180</id>
+              <name>sync24_lvds_n</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T41</id>
-              <name>synch_lvds</name>
+              <id>T1181</id>
+              <name>sync24_lvds_p</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T42</id>
-              <name>syncl_ecl</name>
+              <id>T1182</id>
+              <name>sync_ecl_n</name>
               <direction>output</direction>
             </term>
             <term>
-              <id>T43</id>
-              <name>syncl_lvds</name>
+              <id>T1183</id>
+              <name>sync_ecl_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1184</id>
+              <name>sync_lvds_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1185</id>
+              <name>sync_lvds_p</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -205,26 +205,6 @@
             <term>
               <id>T61</id>
               <name>data</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T62</id>
-              <name>dgth</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T63</id>
-              <name>dgtl</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T64</id>
-              <name>gtrigh</name>
-              <direction>input</direction>
-            </term>
-            <term>
-              <id>T65</id>
-              <name>gtrigl</name>
               <direction>input</direction>
             </term>
             <term>
@@ -261,6 +241,11 @@
               <id>T769</id>
               <name>ttl_lockout*</name>
               <direction>output</direction>
+            </term>
+            <term>
+              <id>T1050</id>
+              <name>gtrig</name>
+              <direction>input</direction>
             </term>
           </terms>
         </cell>
@@ -363,14 +348,14 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T90</id>
-              <name>ext_ped_out</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T91</id>
               <name>gtrig</name>
               <direction>input</direction>
+            </term>
+            <term>
+              <id>T1209</id>
+              <name>ext_ped_out_p</name>
+              <direction>output</direction>
             </term>
           </terms>
         </cell>
@@ -669,28 +654,8 @@
           </parameters>
           <terms>
             <term>
-              <id>T127</id>
-              <name>clk100_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T128</id>
-              <name>clk100_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T129</id>
               <name>clock100</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T130</id>
-              <name>clock200_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T131</id>
-              <name>clock200_outl</name>
               <direction>output</direction>
             </term>
             <term>
@@ -764,16 +729,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T155</id>
-              <name>fast_comp_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T156</id>
-              <name>fast_comp_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T157</id>
               <name>fast_pulse</name>
               <direction>inout</direction>
@@ -789,16 +744,6 @@
               <direction>output</direction>
             </term>
             <term>
-              <id>T161</id>
-              <name>tune_comp_outh</name>
-              <direction>output</direction>
-            </term>
-            <term>
-              <id>T162</id>
-              <name>tune_comp_outl</name>
-              <direction>output</direction>
-            </term>
-            <term>
               <id>T163</id>
               <name>tune_pulse</name>
               <direction>inout</direction>
@@ -806,6 +751,26 @@
             <term>
               <id>T408</id>
               <name>gtrig</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1174</id>
+              <name>tune_comp_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1175</id>
+              <name>tune_comp_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1205</id>
+              <name>fast_comp_out_n</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T1206</id>
+              <name>fast_comp_out_p</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -973,18 +938,6 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N101</id>
-          <name>dgth</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N102</id>
-          <name>dgtl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N103</id>
           <name>ext_ped_in</name>
           <scope>interface</scope>
@@ -993,18 +946,6 @@
         <net>
           <id>N104</id>
           <name>ext_ped_out</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N105</id>
-          <name>gtrigh_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N106</id>
-          <name>gtrigl_ecl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1035,80 +976,8 @@
           <lsb>0</lsb>
         </net>
         <net>
-          <id>N111</id>
-          <name>sync24h_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N112</id>
-          <name>sync24h_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N113</id>
-          <name>sync24l_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N114</id>
-          <name>sync24l_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N115</id>
-          <name>synch_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N116</id>
-          <name>synch_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N117</id>
-          <name>syncl_ecl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N118</id>
-          <name>syncl_lvds</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N119</id>
           <name>async_delay_out</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N121</id>
-          <name>clock100_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N122</id>
-          <name>clock100_outl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N123</id>
-          <name>clock200_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N124</id>
-          <name>clock200_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1133,18 +1002,6 @@
         <net>
           <id>N149</id>
           <name>fast_anpulse</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N150</id>
-          <name>fast_comp_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N151</id>
-          <name>fast_comp_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1199,18 +1056,6 @@
         <net>
           <id>N160</id>
           <name>tune_anpulse</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N161</id>
-          <name>tune_comp_outh</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N162</id>
-          <name>tune_comp_outl</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -1313,6 +1158,126 @@
           <name>page1_scaler</name>
           <msb>2</msb>
           <lsb>0</lsb>
+        </net>
+        <net>
+          <id>N424</id>
+          <name>clk100_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N425</id>
+          <name>clk100_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N426</id>
+          <name>clk200_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N427</id>
+          <name>clk200_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N428</id>
+          <name>dgt_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N429</id>
+          <name>dgt_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N430</id>
+          <name>fast_comp_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N431</id>
+          <name>fast_comp_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N432</id>
+          <name>gt_ecl_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N433</id>
+          <name>gt_ecl_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N434</id>
+          <name>sync24_ecl_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N435</id>
+          <name>sync24_ecl_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N436</id>
+          <name>sync24_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N437</id>
+          <name>sync24_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N438</id>
+          <name>sync_ecl_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N439</id>
+          <name>sync_ecl_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N440</id>
+          <name>sync_lvds_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N441</id>
+          <name>sync_lvds_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N442</id>
+          <name>tune_comp_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N443</id>
+          <name>tune_comp_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N2</id>
@@ -1593,20 +1558,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M28</id>
-              <termid>T32</termid>
-              <connections>
-                <connection net="N105" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M29</id>
-              <termid>T33</termid>
-              <connections>
-                <connection net="N106" />
-              </connections>
-            </pin>
-            <pin>
               <id>M30</id>
               <termid>T34</termid>
               <connections>
@@ -1623,59 +1574,73 @@
               </connections>
             </pin>
             <pin>
-              <id>M32</id>
-              <termid>T36</termid>
+              <id>M1333</id>
+              <termid>T1176</termid>
               <connections>
-                <connection net="N111" />
+                <connection net="N432" />
               </connections>
             </pin>
             <pin>
-              <id>M33</id>
-              <termid>T37</termid>
+              <id>M1334</id>
+              <termid>T1177</termid>
               <connections>
-                <connection net="N112" />
+                <connection net="N433" />
               </connections>
             </pin>
             <pin>
-              <id>M34</id>
-              <termid>T38</termid>
+              <id>M1335</id>
+              <termid>T1178</termid>
               <connections>
-                <connection net="N113" />
+                <connection net="N434" />
               </connections>
             </pin>
             <pin>
-              <id>M35</id>
-              <termid>T39</termid>
+              <id>M1336</id>
+              <termid>T1179</termid>
               <connections>
-                <connection net="N114" />
+                <connection net="N435" />
               </connections>
             </pin>
             <pin>
-              <id>M36</id>
-              <termid>T40</termid>
+              <id>M1337</id>
+              <termid>T1180</termid>
               <connections>
-                <connection net="N115" />
+                <connection net="N436" />
               </connections>
             </pin>
             <pin>
-              <id>M37</id>
-              <termid>T41</termid>
+              <id>M1338</id>
+              <termid>T1181</termid>
               <connections>
-                <connection net="N116" />
+                <connection net="N437" />
               </connections>
             </pin>
             <pin>
-              <id>M38</id>
-              <termid>T42</termid>
+              <id>M1339</id>
+              <termid>T1182</termid>
               <connections>
-                <connection net="N117" />
+                <connection net="N438" />
               </connections>
             </pin>
             <pin>
-              <id>M39</id>
-              <termid>T43</termid>
+              <id>M1340</id>
+              <termid>T1183</termid>
               <connections>
-                <connection net="N118" />
+                <connection net="N439" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1341</id>
+              <termid>T1184</termid>
+              <connections>
+                <connection net="N440" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1342</id>
+              <termid>T1185</termid>
+              <connections>
+                <connection net="N441" />
               </connections>
             </pin>
           </pins>
@@ -1711,34 +1676,6 @@
               <termid>T61</termid>
               <connections>
                 <connection net="N23" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M46</id>
-              <termid>T62</termid>
-              <connections>
-                <connection net="N101" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M47</id>
-              <termid>T63</termid>
-              <connections>
-                <connection net="N102" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M48</id>
-              <termid>T64</termid>
-              <connections>
-                <connection net="N105" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M49</id>
-              <termid>T65</termid>
-              <connections>
-                <connection net="N106" />
               </connections>
             </pin>
             <pin>
@@ -1788,6 +1725,13 @@
               <termid>T769</termid>
               <connections>
                 <connection net="N278" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1274</id>
+              <termid>T1050</termid>
+              <connections>
+                <connection net="N231" />
               </connections>
             </pin>
           </pins>
@@ -1945,17 +1889,17 @@
               </connections>
             </pin>
             <pin>
-              <id>M74</id>
-              <termid>T90</termid>
-              <connections>
-                <connection net="N104" />
-              </connections>
-            </pin>
-            <pin>
               <id>M75</id>
               <termid>T91</termid>
               <connections>
-                <connection net="N105" />
+                <connection net="N433" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1347</id>
+              <termid>T1209</termid>
+              <connections>
+                <connection net="N104" />
               </connections>
             </pin>
           </pins>
@@ -2423,21 +2367,7 @@
               <id>M132</id>
               <termid>T153</termid>
               <connections>
-                <connection net="N101" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M134</id>
-              <termid>T155</termid>
-              <connections>
-                <connection net="N150" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M135</id>
-              <termid>T156</termid>
-              <connections>
-                <connection net="N151" />
+                <connection net="N429" />
               </connections>
             </pin>
             <pin>
@@ -2462,20 +2392,6 @@
               </connections>
             </pin>
             <pin>
-              <id>M140</id>
-              <termid>T161</termid>
-              <connections>
-                <connection net="N162" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M141</id>
-              <termid>T162</termid>
-              <connections>
-                <connection net="N161" />
-              </connections>
-            </pin>
-            <pin>
               <id>M142</id>
               <termid>T163</termid>
               <connections>
@@ -2486,7 +2402,35 @@
               <id>M441</id>
               <termid>T408</termid>
               <connections>
-                <connection net="N105" />
+                <connection net="N433" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1331</id>
+              <termid>T1174</termid>
+              <connections>
+                <connection net="N443" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1332</id>
+              <termid>T1175</termid>
+              <connections>
+                <connection net="N442" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1343</id>
+              <termid>T1205</termid>
+              <connections>
+                <connection net="N430" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M1344</id>
+              <termid>T1206</termid>
+              <connections>
+                <connection net="N431" />
               </connections>
             </pin>
           </pins>
@@ -2532,38 +2476,10 @@
           </powers>
           <pins>
             <pin>
-              <id>M266</id>
-              <termid>T127</termid>
-              <connections>
-                <connection net="N121" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M267</id>
-              <termid>T128</termid>
-              <connections>
-                <connection net="N122" />
-              </connections>
-            </pin>
-            <pin>
               <id>M268</id>
               <termid>T129</termid>
               <connections>
                 <connection net="N163" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M269</id>
-              <termid>T130</termid>
-              <connections>
-                <connection net="N123" />
-              </connections>
-            </pin>
-            <pin>
-              <id>M270</id>
-              <termid>T131</termid>
-              <connections>
-                <connection net="N124" />
               </connections>
             </pin>
             <pin>
@@ -2640,6 +2556,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="async_delay_in">
             <pageScope number="1">
@@ -2671,37 +2588,37 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock100_outh">
+          <netScope ref="clk100_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock100_outl">
+          <netScope ref="clk100_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outh">
+          <netScope ref="clk200_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="clock200_outl">
+          <netScope ref="clk200_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="dgth">
+          <netScope ref="dgt_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="dgtl">
+          <netScope ref="dgt_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2731,13 +2648,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="fast_comp_outh">
+          <netScope ref="fast_comp_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="fast_comp_outl">
+          <netScope ref="fast_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2748,19 +2665,19 @@
               <scope>global</scope>
             </pageScope>
           </netScope>
+          <netScope ref="gt_ecl_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="gt_ecl_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="gtrig_ttl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="gtrigh_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="gtrigl_ecl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2814,31 +2731,31 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="sync24_ecl_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_ecl_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_lvds_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync24_lvds_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sync24_ttl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="sync24h_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="sync24h_lvds">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="sync24l_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="sync24l_lvds">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2856,6 +2773,30 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="sync_ecl_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_ecl_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_lvds_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="sync_lvds_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="sync_pulse_out">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2863,30 +2804,6 @@
             </pageScope>
           </netScope>
           <netScope ref="sync_ttl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="synch_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="synch_lvds">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="syncl_ecl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="syncl_lvds">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2928,13 +2845,13 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outh">
+          <netScope ref="tune_comp_out_n">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="tune_comp_outl">
+          <netScope ref="tune_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -2966,12 +2883,12 @@
                 <msb>7</msb>
                 <lsb>0</lsb>
               </net>
-              <net ref="clock100_outh"></net>
-              <net ref="clock100_outl"></net>
-              <net ref="clock200_outh"></net>
-              <net ref="clock200_outl"></net>
-              <net ref="dgth"></net>
-              <net ref="dgtl"></net>
+              <net ref="clk100_out_n"></net>
+              <net ref="clk100_out_p"></net>
+              <net ref="clk200_out_n"></net>
+              <net ref="clk200_out_p"></net>
+              <net ref="dgt_n"></net>
+              <net ref="dgt_p"></net>
               <net ref="ext_ped_in"></net>
               <net ref="ext_ped_out"></net>
               <net ref="exttrig">
@@ -2979,12 +2896,12 @@
                 <lsb>0</lsb>
               </net>
               <net ref="fast_anpulse"></net>
-              <net ref="fast_comp_outh"></net>
-              <net ref="fast_comp_outl"></net>
+              <net ref="fast_comp_out_n"></net>
+              <net ref="fast_comp_out_p"></net>
               <net ref="gnd"></net>
+              <net ref="gt_ecl_n"></net>
+              <net ref="gt_ecl_p"></net>
               <net ref="gtrig_ttl"></net>
-              <net ref="gtrigh_ecl"></net>
-              <net ref="gtrigl_ecl"></net>
               <net ref="lockout"></net>
               <net ref="lockout*"></net>
               <net ref="mtcd_lo*"></net>
@@ -3003,27 +2920,27 @@
               <net ref="smellie_delay_in"></net>
               <net ref="smellie_delay_out"></net>
               <net ref="smellie_pulse_out"></net>
+              <net ref="sync24_ecl_n"></net>
+              <net ref="sync24_ecl_p"></net>
+              <net ref="sync24_lvds_n"></net>
+              <net ref="sync24_lvds_p"></net>
               <net ref="sync24_ttl"></net>
-              <net ref="sync24h_ecl"></net>
-              <net ref="sync24h_lvds"></net>
-              <net ref="sync24l_ecl"></net>
-              <net ref="sync24l_lvds"></net>
               <net ref="sync_delay_in"></net>
               <net ref="sync_delay_out"></net>
+              <net ref="sync_ecl_n"></net>
+              <net ref="sync_ecl_p"></net>
+              <net ref="sync_lvds_n"></net>
+              <net ref="sync_lvds_p"></net>
               <net ref="sync_pulse_out"></net>
               <net ref="sync_ttl"></net>
-              <net ref="synch_ecl"></net>
-              <net ref="synch_lvds"></net>
-              <net ref="syncl_ecl"></net>
-              <net ref="syncl_lvds"></net>
               <net ref="tellie_delay_in"></net>
               <net ref="tellie_delay_out"></net>
               <net ref="tellie_pulse_out"></net>
               <net ref="tub_clk_in"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="tune_anpulse"></net>
-              <net ref="tune_comp_outh"></net>
-              <net ref="tune_comp_outl"></net>
+              <net ref="tune_comp_out_n"></net>
+              <net ref="tune_comp_out_p"></net>
               <net ref="unnamed_1_3merge_i6_a"></net>
               <net ref="unnamed_1_3merge_i6_b"></net>
               <net ref="unnamed_1_3merge_i6_c"></net>

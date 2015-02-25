@@ -7,9 +7,9 @@
   (library "tubii_lib")
   (design "ecl-ttl"
     (lastIds
-      (lastInstanceId 21)
+      (lastInstanceId 22)
       (lastNetId 24)
-      (lastInstTermId 60)
+      (lastInstTermId 64)
     )
     (cells
       ("S2" "10h125" "ecl" "sym_1"
@@ -52,7 +52,6 @@
     (nets
       ("N2" "page1_gnd" -1 -1 0 )
       ("N18" "ttl_out" -1 -1 1 3)
-      ("N21" "unnamed_1_10h125_i1_b" -1 -1 0 )
       ("N22" "ecl_in" -1 -1 1 3)
       ("N24" "unnamed_1_10e116_i31_y" -1 -1 0 )
       ("N1" "gnd" -1 -1 2 )
@@ -65,30 +64,6 @@
     )
 
     (instances
-      ("I1" "page1_i1" "S2"
-        (pins
-          ("M1" "T3" 0 0
-            (conn
-              ("0" 0 0 "N24" -1 -1)
-            )
-          )
-          ("M2" "T4" 0 0
-            (conn
-              ("0" 0 0 "N21" -1 -1)
-            )
-          )
-          ("M3" "T5" -1 -1
-            (conn
-              ("0" -1 -1 "N21" -1 -1)
-            )
-          )
-          ("M4" "T6" 0 0
-            (conn
-              ("0" 0 0 "N18" -1 -1)
-            )
-          )
-        )
-      )
       ("I6" "page1_i13" "S4"
         (pins
           ("M11" "T8" 0 0
@@ -140,7 +115,7 @@
           )
           ("M50" "T11" 0 0
             (conn
-              ("0" 0 0 "N21" -1 -1)
+              ("0" 0 0 "N23" -1 -1)
             )
           )
         )
@@ -168,6 +143,30 @@
             )
           )
           ("M60" "T16" 0 0
+          )
+        )
+      )
+      ("I22" "page1_i32" "S2"
+        (pins
+          ("M61" "T3" 0 0
+            (conn
+              ("0" 0 0 "N24" -1 -1)
+            )
+          )
+          ("M62" "T4" 0 0
+            (conn
+              ("0" 0 0 "N23" -1 -1)
+            )
+          )
+          ("M63" "T5" -1 -1
+            (conn
+              ("0" -1 -1 "N23" -1 -1)
+            )
+          )
+          ("M64" "T6" 0 0
+            (conn
+              ("0" 0 0 "N18" -1 -1)
+            )
           )
         )
       )
