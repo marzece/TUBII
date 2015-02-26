@@ -5,14 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-25T16:44:01</modificationTime>
+    <modificationTime>2015-02-25T16:49:14</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii_time" view="sch_1">
       <lastids>
         <instanceid>205</instanceid>
-        <netid>243</netid>
+        <netid>245</netid>
         <insttermid>660</insttermid>
       </lastids>
       <cells>
@@ -1035,14 +1035,6 @@
           <name>vbb</name>
         </net>
         <net>
-          <id>N209</id>
-          <name>unnamed_1_10e116_i225_a</name>
-        </net>
-        <net>
-          <id>N210</id>
-          <name>unnamed_1_10e116_i225_b</name>
-        </net>
-        <net>
           <id>N211</id>
           <name>clock100_out_ttl</name>
           <scope>interface</scope>
@@ -1179,6 +1171,14 @@
         <net>
           <id>N243</id>
           <name>use_default_p</name>
+        </net>
+        <net>
+          <id>N244</id>
+          <name>switch_clk_n</name>
+        </net>
+        <net>
+          <id>N245</id>
+          <name>switch_clk_p</name>
         </net>
         <net>
           <id>N14</id>
@@ -6010,14 +6010,14 @@
               <id>M630</id>
               <termid>T391</termid>
               <connections>
-                <connection net="N209" />
+                <connection net="N245" />
               </connections>
             </pin>
             <pin>
               <id>M631</id>
               <termid>T392</termid>
               <connections>
-                <connection net="N210" />
+                <connection net="N244" />
               </connections>
             </pin>
             <pin>
@@ -6285,7 +6285,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N209" />
+                <connection pinmsb="0" pinlsb="0" net="N245" />
               </connections>
             </pin>
             <pin>
@@ -6294,7 +6294,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N210" />
+                <connection pinmsb="0" pinlsb="0" net="N244" />
               </connections>
             </pin>
             <pin>
@@ -6349,7 +6349,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N209" />
+                <connection pinmsb="0" pinlsb="0" net="N245" />
               </connections>
             </pin>
             <pin>
@@ -6358,7 +6358,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N210" />
+                <connection pinmsb="0" pinlsb="0" net="N244" />
               </connections>
             </pin>
             <pin>
@@ -6532,6 +6532,8 @@
               <net ref="missedclock"></net>
               <net ref="mstreset_ecl"></net>
               <net ref="sr_clk"></net>
+              <net ref="switch_clk_n"></net>
+              <net ref="switch_clk_p"></net>
               <net ref="ttl_reset"></net>
               <net ref="unnamed_1_100el05_i94_out"></net>
               <net ref="unnamed_1_100el05_i95_out"></net>
@@ -6545,8 +6547,6 @@
               <net ref="unnamed_1_10e101_i123_y_1"></net>
               <net ref="unnamed_1_10e101_i79_d"></net>
               <net ref="unnamed_1_10e101_i79_y"></net>
-              <net ref="unnamed_1_10e116_i225_a"></net>
-              <net ref="unnamed_1_10e116_i225_b"></net>
               <net ref="unnamed_1_10e116_i74_y"></net>
               <net ref="unnamed_1_10e116_i87_y"></net>
               <net ref="unnamed_1_10e131_i71_q"></net>

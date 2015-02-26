@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-20T14:40:35</modificationTime>
+    <modificationTime>2015-02-25T17:57:26</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="asyncdelays" view="sch_1">
       <lastids>
         <instanceid>26</instanceid>
-        <netid>124</netid>
-        <insttermid>429</insttermid>
+        <netid>127</netid>
+        <insttermid>433</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -299,18 +299,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N24</id>
-          <name>dgth</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
-          <id>N25</id>
-          <name>dgtl</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N29</id>
           <name>clk</name>
           <scope>interface</scope>
@@ -347,6 +335,18 @@
         <net>
           <id>N116</id>
           <name>gtrig</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N126</id>
+          <name>dgt_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
+          <id>N127</id>
+          <name>dgt_p</name>
           <scope>interface</scope>
           <direction>inout</direction>
         </net>
@@ -722,14 +722,14 @@
               <id>M228</id>
               <termid>T150</termid>
               <connections>
-                <connection net="N24" />
+                <connection net="N127" />
               </connections>
             </pin>
             <pin>
               <id>M229</id>
               <termid>T151</termid>
               <connections>
-                <connection net="N25" />
+                <connection net="N126" />
               </connections>
             </pin>
           </pins>
@@ -863,6 +863,7 @@
       <extensions>
         <extension name="schematic_extension">
         <schematicExtension>
+        <errorStatus>true</errorStatus>
         <netScopes>
           <netScope ref="clk">
             <pageScope number="1">
@@ -882,19 +883,19 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="dgt_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
+          <netScope ref="dgt_p">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="dgt_ttl">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="dgth">
-            <pageScope number="1">
-              <scope>interface</scope>
-              <direction>unknown</direction>
-            </pageScope>
-          </netScope>
-          <netScope ref="dgtl">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -931,9 +932,9 @@
               <net ref="clk"></net>
               <net ref="ddgt*"></net>
               <net ref="delay_val"></net>
+              <net ref="dgt_n"></net>
+              <net ref="dgt_p"></net>
               <net ref="dgt_ttl"></net>
-              <net ref="dgth"></net>
-              <net ref="dgtl"></net>
               <net ref="gnd"></net>
               <net ref="gtrig"></net>
               <net ref="le_dgt"></net>

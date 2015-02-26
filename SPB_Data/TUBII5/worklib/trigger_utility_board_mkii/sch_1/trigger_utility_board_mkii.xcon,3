@@ -5,15 +5,14 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-25T12:49:27</modificationTime>
+    <modificationTime>2015-02-25T12:50:31</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="trigger_utility_board_mkii" view="sch_1">
-      <external_errors>true</external_errors>
       <lastids>
         <instanceid>15</instanceid>
-        <netid>442</netid>
+        <netid>443</netid>
         <insttermid>1347</insttermid>
       </lastids>
       <cells>
@@ -1275,6 +1274,12 @@
           <direction>inout</direction>
         </net>
         <net>
+          <id>N443</id>
+          <name>tune_comp_out_n</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
+        </net>
+        <net>
           <id>N2</id>
           <name>gnd</name>
           <scope>global</scope>
@@ -2404,7 +2409,7 @@
               <id>M1331</id>
               <termid>T1174</termid>
               <connections>
-                <connection net="N442" />
+                <connection net="N443" />
               </connections>
             </pin>
             <pin>
@@ -2840,6 +2845,12 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
+          <netScope ref="tune_comp_out_n">
+            <pageScope number="1">
+              <scope>interface</scope>
+              <direction>unknown</direction>
+            </pageScope>
+          </netScope>
           <netScope ref="tune_comp_out_p">
             <pageScope number="1">
               <scope>interface</scope>
@@ -2855,7 +2866,7 @@
         <pages>
           <page number="1">
             <physicalPageNumber>1</physicalPageNumber>
-            <errorStatus>true</errorStatus>
+            <errorStatus>false</errorStatus>
             <nets>
               <net ref="addr">
                 <msb>2</msb>
@@ -2928,6 +2939,7 @@
               <net ref="tub_clk_in"></net>
               <net ref="tubii_rt_out"></net>
               <net ref="tune_anpulse"></net>
+              <net ref="tune_comp_out_n"></net>
               <net ref="tune_comp_out_p"></net>
               <net ref="unnamed_1_3merge_i6_a"></net>
               <net ref="unnamed_1_3merge_i6_b"></net>

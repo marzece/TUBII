@@ -5,14 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>conceptHDL</creatorTool>
     <modifierTool>conceptHDL</modifierTool>
-    <modificationTime>2015-02-20T14:40:39</modificationTime>
+    <modificationTime>2015-02-25T12:48:24</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="ecal_control" view="sch_1">
+      <external_errors>true</external_errors>
       <lastids>
         <instanceid>26</instanceid>
-        <netid>29</netid>
+        <netid>31</netid>
         <insttermid>69</insttermid>
       </lastids>
       <cells>
@@ -203,12 +204,6 @@
           <direction>inout</direction>
         </net>
         <net>
-          <id>N18</id>
-          <name>ext_ped_out</name>
-          <scope>interface</scope>
-          <direction>inout</direction>
-        </net>
-        <net>
           <id>N20</id>
           <name>page1_gnd</name>
         </net>
@@ -225,8 +220,14 @@
           <name>unnamed_1_ledl_i23_a</name>
         </net>
         <net>
-          <id>N29</id>
-          <name>unnamed_1_10e101_i7_y</name>
+          <id>N30</id>
+          <name>ext_ped_out_n</name>
+        </net>
+        <net>
+          <id>N31</id>
+          <name>ext_ped_out_p</name>
+          <scope>interface</scope>
+          <direction>inout</direction>
         </net>
         <net>
           <id>N4</id>
@@ -307,7 +308,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N18" />
+                <connection pinmsb="0" pinlsb="0" net="N31" />
               </connections>
             </pin>
             <pin>
@@ -316,7 +317,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N29" />
+                <connection pinmsb="0" pinlsb="0" net="N30" />
               </connections>
             </pin>
           </pins>
@@ -705,7 +706,7 @@
               <id>M51</id>
               <termid>T86</termid>
               <connections>
-                <connection net="N29" />
+                <connection net="N30" />
               </connections>
             </pin>
           </pins>
@@ -744,7 +745,7 @@
               <msb>0</msb>
               <lsb>0</lsb>
               <connections>
-                <connection pinmsb="0" pinlsb="0" net="N29" />
+                <connection pinmsb="0" pinlsb="0" net="N30" />
               </connections>
             </pin>
           </pins>
@@ -827,7 +828,7 @@
               <direction>unknown</direction>
             </pageScope>
           </netScope>
-          <netScope ref="ext_ped_out">
+          <netScope ref="ext_ped_out_p">
             <pageScope number="1">
               <scope>interface</scope>
               <direction>unknown</direction>
@@ -862,12 +863,12 @@
             <nets>
               <net ref="ecal_active"></net>
               <net ref="ext_ped_in"></net>
-              <net ref="ext_ped_out"></net>
+              <net ref="ext_ped_out_n"></net>
+              <net ref="ext_ped_out_p"></net>
               <net ref="gnd"></net>
               <net ref="gtrig"></net>
               <net ref="unnamed_1_10e101_i7_a"></net>
               <net ref="unnamed_1_10e101_i7_d"></net>
-              <net ref="unnamed_1_10e101_i7_y"></net>
               <net ref="unnamed_1_ledl_i23_a"></net>
               <net ref="unnamed_1_mc10h104_i20_a"></net>
               <net ref="unnamed_1_mc10h104_i21_a"></net>

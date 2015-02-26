@@ -5,15 +5,15 @@
     <schemaVersion>16.6</schemaVersion>
     <creatorTool>csnetlister</creatorTool>
     <modifierTool>csnetlister</modifierTool>
-    <modificationTime>2015-02-25T10:36:58</modificationTime>
+    <modificationTime>2015-02-25T19:02:53</modificationTime>
     <savedLibrary>tubii_lib</savedLibrary>
   </header>
   <designs>
     <design schemaType="nameBased" name="tubii" view="sch_1">
       <lastids>
         <instanceid>177</instanceid>
-        <netid>2782</netid>
-        <insttermid>7608</insttermid>
+        <netid>2798</netid>
+        <insttermid>7656</insttermid>
       </lastids>
       <cells>
         <cell>
@@ -532,6 +532,11 @@
             <term>
               <id>T3969</id>
               <name>tune_comp_out_p</name>
+              <direction>output</direction>
+            </term>
+            <term>
+              <id>T4029</id>
+              <name>tune_comp_out_n</name>
               <direction>output</direction>
             </term>
           </terms>
@@ -1309,6 +1314,12 @@
             <pin>
               <id>M7459</id>
               <termid>T3969</termid>
+              <connections>
+              </connections>
+            </pin>
+            <pin>
+              <id>M7655</id>
+              <termid>T4029</termid>
               <connections>
               </connections>
             </pin>
@@ -2193,6 +2204,13 @@
               <termid>T3969</termid>
               <connections>
                 <connection net="N2782" />
+              </connections>
+            </pin>
+            <pin>
+              <id>M7656</id>
+              <termid>T4029</termid>
+              <connections>
+                <connection net="N2781" />
               </connections>
             </pin>
           </pins>
